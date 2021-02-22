@@ -1,30 +1,20 @@
 ### files directory
-samples: samples.tsv
+samples: "samples.tsv"
 
 ### MAFFT parameters
 mafft:
     ## choose algorithm
-    algorithm: "--auto"
+    algorithm: "--auto" # MSSPE parameter, default
     ## parameters
     op: 1.53 # default
     ep: 0.123 # default
-    lop: -2.00 # default
-    lep: 0.1
-    lexp: -0.1
-    LOP: -6.00
-    LEXP: 0.00
-    bl: 62
-    jtt: "BLOSUM62"
-    tm: "PAM200/k=2"
-    aamatrix: "BLOSUM62"
-    fmodel: "off"
+    bl: 62 # default
+    jtt: 62 # default
+    tm: 62 # default
+    fmodel: "off" # default
     ## outpet parameters
-    clustalout: "on"
-    inputorder: "on"
-    reorder: "off"
-    treeout: "off"
-    quiet: "off"
-    ## input parameters
-    nuc: "auto"
-    amino: "auto"
-    # seed:
+    clustalout: "off" # customized
+    inputorder: "on" # default
+    reorder: "off" # default
+    treeout: "off" # default
+    quiet: "off" # default
