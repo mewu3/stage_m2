@@ -1,8 +1,9 @@
+#!/usr/bin/env python3.8
 from snakemake.utils import validate, min_version
 import pandas as pd
 
 ### define minimum required version for snakmake
-min_version("5.32.2")
+# min_version("5.32.2")
 
 ### load config file and access sample file through "sample.tsv"
 configfile: "config.yaml"
