@@ -1,0 +1,3 @@
+[submodule "lib/gerbil"]
+	path = lib/gerbil
+	url = https://github.com/uni-halle/gerbil.git
