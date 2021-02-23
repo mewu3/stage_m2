@@ -1,3 +1,9 @@
 [submodule "lib/gerbil"]
 	path = lib/gerbil
 	url = https://github.com/uni-halle/gerbil.git
+[submodule "lib/dsk"]
+	path = lib/dsk
+	url = https://github.com/GATB/dsk.git
+[submodule "lib/kmc3"]
+	path = lib/kmc3
+	url = https://github.com/refresh-bio/KMC.git
