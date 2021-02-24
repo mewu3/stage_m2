@@ -1,0 +1,21 @@
+The flag 'directory' used in rule count_kmers is only valid for outputs, not inputs.
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	count_kmers
+	1
+Select jobs to execute...
+
+[Wed Feb 24 16:48:58 2021]
+rule count_kmers:
+    input: test/splitFiles
+    output: test/kmerCounting/dsk
+    log: test/dsk_output
+    jobid: 0
+
+Terminating processes on user request, this might take some time.
+Complete log: /databis/wu/stage_m2/.snakemake/log/2021-02-24T164857.589415.snakemake.log

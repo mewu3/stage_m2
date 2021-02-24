@@ -1,0 +1,21 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	split_overlap_chunks
+	1
+Select jobs to execute...
+
+[Wed Feb 24 14:17:06 2021]
+rule split_overlap_chunks:
+    input: test/sequences_aligned.fasta
+    output: test/splitFiles
+    jobid: 1
+
+[Wed Feb 24 14:17:06 2021]
+Finished job 1.
+1 of 1 steps (100%) done
+Complete log: /databis/wu/stage_m2/.snakemake/log/2021-02-24T141705.616311.snakemake.log

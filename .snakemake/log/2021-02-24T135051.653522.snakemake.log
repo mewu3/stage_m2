@@ -1,0 +1,5 @@
+Building DAG of jobs...
+ChildIOException:
+File/directory is a child to another output:
+('/databis/wu/stage_m2/test', split_overlap_chunks)
+('/databis/wu/stage_m2/test/sequences_aligned.fasta', mafft)

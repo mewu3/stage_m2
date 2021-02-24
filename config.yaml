@@ -1,7 +1,6 @@
-### files directory
 samples: "samples.tsv"
 
-### MAFFT parameters
+### MAFFT parameters ###########################################################
 mafft:
     ## choose algorithm
     algorithm: "--auto" # MSSPE parameter, default
@@ -18,3 +17,24 @@ mafft:
     reorder: "off" # default
     treeout: "off" # default
     quiet: "off" # default
+    
+### dsk ########################################################################
+dsk: 
+    nb-cores: 0 # default 
+    max-memory: 5000 # default 
+    max-disk: 0 # default 
+    out-compress: 0 # default 
+    storage-type: "hdf5" # default 
+    verbose: 1 # default 
+    kmer-size: 13 
+    abundance-min: 2 # default 
+    abundance-max: 2147483647 # default 
+    abundance-min-threshold: 2 # default 
+    solidity-kind: "sum" # default 
+    solidity-custom: "" # default 
+    solid-kmers-out: "" # default
+    # histogram parameters 
+    histo-max: 10000 # default 
+    histo2D: 0 # default 
+    histo: 0 # default 
+
