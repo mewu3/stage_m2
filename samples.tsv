@@ -1,2 +1,2 @@
-sample	fasta 
-enterovirus	test/enterovirus_50.fasta
+target	path
+enterovirus	/databis/wu/stage_m2

@@ -17,10 +17,7 @@ rule dsk:
         solidityKind = config["dsk"]["solidity-kind"],
         solidityCustom = config["dsk"]["solidity-custom"],
         solideKmerOut = config["dsk"]["solid-kmers-out"],
-        histoMax = config["dsk"]["histo-max"],# with os.scandir("test/splitFiles") as it:
-#     for entry in it:
-#         if not entry.name.startswith('.') and entry.is_file():
-#             print(entry.name)
+        histoMax = config["dsk"]["histo-max"],
         histo2D = config["dsk"]["histo2D"],
         histo = config["dsk"]["histo"]
     script:
