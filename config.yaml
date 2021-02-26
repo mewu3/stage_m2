@@ -1,5 +1,4 @@
-samples: "samples.tsv"
-working-directory: "/databis/wu/stage_m2/test"
+samples: samples.tsv
 
 # multiple sequence aligment ###################################################
 mafft:
@@ -57,5 +56,17 @@ kmc3:
     file-name: ""
     output: "on"
 
-squeakr:
+gerbil:
     kmer-size: 31
+    minimizer-length: "auto"
+    max-memory: "auto" # or specify a number with MB/GB
+    output-format: "fasta"
+    threads: "auto" # or specify a number
+    min-kmer-number: 3
+    debug: "off"
+    enable-gpu: "off"
+    kmer-normalization: "off"
+    stop-at-stage-one: "off"
+    only-stage-two: "off"
+    tmp-files-save: "off"
+    histogram: "off"

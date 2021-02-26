@@ -1,24 +1,23 @@
+#!/usr/bin/env python3.8
+import pandas as pd
+
 # load config file and access sample file through "sample.tsv" #################
 configfile: "config.yaml"
-# validate(config, schema="") # validate whether config file is adequate
-# sample = pd.read_table(config["samples"]).set_index("sample", drop=False)
-# validate(sample, schema="")
-
-# environment variables ########################################################
-
+sample = pd.read_table(config["samples"]).set_index("target", drop=False)
 
 # SNAKEMAKE RULE ###############################################################
-### MMSEQ2
-# rule mmseq2: # cluster input sequences
-#     input:
-#         "test/enterovirus_50.fasta"
-#     output:
-#         "test/enterovirus_50_clsutered.fasta"
-#     log:
-#         "test/mmseq2.log"
-#     shell:
-#         "mmseqs createdb {input} | \
-#          mmseq2 easy-linclust {output} "
+
+## MMSEQ2: remove duplicate sequences
+rule mmseq2: # cluster input sequences
+    input:
+        "test/enterovirus_50.fasta"
+    output:
+        "test/enterovirus_50_clsutered.fasta"
+    log:
+        "test/mmseq2.log"
+    shell:
+        "mmseqs createdb {input} | \
+         mmseq2 easy-linclust {output} "
 
 ### MAFFT: multiple sequences alignment
 if config["mafft"]["fmodel"] == "on":
@@ -89,6 +88,7 @@ rule mafft:
         {input} > {output} \
         2> {log}"
 
+### Split aligment fasta file on overlapping chunks
 rule split_overlap_chunks:
     input:
         fasta = "test/mafft/sequences_aligned.fasta"
@@ -97,6 +97,7 @@ rule split_overlap_chunks:
     script:
         "scripts/overlap_segs.py"
 
+### Kmer counting
 rule dsk:
     input:
         dir = "test/splitFiles/"
@@ -125,6 +126,14 @@ rule dsk:
     script:
         "scripts/dsk.py"
 
+rule dskOutput:
+    input:
+        dir = "test/kmerCounting/dsk"
+    output:
+        dir = directory("test/kmerCounting/dsk_output")
+    script:
+        "scripts/dsk_output.py"
+
 rule kmc:
     input:
         dir = "test/splitFiles"
@@ -139,5 +148,12 @@ rule kmc:
     script:
         "scripts/kmc3.py"
 
-rule gerbil:
-    input: 
+rule kmcOutput:
+    input:
+        dir = "test/kmerCounting/kmc3"
+    output:
+        dir = directory("test/kmerCounting/kmc3_output")
+    script:
+        "scripts/kmc3_output.py"
+    script:
+        "scripts/dsk.py"
