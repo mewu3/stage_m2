@@ -1,6 +1,3 @@
-[submodule "lib/gerbil"]
-	path = lib/gerbil
-	url = https://github.com/uni-halle/gerbil.git
 [submodule "lib/dsk"]
 	path = lib/dsk
 	url = https://github.com/GATB/dsk.git
