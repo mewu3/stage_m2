@@ -1,10 +1,3 @@
-#!/usr/bin/env python3.8
-from snakemake.utils import validate, min_version
-import pandas as pd
-
-# define minimum required version for snakmake #################################
-min_version("5.32.2")
-
 # load config file and access sample file through "sample.tsv" #################
 configfile: "config.yaml"
 # validate(config, schema="") # validate whether config file is adequate
@@ -12,7 +5,7 @@ configfile: "config.yaml"
 # validate(sample, schema="")
 
 # environment variables ########################################################
-envvars:
+
 
 # SNAKEMAKE RULE ###############################################################
 ### MMSEQ2
@@ -62,9 +55,9 @@ rule mafft:
     input:
         "test/sequences.fasta"
     output:
-        "test/sequences_aligned.fasta"
+        "test/mafft/sequences_aligned.fasta"
     log:
-        "test/mafft.log"
+        "test/mafft/mafft.log"
     conda:
         "envs/mafft.yaml"
     params:
@@ -82,7 +75,7 @@ rule mafft:
         quiet = config["mafft"]["quiet"]
     shell:
         "mafft {params.algorithm} \
-        --op {params.opvous} \
+        --op {params.op} \
         --ep {params.ep} \
         --bl {params.bl} \
         --jtt {params.jtt} \
@@ -98,19 +91,17 @@ rule mafft:
 
 rule split_overlap_chunks:
     input:
-        fasta = "test/sequences_aligned.fasta"
+        fasta = "test/mafft/sequences_aligned.fasta"
     output:
         dir = directory("test/splitFiles/")
     script:
         "scripts/overlap_segs.py"
 
-rule count_kmers:
+rule dsk:
     input:
-        dir = directory("test/splitFiles/")
+        dir = "test/splitFiles/"
     output:
         dir = directory("test/kmerCounting/dsk")
-    log:
-        "test/dsk_output"
     params:
         nbCores = config["dsk"]["nb-cores"],
         maxMemory = config["dsk"]["max-memory"],
@@ -125,36 +116,28 @@ rule count_kmers:
         solidityKind = config["dsk"]["solidity-kind"],
         solidityCustom = config["dsk"]["solidity-custom"],
         solideKmerOut = config["dsk"]["solid-kmers-out"],
-        histoMax = config["dsk"]["histo-max"],
+        histoMax = config["dsk"]["histo-max"],# with os.scandir("test/splitFiles") as it:
+#     for entry in it:
+#         if not entry.name.startswith('.') and entry.is_file():
+#             print(entry.name)
         histo2D = config["dsk"]["histo2D"],
-        histo = config["dsk"]["histo"],
+        histo = config["dsk"]["histo"]
+    script:
+        "scripts/dsk.py"
 
-    # run:
-    #     import os
-    #     import sys
-    #
-    #     outputDir = os.makedirs(output.dir)
-    #
-    #     with os.scandir(input[0]) as it:
-    #         for entry in it:
-    #             if not entry.name.startswith('.') and entry.is_file():
-    #                 os.system("""lib/dsk/build/bin/dsk
-    #                           -nb-cores {params.nbCores}
-    #                           -max-memory {params.maxMemory}
-    #                           -max-disk {params.maxDisk}
-    #                           -out-compress {params.outCompress}
-    #                           -storage-type {params.storage}
-    #                           -verbose {params.verbose}
-    #                           -kmer-size {params.kmerSize}
-    #                           -abundance-min {params.abundanceMin}
-    #                           -abundance-max {params.abundanceMax} 
-    #                           -abundance-min-threshold {params.abundanceMinThreshold}
-    #                           -solidity-kind {params.solidityKind}
-    #                           -solidity-custom {params.solidityCustom}
-    #                           -solid-kmers-out {params.solideKmerOut}
-    #                           -histo-max {params.histoMax}
-    #                           -histo2D {params.histo2D}
-    #                           -histo {params.histo}
-    #                           -file""" + entry.path + "-out-dir" + outputDir )
+rule kmc:
+    input:
+        dir = "test/splitFiles"
+    output:
+        dir = directory("test/kmerCounting/kmc3")
+    # log:
+    #     "test/kmerCounting/kmc3/log.txt"
+    conda:
+        "envs/kmc3.yaml"
+    params:
+        kmerSize = config["kmc3"]["kmer-size"]
+    script:
+        "scripts/kmc3.py"
 
-    shell: 
+rule gerbil:
+    input: 

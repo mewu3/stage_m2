@@ -4,9 +4,6 @@
 [submodule "lib/dsk"]
 	path = lib/dsk
 	url = https://github.com/GATB/dsk.git
-[submodule "lib/kmc3"]
-	path = lib/kmc3
-	url = https://github.com/refresh-bio/KMC.git
 [submodule "lib/spueakr"]
 	path = lib/spueakr
 	url = https://github.com/splatlab/squeakr.git

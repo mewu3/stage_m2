@@ -1,0 +1,23 @@
+The flag 'directory' used in rule dsk is only valid for outputs, not inputs.
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	mafft
+	1
+Select jobs to execute...
+
+[Thu Feb 25 12:04:37 2021]
+rule mafft:
+    input: test/sequences.fasta
+    output: test/mafft/sequences_aligned.fasta
+    log: test/mafft/mafft.log
+    jobid: 0
+
+[Thu Feb 25 12:05:29 2021]
+Finished job 0.
+1 of 1 steps (100%) done
+Complete log: /databis/wu/stage_m2/.snakemake/log/2021-02-25T120436.802488.snakemake.log

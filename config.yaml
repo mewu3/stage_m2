@@ -1,6 +1,7 @@
 samples: "samples.tsv"
+working-directory: "/databis/wu/stage_m2/test"
 
-### MAFFT parameters ###########################################################
+# multiple sequence aligment ###################################################
 mafft:
     ## choose algorithm
     algorithm: "--auto" # MSSPE parameter, default
@@ -17,24 +18,44 @@ mafft:
     reorder: "off" # default
     treeout: "off" # default
     quiet: "off" # default
-    
-### dsk ########################################################################
-dsk: 
-    nb-cores: 0 # default 
-    max-memory: 5000 # default 
-    max-disk: 0 # default 
-    out-compress: 0 # default 
-    storage-type: "hdf5" # default 
-    verbose: 1 # default 
-    kmer-size: 13 
-    abundance-min: 2 # default 
-    abundance-max: 2147483647 # default 
-    abundance-min-threshold: 2 # default 
-    solidity-kind: "sum" # default 
-    solidity-custom: "" # default 
-    solid-kmers-out: "" # default
-    # histogram parameters 
-    histo-max: 10000 # default 
-    histo2D: 0 # default 
-    histo: 0 # default 
 
+# kmer counting ################################################################
+dsk:
+    nb-cores: 0 # default
+    max-memory: 5000 # default
+    max-disk: 0 # default
+    out-compress: 0 # default
+    storage-type: "hdf5" # default
+    verbose: 1 # default
+    kmer-size: 13 # default 31
+    abundance-min: 2 # default
+    abundance-max: 2147483647 # default
+    abundance-min-threshold: 2 # default
+    solidity-kind: "sum" # default
+    solidity-custom: "" # default
+    solid-kmers-out: "" # default
+    # histogram parameters
+    histo-max: 10000 # default
+    histo2D: 0 # default
+    histo: 0 # default
+
+kmc3:
+    kmer-size: 31
+    ram: 25
+    signature: 9
+    input-format: "fasta"
+    min-kmer-number: 2
+    max-kmer-number: 255
+    max-exclu-kmer: 1e9
+    transformation: "on"
+    ram-only: "off"
+    # binNumber:
+    threads: 8
+    fq-read-threads: 8
+    split-threads: 8
+    second-stage-threads: 8
+    file-name: ""
+    output: "on"
+
+squeakr:
+    kmer-size: 31

@@ -1,0 +1,7 @@
+configfile: "config.yaml"
+working_directory = config["working-directory"]
+
+include: "rules/mafft.smk"
+include: "rules/split_overlap_chunks.smk"
+include: "rules/dsk.smk"
+include: "rules/kmc.smk"

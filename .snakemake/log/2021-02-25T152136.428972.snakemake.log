@@ -1,0 +1,4 @@
+The flag 'directory' used in rule kmc is only valid for outputs, not inputs.
+RuleException in line 153 of /databis/wu/stage_m2/Snakefile:
+Conda environments are only allowed with shell, script, notebook, or wrapper directives (not with run).
+  File "/databis/wu/stage_m2/Snakefile", line 153, in <module>
