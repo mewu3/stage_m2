@@ -1,6 +1,5 @@
 samples: "samples.tsv"
-samples_dir: "test"
-results_dir: "test/results"
+data: "/home/wu/Documents/data"
 
 # multiple sequence aligment ###################################################
 mafft:
