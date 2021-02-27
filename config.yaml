@@ -1,9 +1,13 @@
-samples: samples.tsv
+samples: "samples.tsv"
+samples_dir: "test"
+results_dir: "test/results"
 
 # multiple sequence aligment ###################################################
 mafft:
+    # excution parameters
+    threads: -1 # automatic
     ## choose algorithm
-    algorithm: "--auto" # MSSPE parameter, default
+    algorithm: "--retree 1 --maxiterate 0 " # large dataset
     ## parameters
     op: 1.53 # default
     ep: 0.123 # default
@@ -17,6 +21,10 @@ mafft:
     reorder: "off" # default
     treeout: "off" # default
     quiet: "off" # default
+
+# split overlapping chunks #####################################################
+step: 500
+overlap: 250
 
 # kmer counting ################################################################
 dsk:
