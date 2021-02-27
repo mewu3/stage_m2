@@ -110,22 +110,49 @@ rule split_overlap_chunks: # split MSA fasta file into seperates files #########
     params:
         step = config["step"]
         overlap = config["overlap"]
+    # script:
+        # "scripts/overlap_segs.py"
     run:
+        import sys
         import os
+        import numpy as np
+        import pandas as pd
         from pyfaidx import Fasta
 
-        fasta_file = input[0]
+
+        ### input arguments
+        inputFile = input[0]
         step = params.step
         overlap = params.overlap
+        outputFile = output[0]
 
-        os.makedirs(output.dir)
 
-        seqLength = len(fasta_file[0])
+        ### global variables
+        fasta = Fasta(inputFile)
+        seqLength = len(fasta[0])
 
+        ### split into overlapping segments
         remainder = seqLength % (step-overlap)
         chunkNumber = int(seqLength / (step-overlap))
-        print("The sequences are splitted into {} chunks, and there are {} bp left".format())
-#
+        print("The sequences are splitted into "+str(chunkNumber)+" chunks, and there are "+str(remainder)+" bp left.")
+
+
+        chunks = [[i,i+step] for i in range(0, seqLength, step-overlap)]
+        chunks[-1][1] = len(fasta[0])
+
+
+        for chunk in chunks:
+            # f = open(outputFile+"/"+"forwardChunk"+str(chunk[0])+"-"+str(chunk[1])+".fasta", "w")
+            for id in fasta.keys() :
+                segment = fasta[id][chunk[0]:chunk[1]]
+                forward = str(segment[:50])
+                reverse = str(segment[-50:])
+                print(forward)
+                # f.write(">" + fasta[id].long_name + " |" + str(chunk[0]) + "-" + str(chunk[1])+"\n")
+                # f.write(forward+"\n")
+            # f.close()
+
+
 # rule dsk: # Kmer counting ######################################################
 #     input:
 #         dir = "test/splitFiles/"
