@@ -2,14 +2,9 @@
 import pandas as pd
 
 configfile: "config.yaml"
-# samples = pd.read_table(config["samples"], header=0)
-# samples_dir = config["samples_dir"]
-# results_dir = config["results_dir"]
-samples = ["enterovirus", "coronavirus"]
-datapath = config["data"]
 
-def get_fasta():
-    return "{}/*.fasta".format(datapath)
+sample = list(config["samples"].keys())
+outputdir = config["outputdir"]
 
 if config["mafft"]["fmodel"] == "on":
     config["mafft"]["fmodel"] = "--fmodel"
@@ -41,29 +36,36 @@ if config["mafft"]["quiet"] == "on":
 else:
     config["mafft"]["quiet"] = ""
 
+rule all:
+    input:
+        expand(outputdir+"/duplicate_removed/{sample}.uniq.fasta",
+               sample = sample),
+        # expand("{}/duplicate_removed/{sample}.uniq.fasta".format(outputdir),
+               # sample = ["enterovirus"])
+        expand(outputdir + "/msa/{sample}.msa.fasta",
+               sample = sample)
 
 rule seqkit: # remove duplicate sequences ######################################
     input:
-        # "test/{sample}.fasta"
-        get_fasta()
+        lambda wildcards: config["samples"][wildcards.sample]
     output:
-        "{datapath}/results/duplicate_removed/{sample}.uniq.fasta"
+        # "{}/duplicate_removed/{sample}.uniq.fasta".format(outputdir)
+        outputdir + "/duplicate_removed/{sample}.uniq.fasta"
     conda:
         "envs/seqkit.yaml"
     log:
-        "{datapath}/results/duplicate_removed/seqkit.{sample}.log"
+        # "{}/duplicate_removed/seqkit.{sample}.log".format(outputdir)
+        outputdir + "/duplicate_removed/{sample}.uniq.fasta"
     shell:
-        "cat {input} |seqkit rmdup -s -o {output}"
-
-
+        "cat {input} | seqkit rmdup -s -o {output}"
 
 rule mafft: # multiple sequences alignment #####################################
     input:
-        "test/results/duplicate_removed/{sample}.uniq.fasta"
+        outputdir + "/duplicate_removed/{sample}.uniq.fasta"
     output:
-        "test/results/msa/{sample}.msa.fasta"
+        outputdir + "/msa/{sample}.msa.fasta"
     log:
-        "test/results/msa/mafft.{sample}.log"
+        outputdir + "/msa/mafft.{sample}.log"
     conda:
         "envs/mafft.yaml"
     params:
@@ -100,9 +102,9 @@ rule mafft: # multiple sequences alignment #####################################
 
 rule split_overlap_chunks: # split MSA fasta file into seperates files #########
     input:
-        "test/results/msa/{sample}.msa.fasta"
+        outputdir + "/msa/{sample}.msa.fasta"
     output:
-        dir = directory("test/results/split_files/")
+        putputdir + "/splitFiles/{sample}.split.fasta"
     conda:
         "env/pyfaidx.yaml"
     params:
@@ -123,60 +125,60 @@ rule split_overlap_chunks: # split MSA fasta file into seperates files #########
         remainder = seqLength % (step-overlap)
         chunkNumber = int(seqLength / (step-overlap))
         print("The sequences are splitted into {} chunks, and there are {} bp left".format())
-
-rule dsk:
-    input:
-        dir = "test/splitFiles/"
-    output:
-        dir = directory("test/kmerCounting/dsk")
-    params:
-        nbCores = config["dsk"]["nb-cores"],
-        maxMemory = config["dsk"]["max-memory"],
-        maxDisk = config["dsk"]["max-disk"],
-        outCompress = config["dsk"]["out-compress"],
-        storage = config["dsk"]["storage-type"],
-        verbose = config["dsk"]["verbose"],
-        kmerSize = config["dsk"]["kmer-size"],
-        abundanceMin = config["dsk"]["abundance-min"],
-        abundanceMax = config["dsk"]["abundance-max"],
-        abundanceMinThreshold = config["dsk"]["abundance-min-threshold"],
-        solidityKind = config["dsk"]["solidity-kind"],
-        solidityCustom = config["dsk"]["solidity-custom"],
-        solideKmerOut = config["dsk"]["solid-kmers-out"],
-        histoMax = config["dsk"]["histo-max"],
-        histo2D = config["dsk"]["histo2D"],
-        histo = config["dsk"]["histo"]
-    script:
-        "scripts/dsk.py"
-
-rule dskOutput:
-    input:
-        dir = "test/kmerCounting/dsk"
-    output:
-        dir = directory("test/kmerCounting/dsk_output")
-    script:
-        "scripts/dsk_output.py"
-
-rule kmc:
-    input:
-        dir = "test/splitFiles"
-    output:
-        dir = directory("test/kmerCounting/kmc3")
-    # log:
-    #     "test/kmerCounting/kmc3/log.txt"
-    conda:
-        "envs/kmc3.yaml"
-    params:
-        kmerSize = config["kmc3"]["kmer-size"]
-    script:
-        "scripts/kmc3.py"
-
-rule kmcOutput:
-    input:
-        dir = "test/kmerCounting/kmc3"
-    output:
-        dir = directory("test/kmerCounting/kmc3_output")
-    script:
-        "scripts/kmc3_output.py"
-    script:
-        "scripts/dsk.py"
+#
+# rule dsk: # Kmer counting ######################################################
+#     input:
+#         dir = "test/splitFiles/"
+#     output:
+#         dir = directory("test/kmerCounting/dsk")
+#     params:
+#         nbCores = config["dsk"]["nb-cores"],
+#         maxMemory = config["dsk"]["max-memory"],
+#         maxDisk = config["dsk"]["max-disk"],
+#         outCompress = config["dsk"]["out-compress"],
+#         storage = config["dsk"]["storage-type"],
+#         verbose = config["dsk"]["verbose"],
+#         kmerSize = config["dsk"]["kmer-size"],
+#         abundanceMin = config["dsk"]["abundance-min"],
+#         abundanceMax = config["dsk"]["abundance-max"],
+#         abundanceMinThreshold = config["dsk"]["abundance-min-threshold"],
+#         solidityKind = config["dsk"]["solidity-kind"],
+#         solidityCustom = config["dsk"]["solidity-custom"],
+#         solideKmerOut = config["dsk"]["solid-kmers-out"],
+#         histoMax = config["dsk"]["histo-max"],
+#         histo2D = config["dsk"]["histo2D"],
+#         histo = config["dsk"]["histo"]
+#     script:
+#         "scripts/dsk.py"
+#
+# rule dskOutput:
+#     input:
+#         dir = "test/kmerCounting/dsk"
+#     output:
+#         dir = directory("test/kmerCounting/dsk_output")
+#     script:
+#         "scripts/dsk_output.py"
+#
+# rule kmc: # Kmer counting ######################################################
+#     input:
+#         dir = "test/splitFiles"
+#     output:
+#         dir = directory("test/kmerCounting/kmc3")
+#     # log:
+#     #     "test/kmerCounting/kmc3/log.txt"
+#     conda:
+#         "envs/kmc3.yaml"
+#     params:
+#         kmerSize = config["kmc3"]["kmer-size"]
+#     script:
+#         "scripts/kmc3.py"
+#
+# rule kmcOutput:
+#     input:
+#         dir = "test/kmerCounting/kmc3"
+#     output:
+#         dir = directory("test/kmerCounting/kmc3_output")
+#     script:
+#         "scripts/kmc3_output.py"
+#     script:
+#         "scripts/dsk.py"

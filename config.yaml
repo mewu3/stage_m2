@@ -1,5 +1,7 @@
-samples: "samples.tsv"
-data: "/home/wu/Documents/data"
+outputdir: "/home/wu/Documents/data"
+
+samples:
+    enterovirus: "/home/wu/Documents/data/enterovirus.fasta"
 
 # multiple sequence aligment ###################################################
 mafft:
