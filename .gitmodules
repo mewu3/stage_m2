@@ -1,0 +1,3 @@
+[submodule "lib/dsk"]
+	path = lib/dsk
+	url = https://github.com/GATB/dsk.git
