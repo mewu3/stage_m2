@@ -37,12 +37,29 @@ else:
 
 rule all: # run all rules ######################################################
     input:
-        expand(outputdir+"/duplicate_removed/{sample}.uniq.fasta",
-               sample = sample),
-        expand(outputdir + "/msa/{sample}.msa.fasta",
-               sample = sample),
-        expand(outputdir + "/splitFiles/{sample}.split.fasta",
-               sample = sample)
+        expand(
+            outputdir+"/duplicate_removed/{sample}.uniq.fasta",
+            sample = sample
+        ),
+        expand(
+            outputdir + "/msa/{sample}.msa.fasta",
+               sample = sample
+        ),
+        dynamic(
+            expand(
+                outputdir + "/splitFiles/{sample}.forward.{seg}.fasta",
+                sample = sample,
+                seg="{seg}"
+            )
+        ),
+        dynamic(
+            expand(
+                outputdir + "/splitFiles/{sample}.reverse.{seg}.fasta",
+                sample = sample,
+                seg="{seg}"
+            )
+        )
+
 
 rule seqkit: # remove duplicate sequences ######################################
     input:
@@ -103,7 +120,8 @@ rule split_overlap_chunks: # split MSA fasta file into seperates files #########
     input:
         outputdir + "/msa/{sample}.msa.fasta"
     output:
-        outputdir + "/splitFiles/{sample}.split.fasta"
+        dynamic(outputdir + "/splitFiles/{sample}.forward.{seg}.fasta"),
+        dynamic(outputdir + "/splitFiles/{sample}.reverse.{seg}.fasta")
     params:
         step = config["step"],
         overlap = config["overlap"]
@@ -115,11 +133,9 @@ rule split_overlap_chunks: # split MSA fasta file into seperates files #########
         import pandas as pd
         from pyfaidx import Fasta
 
-
         inputFile = input[0]
         step = params.step
         overlap = params.overlap
-        outputFile = output[0]
 
         fasta = Fasta(inputFile)
         seqLength = len(fasta[0])
@@ -135,21 +151,23 @@ rule split_overlap_chunks: # split MSA fasta file into seperates files #########
         chunks = [[i,i+newStep] for i in range(0, seqLength, newStep-overlap)]
         chunks[-1][1] = len(fasta[0])
 
-        f = open(outputFile, "w")
-
         for chunk in chunks:
+
+            seg = str(chunk[0])+"-"+str(chunk[1])
+
+            f1 = open(outputdir + "/splitFiles/"+wildcards.sample+".forward.{}.fasta".format(seg), "w")
+            f2 = open(outputdir + "/splitFiles/"+wildcards.sample+".reverse.{}.fasta".format(seg), "w")
+
             for id in fasta.keys() :
                 segment = fasta[id][chunk[0]:chunk[1]]
                 forward = str(segment[:50])
                 reverse = str(segment[-50:])
+                f1.write("> {} |{}-{} \n {} \n".format(fasta[id].long_name, str(chunk[0]), str(chunk[1]), forward))
+                f2.write("> {} |{}-{} \n {} \n".format(fasta[id].long_name, str(chunk[0]), str(chunk[1]), reverse))
 
-                # print("> {} |{}-{}\n".format(fasta[id].long_name, str(chunk[0]), str(chunk[1])))
-                # print(forward)
-                # print(reverse)
+            f1.close()
+            f2.close()
 
-                f.write("> {} |{}-{} \n {} \n".format(fasta[id].long_name, str(chunk[0]), str(chunk[1]), forward))
-
-        f.close()
 
 
 # rule dsk: # Kmer counting ######################################################
