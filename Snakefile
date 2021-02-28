@@ -1,5 +1,4 @@
 #!/usr/bin/env python3.8
-import pandas as pd
 
 configfile: "config.yaml"
 
@@ -36,13 +35,13 @@ if config["mafft"]["quiet"] == "on":
 else:
     config["mafft"]["quiet"] = ""
 
-rule all:
+rule all: # run all rules ######################################################
     input:
         expand(outputdir+"/duplicate_removed/{sample}.uniq.fasta",
                sample = sample),
-        # expand("{}/duplicate_removed/{sample}.uniq.fasta".format(outputdir),
-               # sample = ["enterovirus"])
         expand(outputdir + "/msa/{sample}.msa.fasta",
+               sample = sample),
+        expand(outputdir + "/splitFiles/{sample}.split.fasta",
                sample = sample)
 
 rule seqkit: # remove duplicate sequences ######################################
@@ -104,15 +103,12 @@ rule split_overlap_chunks: # split MSA fasta file into seperates files #########
     input:
         outputdir + "/msa/{sample}.msa.fasta"
     output:
-        putputdir + "/splitFiles/{sample}.split.fasta"
-    conda:
-        "env/pyfaidx.yaml"
+        outputdir + "/splitFiles/{sample}.split.fasta"
     params:
-        step = config["step"]
+        step = config["step"],
         overlap = config["overlap"]
-    # script:
-        # "scripts/overlap_segs.py"
     run:
+        #!/usr/bin/env python3.8
         import sys
         import os
         import numpy as np
@@ -120,37 +116,40 @@ rule split_overlap_chunks: # split MSA fasta file into seperates files #########
         from pyfaidx import Fasta
 
 
-        ### input arguments
         inputFile = input[0]
         step = params.step
         overlap = params.overlap
         outputFile = output[0]
 
-
-        ### global variables
         fasta = Fasta(inputFile)
         seqLength = len(fasta[0])
 
-        ### split into overlapping segments
         remainder = seqLength % (step-overlap)
         chunkNumber = int(seqLength / (step-overlap))
         print("The sequences are splitted into "+str(chunkNumber)+" chunks, and there are "+str(remainder)+" bp left.")
 
+        if remainder <= step/2: # primux fasta_tile_overlap.pl
+            newStep = int(remainder/chunkNumber) + 1 + step
+            print("Changing step size from {} to {} so there will be no remainder.".format(step, newStep))
 
-        chunks = [[i,i+step] for i in range(0, seqLength, step-overlap)]
+        chunks = [[i,i+newStep] for i in range(0, seqLength, newStep-overlap)]
         chunks[-1][1] = len(fasta[0])
 
+        f = open(outputFile, "w")
 
         for chunk in chunks:
-            # f = open(outputFile+"/"+"forwardChunk"+str(chunk[0])+"-"+str(chunk[1])+".fasta", "w")
             for id in fasta.keys() :
                 segment = fasta[id][chunk[0]:chunk[1]]
                 forward = str(segment[:50])
                 reverse = str(segment[-50:])
-                print(forward)
-                # f.write(">" + fasta[id].long_name + " |" + str(chunk[0]) + "-" + str(chunk[1])+"\n")
-                # f.write(forward+"\n")
-            # f.close()
+
+                # print("> {} |{}-{}\n".format(fasta[id].long_name, str(chunk[0]), str(chunk[1])))
+                # print(forward)
+                # print(reverse)
+
+                f.write("> {} |{}-{} \n {} \n".format(fasta[id].long_name, str(chunk[0]), str(chunk[1]), forward))
+
+        f.close()
 
 
 # rule dsk: # Kmer counting ######################################################

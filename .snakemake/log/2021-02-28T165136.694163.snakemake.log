@@ -1,0 +1,3 @@
+RuleException in line 115 of /home/wu/Documents/stage_m2/Snakefile:
+Conda environments are only allowed with shell, script, notebook, or wrapper directives (not with run).
+  File "/home/wu/Documents/stage_m2/Snakefile", line 115, in <module>
