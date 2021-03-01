@@ -1,10 +1,10 @@
 #!/usr/bin/env python3.8
-import glob 
+import glob
 
 configfile: "config.yaml"
 
-sample = list(config["samples"].keys())
-outputdir = config["outputdir"]
+samples = list(config["samples"].keys())
+datadir = config["datadir"]
 
 if config["mafft"]["fmodel"] == "on":
     config["mafft"]["fmodel"] = "--fmodel"
@@ -36,60 +36,71 @@ if config["mafft"]["quiet"] == "on":
 else:
     config["mafft"]["quiet"] = ""
 
+def track_filename(samples):
+    for sample in samples:
+        for seg in glob_wildcards("{}/splitFiles/{sample}.forward.{{seg}}.fasta".format(datadir,sample=sample)).seg:
+            yield "{}/kmerCounting/{sample}.forward.{seg}.fasta".format(datadir, sample=sample, seg=seg)
+
+
 rule all: # run all rules ######################################################
     input:
+        # remove duplicate sequences from input fasta
         expand(
-            outputdir+"/duplicate_removed/{sample}.uniq.fasta",
-            sample = sample
+            datadir+"/duplicate_removed/{sample}.uniq.fasta",
+            sample = samples
         ),
+        # generate MSA files in format fasta
         expand(
-            outputdir + "/msa/{sample}.msa.fasta",
-               sample = sample
+            datadir + "/msa/{sample}.msa.fasta",
+               sample = samples
         ),
+        # generate split files
         dynamic(
             expand(
-                outputdir + "/splitFiles/{sample}.forward.{seg}.fasta",
-                sample = sample,
+                datadir + "/splitFiles/{sample}.forward.{seg}.fasta",
+                sample = samples,
                 seg="{seg}"
             )
         ),
         dynamic(
             expand(
-                outputdir + "/splitFiles/{sample}.reverse.{seg}.fasta",
-                sample = sample,
+                datadir + "/splitFiles/{sample}.reverse.{seg}.fasta",
+                sample = samples,
                 seg="{seg}"
             )
         ),
-        dynamic(
-            expand(
-                outputdir + "/kmerCounting/{sample}.forward.{seg}.fasta",
-                sample = sample,
-                seg= "{seg}"
-            )
-        )
+        # kmer counting
+        # dynamic(
+        #     expand(
+        #         datadir + "/kmerCounting/{sample}.forward.{seg}.fasta",
+        #         sample = samples,
+        #         seg= "{seg}"
+        #     )
+        # )
+        list(track_filename(samples))
 
 
 rule seqkit: # remove duplicate sequences ######################################
     input:
         lambda wildcards: config["samples"][wildcards.sample]
     output:
-        # "{}/duplicate_removed/{sample}.uniq.fasta".format(outputdir)
-        outputdir + "/duplicate_removed/{sample}.uniq.fasta"
+        # "{}/duplicate_removed/{sample}.uniq.fasta".format(datadir)
+        datadir + "/duplicate_removed/{sample}.uniq.fasta"
     conda:
         "envs/seqkit.yaml"
     log:
-        # "{}/duplicate_removed/seqkit.{sample}.log".format(outputdir)
-        outputdir + "/duplicate_removed/{sample}.uniq.fasta"
+        # "{}/duplicate_removed/seqkit.{sample}.log".format(datadir)
+        datadir + "/duplicate_removed/{sample}.uniq.fasta"
     shell:
         "cat {input} | seqkit rmdup -s -o {output}"
 
 rule mafft: # multiple sequences alignment #####################################
     input:
-        outputdir + "/duplicate_removed/{sample}.uniq.fasta"
+        datadir + "/duplicate_removed/{sample}.uniq.fasta"
     output:
-        outputdir + "/msa/{sample}.msa.fasta"
+        datadir + "/msa/{sample}.msa.fasta"
     log:
-        outputdir + "/msa/mafft.{sample}.log"
+        datadir + "/msa/mafft.{sample}.log"
     conda:
         "envs/mafft.yaml"
     params:
@@ -125,10 +136,10 @@ rule mafft: # multiple sequences alignment #####################################
 
 rule split_overlap_chunks: # split MSA fasta file into seperates files #########
     input:
-        outputdir + "/msa/{sample}.msa.fasta"
+        datadir + "/msa/{sample}.msa.fasta"
     output:
-        dynamic(outputdir + "/splitFiles/{sample}.forward.{seg}.fasta"),
-        dynamic(outputdir + "/splitFiles/{sample}.reverse.{seg}.fasta")
+        dynamic(datadir + "/splitFiles/{sample}.forward.{seg}.fasta"),
+        dynamic(datadir + "/splitFiles/{sample}.reverse.{seg}.fasta")
     params:
         step = config["step"],
         overlap = config["overlap"]
@@ -158,8 +169,8 @@ rule split_overlap_chunks: # split MSA fasta file into seperates files #########
 
             seg = str(chunk[0])+"-"+str(chunk[1])
 
-            f1 = open(outputdir + "/splitFiles/"+wildcards.sample+".forward.{}.fasta".format(seg), "w")
-            f2 = open(outputdir + "/splitFiles/"+wildcards.sample+".reverse.{}.fasta".format(seg), "w")
+            f1 = open(datadir + "/splitFiles/"+wildcards.sample+".forward.{}.fasta".format(seg), "w")
+            f2 = open(datadir + "/splitFiles/"+wildcards.sample+".reverse.{}.fasta".format(seg), "w")
 
             for id in fasta.keys() :
                 segment = fasta[id][chunk[0]:chunk[1]]
@@ -171,28 +182,11 @@ rule split_overlap_chunks: # split MSA fasta file into seperates files #########
             f1.close()
             f2.close()
 
-
-def track_filename(samples):
-    filename = [str(x) for x in ]
-
-
 rule dsk: # Kmer counting ######################################################
     input:
-        dynamic(
-            expand(
-                outputdir + "/splitFiles/{sample}.forward.{seg}.fasta",
-                sample = sample,
-                seg="{seg}"
-            )
-        )
+        "{}/splitFiles/{}.forward.{seg}.fasta".format(datadir, {sample})
     output:
-        dynamic(
-            expand(
-                outputdir + "/kmerCounting/{sample}.forward.{seg}.fasta",
-                sample = sample,
-                seg="{seg}"
-            )
-        )
+        "{}/kmerCounting/{}.forward.{seg}.fasta".format(datadir, sample=samples, seg=seg)
     params:
         nbCores = config["dsk"]["nb-cores"],
         maxMemory = config["dsk"]["max-memory"],
