@@ -6,45 +6,44 @@ configfile: "config.yaml"
 samples = list(config["samples"].keys())
 datadir = config["datadir"]
 
-if config["mafft"]["fmodel"] == "on":
-    config["mafft"]["fmodel"] = "--fmodel"
-else:
-    config["mafft"]["fmodel"] = ""
+def fetchConfigParameters():
+    if config["mafft"]["fmodel"] == "on":
+        config["mafft"]["fmodel"] = "--fmodel"
+    else:
+        config["mafft"]["fmodel"] = ""
 
-if config["mafft"]["clustalout"] == "on":
-    config["mafft"]["clustalout"] = "--clustalout"
-else:
-    config["mafft"]["clustalout"] = ""
+    if config["mafft"]["clustalout"] == "on":
+        config["mafft"]["clustalout"] = "--clustalout"
+    else:
+        config["mafft"]["clustalout"] = ""
 
-if config["mafft"]["inputorder"] == "on":
-    config["mafft"]["inputorder"] = "--inputorder"
-else :
-    config["mafft"]["inputorder"] = ""
+    if config["mafft"]["inputorder"] == "on":
+        config["mafft"]["inputorder"] = "--inputorder"
+    else :
+        config["mafft"]["inputorder"] = ""
 
-if config["mafft"]["reorder"] == "on":
-    config["mafft"]["reorder"] = "--reorder"
-else:
-    config["mafft"]["reorder"] = ""
+    if config["mafft"]["reorder"] == "on":
+        config["mafft"]["reorder"] = "--reorder"
+    else:
+        config["mafft"]["reorder"] = ""
 
-if config["mafft"]["treeout"] == "on":
-    config["mafft"]["treeout"] = "--treeout"
-else :
-    config["mafft"]["treeout"] = ""
+    if config["mafft"]["treeout"] == "on":
+        config["mafft"]["treeout"] = "--treeout"
+    else :
+        config["mafft"]["treeout"] = ""
 
-if config["mafft"]["quiet"] == "on":
-    config["mafft"]["quiet"] = "--quiet"
-else:
-    config["mafft"]["quiet"] = ""
+    if config["mafft"]["quiet"] == "on":
+        config["mafft"]["quiet"] = "--quiet"
+    else:
+        config["mafft"]["quiet"] = ""
 
-def track_filename(samples):
-    for sample in samples:
-        for seg in glob_wildcards("{}/splitFiles/{sample}.forward.{{seg}}.fasta".format(datadir,sample=sample)).seg:
-            yield "{}/kmerCounting/{sample}.forward.{seg}.fasta".format(datadir, sample=sample, seg=seg)
+fetchConfigParameters()
 
+kmerCounting_prefix = [os.path.splitext(f)[0] for f in os.listdir(datadir + "/splitFiles") if f.endswith(".fasta")]
 
 rule all: # run all rules ######################################################
     input:
-        # remove duplicate sequences from input fasta
+        # remove duplicate sequences from input fasta
         expand(
             datadir+"/duplicate_removed/{sample}.uniq.fasta",
             sample = samples
@@ -54,7 +53,7 @@ rule all: # run all rules ######################################################
             datadir + "/msa/{sample}.msa.fasta",
                sample = samples
         ),
-        # generate split files
+        # generate split files
         dynamic(
             expand(
                 datadir + "/splitFiles/{sample}.forward.{seg}.fasta",
@@ -69,16 +68,10 @@ rule all: # run all rules ######################################################
                 seg="{seg}"
             )
         ),
-        # kmer counting
-        # dynamic(
-        #     expand(
-        #         datadir + "/kmerCounting/{sample}.forward.{seg}.fasta",
-        #         sample = samples,
-        #         seg= "{seg}"
-        #     )
-        # )
-        list(track_filename(samples))
-
+        expand(
+            datadir + "/kmerCounting/{prefix}.h5",
+            prefix = kmerCounting_prefix
+        )
 
 rule seqkit: # remove duplicate sequences ######################################
     input:
@@ -184,9 +177,9 @@ rule split_overlap_chunks: # split MSA fasta file into seperates files #########
 
 rule dsk: # Kmer counting ######################################################
     input:
-        "{}/splitFiles/{}.forward.{seg}.fasta".format(datadir, {sample})
+        datadir + "/splitFiles/{prefix}.fasta"
     output:
-        "{}/kmerCounting/{}.forward.{seg}.fasta".format(datadir, sample=samples, seg=seg)
+        datadir + "/kmerCounting/{prefix}.h5"
     params:
         nbCores = config["dsk"]["nb-cores"],
         maxMemory = config["dsk"]["max-memory"],
@@ -205,7 +198,15 @@ rule dsk: # Kmer counting ######################################################
         histo2D = config["dsk"]["histo2D"],
         histo = config["dsk"]["histo"]
     shell:
-        "lib/dsk/build/bin/dsk -file {input} -out {output}"
+        "lib/dsk/build/bin/dsk \
+        -nb-cores {params.nbCores} \
+        -max-memory {params.maxMemory} \
+        -max-disk {params.maxDisk} \
+        -out-compress {params.outCompress} \
+        -storage {params.storage} \
+        -verbose {params.verbose} \
+        -kmer-size {params.kmerSize} \
+        -file {input} -out {output}"
 
 # rule dskOutput:
 #     input:

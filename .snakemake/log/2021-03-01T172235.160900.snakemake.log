@@ -1,0 +1,65 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	mafft
+	1	seqkit
+	38	split_overlap_chunks
+	1	test
+	42
+Select jobs to execute...
+
+[Mon Mar  1 17:22:36 2021]
+rule seqkit:
+    input: /datater/wu/data/enterovirus.fasta
+    output: /datater/wu/data/duplicate_removed/enterovirus.uniq.fasta
+    log: /datater/wu/data/duplicate_removed/enterovirus.uniq.fasta
+    jobid: 1
+    wildcards: sample=enterovirus
+
+[Mon Mar  1 17:22:36 2021]
+Finished job 1.
+1 of 42 steps (2%) done
+Select jobs to execute...
+
+[Mon Mar  1 17:22:36 2021]
+rule mafft:
+    input: /datater/wu/data/duplicate_removed/enterovirus.uniq.fasta
+    output: /datater/wu/data/msa/enterovirus.msa.fasta
+    log: /datater/wu/data/msa/mafft.enterovirus.log
+    jobid: 2
+    wildcards: sample=enterovirus
+
+[Mon Mar  1 17:24:24 2021]
+Finished job 2.
+2 of 42 steps (5%) done
+Select jobs to execute...
+
+[Mon Mar  1 17:24:24 2021]
+rule split_overlap_chunks:
+    input: /datater/wu/data/msa/enterovirus.msa.fasta
+    output: /datater/wu/data/splitFiles/enterovirus.forward.6120-6625.fasta (dynamic), /datater/wu/data/splitFiles/enterovirus.reverse.6120-6625.fasta (dynamic)
+    jobid: 13
+    wildcards: sample=enterovirus, seg=6120-6625
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Mon Mar  1 17:24:24 2021]
+rule split_overlap_chunks:
+    input: /datater/wu/data/msa/enterovirus.msa.fasta
+    output: /datater/wu/data/splitFiles/enterovirus.forward.3060-3565.fasta (dynamic), /datater/wu/data/splitFiles/enterovirus.reverse.3060-3565.fasta (dynamic)
+    jobid: 37
+    wildcards: sample=enterovirus, seg=3060-3565
+
+Subsequent jobs will be added dynamically depending on the output of this job
+Dynamically updating jobs
+[Mon Mar  1 17:24:31 2021]
+Finished job 13.
+3 of 41 steps (7%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-01T172235.160900.snakemake.log

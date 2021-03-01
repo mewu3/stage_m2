@@ -1,0 +1,3 @@
+NameError in line 77 of /datater/wu/stage_m2/Snakefile:
+name 'sample' is not defined
+  File "/datater/wu/stage_m2/Snakefile", line 77, in <module>

@@ -2,13 +2,14 @@ datadir: "/datater/wu/data"
 
 samples:
     enterovirus: "/datater/wu/data/enterovirus.fasta"
+    # coronavirus: "/datater/wu/data/coronavirus.fasta"
 
 # multiple sequence aligment ###################################################
 mafft:
     # excution parameters
     threads: -1 # automatic
     ## choose algorithm
-    algorithm: "--retree 1 --maxiterate 0 " # large dataset
+    algorithm: "-auto"
     ## parameters
     op: 1.53 # default
     ep: 0.123 # default
