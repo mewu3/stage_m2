@@ -1,0 +1,3 @@
+SyntaxError in line 15 of /home/meijun/Documents/stage_m2/rules/remove-duplicate-seq.smk:
+invalid syntax
+  File "/home/meijun/Documents/stage_m2/Snakefile", line 11, in <module>

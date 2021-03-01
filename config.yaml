@@ -1,7 +1,7 @@
-outputdir: "/home/wu/Documents/data"
+outputdir: "/home/meijun/Documents/data"
 
 samples:
-    enterovirus: "/home/wu/Documents/data/enterovirus.fasta"
+    enterovirus: "/home/meijun/Documents/data/enterovirus.fasta"
 
 # multiple sequence aligment ###################################################
 mafft:

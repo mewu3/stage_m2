@@ -1,0 +1,3 @@
+SyntaxError in line 22 of /home/meijun/Documents/stage_m2/rules/split_overlap_chunks.smk:
+invalid syntax
+  File "/home/meijun/Documents/stage_m2/Snakefile", line 11, in <module>

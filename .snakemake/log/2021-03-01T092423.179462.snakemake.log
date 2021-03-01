@@ -1,0 +1,39 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	mafft
+	1	split_overlap_chunks
+	3
+Select jobs to execute...
+
+[Mon Mar  1 09:24:23 2021]
+rule mafft:
+    input: /home/meijun/Documents/data/duplicate_removed/enterovirus.uniq.fasta
+    output: /home/meijun/Documents/data/msa/enterovirus.msa.fasta
+    log: /home/meijun/Documents/data/msa/mafft.enterovirus.log
+    jobid: 2
+    wildcards: sample=enterovirus
+
+[Mon Mar  1 09:27:32 2021]
+Finished job 2.
+1 of 3 steps (33%) done
+Select jobs to execute...
+
+[Mon Mar  1 09:27:32 2021]
+rule split_overlap_chunks:
+    input: /home/meijun/Documents/data/msa/enterovirus.msa.fasta
+    output: /home/meijun/Documents/data/splitFiles/enterovirus.forward.{*}.fasta (dynamic), /home/meijun/Documents/data/splitFiles/enterovirus.reverse.{*}.fasta (dynamic)
+    jobid: 3
+    wildcards: sample=enterovirus
+
+Subsequent jobs will be added dynamically depending on the output of this job
+Dynamically updating jobs
+[Mon Mar  1 09:27:42 2021]
+Finished job 3.
+2 of 1 steps (200%) done
+Complete log: /home/meijun/Documents/stage_m2/.snakemake/log/2021-03-01T092423.179462.snakemake.log

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3.8
+import glob 
 
 configfile: "config.yaml"
 
@@ -58,6 +59,13 @@ rule all: # run all rules ######################################################
                 sample = sample,
                 seg="{seg}"
             )
+        ),
+        dynamic(
+            expand(
+                outputdir + "/kmerCounting/{sample}.forward.{seg}.fasta",
+                sample = sample,
+                seg= "{seg}"
+            )
         )
 
 
@@ -99,9 +107,8 @@ rule mafft: # multiple sequences alignment #####################################
         treeout = config["mafft"]["treeout"],
         quiet = config["mafft"]["quiet"]
     shell:
-        "mafft \
+        "mafft {params.algorithm} \
         --thread {params.threads} \
-        {params.algorithm} \
         --op {params.op} \
         --ep {params.ep} \
         --bl {params.bl} \
@@ -127,10 +134,6 @@ rule split_overlap_chunks: # split MSA fasta file into seperates files #########
         overlap = config["overlap"]
     run:
         #!/usr/bin/env python3.8
-        import sys
-        import os
-        import numpy as np
-        import pandas as pd
         from pyfaidx import Fasta
 
         inputFile = input[0]
@@ -169,32 +172,47 @@ rule split_overlap_chunks: # split MSA fasta file into seperates files #########
             f2.close()
 
 
+def track_filename(samples):
+    filename = [str(x) for x in ]
 
-# rule dsk: # Kmer counting ######################################################
-#     input:
-#         dir = "test/splitFiles/"
-#     output:
-#         dir = directory("test/kmerCounting/dsk")
-#     params:
-#         nbCores = config["dsk"]["nb-cores"],
-#         maxMemory = config["dsk"]["max-memory"],
-#         maxDisk = config["dsk"]["max-disk"],
-#         outCompress = config["dsk"]["out-compress"],
-#         storage = config["dsk"]["storage-type"],
-#         verbose = config["dsk"]["verbose"],
-#         kmerSize = config["dsk"]["kmer-size"],
-#         abundanceMin = config["dsk"]["abundance-min"],
-#         abundanceMax = config["dsk"]["abundance-max"],
-#         abundanceMinThreshold = config["dsk"]["abundance-min-threshold"],
-#         solidityKind = config["dsk"]["solidity-kind"],
-#         solidityCustom = config["dsk"]["solidity-custom"],
-#         solideKmerOut = config["dsk"]["solid-kmers-out"],
-#         histoMax = config["dsk"]["histo-max"],
-#         histo2D = config["dsk"]["histo2D"],
-#         histo = config["dsk"]["histo"]
-#     script:
-#         "scripts/dsk.py"
-#
+
+rule dsk: # Kmer counting ######################################################
+    input:
+        dynamic(
+            expand(
+                outputdir + "/splitFiles/{sample}.forward.{seg}.fasta",
+                sample = sample,
+                seg="{seg}"
+            )
+        )
+    output:
+        dynamic(
+            expand(
+                outputdir + "/kmerCounting/{sample}.forward.{seg}.fasta",
+                sample = sample,
+                seg="{seg}"
+            )
+        )
+    params:
+        nbCores = config["dsk"]["nb-cores"],
+        maxMemory = config["dsk"]["max-memory"],
+        maxDisk = config["dsk"]["max-disk"],
+        outCompress = config["dsk"]["out-compress"],
+        storage = config["dsk"]["storage-type"],
+        verbose = config["dsk"]["verbose"],
+        kmerSize = config["dsk"]["kmer-size"],
+        abundanceMin = config["dsk"]["abundance-min"],
+        abundanceMax = config["dsk"]["abundance-max"],
+        abundanceMinThreshold = config["dsk"]["abundance-min-threshold"],
+        solidityKind = config["dsk"]["solidity-kind"],
+        solidityCustom = config["dsk"]["solidity-custom"],
+        solideKmerOut = config["dsk"]["solid-kmers-out"],
+        histoMax = config["dsk"]["histo-max"],
+        histo2D = config["dsk"]["histo2D"],
+        histo = config["dsk"]["histo"]
+    shell:
+        "lib/dsk/build/bin/dsk -file {input} -out {output}"
+
 # rule dskOutput:
 #     input:
 #         dir = "test/kmerCounting/dsk"
@@ -202,7 +220,7 @@ rule split_overlap_chunks: # split MSA fasta file into seperates files #########
 #         dir = directory("test/kmerCounting/dsk_output")
 #     script:
 #         "scripts/dsk_output.py"
-#
+# #
 # rule kmc: # Kmer counting ######################################################
 #     input:
 #         dir = "test/splitFiles"

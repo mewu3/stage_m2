@@ -1,0 +1,2 @@
+SyntaxError in line 6 of /home/meijun/Documents/stage_m2/Snakefile:
+Colon expected after keyword workdir. (Snakefile, line 6)
