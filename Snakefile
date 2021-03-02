@@ -68,14 +68,27 @@ rule all: # run all rules ######################################################
                 seg="{seg}"
             )
         ),
+        # kmerCounting
         expand(
-            datadir + "/kmerCounting/{prefix}.h5",
-            prefix = kmerCounting_prefix
+            datadir + "/kmerCounting/dsk/{prefix}.h5",
+            # prefix = kmerCounting_prefix
         ),
         expand(
-            datadir + "/kmerCounting/{prefix}.fasta",
-            prefix = kmerCounting_prefix
+            datadir + "/kmerCounting/dsk/{prefix}.txt",
+            # prefix = kmerCounting_prefix
         ),
+        expand(
+            datadir + "/kmerCounting/kmc/{prefix}.kmc_suf",
+            # prefix = kmerCounting_prefix,
+        ),
+        expand(
+            datadir + "/kmerCounting/kmc/{prefix}.kmc_pre",
+            # prefix = kmerCounting_prefix,
+        ),
+        expand(
+            datadir + "/kmerCounting/kmc/{prefix}.txt",
+            # prefix = kmerCounting_prefix
+        )
 
 rule seqkit: # remove duplicate sequences ######################################
     input:
@@ -183,7 +196,7 @@ rule dsk: # Kmer counting ######################################################
     input:
         datadir + "/splitFiles/{prefix}.fasta"
     output:
-        datadir + "/kmerCounting/{prefix}.h5"
+        datadir + "/kmerCounting/dsk/{prefix}.h5"
     params:
         nbCores = config["dsk"]["nb-cores"],
         maxMemory = config["dsk"]["max-memory"],
@@ -211,32 +224,34 @@ rule dsk: # Kmer counting ######################################################
 
 rule dskOutput:
     input:
-        datadir + "/kmerCounting/{prefix}.h5"
+        datadir + "/kmerCounting/dsk/{prefix}.h5"
     output:
-        datadir + "/kmerCounting/{prefix}.fasta"
+        datadir + "/kmerCounting/dsk/{prefix}.txt"
     shell:
         "lib/dsk/build/bin/dsk2ascii -file {input} -out {output}"
 
-# rule kmc: # Kmer counting ######################################################
-#     input:
-#         dir = "test/splitFiles"
-#     output:
-#         dir = directory("test/kmerCounting/kmc3")
-#     # log:
-#     #     "test/kmerCounting/kmc3/log.txt"
-#     conda:
-#         "envs/kmc3.yaml"
-#     params:
-#         kmerSize = config["kmc3"]["kmer-size"]
-#     script:
-#         "scripts/kmc3.py"
-#
-# rule kmcOutput:
-#     input:
-#         dir = "test/kmerCounting/kmc3"
-#     output:
-#         dir = directory("test/kmerCounting/kmc3_output")
-#     script:
-#         "scripts/kmc3_output.py"
-#     script:
-#         "scripts/dsk.py"
+rule kmc: # Kmer counting ######################################################
+    input:
+        datadir + "/splitFiles/{prefix}.fasta"
+    output:
+        datadir + "/kmerCounting/kmc/{prefix}.kmc_pre",
+        datadir + "/kmerCounting/kmc/{prefix}.kmc_suf"
+    conda:
+        "envs/kmc3.yaml"
+    params:
+        prefix = datadir + "/kmerCounting/kmc/{prefix}",
+        outdir = datadir + "/kmerCounting/kmc",
+        kmerSize = config["kmc3"]["kmer-size"]
+    shell:
+        "kmc -k{params.kmerSize} -fa {input} {params.prefix} {params.outdir}"
+
+rule kmcOutput:
+    input:
+        datadir + "/kmerCounting/kmc/{prefix}.kmc_pre",
+        datadir + "/kmerCounting/kmc/{prefix}.kmc_suf"
+    output:
+        datadir + "/kmerCounting/kmc/{prefix}.txt"
+    params:
+        prefix = datadir + "/kmerCounting/kmc/{prefix}"
+    shell:
+        "kmc_dump {params.prefix} {output}"
