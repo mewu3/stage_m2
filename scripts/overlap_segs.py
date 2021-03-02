@@ -1,39 +1,37 @@
 #!/usr/bin/env python3.8
-import sys
-import os
-import numpy as np
-import pandas as pd
 from pyfaidx import Fasta
 
-
-### input arguments
-inputFile = snakemake.input
+inputFile = snakemake.input[0]
 step = snakemake.params.step
 overlap = snakemake.params.overlap
-outputFile = snakemake.output
 
-
-### global variables
 fasta = Fasta(inputFile)
 seqLength = len(fasta[0])
 
-### split into overlapping segments
 remainder = seqLength % (step-overlap)
 chunkNumber = int(seqLength / (step-overlap))
 print("The sequences are splitted into "+str(chunkNumber)+" chunks, and there are "+str(remainder)+" bp left.")
 
+if remainder <= step/2: # primux fasta_tile_overlap.pl
+    newStep = int(remainder/chunkNumber) + 1 + step
+    print("Changing step size from {} to {} so there will be no remainder.".format(step, newStep))
 
-chunks = [[i,i+step] for i in range(0, seqLength, step-overlap)]
+chunks = [[i,i+newStep] for i in range(0, seqLength, newStep-overlap)]
 chunks[-1][1] = len(fasta[0])
 
-
 for chunk in chunks:
-    # f = open(outputFile+"/"+"forwardChunk"+str(chunk[0])+"-"+str(chunk[1])+".fasta", "w")
+
+    seg = str(chunk[0])+"-"+str(chunk[1])
+
+    f1 = open(datadir + "/splitFiles/"+snakemake.wildcards.sample+".forward.{}.fasta".format(seg), "w")
+    f2 = open(datadir + "/splitFiles/"+snakemake.wildcards.sample+".reverse.{}.fasta".format(seg), "w")
+
     for id in fasta.keys() :
         segment = fasta[id][chunk[0]:chunk[1]]
         forward = str(segment[:50])
         reverse = str(segment[-50:])
-        print(forward)
-        # f.write(">" + fasta[id].long_name + " |" + str(chunk[0]) + "-" + str(chunk[1])+"\n")
-        # f.write(forward+"\n")
-    # f.close()
+        f1.write("> {} |{}-{} \n {} \n".format(fasta[id].long_name, str(chunk[0]), str(chunk[1]), forward))
+        f2.write("> {} |{}-{} \n {} \n".format(fasta[id].long_name, str(chunk[0]), str(chunk[1]), reverse))
+
+    f1.close()
+    f2.close()

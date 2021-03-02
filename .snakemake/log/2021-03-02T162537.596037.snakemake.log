@@ -1,0 +1,25 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	split_overlap_chunks
+	2
+Select jobs to execute...
+
+[Tue Mar  2 16:25:38 2021]
+rule split_overlap_chunks:
+    input: /datater/wu/data/msa/enterovirus.msa.fasta
+    output: /datater/wu/data/splitFiles/enterovirus.forward.{*}.fasta (dynamic), /datater/wu/data/splitFiles/enterovirus.reverse.{*}.fasta (dynamic)
+    jobid: 3
+    wildcards: sample=enterovirus
+
+Subsequent jobs will be added dynamically depending on the output of this job
+Dynamically updating jobs
+[Tue Mar  2 16:25:44 2021]
+Finished job 3.
+1 of 1 steps (100%) done
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-02T162537.596037.snakemake.log

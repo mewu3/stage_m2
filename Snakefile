@@ -41,6 +41,8 @@ fetchConfigParameters()
 
 kmerCounting_prefix = [os.path.splitext(f)[0] for f in os.listdir(datadir + "/splitFiles") if f.endswith(".fasta")]
 
+
+
 rule all: # run all rules ######################################################
     input:
         # remove duplicate sequences from input fasta
@@ -68,26 +70,31 @@ rule all: # run all rules ######################################################
                 seg="{seg}"
             )
         ),
-        # kmerCounting
+        # kmerCounting with dsk
         expand(
             datadir + "/kmerCounting/dsk/{prefix}.h5",
-            # prefix = kmerCounting_prefix
+            prefix = kmerCounting_prefix
         ),
         expand(
             datadir + "/kmerCounting/dsk/{prefix}.txt",
-            # prefix = kmerCounting_prefix
+            prefix = kmerCounting_prefix
         ),
+        # expand(
+        #     datadir + "/kmerCounting/dsk/{prefix}_sort.txt",
+        #     prefix = kmerCounting_prefix
+        # ),
+        # kmerCounting with kmc3
         expand(
             datadir + "/kmerCounting/kmc/{prefix}.kmc_suf",
-            # prefix = kmerCounting_prefix,
+            prefix = kmerCounting_prefix,
         ),
         expand(
             datadir + "/kmerCounting/kmc/{prefix}.kmc_pre",
-            # prefix = kmerCounting_prefix,
+            prefix = kmerCounting_prefix,
         ),
         expand(
             datadir + "/kmerCounting/kmc/{prefix}.txt",
-            # prefix = kmerCounting_prefix
+            prefix = kmerCounting_prefix
         )
 
 rule seqkit: # remove duplicate sequences ######################################
@@ -229,6 +236,20 @@ rule dskOutput:
         datadir + "/kmerCounting/dsk/{prefix}.txt"
     shell:
         "lib/dsk/build/bin/dsk2ascii -file {input} -out {output}"
+#
+# rule dskOutput_sort:
+#     input:
+#         datadir + "/kmerCounting/dsk/{prefix}.txt"
+#     output:
+#         datadir + "/kmerCounting/dsk/{prefix}_sort.txt"
+#     run:
+#         #!/usr/bin/env python3.8
+#
+#         with open(input[0], "r") as file:
+#             for line in file:
+#                 line = line.rstrip("\n")
+#                 print(line)
+
 
 rule kmc: # Kmer counting ######################################################
     input:
@@ -255,3 +276,7 @@ rule kmcOutput:
         prefix = datadir + "/kmerCounting/kmc/{prefix}"
     shell:
         "kmc_dump {params.prefix} {output}"
+
+rule clean:
+    input:
+        datadir + "/kmerCounting/dsk/"

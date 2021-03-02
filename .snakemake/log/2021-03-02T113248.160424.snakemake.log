@@ -1,0 +1,294 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	74	dsk
+	74	dskOutput
+	74	kmc
+	74	kmcOutput
+	38	split_overlap_chunks
+	335
+Select jobs to execute...
+
+[Tue Mar  2 11:32:49 2021]
+rule split_overlap_chunks:
+    input: /datater/wu/data/msa/enterovirus.msa.fasta
+    output: /datater/wu/data/splitFiles/enterovirus.forward.8670-9175.fasta (dynamic), /datater/wu/data/splitFiles/enterovirus.reverse.8670-9175.fasta (dynamic)
+    jobid: 15
+    wildcards: sample=enterovirus, seg=8670-9175
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Tue Mar  2 11:32:49 2021]
+rule split_overlap_chunks:
+    input: /datater/wu/data/msa/enterovirus.msa.fasta
+    output: /datater/wu/data/splitFiles/enterovirus.forward.3315-3820.fasta (dynamic), /datater/wu/data/splitFiles/enterovirus.reverse.3315-3820.fasta (dynamic)
+    jobid: 68
+    wildcards: sample=enterovirus, seg=3315-3820
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Tue Mar  2 11:32:49 2021]
+rule split_overlap_chunks:
+    input: /datater/wu/data/msa/enterovirus.msa.fasta
+    output: /datater/wu/data/splitFiles/enterovirus.forward.0-505.fasta (dynamic), /datater/wu/data/splitFiles/enterovirus.reverse.0-505.fasta (dynamic)
+    jobid: 23
+    wildcards: sample=enterovirus, seg=0-505
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Tue Mar  2 11:32:49 2021]
+rule split_overlap_chunks:
+    input: /datater/wu/data/msa/enterovirus.msa.fasta
+    output: /datater/wu/data/splitFiles/enterovirus.forward.2040-2545.fasta (dynamic), /datater/wu/data/splitFiles/enterovirus.reverse.2040-2545.fasta (dynamic)
+    jobid: 7
+    wildcards: sample=enterovirus, seg=2040-2545
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Tue Mar  2 11:32:49 2021]
+rule split_overlap_chunks:
+    input: /datater/wu/data/msa/enterovirus.msa.fasta
+    output: /datater/wu/data/splitFiles/enterovirus.forward.6375-6880.fasta (dynamic), /datater/wu/data/splitFiles/enterovirus.reverse.6375-6880.fasta (dynamic)
+    jobid: 83
+    wildcards: sample=enterovirus, seg=6375-6880
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Tue Mar  2 11:32:49 2021]
+rule split_overlap_chunks:
+    input: /datater/wu/data/msa/enterovirus.msa.fasta
+    output: /datater/wu/data/splitFiles/enterovirus.forward.8925-9430.fasta (dynamic), /datater/wu/data/splitFiles/enterovirus.reverse.8925-9430.fasta (dynamic)
+    jobid: 45
+    wildcards: sample=enterovirus, seg=8925-9430
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Tue Mar  2 11:32:49 2021]
+rule split_overlap_chunks:
+    input: /datater/wu/data/msa/enterovirus.msa.fasta
+    output: /datater/wu/data/splitFiles/enterovirus.forward.7905-8410.fasta (dynamic), /datater/wu/data/splitFiles/enterovirus.reverse.7905-8410.fasta (dynamic)
+    jobid: 53
+    wildcards: sample=enterovirus, seg=7905-8410
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Tue Mar  2 11:32:50 2021]
+rule split_overlap_chunks:
+    input: /datater/wu/data/msa/enterovirus.msa.fasta
+    output: /datater/wu/data/splitFiles/enterovirus.forward.7395-7900.fasta (dynamic), /datater/wu/data/splitFiles/enterovirus.reverse.7395-7900.fasta (dynamic)
+    jobid: 63
+    wildcards: sample=enterovirus, seg=7395-7900
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Tue Mar  2 11:32:50 2021]
+rule split_overlap_chunks:
+    input: /datater/wu/data/msa/enterovirus.msa.fasta
+    output: /datater/wu/data/splitFiles/enterovirus.forward.5355-5860.fasta (dynamic), /datater/wu/data/splitFiles/enterovirus.reverse.5355-5860.fasta (dynamic)
+    jobid: 74
+    wildcards: sample=enterovirus, seg=5355-5860
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Tue Mar  2 11:32:50 2021]
+rule split_overlap_chunks:
+    input: /datater/wu/data/msa/enterovirus.msa.fasta
+    output: /datater/wu/data/splitFiles/enterovirus.forward.1785-2290.fasta (dynamic), /datater/wu/data/splitFiles/enterovirus.reverse.1785-2290.fasta (dynamic)
+    jobid: 59
+    wildcards: sample=enterovirus, seg=1785-2290
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Tue Mar  2 11:32:50 2021]
+rule split_overlap_chunks:
+    input: /datater/wu/data/msa/enterovirus.msa.fasta
+    output: /datater/wu/data/splitFiles/enterovirus.forward.2295-2800.fasta (dynamic), /datater/wu/data/splitFiles/enterovirus.reverse.2295-2800.fasta (dynamic)
+    jobid: 61
+    wildcards: sample=enterovirus, seg=2295-2800
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Tue Mar  2 11:32:50 2021]
+rule split_overlap_chunks:
+    input: /datater/wu/data/msa/enterovirus.msa.fasta
+    output: /datater/wu/data/splitFiles/enterovirus.forward.4080-4585.fasta (dynamic), /datater/wu/data/splitFiles/enterovirus.reverse.4080-4585.fasta (dynamic)
+    jobid: 31
+    wildcards: sample=enterovirus, seg=4080-4585
+
+Subsequent jobs will be added dynamically depending on the output of this job
+[Tue Mar  2 11:32:50 2021]
+Error in rule split_overlap_chunks:
+    jobid: 68
+[Tue Mar  2 11:32:50 2021]
+    output: /datater/wu/data/splitFiles/enterovirus.forward.3315-3820.fasta (dynamic), /datater/wu/data/splitFiles/enterovirus.reverse.3315-3820.fasta (dynamic)
+Error in rule split_overlap_chunks:
+
+    jobid: 15
+    output: /datater/wu/data/splitFiles/enterovirus.forward.8670-9175.fasta (dynamic), /datater/wu/data/splitFiles/enterovirus.reverse.8670-9175.fasta (dynamic)
+
+RuleException:
+CalledProcessError in line 195 of /datater/wu/stage_m2/Snakefile:
+Command 'set -euo pipefail;  /datater/wu/miniconda3/envs/snakemake/bin/python3.9 /datater/wu/stage_m2/.snakemake/scripts/tmpjvhczisp.overlap_segs.py' returned non-zero exit status 1.
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 2326, in run_wrapper
+  File "/datater/wu/stage_m2/Snakefile", line 195, in __rule_split_overlap_chunks
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 568, in _callback
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 554, in cached_or_run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 2357, in run_wrapper
+RuleException:
+CalledProcessError in line 195 of /datater/wu/stage_m2/Snakefile:
+Command 'set -euo pipefail;  /datater/wu/miniconda3/envs/snakemake/bin/python3.9 /datater/wu/stage_m2/.snakemake/scripts/tmp6o10roj0.overlap_segs.py' returned non-zero exit status 1.
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 2326, in run_wrapper
+  File "/datater/wu/stage_m2/Snakefile", line 195, in __rule_split_overlap_chunks
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 568, in _callback
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 554, in cached_or_run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 2357, in run_wrapper
+[Tue Mar  2 11:32:50 2021]
+Error in rule split_overlap_chunks:
+    jobid: 63
+    output: /datater/wu/data/splitFiles/enterovirus.forward.7395-7900.fasta (dynamic), /datater/wu/data/splitFiles/enterovirus.reverse.7395-7900.fasta (dynamic)
+
+[Tue Mar  2 11:32:50 2021]
+Error in rule split_overlap_chunks:
+    jobid: 23
+RuleException:
+CalledProcessError in line 195 of /datater/wu/stage_m2/Snakefile:
+Command 'set -euo pipefail;  /datater/wu/miniconda3/envs/snakemake/bin/python3.9 /datater/wu/stage_m2/.snakemake/scripts/tmpawgmlol5.overlap_segs.py' returned non-zero exit status 1.
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 2326, in run_wrapper
+  File "/datater/wu/stage_m2/Snakefile", line 195, in __rule_split_overlap_chunks
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 568, in _callback
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 554, in cached_or_run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 2357, in run_wrapper
+    output: /datater/wu/data/splitFiles/enterovirus.forward.0-505.fasta (dynamic), /datater/wu/data/splitFiles/enterovirus.reverse.0-505.fasta (dynamic)
+
+RuleException:
+CalledProcessError in line 195 of /datater/wu/stage_m2/Snakefile:
+Command 'set -euo pipefail;  /datater/wu/miniconda3/envs/snakemake/bin/python3.9 /datater/wu/stage_m2/.snakemake/scripts/tmpee1ufw15.overlap_segs.py' returned non-zero exit status 1.
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 2326, in run_wrapper
+  File "/datater/wu/stage_m2/Snakefile", line 195, in __rule_split_overlap_chunks
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 568, in _callback
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 554, in cached_or_run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 2357, in run_wrapper
+[Tue Mar  2 11:32:50 2021]
+Error in rule split_overlap_chunks:
+    jobid: 7
+    output: /datater/wu/data/splitFiles/enterovirus.forward.2040-2545.fasta (dynamic), /datater/wu/data/splitFiles/enterovirus.reverse.2040-2545.fasta (dynamic)
+
+RuleException:
+CalledProcessError in line 195 of /datater/wu/stage_m2/Snakefile:
+Command 'set -euo pipefail;  /datater/wu/miniconda3/envs/snakemake/bin/python3.9 /datater/wu/stage_m2/.snakemake/scripts/tmpaqwoz5jg.overlap_segs.py' returned non-zero exit status 1.
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 2326, in run_wrapper
+  File "/datater/wu/stage_m2/Snakefile", line 195, in __rule_split_overlap_chunks
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 568, in _callback
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 554, in cached_or_run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 2357, in run_wrapper
+[Tue Mar  2 11:32:50 2021]
+Error in rule split_overlap_chunks:
+    jobid: 31
+    output: /datater/wu/data/splitFiles/enterovirus.forward.4080-4585.fasta (dynamic), /datater/wu/data/splitFiles/enterovirus.reverse.4080-4585.fasta (dynamic)
+
+RuleException:
+CalledProcessError in line 195 of /datater/wu/stage_m2/Snakefile:
+Command 'set -euo pipefail;  /datater/wu/miniconda3/envs/snakemake/bin/python3.9 /datater/wu/stage_m2/.snakemake/scripts/tmp4k3t1u27.overlap_segs.py' returned non-zero exit status 1.
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 2326, in run_wrapper
+  File "/datater/wu/stage_m2/Snakefile", line 195, in __rule_split_overlap_chunks
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 568, in _callback
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 554, in cached_or_run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 2357, in run_wrapper
+[Tue Mar  2 11:32:50 2021]
+Error in rule split_overlap_chunks:
+    jobid: 61
+    output: /datater/wu/data/splitFiles/enterovirus.forward.2295-2800.fasta (dynamic), /datater/wu/data/splitFiles/enterovirus.reverse.2295-2800.fasta (dynamic)
+
+RuleException:
+CalledProcessError in line 195 of /datater/wu/stage_m2/Snakefile:
+Command 'set -euo pipefail;  /datater/wu/miniconda3/envs/snakemake/bin/python3.9 /datater/wu/stage_m2/.snakemake/scripts/tmpvxhhuwkk.overlap_segs.py' returned non-zero exit status 1.
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 2326, in run_wrapper
+  File "/datater/wu/stage_m2/Snakefile", line 195, in __rule_split_overlap_chunks
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 568, in _callback
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 554, in cached_or_run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 2357, in run_wrapper
+[Tue Mar  2 11:32:50 2021]
+Error in rule split_overlap_chunks:
+    jobid: 53
+    output: /datater/wu/data/splitFiles/enterovirus.forward.7905-8410.fasta (dynamic), /datater/wu/data/splitFiles/enterovirus.reverse.7905-8410.fasta (dynamic)
+[Tue Mar  2 11:32:50 2021]
+
+Error in rule split_overlap_chunks:
+    jobid: 83
+    output: /datater/wu/data/splitFiles/enterovirus.forward.6375-6880.fasta (dynamic), /datater/wu/data/splitFiles/enterovirus.reverse.6375-6880.fasta (dynamic)
+
+RuleException:
+CalledProcessError in line 195 of /datater/wu/stage_m2/Snakefile:
+Command 'set -euo pipefail;  /datater/wu/miniconda3/envs/snakemake/bin/python3.9 /datater/wu/stage_m2/.snakemake/scripts/tmp8cmkrkd4.overlap_segs.py' returned non-zero exit status 1.
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 2326, in run_wrapper
+  File "/datater/wu/stage_m2/Snakefile", line 195, in __rule_split_overlap_chunks
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 568, in _callback
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 554, in cached_or_run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 2357, in run_wrapper
+RuleException:
+CalledProcessError in line 195 of /datater/wu/stage_m2/Snakefile:
+Command 'set -euo pipefail;  /datater/wu/miniconda3/envs/snakemake/bin/python3.9 /datater/wu/stage_m2/.snakemake/scripts/tmpvfmiik2_.overlap_segs.py' returned non-zero exit status 1.
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 2326, in run_wrapper
+  File "/datater/wu/stage_m2/Snakefile", line 195, in __rule_split_overlap_chunks
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 568, in _callback
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 554, in cached_or_run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 2357, in run_wrapper
+[Tue Mar  2 11:32:50 2021]
+Error in rule split_overlap_chunks:
+    jobid: 45
+    output: /datater/wu/data/splitFiles/enterovirus.forward.8925-9430.fasta (dynamic), /datater/wu/data/splitFiles/enterovirus.reverse.8925-9430.fasta (dynamic)
+
+RuleException:
+CalledProcessError in line 195 of /datater/wu/stage_m2/Snakefile:
+Command 'set -euo pipefail;  /datater/wu/miniconda3/envs/snakemake/bin/python3.9 /datater/wu/stage_m2/.snakemake/scripts/tmpjby_whnp.overlap_segs.py' returned non-zero exit status 1.
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 2326, in run_wrapper
+  File "/datater/wu/stage_m2/Snakefile", line 195, in __rule_split_overlap_chunks
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 568, in _callback
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 554, in cached_or_run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 2357, in run_wrapper
+[Tue Mar  2 11:32:50 2021]
+Error in rule split_overlap_chunks:
+    jobid: 74
+    output: /datater/wu/data/splitFiles/enterovirus.forward.5355-5860.fasta (dynamic), /datater/wu/data/splitFiles/enterovirus.reverse.5355-5860.fasta (dynamic)
+
+RuleException:
+CalledProcessError in line 195 of /datater/wu/stage_m2/Snakefile:
+Command 'set -euo pipefail;  /datater/wu/miniconda3/envs/snakemake/bin/python3.9 /datater/wu/stage_m2/.snakemake/scripts/tmp0tsf9s53.overlap_segs.py' returned non-zero exit status 1.
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 2326, in run_wrapper
+  File "/datater/wu/stage_m2/Snakefile", line 195, in __rule_split_overlap_chunks
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 568, in _callback
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 554, in cached_or_run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 2357, in run_wrapper
+[Tue Mar  2 11:32:50 2021]
+Error in rule split_overlap_chunks:
+    jobid: 59
+    output: /datater/wu/data/splitFiles/enterovirus.forward.1785-2290.fasta (dynamic), /datater/wu/data/splitFiles/enterovirus.reverse.1785-2290.fasta (dynamic)
+
+RuleException:
+CalledProcessError in line 195 of /datater/wu/stage_m2/Snakefile:
+Command 'set -euo pipefail;  /datater/wu/miniconda3/envs/snakemake/bin/python3.9 /datater/wu/stage_m2/.snakemake/scripts/tmp82mwdw17.overlap_segs.py' returned non-zero exit status 1.
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 2326, in run_wrapper
+  File "/datater/wu/stage_m2/Snakefile", line 195, in __rule_split_overlap_chunks
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 568, in _callback
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 554, in cached_or_run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 2357, in run_wrapper
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-02T113248.160424.snakemake.log

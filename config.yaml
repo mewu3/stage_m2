@@ -49,7 +49,7 @@ dsk:
     histo: 0 # default
 
 kmc3:
-    kmer-size: 31
+    kmer-size: 13
     ram: 25
     signature: 9
     input-format: "fasta"
@@ -67,7 +67,7 @@ kmc3:
     output: "on"
 
 gerbil:
-    kmer-size: 31
+    kmer-size: 13
     minimizer-length: "auto"
     max-memory: "auto" # or specify a number with MB/GB
     output-format: "fasta"

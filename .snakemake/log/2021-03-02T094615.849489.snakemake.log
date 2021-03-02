@@ -1,0 +1,26 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	74	dskOutput
+	75
+Select jobs to execute...
+
+[Tue Mar  2 09:46:17 2021]
+rule dskOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.4590-5095.h5
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.4590-5095.fasta
+    jobid: 167
+    wildcards: prefix=enterovirus.reverse.4590-5095
+
+RuleException in line 212 of /datater/wu/stage_m2/Snakefile:
+NameError: The name 'inpupt' is unknown in this context. Please make sure that you defined that variable. Also note that braces not used for variable access have to be escaped by repeating them, i.e. {{print $1}}
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 136, in run_jobs
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 441, in run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 230, in _run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 156, in _run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 162, in printjob
