@@ -71,7 +71,11 @@ rule all: # run all rules ######################################################
         expand(
             datadir + "/kmerCounting/{prefix}.h5",
             prefix = kmerCounting_prefix
-        )
+        ),
+        expand(
+            datadir + "/kmerCounting/{prefix}.fasta",
+            prefix = kmerCounting_prefix
+        ),
 
 rule seqkit: # remove duplicate sequences ######################################
     input:
@@ -190,32 +194,29 @@ rule dsk: # Kmer counting ######################################################
         kmerSize = config["dsk"]["kmer-size"],
         abundanceMin = config["dsk"]["abundance-min"],
         abundanceMax = config["dsk"]["abundance-max"],
-        abundanceMinThreshold = config["dsk"]["abundance-min-threshold"],
         solidityKind = config["dsk"]["solidity-kind"],
-        solidityCustom = config["dsk"]["solidity-custom"],
-        solideKmerOut = config["dsk"]["solid-kmers-out"],
-        histoMax = config["dsk"]["histo-max"],
-        histo2D = config["dsk"]["histo2D"],
-        histo = config["dsk"]["histo"]
     shell:
         "lib/dsk/build/bin/dsk \
         -nb-cores {params.nbCores} \
         -max-memory {params.maxMemory} \
         -max-disk {params.maxDisk} \
         -out-compress {params.outCompress} \
-        -storage {params.storage} \
+        -storage-type {params.storage} \
         -verbose {params.verbose} \
         -kmer-size {params.kmerSize} \
+        -abundance-min {params.abundanceMin} \
+        -abundance-max {params.abundanceMax} \
+        -solidity-custom {params.solidityKind} \
         -file {input} -out {output}"
 
-# rule dskOutput:
-#     input:
-#         dir = "test/kmerCounting/dsk"
-#     output:
-#         dir = directory("test/kmerCounting/dsk_output")
-#     script:
-#         "scripts/dsk_output.py"
-# #
+rule dskOutput:
+    input:
+        datadir + "/kmerCounting/{prefix}.h5"
+    output:
+        datadir + "/kmerCounting/{prefix}.fasta"
+    shell:
+        "lib/dsk/build/bin/dsk2ascii -file {input} -out {output}"
+
 # rule kmc: # Kmer counting ######################################################
 #     input:
 #         dir = "test/splitFiles"
