@@ -14,19 +14,14 @@ rule kmc: # Kmer counting ######################################################
         ram = config["kmc3"]["ram"],
         signature = config["kmc3"]["signature"],
         minKmer = config["kmc3"]["min-kmer-number"],
-        maxkmer = config["kmc3"]["max-kmer-number"],
+        maxKmer = config["kmc3"]["max-kmer-number"],
         maxKmerExclu = config["kmc3"]["max-exclu-kmer"]
     shell:
-        """
-        kmc -k{params.kmerSize} \
+        "kmc -k{params.kmerSize} \
         -m{params.ram} \
-        -p{params.signature} \
-        -ci{params.minKmer} \
-        -cx{params.maxKmer} \
-        -cx{params.maxKmerExclu} \
+        -cs{params.maxKmer} \
         {params.inputFormat} {input} \
-        {params.prefix} {params.outdir}
-        """
+        {params.prefix} {params.outdir}"
 
 rule kmcOutput:
     input:
