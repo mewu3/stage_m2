@@ -1,0 +1,25 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	74	dsk
+	74	dskOutput
+	74	dskOutputSort
+	74	primer3_tm
+	297
+Select jobs to execute...
+
+[Wed Mar  3 13:32:50 2021]
+rule primer3_tm:
+    input: /datater/wu/data/kmerCounting/kmc/enterovirus.reverse.255-760.sort
+    output: /datater/wu/data/filter/kmc/enterovirus.reverse.255-760.txt
+    jobid: 557
+    wildcards: prefix=enterovirus.reverse.255-760
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-03T133248.669689.snakemake.log

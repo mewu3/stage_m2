@@ -2,7 +2,7 @@ rule dsk: # Kmer counting ######################################################
     input:
         datadir + "/splitFiles/{prefix}.fasta"
     output:
-        temp(datadir + "/kmerCounting/dsk/{prefix}.h5")
+        datadir + "/kmerCounting/dsk/{prefix}.h5"
     params:
         nbCores = config["dsk"]["nb-cores"],
         maxMemory = config["dsk"]["max-memory"],

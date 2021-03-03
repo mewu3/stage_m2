@@ -55,3 +55,12 @@ kmc3:
     fq-read-threads: 8
     split-threads: 8
     second-stage-threads: 8
+
+# Tm calculation by primer3 ####################################################
+oligotm:
+    monovalent-conc: 50 # unity mM
+    divalent-conc: 1.5 # unity mM
+    dNTP-conc: 0.6 # unity mM
+    dna-conc: 50 # unity nM
+    thermodynamic-para: 0 
+    salt-correlation: 1

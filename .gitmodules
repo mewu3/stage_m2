@@ -1,3 +1,6 @@
 [submodule "lib/dsk"]
 	path = lib/dsk
 	url = https://github.com/GATB/dsk.git
+[submodule "lib/primer3"]
+	path = lib/primer3
+	url = https://github.com/primer3-org/primer3

@@ -5,6 +5,7 @@ configfile: "config.yaml"
 
 samples = list(config["samples"].keys())
 datadir = config["datadir"]
+kmerCounter = "kmc"
 
 def fetchConfigParameters():
     if config["mafft"]["fmodel"] == "on":
@@ -97,6 +98,14 @@ rule all: # run all rules ######################################################
         expand(
             datadir + "/kmerCounting/kmc/{prefix}.sort",
             prefix = kmerCounting_prefix
+        ),
+        expand(
+            datadir + "/filter/kmc/{prefix}.txt",
+            prefix = kmerCounting_prefix
+        ),
+        expand(
+            datadir + "/filter/" + kmerCounter + "/{prefix}.table",
+            prefix = kmerCounting_prefix
         )
 
 include: "rules/remove_duplicate.smk"
@@ -104,3 +113,4 @@ include: "rules/multiple_seq_alignment.smk"
 include: "rules/splitFiles.smk"
 include: "rules/kmer_dsk.smk"
 include: "rules/kmer_kmc.smk"
+include: "rules/oligo_filter.smk"
