@@ -1,0 +1,12 @@
+Building DAG of jobs...
+AmbiguousRuleException:
+Rules test and dskOutput are ambiguous for the file /datater/wu/data/kmerCounting/dsk/enterovirus.forward.4590-5095.txt.
+Consider starting rule output with a unique prefix, constrain your wildcards, or use the ruleorder directive.
+Wildcards:
+	test: prefix=enterovirus.forward.4590-5095
+	dskOutput: prefix=enterovirus.forward.4590-5095
+Expected input files:
+	test: 
+	dskOutput: /datater/wu/data/kmerCounting/dsk/enterovirus.forward.4590-5095.h5Expected output files:
+	test: /datater/wu/data/kmerCounting/dsk/enterovirus.forward.4590-5095.txt
+	dskOutput: /datater/wu/data/kmerCounting/dsk/enterovirus.forward.4590-5095.txt

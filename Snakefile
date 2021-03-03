@@ -41,8 +41,6 @@ fetchConfigParameters()
 
 kmerCounting_prefix = [os.path.splitext(f)[0] for f in os.listdir(datadir + "/splitFiles") if f.endswith(".fasta")]
 
-
-
 rule all: # run all rules ######################################################
     input:
         # remove duplicate sequences from input fasta
@@ -79,21 +77,25 @@ rule all: # run all rules ######################################################
             datadir + "/kmerCounting/dsk/{prefix}.txt",
             prefix = kmerCounting_prefix
         ),
-        # expand(
-        #     datadir + "/kmerCounting/dsk/{prefix}_sort.txt",
-        #     prefix = kmerCounting_prefix
-        # ),
+        expand(
+            datadir + "/kmerCounting/dsk/{prefix}.sort",
+            prefix = kmerCounting_prefix
+        ),
         # kmerCounting with kmc3
         expand(
             datadir + "/kmerCounting/kmc/{prefix}.kmc_suf",
-            prefix = kmerCounting_prefix,
+            prefix = kmerCounting_prefix
         ),
         expand(
             datadir + "/kmerCounting/kmc/{prefix}.kmc_pre",
-            prefix = kmerCounting_prefix,
+            prefix = kmerCounting_prefix
         ),
         expand(
             datadir + "/kmerCounting/kmc/{prefix}.txt",
+            prefix = kmerCounting_prefix
+        ),
+        expand(
+            datadir + "/kmerCounting/kmc/{prefix}.sort",
             prefix = kmerCounting_prefix
         )
 
@@ -203,7 +205,7 @@ rule dsk: # Kmer counting ######################################################
     input:
         datadir + "/splitFiles/{prefix}.fasta"
     output:
-        datadir + "/kmerCounting/dsk/{prefix}.h5"
+        temp(datadir + "/kmerCounting/dsk/{prefix}.h5")
     params:
         nbCores = config["dsk"]["nb-cores"],
         maxMemory = config["dsk"]["max-memory"],
@@ -234,21 +236,24 @@ rule dskOutput:
         datadir + "/kmerCounting/dsk/{prefix}.h5"
     output:
         datadir + "/kmerCounting/dsk/{prefix}.txt"
+    wildcard_constraints:
+        prefix=""
     shell:
         "lib/dsk/build/bin/dsk2ascii -file {input} -out {output}"
-#
-# rule dskOutput_sort:
-#     input:
-#         datadir + "/kmerCounting/dsk/{prefix}.txt"
-#     output:
-#         datadir + "/kmerCounting/dsk/{prefix}_sort.txt"
-#     run:
-#         #!/usr/bin/env python3.8
-#
-#         with open(input[0], "r") as file:
-#             for line in file:
-#                 line = line.rstrip("\n")
-#                 print(line)
+
+rule dskOutputSort:
+    input:
+        datadir + "/kmerCounting/dsk/{prefix}.txt"
+    output:
+        datadir + "/kmerCounting/dsk/{prefix}.sort"
+    run:
+        #!/usr/bin/env python3.8
+        with open(input[0], "r") as input:
+            rows = input.readlines()
+            sorted_rows = sorted(rows, key = lambda x: int(x.split()[1]), reverse=True)
+            with open(output[0], "w") as output:
+                for row in sorted_rows:
+                        output.write(row)
 
 
 rule kmc: # Kmer counting ######################################################
@@ -277,6 +282,18 @@ rule kmcOutput:
     shell:
         "kmc_dump {params.prefix} {output}"
 
-rule clean:
+rule kmcOutputSort:
     input:
-        datadir + "/kmerCounting/dsk/"
+        datadir + "/kmerCounting/kmc/{prefix}.txt"
+    output:
+        datadir + "/kmerCounting/kmc/{prefix}.sort"
+    run:
+        #!/usr/bin/env python3.8
+        with open(input[0], "r") as input:
+            rows = input.readlines()
+            sorted_rows = sorted(rows, key = lambda x: int(x.split()[1]), reverse=True)
+            with open(output[0], "w") as output:
+                for row in sorted_rows:
+                        output.write(row)
+
+rule 

@@ -1,0 +1,99 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	74	sortDskOutput
+	75
+Select jobs to execute...
+
+[Tue Mar  2 18:21:10 2021]
+rule sortDskOutput:
+    input: /datater/wu/data/kmerCounting/dsk/enterovirus.forward.4335-4840.txt
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.forward.4335-4840.sort
+    jobid: 225
+    wildcards: prefix=enterovirus.forward.4335-4840
+
+[Tue Mar  2 18:21:10 2021]
+rule sortDskOutput:
+    input: /datater/wu/data/kmerCounting/dsk/enterovirus.forward.8925-9430.txt
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.forward.8925-9430.sort
+    jobid: 232
+    wildcards: prefix=enterovirus.forward.8925-9430
+
+[Tue Mar  2 18:21:10 2021]
+rule sortDskOutput:
+    input: /datater/wu/data/kmerCounting/dsk/enterovirus.reverse.255-760.txt
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.reverse.255-760.sort
+    jobid: 261
+    wildcards: prefix=enterovirus.reverse.255-760
+
+[Tue Mar  2 18:21:11 2021]
+rule sortDskOutput:
+    input: /datater/wu/data/kmerCounting/dsk/enterovirus.reverse.8670-9175.txt
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.reverse.8670-9175.sort
+    jobid: 194
+    wildcards: prefix=enterovirus.reverse.8670-9175
+
+[Tue Mar  2 18:21:11 2021]
+rule sortDskOutput:
+    input: /datater/wu/data/kmerCounting/dsk/enterovirus.reverse.7395-7900.txt
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.reverse.7395-7900.sort
+    jobid: 222
+    wildcards: prefix=enterovirus.reverse.7395-7900
+
+[Tue Mar  2 18:21:11 2021]
+rule sortDskOutput:
+    input: /datater/wu/data/kmerCounting/dsk/enterovirus.reverse.7905-8410.txt
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.reverse.7905-8410.sort
+    jobid: 215
+    wildcards: prefix=enterovirus.reverse.7905-8410
+
+[Tue Mar  2 18:21:11 2021]
+rule sortDskOutput:
+    input: /datater/wu/data/kmerCounting/dsk/enterovirus.forward.7140-7645.txt
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.forward.7140-7645.sort
+    jobid: 207
+    wildcards: prefix=enterovirus.forward.7140-7645
+
+[Tue Mar  2 18:21:11 2021]
+rule sortDskOutput:
+    input: /datater/wu/data/kmerCounting/dsk/enterovirus.reverse.3060-3565.txt
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.reverse.3060-3565.sort
+    jobid: 230
+    wildcards: prefix=enterovirus.reverse.3060-3565
+
+[Tue Mar  2 18:21:11 2021]
+rule sortDskOutput:
+    input: /datater/wu/data/kmerCounting/dsk/enterovirus.forward.3825-4330.txt
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.forward.3825-4330.sort
+    jobid: 237
+    wildcards: prefix=enterovirus.forward.3825-4330
+
+[Tue Mar  2 18:21:11 2021]
+rule sortDskOutput:
+    input: /datater/wu/data/kmerCounting/dsk/enterovirus.forward.3060-3565.txt
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.forward.3060-3565.sort
+    jobid: 245
+    wildcards: prefix=enterovirus.forward.3060-3565
+
+[Tue Mar  2 18:21:11 2021]
+rule sortDskOutput:
+    input: /datater/wu/data/kmerCounting/dsk/enterovirus.forward.2805-3310.txt
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.forward.2805-3310.sort
+    jobid: 252
+    wildcards: prefix=enterovirus.forward.2805-3310
+
+[Tue Mar  2 18:21:11 2021]
+rule sortDskOutput:
+    input: /datater/wu/data/kmerCounting/dsk/enterovirus.reverse.0-505.txt
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.reverse.0-505.sort
+    jobid: 260
+    wildcards: prefix=enterovirus.reverse.0-505
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-02T182109.533794.snakemake.log
