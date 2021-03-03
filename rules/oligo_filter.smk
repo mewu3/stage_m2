@@ -1,5 +1,3 @@
-# kmerCounter = "kmc"
-
 rule calculte_tm:
     input:
         datadir + "/kmerCounting/" + kmerCounter + "/{prefix}.sort"
@@ -36,9 +34,10 @@ rule filterOut_Tm:
         datadir + "/filter/" + kmerCounter + "/{prefix}.table"
     run:
         import pandas as pd
+        import os
 
         df = pd.read_table(input[0], sep=" ", header=0)
-
         df_filtered = df[(df["Tm"] >= 60) & (df["Tm"] <= 70)]
-
         df_filtered.to_csv(output[0], sep='\t')
+
+rule
