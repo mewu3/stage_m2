@@ -35,48 +35,23 @@ dsk:
     max-disk: 0 # default
     out-compress: 0 # default
     storage-type: "hdf5" # default
-    verbose: 1 # default
     kmer-size: 13 # default 31
     abundance-min: 2 # default
     abundance-max: 2147483647 # default
-    abundance-min-threshold: 2 # default
     solidity-kind: "sum" # default
-    solidity-custom: "" # default
-    solid-kmers-out: "" # default
-    # histogram parameters
-    histo-max: 10000 # default
-    histo2D: 0 # default
-    histo: 0 # default
+
+dsk2ascii:
+    nb-cores: 0
 
 kmc3:
     kmer-size: 13
-    ram: 25
+    ram: 12
     signature: 9
-    input-format: "fasta"
+    input-format: "-fa"
     min-kmer-number: 2
-    max-kmer-number: 255
+    max-kmer-number: 2147483647
     max-exclu-kmer: 1e9
-    transformation: "on"
-    ram-only: "off"
-    # binNumber:
     threads: 8
     fq-read-threads: 8
     split-threads: 8
     second-stage-threads: 8
-    file-name: ""
-    output: "on"
-
-gerbil:
-    kmer-size: 13
-    minimizer-length: "auto"
-    max-memory: "auto" # or specify a number with MB/GB
-    output-format: "fasta"
-    threads: "auto" # or specify a number
-    min-kmer-number: 3
-    debug: "off"
-    enable-gpu: "off"
-    kmer-normalization: "off"
-    stop-at-stage-one: "off"
-    only-stage-two: "off"
-    tmp-files-save: "off"
-    histogram: "off"
