@@ -1,4 +1,4 @@
-rule split_overlap_chunks: # split MSA fasta file into seperates files #########
+checkpoint split_overlap_chunks: # split MSA fasta file into seperates files #########
     input:
         datadir + "/msa/{sample}.msa.fasta"
     output:

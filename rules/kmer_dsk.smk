@@ -1,8 +1,8 @@
-rule dsk: # Kmer counting ######################################################
+rule dsk_forward: # Kmer counting ######################################################
     input:
-        datadir + "/splitFiles/{prefix}.fasta"
+        datadir + "/splitFiles/{sample}.forward.{seg}.fasta"
     output:
-        datadir + "/kmerCounting/dsk/{prefix}.h5"
+        datadir + "/kmerCounting/{sample}.forward.{seg}.h5"
     params:
         nbCores = config["dsk"]["nb-cores"],
         maxMemory = config["dsk"]["max-memory"],
@@ -26,28 +26,28 @@ rule dsk: # Kmer counting ######################################################
         -solidity-kind {params.solidityKind} \
         -file {input} -out {output}"
 
-rule dskOutput:
-    input:
-        datadir + "/kmerCounting/dsk/{prefix}.h5"
-    output:
-        datadir + "/kmerCounting/dsk/{prefix}.txt"
-    params:
-        nbCores = config["dsk2ascii"]["nb-cores"],
-    shell:
-        "lib/dsk/build/bin/dsk2ascii \
-        -nb-cores {params.nbCores} \
-        -file {input} -out {output}"
-
-rule dskOutputSort:
-    input:
-        datadir + "/kmerCounting/dsk/{prefix}.txt"
-    output:
-        datadir + "/kmerCounting/dsk/{prefix}.sort"
-    run:
-        #!/usr/bin/env python3.8
-        with open(input[0], "r") as input:
-            rows = input.readlines()
-            sorted_rows = sorted(rows, key = lambda x: int(x.split()[1]), reverse=True)
-            with open(output[0], "w") as output:
-                for row in sorted_rows:
-                        output.write(row)
+# rule dskOutput:
+#     input:
+#         datadir + "/kmerCounting/dsk/{prefix}.h5"
+#     output:
+#         datadir + "/kmerCounting/dsk/{prefix}.txt"
+#     params:
+#         nbCores = config["dsk2ascii"]["nb-cores"],
+#     shell:
+#         "lib/dsk/build/bin/dsk2ascii \
+#         -nb-cores {params.nbCores} \
+#         -file {input} -out {output}"
+#
+# rule dskOutputSort:
+#     input:
+#         datadir + "/kmerCounting/dsk/{prefix}.txt"
+#     output:
+#         datadir + "/kmerCounting/dsk/{prefix}.sort"
+#     run:
+#         #!/usr/bin/env python3.8
+#         with open(input[0], "r") as input:
+#             rows = input.readlines()
+#             sorted_rows = sorted(rows, key = lambda x: int(x.split()[1]), reverse=True)
+#             with open(output[0], "w") as output:
+#                 for row in sorted_rows:
+#                         output.write(row)

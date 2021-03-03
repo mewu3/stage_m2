@@ -1,7 +1,7 @@
-datadir: "/datater/wu/data"
+datadir: "/home/meijun/Documents/data"
 
 samples:
-    enterovirus: "/datater/wu/data/enterovirus.fasta"
+    enterovirus: "/home/meijun/Documents/data/enterovirus.fasta"
     # coronavirus: "/datater/wu/data/coronavirus.fasta"
 
 # multiple sequence aligment ###################################################
@@ -62,5 +62,5 @@ oligotm:
     divalent-conc: 1.5 # unity mM
     dNTP-conc: 0.6 # unity mM
     dna-conc: 50 # unity nM
-    thermodynamic-para: 0 
+    thermodynamic-para: 0
     salt-correlation: 1

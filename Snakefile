@@ -5,7 +5,6 @@ configfile: "config.yaml"
 
 samples = list(config["samples"].keys())
 datadir = config["datadir"]
-kmerCounter = "kmc"
 
 def fetchConfigParameters():
     if config["mafft"]["fmodel"] == "on":
@@ -37,24 +36,25 @@ def fetchConfigParameters():
         config["mafft"]["quiet"] = "--quiet"
     else:
         config["mafft"]["quiet"] = ""
-
 fetchConfigParameters()
 
-kmerCounting_prefix = [os.path.splitext(f)[0] for f in os.listdir(datadir + "/splitFiles") if f.endswith(".fasta")]
+def aggregate_input(wildcards):
+    checkpoint_out = checkpoints.split_overlap_chunks.get(**wildcards).output[0]
+
 
 rule all: # run all rules ######################################################
     input:
-        # remove duplicate sequences from input fasta
+        ### remove duplicate sequences from input fasta
         expand(
             datadir+"/duplicate_removed/{sample}.uniq.fasta",
             sample = samples
         ),
-        # generate MSA files in format fasta
+        ### generate MSA files in format fasta
         expand(
             datadir + "/msa/{sample}.msa.fasta",
                sample = samples
         ),
-        # generate split files
+        ### generate split files
         dynamic(
             expand(
                 datadir + "/splitFiles/{sample}.forward.{seg}.fasta",
@@ -69,48 +69,11 @@ rule all: # run all rules ######################################################
                 seg="{seg}"
             )
         ),
-        # kmerCounting with dsk
-        expand(
-            datadir + "/kmerCounting/dsk/{prefix}.h5",
-            prefix = kmerCounting_prefix
-        ),
-        expand(
-            datadir + "/kmerCounting/dsk/{prefix}.txt",
-            prefix = kmerCounting_prefix
-        ),
-        expand(
-            datadir + "/kmerCounting/dsk/{prefix}.sort",
-            prefix = kmerCounting_prefix
-        ),
-        # kmerCounting with kmc3
-        expand(
-            datadir + "/kmerCounting/kmc/{prefix}.kmc_suf",
-            prefix = kmerCounting_prefix
-        ),
-        expand(
-            datadir + "/kmerCounting/kmc/{prefix}.kmc_pre",
-            prefix = kmerCounting_prefix
-        ),
-        expand(
-            datadir + "/kmerCounting/kmc/{prefix}.txt",
-            prefix = kmerCounting_prefix
-        ),
-        expand(
-            datadir + "/kmerCounting/kmc/{prefix}.sort",
-            prefix = kmerCounting_prefix
-        ),
-        expand(
-            datadir + "/filter/kmc/{prefix}.txt",
-            prefix = kmerCounting_prefix
-        ),
-        expand(
-            datadir + "/filter/" + kmerCounter + "/{prefix}.table",
-            prefix = kmerCounting_prefix
-        )
+        aggregate_input
 
 include: "rules/remove_duplicate.smk"
 include: "rules/multiple_seq_alignment.smk"
 include: "rules/splitFiles.smk"
 include: "rules/kmer_dsk.smk"
-include: "rules/kmer_kmc.smk"
-include: "rules/oligo_filter.smk"
+# include: "rules/kmer_kmc.smk"
+# include: "rules/oligo_filter.smk"
