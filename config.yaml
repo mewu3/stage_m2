@@ -1,9 +1,9 @@
-datadir: "/home/meijun/Documents/data"
+datadir: "/datater/wu/data"
 
 samples:
     # enterovirus: "/home/meijun/Documents/data/enterovirus.fasta"
     # coronavirus: "/datater/wu/data/coronavirus.fasta"
-    zika : "/home/meijun/Documents/data/ZIKV-96seqs.fasta"
+    zika : "/datater/wu/data/ZIKV-96seqs.fasta"
 
 # multiple sequence aligment ###################################################
 mafft:
