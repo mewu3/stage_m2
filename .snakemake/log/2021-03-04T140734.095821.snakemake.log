@@ -1,0 +1,3 @@
+NameError in line 88 of /home/meijun/Documents/stage_m2/Snakefile:
+name 'kmerCounter' is not defined
+  File "/home/meijun/Documents/stage_m2/Snakefile", line 88, in <module>

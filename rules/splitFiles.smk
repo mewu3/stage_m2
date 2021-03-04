@@ -1,4 +1,4 @@
-checkpoint splitFiles: # split MSA fasta file into seperates files #########
+rule splitFiles: # split MSA fasta file into seperates files #########
     input:
         datadir + "/msa/{sample}.msa.fasta"
     output:
