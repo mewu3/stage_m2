@@ -1,15 +1,16 @@
 datadir: "/home/meijun/Documents/data"
 
 samples:
-    enterovirus: "/home/meijun/Documents/data/enterovirus.fasta"
+    # enterovirus: "/home/meijun/Documents/data/enterovirus.fasta"
     # coronavirus: "/datater/wu/data/coronavirus.fasta"
+    zika : "/home/meijun/Documents/data/ZIKV-96seqs.fasta"
 
 # multiple sequence aligment ###################################################
 mafft:
     # excution parameters
     threads: -1 # automatic
     ## choose algorithm
-    algorithm: "-auto"
+    algorithm: "--auto"
     ## parameters
     op: 1.53 # default
     ep: 0.123 # default

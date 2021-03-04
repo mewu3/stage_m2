@@ -1,0 +1,27 @@
+Building DAG of jobs...
+Updating job dskForward.
+Updating job all.
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	43	dskForward
+	44
+Select jobs to execute...
+
+[Thu Mar  4 11:06:34 2021]
+rule dskForward:
+    output: /home/meijun/Documents/data/kmerCounting/zika/forward.7530-8031.h5
+    jobid: 9
+    wildcards: sample=zika, seg=7530-8031
+
+RuleException in line 7 of /home/meijun/Documents/stage_m2/rules/kmer_dsk.smk:
+IndexError: list index out of range
+  File "/home/meijun/Programmes/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 136, in run_jobs
+  File "/home/meijun/Programmes/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 441, in run
+  File "/home/meijun/Programmes/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 230, in _run
+  File "/home/meijun/Programmes/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 156, in _run
+  File "/home/meijun/Programmes/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 162, in printjob

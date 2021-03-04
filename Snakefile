@@ -38,38 +38,38 @@ def fetchConfigParameters():
         config["mafft"]["quiet"] = ""
 fetchConfigParameters()
 
-def aggregate_input(wildcards):
-    checkpoint_out = checkpoints.split_overlap_chunks.get(**wildcards).output[0]
-
-
 rule all: # run all rules ######################################################
     input:
-        ### remove duplicate sequences from input fasta
         expand(
             datadir+"/duplicate_removed/{sample}.uniq.fasta",
             sample = samples
         ),
-        ### generate MSA files in format fasta
         expand(
             datadir + "/msa/{sample}.msa.fasta",
                sample = samples
         ),
-        ### generate split files
         dynamic(
             expand(
-                datadir + "/splitFiles/{sample}.forward.{seg}.fasta",
+                datadir + "/splitFiles/{sample}/forward/{seg}.fasta",
                 sample = samples,
                 seg="{seg}"
             )
         ),
         dynamic(
             expand(
-                datadir + "/splitFiles/{sample}.reverse.{seg}.fasta",
+                datadir + "/splitFiles/{sample}/reverse/{seg}.fasta",
                 sample = samples,
                 seg="{seg}"
             )
         ),
-        aggregate_input
+        # dynamic(
+        #     expand(
+        #         datadir + "/kmerCounting/{sample}/forward/{seg}.h5",
+        #         sample = samples,
+        #         seg = "{seg}"
+        #     )
+        # )
+        ".run_dsk.touch"
 
 include: "rules/remove_duplicate.smk"
 include: "rules/multiple_seq_alignment.smk"

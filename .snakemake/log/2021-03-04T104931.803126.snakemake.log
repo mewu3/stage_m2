@@ -1,0 +1,4 @@
+Building DAG of jobs...
+WildcardError in line 41 of /home/meijun/Documents/stage_m2/Snakefile:
+Wildcards in input files cannot be determined from output files:
+'seg'

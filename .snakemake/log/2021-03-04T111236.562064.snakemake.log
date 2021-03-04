@@ -1,0 +1,220 @@
+Building DAG of jobs...
+Updating job dskForward.
+Updating job all.
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	43	dskForward
+	44
+Select jobs to execute...
+
+[Thu Mar  4 11:12:37 2021]
+rule dskForward:
+    output: /home/meijun/Documents/data/kmerCounting/zika/forward.4267-4768.h5
+    jobid: 41
+    wildcards: sample=zika, seg=4267-4768
+
+
+[Thu Mar  4 11:12:37 2021]
+rule dskForward:
+    output: /home/meijun/Documents/data/kmerCounting/zika/forward.9538-10039.h5
+    jobid: 10
+    wildcards: sample=zika, seg=9538-10039
+
+
+[Thu Mar  4 11:12:37 2021]
+rule dskForward:
+    output: /home/meijun/Documents/data/kmerCounting/zika/forward.6275-6776.h5
+    jobid: 17
+    wildcards: sample=zika, seg=6275-6776
+
+
+[Thu Mar  4 11:12:37 2021]
+rule dskForward:
+    output: /home/meijun/Documents/data/kmerCounting/zika/forward.3263-3764.h5
+    jobid: 25
+    wildcards: sample=zika, seg=3263-3764
+
+[Thu Mar  4 11:12:37 2021]
+
+Error in rule dskForward:
+[Thu Mar  4 11:12:37 2021]
+    jobid: 10
+[Thu Mar  4 11:12:37 2021]
+rule dskForward:
+    output: /home/meijun/Documents/data/kmerCounting/zika/forward.6024-6525.h5
+    jobid: 32
+    wildcards: sample=zika, seg=6024-6525
+[Thu Mar  4 11:12:37 2021]
+    output: /home/meijun/Documents/data/kmerCounting/zika/forward.9538-10039.h5
+Error in rule dskForward:
+
+Error in rule dskForward:
+    shell:
+        
+        echo 'lib/dsk/build/bin/dsk         -nb-cores 0         -max-memory 5000         -max-disk 0         -out-compress 0         -storage-type hdf5         -kmer-size 13         -abundance-min 2         -abundance-max 2147483647         -solidity-kind sum         -file          -out /home/meijun/Documents/data/kmerCounting/zika/forward.9538-10039.h5''
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    jobid: 17
+[Thu Mar  4 11:12:37 2021]
+    jobid: 41
+
+    output: /home/meijun/Documents/data/kmerCounting/zika/forward.6275-6776.h5
+Error in rule dskForward:
+    output: /home/meijun/Documents/data/kmerCounting/zika/forward.4267-4768.h5
+    shell:
+        
+        echo 'lib/dsk/build/bin/dsk         -nb-cores 0         -max-memory 5000         -max-disk 0         -out-compress 0         -storage-type hdf5         -kmer-size 13         -abundance-min 2         -abundance-max 2147483647         -solidity-kind sum         -file          -out /home/meijun/Documents/data/kmerCounting/zika/forward.6275-6776.h5''
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    jobid: 25
+
+    shell:
+        
+        echo 'lib/dsk/build/bin/dsk         -nb-cores 0         -max-memory 5000         -max-disk 0         -out-compress 0         -storage-type hdf5         -kmer-size 13         -abundance-min 2         -abundance-max 2147483647         -solidity-kind sum         -file          -out /home/meijun/Documents/data/kmerCounting/zika/forward.4267-4768.h5''
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+    output: /home/meijun/Documents/data/kmerCounting/zika/forward.3263-3764.h5
+[Thu Mar  4 11:12:37 2021]
+
+    shell:
+        
+        echo 'lib/dsk/build/bin/dsk         -nb-cores 0         -max-memory 5000         -max-disk 0         -out-compress 0         -storage-type hdf5         -kmer-size 13         -abundance-min 2         -abundance-max 2147483647         -solidity-kind sum         -file          -out /home/meijun/Documents/data/kmerCounting/zika/forward.3263-3764.h5''
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+rule dskForward:
+    output: /home/meijun/Documents/data/kmerCounting/zika/forward.753-1254.h5
+    jobid: 40
+    wildcards: sample=zika, seg=753-1254
+
+
+[Thu Mar  4 11:12:37 2021]
+Error in rule dskForward:
+    jobid: 32
+    output: /home/meijun/Documents/data/kmerCounting/zika/forward.6024-6525.h5
+    shell:
+        
+        echo 'lib/dsk/build/bin/dsk         -nb-cores 0         -max-memory 5000         -max-disk 0         -out-compress 0         -storage-type hdf5         -kmer-size 13         -abundance-min 2         -abundance-max 2147483647         -solidity-kind sum         -file          -out /home/meijun/Documents/data/kmerCounting/zika/forward.6024-6525.h5''
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu Mar  4 11:12:37 2021]
+rule dskForward:
+    output: /home/meijun/Documents/data/kmerCounting/zika/forward.4518-5019.h5
+    jobid: 31
+    wildcards: sample=zika, seg=4518-5019
+
+
+[Thu Mar  4 11:12:37 2021]
+rule dskForward:
+    output: /home/meijun/Documents/data/kmerCounting/zika/forward.10542-10780.h5
+    jobid: 9
+    wildcards: sample=zika, seg=10542-10780
+
+[Thu Mar  4 11:12:37 2021]
+Error in rule dskForward:
+    jobid: 40
+    output: /home/meijun/Documents/data/kmerCounting/zika/forward.753-1254.h5
+
+    shell:
+        
+        echo 'lib/dsk/build/bin/dsk         -nb-cores 0         -max-memory 5000         -max-disk 0         -out-compress 0         -storage-type hdf5         -kmer-size 13         -abundance-min 2         -abundance-max 2147483647         -solidity-kind sum         -file          -out /home/meijun/Documents/data/kmerCounting/zika/forward.753-1254.h5''
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+[Thu Mar  4 11:12:37 2021]
+
+rule dskForward:
+    output: /home/meijun/Documents/data/kmerCounting/zika/forward.2510-3011.h5
+    jobid: 24
+    wildcards: sample=zika, seg=2510-3011
+
+[Thu Mar  4 11:12:37 2021]
+Error in rule dskForward:
+    jobid: 31
+    output: /home/meijun/Documents/data/kmerCounting/zika/forward.4518-5019.h5
+    shell:
+        
+        echo 'lib/dsk/build/bin/dsk         -nb-cores 0         -max-memory 5000         -max-disk 0         -out-compress 0         -storage-type hdf5         -kmer-size 13         -abundance-min 2         -abundance-max 2147483647         -solidity-kind sum         -file          -out /home/meijun/Documents/data/kmerCounting/zika/forward.4518-5019.h5''
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu Mar  4 11:12:37 2021]
+[Thu Mar  4 11:12:37 2021]
+Error in rule dskForward:
+rule dskForward:
+    output: /home/meijun/Documents/data/kmerCounting/zika/forward.7028-7529.h5
+    jobid: 16
+    wildcards: sample=zika, seg=7028-7529
+    jobid: 9
+
+    output: /home/meijun/Documents/data/kmerCounting/zika/forward.10542-10780.h5
+    shell:
+        
+        echo 'lib/dsk/build/bin/dsk         -nb-cores 0         -max-memory 5000         -max-disk 0         -out-compress 0         -storage-type hdf5         -kmer-size 13         -abundance-min 2         -abundance-max 2147483647         -solidity-kind sum         -file          -out /home/meijun/Documents/data/kmerCounting/zika/forward.10542-10780.h5''
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+[Thu Mar  4 11:12:37 2021]
+
+
+Error in rule dskForward:
+[Thu Mar  4 11:12:37 2021]
+    jobid: 24
+rule dskForward:
+    output: /home/meijun/Documents/data/kmerCounting/zika/forward.6526-7027.h5
+    jobid: 39
+    wildcards: sample=zika, seg=6526-7027
+    output: /home/meijun/Documents/data/kmerCounting/zika/forward.2510-3011.h5
+
+    shell:
+        
+        echo 'lib/dsk/build/bin/dsk         -nb-cores 0         -max-memory 5000         -max-disk 0         -out-compress 0         -storage-type hdf5         -kmer-size 13         -abundance-min 2         -abundance-max 2147483647         -solidity-kind sum         -file          -out /home/meijun/Documents/data/kmerCounting/zika/forward.2510-3011.h5''
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu Mar  4 11:12:37 2021]
+[Thu Mar  4 11:12:37 2021]
+Error in rule dskForward:
+rule dskForward:
+    output: /home/meijun/Documents/data/kmerCounting/zika/forward.1506-2007.h5
+    jobid: 46
+    wildcards: sample=zika, seg=1506-2007
+    jobid: 16
+
+    output: /home/meijun/Documents/data/kmerCounting/zika/forward.7028-7529.h5
+    shell:
+        
+        echo 'lib/dsk/build/bin/dsk         -nb-cores 0         -max-memory 5000         -max-disk 0         -out-compress 0         -storage-type hdf5         -kmer-size 13         -abundance-min 2         -abundance-max 2147483647         -solidity-kind sum         -file          -out /home/meijun/Documents/data/kmerCounting/zika/forward.7028-7529.h5''
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Mar  4 11:12:37 2021]
+Error in rule dskForward:
+    jobid: 39
+    output: /home/meijun/Documents/data/kmerCounting/zika/forward.6526-7027.h5
+    shell:
+        
+        echo 'lib/dsk/build/bin/dsk         -nb-cores 0         -max-memory 5000         -max-disk 0         -out-compress 0         -storage-type hdf5         -kmer-size 13         -abundance-min 2         -abundance-max 2147483647         -solidity-kind sum         -file          -out /home/meijun/Documents/data/kmerCounting/zika/forward.6526-7027.h5''
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Mar  4 11:12:37 2021]
+Error in rule dskForward:
+    jobid: 46
+    output: /home/meijun/Documents/data/kmerCounting/zika/forward.1506-2007.h5
+    shell:
+        
+        echo 'lib/dsk/build/bin/dsk         -nb-cores 0         -max-memory 5000         -max-disk 0         -out-compress 0         -storage-type hdf5         -kmer-size 13         -abundance-min 2         -abundance-max 2147483647         -solidity-kind sum         -file          -out /home/meijun/Documents/data/kmerCounting/zika/forward.1506-2007.h5''
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/meijun/Documents/stage_m2/.snakemake/log/2021-03-04T111236.562064.snakemake.log

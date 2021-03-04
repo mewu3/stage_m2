@@ -1,9 +1,9 @@
-checkpoint split_overlap_chunks: # split MSA fasta file into seperates files #########
+checkpoint splitFiles: # split MSA fasta file into seperates files #########
     input:
         datadir + "/msa/{sample}.msa.fasta"
     output:
-        dynamic(datadir + "/splitFiles/{sample}.forward.{seg}.fasta"),
-        dynamic(datadir + "/splitFiles/{sample}.reverse.{seg}.fasta")
+        dynamic(datadir + "/splitFiles/{sample}/forward/{seg}.fasta"),
+        dynamic(datadir + "/splitFiles/{sample}/reverse/{seg}.fasta")
     params:
         step = config["step"],
         overlap = config["overlap"]
@@ -33,8 +33,8 @@ checkpoint split_overlap_chunks: # split MSA fasta file into seperates files ###
 
             seg = str(chunk[0])+"-"+str(chunk[1])
 
-            f1 = open(datadir + "/splitFiles/"+wildcards.sample+".forward.{}.fasta".format(seg), "w")
-            f2 = open(datadir + "/splitFiles/"+wildcards.sample+".reverse.{}.fasta".format(seg), "w")
+            f1 = open(datadir + "/splitFiles/"+wildcards.sample+"/forward/{}.fasta".format(seg), "w")
+            f2 = open(datadir + "/splitFiles/"+wildcards.sample+"/reverse/{}.fasta".format(seg), "w")
 
             for id in fasta.keys() :
                 segment = fasta[id][chunk[0]:chunk[1]]
