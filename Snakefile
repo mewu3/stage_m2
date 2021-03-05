@@ -38,19 +38,20 @@ def fetchConfigParameters():
         config["mafft"]["quiet"] = ""
 fetchConfigParameters()
 
+
 rule all: # run all rules ######################################################
     input:
-        # remove duplicate sequences
+        ### remove duplicate sequences
         expand(
             datadir+"/duplicate_removed/{sample}.uniq.fasta",
             sample = samples
         ),
-        # multiple sequences alignment
+        ### multiple sequences alignment
         expand(
             datadir + "/msa/{sample}.msa.fasta",
                sample = samples
         ),
-        # split msa fasta
+        ### forward
         dynamic(
             expand(
                 datadir + "/splitFiles/{sample}/forward/{seg}.fasta",
@@ -58,14 +59,7 @@ rule all: # run all rules ######################################################
                 seg="{seg}"
             )
         ),
-        dynamic(
-            expand(
-                datadir + "/splitFiles/{sample}/reverse/{seg}.fasta",
-                sample = samples,
-                seg="{seg}"
-            )
-        ),
-        ### forward
+        ### dsk
         dynamic(
             expand(
                 datadir + "/kmerCounting/{sample}/forward/{seg}.h5",
@@ -101,46 +95,61 @@ rule all: # run all rules ######################################################
                 seg="{seg}"
             )
         ),
-        ### reverse
-        dynamic(
-            expand(
-                datadir + "/kmerCounting/{sample}/reverse/{seg}.h5",
-                sample = samples,
-                seg="{seg}"
-            )
-        ),
-        dynamic(
-            expand(
-                datadir + "/kmerCounting/{sample}/reverse/{seg}_dsk.txt",
-                sample = samples,
-                seg="{seg}"
-            )
-        ),
-        dynamic(
-            expand(
-                datadir + "/kmerCounting/{sample}/reverse/{seg}_dsk.sort",
-                sample = samples,
-                seg="{seg}"
-            )
-        ),
-        dynamic(
-            expand(
-                datadir + "/filtering/{sample}/reverse/{seg}_dsk.table",
-                sample = samples,
-                seg="{seg}"
-            )
-        ),
-        dynamic(
-            expand(
-                datadir + "/filtering/{sample}/reverse/{seg}_dsk.tsv",
-                sample = samples,
-                seg="{seg}"
-            )
+        expand(
+            datadir + "/filtering/{sample}/forward/all_oligo.tsv",
+            sample = samples
         )
+
+        ### reverse
+        # dynamic(
+        #     expand(
+        #         datadir + "/splitFiles/{sample}/reverse/{seg}.fasta",
+        #         sample = samples,
+        #         seg="{seg}",
+        #         if
+        #     )
+        # ),
+        # dynamic(
+        #     expand(
+        #         datadir + "/kmerCounting/{sample}/reverse/{seg}.h5",
+        #         sample = samples,
+        #         seg="{seg}"
+        #     )
+        # ),
+        # dynamic(
+        #     expand(
+        #         datadir + "/kmerCounting/{sample}/reverse/{seg}_dsk.txt",
+        #         sample = samples,
+        #         seg="{seg}"
+        #     )
+        # ),
+        # dynamic(
+        #     expand(
+        #         datadir + "/kmerCounting/{sample}/reverse/{seg}_dsk.sort",
+        #         sample = samples,
+        #         seg="{seg}"
+        #     )
+        # ),
+        # dynamic(
+        #     expand(
+        #         datadir + "/filtering/{sample}/reverse/{seg}_dsk.table",
+        #         sample = samples,
+        #         seg="{seg}"
+        #     )
+        # ),
+        # dynamic(
+        #     expand(
+        #         datadir + "/filtering/{sample}/reverse/{seg}_dsk.tsv",
+        #         sample = samples,
+        #         seg="{seg}"
+        #     )
+        # )
 
 include: "rules/remove_duplicate.smk"
 include: "rules/multiple_seq_alignment.smk"
 include: "rules/splitFiles.smk"
+
 include: "rules/kmer_dsk.smk"
+include: "rules/dsk_oligo_filter.smk"
+
 # include: "rules/kmer_kmc.smk"
-include: "rules/oligo_filter.smk"
