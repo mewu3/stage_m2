@@ -63,11 +63,26 @@ rule merge_all_kmers:
     shell:
         "sed -s 1d {input} >> {output}"
 
-rule filter_structure:
+rule hairpin_filter:
     input:
         datadir + "/filtering/{sample}/forward/all_oligo.tsv"
     output:
-        
+        datadir + "/filtering/{sample}/forward/all_oligo_hairpin.tsv"
+    run:
+        import os
+
+        output = open(output[0], "w")
+
+        with open(input[0], "r") as file:
+            for line in file:
+                line = line.rstrip("\n")
+                kmer = line.split()[0]
+                cmd = "lib/primer3/src/ntthal -r -a {} -s1 {}".format("HAIRPIN", kmer)
+                stdout = os.popen(cmd).read().strip()
+                outputLine = "{}\t{}\n".format(line, stdout)
+                if 
+
+
 
 
 

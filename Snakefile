@@ -98,6 +98,10 @@ rule all: # run all rules ######################################################
         expand(
             datadir + "/filtering/{sample}/forward/all_oligo.tsv",
             sample = samples
+        ),
+        expand(
+            datadir + "/filtering/{sample}/forward/all_oligo_hairpin.tsv",
+            sample = samples
         )
 
         ### reverse
