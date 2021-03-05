@@ -1,0 +1,22 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	merge_all_kmers
+	2
+Select jobs to execute...
+
+[Fri Mar  5 13:33:27 2021]
+rule merge_all_kmers:
+    input: /datater/wu/data/filtering/zika/forward
+    output: /datater/wu/data/filtering/zika/forward/all_oligo.tsv
+    jobid: 9
+    wildcards: sample=zika
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-05T133326.297927.snakemake.log
