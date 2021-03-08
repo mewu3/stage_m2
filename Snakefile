@@ -5,6 +5,7 @@ configfile: "config.yaml"
 
 samples = list(config["samples"].keys())
 datadir = config["datadir"]
+kmerCounter = "dsk"
 
 def fetchConfigParameters():
     if config["mafft"]["fmodel"] == "on":
@@ -43,18 +44,18 @@ rule all: # run all rules ######################################################
     input:
         ### remove duplicate sequences
         expand(
-            datadir+"/duplicate_removed/{sample}.uniq.fasta",
+            datadir+"/duplicate_removed/{sample}.uniq",
             sample = samples
         ),
         ### multiple sequences alignment
         expand(
-            datadir + "/msa/{sample}.msa.fasta",
+            datadir + "/msa/{sample}.msa",
                sample = samples
         ),
         ### forward
         dynamic(
             expand(
-                datadir + "/{sample}/split_forward/{seg}.fasta",
+                datadir + "/{sample}/split_forward/position_{seg}.fasta",
                 sample = samples,
                 seg="{seg}"
             )
@@ -99,19 +100,29 @@ rule all: # run all rules ######################################################
             datadir + "/{sample}/primer3_Tm/all_oligo",
             sample = samples
         ),
+        # expand(
+        #     datadir + "/{sample}/primer3_Tm/all_oligo.fasta",
+        #     sample = samples
+        # ),
+        # expand(datadir + "/{sample}/primer3_Tm/all_oligo.fasta.{ext}",
+        #     sample = samples,
+        #     ext = ["fai", "json", "log", "primerqc", "primerqc.fai"]
+        # ),
+        # expand(
+        #     datadir + "/{sample}/hairpin_out",
+        #     sample = samples
+        # )
         expand(
-            datadir + "/{sample}/primer3_Tm/all_oligo.fasta",
+            datadir + "/{sample}/primer3_ntthal/allOligo_hairpin",
             sample = samples
         ),
         expand(
-            datadir + "/{sample}/primer3_Tm/all_oligo.fasta.fai"
+            datadir + "{sample}/ptrimer3_ntthal/allOligo_hairpin_dimer",
+            sample = samples
         )
 
 include: "rules/remove_duplicate.smk"
 include: "rules/multiple_seq_alignment.smk"
 include: "rules/splitFiles.smk"
-
 include: "rules/kmer_dsk.smk"
-include: "rules/dsk_oligo_filter.smk"
-
-# include: "rules/kmer_kmc.smk"
+include: "rules/oligo_filter.smk"

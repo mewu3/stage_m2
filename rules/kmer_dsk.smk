@@ -1,6 +1,6 @@
 rule dskForward: # Kmer counting
     input:
-        datadir + "/{sample}/split_forward/{seg}.fasta"
+        datadir + "/{sample}/split_forward/position_{seg}.fasta"
     output:
         datadir + "/{sample}/dsk/forward_{seg}.h5"
     params:

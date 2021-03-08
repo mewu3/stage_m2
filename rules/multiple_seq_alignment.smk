@@ -1,8 +1,8 @@
 rule mafft: # multiple sequences alignment #####################################
     input:
-        datadir + "/duplicate_removed/{sample}.uniq.fasta"
+        datadir + "/duplicate_removed/{sample}.uniq"
     output:
-        datadir + "/msa/{sample}.msa.fasta"
+        datadir + "/msa/{sample}.msa"
     log:
         datadir + "/msa/mafft.{sample}.log"
     conda:

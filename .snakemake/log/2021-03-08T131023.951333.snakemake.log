@@ -1,0 +1,101 @@
+Building DAG of jobs...
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	index_fasta
+	1	merge_all_kmers
+	1	transforme_to_fasta
+	4
+Select jobs to execute...
+
+[Mon Mar  8 13:10:25 2021]
+rule merge_all_kmers:
+    input: /datater/wu/data/zika/primer3_Tm/forward_502-1003.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_2761-3262.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_5020-5521.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_6777-7278.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_251-752.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_7028-7529.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_8785-9286.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_3012-3513.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_8032-8533.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_9036-9537.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_3514-4015.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_1255-1756.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_4518-5019.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_10040-10541.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_7781-8282.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_1757-2258.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_7279-7780.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_3263-3764.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_6526-7027.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_9287-9788.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_6024-6525.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_4016-4517.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_6275-6776.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_1506-2007.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_2008-2509.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_1004-1505.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_8283-8784.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_9789-10290.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_4267-4768.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_2510-3011.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_10291-10792.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_8534-9035.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_0-501.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_753-1254.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_7530-8031.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_9538-10039.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_4769-5270.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_2259-2760.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_3765-4266.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_5522-6023.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_5271-5772.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_10542-10780.TmFilterered, /datater/wu/data/zika/primer3_Tm/forward_5773-6274.TmFilterered
+    output: /datater/wu/data/zika/primer3_Tm/all_oligo
+    jobid: 9
+    wildcards: sample=zika
+
+[Mon Mar  8 13:10:25 2021]
+Finished job 9.
+1 of 4 steps (25%) done
+Select jobs to execute...
+
+[Mon Mar  8 13:10:25 2021]
+rule transforme_to_fasta:
+    input: /datater/wu/data/zika/primer3_Tm/all_oligo
+    output: /datater/wu/data/zika/primer3_Tm/all_oligo.fasta
+    jobid: 268
+    wildcards: sample=zika
+
+[Mon Mar  8 13:10:26 2021]
+Finished job 268.
+2 of 4 steps (50%) done
+Select jobs to execute...
+
+[Mon Mar  8 13:10:26 2021]
+rule index_fasta:
+    input: /datater/wu/data/zika/primer3_Tm/all_oligo.fasta
+    output: /datater/wu/data/zika/primer3_Tm/all_oligo.fasta.fai, /datater/wu/data/zika/primer3_Tm/all_oligo.fasta.json, /datater/wu/data/zika/primer3_Tm/all_oligo.fasta.log, /datater/wu/data/zika/primer3_Tm/all_oligo.fasta.primerqc, /datater/wu/data/zika/primer3_Tm/all_oligo.fasta.mfeprimer.fai
+    jobid: 269
+    wildcards: sample=zika
+
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 81 of /datater/wu/stage_m2/rules/dsk_oligo_filter.smk:
+Job Missing files after 5 seconds:
+/datater/wu/data/zika/primer3_Tm/all_oligo.fasta.mfeprimer.fai
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 269 completed successfully, but some output files are missing. 269
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 583, in handle_job_success
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 252, in handle_job_success
+Removing output files of failed job index_fasta since they might be corrupted:
+/datater/wu/data/zika/primer3_Tm/all_oligo.fasta.fai, /datater/wu/data/zika/primer3_Tm/all_oligo.fasta.json, /datater/wu/data/zika/primer3_Tm/all_oligo.fasta.log, /datater/wu/data/zika/primer3_Tm/all_oligo.fasta.primerqc
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-08T131023.951333.snakemake.log
