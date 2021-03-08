@@ -2,8 +2,8 @@ rule splitFiles: # split MSA fasta file into seperates files #########
     input:
         datadir + "/msa/{sample}.msa.fasta"
     output:
-        dynamic(datadir + "/splitFiles/{sample}/forward/{seg}.fasta"),
-        dynamic(datadir + "/splitFiles/{sample}/reverse/{seg}.fasta")
+        dynamic(datadir + "/{sample}/split_forward/{seg}.fasta"),
+        # dynamic(datadir + "/splitFiles/{sample}/reverse/{seg}.fasta")
     params:
         step = config["step"],
         overlap = config["overlap"]
@@ -33,15 +33,15 @@ rule splitFiles: # split MSA fasta file into seperates files #########
 
             seg = str(chunk[0])+"-"+str(chunk[1])
 
-            f1 = open(datadir + "/splitFiles/"+wildcards.sample+"/forward/{}.fasta".format(seg), "w")
-            f2 = open(datadir + "/splitFiles/"+wildcards.sample+"/reverse/{}.fasta".format(seg), "w")
+            f1 = open(datadir + "/"+wildcards.sample+"/split_forward/{}.fasta".format(seg), "w")
+            # f2 = open(datadir + "/splitFiles/"+wildcards.sample+"/reverse/{}.fasta".format(seg), "w")
 
             for id in fasta.keys() :
                 segment = fasta[id][chunk[0]:chunk[1]]
                 forward = str(segment[:50])
-                reverse = str(segment[-50:])
+                # reverse = str(segment[-50:])
                 f1.write("> {} |{}-{} \n {} \n".format(fasta[id].long_name, str(chunk[0]), str(chunk[1]), forward))
-                f2.write("> {} |{}-{} \n {} \n".format(fasta[id].long_name, str(chunk[0]), str(chunk[1]), reverse))
+                # f2.write("> {} |{}-{} \n {} \n".format(fasta[id].long_name, str(chunk[0]), str(chunk[1]), reverse))
 
             f1.close()
-            f2.close()
+            # f2.close()

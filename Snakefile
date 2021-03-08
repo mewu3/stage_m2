@@ -54,100 +54,58 @@ rule all: # run all rules ######################################################
         ### forward
         dynamic(
             expand(
-                datadir + "/splitFiles/{sample}/forward/{seg}.fasta",
+                datadir + "/{sample}/split_forward/{seg}.fasta",
                 sample = samples,
                 seg="{seg}"
             )
         ),
-        ### dsk
+        ### dsk kmer counting
         dynamic(
             expand(
-                datadir + "/kmerCounting/{sample}/forward/{seg}.h5",
-                sample = samples,
-                seg="{seg}"
-            )
-        ),
-        dynamic(
-            expand(
-                datadir + "/kmerCounting/{sample}/forward/{seg}_dsk.txt",
+                datadir + "/{sample}/dsk/forward_{seg}.h5",
                 sample = samples,
                 seg="{seg}"
             )
         ),
         dynamic(
             expand(
-                datadir + "/kmerCounting/{sample}/forward/{seg}_dsk.sort",
+                datadir + "/{sample}/dsk/forward_{seg}.kCount",
                 sample = samples,
                 seg="{seg}"
             )
         ),
         dynamic(
             expand(
-                datadir + "/filtering/{sample}/forward/{seg}_dsk.table",
+                datadir + "/{sample}/dsk/forward_{seg}.kCountSorted",
                 sample = samples,
                 seg="{seg}"
             )
         ),
         dynamic(
             expand(
-                datadir + "/filtering/{sample}/forward/{seg}_dsk.tsv",
+                datadir + "/{sample}/primer3_Tm/forward_{seg}.Tm",
+                sample = samples,
+                seg="{seg}"
+            )
+        ),
+        dynamic(
+            expand(
+                datadir + "/{sample}/primer3_Tm/forward_{seg}.TmFilterered",
                 sample = samples,
                 seg="{seg}"
             )
         ),
         expand(
-            datadir + "/filtering/{sample}/forward/all_oligo.tsv",
+            datadir + "/{sample}/primer3_Tm/all_oligo",
             sample = samples
         ),
         expand(
-            datadir + "/filtering/{sample}/forward/all_oligo_hairpin.tsv",
+            datadir + "/{sample}/primer3_Tm/all_oligo.fasta",
             sample = samples
+        ),
+        expand(
+            datadir + "/{sample}/primer3_Tm/all_oligo.fasta.fai"
         )
-
-        ### reverse
-        # dynamic(
-        #     expand(
-        #         datadir + "/splitFiles/{sample}/reverse/{seg}.fasta",
-        #         sample = samples,
-        #         seg="{seg}",
-        #         if
-        #     )
-        # ),
-        # dynamic(
-        #     expand(
-        #         datadir + "/kmerCounting/{sample}/reverse/{seg}.h5",
-        #         sample = samples,
-        #         seg="{seg}"
-        #     )
-        # ),
-        # dynamic(
-        #     expand(
-        #         datadir + "/kmerCounting/{sample}/reverse/{seg}_dsk.txt",
-        #         sample = samples,
-        #         seg="{seg}"
-        #     )
-        # ),
-        # dynamic(
-        #     expand(
-        #         datadir + "/kmerCounting/{sample}/reverse/{seg}_dsk.sort",
-        #         sample = samples,
-        #         seg="{seg}"
-        #     )
-        # ),
-        # dynamic(
-        #     expand(
-        #         datadir + "/filtering/{sample}/reverse/{seg}_dsk.table",
-        #         sample = samples,
-        #         seg="{seg}"
-        #     )
-        # ),
-        # dynamic(
-        #     expand(
-        #         datadir + "/filtering/{sample}/reverse/{seg}_dsk.tsv",
-        #         sample = samples,
-        #         seg="{seg}"
-        #     )
-        # )
 
 include: "rules/remove_duplicate.smk"
 include: "rules/multiple_seq_alignment.smk"
