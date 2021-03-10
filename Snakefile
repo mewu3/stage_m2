@@ -42,7 +42,7 @@ fetchConfigParameters()
 
 rule all: # run all rules ######################################################
     input:
-        ### remove duplicate sequences
+        ### remove duplicate sequences
         expand(
             datadir+"/duplicate_removed/{sample}.uniq",
             sample = samples
@@ -52,7 +52,7 @@ rule all: # run all rules ######################################################
             datadir + "/msa/{sample}.msa",
                sample = samples
         ),
-        ### forward
+        ### forward
         dynamic(
             expand(
                 datadir + "/{sample}/split_forward/position_{seg}.fasta",
@@ -84,22 +84,22 @@ rule all: # run all rules ######################################################
         ),
         dynamic(
             expand(
-                datadir + "/{sample}/primer3_Tm/forward_{seg}.Tm",
+                datadir + "/{sample}/primer3/forward_{seg}.calculated",
                 sample = samples,
                 seg="{seg}"
             )
         ),
         dynamic(
             expand(
-                datadir + "/{sample}/primer3_Tm/forward_{seg}.TmFilterered",
+                datadir + "/{sample}/primer3/forward_{seg}.filtered",
                 sample = samples,
                 seg="{seg}"
             )
-        ),
-        expand(
-            datadir + "/{sample}/primer3_Tm/all_oligo",
-            sample = samples
-        ),
+        )
+        # expand(
+        #     datadir + "/{sample}/primer3_Tm/all_oligo",
+        #     sample = samples
+        # ),
         # expand(
         #     datadir + "/{sample}/primer3_Tm/all_oligo.fasta",
         #     sample = samples
@@ -111,15 +111,15 @@ rule all: # run all rules ######################################################
         # expand(
         #     datadir + "/{sample}/hairpin_out",
         #     sample = samples
+        # ),
+        # expand(
+        #     datadir + "/{sample}/primer3_ntthal/allOligo_hairpin",
+        #     sample = samples
+        # ),
+        # expand(
+        #     datadir + "{sample}/ptrimer3_ntthal/allOligo_hairpin_dimer",
+        #     sample = samples
         # )
-        expand(
-            datadir + "/{sample}/primer3_ntthal/allOligo_hairpin",
-            sample = samples
-        ),
-        expand(
-            datadir + "{sample}/ptrimer3_ntthal/allOligo_hairpin_dimer",
-            sample = samples
-        )
 
 include: "rules/remove_duplicate.smk"
 include: "rules/multiple_seq_alignment.smk"

@@ -1,0 +1,236 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	74	dskForward
+	74	dskForwardOutput
+	74	dskForwardOutputSort
+	74	filter_within_seg
+	37	splitFiles
+	334
+Select jobs to execute...
+
+[Wed Mar 10 09:29:08 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/zika.msa
+    output: /datater/wu/data/zika/split_forward/position_9144-9382.fasta (dynamic)
+    jobid: 41
+    wildcards: sample=zika, seg=9144-9382
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Wed Mar 10 09:29:08 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/zika.msa
+    output: /datater/wu/data/zika/split_forward/position_2540-3044.fasta (dynamic)
+    jobid: 48
+    wildcards: sample=zika, seg=2540-3044
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Wed Mar 10 09:29:08 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/split_forward/position_1778-2282.fasta
+    output: /datater/wu/data/enterovirus/dsk/forward_1778-2282.h5
+    jobid: 68
+    wildcards: sample=enterovirus, seg=1778-2282
+
+
+[Wed Mar 10 09:29:08 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/zika.msa
+    output: /datater/wu/data/zika/split_forward/position_1778-2282.fasta (dynamic)
+    jobid: 31
+    wildcards: sample=zika, seg=1778-2282
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Wed Mar 10 09:29:08 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/zika.msa
+    output: /datater/wu/data/zika/split_forward/position_3302-3806.fasta (dynamic)
+    jobid: 23
+    wildcards: sample=zika, seg=3302-3806
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Wed Mar 10 09:29:08 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/split_forward/position_0-504.fasta
+    output: /datater/wu/data/enterovirus/dsk/forward_0-504.h5
+    jobid: 76
+    wildcards: sample=enterovirus, seg=0-504
+
+
+[Wed Mar 10 09:29:08 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/zika.msa
+    output: /datater/wu/data/zika/split_forward/position_4318-4822.fasta (dynamic)
+    jobid: 38
+    wildcards: sample=zika, seg=4318-4822
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Wed Mar 10 09:29:08 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/zika.msa
+    output: /datater/wu/data/zika/split_forward/position_6350-6854.fasta (dynamic)
+    jobid: 46
+    wildcards: sample=zika, seg=6350-6854
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Wed Mar 10 09:29:08 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/zika.msa
+    output: /datater/wu/data/zika/split_forward/position_2794-3298.fasta (dynamic)
+    jobid: 53
+    wildcards: sample=zika, seg=2794-3298
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Wed Mar 10 09:29:08 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/split_forward/position_6350-6854.fasta
+    output: /datater/wu/data/enterovirus/dsk/forward_6350-6854.h5
+    jobid: 83
+    wildcards: sample=enterovirus, seg=6350-6854
+
+
+[Wed Mar 10 09:29:08 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/split_forward/position_4064-4568.fasta
+    output: /datater/wu/data/enterovirus/dsk/forward_4064-4568.h5
+    jobid: 61
+    wildcards: sample=enterovirus, seg=4064-4568
+
+
+[Wed Mar 10 09:29:08 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/split_forward/position_762-1266.fasta
+    output: /datater/wu/data/enterovirus/dsk/forward_762-1266.h5
+    jobid: 91
+    wildcards: sample=enterovirus, seg=762-1266
+
+[Wed Mar 10 09:29:10 2021]
+Finished job 76.
+1 of 334 steps (0.30%) done
+Select jobs to execute...
+
+[Wed Mar 10 09:29:10 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/split_forward/position_5080-5584.fasta
+    output: /datater/wu/data/enterovirus/dsk/forward_5080-5584.h5
+    jobid: 89
+    wildcards: sample=enterovirus, seg=5080-5584
+
+[Wed Mar 10 09:29:10 2021]
+Finished job 61.
+2 of 334 steps (0.60%) done
+Select jobs to execute...
+[Wed Mar 10 09:29:10 2021]
+Finished job 91.
+3 of 334 steps (0.90%) done
+[Wed Mar 10 09:29:10 2021]
+Finished job 68.
+4 of 334 steps (1%) done
+
+[Wed Mar 10 09:29:10 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/zika.msa
+    output: /datater/wu/data/zika/split_forward/position_2286-2790.fasta (dynamic)
+    jobid: 22
+    wildcards: sample=zika, seg=2286-2790
+
+Subsequent jobs will be added dynamically depending on the output of this job
+Select jobs to execute...
+[Wed Mar 10 09:29:10 2021]
+Finished job 83.
+5 of 334 steps (1%) done
+
+[Wed Mar 10 09:29:10 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/zika.msa
+    output: /datater/wu/data/zika/split_forward/position_4064-4568.fasta (dynamic)
+    jobid: 24
+    wildcards: sample=zika, seg=4064-4568
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Wed Mar 10 09:29:10 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/split_forward/position_4826-5330.fasta
+    output: /datater/wu/data/enterovirus/dsk/forward_4826-5330.h5
+    jobid: 67
+    wildcards: sample=enterovirus, seg=4826-5330
+
+Select jobs to execute...
+
+[Wed Mar 10 09:29:10 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/zika.msa
+    output: /datater/wu/data/zika/split_forward/position_7366-7870.fasta (dynamic)
+    jobid: 37
+    wildcards: sample=zika, seg=7366-7870
+
+Subsequent jobs will be added dynamically depending on the output of this job
+Select jobs to execute...
+[Wed Mar 10 09:29:13 2021]
+Finished job 89.
+6 of 334 steps (2%) done
+Select jobs to execute...
+
+[Wed Mar 10 09:29:13 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/forward_5080-5584.h5
+    output: /datater/wu/data/enterovirus/dsk/forward_5080-5584.kCount
+    jobid: 163
+    wildcards: sample=enterovirus, seg=5080-5584
+
+[Wed Mar 10 09:29:13 2021]
+Finished job 163.
+7 of 334 steps (2%) done
+Select jobs to execute...
+[Wed Mar 10 09:29:13 2021]
+Finished job 67.
+8 of 334 steps (2%) done
+
+[Wed Mar 10 09:29:13 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/zika.msa
+    output: /datater/wu/data/zika/split_forward/position_7620-8124.fasta (dynamic)
+    jobid: 45
+    wildcards: sample=zika, seg=7620-8124
+
+Subsequent jobs will be added dynamically depending on the output of this job
+Select jobs to execute...
+
+[Wed Mar 10 09:29:13 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/forward_4826-5330.h5
+    output: /datater/wu/data/enterovirus/dsk/forward_4826-5330.kCount
+    jobid: 141
+    wildcards: sample=enterovirus, seg=4826-5330
+
+[Wed Mar 10 09:29:13 2021]
+Finished job 141.
+9 of 334 steps (3%) done
+Select jobs to execute...
+
+[Wed Mar 10 09:29:13 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/split_forward/position_2286-2790.fasta
+    output: /datater/wu/data/enterovirus/dsk/forward_2286-2790.h5
+    jobid: 59
+    wildcards: sample=enterovirus, seg=2286-2790
+
+[Wed Mar 10 09:29:15 2021]
+Finished job 59.
+10 of 334 steps (3%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-10T092907.470344.snakemake.log

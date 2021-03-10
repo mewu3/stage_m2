@@ -1,0 +1,2528 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	33	dskForward
+	43	dskForwardOutput
+	43	dskForwardOutputSort
+	43	filterOut_within_segments
+	43	within_segments
+	206
+Select jobs to execute...
+
+[Wed Mar 10 17:06:28 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_1757-2258.fasta
+    output: /datater/wu/data/zika/dsk/forward_1757-2258.h5
+    jobid: 52
+    wildcards: sample=zika, seg=1757-2258
+
+
+[Wed Mar 10 17:06:28 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_10291-10792.fasta
+    output: /datater/wu/data/zika/dsk/forward_10291-10792.h5
+    jobid: 48
+    wildcards: sample=zika, seg=10291-10792
+
+
+[Wed Mar 10 17:06:28 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_5020-5521.h5
+    output: /datater/wu/data/zika/dsk/forward_5020-5521.kCount
+    jobid: 82
+    wildcards: sample=zika, seg=5020-5521
+
+
+[Wed Mar 10 17:06:28 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_1506-2007.fasta
+    output: /datater/wu/data/zika/dsk/forward_1506-2007.h5
+    jobid: 16
+    wildcards: sample=zika, seg=1506-2007
+
+
+[Wed Mar 10 17:06:28 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_8283-8784.fasta
+    output: /datater/wu/data/zika/dsk/forward_8283-8784.h5
+    jobid: 31
+    wildcards: sample=zika, seg=8283-8784
+
+
+[Wed Mar 10 17:06:28 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_2259-2760.h5
+    output: /datater/wu/data/zika/dsk/forward_2259-2760.kCount
+    jobid: 68
+    wildcards: sample=zika, seg=2259-2760
+
+
+[Wed Mar 10 17:06:28 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_8785-9286.h5
+    output: /datater/wu/data/zika/dsk/forward_8785-9286.kCount
+    jobid: 75
+    wildcards: sample=zika, seg=8785-9286
+
+[Wed Mar 10 17:06:28 2021]
+Finished job 82.
+1 of 206 steps (0.49%) done
+
+[Wed Mar 10 17:06:28 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_2008-2509.fasta
+    output: /datater/wu/data/zika/dsk/forward_2008-2509.h5
+    jobid: 15
+    wildcards: sample=zika, seg=2008-2509
+
+
+[Wed Mar 10 17:06:28 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_7781-8282.fasta
+    output: /datater/wu/data/zika/dsk/forward_7781-8282.h5
+    jobid: 30
+    wildcards: sample=zika, seg=7781-8282
+
+
+[Wed Mar 10 17:06:28 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_2761-3262.fasta
+    output: /datater/wu/data/zika/dsk/forward_2761-3262.h5
+    jobid: 45
+    wildcards: sample=zika, seg=2761-3262
+
+[Wed Mar 10 17:06:28 2021]
+Finished job 68.
+2 of 206 steps (0.97%) done
+
+[Wed Mar 10 17:06:28 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_4518-5019.fasta
+    output: /datater/wu/data/zika/dsk/forward_4518-5019.h5
+    jobid: 23
+    wildcards: sample=zika, seg=4518-5019
+
+[Wed Mar 10 17:06:28 2021]
+Finished job 75.
+3 of 206 steps (1%) done
+
+[Wed Mar 10 17:06:28 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_10040-10541.fasta
+    output: /datater/wu/data/zika/dsk/forward_10040-10541.h5
+    jobid: 53
+    wildcards: sample=zika, seg=10040-10541
+
+Select jobs to execute...
+
+[Wed Mar 10 17:06:28 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_6024-6525.fasta
+    output: /datater/wu/data/zika/dsk/forward_6024-6525.h5
+    jobid: 17
+    wildcards: sample=zika, seg=6024-6525
+
+
+[Wed Mar 10 17:06:28 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_5020-5521.kCount
+    output: /datater/wu/data/zika/dsk/forward_5020-5521.kCountSorted
+    jobid: 125
+    wildcards: sample=zika, seg=5020-5521
+
+[Wed Mar 10 17:06:28 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_6275-6776.h5
+    output: /datater/wu/data/zika/dsk/forward_6275-6776.kCount
+    jobid: 81
+    wildcards: sample=zika, seg=6275-6776
+
+Select jobs to execute...
+Select jobs to execute...
+[Wed Mar 10 17:06:28 2021]
+Finished job 81.
+4 of 206 steps (2%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:28 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_9789-10290.fasta
+    output: /datater/wu/data/zika/dsk/forward_9789-10290.h5
+    jobid: 18
+    wildcards: sample=zika, seg=9789-10290
+
+[Wed Mar 10 17:06:29 2021]
+Finished job 125.
+5 of 206 steps (2%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:29 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_1004-1505.fasta
+    output: /datater/wu/data/zika/dsk/forward_1004-1505.h5
+    jobid: 40
+    wildcards: sample=zika, seg=1004-1505
+
+[Wed Mar 10 17:06:31 2021]
+Finished job 48.
+6 of 206 steps (3%) done
+Select jobs to execute...
+[Wed Mar 10 17:06:31 2021]
+Finished job 52.
+7 of 206 steps (3%) done
+[Wed Mar 10 17:06:31 2021]
+Finished job 23.
+8 of 206 steps (4%) done
+
+[Wed Mar 10 17:06:31 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_3765-4266.fasta
+    output: /datater/wu/data/zika/dsk/forward_3765-4266.h5
+    jobid: 41
+    wildcards: sample=zika, seg=3765-4266
+
+Select jobs to execute...
+[Wed Mar 10 17:06:31 2021]
+Finished job 31.
+9 of 206 steps (4%) done
+
+[Wed Mar 10 17:06:31 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_10291-10792.h5
+    output: /datater/wu/data/zika/dsk/forward_10291-10792.kCount
+    jobid: 91
+    wildcards: sample=zika, seg=10291-10792
+
+
+[Wed Mar 10 17:06:31 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_2259-2760.kCount
+    output: /datater/wu/data/zika/dsk/forward_2259-2760.kCountSorted
+    jobid: 111
+    wildcards: sample=zika, seg=2259-2760
+
+Select jobs to execute...
+[Wed Mar 10 17:06:31 2021]
+Finished job 91.
+10 of 206 steps (5%) done
+[Wed Mar 10 17:06:31 2021]
+Finished job 45.
+11 of 206 steps (5%) done
+
+[Wed Mar 10 17:06:31 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_5271-5772.fasta
+    output: /datater/wu/data/zika/dsk/forward_5271-5772.h5
+    jobid: 26
+    wildcards: sample=zika, seg=5271-5772
+
+Select jobs to execute...
+[Wed Mar 10 17:06:31 2021]
+Finished job 16.
+12 of 206 steps (6%) done
+
+[Wed Mar 10 17:06:31 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_4518-5019.h5
+    output: /datater/wu/data/zika/dsk/forward_4518-5019.kCount
+    jobid: 66
+    wildcards: sample=zika, seg=4518-5019
+
+
+[Wed Mar 10 17:06:31 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_8032-8533.fasta
+    output: /datater/wu/data/zika/dsk/forward_8032-8533.h5
+    jobid: 24
+    wildcards: sample=zika, seg=8032-8533
+
+Select jobs to execute...
+[Wed Mar 10 17:06:31 2021]
+Finished job 66.
+13 of 206 steps (6%) done
+[Wed Mar 10 17:06:31 2021]
+Finished job 30.
+14 of 206 steps (7%) done
+
+[Wed Mar 10 17:06:31 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_5773-6274.fasta
+    output: /datater/wu/data/zika/dsk/forward_5773-6274.h5
+    jobid: 33
+    wildcards: sample=zika, seg=5773-6274
+
+Select jobs to execute...
+
+[Wed Mar 10 17:06:31 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_4016-4517.fasta
+    output: /datater/wu/data/zika/dsk/forward_4016-4517.h5
+    jobid: 46
+    wildcards: sample=zika, seg=4016-4517
+
+
+[Wed Mar 10 17:06:31 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_2761-3262.h5
+    output: /datater/wu/data/zika/dsk/forward_2761-3262.kCount
+    jobid: 88
+    wildcards: sample=zika, seg=2761-3262
+
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+[Wed Mar 10 17:06:31 2021]
+Finished job 88.
+15 of 206 steps (7%) done
+Select jobs to execute...
+[Wed Mar 10 17:06:31 2021]
+Finished job 53.
+16 of 206 steps (8%) done
+[Wed Mar 10 17:06:31 2021]
+Finished job 15.
+17 of 206 steps (8%) done
+
+[Wed Mar 10 17:06:31 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_7530-8031.fasta
+    output: /datater/wu/data/zika/dsk/forward_7530-8031.h5
+    jobid: 11
+    wildcards: sample=zika, seg=7530-8031
+
+Select jobs to execute...
+[Wed Mar 10 17:06:31 2021]
+Finished job 18.
+18 of 206 steps (9%) done
+
+[Wed Mar 10 17:06:31 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_7781-8282.h5
+    output: /datater/wu/data/zika/dsk/forward_7781-8282.kCount
+    jobid: 73
+    wildcards: sample=zika, seg=7781-8282
+
+
+[Wed Mar 10 17:06:31 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_2761-3262.kCount
+    output: /datater/wu/data/zika/dsk/forward_2761-3262.kCountSorted
+    jobid: 131
+    wildcards: sample=zika, seg=2761-3262
+
+Select jobs to execute...
+[Wed Mar 10 17:06:31 2021]
+Finished job 17.
+19 of 206 steps (9%) done
+[Wed Mar 10 17:06:31 2021]
+Finished job 73.
+20 of 206 steps (10%) done
+
+[Wed Mar 10 17:06:31 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_9538-10039.fasta
+    output: /datater/wu/data/zika/dsk/forward_9538-10039.h5
+    jobid: 51
+    wildcards: sample=zika, seg=9538-10039
+
+
+[Wed Mar 10 17:06:31 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_1757-2258.h5
+    output: /datater/wu/data/zika/dsk/forward_1757-2258.kCount
+    jobid: 95
+    wildcards: sample=zika, seg=1757-2258
+
+Select jobs to execute...
+[Wed Mar 10 17:06:31 2021]
+Finished job 95.
+21 of 206 steps (10%) done
+
+[Wed Mar 10 17:06:31 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_4769-5270.fasta
+    output: /datater/wu/data/zika/dsk/forward_4769-5270.h5
+    jobid: 19
+    wildcards: sample=zika, seg=4769-5270
+
+Select jobs to execute...
+
+[Wed Mar 10 17:06:31 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_9036-9537.h5
+    output: /datater/wu/data/zika/dsk/forward_9036-9537.kCount
+    jobid: 71
+    wildcards: sample=zika, seg=9036-9537
+
+Select jobs to execute...
+Select jobs to execute...
+[Wed Mar 10 17:06:31 2021]
+Finished job 71.
+22 of 206 steps (11%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:31 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_3263-3764.h5
+    output: /datater/wu/data/zika/dsk/forward_3263-3764.kCount
+    jobid: 56
+    wildcards: sample=zika, seg=3263-3764
+
+[Wed Mar 10 17:06:31 2021]
+Finished job 56.
+23 of 206 steps (11%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:31 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_1757-2258.kCount
+    output: /datater/wu/data/zika/dsk/forward_1757-2258.kCountSorted
+    jobid: 138
+    wildcards: sample=zika, seg=1757-2258
+
+[Wed Mar 10 17:06:31 2021]
+Finished job 111.
+24 of 206 steps (12%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:31 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_2259-2760.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_2259-2760.calculated
+    jobid: 154
+    wildcards: sample=zika, seg=2259-2760
+
+[Wed Mar 10 17:06:32 2021]
+Finished job 40.
+25 of 206 steps (12%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:32 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_7279-7780.fasta
+    output: /datater/wu/data/zika/dsk/forward_7279-7780.h5
+    jobid: 34
+    wildcards: sample=zika, seg=7279-7780
+
+[Wed Mar 10 17:06:32 2021]
+Finished job 131.
+26 of 206 steps (13%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:32 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_2761-3262.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_2761-3262.calculated
+    jobid: 174
+    wildcards: sample=zika, seg=2761-3262
+
+[Wed Mar 10 17:06:32 2021]
+Finished job 138.
+27 of 206 steps (13%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:32 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_7028-7529.fasta
+    output: /datater/wu/data/zika/dsk/forward_7028-7529.h5
+    jobid: 49
+    wildcards: sample=zika, seg=7028-7529
+
+[Wed Mar 10 17:06:32 2021]
+Finished job 154.
+28 of 206 steps (14%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:32 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_2259-2760.calculated
+    output: /datater/wu/data/zika/primer3/forward_2259-2760.filtered
+    jobid: 197
+    wildcards: sample=zika, seg=2259-2760
+Downstream jobs will be updated after completion.
+
+[Wed Mar 10 17:06:32 2021]
+Finished job 174.
+29 of 206 steps (14%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:32 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_5020-5521.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_5020-5521.calculated
+    jobid: 168
+    wildcards: sample=zika, seg=5020-5521
+
+[Wed Mar 10 17:06:33 2021]
+Finished job 41.
+30 of 206 steps (15%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:33 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_4518-5019.kCount
+    output: /datater/wu/data/zika/dsk/forward_4518-5019.kCountSorted
+    jobid: 109
+    wildcards: sample=zika, seg=4518-5019
+
+[Wed Mar 10 17:06:33 2021]
+Finished job 26.
+31 of 206 steps (15%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:33 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_1255-1756.fasta
+    output: /datater/wu/data/zika/dsk/forward_1255-1756.h5
+    jobid: 12
+    wildcards: sample=zika, seg=1255-1756
+
+[Wed Mar 10 17:06:33 2021]
+Finished job 24.
+32 of 206 steps (16%) done
+Select jobs to execute...
+[Wed Mar 10 17:06:33 2021]
+Finished job 33.
+33 of 206 steps (16%) done
+
+[Wed Mar 10 17:06:33 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_6777-7278.fasta
+    output: /datater/wu/data/zika/dsk/forward_6777-7278.h5
+    jobid: 27
+    wildcards: sample=zika, seg=6777-7278
+
+Select jobs to execute...
+
+[Wed Mar 10 17:06:33 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_7781-8282.kCount
+    output: /datater/wu/data/zika/dsk/forward_7781-8282.kCountSorted
+    jobid: 116
+    wildcards: sample=zika, seg=7781-8282
+
+[Wed Mar 10 17:06:33 2021]
+Finished job 46.
+34 of 206 steps (17%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:33 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_8534-9035.fasta
+    output: /datater/wu/data/zika/dsk/forward_8534-9035.h5
+    jobid: 42
+    wildcards: sample=zika, seg=8534-9035
+
+[Wed Mar 10 17:06:33 2021]
+Finished job 11.
+35 of 206 steps (17%) done
+Select jobs to execute...
+[Wed Mar 10 17:06:33 2021]
+Finished job 19.
+36 of 206 steps (17%) done
+
+[Wed Mar 10 17:06:33 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_251-752.fasta
+    output: /datater/wu/data/zika/dsk/forward_251-752.h5
+    jobid: 35
+    wildcards: sample=zika, seg=251-752
+
+Select jobs to execute...
+[Wed Mar 10 17:06:33 2021]
+Finished job 51.
+37 of 206 steps (18%) done
+
+[Wed Mar 10 17:06:33 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_502-1003.h5
+    output: /datater/wu/data/zika/dsk/forward_502-1003.kCount
+    jobid: 57
+    wildcards: sample=zika, seg=502-1003
+
+Select jobs to execute...
+[Wed Mar 10 17:06:33 2021]
+Finished job 57.
+38 of 206 steps (18%) done
+
+[Wed Mar 10 17:06:33 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_9538-10039.h5
+    output: /datater/wu/data/zika/dsk/forward_9538-10039.kCount
+    jobid: 94
+    wildcards: sample=zika, seg=9538-10039
+
+Select jobs to execute...
+[Wed Mar 10 17:06:33 2021]
+Finished job 94.
+39 of 206 steps (19%) done
+
+[Wed Mar 10 17:06:33 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_502-1003.kCount
+    output: /datater/wu/data/zika/dsk/forward_502-1003.kCountSorted
+    jobid: 100
+    wildcards: sample=zika, seg=502-1003
+
+Select jobs to execute...
+
+[Wed Mar 10 17:06:33 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_9538-10039.kCount
+    output: /datater/wu/data/zika/dsk/forward_9538-10039.kCountSorted
+    jobid: 137
+    wildcards: sample=zika, seg=9538-10039
+
+[Wed Mar 10 17:06:33 2021]
+Finished job 168.
+40 of 206 steps (19%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:33 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_0-501.h5
+    output: /datater/wu/data/zika/dsk/forward_0-501.kCount
+    jobid: 72
+    wildcards: sample=zika, seg=0-501
+
+[Wed Mar 10 17:06:33 2021]
+Finished job 72.
+41 of 206 steps (20%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:33 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_0-501.kCount
+    output: /datater/wu/data/zika/dsk/forward_0-501.kCountSorted
+    jobid: 115
+    wildcards: sample=zika, seg=0-501
+
+Updating job all.
+[Wed Mar 10 17:06:34 2021]
+Finished job 197.
+42 of 206 steps (20%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:34 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_3514-4015.fasta
+    output: /datater/wu/data/zika/dsk/forward_3514-4015.h5
+    jobid: 20
+    wildcards: sample=zika, seg=3514-4015
+
+[Wed Mar 10 17:06:34 2021]
+Finished job 109.
+43 of 206 steps (21%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:34 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_9036-9537.kCount
+    output: /datater/wu/data/zika/dsk/forward_9036-9537.kCountSorted
+    jobid: 114
+    wildcards: sample=zika, seg=9036-9537
+
+[Wed Mar 10 17:06:34 2021]
+Finished job 116.
+44 of 206 steps (21%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:34 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_7781-8282.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_7781-8282.calculated
+    jobid: 159
+    wildcards: sample=zika, seg=7781-8282
+
+[Wed Mar 10 17:06:34 2021]
+Finished job 34.
+45 of 206 steps (22%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:34 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_753-1254.h5
+    output: /datater/wu/data/zika/dsk/forward_753-1254.kCount
+    jobid: 80
+    wildcards: sample=zika, seg=753-1254
+
+[Wed Mar 10 17:06:34 2021]
+Finished job 80.
+46 of 206 steps (22%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:34 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_753-1254.kCount
+    output: /datater/wu/data/zika/dsk/forward_753-1254.kCountSorted
+    jobid: 123
+    wildcards: sample=zika, seg=753-1254
+
+[Wed Mar 10 17:06:34 2021]
+Finished job 137.
+47 of 206 steps (23%) done
+Select jobs to execute...
+[Wed Mar 10 17:06:34 2021]
+Finished job 100.
+48 of 206 steps (23%) done
+
+[Wed Mar 10 17:06:34 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_6275-6776.kCount
+    output: /datater/wu/data/zika/dsk/forward_6275-6776.kCountSorted
+    jobid: 124
+    wildcards: sample=zika, seg=6275-6776
+
+Select jobs to execute...
+
+[Wed Mar 10 17:06:34 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_6526-7027.h5
+    output: /datater/wu/data/zika/dsk/forward_6526-7027.kCount
+    jobid: 65
+    wildcards: sample=zika, seg=6526-7027
+
+[Wed Mar 10 17:06:34 2021]
+Finished job 65.
+49 of 206 steps (24%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:34 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_4518-5019.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_4518-5019.calculated
+    jobid: 152
+    wildcards: sample=zika, seg=4518-5019
+
+[Wed Mar 10 17:06:34 2021]
+Finished job 115.
+50 of 206 steps (24%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:34 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_10542-10780.fasta
+    output: /datater/wu/data/zika/dsk/forward_10542-10780.h5
+    jobid: 50
+    wildcards: sample=zika, seg=10542-10780
+
+[Wed Mar 10 17:06:34 2021]
+Finished job 49.
+51 of 206 steps (25%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:34 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_9287-9788.fasta
+    output: /datater/wu/data/zika/dsk/forward_9287-9788.h5
+    jobid: 21
+    wildcards: sample=zika, seg=9287-9788
+
+[Wed Mar 10 17:06:35 2021]
+Finished job 114.
+52 of 206 steps (25%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:35 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_10040-10541.h5
+    output: /datater/wu/data/zika/dsk/forward_10040-10541.kCount
+    jobid: 96
+    wildcards: sample=zika, seg=10040-10541
+
+[Wed Mar 10 17:06:35 2021]
+Finished job 96.
+53 of 206 steps (26%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:35 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_10040-10541.kCount
+    output: /datater/wu/data/zika/dsk/forward_10040-10541.kCountSorted
+    jobid: 139
+    wildcards: sample=zika, seg=10040-10541
+
+[Wed Mar 10 17:06:35 2021]
+Finished job 159.
+54 of 206 steps (26%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:35 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_3012-3513.fasta
+    output: /datater/wu/data/zika/dsk/forward_3012-3513.h5
+    jobid: 43
+    wildcards: sample=zika, seg=3012-3513
+
+[Wed Mar 10 17:06:35 2021]
+Finished job 124.
+55 of 206 steps (27%) done
+Select jobs to execute...
+[Wed Mar 10 17:06:35 2021]
+Finished job 123.
+56 of 206 steps (27%) done
+
+[Wed Mar 10 17:06:35 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_6526-7027.kCount
+    output: /datater/wu/data/zika/dsk/forward_6526-7027.kCountSorted
+    jobid: 108
+    wildcards: sample=zika, seg=6526-7027
+
+Select jobs to execute...
+
+[Wed Mar 10 17:06:35 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_4267-4768.fasta
+    output: /datater/wu/data/zika/dsk/forward_4267-4768.h5
+    jobid: 36
+    wildcards: sample=zika, seg=4267-4768
+
+[Wed Mar 10 17:06:35 2021]
+Finished job 152.
+57 of 206 steps (28%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:35 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_2008-2509.h5
+    output: /datater/wu/data/zika/dsk/forward_2008-2509.kCount
+    jobid: 58
+    wildcards: sample=zika, seg=2008-2509
+
+[Wed Mar 10 17:06:35 2021]
+Finished job 58.
+58 of 206 steps (28%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:35 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_2008-2509.kCount
+    output: /datater/wu/data/zika/dsk/forward_2008-2509.kCountSorted
+    jobid: 101
+    wildcards: sample=zika, seg=2008-2509
+
+[Wed Mar 10 17:06:35 2021]
+Finished job 12.
+59 of 206 steps (29%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:35 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_1255-1756.h5
+    output: /datater/wu/data/zika/dsk/forward_1255-1756.kCount
+    jobid: 55
+    wildcards: sample=zika, seg=1255-1756
+
+[Wed Mar 10 17:06:35 2021]
+Finished job 55.
+60 of 206 steps (29%) done
+Select jobs to execute...
+[Wed Mar 10 17:06:35 2021]
+Finished job 27.
+61 of 206 steps (30%) done
+
+[Wed Mar 10 17:06:35 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_8283-8784.h5
+    output: /datater/wu/data/zika/dsk/forward_8283-8784.kCount
+    jobid: 74
+    wildcards: sample=zika, seg=8283-8784
+
+Select jobs to execute...
+[Wed Mar 10 17:06:35 2021]
+Finished job 74.
+62 of 206 steps (30%) done
+
+[Wed Mar 10 17:06:35 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_6777-7278.h5
+    output: /datater/wu/data/zika/dsk/forward_6777-7278.kCount
+    jobid: 70
+    wildcards: sample=zika, seg=6777-7278
+
+Select jobs to execute...
+[Wed Mar 10 17:06:35 2021]
+Finished job 70.
+63 of 206 steps (31%) done
+
+[Wed Mar 10 17:06:35 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_8283-8784.kCount
+    output: /datater/wu/data/zika/dsk/forward_8283-8784.kCountSorted
+    jobid: 117
+    wildcards: sample=zika, seg=8283-8784
+
+Select jobs to execute...
+
+[Wed Mar 10 17:06:35 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_4016-4517.h5
+    output: /datater/wu/data/zika/dsk/forward_4016-4517.kCount
+    jobid: 89
+    wildcards: sample=zika, seg=4016-4517
+
+[Wed Mar 10 17:06:36 2021]
+Finished job 42.
+64 of 206 steps (31%) done
+[Wed Mar 10 17:06:36 2021]
+Finished job 139.
+65 of 206 steps (32%) done
+Select jobs to execute...
+[Wed Mar 10 17:06:36 2021]
+Finished job 89.
+66 of 206 steps (32%) done
+
+[Wed Mar 10 17:06:36 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_10291-10792.kCount
+    output: /datater/wu/data/zika/dsk/forward_10291-10792.kCountSorted
+    jobid: 134
+    wildcards: sample=zika, seg=10291-10792
+
+[Wed Mar 10 17:06:36 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_502-1003.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_502-1003.calculated
+    jobid: 143
+    wildcards: sample=zika, seg=502-1003
+
+Select jobs to execute...
+
+[Wed Mar 10 17:06:36 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_6275-6776.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_6275-6776.calculated
+    jobid: 167
+    wildcards: sample=zika, seg=6275-6776
+
+Select jobs to execute...
+[Wed Mar 10 17:06:36 2021]
+Finished job 35.
+67 of 206 steps (33%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:36 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_251-752.h5
+    output: /datater/wu/data/zika/dsk/forward_251-752.kCount
+    jobid: 78
+    wildcards: sample=zika, seg=251-752
+
+[Wed Mar 10 17:06:36 2021]
+Finished job 78.
+68 of 206 steps (33%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:36 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_8534-9035.h5
+    output: /datater/wu/data/zika/dsk/forward_8534-9035.kCount
+    jobid: 85
+    wildcards: sample=zika, seg=8534-9035
+
+[Wed Mar 10 17:06:36 2021]
+Finished job 85.
+69 of 206 steps (33%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:36 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_4016-4517.kCount
+    output: /datater/wu/data/zika/dsk/forward_4016-4517.kCountSorted
+    jobid: 132
+    wildcards: sample=zika, seg=4016-4517
+
+[Wed Mar 10 17:06:36 2021]
+Finished job 108.
+70 of 206 steps (34%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:36 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_8785-9286.kCount
+    output: /datater/wu/data/zika/dsk/forward_8785-9286.kCountSorted
+    jobid: 118
+    wildcards: sample=zika, seg=8785-9286
+
+[Wed Mar 10 17:06:36 2021]
+Finished job 101.
+71 of 206 steps (34%) done
+Select jobs to execute...
+[Wed Mar 10 17:06:36 2021]
+Finished job 20.
+72 of 206 steps (35%) done
+
+[Wed Mar 10 17:06:36 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_2008-2509.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_2008-2509.calculated
+    jobid: 144
+    wildcards: sample=zika, seg=2008-2509
+
+Select jobs to execute...
+
+[Wed Mar 10 17:06:36 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_10040-10541.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_10040-10541.calculated
+    jobid: 182
+    wildcards: sample=zika, seg=10040-10541
+
+[Wed Mar 10 17:06:36 2021]
+Finished job 117.
+73 of 206 steps (35%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:36 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_8283-8784.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_8283-8784.calculated
+    jobid: 160
+    wildcards: sample=zika, seg=8283-8784
+
+[Wed Mar 10 17:06:36 2021]
+Finished job 134.
+74 of 206 steps (36%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:36 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_10291-10792.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_10291-10792.calculated
+    jobid: 177
+    wildcards: sample=zika, seg=10291-10792
+
+[Wed Mar 10 17:06:36 2021]
+Finished job 143.
+75 of 206 steps (36%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:36 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_8032-8533.h5
+    output: /datater/wu/data/zika/dsk/forward_8032-8533.kCount
+    jobid: 67
+    wildcards: sample=zika, seg=8032-8533
+
+[Wed Mar 10 17:06:36 2021]
+Finished job 167.
+76 of 206 steps (37%) done
+Select jobs to execute...
+[Wed Mar 10 17:06:36 2021]
+Finished job 67.
+77 of 206 steps (37%) done
+
+[Wed Mar 10 17:06:36 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_502-1003.calculated
+    output: /datater/wu/data/zika/primer3/forward_502-1003.filtered
+    jobid: 186
+    wildcards: sample=zika, seg=502-1003
+Downstream jobs will be updated after completion.
+
+Select jobs to execute...
+
+[Wed Mar 10 17:06:36 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_8032-8533.kCount
+    output: /datater/wu/data/zika/dsk/forward_8032-8533.kCountSorted
+    jobid: 110
+    wildcards: sample=zika, seg=8032-8533
+
+[Wed Mar 10 17:06:37 2021]
+Finished job 118.
+78 of 206 steps (38%) done
+Select jobs to execute...
+[Wed Mar 10 17:06:37 2021]
+Finished job 132.
+79 of 206 steps (38%) done
+
+[Wed Mar 10 17:06:37 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_8785-9286.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_8785-9286.calculated
+    jobid: 161
+    wildcards: sample=zika, seg=8785-9286
+
+Select jobs to execute...
+[Wed Mar 10 17:06:37 2021]
+Finished job 50.
+80 of 206 steps (39%) done
+
+[Wed Mar 10 17:06:37 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_4016-4517.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_4016-4517.calculated
+    jobid: 175
+    wildcards: sample=zika, seg=4016-4517
+
+Select jobs to execute...
+
+[Wed Mar 10 17:06:37 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_10542-10780.h5
+    output: /datater/wu/data/zika/dsk/forward_10542-10780.kCount
+    jobid: 93
+    wildcards: sample=zika, seg=10542-10780
+
+[Wed Mar 10 17:06:37 2021]
+Finished job 93.
+81 of 206 steps (39%) done
+Select jobs to execute...
+[Wed Mar 10 17:06:37 2021]
+Finished job 21.
+82 of 206 steps (40%) done
+
+[Wed Mar 10 17:06:37 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_4769-5270.h5
+    output: /datater/wu/data/zika/dsk/forward_4769-5270.kCount
+    jobid: 62
+    wildcards: sample=zika, seg=4769-5270
+
+
+[Wed Mar 10 17:06:37 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_7781-8282.calculated
+    output: /datater/wu/data/zika/primer3/forward_7781-8282.filtered
+    jobid: 202
+    wildcards: sample=zika, seg=7781-8282
+Downstream jobs will be updated after completion.
+
+Select jobs to execute...
+[Wed Mar 10 17:06:37 2021]
+Finished job 62.
+83 of 206 steps (40%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:37 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_9287-9788.h5
+    output: /datater/wu/data/zika/dsk/forward_9287-9788.kCount
+    jobid: 64
+    wildcards: sample=zika, seg=9287-9788
+
+[Wed Mar 10 17:06:37 2021]
+Finished job 64.
+84 of 206 steps (41%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:37 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_6526-7027.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_6526-7027.calculated
+    jobid: 151
+    wildcards: sample=zika, seg=6526-7027
+
+[Wed Mar 10 17:06:37 2021]
+Finished job 182.
+85 of 206 steps (41%) done
+Select jobs to execute...
+[Wed Mar 10 17:06:37 2021]
+Finished job 144.
+86 of 206 steps (42%) done
+
+[Wed Mar 10 17:06:37 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_1506-2007.h5
+    output: /datater/wu/data/zika/dsk/forward_1506-2007.kCount
+    jobid: 59
+    wildcards: sample=zika, seg=1506-2007
+
+Select jobs to execute...
+[Wed Mar 10 17:06:37 2021]
+Finished job 59.
+87 of 206 steps (42%) done
+
+[Wed Mar 10 17:06:37 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_2510-3011.fasta
+    output: /datater/wu/data/zika/dsk/forward_2510-3011.h5
+    jobid: 44
+    wildcards: sample=zika, seg=2510-3011
+
+Select jobs to execute...
+
+[Wed Mar 10 17:06:37 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_1506-2007.kCount
+    output: /datater/wu/data/zika/dsk/forward_1506-2007.kCountSorted
+    jobid: 102
+    wildcards: sample=zika, seg=1506-2007
+
+[Wed Mar 10 17:06:37 2021]
+Finished job 160.
+88 of 206 steps (43%) done
+Select jobs to execute...
+[Wed Mar 10 17:06:37 2021]
+Finished job 43.
+89 of 206 steps (43%) done
+
+[Wed Mar 10 17:06:37 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_9538-10039.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_9538-10039.calculated
+    jobid: 180
+    wildcards: sample=zika, seg=9538-10039
+
+Select jobs to execute...
+
+[Wed Mar 10 17:06:37 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_3012-3513.h5
+    output: /datater/wu/data/zika/dsk/forward_3012-3513.kCount
+    jobid: 86
+    wildcards: sample=zika, seg=3012-3513
+
+[Wed Mar 10 17:06:37 2021]
+Finished job 86.
+90 of 206 steps (44%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:37 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_3012-3513.kCount
+    output: /datater/wu/data/zika/dsk/forward_3012-3513.kCountSorted
+    jobid: 129
+    wildcards: sample=zika, seg=3012-3513
+
+[Wed Mar 10 17:06:37 2021]
+Finished job 110.
+91 of 206 steps (44%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:37 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_8032-8533.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_8032-8533.calculated
+    jobid: 153
+    wildcards: sample=zika, seg=8032-8533
+
+[Wed Mar 10 17:06:37 2021]
+Finished job 177.
+92 of 206 steps (45%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:37 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_10291-10792.calculated
+    output: /datater/wu/data/zika/primer3/forward_10291-10792.filtered
+    jobid: 220
+    wildcards: sample=zika, seg=10291-10792
+Downstream jobs will be updated after completion.
+
+[Wed Mar 10 17:06:37 2021]
+Finished job 36.
+93 of 206 steps (45%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:38 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_4267-4768.h5
+    output: /datater/wu/data/zika/dsk/forward_4267-4768.kCount
+    jobid: 79
+    wildcards: sample=zika, seg=4267-4768
+
+[Wed Mar 10 17:06:38 2021]
+Finished job 175.
+94 of 206 steps (46%) done
+Select jobs to execute...
+[Wed Mar 10 17:06:38 2021]
+Finished job 79.
+95 of 206 steps (46%) done
+
+[Wed Mar 10 17:06:38 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_3263-3764.kCount
+    output: /datater/wu/data/zika/dsk/forward_3263-3764.kCountSorted
+    jobid: 99
+    wildcards: sample=zika, seg=3263-3764
+
+Select jobs to execute...
+[Wed Mar 10 17:06:38 2021]
+Finished job 161.
+96 of 206 steps (47%) done
+
+[Wed Mar 10 17:06:38 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_4267-4768.kCount
+    output: /datater/wu/data/zika/dsk/forward_4267-4768.kCountSorted
+    jobid: 122
+    wildcards: sample=zika, seg=4267-4768
+
+Select jobs to execute...
+
+[Wed Mar 10 17:06:38 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_8785-9286.calculated
+    output: /datater/wu/data/zika/primer3/forward_8785-9286.filtered
+    jobid: 204
+    wildcards: sample=zika, seg=8785-9286
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 17:06:38 2021]
+Finished job 186.
+97 of 206 steps (47%) done
+[Wed Mar 10 17:06:38 2021]
+Finished job 102.
+98 of 206 steps (48%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:38 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_10542-10780.kCount
+    output: /datater/wu/data/zika/dsk/forward_10542-10780.kCountSorted
+    jobid: 136
+    wildcards: sample=zika, seg=10542-10780
+
+[Wed Mar 10 17:06:38 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_2008-2509.calculated
+    output: /datater/wu/data/zika/primer3/forward_2008-2509.filtered
+    jobid: 187
+    wildcards: sample=zika, seg=2008-2509
+Downstream jobs will be updated after completion.
+
+Select jobs to execute...
+[Wed Mar 10 17:06:38 2021]
+Finished job 180.
+99 of 206 steps (48%) done
+Select jobs to execute...
+[Wed Mar 10 17:06:38 2021]
+Finished job 151.
+100 of 206 steps (49%) done
+
+[Wed Mar 10 17:06:38 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_1506-2007.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_1506-2007.calculated
+    jobid: 145
+    wildcards: sample=zika, seg=1506-2007
+
+Select jobs to execute...
+Updating job all.
+[Wed Mar 10 17:06:38 2021]
+Finished job 202.
+101 of 206 steps (49%) done
+
+[Wed Mar 10 17:06:38 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_3765-4266.h5
+    output: /datater/wu/data/zika/dsk/forward_3765-4266.kCount
+    jobid: 84
+    wildcards: sample=zika, seg=3765-4266
+
+[Wed Mar 10 17:06:38 2021]
+Finished job 129.
+102 of 206 steps (50%) done
+Select jobs to execute...
+[Wed Mar 10 17:06:38 2021]
+Finished job 84.
+103 of 206 steps (50%) done
+
+[Wed Mar 10 17:06:38 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_7279-7780.h5
+    output: /datater/wu/data/zika/dsk/forward_7279-7780.kCount
+    jobid: 77
+    wildcards: sample=zika, seg=7279-7780
+
+
+[Wed Mar 10 17:06:38 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_2761-3262.calculated
+    output: /datater/wu/data/zika/primer3/forward_2761-3262.filtered
+    jobid: 217
+    wildcards: sample=zika, seg=2761-3262
+Downstream jobs will be updated after completion.
+
+Select jobs to execute...
+[Wed Mar 10 17:06:38 2021]
+Finished job 77.
+104 of 206 steps (50%) done
+
+[Wed Mar 10 17:06:38 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_9538-10039.calculated
+    output: /datater/wu/data/zika/primer3/forward_9538-10039.filtered
+    jobid: 223
+    wildcards: sample=zika, seg=9538-10039
+Downstream jobs will be updated after completion.
+
+Select jobs to execute...
+
+[Wed Mar 10 17:06:38 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_6777-7278.kCount
+    output: /datater/wu/data/zika/dsk/forward_6777-7278.kCountSorted
+    jobid: 113
+    wildcards: sample=zika, seg=6777-7278
+
+Select jobs to execute...
+[Wed Mar 10 17:06:38 2021]
+Finished job 153.
+105 of 206 steps (51%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:38 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_4769-5270.kCount
+    output: /datater/wu/data/zika/dsk/forward_4769-5270.kCountSorted
+    jobid: 105
+    wildcards: sample=zika, seg=4769-5270
+
+[Wed Mar 10 17:06:39 2021]
+Finished job 99.
+106 of 206 steps (51%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:39 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_9036-9537.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_9036-9537.calculated
+    jobid: 157
+    wildcards: sample=zika, seg=9036-9537
+
+Updating job all.
+[Wed Mar 10 17:06:39 2021]
+Finished job 220.
+107 of 206 steps (52%) done
+[Wed Mar 10 17:06:39 2021]
+Finished job 136.
+108 of 206 steps (52%) done
+Select jobs to execute...
+[Wed Mar 10 17:06:39 2021]
+Finished job 122.
+109 of 206 steps (53%) done
+
+[Wed Mar 10 17:06:39 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_7028-7529.h5
+    output: /datater/wu/data/zika/dsk/forward_7028-7529.kCount
+    jobid: 92
+    wildcards: sample=zika, seg=7028-7529
+
+
+[Wed Mar 10 17:06:39 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_7530-8031.h5
+    output: /datater/wu/data/zika/dsk/forward_7530-8031.kCount
+    jobid: 54
+    wildcards: sample=zika, seg=7530-8031
+
+Select jobs to execute...
+[Wed Mar 10 17:06:39 2021]
+Finished job 92.
+110 of 206 steps (53%) done
+[Wed Mar 10 17:06:39 2021]
+Finished job 54.
+111 of 206 steps (54%) done
+
+[Wed Mar 10 17:06:39 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_6526-7027.calculated
+    output: /datater/wu/data/zika/primer3/forward_6526-7027.filtered
+    jobid: 194
+    wildcards: sample=zika, seg=6526-7027
+Downstream jobs will be updated after completion.
+
+Select jobs to execute...
+
+[Wed Mar 10 17:06:39 2021]
+rule dskForward:
+    input: /datater/wu/data/zika/split_forward/position_5522-6023.fasta
+    output: /datater/wu/data/zika/dsk/forward_5522-6023.h5
+    jobid: 47
+    wildcards: sample=zika, seg=5522-6023
+
+
+[Wed Mar 10 17:06:39 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_8283-8784.calculated
+    output: /datater/wu/data/zika/primer3/forward_8283-8784.filtered
+    jobid: 203
+    wildcards: sample=zika, seg=8283-8784
+Downstream jobs will be updated after completion.
+
+Select jobs to execute...
+Select jobs to execute...
+Updating job all.
+[Wed Mar 10 17:06:39 2021]
+Finished job 204.
+112 of 206 steps (54%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:39 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_10040-10541.calculated
+    output: /datater/wu/data/zika/primer3/forward_10040-10541.filtered
+    jobid: 225
+    wildcards: sample=zika, seg=10040-10541
+Downstream jobs will be updated after completion.
+
+[Wed Mar 10 17:06:39 2021]
+Finished job 145.
+113 of 206 steps (55%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:39 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_3514-4015.h5
+    output: /datater/wu/data/zika/dsk/forward_3514-4015.kCount
+    jobid: 63
+    wildcards: sample=zika, seg=3514-4015
+
+[Wed Mar 10 17:06:39 2021]
+Finished job 113.
+114 of 206 steps (55%) done
+Select jobs to execute...
+[Wed Mar 10 17:06:39 2021]
+Finished job 63.
+115 of 206 steps (56%) done
+
+[Wed Mar 10 17:06:39 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_6777-7278.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_6777-7278.calculated
+    jobid: 156
+    wildcards: sample=zika, seg=6777-7278
+
+Select jobs to execute...
+
+[Wed Mar 10 17:06:39 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_7530-8031.kCount
+    output: /datater/wu/data/zika/dsk/forward_7530-8031.kCountSorted
+    jobid: 97
+    wildcards: sample=zika, seg=7530-8031
+
+[Wed Mar 10 17:06:39 2021]
+Finished job 105.
+116 of 206 steps (56%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:39 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_4769-5270.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_4769-5270.calculated
+    jobid: 148
+    wildcards: sample=zika, seg=4769-5270
+
+Updating job all.
+[Wed Mar 10 17:06:39 2021]
+Finished job 187.
+117 of 206 steps (57%) done
+Select jobs to execute...
+Updating job all.
+[Wed Mar 10 17:06:39 2021]
+Finished job 223.
+118 of 206 steps (57%) done
+
+[Wed Mar 10 17:06:39 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_3263-3764.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_3263-3764.calculated
+    jobid: 142
+    wildcards: sample=zika, seg=3263-3764
+
+Select jobs to execute...
+Updating job all.
+[Wed Mar 10 17:06:40 2021]
+Finished job 217.
+119 of 206 steps (58%) done
+[Wed Mar 10 17:06:40 2021]
+Finished job 44.
+120 of 206 steps (58%) done
+[Wed Mar 10 17:06:40 2021]
+Finished job 157.
+121 of 206 steps (59%) done
+
+[Wed Mar 10 17:06:40 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_3012-3513.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_3012-3513.calculated
+    jobid: 172
+    wildcards: sample=zika, seg=3012-3513
+
+Select jobs to execute...
+
+[Wed Mar 10 17:06:40 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_251-752.kCount
+    output: /datater/wu/data/zika/dsk/forward_251-752.kCountSorted
+    jobid: 121
+    wildcards: sample=zika, seg=251-752
+
+[Wed Mar 10 17:06:40 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_1506-2007.calculated
+    output: /datater/wu/data/zika/primer3/forward_1506-2007.filtered
+    jobid: 188
+    wildcards: sample=zika, seg=1506-2007
+Downstream jobs will be updated after completion.
+
+[Wed Mar 10 17:06:40 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_4016-4517.calculated
+    output: /datater/wu/data/zika/primer3/forward_4016-4517.filtered
+    jobid: 218
+    wildcards: sample=zika, seg=4016-4517
+Downstream jobs will be updated after completion.
+
+Select jobs to execute...
+Select jobs to execute...
+[Wed Mar 10 17:06:40 2021]
+Finished job 97.
+122 of 206 steps (59%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:40 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_9036-9537.calculated
+    output: /datater/wu/data/zika/primer3/forward_9036-9537.filtered
+    jobid: 200
+    wildcards: sample=zika, seg=9036-9537
+Downstream jobs will be updated after completion.
+
+[Wed Mar 10 17:06:40 2021]
+Finished job 156.
+123 of 206 steps (60%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:40 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_2510-3011.h5
+    output: /datater/wu/data/zika/dsk/forward_2510-3011.kCount
+    jobid: 87
+    wildcards: sample=zika, seg=2510-3011
+
+[Wed Mar 10 17:06:40 2021]
+Finished job 87.
+124 of 206 steps (60%) done
+Updating job all.
+[Wed Mar 10 17:06:40 2021]
+Finished job 225.
+125 of 206 steps (61%) done
+Select jobs to execute...
+Updating job all.
+[Wed Mar 10 17:06:40 2021]
+Finished job 194.
+126 of 206 steps (61%) done
+[Wed Mar 10 17:06:40 2021]
+Finished job 148.
+127 of 206 steps (62%) done
+Updating job all.
+[Wed Mar 10 17:06:40 2021]
+Finished job 203.
+128 of 206 steps (62%) done
+
+[Wed Mar 10 17:06:40 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_9789-10290.h5
+    output: /datater/wu/data/zika/dsk/forward_9789-10290.kCount
+    jobid: 61
+    wildcards: sample=zika, seg=9789-10290
+
+
+[Wed Mar 10 17:06:40 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_7028-7529.kCount
+    output: /datater/wu/data/zika/dsk/forward_7028-7529.kCountSorted
+    jobid: 135
+    wildcards: sample=zika, seg=7028-7529
+
+[Wed Mar 10 17:06:40 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_3765-4266.kCount
+    output: /datater/wu/data/zika/dsk/forward_3765-4266.kCountSorted
+    jobid: 127
+    wildcards: sample=zika, seg=3765-4266
+
+[Wed Mar 10 17:06:40 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_7530-8031.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_7530-8031.calculated
+    jobid: 140
+    wildcards: sample=zika, seg=7530-8031
+
+Select jobs to execute...
+[Wed Mar 10 17:06:40 2021]
+Finished job 61.
+129 of 206 steps (63%) done
+
+[Wed Mar 10 17:06:40 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_6777-7278.calculated
+    output: /datater/wu/data/zika/primer3/forward_6777-7278.filtered
+    jobid: 199
+    wildcards: sample=zika, seg=6777-7278
+Downstream jobs will be updated after completion.
+
+Select jobs to execute...
+[Wed Mar 10 17:06:40 2021]
+Finished job 142.
+130 of 206 steps (63%) done
+
+[Wed Mar 10 17:06:40 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_4769-5270.calculated
+    output: /datater/wu/data/zika/primer3/forward_4769-5270.filtered
+    jobid: 191
+    wildcards: sample=zika, seg=4769-5270
+Downstream jobs will be updated after completion.
+
+Select jobs to execute...
+
+[Wed Mar 10 17:06:40 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_3263-3764.calculated
+    output: /datater/wu/data/zika/primer3/forward_3263-3764.filtered
+    jobid: 185
+    wildcards: sample=zika, seg=3263-3764
+Downstream jobs will be updated after completion.
+
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+[Wed Mar 10 17:06:41 2021]
+Finished job 121.
+131 of 206 steps (64%) done
+Select jobs to execute...
+[Wed Mar 10 17:06:41 2021]
+Finished job 172.
+132 of 206 steps (64%) done
+
+[Wed Mar 10 17:06:41 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_9789-10290.kCount
+    output: /datater/wu/data/zika/dsk/forward_9789-10290.kCountSorted
+    jobid: 104
+    wildcards: sample=zika, seg=9789-10290
+
+Select jobs to execute...
+
+[Wed Mar 10 17:06:41 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_3012-3513.calculated
+    output: /datater/wu/data/zika/primer3/forward_3012-3513.filtered
+    jobid: 215
+    wildcards: sample=zika, seg=3012-3513
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 17:06:41 2021]
+Finished job 188.
+133 of 206 steps (65%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:41 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_1004-1505.h5
+    output: /datater/wu/data/zika/dsk/forward_1004-1505.kCount
+    jobid: 83
+    wildcards: sample=zika, seg=1004-1505
+
+[Wed Mar 10 17:06:41 2021]
+Finished job 83.
+134 of 206 steps (65%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:41 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_1004-1505.kCount
+    output: /datater/wu/data/zika/dsk/forward_1004-1505.kCountSorted
+    jobid: 126
+    wildcards: sample=zika, seg=1004-1505
+
+Updating job all.
+[Wed Mar 10 17:06:41 2021]
+Finished job 218.
+135 of 206 steps (66%) done
+[Wed Mar 10 17:06:41 2021]
+Finished job 135.
+136 of 206 steps (66%) done
+[Wed Mar 10 17:06:41 2021]
+Finished job 140.
+137 of 206 steps (67%) done
+Updating job all.
+[Wed Mar 10 17:06:41 2021]
+Finished job 200.
+138 of 206 steps (67%) done
+Select jobs to execute...
+[Wed Mar 10 17:06:41 2021]
+Finished job 127.
+139 of 206 steps (67%) done
+[Wed Mar 10 17:06:41 2021]
+Finished job 104.
+140 of 206 steps (68%) done
+
+[Wed Mar 10 17:06:42 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_6275-6776.calculated
+    output: /datater/wu/data/zika/primer3/forward_6275-6776.filtered
+    jobid: 210
+    wildcards: sample=zika, seg=6275-6776
+Downstream jobs will be updated after completion.
+
+[Wed Mar 10 17:06:42 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_5271-5772.h5
+    output: /datater/wu/data/zika/dsk/forward_5271-5772.kCount
+    jobid: 69
+    wildcards: sample=zika, seg=5271-5772
+
+
+[Wed Mar 10 17:06:42 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_5773-6274.h5
+    output: /datater/wu/data/zika/dsk/forward_5773-6274.kCount
+    jobid: 76
+    wildcards: sample=zika, seg=5773-6274
+
+
+[Wed Mar 10 17:06:42 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_251-752.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_251-752.calculated
+    jobid: 164
+    wildcards: sample=zika, seg=251-752
+
+[Wed Mar 10 17:06:42 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_10542-10780.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_10542-10780.calculated
+    jobid: 179
+    wildcards: sample=zika, seg=10542-10780
+
+[Wed Mar 10 17:06:42 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_1757-2258.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_1757-2258.calculated
+    jobid: 181
+    wildcards: sample=zika, seg=1757-2258
+
+[Wed Mar 10 17:06:42 2021]
+Finished job 69.
+141 of 206 steps (68%) done
+Select jobs to execute...
+[Wed Mar 10 17:06:42 2021]
+Finished job 47.
+142 of 206 steps (69%) done
+[Wed Mar 10 17:06:42 2021]
+Finished job 76.
+143 of 206 steps (69%) done
+
+[Wed Mar 10 17:06:42 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_5271-5772.kCount
+    output: /datater/wu/data/zika/dsk/forward_5271-5772.kCountSorted
+    jobid: 112
+    wildcards: sample=zika, seg=5271-5772
+
+Select jobs to execute...
+
+[Wed Mar 10 17:06:42 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_9287-9788.kCount
+    output: /datater/wu/data/zika/dsk/forward_9287-9788.kCountSorted
+    jobid: 107
+    wildcards: sample=zika, seg=9287-9788
+
+[Wed Mar 10 17:06:42 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_3514-4015.kCount
+    output: /datater/wu/data/zika/dsk/forward_3514-4015.kCountSorted
+    jobid: 106
+    wildcards: sample=zika, seg=3514-4015
+
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Updating job all.
+[Wed Mar 10 17:06:42 2021]
+Finished job 199.
+144 of 206 steps (70%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:42 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_7279-7780.kCount
+    output: /datater/wu/data/zika/dsk/forward_7279-7780.kCountSorted
+    jobid: 120
+    wildcards: sample=zika, seg=7279-7780
+
+Updating job all.
+[Wed Mar 10 17:06:42 2021]
+Finished job 191.
+145 of 206 steps (70%) done
+[Wed Mar 10 17:06:42 2021]
+Finished job 126.
+146 of 206 steps (71%) done
+Updating job all.
+[Wed Mar 10 17:06:42 2021]
+Finished job 215.
+147 of 206 steps (71%) done
+Updating job all.
+[Wed Mar 10 17:06:42 2021]
+Finished job 185.
+148 of 206 steps (72%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:42 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_753-1254.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_753-1254.calculated
+    jobid: 166
+    wildcards: sample=zika, seg=753-1254
+
+[Wed Mar 10 17:06:42 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_7530-8031.calculated
+    output: /datater/wu/data/zika/primer3/forward_7530-8031.filtered
+    jobid: 183
+    wildcards: sample=zika, seg=7530-8031
+Downstream jobs will be updated after completion.
+
+[Wed Mar 10 17:06:42 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_3765-4266.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_3765-4266.calculated
+    jobid: 170
+    wildcards: sample=zika, seg=3765-4266
+
+[Wed Mar 10 17:06:42 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_5020-5521.calculated
+    output: /datater/wu/data/zika/primer3/forward_5020-5521.filtered
+    jobid: 211
+    wildcards: sample=zika, seg=5020-5521
+Downstream jobs will be updated after completion.
+
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+[Wed Mar 10 17:06:42 2021]
+Finished job 164.
+149 of 206 steps (72%) done
+Select jobs to execute...
+[Wed Mar 10 17:06:42 2021]
+Finished job 112.
+150 of 206 steps (73%) done
+
+[Wed Mar 10 17:06:42 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_1255-1756.kCount
+    output: /datater/wu/data/zika/dsk/forward_1255-1756.kCountSorted
+    jobid: 98
+    wildcards: sample=zika, seg=1255-1756
+
+Select jobs to execute...
+
+[Wed Mar 10 17:06:42 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_6024-6525.h5
+    output: /datater/wu/data/zika/dsk/forward_6024-6525.kCount
+    jobid: 60
+    wildcards: sample=zika, seg=6024-6525
+
+[Wed Mar 10 17:06:42 2021]
+Finished job 106.
+151 of 206 steps (73%) done
+Select jobs to execute...
+[Wed Mar 10 17:06:42 2021]
+Finished job 60.
+152 of 206 steps (74%) done
+
+[Wed Mar 10 17:06:42 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/zika/dsk/forward_5522-6023.h5
+    output: /datater/wu/data/zika/dsk/forward_5522-6023.kCount
+    jobid: 90
+    wildcards: sample=zika, seg=5522-6023
+
+Select jobs to execute...
+
+[Wed Mar 10 17:06:43 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_5271-5772.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_5271-5772.calculated
+    jobid: 155
+    wildcards: sample=zika, seg=5271-5772
+
+[Wed Mar 10 17:06:43 2021]
+Finished job 90.
+153 of 206 steps (74%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:43 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_3514-4015.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_3514-4015.calculated
+    jobid: 149
+    wildcards: sample=zika, seg=3514-4015
+
+[Wed Mar 10 17:06:43 2021]
+Finished job 179.
+154 of 206 steps (75%) done
+Select jobs to execute...
+[Wed Mar 10 17:06:43 2021]
+Finished job 181.
+155 of 206 steps (75%) done
+
+[Wed Mar 10 17:06:43 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_251-752.calculated
+    output: /datater/wu/data/zika/primer3/forward_251-752.filtered
+    jobid: 207
+    wildcards: sample=zika, seg=251-752
+Downstream jobs will be updated after completion.
+
+Select jobs to execute...
+
+[Wed Mar 10 17:06:43 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_2510-3011.kCount
+    output: /datater/wu/data/zika/dsk/forward_2510-3011.kCountSorted
+    jobid: 130
+    wildcards: sample=zika, seg=2510-3011
+
+[Wed Mar 10 17:06:43 2021]
+Finished job 107.
+156 of 206 steps (76%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:43 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_1757-2258.calculated
+    output: /datater/wu/data/zika/primer3/forward_1757-2258.filtered
+    jobid: 224
+    wildcards: sample=zika, seg=1757-2258
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 17:06:43 2021]
+Finished job 210.
+157 of 206 steps (76%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:43 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_9789-10290.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_9789-10290.calculated
+    jobid: 147
+    wildcards: sample=zika, seg=9789-10290
+
+[Wed Mar 10 17:06:43 2021]
+Finished job 120.
+158 of 206 steps (77%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:43 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_10542-10780.calculated
+    output: /datater/wu/data/zika/primer3/forward_10542-10780.filtered
+    jobid: 222
+    wildcards: sample=zika, seg=10542-10780
+Downstream jobs will be updated after completion.
+
+[Wed Mar 10 17:06:43 2021]
+Finished job 170.
+159 of 206 steps (77%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:43 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_6024-6525.kCount
+    output: /datater/wu/data/zika/dsk/forward_6024-6525.kCountSorted
+    jobid: 103
+    wildcards: sample=zika, seg=6024-6525
+
+[Wed Mar 10 17:06:43 2021]
+Finished job 166.
+160 of 206 steps (78%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:43 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_5773-6274.kCount
+    output: /datater/wu/data/zika/dsk/forward_5773-6274.kCountSorted
+    jobid: 119
+    wildcards: sample=zika, seg=5773-6274
+
+[Wed Mar 10 17:06:43 2021]
+Finished job 98.
+161 of 206 steps (78%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:43 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_1255-1756.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_1255-1756.calculated
+    jobid: 141
+    wildcards: sample=zika, seg=1255-1756
+
+[Wed Mar 10 17:06:43 2021]
+Finished job 155.
+162 of 206 steps (79%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:43 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_8032-8533.calculated
+    output: /datater/wu/data/zika/primer3/forward_8032-8533.filtered
+    jobid: 196
+    wildcards: sample=zika, seg=8032-8533
+Downstream jobs will be updated after completion.
+
+[Wed Mar 10 17:06:44 2021]
+Finished job 149.
+163 of 206 steps (79%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:44 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_753-1254.calculated
+    output: /datater/wu/data/zika/primer3/forward_753-1254.filtered
+    jobid: 209
+    wildcards: sample=zika, seg=753-1254
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 17:06:44 2021]
+Finished job 183.
+164 of 206 steps (80%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:44 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_3765-4266.calculated
+    output: /datater/wu/data/zika/primer3/forward_3765-4266.filtered
+    jobid: 213
+    wildcards: sample=zika, seg=3765-4266
+Downstream jobs will be updated after completion.
+
+[Wed Mar 10 17:06:44 2021]
+Finished job 130.
+165 of 206 steps (80%) done
+Select jobs to execute...
+Updating job all.
+[Wed Mar 10 17:06:44 2021]
+Finished job 211.
+166 of 206 steps (81%) done
+
+[Wed Mar 10 17:06:44 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_2510-3011.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_2510-3011.calculated
+    jobid: 173
+    wildcards: sample=zika, seg=2510-3011
+
+Select jobs to execute...
+
+[Wed Mar 10 17:06:44 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_5271-5772.calculated
+    output: /datater/wu/data/zika/primer3/forward_5271-5772.filtered
+    jobid: 198
+    wildcards: sample=zika, seg=5271-5772
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 17:06:44 2021]
+Finished job 207.
+167 of 206 steps (81%) done
+[Wed Mar 10 17:06:44 2021]
+Finished job 147.
+168 of 206 steps (82%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:44 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_1004-1505.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_1004-1505.calculated
+    jobid: 169
+    wildcards: sample=zika, seg=1004-1505
+
+[Wed Mar 10 17:06:44 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_7028-7529.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_7028-7529.calculated
+    jobid: 178
+    wildcards: sample=zika, seg=7028-7529
+
+Select jobs to execute...
+[Wed Mar 10 17:06:44 2021]
+Finished job 103.
+169 of 206 steps (82%) done
+Select jobs to execute...
+Updating job all.
+[Wed Mar 10 17:06:44 2021]
+Finished job 224.
+170 of 206 steps (83%) done
+[Wed Mar 10 17:06:44 2021]
+Finished job 119.
+171 of 206 steps (83%) done
+Updating job all.
+
+[Wed Mar 10 17:06:44 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_9789-10290.calculated
+    output: /datater/wu/data/zika/primer3/forward_9789-10290.filtered
+    jobid: 190
+    wildcards: sample=zika, seg=9789-10290
+Downstream jobs will be updated after completion.
+
+[Wed Mar 10 17:06:44 2021]
+Finished job 222.
+172 of 206 steps (83%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:44 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_9287-9788.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_9287-9788.calculated
+    jobid: 150
+    wildcards: sample=zika, seg=9287-9788
+
+[Wed Mar 10 17:06:44 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_8534-9035.kCount
+    output: /datater/wu/data/zika/dsk/forward_8534-9035.kCountSorted
+    jobid: 128
+    wildcards: sample=zika, seg=8534-9035
+
+[Wed Mar 10 17:06:44 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_7279-7780.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_7279-7780.calculated
+    jobid: 163
+    wildcards: sample=zika, seg=7279-7780
+
+Select jobs to execute...
+Select jobs to execute...
+[Wed Mar 10 17:06:44 2021]
+Finished job 141.
+173 of 206 steps (84%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:45 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_5773-6274.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_5773-6274.calculated
+    jobid: 162
+    wildcards: sample=zika, seg=5773-6274
+
+Updating job all.
+[Wed Mar 10 17:06:45 2021]
+Finished job 196.
+174 of 206 steps (84%) done
+[Wed Mar 10 17:06:45 2021]
+Finished job 173.
+175 of 206 steps (85%) done
+Select jobs to execute...
+[Wed Mar 10 17:06:45 2021]
+Finished job 178.
+176 of 206 steps (85%) done
+
+[Wed Mar 10 17:06:45 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_1255-1756.calculated
+    output: /datater/wu/data/zika/primer3/forward_1255-1756.filtered
+    jobid: 184
+    wildcards: sample=zika, seg=1255-1756
+Downstream jobs will be updated after completion.
+
+[Wed Mar 10 17:06:45 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_4267-4768.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_4267-4768.calculated
+    jobid: 165
+    wildcards: sample=zika, seg=4267-4768
+
+Select jobs to execute...
+Updating job all.
+[Wed Mar 10 17:06:45 2021]
+Finished job 209.
+177 of 206 steps (86%) done
+[Wed Mar 10 17:06:45 2021]
+Finished job 169.
+178 of 206 steps (86%) done
+Updating job all.
+[Wed Mar 10 17:06:45 2021]
+Finished job 213.
+179 of 206 steps (87%) done
+
+[Wed Mar 10 17:06:45 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_3514-4015.calculated
+    output: /datater/wu/data/zika/primer3/forward_3514-4015.filtered
+    jobid: 192
+    wildcards: sample=zika, seg=3514-4015
+Downstream jobs will be updated after completion.
+
+Select jobs to execute...
+
+[Wed Mar 10 17:06:45 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_2510-3011.calculated
+    output: /datater/wu/data/zika/primer3/forward_2510-3011.filtered
+    jobid: 216
+    wildcards: sample=zika, seg=2510-3011
+Downstream jobs will be updated after completion.
+
+[Wed Mar 10 17:06:45 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_1004-1505.calculated
+    output: /datater/wu/data/zika/primer3/forward_1004-1505.filtered
+    jobid: 212
+    wildcards: sample=zika, seg=1004-1505
+Downstream jobs will be updated after completion.
+
+[Wed Mar 10 17:06:45 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_7028-7529.calculated
+    output: /datater/wu/data/zika/primer3/forward_7028-7529.filtered
+    jobid: 221
+    wildcards: sample=zika, seg=7028-7529
+Downstream jobs will be updated after completion.
+
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Updating job all.
+[Wed Mar 10 17:06:45 2021]
+Finished job 198.
+180 of 206 steps (87%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:45 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_0-501.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_0-501.calculated
+    jobid: 158
+    wildcards: sample=zika, seg=0-501
+
+[Wed Mar 10 17:06:45 2021]
+Finished job 128.
+181 of 206 steps (88%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:45 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/zika/dsk/forward_5522-6023.kCount
+    output: /datater/wu/data/zika/dsk/forward_5522-6023.kCountSorted
+    jobid: 133
+    wildcards: sample=zika, seg=5522-6023
+
+[Wed Mar 10 17:06:45 2021]
+Finished job 163.
+182 of 206 steps (88%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:45 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_7279-7780.calculated
+    output: /datater/wu/data/zika/primer3/forward_7279-7780.filtered
+    jobid: 206
+    wildcards: sample=zika, seg=7279-7780
+Downstream jobs will be updated after completion.
+
+[Wed Mar 10 17:06:45 2021]
+Finished job 150.
+183 of 206 steps (89%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:46 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_9287-9788.calculated
+    output: /datater/wu/data/zika/primer3/forward_9287-9788.filtered
+    jobid: 193
+    wildcards: sample=zika, seg=9287-9788
+Downstream jobs will be updated after completion.
+
+[Wed Mar 10 17:06:46 2021]
+Finished job 162.
+184 of 206 steps (89%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:46 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_6024-6525.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_6024-6525.calculated
+    jobid: 146
+    wildcards: sample=zika, seg=6024-6525
+
+Updating job all.
+[Wed Mar 10 17:06:46 2021]
+Finished job 190.
+185 of 206 steps (90%) done
+Select jobs to execute...
+[Wed Mar 10 17:06:46 2021]
+Finished job 165.
+186 of 206 steps (90%) done
+
+[Wed Mar 10 17:06:46 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_5773-6274.calculated
+    output: /datater/wu/data/zika/primer3/forward_5773-6274.filtered
+    jobid: 205
+    wildcards: sample=zika, seg=5773-6274
+Downstream jobs will be updated after completion.
+
+Select jobs to execute...
+
+[Wed Mar 10 17:06:46 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_4267-4768.calculated
+    output: /datater/wu/data/zika/primer3/forward_4267-4768.filtered
+    jobid: 208
+    wildcards: sample=zika, seg=4267-4768
+Downstream jobs will be updated after completion.
+
+[Wed Mar 10 17:06:46 2021]
+Finished job 158.
+187 of 206 steps (91%) done
+[Wed Mar 10 17:06:46 2021]
+Finished job 133.
+188 of 206 steps (91%) done
+Select jobs to execute...
+Updating job all.
+[Wed Mar 10 17:06:47 2021]
+Finished job 184.
+189 of 206 steps (92%) done
+
+[Wed Mar 10 17:06:47 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_4518-5019.calculated
+    output: /datater/wu/data/zika/primer3/forward_4518-5019.filtered
+    jobid: 195
+    wildcards: sample=zika, seg=4518-5019
+Downstream jobs will be updated after completion.
+
+[Wed Mar 10 17:06:47 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_8534-9035.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_8534-9035.calculated
+    jobid: 171
+    wildcards: sample=zika, seg=8534-9035
+
+Select jobs to execute...
+Updating job all.
+[Wed Mar 10 17:06:47 2021]
+Finished job 192.
+190 of 206 steps (92%) done
+Updating job all.
+[Wed Mar 10 17:06:47 2021]
+Finished job 216.
+191 of 206 steps (93%) done
+
+[Wed Mar 10 17:06:47 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_0-501.calculated
+    output: /datater/wu/data/zika/primer3/forward_0-501.filtered
+    jobid: 201
+    wildcards: sample=zika, seg=0-501
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 17:06:47 2021]
+Finished job 221.
+192 of 206 steps (93%) done
+Updating job all.
+[Wed Mar 10 17:06:47 2021]
+Finished job 212.
+193 of 206 steps (94%) done
+Select jobs to execute...
+[Wed Mar 10 17:06:47 2021]
+Finished job 146.
+194 of 206 steps (94%) done
+
+[Wed Mar 10 17:06:47 2021]
+rule within_segments:
+    input: /datater/wu/data/zika/dsk/forward_5522-6023.kCountSorted
+    output: /datater/wu/data/zika/primer3/forward_5522-6023.calculated
+    jobid: 176
+    wildcards: sample=zika, seg=5522-6023
+
+Select jobs to execute...
+
+[Wed Mar 10 17:06:47 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_6024-6525.calculated
+    output: /datater/wu/data/zika/primer3/forward_6024-6525.filtered
+    jobid: 189
+    wildcards: sample=zika, seg=6024-6525
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 17:06:47 2021]
+Finished job 206.
+195 of 206 steps (95%) done
+Updating job all.
+[Wed Mar 10 17:06:47 2021]
+Finished job 193.
+196 of 206 steps (95%) done
+Updating job all.
+[Wed Mar 10 17:06:47 2021]
+Finished job 205.
+197 of 206 steps (96%) done
+Updating job all.
+[Wed Mar 10 17:06:47 2021]
+Finished job 208.
+198 of 206 steps (96%) done
+[Wed Mar 10 17:06:47 2021]
+Finished job 171.
+199 of 206 steps (97%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:47 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_8534-9035.calculated
+    output: /datater/wu/data/zika/primer3/forward_8534-9035.filtered
+    jobid: 214
+    wildcards: sample=zika, seg=8534-9035
+Downstream jobs will be updated after completion.
+
+[Wed Mar 10 17:06:48 2021]
+Finished job 176.
+200 of 206 steps (97%) done
+Select jobs to execute...
+
+[Wed Mar 10 17:06:48 2021]
+checkpoint filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_5522-6023.calculated
+    output: /datater/wu/data/zika/primer3/forward_5522-6023.filtered
+    jobid: 219
+    wildcards: sample=zika, seg=5522-6023
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 17:06:48 2021]
+Finished job 201.
+201 of 206 steps (98%) done
+Updating job all.
+[Wed Mar 10 17:06:48 2021]
+Finished job 195.
+202 of 206 steps (98%) done
+Updating job all.
+[Wed Mar 10 17:06:48 2021]
+Finished job 189.
+203 of 206 steps (99%) done
+Updating job all.
+[Wed Mar 10 17:06:49 2021]
+Finished job 214.
+204 of 206 steps (99%) done
+Updating job all.
+[Wed Mar 10 17:06:49 2021]
+Finished job 219.
+205 of 205 steps (100%) done
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-10T170628.050920.snakemake.log

@@ -37,7 +37,7 @@ rule splitFiles: # split MSA fasta file into seperates files #########
             for id in fasta.keys() :
                 segment = fasta[id][chunk[0]:chunk[1]]
                 forward = str(segment[:50])
-                f1.write("> {} |{}-{} \n {} \n".format(fasta[id].long_name, str(chunk[0]), str(chunk[1]), forward))
-
+                f1.write("> {} |{}-{}\n{}\n".format(fasta[id].long_name, str(chunk[0]), str(chunk[1]), forward))
 
             f1.close()
+

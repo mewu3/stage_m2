@@ -1,0 +1,4 @@
+CreateRuleException in line 102 of /datater/wu/stage_m2/rules/oligo_filter.smk:
+The name hairpin_mfeprimer is already used by another rule
+  File "/datater/wu/stage_m2/Snakefile", line 128, in <module>
+  File "/datater/wu/stage_m2/rules/oligo_filter.smk", line 102, in <module>

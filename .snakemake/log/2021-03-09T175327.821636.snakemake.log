@@ -1,0 +1,99 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	43	filter_within_seg
+	44
+Select jobs to execute...
+
+[Tue Mar  9 17:53:28 2021]
+rule filter_within_seg:
+    input: /datater/wu/data/zika/dsk/forward_6526-7027.kCountSorted
+    output: /datater/wu/data/zika/primer3_Tm/forward_6526-7027.Tm
+    jobid: 173
+    wildcards: sample=zika, seg=6526-7027
+
+[Tue Mar  9 17:53:28 2021]
+rule filter_within_seg:
+    input: /datater/wu/data/zika/dsk/forward_2761-3262.kCountSorted
+    output: /datater/wu/data/zika/primer3_Tm/forward_2761-3262.Tm
+    jobid: 142
+    wildcards: sample=zika, seg=2761-3262
+
+[Tue Mar  9 17:53:28 2021]
+rule filter_within_seg:
+    input: /datater/wu/data/zika/dsk/forward_6777-7278.kCountSorted
+    output: /datater/wu/data/zika/primer3_Tm/forward_6777-7278.Tm
+    jobid: 149
+    wildcards: sample=zika, seg=6777-7278
+
+[Tue Mar  9 17:53:28 2021]
+rule filter_within_seg:
+    input: /datater/wu/data/zika/dsk/forward_1004-1505.kCountSorted
+    output: /datater/wu/data/zika/primer3_Tm/forward_1004-1505.Tm
+    jobid: 157
+    wildcards: sample=zika, seg=1004-1505
+
+[Tue Mar  9 17:53:28 2021]
+rule filter_within_seg:
+    input: /datater/wu/data/zika/dsk/forward_5773-6274.kCountSorted
+    output: /datater/wu/data/zika/primer3_Tm/forward_5773-6274.Tm
+    jobid: 164
+    wildcards: sample=zika, seg=5773-6274
+
+[Tue Mar  9 17:53:28 2021]
+rule filter_within_seg:
+    input: /datater/wu/data/zika/dsk/forward_4518-5019.kCountSorted
+    output: /datater/wu/data/zika/primer3_Tm/forward_4518-5019.Tm
+    jobid: 172
+    wildcards: sample=zika, seg=4518-5019
+
+[Tue Mar  9 17:53:28 2021]
+rule filter_within_seg:
+    input: /datater/wu/data/zika/dsk/forward_251-752.kCountSorted
+    output: /datater/wu/data/zika/primer3_Tm/forward_251-752.Tm
+    jobid: 156
+    wildcards: sample=zika, seg=251-752
+
+[Tue Mar  9 17:53:28 2021]
+rule filter_within_seg:
+    input: /datater/wu/data/zika/dsk/forward_502-1003.kCountSorted
+    output: /datater/wu/data/zika/primer3_Tm/forward_502-1003.Tm
+    jobid: 141
+    wildcards: sample=zika, seg=502-1003
+
+[Tue Mar  9 17:53:28 2021]
+rule filter_within_seg:
+    input: /datater/wu/data/zika/dsk/forward_8534-9035.kCountSorted
+    output: /datater/wu/data/zika/primer3_Tm/forward_8534-9035.Tm
+    jobid: 163
+    wildcards: sample=zika, seg=8534-9035
+
+[Tue Mar  9 17:53:28 2021]
+rule filter_within_seg:
+    input: /datater/wu/data/zika/dsk/forward_5271-5772.kCountSorted
+    output: /datater/wu/data/zika/primer3_Tm/forward_5271-5772.Tm
+    jobid: 148
+    wildcards: sample=zika, seg=5271-5772
+
+[Tue Mar  9 17:53:28 2021]
+rule filter_within_seg:
+    input: /datater/wu/data/zika/dsk/forward_2510-3011.kCountSorted
+    output: /datater/wu/data/zika/primer3_Tm/forward_2510-3011.Tm
+    jobid: 171
+    wildcards: sample=zika, seg=2510-3011
+
+[Tue Mar  9 17:53:28 2021]
+rule filter_within_seg:
+    input: /datater/wu/data/zika/dsk/forward_4267-4768.kCountSorted
+    output: /datater/wu/data/zika/primer3_Tm/forward_4267-4768.Tm
+    jobid: 178
+    wildcards: sample=zika, seg=4267-4768
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-09T175327.821636.snakemake.log

@@ -1,7 +1,7 @@
 datadir: "/datater/wu/data"
 
 samples:
-    # enterovirus: "/home/meijun/Documents/data/enterovirus.fasta"
+    # enterovirus: "/datater/wu/data/enterovirus.fasta"
     # coronavirus: "/datater/wu/data/coronavirus.fasta"
     zika : "/datater/wu/data/ZIKV-96seqs.fasta"
 
@@ -69,6 +69,7 @@ oligotm:
 mfeprimer:
     deltaG-cutoff : -9.0
     Tm-cutoff: 0
+    score-cutoff: 5
     monovalent-conc: 50
     divalent-conc: 1.5
     dNTP-conc: 0.6
