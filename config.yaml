@@ -60,8 +60,8 @@ kmc3:
 # Tm calculation by primer3 ####################################################
 oligotm:
     monovalent-conc: 50 # unity mM
-    divalent-conc: 1.5 # unity mM
-    dNTP-conc: 0.6 # unity mM
+    divalent-conc: 0 # unity mM
+    dNTP-conc: 0 # unity mM
     dna-conc: 50 # unity nM
     thermodynamic-para: 1
     salt-correlation: 1

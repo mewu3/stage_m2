@@ -13,7 +13,7 @@ rule within_segments:
     run:
         import os
         from Bio.SeqUtils import GC
-        import primer3 
+        import primer3
 
         output = open(output[0], "w")
 
@@ -24,20 +24,27 @@ rule within_segments:
                 li = li.rstrip("\n")
                 ls = li.split()
                 kmer = ls[0]
-                tm = primer3.calcTm(kmer, 
-                                    mv_conc = params.monovalentConc, 
-                                    dv_conc = params.divalentConc, 
-                                    dntp_conc = params.dNTPConc, 
-                                    dna_conc = params.dnaConc)
-                cg = round(GC(kmer),3)
+                # primer3 tm calculation, but since RT alone does not have any
+                # other substance than template and oligos. better use a simple
+                # formule.
+                # tm = primer3.calcTm(kmer,
+                #                     mv_conc = params.monovalentConc,
+                #                     dv_conc = params.divalentConc,
+                #                     dntp_conc = params.dNTPConc,
+                #                     dna_conc = params.dnaConc)
+                kmer_CG = kmer.count("G") + kmer.count("C")
+                kmer_AT = kmer.count("A") + kmer.count("T")
+                tm = 64.9 + 41 * (kmer_CG-16.4)/(kmer_CG+kmer_AT)
+                cgPercent = round(GC(kmer),3)
                 homodimer_dg = primer3.calcHomodimer(kmer,
-                                                     mv_conc = params.monovalentConc, 
-                                                     dv_conc = params.divalentConc, 
-                                                     dntp_conc = params.dNTPConc, 
+                                                     mv_conc = params.monovalentConc,
+                                                     dv_conc = params.divalentConc,
+                                                     dntp_conc = params.dNTPConc,
                                                      dna_conc = params.dnaConc).dg
                 hairpin_dg = primer3.calcHairpin(kmer).dg
-                output.write("{}\t{}\t{}\t{}\t{}\t{}\t{}\n".format(ls[0], wildcards.seg, ls[1], cg, tm, homodimer_dg, hairpin_dg))
-       
+                output.write("{}\t{}\t{}\t{}\t{}\t{}\t{}\n".format(ls[0], wildcards.seg, ls[1], cgPercent, tm, homodimer_dg, hairpin_dg))
+                # linguisticComplexity = 100 *
+
         output.close()
 
 rule filterOut_within_segments:
@@ -54,8 +61,9 @@ rule filterOut_within_segments:
         mean = float(df["Tm"].mean())
         std = float(df["Tm"].std())
 
-        TmSeuilPlus = mean + std
-        TmSeuilLess = mean - std
+        # MSSPE Deng et al. (2020), don't know the philosophy behind yet. with tm range from 60 - 70 no oligo could pass the criteria
+        TmSeuilPlus = mean + 2*std
+        TmSeuilLess = mean - 2*std
 
         df_filtered = df[(df["Tm"] >= TmSeuilLess) & (df["Tm"] <= TmSeuilPlus) & (df["CG%"] >= 40) & (df["CG%"] <= 60) & (df["hairpin-dG"] > -9000) & (df["homodimer-dG"] > -9000)]
         df_filtered.to_csv(output[0], sep='\t', index=False)
