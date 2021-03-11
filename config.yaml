@@ -1,9 +1,9 @@
 datadir: "/datater/wu/data"
 
 samples:
-    # enterovirus: "/datater/wu/data/enterovirus.fasta"
+    enterovirus: "/datater/wu/data/enterovirus.fasta"
     # coronavirus: "/datater/wu/data/coronavirus.fasta"
-    zika : "/datater/wu/data/ZIKV-96seqs.fasta"
+    # zika : "/datater/wu/data/ZIKV-96seqs.fasta"
 
 # multiple sequence aligment ###################################################
 mafft:
