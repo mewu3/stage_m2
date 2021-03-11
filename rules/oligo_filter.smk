@@ -2,7 +2,7 @@ rule within_segments:
     input:
         datadir + "/{sample}/" + kmerCounter + "/forward_{seg}.kCountSorted"
     output:
-        datadir + "/{sample}/primer3/forward_{seg}.calculated"
+        datadir + "/{sample}/filtering/forward_{seg}.calculated"
     params:
         monovalentConc = config["oligotm"]["monovalent-conc"],
         divalentConc = config["oligotm"]["divalent-conc"],
@@ -43,30 +43,73 @@ rule within_segments:
                                                      dna_conc = params.dnaConc).dg
                 hairpin_dg = primer3.calcHairpin(kmer).dg
                 output.write("{}\t{}\t{}\t{}\t{}\t{}\t{}\n".format(ls[0], wildcards.seg, ls[1], cgPercent, tm, homodimer_dg, hairpin_dg))
-                # linguisticComplexity = 100 *
 
         output.close()
 
-rule filterOut_within_segments:
+rule toFasta:
     input:
-        datadir + "/{sample}/primer3/forward_{seg}.calculated"
+        datadir + "/{sample}/filtering/forward_{seg}.calculated"
     output:
-        datadir + "/{sample}/primer3/forward_{seg}.filtered"
+        datadir + "/{sample}/filtering/forward_{seg}.fasta"
     run:
-        import pandas as pd
         import os
 
-        df = pd.read_table(input[0], sep="\t", header=0)
+        outFile = open(output[0], "w")
 
-        mean = float(df["Tm"].mean())
-        std = float(df["Tm"].std())
+        n = 0
+        with open(input[0], "r") as file:
+            for li in file:
+                li = li.rstrip("\n")
+                ls = li.split()
+                outFile.write(">p{} |position {} |count {} |CG% {} |Tm {} |homodimer_dG {} |hairpin_dG {}\n {}\n".format(n, ls[1], ls[2], ls[3], ls[4], ls[5], ls[6], ls[0]))
+                n += 1
 
-        # MSSPE Deng et al. (2020), don't know the philosophy behind yet. with tm range from 60 - 70 no oligo could pass the criteria
-        TmSeuilPlus = mean + 2*std
-        TmSeuilLess = mean - 2*std
+        outFile.close()
 
-        df_filtered = df[(df["Tm"] >= TmSeuilLess) & (df["Tm"] <= TmSeuilPlus) & (df["CG%"] >= 40) & (df["CG%"] <= 60) & (df["hairpin-dG"] > -9000) & (df["homodimer-dG"] > -9000)]
-        df_filtered.to_csv(output[0], sep='\t', index=False)
+rule linguistic_complexity:
+    input:
+        datadir + "/{sample}/filtering/forward_{seg}.fasta"
+    output:
+        datadir + "/{sample}/filtering/forward_{seg}.nessieOut"
+    shell:
+        "lib/nessie/nessie -I {input} -O {output} -L -k 1 -K 3"
+
+rule add_LC:
+    input:
+        datadir + "/{sample}/filtering/forward_{seg}.nessieOut"
+    output:
+        datadir + "/{sample}/filtering/forward_{seg}.calculated2"
+    run:
+        with open(input[0], "r") as inputFile:
+            next(inputFile)
+            for line in inputFile:
+                if line.startswith("@"):
+                    score = line.split(":")[1]
+                    print(score)
+
+# rule filterOut_within_segments:
+#     input:
+#         datadir + "/{sample}/filtering/forward_{seg}.calculated"
+#     output:
+#         datadir + "/{sample}/filtering/forward_{seg}.filtered"
+#     run:
+#         import pandas as pd
+#         import os
+#
+#         df = pd.read_table(input[0], sep="\t", header=0)
+#
+#         mean = float(df["Tm"].mean())
+#         std = float(df["Tm"].std())
+#
+#         # MSSPE Deng et al. (2020), don't know the philosophy behind yet. with tm range from 60 - 70 no oligo could pass the criteria
+#         TmSeuilPlus = mean + 2*std
+#         TmSeuilLess = mean - 2*std
+#
+#         df_filtered = df[(df["Tm"] >= TmSeuilLess) & (df["Tm"] <= TmSeuilPlus) & (df["CG%"] >= 40) & (df["CG%"] <= 60) & (df["hairpin-dG"] > -9000) & (df["homodimer-dG"] > -9000)]
+#         df_filtered.to_csv(output[0], sep='\t', index=False)
+
+
+
 
 # def aggregate_input(wildcards):
 #     checkpoint_output = datadir + "/{sample}/primer3_Tm/"

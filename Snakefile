@@ -84,18 +84,39 @@ rule all: # run all rules ######################################################
         ),
         dynamic(
             expand(
-                datadir + "/{sample}/primer3/forward_{seg}.calculated",
+                datadir + "/{sample}/filtering/forward_{seg}.calculated",
                 sample = samples,
                 seg="{seg}"
             )
         ),
         dynamic(
             expand(
-                datadir + "/{sample}/primer3/forward_{seg}.filtered",
+                datadir + "/{sample}/filtering/forward_{seg}.fasta",
+                sample = samples,
+                seg="{seg}"
+            )
+        ),
+        dynamic(
+            expand(
+                datadir + "/{sample}/filtering/forward_{seg}.nessieOut",
+                sample = samples,
+                seg="{seg}"
+            )
+        ),
+        dynamic(
+            expand(
+                datadir + "/{sample}/filtering/forward_{seg}.calculated2",
                 sample = samples,
                 seg="{seg}"
             )
         )
+        # dynamic(
+        #     expand(
+        #         datadir + "/{sample}/primer3/forward_{seg}.filtered",
+        #         sample = samples,
+        #         seg="{seg}"
+        #     )
+        # )
         # expand(
         #     datadir + "/{sample}/primer3_Tm/all_oligo",
         #     sample = samples
