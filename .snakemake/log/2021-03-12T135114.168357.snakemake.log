@@ -1,0 +1,4 @@
+CreateRuleException in line 20 of /datater/wu/stage_m2/rules/check_specifity.smk:
+The name toFasta is already used by another rule
+  File "/datater/wu/stage_m2/Snakefile", line 150, in <module>
+  File "/datater/wu/stage_m2/rules/check_specifity.smk", line 20, in <module>

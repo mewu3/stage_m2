@@ -1,0 +1,105 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	37	add_LC
+	1	all
+	37	linguistic_complexity
+	37	toFasta
+	37	within_segments
+	149
+Select jobs to execute...
+
+[Fri Mar 12 09:48:40 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_3556-4060.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering/forward_3556-4060.calculated
+    jobid: 148
+    wildcards: sample=enterovirus, seg=3556-4060
+
+[Fri Mar 12 09:48:40 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_9144-9382.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering/forward_9144-9382.calculated
+    jobid: 139
+    wildcards: sample=enterovirus, seg=9144-9382
+
+[Fri Mar 12 09:48:40 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_4064-4568.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering/forward_4064-4568.calculated
+    jobid: 147
+    wildcards: sample=enterovirus, seg=4064-4568
+
+[Fri Mar 12 09:48:40 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_0-504.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering/forward_0-504.calculated
+    jobid: 124
+    wildcards: sample=enterovirus, seg=0-504
+
+[Fri Mar 12 09:48:40 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_2794-3298.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering/forward_2794-3298.calculated
+    jobid: 154
+    wildcards: sample=enterovirus, seg=2794-3298
+
+[Fri Mar 12 09:48:40 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_508-1012.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering/forward_508-1012.calculated
+    jobid: 132
+    wildcards: sample=enterovirus, seg=508-1012
+
+[Fri Mar 12 09:48:40 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_7874-8378.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering/forward_7874-8378.calculated
+    jobid: 146
+    wildcards: sample=enterovirus, seg=7874-8378
+
+[Fri Mar 12 09:48:40 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_4572-5076.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering/forward_4572-5076.calculated
+    jobid: 153
+    wildcards: sample=enterovirus, seg=4572-5076
+
+[Fri Mar 12 09:48:40 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_3302-3806.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering/forward_3302-3806.calculated
+    jobid: 131
+    wildcards: sample=enterovirus, seg=3302-3806
+
+[Fri Mar 12 09:48:40 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_2032-2536.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering/forward_2032-2536.calculated
+    jobid: 138
+    wildcards: sample=enterovirus, seg=2032-2536
+
+[Fri Mar 12 09:48:40 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_7620-8124.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering/forward_7620-8124.calculated
+    jobid: 140
+    wildcards: sample=enterovirus, seg=7620-8124
+
+[Fri Mar 12 09:48:40 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_5080-5584.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering/forward_5080-5584.calculated
+    jobid: 125
+    wildcards: sample=enterovirus, seg=5080-5584
+
+[Fri Mar 12 09:48:41 2021]
+Finished job 139.
+1 of 149 steps (0.67%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-12T094839.682681.snakemake.log

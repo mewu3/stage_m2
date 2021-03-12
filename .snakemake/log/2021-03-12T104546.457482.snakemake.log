@@ -1,0 +1,99 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	37	add_LC
+	1	all
+	38
+Select jobs to execute...
+
+[Fri Mar 12 10:45:47 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_254-758.nessieOut, /datater/wu/data/enterovirus/filtering/forward_254-758.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_254-758.calculated2
+    jobid: 239
+    wildcards: sample=enterovirus, seg=254-758
+
+[Fri Mar 12 10:45:47 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_8636-9140.nessieOut, /datater/wu/data/enterovirus/filtering/forward_8636-9140.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_8636-9140.calculated2
+    jobid: 238
+    wildcards: sample=enterovirus, seg=8636-9140
+
+[Fri Mar 12 10:45:47 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_7112-7616.nessieOut, /datater/wu/data/enterovirus/filtering/forward_7112-7616.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_7112-7616.calculated2
+    jobid: 245
+    wildcards: sample=enterovirus, seg=7112-7616
+
+[Fri Mar 12 10:45:47 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_7874-8378.nessieOut, /datater/wu/data/enterovirus/filtering/forward_7874-8378.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_7874-8378.calculated2
+    jobid: 253
+    wildcards: sample=enterovirus, seg=7874-8378
+
+[Fri Mar 12 10:45:47 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_3810-4314.nessieOut, /datater/wu/data/enterovirus/filtering/forward_3810-4314.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_3810-4314.calculated2
+    jobid: 260
+    wildcards: sample=enterovirus, seg=3810-4314
+
+[Fri Mar 12 10:45:47 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_5080-5584.nessieOut, /datater/wu/data/enterovirus/filtering/forward_5080-5584.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_5080-5584.calculated2
+    jobid: 268
+    wildcards: sample=enterovirus, seg=5080-5584
+
+[Fri Mar 12 10:45:47 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_4826-5330.nessieOut, /datater/wu/data/enterovirus/filtering/forward_4826-5330.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_4826-5330.calculated2
+    jobid: 259
+    wildcards: sample=enterovirus, seg=4826-5330
+
+[Fri Mar 12 10:45:47 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_3302-3806.nessieOut, /datater/wu/data/enterovirus/filtering/forward_3302-3806.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_3302-3806.calculated2
+    jobid: 237
+    wildcards: sample=enterovirus, seg=3302-3806
+
+[Fri Mar 12 10:45:47 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_8128-8632.nessieOut, /datater/wu/data/enterovirus/filtering/forward_8128-8632.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_8128-8632.calculated2
+    jobid: 252
+    wildcards: sample=enterovirus, seg=8128-8632
+
+[Fri Mar 12 10:45:47 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_8890-9394.nessieOut, /datater/wu/data/enterovirus/filtering/forward_8890-9394.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_8890-9394.calculated2
+    jobid: 244
+    wildcards: sample=enterovirus, seg=8890-9394
+
+[Fri Mar 12 10:45:47 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_9144-9382.nessieOut, /datater/wu/data/enterovirus/filtering/forward_9144-9382.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_9144-9382.calculated2
+    jobid: 267
+    wildcards: sample=enterovirus, seg=9144-9382
+
+[Fri Mar 12 10:45:47 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_4572-5076.nessieOut, /datater/wu/data/enterovirus/filtering/forward_4572-5076.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_4572-5076.calculated2
+    jobid: 246
+    wildcards: sample=enterovirus, seg=4572-5076
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-12T104546.457482.snakemake.log
