@@ -1,0 +1,20 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1
+Select jobs to execute...
+
+[Mon Mar 15 14:41:35 2021]
+localrule all:
+    input: /datater/wu/data/zika/filtering/reverse6275-6776.nessieOut, /datater/wu/data/zika/filtering/reverse2259-2760.nessieOut, /datater/wu/data/zika/filtering/reverse7530-8031.nessieOut, /datater/wu/data/zika/filtering/reverse9036-9537.nessieOut, /datater/wu/data/zika/filtering/reverse9538-10039.nessieOut, /datater/wu/data/zika/filtering/reverse9287-9788.nessieOut, /datater/wu/data/zika/filtering/reverse10542-10780.nessieOut, /datater/wu/data/zika/filtering/reverse502-1003.nessieOut, /datater/wu/data/zika/filtering/reverse6024-6525.nessieOut, /datater/wu/data/zika/filtering/reverse8785-9286.nessieOut, /datater/wu/data/zika/filtering/reverse2008-2509.nessieOut, /datater/wu/data/zika/filtering/reverse6777-7278.nessieOut, /datater/wu/data/zika/filtering/reverse1757-2258.nessieOut, /datater/wu/data/zika/filtering/reverse2510-3011.nessieOut, /datater/wu/data/zika/filtering/reverse3263-3764.nessieOut, /datater/wu/data/zika/filtering/reverse3765-4266.nessieOut, /datater/wu/data/zika/filtering/reverse5020-5521.nessieOut, /datater/wu/data/zika/filtering/reverse0-501.nessieOut, /datater/wu/data/zika/filtering/reverse5773-6274.nessieOut, /datater/wu/data/zika/filtering/reverse1004-1505.nessieOut, /datater/wu/data/zika/filtering/reverse5271-5772.nessieOut, /datater/wu/data/zika/filtering/reverse10291-10792.nessieOut, /datater/wu/data/zika/filtering/reverse6526-7027.nessieOut, /datater/wu/data/zika/filtering/reverse4769-5270.nessieOut, /datater/wu/data/zika/filtering/reverse1506-2007.nessieOut, /datater/wu/data/zika/filtering/reverse4267-4768.nessieOut, /datater/wu/data/zika/filtering/reverse10040-10541.nessieOut, /datater/wu/data/zika/filtering/reverse8283-8784.nessieOut, /datater/wu/data/zika/filtering/reverse4518-5019.nessieOut, /datater/wu/data/zika/filtering/reverse3012-3513.nessieOut, /datater/wu/data/zika/filtering/reverse8534-9035.nessieOut, /datater/wu/data/zika/filtering/reverse251-752.nessieOut, /datater/wu/data/zika/filtering/reverse3514-4015.nessieOut, /datater/wu/data/zika/filtering/reverse8032-8533.nessieOut, /datater/wu/data/zika/filtering/reverse4016-4517.nessieOut, /datater/wu/data/zika/filtering/reverse9789-10290.nessieOut, /datater/wu/data/zika/filtering/reverse2761-3262.nessieOut, /datater/wu/data/zika/filtering/reverse5522-6023.nessieOut, /datater/wu/data/zika/filtering/reverse7781-8282.nessieOut, /datater/wu/data/zika/filtering/reverse7279-7780.nessieOut, /datater/wu/data/zika/filtering/reverse7028-7529.nessieOut, /datater/wu/data/zika/filtering/reverse753-1254.nessieOut, /datater/wu/data/zika/filtering/reverse1255-1756.nessieOut
+    jobid: 0
+
+[Mon Mar 15 14:41:35 2021]
+Finished job 0.
+1 of 1 steps (100%) done
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-15T144135.258391.snakemake.log

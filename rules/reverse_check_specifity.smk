@@ -21,3 +21,5 @@ rule allToFasta:
                 n += 1
 
         outFile.close()
+
+ 

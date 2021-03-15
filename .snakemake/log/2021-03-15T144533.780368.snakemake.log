@@ -1,0 +1,117 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	40	reverse_add_LC
+	41
+Select jobs to execute...
+
+[Mon Mar 15 14:45:34 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/zika/filtering/reverse2259-2760.nessieOut, /datater/wu/data/zika/filtering/reverse2259-2760.fa
+    output: /datater/wu/data/zika/filtering/reverse2259-2760.calculated2
+    jobid: 48
+    wildcards: sample=zika, seg=2259-2760
+
+[Mon Mar 15 14:45:34 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/zika/filtering/reverse5773-6274.nessieOut, /datater/wu/data/zika/filtering/reverse5773-6274.fa
+    output: /datater/wu/data/zika/filtering/reverse5773-6274.calculated2
+    jobid: 27
+    wildcards: sample=zika, seg=5773-6274
+
+[Mon Mar 15 14:45:34 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/zika/filtering/reverse9789-10290.nessieOut, /datater/wu/data/zika/filtering/reverse9789-10290.fa
+    output: /datater/wu/data/zika/filtering/reverse9789-10290.calculated2
+    jobid: 34
+    wildcards: sample=zika, seg=9789-10290
+
+[Mon Mar 15 14:45:34 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/zika/filtering/reverse9036-9537.nessieOut, /datater/wu/data/zika/filtering/reverse9036-9537.fa
+    output: /datater/wu/data/zika/filtering/reverse9036-9537.calculated2
+    jobid: 139
+    wildcards: sample=zika, seg=9036-9537
+
+[Mon Mar 15 14:45:34 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/zika/filtering/reverse502-1003.nessieOut, /datater/wu/data/zika/filtering/reverse502-1003.fa
+    output: /datater/wu/data/zika/filtering/reverse502-1003.calculated2
+    jobid: 132
+    wildcards: sample=zika, seg=502-1003
+
+[Mon Mar 15 14:45:34 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/zika/filtering/reverse6777-7278.nessieOut, /datater/wu/data/zika/filtering/reverse6777-7278.fa
+    output: /datater/wu/data/zika/filtering/reverse6777-7278.calculated2
+    jobid: 237
+    wildcards: sample=zika, seg=6777-7278
+
+[Mon Mar 15 14:45:34 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/zika/filtering/reverse4267-4768.nessieOut, /datater/wu/data/zika/filtering/reverse4267-4768.fa
+    output: /datater/wu/data/zika/filtering/reverse4267-4768.calculated2
+    jobid: 118
+    wildcards: sample=zika, seg=4267-4768
+
+[Mon Mar 15 14:45:34 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/zika/filtering/reverse10040-10541.nessieOut, /datater/wu/data/zika/filtering/reverse10040-10541.fa
+    output: /datater/wu/data/zika/filtering/reverse10040-10541.calculated2
+    jobid: 20
+    wildcards: sample=zika, seg=10040-10541
+
+[Mon Mar 15 14:45:34 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/zika/filtering/reverse2008-2509.nessieOut, /datater/wu/data/zika/filtering/reverse2008-2509.fa
+    output: /datater/wu/data/zika/filtering/reverse2008-2509.calculated2
+    jobid: 125
+    wildcards: sample=zika, seg=2008-2509
+
+[Mon Mar 15 14:45:34 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/zika/filtering/reverse1255-1756.nessieOut, /datater/wu/data/zika/filtering/reverse1255-1756.fa
+    output: /datater/wu/data/zika/filtering/reverse1255-1756.calculated2
+    jobid: 13
+    wildcards: sample=zika, seg=1255-1756
+
+[Mon Mar 15 14:45:34 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/zika/filtering/reverse8283-8784.nessieOut, /datater/wu/data/zika/filtering/reverse8283-8784.fa
+    output: /datater/wu/data/zika/filtering/reverse8283-8784.calculated2
+    jobid: 223
+    wildcards: sample=zika, seg=8283-8784
+
+[Mon Mar 15 14:45:34 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/zika/filtering/reverse5271-5772.nessieOut, /datater/wu/data/zika/filtering/reverse5271-5772.fa
+    output: /datater/wu/data/zika/filtering/reverse5271-5772.calculated2
+    jobid: 230
+    wildcards: sample=zika, seg=5271-5772
+
+[Mon Mar 15 14:45:35 2021]
+Finished job 125.
+1 of 41 steps (2%) done
+[Mon Mar 15 14:45:35 2021]
+Finished job 20.
+2 of 41 steps (5%) done
+[Mon Mar 15 14:45:35 2021]
+Finished job 13.
+3 of 41 steps (7%) done
+[Mon Mar 15 14:45:35 2021]
+Finished job 118.
+4 of 41 steps (10%) done
+[Mon Mar 15 14:45:35 2021]
+Finished job 27.
+5 of 41 steps (12%) done
+[Mon Mar 15 14:45:35 2021]
+Finished job 223.
+6 of 41 steps (15%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-15T144533.780368.snakemake.log

@@ -147,10 +147,10 @@ rule all: # run all rules ######################################################
         #     sample = samples,
         #     seg="{seg}"
         # ),
-        # expand(
-        #     datadir + "/{sample}/checkSpecifity/allOligos_reverse.fasta",
-        #     sample = samples
-        # )
+        expand(
+            datadir + "/{sample}/checkSpecifity/allOligos_reverse.fasta",
+            sample = samples
+        )
 
 include: "rules/all_remove_duplicate.smk"
 include: "rules/all_multiple_seq_alignment.smk"
