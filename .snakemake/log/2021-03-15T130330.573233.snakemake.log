@@ -1,0 +1,25 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	splitFiles
+	2
+Select jobs to execute...
+
+[Mon Mar 15 13:03:31 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/zika.msa
+    output: /datater/wu/data/zika/splitFiles/forward{*}.fasta (dynamic), /datater/wu/data/zika/splitFiles/reverse{*}.fasta (dynamic)
+    jobid: 3
+    wildcards: sample=zika
+
+Subsequent jobs will be added dynamically depending on the output of this job
+Dynamically updating jobs
+[Mon Mar 15 13:03:33 2021]
+Finished job 3.
+1 of 1 steps (100%) done
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-15T130330.573233.snakemake.log

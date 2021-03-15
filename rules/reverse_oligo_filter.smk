@@ -141,10 +141,10 @@ rule reverse_add_LC:
                 outputFile.write("{}\n".format(seq))
 
 def aggregate_reverseInput(wildcards):
-    c2_output = datadir + "/{sample}/filtering/"
+    checkpoint_output = datadir + "/{sample}/filtering/"
     return expand(datadir + "/{sample}/filtering/reverse{seg}.calculated2",
                   sample = wildcards.sample,
-                  seg = glob_wildcards(os.path.join(c2_output, "reverse{seg}.calculated2")).seg)
+                  seg = glob_wildcards(os.path.join(checkpoint_output, "reverse{seg}.calculated2")).seg)
 
 rule aggregate_allReverseOligo:
     input:
@@ -159,27 +159,27 @@ rule aggregate_allReverseOligo:
         sed -s 1d {input} >> {output}
         """
 
-rule reverse_filtering:
-    input:
-        datadir + "/{sample}/filtering/allOligos_reverse.calculated2"
-    output:
-        datadir + "/{sample}/filtering/allOligos_reverse.filtered"
-    run:
-        import pandas as pd
-        import os
-
-        df = pd.read_table(input[0], sep="\t", header=0)
-
-        mean = float(df["Tm"].mean())
-        std = float(df["Tm"].std())
-
-        # MSSPE Deng et al. (2020), don't know the philosophy behind yet. with tm range from 60 - 70 no oligo could pass the criteria
-        TmSeuilPlus = mean + 2*std
-        TmSeuilLess = mean - 2*std
-
-        df_filtered = df[(df["Tm"] >= TmSeuilLess) & (df["Tm"] <= TmSeuilPlus) & (df["CG%"] >= 40) & (df["CG%"] <= 60) & (df["hairpin-dG"] > -9000) & (df["homodimer-dG"] > -9000) & (df["LC"] >= 0.75)]
-        df_filtered = df_filtered.sort_values("position", ascending=False)
-        df_filtered.to_csv(output[0], sep='\t', index=False)
+# rule reverse_filtering:
+#     input:
+#         datadir + "/{sample}/filtering/allOligos_reverse.calculated2"
+#     output:
+#         datadir + "/{sample}/filtering/allOligos_reverse.filtered"
+#     run:
+#         import pandas as pd
+#         import os
+#
+#         df = pd.read_table(input[0], sep="\t", header=0)
+#
+#         mean = float(df["Tm"].mean())
+#         std = float(df["Tm"].std())
+#
+#         # MSSPE Deng et al. (2020), don't know the philosophy behind yet. with tm range from 60 - 70 no oligo could pass the criteria
+#         TmSeuilPlus = mean + 2*std
+#         TmSeuilLess = mean - 2*std
+#
+#         df_filtered = df[(df["Tm"] >= TmSeuilLess) & (df["Tm"] <= TmSeuilPlus) & (df["CG%"] >= 40) & (df["CG%"] <= 60) & (df["hairpin-dG"] > -9000) & (df["homodimer-dG"] > -9000) & (df["LC"] >= 0.75)]
+#         df_filtered = df_filtered.sort_values("position", ascending=False)
+#         df_filtered.to_csv(output[0], sep='\t', index=False)
 
 
 # def aggregate_input(wildcards):

@@ -1,0 +1,232 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	aggregate_allReverseOligo
+	1	all
+	1	allToFasta
+	79	dskReverse
+	80	dskReverseOutput
+	80	dskReverseOutputSort
+	80	reverse_add_LC
+	1	reverse_filtering
+	80	reverse_linguistic_complexity
+	80	reverse_parameters
+	80	reverse_toFasta
+	37	splitFiles
+	600
+Select jobs to execute...
+
+[Mon Mar 15 11:09:31 2021]
+rule dskReverse:
+    input: /datater/wu/data/zika/splitFiles/reverse1004-1505.fasta
+    output: /datater/wu/data/zika/dsk/reverse1004-1505.h5
+    jobid: 352
+    wildcards: sample=zika, seg=1004-1505
+
+
+[Mon Mar 15 11:09:31 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/zika.msa
+    output: /datater/wu/data/zika/splitFiles/forward762-1266.fasta (dynamic), /datater/wu/data/zika/splitFiles/reverse762-1266.fasta (dynamic)
+    jobid: 243
+    wildcards: sample=zika, seg=762-1266
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Mon Mar 15 11:09:31 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/zika.msa
+    output: /datater/wu/data/zika/splitFiles/forward8382-8886.fasta (dynamic), /datater/wu/data/zika/splitFiles/reverse8382-8886.fasta (dynamic)
+    jobid: 123
+    wildcards: sample=zika, seg=8382-8886
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Mon Mar 15 11:09:31 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/zika.msa
+    output: /datater/wu/data/zika/splitFiles/forward1524-2028.fasta (dynamic), /datater/wu/data/zika/splitFiles/reverse1524-2028.fasta (dynamic)
+    jobid: 155
+    wildcards: sample=zika, seg=1524-2028
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Mon Mar 15 11:09:31 2021]
+rule dskReverse:
+    input: /datater/wu/data/zika/splitFiles/reverse502-1003.fasta
+    output: /datater/wu/data/zika/dsk/reverse502-1003.h5
+    jobid: 354
+    wildcards: sample=zika, seg=502-1003
+
+
+[Mon Mar 15 11:09:31 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/zika.msa
+    output: /datater/wu/data/zika/splitFiles/forward2794-3298.fasta (dynamic), /datater/wu/data/zika/splitFiles/reverse2794-3298.fasta (dynamic)
+    jobid: 35
+    wildcards: sample=zika, seg=2794-3298
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Mon Mar 15 11:09:31 2021]
+rule dskReverse:
+    input: /datater/wu/data/zika/splitFiles/reverse2259-2760.fasta
+    output: /datater/wu/data/zika/dsk/reverse2259-2760.h5
+    jobid: 323
+    wildcards: sample=zika, seg=2259-2760
+
+
+[Mon Mar 15 11:09:31 2021]
+rule dskReverse:
+    input: /datater/wu/data/zika/splitFiles/reverse1255-1756.fasta
+    output: /datater/wu/data/zika/dsk/reverse1255-1756.h5
+    jobid: 351
+    wildcards: sample=zika, seg=1255-1756
+
+
+[Mon Mar 15 11:09:31 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/zika.msa
+    output: /datater/wu/data/zika/splitFiles/forward7112-7616.fasta (dynamic), /datater/wu/data/zika/splitFiles/reverse7112-7616.fasta (dynamic)
+    jobid: 19
+    wildcards: sample=zika, seg=7112-7616
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Mon Mar 15 11:09:31 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/zika.msa
+    output: /datater/wu/data/zika/splitFiles/forward7366-7870.fasta (dynamic), /datater/wu/data/zika/splitFiles/reverse7366-7870.fasta (dynamic)
+    jobid: 259
+    wildcards: sample=zika, seg=7366-7870
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Mon Mar 15 11:09:31 2021]
+rule dskReverse:
+    input: /datater/wu/data/zika/splitFiles/reverse10542-10780.fasta
+    output: /datater/wu/data/zika/dsk/reverse10542-10780.h5
+    jobid: 353
+    wildcards: sample=zika, seg=10542-10780
+
+
+[Mon Mar 15 11:09:31 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/zika.msa
+    output: /datater/wu/data/zika/splitFiles/forward3810-4314.fasta (dynamic), /datater/wu/data/zika/splitFiles/reverse3810-4314.fasta (dynamic)
+    jobid: 275
+    wildcards: sample=zika, seg=3810-4314
+
+Subsequent jobs will be added dynamically depending on the output of this job
+[Mon Mar 15 11:09:33 2021]
+Finished job 352.
+1 of 600 steps (0.17%) done
+Select jobs to execute...
+[Mon Mar 15 11:09:33 2021]
+Finished job 351.
+2 of 600 steps (0.33%) done
+
+[Mon Mar 15 11:09:33 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/zika.msa
+    output: /datater/wu/data/zika/splitFiles/forward3048-3552.fasta (dynamic), /datater/wu/data/zika/splitFiles/reverse3048-3552.fasta (dynamic)
+    jobid: 251
+    wildcards: sample=zika, seg=3048-3552
+
+Subsequent jobs will be added dynamically depending on the output of this job
+Select jobs to execute...
+[Mon Mar 15 11:09:33 2021]
+Finished job 353.
+3 of 600 steps (0.50%) done
+
+[Mon Mar 15 11:09:33 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/zika.msa
+    output: /datater/wu/data/zika/splitFiles/forward9144-9382.fasta (dynamic), /datater/wu/data/zika/splitFiles/reverse9144-9382.fasta (dynamic)
+    jobid: 139
+    wildcards: sample=zika, seg=9144-9382
+
+Subsequent jobs will be added dynamically depending on the output of this job
+Select jobs to execute...
+
+[Mon Mar 15 11:09:34 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/zika.msa
+    output: /datater/wu/data/zika/splitFiles/forward7874-8378.fasta (dynamic), /datater/wu/data/zika/splitFiles/reverse7874-8378.fasta (dynamic)
+    jobid: 131
+    wildcards: sample=zika, seg=7874-8378
+
+Subsequent jobs will be added dynamically depending on the output of this job
+[Mon Mar 15 11:09:34 2021]
+Finished job 354.
+4 of 600 steps (0.67%) done
+Select jobs to execute...
+[Mon Mar 15 11:09:34 2021]
+Finished job 323.
+5 of 600 steps (0.83%) done
+
+[Mon Mar 15 11:09:34 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse502-1003.h5
+    output: /datater/wu/data/zika/dsk/reverse502-1003.kCount
+    jobid: 397
+    wildcards: sample=zika, seg=502-1003
+
+Select jobs to execute...
+
+[Mon Mar 15 11:09:34 2021]
+rule dskReverse:
+    input: /datater/wu/data/zika/splitFiles/reverse753-1254.fasta
+    output: /datater/wu/data/zika/dsk/reverse753-1254.h5
+    jobid: 315
+    wildcards: sample=zika, seg=753-1254
+
+[Mon Mar 15 11:09:34 2021]
+Finished job 397.
+6 of 600 steps (1%) done
+Select jobs to execute...
+
+[Mon Mar 15 11:09:34 2021]
+rule dskReverse:
+    input: /datater/wu/data/zika/splitFiles/reverse4016-4517.fasta
+    output: /datater/wu/data/zika/dsk/reverse4016-4517.h5
+    jobid: 345
+    wildcards: sample=zika, seg=4016-4517
+
+[Mon Mar 15 11:09:36 2021]
+Finished job 345.
+7 of 600 steps (1%) done
+Select jobs to execute...
+
+[Mon Mar 15 11:09:36 2021]
+rule dskReverse:
+    input: /datater/wu/data/zika/splitFiles/reverse5020-5521.fasta
+    output: /datater/wu/data/zika/dsk/reverse5020-5521.h5
+    jobid: 330
+    wildcards: sample=zika, seg=5020-5521
+
+[Mon Mar 15 11:09:36 2021]
+Finished job 315.
+8 of 600 steps (1%) done
+Select jobs to execute...
+
+[Mon Mar 15 11:09:36 2021]
+rule dskReverse:
+    input: /datater/wu/data/zika/splitFiles/reverse9287-9788.fasta
+    output: /datater/wu/data/zika/dsk/reverse9287-9788.h5
+    jobid: 338
+    wildcards: sample=zika, seg=9287-9788
+
+[Mon Mar 15 11:09:38 2021]
+Finished job 330.
+9 of 600 steps (2%) done
+[Mon Mar 15 11:09:39 2021]
+Finished job 338.
+10 of 600 steps (2%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-15T110926.661579.snakemake.log

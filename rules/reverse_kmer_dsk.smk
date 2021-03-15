@@ -1,4 +1,4 @@
-rule dskReverse: # Kmer counting
+rule dskReverse:
     input:
         datadir + "/{sample}/splitFiles/reverse{seg}.fasta"
     output:
@@ -14,8 +14,7 @@ rule dskReverse: # Kmer counting
         abundanceMax = config["dsk"]["abundance-max"],
         solidityKind = config["dsk"]["solidity-kind"]
     shell:
-        """
-        lib/dsk/build/bin/dsk \
+        "lib/dsk/build/bin/dsk \
         -nb-cores {params.nbCores} \
         -max-memory {params.maxMemory} \
         -max-disk {params.maxDisk} \
@@ -26,8 +25,7 @@ rule dskReverse: # Kmer counting
         -abundance-max {params.abundanceMax} \
         -solidity-kind {params.solidityKind} \
         -file {input} \
-        -out {output}
-        """
+        -out {output}"
 
 rule dskReverseOutput:
     input:
@@ -47,7 +45,6 @@ rule dskReverseOutputSort:
     output:
         datadir + "/{sample}/dsk/reverse{seg}.kCountSorted"
     run:
-        #!/usr/bin/env python3.8
         with open(input[0], "r") as input:
             rows = input.readlines()
             sorted_rows = sorted(rows, key = lambda x: int(x.split()[1]), reverse=True)

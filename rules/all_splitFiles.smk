@@ -2,7 +2,7 @@ rule splitFiles: # split MSA fasta file into seperates files #########
     input:
         datadir + "/msa/{sample}.msa"
     output:
-        # dynamic(datadir + "/{sample}/splitFiles/forward{seg}.fasta"),
+        dynamic(datadir + "/{sample}/splitFiles/forward{seg}.fasta"),
         dynamic(datadir + "/{sample}/splitFiles/reverse{seg}.fasta")
     params:
         step = config["step"],
