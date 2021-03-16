@@ -1,0 +1,4 @@
+WorkflowError in line 167 of /datater/wu/stage_m2_merge/Snakefile:
+Failed to open source file /datater/wu/stage_m2_merge/rules/all_remove_duplicate.smk
+FileNotFoundError: [Errno 2] No such file or directory: '/datater/wu/stage_m2_merge/rules/all_remove_duplicate.smk'
+  File "/datater/wu/stage_m2_merge/Snakefile", line 167, in <module>

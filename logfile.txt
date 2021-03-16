@@ -1,0 +1,2 @@
+>
+Print Linguistic interval: k_min is larger than k_max

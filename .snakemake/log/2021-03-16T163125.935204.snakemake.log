@@ -1,0 +1,24 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	aggregate_allReverseOligo
+	1	all
+	1	splitFiles
+	3
+Select jobs to execute...
+
+[Tue Mar 16 16:31:26 2021]
+checkpoint splitFiles:
+    input: /datater/wu/data_test/msa/zika.msa
+    output: /datater/wu/data_test/zika/splitFiles
+    jobid: 2
+    wildcards: sample=zika
+Downstream jobs will be updated after completion.
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2_merge/.snakemake/log/2021-03-16T163125.935204.snakemake.log

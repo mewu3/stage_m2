@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 54 of /datater/wu/stage_m2_merge/Snakefile:
+Missing input files for rule all:
+/datater/wu/data_test/zika/dsk/forward__snakemake_dynamic__.h5

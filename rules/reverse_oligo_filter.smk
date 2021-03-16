@@ -1,8 +1,8 @@
 rule reverse_parameters:
     input:
-        datadir + "/{sample}/" + kmerCounter + "/reverse{seg}.kCountSorted"
+        "{dataDir}/{sample}/dsk/reverse{{seg}}.kCountSorted".format(dataDir = dataDir, sample = sample)
     output:
-        datadir + "/{sample}/filtering/reverse{seg}.calculated"
+        "{dataDir}/{sample}/filtering/reverse{{seg}}.calculated".format(dataDir = dataDir, sample = sample)
     params:
         monovalentConc = config["oligotm"]["monovalent-conc"],
         divalentConc = config["oligotm"]["divalent-conc"],
@@ -52,9 +52,9 @@ rule reverse_parameters:
 ### calculate complexity with nessie, input format require fasta
 rule reverse_toFasta:
     input:
-        datadir + "/{sample}/filtering/reverse{seg}.calculated"
+        "{dataDir}/{sample}/filtering/reverse{{seg}}.calculated".format(dataDir = dataDir, sample = sample)
     output:
-        datadir + "/{sample}/filtering/reverse{seg}.fa"
+        "{dataDir}/{sample}/filtering/reverse{{seg}}.fasta".format(dataDir = dataDir, sample = sample)
     run:
         import os
 
@@ -73,18 +73,23 @@ rule reverse_toFasta:
 
 rule reverse_linguistic_complexity:
     input:
-        datadir + "/{sample}/filtering/reverse{seg}.fa"
+        "{dataDir}/{sample}/filtering/reverse{{seg}}.fasta".format(dataDir = dataDir,
+                                                                   sample = sample)
     output:
-        datadir + "/{sample}/filtering/reverse{seg}.nessieOut"
+        "{dataDir}/{sample}/filtering/reverse{{seg}}.nessieOut".format(dataDir = dataDir,
+                                                                       sample = sample)
     shell:
         "lib/nessie/nessie -I {input} -O {output} -L"
 
 rule reverse_add_LC:
     input:
-        datadir + "/{sample}/filtering/reverse{seg}.nessieOut",
-        datadir + "/{sample}/filtering/reverse{seg}.fa"
+        "{dataDir}/{sample}/filtering/reverse{{seg}}.nessieOut".format(dataDir = dataDir,
+                                                                       sample = sample),
+        "{dataDir}/{sample}/filtering/reverse{{seg}}.fasta".format(dataDir = dataDir,
+                                                                   sample = sample)
     output:
-        datadir + "/{sample}/filtering/reverse{seg}.calculated2"
+        "{dataDir}/{sample}/filtering/reverse{{seg}}.calculated2".format(dataDir = dataDir,
+                                                                         sample = sample)
     run:
         input2 = open(input[1], "r")
         outputFile = open(output[0], "w")
@@ -142,47 +147,41 @@ rule reverse_add_LC:
 
         outputFile.close()
 
-### error message, merge in interactiv commande line
-# def aggregate_reverseInput(wildcards):
-#     outputdir = datadir + "/{sample}/filtering/"
-#     return expand(datadir + "/{sample}/filtering/reverse{seg}.calculated2",
-#                   sample = wildcards.sample,
-#                   seg = glob_wildcards(os.path.join(outputdir, "reverse{seg}.calculated2")).seg)
-#
-# rule aggregate_allReverseOligo:
-#     input:
-#         aggregate_reverseInput
-#     output:
-#         datadir + "/{sample}/filtering/allOligos_reverse.calculated2"
-#     shell:
-#         """
-#         echo -e "position\tkmerCount\tCG%\tTm\thomodimer-dG\thairpin-dG\tLC\tkmer" > {output}
-#         """
-#         """
-#         sed -s 1d {input} >> {output}
-#         """
+## error message, merge in interactiv commande line
+def aggregate_reverseInput(wildcards):
+    checkpoint_output = checkpoints.splitFiles.get(**wildcards).output[0]
+    return expand("{dataDir}/{sample}/filtering/reverse{{seg}}.calculated2".format(dataDir = dataDir, sample = sample),
+                  seg = glob_wildcards(os.path.join(checkpoint_output, "reverse{seg}.fasta")).seg)
 
-rule reverse_filtering:
+rule aggregate_allReverseOligo:
     input:
-        datadir + "/{sample}/filtering/allOligos_reverse.calculated2"
+        aggregate_reverseInput
     output:
-        datadir + "/{sample}/filtering/allOligos_reverse.filtered"
-    run:
-        import pandas as pd
-        import os
+        "{}/{}/filtering/allOligos_reverse.calculated2".format(dataDir, sample)
+    shell:
+        "cat {input} > {output}"
 
-        df = pd.read_table(input[0], sep="\t", header=0)
-
-        mean = float(df["Tm"].mean())
-        std = float(df["Tm"].std())
-
-        # MSSPE Deng et al. (2020), don't know the philosophy behind yet. with tm range from 60 - 70 no oligo could pass the criteria
-        TmSeuilPlus = mean + 2*std
-        TmSeuilLess = mean - 2*std
-
-        df_filtered = df[(df["Tm"] >= TmSeuilLess) & (df["Tm"] <= TmSeuilPlus) & (df["CG%"] >= 40) & (df["CG%"] <= 60) & (df["hairpin-dG"] > -9000) & (df["homodimer-dG"] > -9000) & (df["LC"] >= 0.75)]
-        df_filtered = df_filtered.sort_values("position", ascending=False)
-        df_filtered.to_csv(output[0], sep='\t', index=False)
+# rule reverse_filtering:
+#     input:
+#         datadir + "/{sample}/filtering/allOligos_reverse.calculated2"
+#     output:
+#         datadir + "/{sample}/filtering/allOligos_reverse.filtered"
+#     run:
+#         import pandas as pd
+#         import os
+#
+#         df = pd.read_table(input[0], sep="\t", header=0)
+#
+#         mean = float(df["Tm"].mean())
+#         std = float(df["Tm"].std())
+#
+#         # MSSPE Deng et al. (2020), don't know the philosophy behind yet. with tm range from 60 - 70 no oligo could pass the criteria
+#         TmSeuilPlus = mean + 2*std
+#         TmSeuilLess = mean - 2*std
+#
+#         df_filtered = df[(df["Tm"] >= TmSeuilLess) & (df["Tm"] <= TmSeuilPlus) & (df["CG%"] >= 40) & (df["CG%"] <= 60) & (df["hairpin-dG"] > -9000) & (df["homodimer-dG"] > -9000) & (df["LC"] >= 0.75)]
+#         df_filtered = df_filtered.sort_values("position", ascending=False)
+#         df_filtered.to_csv(output[0], sep='\t', index=False)
 
 
 # def aggregate_input(wildcards):
