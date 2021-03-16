@@ -1,0 +1,24 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	splitFiles
+	2
+Select jobs to execute...
+
+[Tue Mar 16 17:09:15 2021]
+checkpoint splitFiles:
+    input: /datater/wu/data_test/msa/zika.msa
+    output: /datater/wu/data_test/zika/splitFiles
+    jobid: 3
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Tue Mar 16 17:09:16 2021]
+Finished job 3.
+1 of 1 steps (100%) done
+Complete log: /datater/wu/stage_m2_merge/.snakemake/log/2021-03-16T170915.607604.snakemake.log

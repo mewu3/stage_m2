@@ -1,0 +1,29 @@
+Building DAG of jobs...
+Updating job dskReverse.
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	dskReverse
+	2
+Select jobs to execute...
+
+[Tue Mar 16 17:41:40 2021]
+rule dskReverse:
+    output: /datater/wu/data_test/zika/dsk/reverse__snakemake_dynamic__.h5
+    jobid: 1
+
+[Tue Mar 16 17:41:40 2021]
+Error in rule dskReverse:
+    jobid: 1
+    output: /datater/wu/data_test/zika/dsk/reverse__snakemake_dynamic__.h5
+    shell:
+        lib/dsk/build/bin/dsk         -nb-cores 0         -max-memory 5000         -max-disk 0         -out-compress 0         -storage-type hdf5         -kmer-size 13         -abundance-min 2         -abundance-max 2147483647         -solidity-kind sum         -file          -out /datater/wu/data_test/zika/dsk/reverse__snakemake_dynamic__.h5
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2_merge/.snakemake/log/2021-03-16T174140.225442.snakemake.log

@@ -1,0 +1,3 @@
+SyntaxError in line 1 of /datater/wu/stage_m2_merge/rules/reverse_kmer_dsk.smk:
+invalid syntax
+  File "/datater/wu/stage_m2_merge/Snakefile", line 167, in <module>

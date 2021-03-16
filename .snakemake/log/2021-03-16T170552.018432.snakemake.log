@@ -1,0 +1,4 @@
+AttributeError in line 55 of /datater/wu/stage_m2_merge/rules/all_preprocessing.smk:
+'str' object has no attribute 'sample'
+  File "/datater/wu/stage_m2_merge/Snakefile", line 167, in <module>
+  File "/datater/wu/stage_m2_merge/rules/all_preprocessing.smk", line 55, in <module>

@@ -1,0 +1,9 @@
+Building DAG of jobs...
+Updating job all.
+InputFunctionException in line 59 of /datater/wu/stage_m2_merge/Snakefile:
+Error:
+  KeyError: 'dataDir'
+Wildcards:
+
+Traceback:
+  File "/datater/wu/stage_m2_merge/Snakefile", line 56, in aggregate_reverseInput

@@ -1,8 +1,10 @@
 rule dskReverse:
     input:
-        datadir + "/{sample}/splitFiles/reverse{seg}.fasta"
+        "{dataDir}/{sample}/splitFiles/reverse{{seg}}.fasta".format(dataDir = dataDir,
+                                                                 sample = sample)
     output:
-        datadir + "/{sample}/dsk/reverse{seg}.h5"
+        "{dataDir}/{sample}/dsk/reverse{{seg}}.h5".format(dataDir = dataDir,
+                                                          sample = sample)
     params:
         nbCores = config["dsk"]["nb-cores"],
         maxMemory = config["dsk"]["max-memory"],
@@ -29,9 +31,11 @@ rule dskReverse:
 
 rule dskReverseOutput:
     input:
-        datadir + "/{sample}/dsk/reverse{seg}.h5"
+        "{dataDir}/{sample}/dsk/reverse{{seg}}.h5".format(dataDir = dataDir,
+                                                          sample = sample)
     output:
-        datadir + "/{sample}/dsk/reverse{seg}.kCount"
+        "{dataDir}/{sample}/dsk/reverse{{seg}}.kCount".format(dataDir = dataDir,
+                                                              sample = sample)
     params:
         nbCores = config["dsk2ascii"]["nb-cores"],
     shell:
@@ -41,9 +45,11 @@ rule dskReverseOutput:
 
 rule dskReverseOutputSort:
     input:
-        datadir + "/{sample}/dsk/reverse{seg}.kCount"
+        "{dataDir}/{sample}/dsk/reverse{{seg}}.kCount".format(dataDir = dataDir,
+                                                              sample = sample)
     output:
-        datadir + "/{sample}/dsk/reverse{seg}.kCountSorted"
+        "{dataDir}/{sample}/dsk/reverse{{seg}}.kCountSorted".format(dataDir = dataDir,
+                                                                    sample = sample)
     run:
         with open(input[0], "r") as input:
             rows = input.readlines()
