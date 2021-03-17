@@ -2,4 +2,5 @@ channels:
     - conda-forge
     - bioconda
 dependencies:
-    - primer3-py =0.6.0
+    - pip:
+        - primer3-py==0.6.1

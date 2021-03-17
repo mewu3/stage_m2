@@ -1,5 +1,5 @@
-channels: 
-    - conda-forge 
-    - bioconda 
-dependencies: 
-    - mafft =7.475
+channels:
+    - conda-forge
+    - bioconda
+dependencies:
+    - mafft=7.475

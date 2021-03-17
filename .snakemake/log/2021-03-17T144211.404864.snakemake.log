@@ -1,0 +1,38 @@
+Building DAG of jobs...
+Updating job aggregate_allReverseOligo.
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	RNAtoDNA
+	1	all
+	1	lastdb_index
+	3
+Select jobs to execute...
+
+[Wed Mar 17 14:42:11 2021]
+rule RNAtoDNA:
+    input: /datater/wu/data/zika/zika.uniq
+    output: /datater/wu/data/zika/zika.uniq.dna.fasta
+    jobid: 2
+    wildcards: sample=zika
+
+[Wed Mar 17 14:42:11 2021]
+Error in rule RNAtoDNA:
+    jobid: 2
+    output: /datater/wu/data/zika/zika.uniq.dna.fasta
+
+RuleException:
+NameError in line 31 of /datater/wu/stage_m2/rules/reverse_check_specifity.smk:
+The name 'input' is unknown in this context. Please make sure that you defined that variable. Also note that braces not used for variable access have to be escaped by repeating them, i.e. {{print $1}}
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 2326, in run_wrapper
+  File "/datater/wu/stage_m2/rules/reverse_check_specifity.smk", line 31, in __rule_RNAtoDNA
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 568, in _callback
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 554, in cached_or_run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 2357, in run_wrapper
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-17T144211.404864.snakemake.log

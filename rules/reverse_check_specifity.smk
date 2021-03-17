@@ -22,33 +22,86 @@ rule allToFasta:
 
         outFile.close()
 
-### vmath alignment
 rule RNAtoDNA:
     input:
         "{dataDir}/{{sample}}/{{sample}}.uniq".format(dataDir=dataDir)
     output:
         "{dataDir}/{{sample}}/{{sample}}.uniq.dna".format(dataDir=dataDir)
-    script:
-        "scripts/RNAtoDNA.py {input} {output}"
-
-rule mktree_index:
-    input:
-        "{dataDir}/{{sample}}/{{sample}}.uniq.dna".format(dataDir=dataDir)
-    output:
-        multiext(
-            "{dataDir}/{{sample}}/{{sample}}.uniq.dna.".format(dataDir=dataDir), "al1", "bck", "bwt", "des", "lcp", "llv", "ois", "prj", "sds", "skp", "ssp", "sti1", "suf", "tis"
-        )
-    params:
-        index = "{dataDir}/{{sample}}/{{sample}}.uniq.dna".format(dataDir=dataDir)
-    shell :
-        "lib/vmatch-2.3.1/mkvtree -db {input} -dna -pl -allout -indexname {params.index}"
-
-rule vmatch:
-    input:
-        "{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.fasta".format(dataDir=dataDir)
-    output:
-        "{dataDir}/{{sample}}/checkSpecifity/vmatch.out".format(dataDir=dataDir)
-    params:
-        index = "{dataDir}/{{sample}}/{{sample}}.uniq.dna".format(dataDir=dataDir)
     shell:
-        "lib/vmatch-2.3.1/vmatch -complete -p -v -showdesc 10 -s 120 abbrev -noevalue -noscore -noidentity -q {input} {params.index} > {output}"
+        "python3 scripts/RNAtoDNA.py {input} {output}"
+
+
+### vmath alignment: examination needed for the output in the future
+# rule mktree_index:
+#     input:
+#         "{dataDir}/{{sample}}/{{sample}}.uniq.dna".format(dataDir=dataDir)
+#     output:
+#         multiext(
+#             "{dataDir}/{{sample}}/{{sample}}.index.".format(dataDir=dataDir), "al1", "bck", "bwt", "des", "lcp", "llv", "ois", "prj", "sds", "skp", "ssp", "sti1", "suf", "tis"
+#         )
+#     params:
+#         index = "{dataDir}/{{sample}}/{{sample}}.index".format(dataDir=dataDir)
+#     shell :
+#         "lib/vmatch-2.3.1/mkvtree -db {input} -dna -pl -allout -indexname {params.index}"
+#
+# rule vmatch:
+#     input:
+#         "{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.fasta".format(dataDir=dataDir)
+#     output:
+#         "{dataDir}/{{sample}}/checkSpecifity/vmatch.out".format(dataDir=dataDir)
+#     params:
+#         index = "{dataDir}/{{sample}}/{{sample}}.index".format(dataDir=dataDir)
+#     shell:
+#         "lib/vmatch-2.3.1/vmatch -complete -p -v -showdesc 10 -s 120 abbrev -noevalue -noscore -noidentity -q {input} {params.index} > {output}"
+
+### last alignment: output produce nothing
+# rule lastdb_index:
+#     input:
+#         "{dataDir}/{{sample}}/{{sample}}.uniq.dna".format(dataDir=dataDir)
+#     output:
+#         multiext(
+#             "{dataDir}/{{sample}}/{{sample}}.index.".format(dataDir=dataDir), "bck", "des", "prj", "sds", "ssp", "suf", "tis"
+#         )
+#     params:
+#         index = "{dataDir}/{{sample}}/{{sample}}.index".format(dataDir=dataDir)
+#     shell:
+#         "lib/last-1179/src/lastdb {params.index} {input}"
+#
+# rule lastal_alignment:
+#     input:
+#         "{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.fasta".format(dataDir=dataDir)
+#     output:
+#         "{dataDir}/{{sample}}/checkSpecifity/lastal.out".format(dataDir=dataDir)
+#     params:
+#         index = "{dataDir}/{{sample}}/{{sample}}.index".format(dataDir=dataDir)
+#     shell:
+#         "lib/last-1179/src/lastal {params.index} {input} > {output}"
+
+### bbmap: don't have position information
+# rule bbmap:
+#     input:
+#         query = "{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.fasta".format(dataDir=dataDir),
+#         ref = "{dataDir}/{{sample}}/{{sample}}.uniq.dna".format(dataDir=dataDir)
+#     output:
+#         "{dataDir}/{{sample}}/checkSpecifity/seal.out".format(dataDir=dataDir),
+#         "{dataDir}/{{sample}}/checkSpecifity/seal.out.stats".format(dataDir=dataDir)
+#     params:
+#         refPath = "{dataDir}/{{sample}}/".format(dataDir=dataDir)
+#     shell:
+#         "lib/bbmap/seal.sh in={input.query} ref={input.ref} out={output[0]} stats={output[1]} k=6 rcomp=t mm=f"
+
+### blatn short liangment 
+# rule blastDB:
+#     input:
+#         ref = "{dataDir}/{{sample}}/{{sample}}.uniq.dna".format(dataDir=dataDir)
+#
+#
+# rule blastn_short:
+#     input:
+#         query = query = "{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.fasta".format(dataDir=dataDir),
+#         ref = "{dataDir}/{{sample}}/{{sample}}.uniq.dna".format(dataDir=dataDir)
+#     output:
+#     params:
+#     shell:
+#         "blatn -task blastn-short -query {input.query}\
+#         -strand 'minus'"

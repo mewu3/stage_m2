@@ -1,0 +1,21 @@
+Building DAG of jobs...
+Updating job aggregate_allReverseOligo.
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1
+Select jobs to execute...
+
+[Wed Mar 17 14:53:02 2021]
+localrule all:
+    input: /datater/wu/data/enterovirus/filtering/allOligos_reverse.calculated2
+    jobid: 0
+
+[Wed Mar 17 14:53:02 2021]
+Finished job 0.
+1 of 1 steps (100%) done
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-17T145302.208670.snakemake.log

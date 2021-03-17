@@ -1,0 +1,37 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	lastdb_index
+	2
+Select jobs to execute...
+
+[Wed Mar 17 13:56:03 2021]
+rule lastdb_index:
+    input: /datater/wu/data/zika/zika.uniq.dna
+    output: /datater/wu/data/zika/zika.uniq.dna.bck, /datater/wu/data/zika/zika.uniq.dna.des, /datater/wu/data/zika/zika.uniq.dna.prj, /datater/wu/data/zika/zika.uniq.dna.sds, /datater/wu/data/zika/zika.uniq.dna.skp, /datater/wu/data/zika/zika.uniq.dna.ssp, /datater/wu/data/zika/zika.uniq.dna.suf, /datater/wu/data/zika/zika.uniq.dna.tis
+    jobid: 1
+    wildcards: sample=zika
+
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 58 of /datater/wu/stage_m2/rules/reverse_check_specifity.smk:
+Job Missing files after 5 seconds:
+/datater/wu/data/zika/zika.uniq.dna.bck
+/datater/wu/data/zika/zika.uniq.dna.des
+/datater/wu/data/zika/zika.uniq.dna.prj
+/datater/wu/data/zika/zika.uniq.dna.sds
+/datater/wu/data/zika/zika.uniq.dna.skp
+/datater/wu/data/zika/zika.uniq.dna.ssp
+/datater/wu/data/zika/zika.uniq.dna.suf
+/datater/wu/data/zika/zika.uniq.dna.tis
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 1 completed successfully, but some output files are missing. 1
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 583, in handle_job_success
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 252, in handle_job_success
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-17T135603.352748.snakemake.log

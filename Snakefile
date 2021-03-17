@@ -50,16 +50,30 @@ fetchConfigParameters()
 #                   sample = samples,
 #                   seg = glob_wildcards(os.path.join(checkpoint_output, "reverse{seg}.fasta")).seg)
 
+# ruleorder: lastdb_index > lastal_alignment
+
 rule all: # run all rules ######################################################
     input:
         expand(
-            "{dataDir}/{{sample}}/checkSpecifity/vmatch.out".format(dataDir=dataDir),
+            "{dataDir}/{{sample}}/{{sample}}.msa".format(dataDir=dataDir),
             sample = samples
         ),
+        expand(
+            "{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.fasta".format(dataDir=dataDir),
+            sample = samples
+        )
         # expand(
-        #     "{dataDir}/{{sample}}/{{sample}}.uniq.dna.{{ext}}".format(dataDir=dataDir),
+        #     "{dataDir}/{{sample}}/{{sample}}.index.{{ext}}".format(dataDir=dataDir),
         #     sample = samples,
-        #     ext = ["al1", "bck", "bwt", "des", "lcp", "llv", "ois", "prj", "sds", "skp", "ssp", "sti1", "suf", "tis"]
+        #     ext = ["bck", "des", "prj", "sds", "ssp", "suf", "tis"]
+        # ),
+        # expand(
+        #     "{dataDir}/{{sample}}/checkSpecifity/seal.out".format(dataDir=dataDir),
+        #     sample = samples
+        # ),
+        # expand(
+        #     "{dataDir}/{{sample}}/checkSpecifity/seal.out.stats".format(dataDir=dataDir),
+        #     sample = samples
         # ),
 
 include: "rules/all_preprocessing.smk"
