@@ -21,3 +21,16 @@ rule allToFasta:
                 n += 1
 
         outFile.close()
+
+### vmath alignment
+rule mktree_index:
+    input:
+        "{dataDir}/{{sample}}/{{sample}}.uniq".format(dataDir=dataDir)
+    output:
+        multiext(
+            "{dataDir}/{{sample}}/{{sample}}.uniq.".format(dataDir=dataDir), "al1", "bck", "bwt", "des", "lcp", "llv", "ois", "prj", "sds", "skp", "ssp", "sti1", "suf", "tis"
+        )
+    params:
+        indexName = "{dataDir}/{{sample}}/{{sample}}.uniq".format(dataDir=dataDir)
+    shell :
+        "lib/vmatch-2.3.1/mkvtree -db {input} -dna -pl -allout -indexname {params.indexName}"

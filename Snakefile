@@ -55,12 +55,12 @@ rule all: # run all rules ######################################################
         expand(
             "{dataDir}/{{sample}}/filtering/allOligos_reverse.fasta".format(dataDir=dataDir),
             sample = samples
-        )
-        # expand(
-        #     "{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.{{ext}}".format(dataDir = dataDir),
-        #     sample = samples,
-        #     ext = ["al1", "bck", "bwt", "des", "lcp", "llv", "ois", "prj", "sds", "skp", "ssp", "sti1", "suf", "tis"]
-        # ),
+        ),
+        expand(
+            "{dataDir}/{{sample}}/{{sample}}.uniq.{{ext}}".format(dataDir=dataDir),
+            sample = samples,
+            ext = ["al1", "bck", "bwt", "des", "lcp", "llv", "ois", "prj", "sds", "skp", "ssp", "sti1", "suf", "tis"]
+        ),
 
 include: "rules/all_preprocessing.smk"
 include: "rules/reverse_kmer_dsk.smk"

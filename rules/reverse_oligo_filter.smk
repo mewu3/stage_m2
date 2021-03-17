@@ -102,7 +102,7 @@ rule reverse_add_LC:
                     LC = li1.split(":")[1]
                     dict_id_lc[id] = LC
 
-        ### write to fasta format
+        # write to fasta format
         # for li2 in input2:
         #     li2 = li2.rstrip("\n")
         #     seq = ""
@@ -118,7 +118,7 @@ rule reverse_add_LC:
         #         seq = li2
         #         outputFile.write(seq + "\n")
 
-        ### write to tsv format
+        # write to tsv format
         outputFile.write("position\tkmerCount\tCG%\tTm\thomodimer-dG\thairpin-dG\tLC\toligo\n")
         for li2 in input2:
             li2 = li2.rstrip("\n")
@@ -142,7 +142,6 @@ rule reverse_add_LC:
 
         outputFile.close()
 
-## error message, merge in interactiv commande line
 def aggregate_reverseInput(wildcards):
     checkpoint_output = checkpoints.splitFiles.get(**wildcards).output[0]
     return expand("{dataDir}/{{sample}}/filtering/reverse{{seg}}.calculated2".format(dataDir=dataDir),
@@ -172,7 +171,8 @@ rule reverse_filtering:
         mean = float(df["Tm"].mean())
         std = float(df["Tm"].std())
 
-        # MSSPE Deng et al. (2020), don't know the philosophy behind yet. with tm range from 60 - 70 no oligo could pass the criteria
+        # MSSPE Deng et al. (2020), don't know the philosophy behind yet. with
+        # tm range from 60 - 70 no oligo could pass the criteria
         TmSeuilPlus = mean + 2*std
         TmSeuilLess = mean - 2*std
 

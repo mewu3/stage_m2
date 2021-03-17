@@ -14,7 +14,7 @@ rule mafft: # multiple sequences alignment #####################################
     output:
         "{dataDir}/{{sample}}/{{sample}}.msa".format(dataDir=dataDir)
     log:
-        "{dataDir}/{{sample}}/mafft.log".format(dataDir=dataDir)
+        "{dataDir}/{{sample}}/log/mafft.log".format(dataDir=dataDir)
     conda:
         "envs/mafft.yaml"
     params:
