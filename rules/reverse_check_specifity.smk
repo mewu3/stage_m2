@@ -2,7 +2,7 @@ rule allToFasta:
     input:
         "{dataDir}/{{sample}}/filtering/allOligos_reverse.filtered".format(dataDir=dataDir)
     output:
-        "{dataDir}/{{sample}}/filtering/allOligos_reverse.fasta".format(dataDir=dataDir)
+        "{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.fasta".format(dataDir=dataDir)
     run:
         import os
         from Bio.Seq import Seq
@@ -23,14 +23,32 @@ rule allToFasta:
         outFile.close()
 
 ### vmath alignment
-rule mktree_index:
+rule RNAtoDNA:
     input:
         "{dataDir}/{{sample}}/{{sample}}.uniq".format(dataDir=dataDir)
     output:
+        "{dataDir}/{{sample}}/{{sample}}.uniq.dna".format(dataDir=dataDir)
+    script:
+        "scripts/RNAtoDNA.py {input} {output}"
+
+rule mktree_index:
+    input:
+        "{dataDir}/{{sample}}/{{sample}}.uniq.dna".format(dataDir=dataDir)
+    output:
         multiext(
-            "{dataDir}/{{sample}}/{{sample}}.uniq.".format(dataDir=dataDir), "al1", "bck", "bwt", "des", "lcp", "llv", "ois", "prj", "sds", "skp", "ssp", "sti1", "suf", "tis"
+            "{dataDir}/{{sample}}/{{sample}}.uniq.dna.".format(dataDir=dataDir), "al1", "bck", "bwt", "des", "lcp", "llv", "ois", "prj", "sds", "skp", "ssp", "sti1", "suf", "tis"
         )
     params:
-        indexName = "{dataDir}/{{sample}}/{{sample}}.uniq".format(dataDir=dataDir)
+        index = "{dataDir}/{{sample}}/{{sample}}.uniq.dna".format(dataDir=dataDir)
     shell :
-        "lib/vmatch-2.3.1/mkvtree -db {input} -dna -pl -allout -indexname {params.indexName}"
+        "lib/vmatch-2.3.1/mkvtree -db {input} -dna -pl -allout -indexname {params.index}"
+
+rule vmatch:
+    input:
+        "{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.fasta".format(dataDir=dataDir)
+    output:
+        "{dataDir}/{{sample}}/checkSpecifity/vmatch.out".format(dataDir=dataDir)
+    params:
+        index = "{dataDir}/{{sample}}/{{sample}}.uniq.dna".format(dataDir=dataDir)
+    shell:
+        "lib/vmatch-2.3.1/vmatch -complete -p -v -showdesc 10 -s 120 abbrev -noevalue -noscore -noidentity -q {input} {params.index} > {output}"

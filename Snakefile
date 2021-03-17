@@ -53,14 +53,14 @@ fetchConfigParameters()
 rule all: # run all rules ######################################################
     input:
         expand(
-            "{dataDir}/{{sample}}/filtering/allOligos_reverse.fasta".format(dataDir=dataDir),
+            "{dataDir}/{{sample}}/checkSpecifity/vmatch.out".format(dataDir=dataDir),
             sample = samples
         ),
-        expand(
-            "{dataDir}/{{sample}}/{{sample}}.uniq.{{ext}}".format(dataDir=dataDir),
-            sample = samples,
-            ext = ["al1", "bck", "bwt", "des", "lcp", "llv", "ois", "prj", "sds", "skp", "ssp", "sti1", "suf", "tis"]
-        ),
+        # expand(
+        #     "{dataDir}/{{sample}}/{{sample}}.uniq.dna.{{ext}}".format(dataDir=dataDir),
+        #     sample = samples,
+        #     ext = ["al1", "bck", "bwt", "des", "lcp", "llv", "ois", "prj", "sds", "skp", "ssp", "sti1", "suf", "tis"]
+        # ),
 
 include: "rules/all_preprocessing.smk"
 include: "rules/reverse_kmer_dsk.smk"

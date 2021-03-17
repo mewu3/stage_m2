@@ -154,8 +154,10 @@ rule aggregate_allReverseOligo:
     output:
         "{dataDir}/{{sample}}/filtering/allOligos_reverse.calculated2".format(dataDir=dataDir)
     shell:
-        """echo -e "position\tkmerCount\tCG%\tTm\thomodimer-dG\thairpin-dG\tLC\tkmer" > {output}"""
-        "sed -s 1d {input} >> {output}"
+        """
+        echo -e "position\tkmerCount\tCG%\tTm\thomodimer-dG\thairpin-dG\tLC\tkmer" > {output}
+        sed -s 1d {input} >> {output}
+        """
 
 rule reverse_filtering:
     input:
