@@ -1,8 +1,8 @@
 rule allToFasta:
     input:
-        datadir + "/{sample}/filtering/allOligos_reverse.filtered"
+        "{dataDir}/{{sample}}/filtering/allOligos_reverse.filtered".format(dataDir=dataDir)
     output:
-        datadir + "/{sample}/checkSpecifity/allOligos_reverse.fasta"
+        "{dataDir}/{{sample}}/filtering/allOligos_reverse.fasta".format(dataDir=dataDir)
     run:
         import os
         from Bio.Seq import Seq
@@ -21,5 +21,3 @@ rule allToFasta:
                 n += 1
 
         outFile.close()
-
- 

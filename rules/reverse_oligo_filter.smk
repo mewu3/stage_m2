@@ -1,8 +1,8 @@
 rule reverse_parameters:
     input:
-        "{dataDir}/{sample}/dsk/reverse{{seg}}.kCountSorted".format(dataDir = dataDir, sample = sample)
+        "{dataDir}/{{sample}}/dsk/reverse{{seg}}.kCountSorted".format(dataDir=dataDir)
     output:
-        "{dataDir}/{sample}/filtering/reverse{{seg}}.calculated".format(dataDir = dataDir, sample = sample)
+        "{dataDir}/{{sample}}/filtering/reverse{{seg}}.calculated".format(dataDir=dataDir)
     params:
         monovalentConc = config["oligotm"]["monovalent-conc"],
         divalentConc = config["oligotm"]["divalent-conc"],
@@ -52,9 +52,9 @@ rule reverse_parameters:
 ### calculate complexity with nessie, input format require fasta
 rule reverse_toFasta:
     input:
-        "{dataDir}/{sample}/filtering/reverse{{seg}}.calculated".format(dataDir = dataDir, sample = sample)
+        "{dataDir}/{{sample}}/filtering/reverse{{seg}}.calculated".format(dataDir=dataDir)
     output:
-        "{dataDir}/{sample}/filtering/reverse{{seg}}.fasta".format(dataDir = dataDir, sample = sample)
+        "{dataDir}/{{sample}}/filtering/reverse{{seg}}.fasta".format(dataDir=dataDir)
     run:
         import os
 
@@ -73,23 +73,18 @@ rule reverse_toFasta:
 
 rule reverse_linguistic_complexity:
     input:
-        "{dataDir}/{sample}/filtering/reverse{{seg}}.fasta".format(dataDir = dataDir,
-                                                                   sample = sample)
+        "{dataDir}/{{sample}}/filtering/reverse{{seg}}.fasta".format(dataDir=dataDir)
     output:
-        "{dataDir}/{sample}/filtering/reverse{{seg}}.nessieOut".format(dataDir = dataDir,
-                                                                       sample = sample)
+        "{dataDir}/{{sample}}/filtering/reverse{{seg}}.nessieOut".format(dataDir=dataDir)
     shell:
         "lib/nessie/nessie -I {input} -O {output} -L"
 
 rule reverse_add_LC:
     input:
-        "{dataDir}/{sample}/filtering/reverse{{seg}}.nessieOut".format(dataDir = dataDir,
-                                                                       sample = sample),
-        "{dataDir}/{sample}/filtering/reverse{{seg}}.fasta".format(dataDir = dataDir,
-                                                                   sample = sample)
+        "{dataDir}/{{sample}}/filtering/reverse{{seg}}.nessieOut".format(dataDir=dataDir)
+        "{dataDir}/{{sample}}/filtering/reverse{{seg}}.fasta".format(dataDir=dataDir)
     output:
-        "{dataDir}/{sample}/filtering/reverse{{seg}}.calculated2".format(dataDir = dataDir,
-                                                                         sample = sample)
+        "{dataDir}/{{sample}}/filtering/reverse{{seg}}.calculated2".format(dataDir=dataDir)
     run:
         input2 = open(input[1], "r")
         outputFile = open(output[0], "w")
@@ -150,109 +145,37 @@ rule reverse_add_LC:
 ## error message, merge in interactiv commande line
 def aggregate_reverseInput(wildcards):
     checkpoint_output = checkpoints.splitFiles.get(**wildcards).output[0]
-    return expand("{dataDir}/{sample}/filtering/reverse{{seg}}.calculated2".format(dataDir = dataDir, sample = sample),
+    return expand("{dataDir}/{{sample}}/filtering/reverse{{seg}}.calculated2".format(dataDir=dataDir),
+                  sample = wildcards.sample
                   seg = glob_wildcards(os.path.join(checkpoint_output, "reverse{seg}.fasta")).seg)
 
 rule aggregate_allReverseOligo:
     input:
         aggregate_reverseInput
     output:
-        "{}/{}/filtering/allOligos_reverse.calculated2".format(dataDir, sample)
+        "{dataDir}/{{sample}}/filtering/allOligos_reverse.calculated2".format(dataDir=dataDir)
     shell:
-        "cat {input} > {output}"
+        """echo -e "position\tkmerCount\tCG%\tTm\thomodimer-dG\thairpin-dG\tLC\tkmer" > {output}"""
+        "sed -s 1d {input} >> {output}"
 
-# rule reverse_filtering:
-#     input:
-#         datadir + "/{sample}/filtering/allOligos_reverse.calculated2"
-#     output:
-#         datadir + "/{sample}/filtering/allOligos_reverse.filtered"
-#     run:
-#         import pandas as pd
-#         import os
-#
-#         df = pd.read_table(input[0], sep="\t", header=0)
-#
-#         mean = float(df["Tm"].mean())
-#         std = float(df["Tm"].std())
-#
-#         # MSSPE Deng et al. (2020), don't know the philosophy behind yet. with tm range from 60 - 70 no oligo could pass the criteria
-#         TmSeuilPlus = mean + 2*std
-#         TmSeuilLess = mean - 2*std
-#
-#         df_filtered = df[(df["Tm"] >= TmSeuilLess) & (df["Tm"] <= TmSeuilPlus) & (df["CG%"] >= 40) & (df["CG%"] <= 60) & (df["hairpin-dG"] > -9000) & (df["homodimer-dG"] > -9000) & (df["LC"] >= 0.75)]
-#         df_filtered = df_filtered.sort_values("position", ascending=False)
-#         df_filtered.to_csv(output[0], sep='\t', index=False)
+rule reverse_filtering:
+    input:
+        "{dataDir}/{{sample}}/filtering/allOligos_reverse.calculated2".format(dataDir=dataDir)
+    output:
+        "{dataDir}/{{sample}}/filtering/allOligos_reverse.filtered".format(dataDir=dataDir)
+    run:
+        import pandas as pd
+        import os
 
+        df = pd.read_table(input[0], sep="\t", header=0)
 
-# def aggregate_input(wildcards):
-#     checkpoint_output = datadir + "/{sample}/primer3_Tm/"
-#     return expand(datadir + "/{sample}/primer3_Tm/forward_{seg}.TmFilterered",
-#                   sample = wildcards.sample,
-#                   seg = glob_wildcards(os.path.join(checkpoint_output, "forward_{seg}.TmFilterered")).seg)
+        mean = float(df["Tm"].mean())
+        std = float(df["Tm"].std())
 
-# rule merge_all_kmers:
-#     input:
-#         aggregate_input
-#     output:
-#         datadir + "/{sample}/primer3_Tm/all_oligo"
-#     shell:
-#         "sed -s 1d {input} >> {output}"
+        # MSSPE Deng et al. (2020), don't know the philosophy behind yet. with tm range from 60 - 70 no oligo could pass the criteria
+        TmSeuilPlus = mean + 2*std
+        TmSeuilLess = mean - 2*std
 
-
-#
-# rule dimer_mfeprimer:
-#     input:
-#         datadir + "/{sample}/primer3_Tm/all_oligo.fasta"
-#     output:
-#         datadir + "/{sample}/MFEprimer/all_oligo_hairpin_dimer"
-#     params:
-#         deltaG = config["mfeprimer"]["deltaG-cutoff"],
-#         Tm = config["mfeprimer"]["Tm-cutoff"],
-#         score = config["mfeprimer"]["score-cutoff"],
-#         monovalent = config["mfeprimer"]["monovalent-conc"],
-#         divalent = config["mfeprimer"]["divalent-conc"],
-#         NPT = config["mfeprimer"]["dNTP-conc"],
-#         oligo = config["mfeprimer"]["oligo-conc"]
-#     shell:
-#         "lib/mfeprimer-3.2.1-linux-amd64 dimer -i {input} -o {output} \
-#         -t {params.Tm} \
-#         -d {params.deltaG} \
-#         -s {params.score} \
-#         --mono {params.monovalent} \
-#         --diva {params.divalent} \
-#         --dntp {params.NPT} \
-#         --oligo {params.oligo}"
-
-#
-# rule dimer_ntthal:
-#     input:
-#         datadir + "/{sample}/primer3_ntthal/allOligo_hairpin"
-#     output:
-#         datadir + "/{sample}/primer3_ntthal/allOligo_hairpin_dimer"
-#     run:
-#         import numpy as np
-#         import os
-#         # import pandas as pd
-#
-#         inputFile = open(input[0], "r")
-#         outputFile = open(output[0], "w")
-#
-#         lines = []
-#
-#         for li in inputFile:
-#             li = li.rstrip("\n")
-#             ls = li.split()
-#             lines.append(ls)
-#
-#         for k1 in np.array(lines).T[0]:
-#             for k2 in np.array(lines).T[0]:
-#                 stdout = os.popen("lib/primer3/src/ntthal -s1 {} -s2 {}".format(k1, k2)).read()
-#                 ls = stdout.split()
-#                 deltaG = ls[13]
-#                 if float(deltaG) < -9000:
-#                     # print(k1, k2, deltaG)
-#                     outputFile.write("{}\t{}\t{}\n".format(k1, k2, deltaG))
-#                     # outputFile.write(stdout)
-#                 # outputFile.write(stdout)
-#
-#         outputFile.close()
+        df_filtered = df[(df["Tm"] >= TmSeuilLess) & (df["Tm"] <= TmSeuilPlus) & (df["CG%"] >= 40) & (df["CG%"] <= 60) & (df["hairpin-dG"] > -9000) & (df["homodimer-dG"] > -9000) & (df["LC"] >= 0.75)]
+        df_filtered = df_filtered.sort_values("position", ascending=False)
+        df_filtered.to_csv(output[0], sep='\t', index=False)

@@ -2,7 +2,7 @@ rule seqkit: # remove duplicate sequences ######################################
     input:
         sampleDir
     output:
-        "{}/duplicate_removed/{}.uniq".format(dataDir, sample)
+        "{dataDir}/{{sample}}/{{sample}}.uniq".format(dataDir=dataDir)
     conda:
         "envs/seqkit.yaml"
     shell:
@@ -10,11 +10,11 @@ rule seqkit: # remove duplicate sequences ######################################
 
 rule mafft: # multiple sequences alignment #####################################
     input:
-        "{}/duplicate_removed/{}.uniq".format(dataDir, sample)
+        "{dataDir}/{{sample}}/{{sample}}.uniq".format(dataDir=dataDir)
     output:
-        "{}/msa/{}.msa".format(dataDir, sample)
+        "{dataDir}/{{sample}}/{{sample}}.msa".format(dataDir=dataDir)
     log:
-        "{}/msa/mafft.{}.log".format(dataDir, sample)
+        "{dataDir}/{{sample}}/mafft.log".format(dataDir=dataDir)
     conda:
         "envs/mafft.yaml"
     params:
@@ -50,9 +50,9 @@ rule mafft: # multiple sequences alignment #####################################
 
 checkpoint splitFiles:
     input:
-        "{}/msa/{}.msa".format(dataDir, sample)
+        "{dataDir}/{{sample}}/{{sample}}.msa".format(dataDir=dataDir)
     output:
-        directory("{}/{}/splitFiles".format(dataDir, sample))
+        directory("{dataDir}/{{sample}}/splitFiles".format(dataDir=dataDir))
     params:
         step = config["step"],
         overlap = config["overlap"]
