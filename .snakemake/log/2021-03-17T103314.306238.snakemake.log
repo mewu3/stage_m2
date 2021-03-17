@@ -1,0 +1,3 @@
+SyntaxError in line 150 of /datater/wu/stage_m2/rules/reverse_oligo_filter.smk:
+invalid syntax
+  File "/datater/wu/stage_m2/Snakefile", line 67, in <module>

@@ -1,0 +1,4 @@
+NameError in line 3 of /datater/wu/stage_m2/rules/all_preprocessing.smk:
+name 'sampleDir' is not defined
+  File "/datater/wu/stage_m2/Snakefile", line 65, in <module>
+  File "/datater/wu/stage_m2/rules/all_preprocessing.smk", line 3, in <module>

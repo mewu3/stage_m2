@@ -1,6 +1,6 @@
 rule seqkit: # remove duplicate sequences ######################################
     input:
-        sampleDir
+        lambda wildcards: config["samples"][wildcards.sample]
     output:
         "{dataDir}/{{sample}}/{{sample}}.uniq".format(dataDir=dataDir)
     conda:

@@ -1,8 +1,9 @@
-dataDir: "/datater/wu/data_test"
-sampleDir: "/datater/wu/data_test/ZIKV-96seqs.fasta"
-sample: "zika"
+dataDir: "/datater/wu/data"
 
-kmerCounter: "dsk"
+samples:
+    # enterovirus: "/datater/wu/data/enterovirus.fasta"
+    # coronavirus: "/datater/wu/data/coronavirus.fasta"
+    zika : "/datater/wu/data/ZIKV-96seqs.fasta"
 
 # multiple sequence aligment ###################################################
 mafft:

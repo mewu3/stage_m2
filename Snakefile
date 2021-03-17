@@ -4,8 +4,7 @@ import os
 configfile: "config.yaml"
 
 samples = list(config["samples"].keys())
-dataDir = config["datadir"]
-kmerCounter = "dsk"
+dataDir = config["dataDir"]
 
 def fetchConfigParameters():
     if config["mafft"]["fmodel"] == "on":
@@ -54,7 +53,7 @@ fetchConfigParameters()
 rule all: # run all rules ######################################################
     input:
         expand(
-            "{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.fasta".format(dataDir=dataDir),
+            "{dataDir}/{{sample}}/filtering/allOligos_reverse.fasta".format(dataDir=dataDir),
             sample = samples
         )
         # expand(

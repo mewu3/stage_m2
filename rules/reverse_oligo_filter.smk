@@ -81,7 +81,7 @@ rule reverse_linguistic_complexity:
 
 rule reverse_add_LC:
     input:
-        "{dataDir}/{{sample}}/filtering/reverse{{seg}}.nessieOut".format(dataDir=dataDir)
+        "{dataDir}/{{sample}}/filtering/reverse{{seg}}.nessieOut".format(dataDir=dataDir),
         "{dataDir}/{{sample}}/filtering/reverse{{seg}}.fasta".format(dataDir=dataDir)
     output:
         "{dataDir}/{{sample}}/filtering/reverse{{seg}}.calculated2".format(dataDir=dataDir)
@@ -146,7 +146,7 @@ rule reverse_add_LC:
 def aggregate_reverseInput(wildcards):
     checkpoint_output = checkpoints.splitFiles.get(**wildcards).output[0]
     return expand("{dataDir}/{{sample}}/filtering/reverse{{seg}}.calculated2".format(dataDir=dataDir),
-                  sample = wildcards.sample
+                  sample = wildcards.sample,
                   seg = glob_wildcards(os.path.join(checkpoint_output, "reverse{seg}.fasta")).seg)
 
 rule aggregate_allReverseOligo:
