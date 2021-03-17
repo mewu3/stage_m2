@@ -3,11 +3,9 @@ import os
 
 configfile: "config.yaml"
 
-dataDir = config["dataDir"]
-sampleDir = config["sampleDir"]
-
-sample = config["sample"]
-kmerCounter = config["kmerCounter"]
+samples = list(config["samples"].keys())
+dataDir = config["datadir"]
+kmerCounter = "dsk"
 
 def fetchConfigParameters():
     if config["mafft"]["fmodel"] == "on":
@@ -43,31 +41,29 @@ fetchConfigParameters()
 
 # def aggregate_forwardInput(wildcards):
 #     checkpoint_output = checkpoints.splitFiles.get(**wildcards).output[0]
-#     return expand(dataDir + "/" + sample + "/splitFiles/forward{seg}.calculated2",
-#                   seg = glob_wildcards(os.path.join(checkpoint_output, "forward{seg}.calculated2")).seg)
+#     return expand("{}/{{sample}}/splitFiles/forward{{seg}}.fasta".format(dataDir),
+#                   sample = samples,
+#                   seg = glob_wildcards(os.path.join(checkpoint_output, "forward{seg}.fasta")).seg)
 #
 # def aggregate_reverseInput(wildcards):
 #     checkpoint_output = checkpoints.splitFiles.get(**wildcards).output[0]
-#     return expand(dataDir + "/" + sample + "/splitFiles/reverse{seg}.calculated2",
-#                   seg = glob_wildcards(os.path.join(checkpoint_output, "reverse{seg}.calculated2")).seg)
-
-# def aggregate_reverseInput(wildcards):
-#     checkpoint_output = checkpoints.splitFiles.get(**wildcards).output[0]
-#     return expand("{dataDir}/{sample}/splitFiles/reverse{{seg}}.calculated2".format(dataDir = dataDir, sample = sample),
-#                   seg = glob_wildcards(os.path.join(checkpoint_output, "reverse{seg}.calculated2")).seg)
+#     return expand("{}/{{sample}}/splitFiles/reverse{{seg}}.fasta".format(dataDir),
+#                   sample = samples,
+#                   seg = glob_wildcards(os.path.join(checkpoint_output, "reverse{seg}.fasta")).seg)
 
 rule all: # run all rules ######################################################
     input:
-        # dynamic(
-        #     expand(
-        #         "{dataDir}/{sample}/filtering/reverse{{seg}}.calculated2".format(dataDir = dataDir,
-        #                                                                          sample = sample),
-        #         seg = "{seg}"
-        #     )
-        # ),
-        "{}/{}/filtering/allOligos_reverse.calculated2".format(dataDir, sample)
+        # expand(
+        #     "{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.fasta".format(dataDir = dataDir),
+        #     sample = samples
+        # )
+        expand(
+            "{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.{{ext}}".format(dataDir = dataDir),
+            sample = samples,
+            ext = ["al1", "bck", "bwt", "des", "lcp", "llv", "ois", "prj", "sds", "skp", "ssp", "sti1", "suf", "tis"]
+        ),
 
 include: "rules/all_preprocessing.smk"
 include: "rules/reverse_kmer_dsk.smk"
 include: "rules/reverse_oligo_filter.smk"
-# include: "rules/reverse_check_specifity.smk"
+include: "rules/reverse_check_specifity.smk"
