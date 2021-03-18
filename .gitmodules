@@ -4,6 +4,3 @@
 [submodule "lib/primer3"]
 	path = lib/primer3
 	url = https://github.com/primer3-org/primer3
-[submodule "lib/nessie"]
-	path = lib/nessie
-	url = https://github.com/B3rse/nessie.git
