@@ -90,18 +90,74 @@ rule RNAtoDNA:
 #     shell:
 #         "lib/bbmap/seal.sh in={input.query} ref={input.ref} out={output[0]} stats={output[1]} k=6 rcomp=t mm=f"
 
-### blatn short liangment 
-# rule blastDB:
+### good old blast blatn short liangment
+rule blastDB:
+    input:
+        "{dataDir}/{{sample}}/{{sample}}.uniq".format(dataDir=dataDir)
+    output:
+        multiext(
+            "{dataDir}/{{sample}}/{{sample}}.uniq.db.".format(dataDir=dataDir), "nhr", "nin", "nog", "nsd", "nsi", "nsq"
+        )
+    params:
+        title = "Making_blastDB",
+        out = "{dataDir}/{{sample}}/{{sample}}.uniq.db".format(dataDir=dataDir)
+    shell:
+        "makeblastdb -in {input} -out {params.out} \
+        -parse_seqids \
+        -title {params.title} \
+        -dbtype nucl"
+
+rule blastn_short:
+    input:
+        "{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.fasta".format(dataDir=dataDir)
+    output:
+        "{dataDir}/{{sample}}/checkSpecifity/blastn.out".format(dataDir=dataDir)
+    params:
+        ref = "{dataDir}/{{sample}}/{{sample}}.uniq.db".format(dataDir=dataDir)
+    shell:
+        "blastn -task blastn-short \
+        -query {input} \
+        -db {params.ref} \
+        -out {output} \
+        -outfmt 7 "
+
+# rule parse_blastOutput:
 #     input:
-#         ref = "{dataDir}/{{sample}}/{{sample}}.uniq.dna".format(dataDir=dataDir)
-#
-#
-# rule blastn_short:
-#     input:
-#         query = query = "{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.fasta".format(dataDir=dataDir),
-#         ref = "{dataDir}/{{sample}}/{{sample}}.uniq.dna".format(dataDir=dataDir)
+#         "{dataDir}/{{sample}}/checkSpecifity/blastn.out".format(dataDir=dataDir)
 #     output:
-#     params:
-#     shell:
-#         "blatn -task blastn-short -query {input.query}\
-#         -strand 'minus'"
+#         "{dataDir}/{{sample}}/checkSpecifity/blastn.out.parsed".format(dataDir=dataDir)
+#     run:
+#         from collections import defaultdict
+#
+#         dict_count = defaultdict(lambda: defaultdict(int))
+#         dict_posit = defaultdict(lambda: defaultdict(list))
+#
+#         with open(input[0], "r") as inputFile:
+#             for line in inputFile:
+#                 line = line.rstrip("\n")
+#                 if not line.startswith("#"):
+#                     ls = line.split()
+#                     qId = ls[0]
+#                     refId = ls[1]
+#                     position = [ls[-4], ls[-3]]
+#                     dict_count[qId][refId] += 1
+#                     dict_posit[qId][refId].append(position)
+#
+#         for qId in dict_count:
+#             print(dict_count[qId])
+#             # for refId in dict_count[qId]:
+#                 # print(dict_count[qId][refId])
+
+
+rule blastn_short_nr:
+    input:
+        "{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.fasta".format(dataDir=dataDir)
+    output:
+        "{dataDir}/{{sample}}/checkSpecifity/blastn_nt.out".format(dataDir=dataDir)
+    shell:
+        "blastn -task blastn-short \
+        -query {input} \
+        -db nt \
+        -out {output} \
+        -outfmt 7 \
+        -remote"

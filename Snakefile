@@ -54,14 +54,14 @@ fetchConfigParameters()
 
 rule all: # run all rules ######################################################
     input:
-        expand(
-            "{dataDir}/{{sample}}/{{sample}}.msa".format(dataDir=dataDir),
-            sample = samples
-        ),
-        expand(
-            "{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.fasta".format(dataDir=dataDir),
-            sample = samples
-        )
+        # expand(
+        #     "{dataDir}/{{sample}}/{{sample}}.msa".format(dataDir=dataDir),
+        #     sample = samples
+        # ),
+        # expand(
+        #     "{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.fasta".format(dataDir=dataDir),
+        #     sample = samples
+        # ),
         # expand(
         #     "{dataDir}/{{sample}}/{{sample}}.index.{{ext}}".format(dataDir=dataDir),
         #     sample = samples,
@@ -75,6 +75,19 @@ rule all: # run all rules ######################################################
         #     "{dataDir}/{{sample}}/checkSpecifity/seal.out.stats".format(dataDir=dataDir),
         #     sample = samples
         # ),
+        # expand(
+        #     "{dataDir}/{{sample}}/{{sample}}.uniq.db.{{ext}}".format(dataDir=dataDir),
+        #     sample = samples,
+        #     ext = ["nhr", "nin", "nog", "nsd", "nsi", "nsq"]
+        # ),
+        # expand(
+        #     "{dataDir}/{{sample}}/checkSpecifity/blastn.out.parsed".format(dataDir=dataDir),
+        #     sample = samples
+        # ),
+        expand(
+            "{dataDir}/{{sample}}/checkSpecifity/blastn_nr.out".format(dataDir=dataDir),
+            sample = samples 
+        )
 
 include: "rules/all_preprocessing.smk"
 include: "rules/reverse_kmer_dsk.smk"
