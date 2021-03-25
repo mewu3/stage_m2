@@ -38,56 +38,15 @@ def fetchConfigParameters():
         config["mafft"]["quiet"] = ""
 fetchConfigParameters()
 
-# def aggregate_forwardInput(wildcards):
-#     checkpoint_output = checkpoints.splitFiles.get(**wildcards).output[0]
-#     return expand("{}/{{sample}}/splitFiles/forward{{seg}}.fasta".format(dataDir),
-#                   sample = samples,
-#                   seg = glob_wildcards(os.path.join(checkpoint_output, "forward{seg}.fasta")).seg)
-#
-# def aggregate_reverseInput(wildcards):
-#     checkpoint_output = checkpoints.splitFiles.get(**wildcards).output[0]
-#     return expand("{}/{{sample}}/splitFiles/reverse{{seg}}.fasta".format(dataDir),
-#                   sample = samples,
-#                   seg = glob_wildcards(os.path.join(checkpoint_output, "reverse{seg}.fasta")).seg)
 
-# ruleorder: lastdb_index > lastal_alignment
-
-rule all: # run all rules ######################################################
+rule all:
     input:
-        # expand(
-        #     "{dataDir}/{{sample}}/{{sample}}.msa".format(dataDir=dataDir),
-        #     sample = samples
-        # ),
-        # expand(
-        #     "{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.fasta".format(dataDir=dataDir),
-        #     sample = samples
-        # ),
-        # expand(
-        #     "{dataDir}/{{sample}}/{{sample}}.index.{{ext}}".format(dataDir=dataDir),
-        #     sample = samples,
-        #     ext = ["bck", "des", "prj", "sds", "ssp", "suf", "tis"]
-        # ),
-        # expand(
-        #     "{dataDir}/{{sample}}/checkSpecifity/seal.out".format(dataDir=dataDir),
-        #     sample = samples
-        # ),
-        # expand(
-        #     "{dataDir}/{{sample}}/checkSpecifity/seal.out.stats".format(dataDir=dataDir),
-        #     sample = samples
-        # ),
-        # expand(
-        #     "{dataDir}/{{sample}}/{{sample}}.uniq.db.{{ext}}".format(dataDir=dataDir),
-        #     sample = samples,
-        #     ext = ["nhr", "nin", "nog", "nsd", "nsi", "nsq"]
-        # ),
-        # expand(
-        #     "{dataDir}/{{sample}}/checkSpecifity/blastn.out.parsed".format(dataDir=dataDir),
-        #     sample = samples
-        # ),
         expand(
-            "{dataDir}/{{sample}}/checkSpecifity/blastn_nr.out".format(dataDir=dataDir),
+            "{dataDir}/{{sample}}/checkSpecifity/blastn.out".format(dataDir=dataDir),
             sample = samples 
         )
+
+
 
 include: "rules/all_preprocessing.smk"
 include: "rules/reverse_kmer_dsk.smk"

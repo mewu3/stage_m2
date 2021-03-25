@@ -91,8 +91,8 @@ checkpoint splitFiles:
                 segment = fasta[id][chunk[0]:chunk[1]]
                 forward = str(segment[:50])
                 reverse = str(segment[-50:])
-                f1.write("> {} |{}-{} \n {} \n".format(fasta[id].long_name, str(chunk[0]), str(chunk[1]), forward))
-                f2.write("> {} |{}-{} \n {} \n".format(fasta[id].long_name, str(chunk[0]), str(chunk[1]), reverse))
+                f1.write("> {}|{}-{}\n{}\n".format(fasta[id].long_name, str(chunk[0]), str(chunk[1]), forward))
+                f2.write("> {}|{}-{}\n{}\n".format(fasta[id].long_name, str(chunk[0]), str(chunk[1]), reverse))
 
             f1.close()
             f2.close()
