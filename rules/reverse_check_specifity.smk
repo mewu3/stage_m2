@@ -1,34 +1,56 @@
-rule allToFasta:
+rule splitFilteredTable:
     input:
-        "{dataDir}/{{sample}}/filtering/allOligos_reverse.filtered".format(dataDir=dataDir)
+        f"{dataDir}/{{sample}}/filtering/allOligos_reverse.filtered"
     output:
-        "{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.fasta".format(dataDir=dataDir)
+        # directory(f"{dataDir}/{{sample}}/checkSpecifity")
+        dynamic(f"{dataDir}/{{sample}}/checkSpecifity/reverse{{seg}}_filtered.tsv")
     run:
         import os
         from Bio.Seq import Seq
+        import pandas as pd
+
+        df = pd.read_table(input[0], sep="\t", header=0)
+        for seg, table in df.groupby("position"):
+            outputFile = open(f"{dataDir}/{wildcards.sample}/checkSpecifity/reverse{seg}_filtered.tsv", "w")
+            # outputFile = open(f"{output[0]}/reverse{seg}_filtered.tsv", "w")
+            table.to_csv(outputFile, sep="\t", index=False)
+            outputFile.close()
+
+rule splitTableToFasta:
+    input:
+        f"{dataDir}/{{sample}}/checkSpecifity/reverse{{seg}}_filtered.tsv"
+    output:
+        f"{dataDir}/{{sample}}/checkSpecifity/reverse{{seg}}_filtered.fasta"
+    run:
+        import os
 
         outFile = open(output[0], "w")
-
         n = 0
         with open(input[0], "r") as file:
             next(file)
             for li in file:
                 li = li.rstrip("\n")
                 ls = li.split()
-                # oligo = ls[7]
-                oligo = str(Seq(ls[7]).reverse_complement())
-                outFile.write(">p{}|position {}|count {}|CG% {}|Tm {}|homodimer_dG {}|hairpin_dG {}|LC {}\n{}\n".format(n, ls[0], ls[1], ls[2], ls[3], ls[4], ls[5], ls[6], oligo))
+                oligo = ls[7]
+                outFile.write(f">p{n}|position {ls[0]}|count {ls[1]}|CG% {ls[2]}|Tm {ls[3]}|homodimer_dG {ls[4]}|hairpin_dG {ls[5]}|LC {ls[6]}\n{oligo}\n")
                 n += 1
-
         outFile.close()
 
-rule RNAtoDNA:
-    input:
-        "{dataDir}/{{sample}}/{{sample}}.uniq".format(dataDir=dataDir)
-    output:
-        "{dataDir}/{{sample}}/{{sample}}.uniq.dna".format(dataDir=dataDir)
-    shell:
-        "python3 scripts/RNAtoDNA.py {input} {output}"
+# def aggregate_input(wildcards):
+#     checkpoint_out = checkpoints.splitFilteredTable.get(**wildcards).output[0]
+#     return expand(
+#         f"{dataDir}/{{sample}}/checkSpecifity/reverse{{seg}}_filtered.fasta",
+#         sample = wildcards.sample,
+#         seg = glob_wildcards(os.path.join(checkpoint_out, "reverse{seg}_filtered.tsv")).seg
+#     )
+
+# rule RNAtoDNA:
+#     input:
+#         "{dataDir}/{{sample}}/{{sample}}.uniq".format(dataDir=dataDir)
+#     output:
+#         "{dataDir}/{{sample}}/{{sample}}.uniq.dna".format(dataDir=dataDir)
+#     shell:
+#         "python3 scripts/RNAtoDNA.py {input} {output}"
 
 
 ### vmath alignment: examination needed for the output in the future
@@ -90,7 +112,7 @@ rule RNAtoDNA:
 #     shell:
 #         "lib/bbmap/seal.sh in={input.query} ref={input.ref} out={output[0]} stats={output[1]} k=6 rcomp=t mm=f"
 
-### good old blast blatn short alignement, use remote don't need to build blastDB
+### good old blast blatn short alignement, if remote is used don't need to build blastDB
 # rule blastDB:
 #     input:
 #         "{dataDir}/{{sample}}/checkSpecifity/references.fasta".format(dataDir=dataDir)
@@ -109,9 +131,9 @@ rule RNAtoDNA:
 
 rule blastn_short:
     input:
-        "{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.fasta".format(dataDir=dataDir)
+        f"{dataDir}/{{sample}}/checkSpecifity/reverse{{seg}}_filtered.fasta"
     output:
-        "{dataDir}/{{sample}}/checkSpecifity/blastn.out".format(dataDir=dataDir)
+        f"{dataDir}/{{sample}}/checkSpecifity/reverse{{seg}}_filtered.blatn.out"
     shell:
         "blastn -task blastn-short \
         -db refseq_genomes -remote \

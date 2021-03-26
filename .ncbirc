@@ -1,0 +1,4 @@
+[CONN]
+FIREWALL = TRUE
+HTTP_PROXY_HOST = proxy.dsi.uca.fr
+HTTP_PROXY_PORT = 8080

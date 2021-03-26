@@ -1,0 +1,28 @@
+Building DAG of jobs...
+Updating job aggregate_allReverseOligo.
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	splitFilteredTable
+	2
+Select jobs to execute...
+
+[Thu Mar 25 15:25:19 2021]
+checkpoint splitFilteredTable:
+    input: /datater/wu/data/enterovirus/filtering/allOligos_reverse.filtered
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse{*}_filtered.tsv (dynamic)
+    jobid: 1
+    wildcards: sample=enterovirus
+Downstream jobs will be updated after completion.
+
+Subsequent jobs will be added dynamically depending on the output of this job
+Updating job all.
+Dynamically updating jobs
+[Thu Mar 25 15:25:21 2021]
+Finished job 1.
+1 of 1 steps (100%) done
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-25T152518.272132.snakemake.log

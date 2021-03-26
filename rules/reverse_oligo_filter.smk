@@ -1,8 +1,8 @@
 rule reverse_parameters:
     input:
-        "{dataDir}/{{sample}}/dsk/reverse{{seg}}.kCountSorted".format(dataDir=dataDir)
+        f"{dataDir}/{{sample}}/dsk/reverse{{seg}}.kCountSorted"
     output:
-        "{dataDir}/{{sample}}/filtering/reverse{{seg}}.calculated".format(dataDir=dataDir)
+        f"{dataDir}/{{sample}}/filtering/reverse{{seg}}.calculated"
     params:
         monovalentConc = config["oligotm"]["monovalent-conc"],
         divalentConc = config["oligotm"]["divalent-conc"],
@@ -49,12 +49,12 @@ rule reverse_parameters:
         output.close()
 
 
-### calculate complexity with nessie, input format require fasta
+### calculate complexity with nessie, input format require fasta
 rule reverse_toFasta:
     input:
-        "{dataDir}/{{sample}}/filtering/reverse{{seg}}.calculated".format(dataDir=dataDir)
+        f"{dataDir}/{{sample}}/filtering/reverse{{seg}}.calculated"
     output:
-        "{dataDir}/{{sample}}/filtering/reverse{{seg}}.fasta".format(dataDir=dataDir)
+        f"{dataDir}/{{sample}}/filtering/reverse{{seg}}.fasta"
     run:
         import os
 
@@ -73,18 +73,18 @@ rule reverse_toFasta:
 
 rule reverse_linguistic_complexity:
     input:
-        "{dataDir}/{{sample}}/filtering/reverse{{seg}}.fasta".format(dataDir=dataDir)
+        f"{dataDir}/{{sample}}/filtering/reverse{{seg}}.fasta"
     output:
-        "{dataDir}/{{sample}}/filtering/reverse{{seg}}.nessieOut".format(dataDir=dataDir)
+        f"{dataDir}/{{sample}}/filtering/reverse{{seg}}.nessieOut"
     shell:
         "lib/nessie/nessie -I {input} -O {output} -L"
 
 rule reverse_add_LC:
     input:
-        "{dataDir}/{{sample}}/filtering/reverse{{seg}}.nessieOut".format(dataDir=dataDir),
-        "{dataDir}/{{sample}}/filtering/reverse{{seg}}.fasta".format(dataDir=dataDir)
+        f"{dataDir}/{{sample}}/filtering/reverse{{seg}}.nessieOut",
+        f"{dataDir}/{{sample}}/filtering/reverse{{seg}}.fasta"
     output:
-        "{dataDir}/{{sample}}/filtering/reverse{{seg}}.calculated2".format(dataDir=dataDir)
+        f"{dataDir}/{{sample}}/filtering/reverse{{seg}}.calculated2"
     run:
         input2 = open(input[1], "r")
         outputFile = open(output[0], "w")
@@ -144,7 +144,7 @@ rule reverse_add_LC:
 
 def aggregate_reverseInput(wildcards):
     checkpoint_output = checkpoints.splitFiles.get(**wildcards).output[0]
-    return expand("{dataDir}/{{sample}}/filtering/reverse{{seg}}.calculated2".format(dataDir=dataDir),
+    return expand(f"{dataDir}/{{sample}}/filtering/reverse{{seg}}.calculated2",
                   sample = wildcards.sample,
                   seg = glob_wildcards(os.path.join(checkpoint_output, "reverse{seg}.fasta")).seg)
 
@@ -152,7 +152,7 @@ rule aggregate_allReverseOligo:
     input:
         aggregate_reverseInput
     output:
-        "{dataDir}/{{sample}}/filtering/allOligos_reverse.calculated2".format(dataDir=dataDir)
+        f"{dataDir}/{{sample}}/filtering/allOligos_reverse.calculated2"
     shell:
         """
         echo -e "position\tkmerCount\tCG%\tTm\thomodimer-dG\thairpin-dG\tLC\tkmer" > {output}
@@ -161,9 +161,9 @@ rule aggregate_allReverseOligo:
 
 rule reverse_filtering:
     input:
-        "{dataDir}/{{sample}}/filtering/allOligos_reverse.calculated2".format(dataDir=dataDir)
+        f"{dataDir}/{{sample}}/filtering/allOligos_reverse.calculated2"
     output:
-        "{dataDir}/{{sample}}/filtering/allOligos_reverse.filtered".format(dataDir=dataDir)
+        f"{dataDir}/{{sample}}/filtering/allOligos_reverse.filtered"
     run:
         import pandas as pd
         import os

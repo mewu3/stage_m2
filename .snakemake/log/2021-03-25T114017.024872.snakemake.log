@@ -1,0 +1,397 @@
+Building DAG of jobs...
+Updating job collect.
+Updating job aggregate_allReverseOligo.
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	collect
+	33	splitTableToFasta
+	35
+Select jobs to execute...
+
+[Thu Mar 25 11:40:17 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse6092_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse6092_filtered.fasta
+    jobid: 36
+    wildcards: sample=enterovirus, seg=6092
+
+[Thu Mar 25 11:40:17 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse1266_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse1266_filtered.fasta
+    jobid: 12
+    wildcards: sample=enterovirus, seg=1266
+
+[Thu Mar 25 11:40:17 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse4822_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse4822_filtered.fasta
+    jobid: 20
+    wildcards: sample=enterovirus, seg=4822
+
+[Thu Mar 25 11:40:17 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse6854_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse6854_filtered.fasta
+    jobid: 27
+    wildcards: sample=enterovirus, seg=6854
+
+[Thu Mar 25 11:40:17 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse1012_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse1012_filtered.fasta
+    jobid: 35
+    wildcards: sample=enterovirus, seg=1012
+
+[Thu Mar 25 11:40:17 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse3298_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse3298_filtered.fasta
+    jobid: 42
+    wildcards: sample=enterovirus, seg=3298
+
+[Thu Mar 25 11:40:17 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse8124_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse8124_filtered.fasta
+    jobid: 41
+    wildcards: sample=enterovirus, seg=8124
+
+[Thu Mar 25 11:40:17 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse4060_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse4060_filtered.fasta
+    jobid: 34
+    wildcards: sample=enterovirus, seg=4060
+
+[Thu Mar 25 11:40:17 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse2028_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse2028_filtered.fasta
+    jobid: 10
+    wildcards: sample=enterovirus, seg=2028
+
+[Thu Mar 25 11:40:17 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse4314_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse4314_filtered.fasta
+    jobid: 26
+    wildcards: sample=enterovirus, seg=4314
+
+[Thu Mar 25 11:40:17 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse2282_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse2282_filtered.fasta
+    jobid: 13
+    wildcards: sample=enterovirus, seg=2282
+
+[Thu Mar 25 11:40:17 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse5838_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse5838_filtered.fasta
+    jobid: 28
+    wildcards: sample=enterovirus, seg=5838
+
+[Thu Mar 25 11:40:18 2021]
+Finished job 35.
+1 of 35 steps (3%) done
+[Thu Mar 25 11:40:18 2021]
+Finished job 27.
+2 of 35 steps (6%) done
+[Thu Mar 25 11:40:18 2021]
+Finished job 12.
+3 of 35 steps (9%) done
+Select jobs to execute...
+[Thu Mar 25 11:40:18 2021]
+Finished job 36.
+4 of 35 steps (11%) done
+
+[Thu Mar 25 11:40:18 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse6346_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse6346_filtered.fasta
+    jobid: 31
+    wildcards: sample=enterovirus, seg=6346
+
+[Thu Mar 25 11:40:18 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse2536_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse2536_filtered.fasta
+    jobid: 23
+    wildcards: sample=enterovirus, seg=2536
+
+[Thu Mar 25 11:40:18 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse2790_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse2790_filtered.fasta
+    jobid: 40
+    wildcards: sample=enterovirus, seg=2790
+
+Select jobs to execute...
+[Thu Mar 25 11:40:18 2021]
+Finished job 34.
+5 of 35 steps (14%) done
+[Thu Mar 25 11:40:18 2021]
+Finished job 20.
+6 of 35 steps (17%) done
+[Thu Mar 25 11:40:18 2021]
+Finished job 42.
+7 of 35 steps (20%) done
+
+[Thu Mar 25 11:40:18 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse7362_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse7362_filtered.fasta
+    jobid: 29
+    wildcards: sample=enterovirus, seg=7362
+
+Select jobs to execute...
+[Thu Mar 25 11:40:18 2021]
+Finished job 28.
+8 of 35 steps (23%) done
+[Thu Mar 25 11:40:18 2021]
+Finished job 41.
+9 of 35 steps (26%) done
+[Thu Mar 25 11:40:18 2021]
+Finished job 26.
+10 of 35 steps (29%) done
+
+[Thu Mar 25 11:40:18 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse7616_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse7616_filtered.fasta
+    jobid: 19
+    wildcards: sample=enterovirus, seg=7616
+
+[Thu Mar 25 11:40:18 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse7870_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse7870_filtered.fasta
+    jobid: 30
+    wildcards: sample=enterovirus, seg=7870
+
+[Thu Mar 25 11:40:18 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse5584_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse5584_filtered.fasta
+    jobid: 22
+    wildcards: sample=enterovirus, seg=5584
+
+Select jobs to execute...
+[Thu Mar 25 11:40:18 2021]
+Finished job 13.
+11 of 35 steps (31%) done
+[Thu Mar 25 11:40:18 2021]
+Finished job 10.
+12 of 35 steps (34%) done
+
+[Thu Mar 25 11:40:18 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse758_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse758_filtered.fasta
+    jobid: 14
+    wildcards: sample=enterovirus, seg=758
+
+[Thu Mar 25 11:40:18 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse1520_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse1520_filtered.fasta
+    jobid: 16
+    wildcards: sample=enterovirus, seg=1520
+
+[Thu Mar 25 11:40:18 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse8378_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse8378_filtered.fasta
+    jobid: 24
+    wildcards: sample=enterovirus, seg=8378
+
+Select jobs to execute...
+
+[Thu Mar 25 11:40:18 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse504_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse504_filtered.fasta
+    jobid: 21
+    wildcards: sample=enterovirus, seg=504
+
+[Thu Mar 25 11:40:18 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse6600_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse6600_filtered.fasta
+    jobid: 38
+    wildcards: sample=enterovirus, seg=6600
+
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+[Thu Mar 25 11:40:19 2021]
+Finished job 30.
+13 of 35 steps (37%) done
+Select jobs to execute...
+
+[Thu Mar 25 11:40:19 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse4568_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse4568_filtered.fasta
+    jobid: 11
+    wildcards: sample=enterovirus, seg=4568
+
+[Thu Mar 25 11:40:19 2021]
+Finished job 22.
+14 of 35 steps (40%) done
+[Thu Mar 25 11:40:19 2021]
+Finished job 16.
+15 of 35 steps (43%) done
+Select jobs to execute...
+
+[Thu Mar 25 11:40:19 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse5076_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse5076_filtered.fasta
+    jobid: 18
+    wildcards: sample=enterovirus, seg=5076
+
+[Thu Mar 25 11:40:19 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse3552_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse3552_filtered.fasta
+    jobid: 25
+    wildcards: sample=enterovirus, seg=3552
+
+[Thu Mar 25 11:40:19 2021]
+Finished job 21.
+16 of 35 steps (46%) done
+Select jobs to execute...
+[Thu Mar 25 11:40:19 2021]
+Finished job 38.
+17 of 35 steps (49%) done
+
+[Thu Mar 25 11:40:19 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse5330_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse5330_filtered.fasta
+    jobid: 39
+    wildcards: sample=enterovirus, seg=5330
+
+Select jobs to execute...
+
+[Thu Mar 25 11:40:19 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse7108_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse7108_filtered.fasta
+    jobid: 37
+    wildcards: sample=enterovirus, seg=7108
+
+[Thu Mar 25 11:40:19 2021]
+Finished job 23.
+18 of 35 steps (51%) done
+[Thu Mar 25 11:40:19 2021]
+Finished job 31.
+19 of 35 steps (54%) done
+Select jobs to execute...
+[Thu Mar 25 11:40:19 2021]
+Finished job 24.
+20 of 35 steps (57%) done
+[Thu Mar 25 11:40:19 2021]
+Finished job 40.
+21 of 35 steps (60%) done
+
+[Thu Mar 25 11:40:19 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse3806_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse3806_filtered.fasta
+    jobid: 17
+    wildcards: sample=enterovirus, seg=3806
+
+[Thu Mar 25 11:40:19 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse8632_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse8632_filtered.fasta
+    jobid: 33
+    wildcards: sample=enterovirus, seg=8632
+
+[Thu Mar 25 11:40:19 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse3044_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse3044_filtered.fasta
+    jobid: 32
+    wildcards: sample=enterovirus, seg=3044
+
+Select jobs to execute...
+[Thu Mar 25 11:40:19 2021]
+Finished job 19.
+22 of 35 steps (63%) done
+[Thu Mar 25 11:40:19 2021]
+Finished job 29.
+23 of 35 steps (66%) done
+
+[Thu Mar 25 11:40:19 2021]
+rule splitTableToFasta:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse1774_filtered.tsv
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse1774_filtered.fasta
+    jobid: 15
+    wildcards: sample=enterovirus, seg=1774
+
+[Thu Mar 25 11:40:19 2021]
+Finished job 14.
+24 of 35 steps (69%) done
+[Thu Mar 25 11:40:19 2021]
+Finished job 11.
+25 of 35 steps (71%) done
+[Thu Mar 25 11:40:19 2021]
+Finished job 25.
+26 of 35 steps (74%) done
+[Thu Mar 25 11:40:19 2021]
+Finished job 18.
+27 of 35 steps (77%) done
+[Thu Mar 25 11:40:20 2021]
+Finished job 39.
+28 of 35 steps (80%) done
+[Thu Mar 25 11:40:20 2021]
+Finished job 32.
+29 of 35 steps (83%) done
+[Thu Mar 25 11:40:20 2021]
+Finished job 15.
+30 of 35 steps (86%) done
+[Thu Mar 25 11:40:20 2021]
+Finished job 33.
+31 of 35 steps (89%) done
+[Thu Mar 25 11:40:20 2021]
+Finished job 37.
+32 of 35 steps (91%) done
+[Thu Mar 25 11:40:20 2021]
+Finished job 17.
+33 of 35 steps (94%) done
+Select jobs to execute...
+
+[Thu Mar 25 11:40:20 2021]
+rule collect:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse2028_filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity/reverse4568_filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity/reverse1266_filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity/reverse2282_filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity/reverse758_filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity/reverse1774_filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity/reverse1520_filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity/reverse3806_filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity/reverse5076_filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity/reverse7616_filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity/reverse4822_filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity/reverse504_filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity/reverse5584_filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity/reverse2536_filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity/reverse8378_filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity/reverse3552_filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity/reverse4314_filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity/reverse6854_filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity/reverse5838_filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity/reverse7362_filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity/reverse7870_filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity/reverse6346_filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity/reverse3044_filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity/reverse8632_filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity/reverse4060_filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity/reverse1012_filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity/reverse6092_filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity/reverse7108_filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity/reverse6600_filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity/reverse5330_filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity/reverse2790_filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity/reverse8124_filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity/reverse3298_filtered.fasta
+    output: /datater/wu/data/enteroviruscheckSpecifity/collect.txt
+    jobid: 1
+    wildcards: sample=enterovirus
+
+[Thu Mar 25 11:40:20 2021]
+Finished job 1.
+34 of 35 steps (97%) done
+Select jobs to execute...
+
+[Thu Mar 25 11:40:20 2021]
+localrule all:
+    input: /datater/wu/data/enteroviruscheckSpecifity/collect.txt
+    jobid: 0
+
+[Thu Mar 25 11:40:20 2021]
+Finished job 0.
+35 of 35 steps (100%) done
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-25T114017.024872.snakemake.log

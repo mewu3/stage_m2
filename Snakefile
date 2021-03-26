@@ -39,14 +39,16 @@ def fetchConfigParameters():
 fetchConfigParameters()
 
 
+
 rule all:
     input:
-        expand(
-            "{dataDir}/{{sample}}/checkSpecifity/blastn.out".format(dataDir=dataDir),
-            sample = samples 
+        dynamic(
+            expand(
+                f"{dataDir}/{{sample}}/checkSpecifity/reverse{{seg}}_filtered.blatn.out",
+                sample = samples,
+                seg = "{seg}"
+            )
         )
-
-
 
 include: "rules/all_preprocessing.smk"
 include: "rules/reverse_kmer_dsk.smk"
