@@ -198,3 +198,9 @@ Finished job 299.
 [Fri Mar 26 08:32:37 2021]
 Finished job 309.
 8 of 21 steps (38%) done
+[Fri Mar 26 12:23:22 2021]
+Finished job 317.
+9 of 21 steps (43%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-25T165341.016348.snakemake.log
