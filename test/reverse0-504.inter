@@ -10,6 +10,10 @@ cgttacccgcttgggtacttggaaaaccc-tagtatcgccttggaatctt
 cgttacccgcttatctactacgggaagcc-tagtaacaccattgagcact
 > MT814495.1 |Coxsackievirus A6 strain CVA6 -3151690771-FRA-2015, complete genome|0-504
 cgttacccggctaactacttcgaaaaact-tagtagcaccattgaagctg
+> JX569709.1 |Human poliovirus 2 isolate T08-090, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> JX569710.1 |Human poliovirus 2 isolate C08-125, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
 > MN914198.1 |Enterovirus C strain 04-1378, complete genome|0-504
 --------------------------------------------------
 > MN914199.1 |Enterovirus C strain 03-4166, complete genome|0-504
@@ -36,8 +40,26 @@ cgttacccgcaaagtgcctacgcaaagcc-tagtaacactttag-aagtt
 cgttacccgcaaagtgcctacgcaaagcc-tagtaacactttag-aagtt
 > MH517019.1 |Human rhinovirus A103 strain MCL-18-H-1122, complete genome|0-504
 cgttatccgcatgataactacgcaaagct-tagtaacattttga-aagtt
+> MN541115.1 |Human poliovirus 2 isolate 55722, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> MN541116.1 |Human poliovirus 2 isolate 56406, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
 > MK106197.1 |Coxsackievirus A6 strain M006/YN/CHN/2013, complete genome|0-504
 cgttacccggctaactacttcaagaaact-tagtaacaccattgaagccg
+> MN164683.1 |Enterovirus B83 isolate 99245/XZ/CHN/1999, complete genome|0-504
+cgttacccggccagctacttcgaaaagcc-tagtatcaccatggaaattg
+> MN164684.1 |Enterovirus B83 isolate 99258/XZ/CHN/1999, complete genome|0-504
+cgttacccggccagctacttcgaaaagcc-tagtaacaccatggaaattg
+> MN164685.1 |Enterovirus B83 isolate 99267/XZ/CHN/1999, complete genome|0-504
+cgttacccggccagctacttcgaaaagcc-tagtaacaccatggaaattg
+> MN164686.1 |Enterovirus B83 isolate 99268/XZ/CHN/1999, complete genome|0-504
+cgttacccggccagctacttcgaaaagcc-tagtaacaccatggaaattg
+> MN164687.1 |Enterovirus B83 isolate 99269/XZ/CHN/1999, complete genome|0-504
+cgttacccggccagctacttcgaaaagcc-tagtaacaccatggaaattg
+> MN164688.1 |Enterovirus B83 isolate 99275/XZ/CHN/1999, complete genome|0-504
+cgttacccggccagctacttcgaaaagcc-tagtaacaccatggaaattg
+> MK791150.1 |Echovirus E3 isolate 123-R2, complete genome|0-504
+cgtcacccggctgactacttcgaaaagcc-tagtagtaccatgaatgttg
 > MK791152.1 |Echovirus E11 isolate 2017-122-R2, complete genome|0-504
 cgttacccggccaattacctcgagaaacc-tagtaccaccatggatgttg
 > MK791153.1 |Enterovirus A71 isolate K17245, complete genome|0-504
@@ -142,6 +164,8 @@ cgttatccggctaactacttcggaaaacc-tagtaacatcatgaaagttg
 cgttatccggctagctacttcggaaaacc-tagtaacaccatgaaggttg
 > MN181514.1 |Enterovirus B strain 2014_AFP_NGR, complete genome|0-504
 --------------------------------------------------
+> MK512668.1 |Enterovirus C96 isolate JN13048, complete genome|0-504
+cgttatccgcttttgtacttcgaaaagcc-cagtaccatcttggaatctt
 > MH330336.1 |Rhinovirus C strain NIV1722289, complete genome|0-504
 cgttatccgcacaactactggacaaagcc-tagtaacaccctacgatgta
 > KY425532.1 |Coxsackievirus A16 strain R68/YN/CHN/2009, complete genome|0-504
@@ -352,6 +376,56 @@ cgttacccggccaattacttcgaaaaacc-tagtaccaccatggaggttg
 --------------------------------------------------
 > MF678348.1 |Echovirus E25 isolate NSW-V58-2010-ECHO25, complete genome|0-504
 --------------------------------------------------
+> KY941932.1 |Human poliovirus 2 strain IRQ1219537, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> MG212434.1 |Human poliovirus 2 isolate 29425_c11, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> MG212435.1 |Human poliovirus 2 isolate 29425_c0, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> MG212440.1 |Human poliovirus 2 isolate 31947, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> MG212446.1 |Human poliovirus 2 isolate 9632_T2, complete genome|0-504
+cgttacccgcttatgtacttcgaaaagcc-tagtatcgccttggaatctt
+> MG212450.1 |Human poliovirus 2 isolate 16849, complete genome|0-504
+cgttacccgcttatgtacttcgaaaagcc-tagtatcgccttggaatctt
+> MG212452.1 |Human poliovirus 2 isolate 29683_c0, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> MG212453.1 |Human poliovirus 2 isolate 29683_c24, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> MG212454.1 |Human poliovirus 2 isolate 19062, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> MG212455.1 |Human poliovirus 2 isolate 18580, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> MG212456.1 |Human poliovirus 2 isolate 17629, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> MG212457.1 |Human poliovirus 2 isolate 15767_T2_c0, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> MG212459.1 |Human poliovirus 2 isolate 15763_T2, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> MG212462.1 |Human poliovirus 2 isolate 14732, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> MG212463.1 |Human poliovirus 2 isolate 14337, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> MG212465.1 |Human poliovirus 2 isolate 12209, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> MG212469.1 |Human poliovirus 2 isolate 10630, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> MG212471.1 |Human poliovirus 2 isolate 9112, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> MG212473.1 |Human poliovirus 3 isolate 21390, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> MG212475.1 |Human poliovirus 2 isolate 21348_T2, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> MG212476.1 |Human poliovirus 2 isolate 19890, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> MG212480.1 |Human poliovirus 2 isolate 18058, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> MG212484.1 |Human poliovirus 2 isolate 13770, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> MG212486.1 |Human poliovirus 2 isolate 12604, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> MG212487.1 |Human poliovirus 2 isolate 17719_T2, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
 > MF973193.1 |Human rhinovirus A1 strain 5Q1, complete genome|0-504
 cgttatccgcaaagtgcctacacagagct-tagtaggattctga-aagat
 > MF973194.1 |Human rhinovirus A1 strain 7A2, complete genome|0-504
@@ -446,8 +520,14 @@ cgttatccgcaagatgcctacgcaaagcc-tagtaatacattga-aagat
 cgttatccggctaaccacttcggaaaacc-tagtagcactatgaaagttg
 > KU254596.1 |Enterovirus A71 isolate BJ14-2, complete genome|0-504
 cgttatccggctaaccacttcggaaaacc-tagtagcactatgaaagttg
+> KX162707.1 |Human poliovirus 2 strain NIE1116178, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcaccttggaatctt
 > KX162709.1 |Human poliovirus 1 strain NIE1116623, complete genome|0-504
 --------------------------------------------------
+> KX162711.1 |Human poliovirus 2 strain NIE1119344, complete genome|0-504
+cgttatccgcttttgtacttcgaaaagct-tagtatcatcttggaatctt
+> KX162717.1 |Human poliovirus 2 strain NIE1519342, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
 > KX398052.1 |Human rhinovirus A12 isolate p211, complete genome|0-504
 cgttatccgcaaggtgcctacgagaagcc-tagtaatgctcaag-atgta
 > KX255397.1 |Enterovirus D68 strain EV-D68/Homo sapiens/USA/U807/2007, complete genome|0-504
@@ -496,6 +576,10 @@ cgttatccggctaactacttcggaaaacc-tagtaacaccatggaagttg
 cgttatccggctaactacttcggaaaacc-tagtaacaccatggaagttg
 > JN864024.1 |UNVERIFIED: Human enterovirus 71 strain EV71/Ningbo.CHN/107/2009, complete genome|0-504
 cgttatccggctaactacttcggaaaacc-tagtaacaccatggaagtcg
+> KR259356.1 |Human poliovirus 2 strain R93150, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KR259357.1 |Human poliovirus 2 strain R93152, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
 > KP289397.1 |Coxsackievirus A10 isolate CV-A10/P460/2013/China, complete genome|0-504
 cgttatccggctaactactttgagaaacc-tagtagcaccactgaaactg
 > KP289400.1 |Coxsackievirus A10 isolate CV-A10/P639/2013/China, complete genome|0-504
@@ -504,6 +588,8 @@ cgttatccggctaactacctcgagaaacc-tagtagcaccactgaaactg
 cgttatccggctaactacttcggaaaacc-tagtagcactatgaaagttg
 > KP289438.1 |Coxsackievirus B5 isolate CV-B5/P727/2013/China, complete genome|0-504
 agttacccgagtaattagttcgagaaaga-cagtaccaccatgaaggatg
+> KM388538.1 |Echovirus E3 isolate HNWY-01, complete genome|0-504
+cgttacccggctgactacttcgaaaagcc-tagtagtgccatgaaagttg
 > KR815824.1 |Human enterovirus C104 isolate kvv585-16-TS, complete genome|0-504
 cgttacccgcttgactactacgggaaacc-cagtatcatcttcgattgat
 > KT347231.1 |Enterovirus D68 strain EVD68/Homo sapiens/USA/MO40/2014, complete genome|0-504
@@ -516,8 +602,78 @@ cgttacccggccaattacttcgaaaaacc-cagtaccaccatggaggttg
 cgttacccggccaattacttcgaaaaacc-cagtaccaccatggaggttg
 > KP266579.1 |Enterovirus A71 strain 2006-52-9, complete genome|0-504
 cgttatccggctagctacttcgggaaacc-tagtaacactatgaaagttg
+> KP196613.1 |Human poliovirus 2 isolate CHN18046/Shanxi/CHN/2014, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
 > KP099941.1 |Echovirus E25 strain XM0297, complete genome|0-504
 cgttatccggccaattactacgagaaacc-tagtaccaccatggaagttg
+> KJ170533.1 |Human poliovirus 2 strain NIE1018420, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ170534.1 |Human poliovirus 2 strain NIE1118424, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ170535.1 |Human poliovirus 2 strain NIE1118427, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ170537.1 |Human poliovirus 2 strain NIE1018412, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ170545.1 |Human poliovirus 2 strain NIE1118448, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ170546.1 |Human poliovirus 2 strain NIE1018444, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ170547.1 |Human poliovirus 2 strain NIE1018445, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ170548.1 |Human poliovirus 2 strain NIE1018413, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ170549.1 |Human poliovirus 2 strain NIE1018408, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ170551.1 |Human poliovirus 2 strain NIE1118425, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ170552.1 |Human poliovirus 2 strain NIE1118429, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ170553.1 |Human poliovirus 2 strain NIE1118435, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ170554.1 |Human poliovirus 2 strain NIE1018446, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ170555.1 |Human poliovirus 2 strain NIE1118431, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ170556.1 |Human poliovirus 2 strain NIE1018430, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ170557.1 |Human poliovirus 2 strain NIE1118415, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ170558.1 |Human poliovirus 2 strain NIE1018414, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ170559.1 |Human poliovirus 2 strain NIE1118434, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ170560.1 |Human poliovirus 2 strain NIE1118440, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ170561.1 |Human poliovirus 2 strain NIE1218418, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ170562.1 |Human poliovirus 2 strain NIE1218417, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ170563.1 |Human poliovirus 2 strain NIE1018410, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ170564.1 |Human poliovirus 2 strain NIE1118433, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ170565.1 |Human poliovirus 2 strain NIE1118437, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ170566.1 |Human poliovirus 2 strain NIE1118447, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ170567.1 |Human poliovirus 2 strain NIE1018421, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ170568.1 |Human poliovirus 2 strain NIE1118426, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ170569.1 |Human poliovirus 2 strain NIE0918441, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ170570.1 |Human poliovirus 2 strain NIE1218450, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ170571.1 |Human poliovirus 2 strain NIE1118438, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtaacgccttggaatctt
+> KJ170572.1 |Human poliovirus 2 strain NIE1018409, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ170573.1 |Human poliovirus 2 strain NIE0918442, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ170574.1 |Human poliovirus 2 strain NIE1218449, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ170575.1 |Human poliovirus 2 strain NIE1218419, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
 > KP308415.1 |Enterovirus A71 strain EV71/Homo sapiens/KHM/269/2012, complete genome|0-504
 cgttatccggctagctacttcggaaaacc-tagtaacgccatgaaagttg
 > KP308444.1 |Enterovirus A71 strain EV71/Homo sapiens/KHM/398/2012, complete genome|0-504
@@ -530,6 +686,8 @@ cgttacccggctaactacttcgggaaacc-tagtaacaccatggaagttg
 cgttatccggctagctacttcggaaaacc-tagtaacaccattgaagttg
 > KF734978.1 |Rhinovirus C isolate 1515-MY-10, complete genome|0-504
 cgttatccgcaaagtgcctacgagaagcc-tagtagcactttcgaa-acc
+> KJ857508.1 |Enterovirus C99 isolate YT31/SD/CHN/11, complete genome|0-504
+cgttatccgctcaagtacttcgaaaagcc-tagtatcaccttggaatctt
 > KF543271.1 |Enterovirus A71 isolate SEP4, complete genome|0-504
 --------------------------------------------------
 > KJ186974.1 |Enterovirus A71 strain C4a-01585-TW-2011, complete genome|0-504
@@ -546,6 +704,14 @@ cgttacccggccaactgcttcgagaaatc-cagtaacaccatgaaaattg
 --------------------------------------------------
 > KF015733.1 |Human rhinovirus A22 VP1 protein gene, partial cds|0-504
 --------------------------------------------------
+> KJ419273.1 |Human poliovirus 2 isolate CHN15261/Sichuan/CHN/2011, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ419274.1 |Human poliovirus 2 isolate CHN15284/Sichuan/CHN/2011, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ419276.1 |Human poliovirus 2 isolate CHN16017/Sichuan/CHN/2012, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> KJ419277.1 |Human poliovirus 2 isolate CHN16019c/Sichuan/CHN/2012, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
 > KJ686154.1 |Enterovirus A71 strain EV71/Homo sapiens/VNM/196/2011, complete genome|0-504
 cgttatccggctagctacttcggaaaacc-tagtaacatcatgaaagttg
 > KJ004552.1 |Enterovirus A71 isolate EV71/Hun11-32/2011, complete genome|0-504
@@ -572,6 +738,38 @@ cgttatccggctaactacttcggaaagcc-tagtaacaccatggaagttg
 cgttatccgcttgattactgcgggacgcc-tagtatcactatggattgac
 > JX678874.1 |Human enterovirus 71 strain CQ03-1/CQ/CHN/2003, complete genome|0-504
 cgttatccggctaaccacttcggaaaacc-tagtagcaccataaaagttg
+> JX274981.1 |Human poliovirus 2 strain NIE0511440, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> JX274982.1 |Human poliovirus 2 strain NIE0511448, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> JX274983.1 |Human poliovirus 2 strain NIE0511445, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> JX274984.1 |Human poliovirus 2 strain NIE0611444, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> JX274987.1 |Human poliovirus 2 strain NIE0611446, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> JX274991.1 |Human poliovirus 2 strain NIE0611200, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatcct
+> JX274993.1 |Human poliovirus 2 strain NIE0611447, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> JX275015.1 |Human poliovirus 2 strain NIE0611450, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> JX275071.1 |Human poliovirus 2 strain NIE0711441, complete genome|0-504
+cgttatccgctcttgtacttcgaaaagcc-tagtatcatcttggaatctt
+> JX275085.1 |Human poliovirus 2 strain NIE0711438, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> JX275147.1 |Human poliovirus 2 strain NIE0811460, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtattgccttggaatctt
+> JX275184.1 |Human poliovirus 2 strain NIE0911455, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcaccttggaatctt
+> JX275238.1 |Human poliovirus 2 strain NIE0911458, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> JX275266.1 |Human poliovirus 2 strain NIE0911443, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> JX275352.1 |Human poliovirus 2 strain NIE1116152, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> JX275380.1 |Human poliovirus 2 strain NIE1116178, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcaccttggaatctt
 > JX982253.1 |Human enterovirus C104 strain Pavia259-7712, complete genome|0-504
 cgttacccgcttgactactacgggaaacc-cagtatcatcttcgattgat
 > JX982254.1 |Human enterovirus C104 strain Pavia260-9210, complete genome|0-504
@@ -666,6 +864,14 @@ cgttatccggctaactacttcgggaaacc-tagtagcatcatgaaagttg
 cgttttccggttaattacttcgggaaacc-tagtaaccccatgaaatttg
 > HQ891926.1 |Human enterovirus 71 strain Shanghai 51-2009, complete genome|0-504
 cgttatccggctagctacttcggaaaacc-tagtaacaccatgaaggttg
+> HM107832.1 |Human poliovirus 2 isolate CHN1054, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> HM107833.1 |Human poliovirus 2 isolate CHN1078, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> HM107834.1 |Human poliovirus 2 isolate CHN3219, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> HM107835.1 |Human poliovirus 2 isolate CHN8316, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
 > HM752814.2 |Enterovirus A71 strain 119798, complete genome|0-504
 cgttacccgaccagctatttcgagaagct-tagtaccaccatgaacgagg
 > GU219984.1 |Human rhinovirus C strain HRV-C15 isolate W10, complete genome|0-504
@@ -688,6 +894,8 @@ cgttatccgcaaggtgcctacgggaagcc-tagtaatactctga-aggta
 cgttacccgctcatgtacttcgggaagcc-tagtatcaccttcggatctt
 > FJ842159.1 |Human poliovirus 3 strain FIN84-2493, complete genome|0-504
 cgttacccgctcatgtacttcgggaagcc-tagtatcaccttcggatctt
+> FJ898290.1 |Human poliovirus 2 strain Sabine 2 isolate CHN3024/HN/CHN/1999, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
 > GQ323774.1 |Human rhinovirus C strain QCE, complete genome|0-504
 cgttacccgcaaagtgcctacgagaagcc-tagtatcactttggaa-acc
 > EU840952.2 |Human rhinovirus C11 strain CL-170085, complete genome|0-504
@@ -698,6 +906,16 @@ cgttacccgcgcaattactaagcagagcc-tagtatcacttcgacccttc
 cgttatccgcacacgtactacgcgaaaac-tagtaacaccttgattggtg
 > GQ223229.1 |Human rhinovirus A isolate N13, complete genome|0-504
 cgttatccgcaaagtgcctacgcaaagcc-tagtaatatcttga-atgat
+> FJ460223.1 |Human poliovirus 2 isolate 32191, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> FJ460224.1 |Human poliovirus 2 isolate 32189+AP1, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> FJ460225.1 |Human poliovirus 2 isolate 31996, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> FJ517648.1 |Human poliovirus 2 isolate PV2/Bel, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaatctt
+> FJ517649.1 |Human poliovirus 2 isolate PV2/Rus, complete genome|0-504
+cgttacccgcttgtgtacttcgaaaagcc-tagtatcgccttggaaactt
 > FJ445114.1 |Human rhinovirus 9 isolate F01, complete genome|0-504
 cgttatccgcaaagcgcctacgcaaagcc-tagtaactatctgg-aaatt
 > FJ445115.1 |Human rhinovirus 9 isolate F02, complete genome|0-504

@@ -1,0 +1,21 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	test
+	2
+Select jobs to execute...
+
+[Sat Mar 27 17:12:01 2021]
+rule test:
+    input: /datater/wu/stage_m2/test/reverse0-501.fasta
+    output: /datater/wu/stage_m2/test/reverse0-501.out
+    jobid: 1
+    wildcards: seg=0-501
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/test/.snakemake/log/2021-03-27T171201.604352.snakemake.log

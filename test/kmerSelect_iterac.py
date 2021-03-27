@@ -15,7 +15,7 @@ def calculate_kmer(input):
 
     dskH5 = f"{filename}.h5"
     os.system(
-        f"../stage_m2/lib/dsk/build/bin/dsk \
+        f"../lib/dsk/build/bin/dsk \
         -nb-cores 0 \
         -max-memory 5000 \
         -max-disk 0 \
@@ -31,7 +31,7 @@ def calculate_kmer(input):
 
     dskh5txt = f"{filename}.kCount"
     os.system(
-        f"../stage_m2/lib/dsk/build/bin/dsk2ascii \
+        f"../lib/dsk/build/bin/dsk2ascii \
         -nb-cores 0 \
         -file {dskH5} -out {dskh5txt}"
     )
@@ -70,7 +70,6 @@ def parse_fasta(input):
 
     return(dict)
 
-# ~ for n in range(0,5):
 while kmerCount > seqNumber*0.1: 
    
     kmerDict = calculate_kmer(inputFile)
@@ -115,9 +114,3 @@ while kmerCount > seqNumber*0.1:
     # ~ inputFile = f"{filename}.inter"
 
 outputFile.close()
-    
-
-            
-
-
-

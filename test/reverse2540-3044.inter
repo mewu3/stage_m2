@@ -1,0 +1,2596 @@
+> NC_038307.1 |Coxsackievirus B3 mRNA, complete genome|2540-3044
+--acaatcaagttgcgtgctgtgtataccctggataagccaaacacacta
+> NC_030454.1 |Enterovirus A114 strain V13-0285, partial genome|2540-3044
+--tcagtcatccattactctcgtggtaccatggatcagcaacacgcactt
+> MT157224.1 |Human rhinovirus sp. strain newborn-rhvzjlh, complete genome|2540-3044
+--gcaatctacagtatctttagttgtcccatgggttagtgctagtcattt
+> MW384880.1 |Enterovirus D94 isolate D94-NIG-14-534, complete genome|2540-3044
+--gcaatccagcataacattggtcatcccttggataagtgggtctcactt
+> MW080372.1 |Echovirus E30 isolate TL12C/NM/CHN/2016, complete genome|2540-3044
+--gcaatctagctgtgtactgtgcgtgccgtggatcagtcaaaccaatta
+> MW080377.1 |Echovirus E30 isolate TL7C/NM/CHN/2016, complete genome|2540-3044
+--gcaatctagctgtgtactgtgcgtgccgtggatcagtcaaaccaatta
+> MN481500.1 |Echovirus E21 strain 553/YN/CHN/2013, complete genome|2540-3044
+--acaatcaagttgcgttttgtgtgtgccttggataagccaaacaaatta
+> LC506447.1 |Coxsackievirus A6 CV-A6/HVN12.519_HA_NOIVNM/2012 genomic RNA, complete genome|2540-3044
+--gcaatcatcagtcactttagtcataccctggattagtaatacccattt
+> LC506455.1 |Coxsackievirus A16 CV-A16/HVN08.039_HA_GIANGVNM/2008 genomic RNA, complete genome|2540-3044
+--acagtcttctgtgacattggtcgtgccatggattagtaatacacacta
+> LC506456.1 |Coxsackievirus A16 CV-A16/HVN08.055_HAI_PHONGVNM/2008 genomic RNA, complete genome|2540-3044
+--acaatcttctgtgacgttggttgtgccatggattagtaacacacacta
+> LC506457.1 |Coxsackievirus A16 CV-A16/HVN11.650_THANH_HOAVNM/2011 genomic RNA, complete genome|2540-3044
+--gcagtcctctgtgacgttggtcgtgccatggatcagtaatacacacta
+> LC506458.1 |Coxsackievirus A16 CV-A16/HVN13.004_HOA_BINHVNM/2013 genomic RNA, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggattagtaacacacacta
+> LC506459.1 |Coxsackievirus A16 CV-A16/HVN13.005_HAI_PHONGVNM/2013 genomic RNA, complete genome|2540-3044
+--gcaatcctctgtgacgttggttgtgccatggattagcaatacacatta
+> LC506460.1 |Coxsackievirus A16 CV-A16/HVN14.327_HAI_PHONGVNM/2014 genomic RNA, complete genome|2540-3044
+--gcaatcctctgtaacgttggttgtgccgtggattagcaatacacatta
+> LC506461.1 |Coxsackievirus A16 CV-A16/HVN16.082_HAI_PHONGVNM/2016 genomic RNA, complete genome|2540-3044
+--gcaatcctctgtgacattggttgtgccatggattagtaatacgcatta
+> LC506462.1 |Coxsackievirus A16 CV-A16/HVN17.120_HAI_PHONGVNM/2017 genomic RNA, complete genome|2540-3044
+--gcaatcctctgtgacattggttgtgccatggattagcaatacacatta
+> MT364381.1 |Human rhinovirus A12 strain JX-RVA12-41-2017, complete genome|2540-3044
+--acaatcaacagtgtctatgattgtaccatgggtatcagcaagccattt
+> MN954537.1 |Enterovirus D isolate 4311400720_RD4, complete genome|2540-3044
+--acaatccagtgttactctggtaataccttggatcagtggatcccacta
+> MT338567.1 |Enterovirus C117 strain JX-C117-40-2017, complete genome|2540-3044
+--ccaatctagtgcgacacttgttgcaccctggatttcaaatgtcaatta
+> MT814404.1 |Coxsackievirus A6 strain CVA6 -170044140402-FRA-2017, complete genome|2540-3044
+--gcaatcgtcagttaccttggttattccttggattagcaacacccattt
+> MT814409.1 |Coxsackievirus A6 strain CVA6 -170067056102-FRA-2017, complete genome|2540-3044
+--gcaatcatcagttaccttggttatcccttggattagtaacacccattt
+> MT814417.1 |Coxsackievirus A6 strain CVA6 -180049958802-FRA-2018, complete genome|2540-3044
+--gcaatcgtcagttaccttggttattccttggattagcaacacccattt
+> MT814428.1 |Coxsackievirus A6 strain CVA6 -3143531151-FRA-2014, complete genome|2540-3044
+--gcagtcatctgttaccctagttgtaccttggattagtaacacccattt
+> MT814505.1 |Coxsackievirus A6 strain CVA6 -312164013-FRA-2012, complete genome|2540-3044
+--gcaatcatcagttaccttggttataccttggatcagtaacacccattt
+> MT814512.1 |Coxsackievirus A6 strain CVA6 -312151103-FRA-2012, complete genome|2540-3044
+--gcaatcatcagttaccttggttgtaccttggattagtaacacccattt
+> MT814513.1 |Coxsackievirus A6 strain CVA6 -312185050-FRA-2012, complete genome|2540-3044
+--gcaatcatcagttaccttggttgtaccttggattagtaacacccattt
+> MT814528.1 |Coxsackievirus A6 strain CVA6 -310147012-FRA-2010, complete genome|2540-3044
+--acaatcatcagtcactttagttataccctggattagcaacactcattt
+> MT814530.1 |Coxsackievirus A6 strain CVA6 -310169087-FRA-2010, complete genome|2540-3044
+--acaatcatcagtcactttagttataccctggattagcaacactcattt
+> MT814531.1 |Coxsackievirus A6 strain CVA6 -310204023-FRA-2010, complete genome|2540-3044
+--gcaatcatcagtcactttagttataccctggattagcaacacccattt
+> MT814532.1 |Coxsackievirus A6 strain CVA6 -310175080-FRA-2010, complete genome|2540-3044
+--acaatcatcagtcactttagttataccctggattagcaacactcattt
+> MT814533.1 |Coxsackievirus A6 strain CVA6 -310161011-FRA-2010, complete genome|2540-3044
+--acaatcatcagtcactttagttataccctggattagcaacactcattt
+> MT814534.1 |Coxsackievirus A6 strain CVA6 -310167012-FRA-2010, complete genome|2540-3044
+--gcaatcatcagtcactttagttataccctggattagcaacacccattt
+> MT814535.1 |Coxsackievirus A6 strain CVA6 -310175075-FRA-2010, complete genome|2540-3044
+--gcaatcatcagtcactttagttataccctggattagcaacacccattt
+> MT814536.1 |Coxsackievirus A6 strain CVA6 -3161931321-FRA-2016, complete genome|2540-3044
+--gcaatcatcagttaccttagttataccttggatcagtaacactcattt
+> MT814537.1 |Coxsackievirus A6 strain CVA6 -3143141091-FRA-2014, complete genome|2540-3044
+--gcaatcatcagttaccttagttataccttggatcagtaacactcattt
+> MT814538.1 |Coxsackievirus A6 strain CVA6 -3143641101-FRA-2014, complete genome|2540-3044
+--gcaatcatcagttaccttagttataccttggatcagtaacacacattt
+> MT814539.1 |Coxsackievirus A6 strain CVA6 -3150331701-FRA-2015, complete genome|2540-3044
+--gcaatcatcagttaccttagttataccttggatcagtaacacacattt
+> MT814540.1 |Coxsackievirus A6 strain CVA6 -3143351721-FRA-2014, complete genome|2540-3044
+--gcaatcatcagttaccttagttataccttggatcagtaacactcattt
+> MT814545.1 |Coxsackievirus A6 strain CVA6 -3143111081-FRA-2014, complete genome|2540-3044
+--gcaatcatcagttaccttagttataccttggatcagtaacacccattt
+> MT814546.1 |Coxsackievirus A6 strain CVA6 -3141880851-FRA-2014, complete genome|2540-3044
+--gcaatcatcagttaccttagttataccttggatcagtaacactcattt
+> MT814557.1 |Coxsackievirus A6 strain CVA6 -310181032-FRA-2010, complete genome|2540-3044
+--gcaatcatcggtcactttagtcataccctggattagtaacacccattt
+> MT814579.1 |Coxsackievirus A6 strain CVA6 -310103027-FRA-2010, complete genome|2540-3044
+--gcaatcatcagtcactttggttataccctggattagtaatacccattt
+> MT814580.1 |Coxsackievirus A6 strain CVA6 -310152046-FRA-2010, complete genome|2540-3044
+--gcaatcatcagtcactttagttataccctggattagtaatacccattt
+> MT263729.1 |UNVERIFIED: Coxsackievirus A10 strain CV-A10-HB09-035, complete genome|2540-3044
+--acaatcgtcagtctctttggtgataccgtggatcagtaacactcactt
+> MN817130.1 |Echovirus E11 strain GWCMC01/GZ/CHN/2019, complete genome|2540-3044
+--gcagtcctcatgcgtgctatgcatcccttggatcagccagactcacta
+> MT791927.1 |Enterovirus D68 isolate CF307029-FRA-2014, complete genome|2540-3044
+--acaatcttgtgtaaccctgataataccctggattagtggatcccacta
+> MT791934.1 |Enterovirus D68 isolate CF125132-FRA-2016, complete genome|2540-3044
+--acaatccagtgtcactctggtgataccttggatcagtggatcccacta
+> MN046208.1 |Coxsackievirus A16 strain KM/M08, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> MN215884.1 |Echovirus E18 isolate LJ/0530/2019, complete genome|2540-3044
+--tcaatcaagctgtgtcttgtgcgttccttggattagtcaatcacacta
+> MN580134.1 |Enterovirus B93 isolate 99052/XZ/CHN/1999, complete genome|2540-3044
+--acagtccagttgtgtactctgtgtaccatggatcagccagactcacta
+> MN580135.1 |Enterovirus B93 isolate 99096/XZ/CHN/1999, complete genome|2540-3044
+--acagtccagttgtgtactctgtgtaccatggatcagccagactcacta
+> MN580136.1 |Enterovirus B93 isolate 99167/XZ/CHN/1999, complete genome|2540-3044
+--acagtccagttgtgtactctgtgtaccatggatcagccagactcacta
+> MN914196.1 |Enterovirus C strain 03-4101, complete genome|2540-3044
+--acaatccagtgtaacacttgttgcaccgtggatctccaatgttaatta
+> MN914197.1 |Enterovirus C strain 03-4209, complete genome|2540-3044
+--gcaatcttcctgcacaatggtggtgccttggattagtaacactgcata
+> MN914198.1 |Enterovirus C strain 04-1378, complete genome|2540-3044
+--acagtcttcgtgcacaatggtggtcccttggatcagcaacaccgctta
+> MN914199.1 |Enterovirus C strain 03-4166, complete genome|2540-3044
+--gcagtcatcatgtaccatggtggttccatggatcagtaacaccgccta
+> MN914200.1 |Enterovirus C strain 03-4107, complete genome|2540-3044
+--gcagtcatcatgcaccatggtggttccatggatcagtaataccgccta
+> MN914201.1 |Enterovirus C strain 04-1450, complete genome|2540-3044
+--ccaatcatcttgcacaatggtagtcccatggatcagcaacacaagcta
+> MN914202.1 |Enterovirus C strain 04-4517, complete genome|2540-3044
+--tcaatcatcttgcacaatggtggttccatggatcagcaacacaagtta
+> MN914203.1 |Enterovirus C strain 04-1438, complete genome|2540-3044
+--tcaatcatcttgcacaatggtagtcccgtggatcagcaacacaagcta
+> MN914204.1 |Enterovirus C strain 04-4444, complete genome|2540-3044
+--gcagtcatcatgcactatggttgtgccctggattagtaacaccagcta
+> MN914205.1 |Enterovirus C strain 04-4491, complete genome|2540-3044
+--acaatccagctgcactatggtagccccctggatctccaacactgtgta
+> MN914206.1 |Enterovirus C strain 03-0100, complete genome|2540-3044
+--gcaatccagttgcactatggtggccccctggatctccaacactgtgta
+> MN337405.1 |Echovirus E18 isolate LJ/0601/2019, complete genome|2540-3044
+--tcaatcaagctgtgtcttgtgcgttccttggattagtcaatcacacta
+> MN663160.1 |Coxsackievirus A5, complete genome|2540-3044
+--ccagtcctcagtcaccttggtcatcccttggatcagcaattcacatta
+> MN590273.1 |Coxsackievirus B4 strain 2019/FR/3996, complete genome|2540-3044
+--acaatccagctgtgtgctctgtgtgccatggattagccaaacgcacta
+> MN845762.1 |Coxsackievirus A6 isolate 3/HLJ/CHN/2011, complete genome|2540-3044
+--acaatcatcagttactctagtcataccctggattagtaacactcattt
+> MN845763.1 |Coxsackievirus A6 isolate 148/NX/CHN/2011, complete genome|2540-3044
+--acaatcatcagttactctagtcataccctggattagtaacactcattt
+> MN845765.1 |Coxsackievirus A6 isolate 57/JL/CHN/2012, complete genome|2540-3044
+--acaatcatcagttactctagtcataccctggattagtaacactcattt
+> MN845813.1 |Coxsackievirus A6 isolate 9/CQ/CHN/2017, complete genome|2540-3044
+--gcaatcatcggtcaccctggtcataccctggattagtaacacccattt
+> MN845832.1 |Coxsackievirus A6 isolate 331/GS/CHN/2018, complete genome|2540-3044
+--gcaatcatcggttaccctagttataccttggatcagtaacacccattt
+> MN845833.1 |Coxsackievirus A6 isolate 348/GS/CHN/2018, complete genome|2540-3044
+--gcaatcatcggttaccctggttataccctggattagtaacacccattt
+> MN845852.1 |Coxsackievirus A6 isolate 28/JL/CHN/2018, complete genome|2540-3044
+--gcaatcgtcagttaccttggttataccctggattagtaacacccattt
+> MN845858.1 |Coxsackievirus A6 isolate 72/JX/CHN/2017, complete genome|2540-3044
+--gcaatcatcggttaccctggtcataccttggatcagtaatacccattt
+> MN845859.1 |Coxsackievirus A6 isolate 111/JX/CHN/2017, complete genome|2540-3044
+--gcaatcatcggttaccctggtcataccttggatcagtaatacccattt
+> MN845862.1 |Coxsackievirus A6 isolate 14/JX/CHN/2018, complete genome|2540-3044
+--gcaatcatcggttaccctggttataccttggatcagtaacacccattt
+> MN845884.1 |Coxsackievirus A6 isolate B8/YN/CHN/2017, complete genome|2540-3044
+--gcaatcatcggttaccctggttataccttggatcagtaatacccattt
+> MH426975.1 |Human rhinovirus A30 strain MCL-18-H-1097, complete genome|2540-3044
+--acaatctacaatatcaatggtggtaccctggattagtgctagtcatta
+> MH426976.1 |Human rhinovirus A30 strain MCL-18-H-1135, complete genome|2540-3044
+--acaatctacaatatcaatggtggtaccctggattagtgctagtcatta
+> MH517019.1 |Human rhinovirus A103 strain MCL-18-H-1122, complete genome|2540-3044
+--gcaatccacagtttcaatggtggttccttggatttcagctagcaatta
+> MK106189.1 |Coxsackievirus A6 strain 54203/HeB/CHN/2012, complete genome|2540-3044
+--gcaatcgtcagttactctagtcataccctggattagtaacactcattt
+> MK106196.1 |Coxsackievirus A6 strain FH233/SX/CHN/2013, complete genome|2540-3044
+--acaatcatcagttactctagttataccctggattagtaacactcactt
+> MK106202.1 |Coxsackievirus A6 strain 1554180/HeB/CHN/2015, complete genome|2540-3044
+--gcaatcatcagtcactctagtcataccctggattagtaacactcattt
+> MK106208.1 |Coxsackievirus A6 strain 075/GS/CHN/2011, complete genome|2540-3044
+--acaatcatcagttactctagtcataccctggattagtaacactcattt
+> MK106209.1 |Coxsackievirus A6 strain 233/HeB/CHN/2011, complete genome|2540-3044
+--acaatcatcagttactctagtcataccctggattagtaacactcattt
+> MK106210.1 |Coxsackievirus A6 strain 046/SX/CHN/2011, complete genome|2540-3044
+--acaatcatcagttactctagtcataccctggattagtaacactcattt
+> MK106211.1 |Coxsackievirus A6 strain 058/SX/CHN/2011, complete genome|2540-3044
+--acaatcatcagttactctagtcataccctggattagtaacactcattt
+> MN164683.1 |Enterovirus B83 isolate 99245/XZ/CHN/1999, complete genome|2540-3044
+--ccagtccagctgtgtgttgtgtgtgccatggattagtcagacgcacta
+> MN164684.1 |Enterovirus B83 isolate 99258/XZ/CHN/1999, complete genome|2540-3044
+--ccagtccagctgtgtgttgtgtgtgccatggattagtcagacgcacta
+> MN164685.1 |Enterovirus B83 isolate 99267/XZ/CHN/1999, complete genome|2540-3044
+--ccagtccagctgtgtgttgtgtgtgccatggattagtcagacgcacta
+> MN164686.1 |Enterovirus B83 isolate 99268/XZ/CHN/1999, complete genome|2540-3044
+--ccagtccagctgtgtgttgtgtgtgccatggattagtcagacgcacta
+> MN164687.1 |Enterovirus B83 isolate 99269/XZ/CHN/1999, complete genome|2540-3044
+--ccagtccagctgtgtgttgtgtgtgccatggattagtcagacgcacta
+> MN164688.1 |Enterovirus B83 isolate 99275/XZ/CHN/1999, complete genome|2540-3044
+--ccagtccagctgtgtgttgtgtgtgccatggattagtcagacgcacta
+> MN964076.1 |Coxsackievirus A4 isolate CV-A4/2016/HFMD/305, complete genome|2540-3044
+--gcaatcttcagtcacgctcgtagtgccttggataagtaacactcactt
+> MN964077.1 |Coxsackievirus A4 isolate CV-A4/2016/HFMD/104, complete genome|2540-3044
+--gcaatcttcagtcacgctcgtagtgccttggataagtaacactcactt
+> MN964078.1 |Coxsackievirus A4 isolate CV-A4/2018/herpangina/8, complete genome|2540-3044
+--gcagtcatcagtcactcttgtggtgccctggataagtaacacacactt
+> MN964079.1 |Coxsackievirus A4 isolate CV-A4/2018/HFMD/792, complete genome|2540-3044
+--gcagtcatcagtcactcttgtggtaccctggataagtaacacacactt
+> MN964080.1 |Coxsackievirus A4 isolate CV-A4/2018/herpangina/31, complete genome|2540-3044
+--gcagtcgtcggtcactcttgtggtgccctggataagtaacacacattt
+> MN964081.1 |Coxsackievirus A4 isolate CV-A4/2018/herpangina/25, complete genome|2540-3044
+--gcagtcgtcggtcactcttgtggtgccctggataagtaacacacattt
+> MN964082.1 |Coxsackievirus A4 isolate CV-A4/2018/herpangina/16, complete genome|2540-3044
+--gcagtcgtcggtcacccttgtggtgccctggataagtaacacacattt
+> MN597453.1 |Enterovirus B83 isolate AFP341-GD-CHN-2001, complete genome|2540-3044
+--ccagtccagctgtgtgttgtgtgtgccgtggatcagtcagacacacta
+> MK791147.1 |Coxsackievirus A10 isolate GD03, complete genome|2540-3044
+--acaatcgtcagtctctttggtgataccgtggatcagtaacactcactt
+> MK791148.1 |Coxsackievirus B3 isolate 2001-5, complete genome|2540-3044
+--gcagtctagttgtgtcttgtgcataccatggataagtcaaacacacta
+> MK791149.1 |Coxsackievirus B5 isolate B005, complete genome|2540-3044
+--gcaatcgagctgcgtgttgtgcattccatggatcagccaaacacacta
+> MK791150.1 |Echovirus E3 isolate 123-R2, complete genome|2540-3044
+--gcaatccagttgtgtgttgtgcataccatggattagtcaaacccatta
+> MK791151.1 |Echovirus E6 isolate 78R2, complete genome|2540-3044
+--gcaatctagttgtgtgctgtgcgtgccatggatcagccaaacgcatta
+> MK791152.1 |Echovirus E11 isolate 2017-122-R2, complete genome|2540-3044
+--gcagtcctcttgtgtgttatgcatcccctggattagccagactcatta
+> MK791153.1 |Enterovirus A71 isolate K17245, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> MN419014.1 |Enterovirus A strain A2 R1580/XY/CHN/2017, complete genome|2540-3044
+--gcagtcgtcggttacactagtggtcccatggataagcaacactcacta
+> LC483986.1 |Coxsackievirus A10 CV-A10/HVN11_028_Bac_GiangVNM/2011 genomic RNApolyprotein, complete genome|2540-3044
+--acaatcatcagtctctttggtgataccgtggatcagtaacacccattt
+> LC483987.1 |Coxsackievirus A10 CV-A10/HVN13_016_Hai_PhongVNM/2013 genomic RNApolyprotein, complete genome|2540-3044
+--acaatcatcagtctctttggtgataccgtggatcagtaacacccattt
+> LC483988.1 |Coxsackievirus A10 CV-A10/HVN16_073_Hai_PhongVNM/2016 genomic RNApolyprotein, complete genome|2540-3044
+--acaatcatcagtctctttggtgataccgtggatcagtaacacccattt
+> MK301475.1 |Coxsackievirus A10 strain R6-19/XY/CHN/2017, complete genome|2540-3044
+--acaatcatcggtctctttggtgataccgtggatcagtaacactcactt
+> MK301476.1 |Coxsackievirus A10 strain V6-19/XY/CHN/2017-P1, complete genome|2540-3044
+--acaatcatcggtctctttggtgataccgtggatcagtaacactcactt
+> MK301477.1 |Coxsackievirus A10 strain V6-19/XY/CHN/2017-P5, complete genome|2540-3044
+--acaatcatcggtctctttggtgataccgtggatcagtaacactcactt
+> MK301478.1 |Coxsackievirus A10 strain V6-19/XY/CHN/2017-P10, complete genome|2540-3044
+--acaatcatcggtctctttggtgataccgtggatcagtaacactcactt
+> MK301479.1 |Coxsackievirus A10 strain V6-19/XY/CHN/2017-P15, complete genome|2540-3044
+--acaatcatcggtctctttggtgataccgtggatcagtaacactcactt
+> MK800120.1 |Echovirus E30 strain USA/2018-23125, complete genome|2540-3044
+--acaatctagctgtgtattatgcgtaccatggatcagccaaaccaatta
+> MK814854.1 |Coxsackievirus A10 isolate HEV9667699, complete genome|2540-3044
+--gcaatcgtcagtctccttggtaataccgtggattagtaacactcactt
+> MT347976.1 |Echovirus E25 strain USA/2016-19521, complete genome|2540-3044
+--gcaatcgagctgtgtgctctgtgtaccatggatcagccagacgaatta
+> MT347977.1 |Coxsackievirus A10 strain USA/2014-23299, complete genome|2540-3044
+--acaatcgtcagtctccttggtgataccgtggattagcaacactcactt
+> MT081367.1 |Enterovirus A120 strain TRT/2013-23196, complete genome|2540-3044
+--acagtcatcagtcaccctagttgtgccttggatatcaaacactcactt
+> MT081369.1 |Enterovirus D70 strain JPN/1989-23292, complete genome|2540-3044
+--gcaatctagtatcaccattataattccttggatttcagggtctcatta
+> MT081370.1 |Enterovirus D94 strain ANG/2010-23293, complete genome|2540-3044
+--acaatctagtataacattggtcatcccttggataagtggatcccattt
+> MT081373.1 |Enterovirus A71 strain USA/2018-23296, complete genome|2540-3044
+--gcaatcgtctgttacccttgtgataccatggattagcaacacccacta
+> MT081374.1 |Enterovirus A71 strain USA/2018-23297, complete genome|2540-3044
+--gcaatcgtctgttacccttgtgataccatggattagcaacacccacta
+> MT081375.1 |Enterovirus A71 strain USA/2018-23298, complete genome|2540-3044
+--gcaatcgtctgttacccttgtgataccatggattagcaacacccacta
+> MT081376.1 |Coxsackievirus A5 strain USA/2014-23300, complete genome|2540-3044
+--ccaatcctcggtcactttagtcatcccttggatcagcaattcacatta
+> MT081377.1 |Coxsackievirus A5 strain USA/2014-23301, complete genome|2540-3044
+--ccaatcctcggtcactttagtcatcccttggatcagcaattcacatta
+> MT081378.1 |Enterovirus D70 strain JPN/1971-23330, complete genome|2540-3044
+--gcaatctagtatcaccattataattccttggatctcagggtctcatta
+> MN496161.1 |Echovirus E11 strain SD2003-478/SD/CHN/2003, complete genome|2540-3044
+--gcagtcatcgtgcgtcctgtgtatcccatggattagccagacacacta
+> MN515037.1 |Enterovirus A71 strain 16L, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacacccacta
+> LC530048.1 |Human rhinovirus A49 sugckmmaht NGO1 genomic RNA, complete genome|2540-3044
+--tcaatctacaatatcaatggtggtaccatggattagtgccagtcatta
+> MK689070.1 |Echovirus E29 isolate BRA/PA-29, complete genome|2540-3044
+--gcagtctagctgcgtactgtgtgtaccttggataagccaaacacatta
+> MK689071.1 |Enterovirus C99 isolate BRA/TO-16, complete genome|2540-3044
+--acagtctagttgcactatggtrgctccttggatttccaacactgtcta
+> MN749141.1 |Coxsackievirus A16 strain 12C10, complete genome|2540-3044
+--gcagtcttctgtgacgttggttgtgccatggattagcaatacacacta
+> MN749142.1 |Echovirus E11 strain 12F3, complete genome|2540-3044
+--gcaatcctcgtgcgtgttatgcattccctggattagccaaactcacta
+> MN749143.1 |Echovirus E18 strain 12G5, complete genome|2540-3044
+--ccagtcaagctgcgttttgtgcgttccttggattagtcaatcacatta
+> MN749144.1 |Human rhinovirus A45 strain 12I7, complete genome|2540-3044
+--tcagtctacgtgttctttggtcatcccatggatatcagcatcacactt
+> MN749145.1 |Coxsackievirus B5 strain 12I10, complete genome|2540-3044
+--gcagtcaagctgcgtactgtgtatcccatggattagtcaaacgcacta
+> MN749146.1 |Echovirus E18 strain 12J3, complete genome|2540-3044
+--tcagtcaagctgcgttttgtgcgtcccctggattagtcagtcacacta
+> MN749147.1 |Human rhinovirus 1B strain 12J7, complete genome|2540-3044
+--gcaatctactatatctcttgttgtgccatgggtgagtgctagtcattt
+> MN749148.1 |Human rhinovirus A51 strain 12K5, complete genome|2540-3044
+--gcaatccacagtttctatggtggttccctggatatctgctagtcacta
+> MN749149.1 |Human rhinovirus A2 strain 12K9, complete genome|2540-3044
+--acagtccacaatatcaatggtggtgccatggattagtgctagtcatta
+> MN749150.1 |Human rhinovirus 1B strain 12L1, complete genome|2540-3044
+--gcaatctactatatctcttgttgtgccatgggtgagtgctagtcactt
+> MN749151.1 |Human rhinovirus A2 strain 12L4, complete genome|2540-3044
+--acagtccacaatatcaatggtggtgccatggattagtgctagtcatta
+> MN749152.1 |Human rhinovirus A2 strain 12L5, complete genome|2540-3044
+--acagtccacaatatcaatggtggtgccatggattagtgctagtcatta
+> MN749153.1 |Human rhinovirus 1B strain 12M3, complete genome|2540-3044
+--acaatctactatatctcttgttgtgccatgggtgagtgctagtcactt
+> MN749154.1 |Human rhinovirus A2 strain 12M7, complete genome|2540-3044
+--acaatccacaatatcaatggtagtgccgtggattagtgctagtcatta
+> MN749155.1 |Rhinovirus A strain 12N2, complete genome|2540-3044
+--tcaatctacaatatcaatggtagtaccatggattagtgctagccatta
+> MN749156.1 |Human rhinovirus 1B strain 12O2, complete genome|2540-3044
+--acaatctactatatctcttgttgtgccatgggtgagtgctagtcactt
+> MN749157.1 |Human rhinovirus 1B strain 12O3, complete genome|2540-3044
+--acaatctactatatctcttgttgtgccatgggtgagtgctagtcactt
+> MN749158.1 |Human rhinovirus A66 strain 12O6, complete genome|2540-3044
+--acaatcaactgtgtccctagttgttccatgggttagtgctagtcactt
+> MN749159.1 |Echovirus E11 strain 10S1, complete genome|2540-3044
+--gcagtcctcttgtgtgttatgcatcccctggattagtcagacccatta
+> MN749162.1 |Coxsackievirus B5 strain 10T1, complete genome|2540-3044
+--gcagtccagctgcgtgttatgtatcccatggattagccaaacgcatta
+> MN749163.1 |Coxsackievirus B5 strain 10T2, complete genome|2540-3044
+--gcagtccagctgcgtgttatgtatcccatggattagtcaaacgcatta
+> MN481403.1 |Enterovirus C isolate BE-18-7469-L, complete genome|2540-3044
+--acagtccagcgcaacattagtagccccatggatttcaaatgtcaatta
+> MN145871.1 |Echovirus E6 strain EchoE6/22/ZJ/CHN/2018, complete genome|2540-3044
+--gcaatctagttgtgtgctgtgcgtaccatggatcagccaaacgcatta
+> MK658830.1 |Coxsackievirus A4 isolate 01/Taian/SD/2017, complete genome|2540-3044
+--gcagtcgtcagttactcttgtggtgccctggataagtaacacacactt
+> MK658831.1 |Coxsackievirus A4 isolate 06/Taian/SD/2017, complete genome|2540-3044
+--gcagtcgtcagttactcttgtggtgccctggataagtaacacacactt
+> MK658832.1 |Coxsackievirus A4 isolate 105/Taian/SD/2017, complete genome|2540-3044
+--gcagtcgtcagttactcttgtggtgccctggataagtaacacacactt
+> MK658833.1 |Coxsackievirus A4 isolate A1/Taian/SD/2018, complete genome|2540-3044
+--gcagtcttcagtcactctcgtggtgccctggataagtaacacacactt
+> MG207962.1 |Enterovirus A71 strain 4-23/XY/CHN/2017, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> MG207963.1 |Enterovirus A71 strain 6-4/XY/CHN/2017, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> MN166092.1 |Echovirus E18 strain USA/2015/CA-RGDS-1049, complete genome|2540-3044
+--tcagtcaagctgcgttttgtgcgtcccctggattagtcaatcacatta
+> MN166093.1 |Coxsackievirus A9 strain USA/2015/CA-RGDS-1050, complete genome|2540-3044
+--acagtccagctgcgtcttgtgtgtgccatggattagccagacccatta
+> MN228693.1 |Human rhinovirus C3 strain USA/2019/CA-RGDS-1060, complete genome|2540-3044
+--ccaatcatcatgccaccttgttgtaccttggatcagctctcatttctt
+> MN254979.1 |Enterovirus A71 strain G08, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccttggatcagcaacactcacta
+> MK061424.1 |Coxsackievirus A12 isolate HEV16537821CA12, complete genome|2540-3044
+--gcagtcctctgttacactggtgatcccctggataagcaacacccacta
+> MK061425.1 |Coxsackievirus A12 isolate HEV16087564CA12, complete genome|2540-3044
+--gcagtcctctgttacactggtgatcccctggataagcaacacccacta
+> LC506515.1 |Enterovirus A71 N0722-Sendai-2007 RNA, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> LC506516.1 |Enterovirus A71 2065-Yamagata-2004 RNA, complete genome|2540-3044
+--acagtcttctgtgacgttggtcgtgccatggattagtaacacacacta
+> MN212904.1 |Rhinovirus B strain RVB_G001-19, complete genome|2540-3044
+--acaatcaacagtagttctcaacatcccctggacttcaggagttcaatt
+> MK652136.1 |Echovirus E24 strain VEN/2018-23086, complete genome|2540-3044
+--acagtcgagctgtgttttatgcgtcccctggataagccagacacatta
+> MK652137.1 |Echovirus E11 strain USA/2018-23090, complete genome|2540-3044
+--gcagtcttcttgtgtgttatgcatcccctggattagtcagacccatta
+> MK652138.1 |Coxsackievirus B3 strain USA/2018-23091, complete genome|2540-3044
+--acagtctagctgcgtcctgtgcataccctggattagccaaacacacta
+> MN369030.1 |Rhinovirus C strain SC9810, complete genome|2540-3044
+--acagtcttcatgcactatagtggtgccatggatatcatcagggtttta
+> MN369031.1 |Rhinovirus C strain SC9996, complete genome|2540-3044
+--gcagtcatcttgctccattgtagttccatggatgtctgctgggttttt
+> MN369033.1 |Rhinovirus C strain SC9941, complete genome|2540-3044
+--gcagtcgtcttgcaccattgtggtaccatggatttcatccggtttcta
+> MN369035.1 |Human rhinovirus A54 strain SC9916, complete genome|2540-3044
+--gcaatcaactgtttctttagttgtcccttgggttagtgctagtcactt
+> MN369037.1 |Human rhinovirus A41 strain SC9861, complete genome|2540-3044
+--tcaatctacaatatcaatggtagtcccgtgggttagtgctagtcatta
+> MN369038.1 |Human rhinovirus C11 strain SC9849, complete genome|2540-3044
+--acagtcctcatgtacactagttgctccttggatgtctagcaccttcta
+> MN369039.1 |Human rhinovirus B86 strain SC9848, complete genome|2540-3044
+--acaatctaccattatcatgaacataccttggacctctggtgtgcaatt
+> MN369040.1 |Human rhinovirus A12 strain SC9843, complete genome|2540-3044
+--acaatcaacagtatctatgattgtaccatgggtatcagcaagccattt
+> MN369041.1 |Human rhinovirus B86 strain SC9826, complete genome|2540-3044
+--acaatctaccattatcatgaacataccttggacctctggtgtgcaatt
+> MN369042.1 |Human rhinovirus A68 strain SC9799, complete genome|2540-3044
+--gcaatctacagtttccatggttgtaccatgggtttcagcaagccatta
+> MN369043.1 |Human rhinovirus B86 strain SC9785, complete genome|2540-3044
+--acaatccactattataatgaatataccttggacctctggtgtgcaatt
+> MN369044.1 |Human rhinovirus B35 strain SC9780, complete genome|2540-3044
+--acaatcaacaatagtaatgacaattccatggacctcaggagtacaata
+> MN369045.1 |Human rhinovirus A53 strain SC9746, complete genome|2540-3044
+--gcagtctacaatgtccatggtagtaccatgggtttcagcaagccacta
+> MK645898.1 |Coxsackievirus A10 isolate P148/ZS/CHN/2012, complete genome|2540-3044
+--acaatcgtcagtctctttggtgataccgtggatcagtaacactcactt
+> MH750912.1 |Human poliovirus 1 isolate CHN15115/Xinjiang/CHN/2011, complete genome|2540-3044
+--acaatcctcctgcaccatggttgtgccgtggattagcaataccacata
+> MK800119.1 |Enterovirus A71 strain USA/2018-23124, complete genome|2540-3044
+--gcaatcgtctgttacccttgtgataccatggattagcaacacccacta
+> MK800121.1 |Echovirus E25 strain USA/2018-23126, complete genome|2540-3044
+--gcagtcgagttgtgtgctctgtgtgccatggattagtcagacaaacta
+> MN240514.1 |Enterovirus D68 strain USA/IN/2009-23241, complete genome|2540-3044
+--acaatctagtgttaccctgatagtaccttggattagtggatctcacta
+> MN306020.1 |Rhinovirus A strain SC0218, complete genome|2540-3044
+--acagtcaaccatatcaatgattgtgccctgggtcagtgctagtcattt
+> MN306023.1 |Rhinovirus C strain SC0323, complete genome|2540-3044
+--ccaatcatcatgtcacctcgttgtaccctggatcagctcccacttctt
+> MN306025.1 |Human rhinovirus B83 strain SC0340, complete genome|2540-3044
+--gcaatcaactatagtgatgacaataccatggacatcaggtgttcaatt
+> MN306026.1 |Rhinovirus C strain SC0364, complete genome|2540-3044
+--gcagtcatcttgcaccattgtggtaccatggatttcatccggtttcta
+> MN306034.1 |Rhinovirus B14 strain SC0641, complete genome|2540-3044
+--gcaatctaccatagtaatgacaataccatggacgtcaggggtgcaatt
+> MN306035.1 |Rhinovirus C strain SC0645, complete genome|2540-3044
+--gcagtcgtcttgcactattgtggtaccatggatttcatccggtttcta
+> MN306037.1 |Rhinovirus B strain SC0739, complete genome|2540-3044
+--acaatcaacagtagtgttgaacataccttggacctcaggagtacaatt
+> MN306047.1 |Human rhinovirus A25 strain SC0881, complete genome|2540-3044
+--acaatcgacagtatctttggttgtcccgtgggttagttctagtcattt
+> MN306049.1 |Human rhinovirus A53 strain SC0894, complete genome|2540-3044
+--gcagtctacaatgtccatggtagtaccatgggtttcagcaagccacta
+> MN306057.1 |Human rhinovirus A25 strain SC9585, complete genome|2540-3044
+--acaatcaacagtatctttggttgttccgtgggttagttctagtcactt
+> LC495296.1 |Rhinovirus B take1 genomic RNA, complete genome|2540-3044
+--gcaatccactattgttatgacaataccatggacatcaggagtgcaatt
+> MF662678.1 |Enterovirus A71 strain R165/YN/CHN/2009, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> MF662681.1 |Enterovirus A71 strain K509/YN/CHN/2010, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> MF662682.1 |Enterovirus A71 strain R262/YN/CHN/2010, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> MF662683.1 |Enterovirus A71 strain R464/YN/CHN/2010, complete genome|2540-3044
+--gcaatcgtctgttacccttgtgataccatggattagcaacactcatta
+> MF662684.1 |Enterovirus A71 strain R615/YN/CHN/2010, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> MF662685.1 |Enterovirus A71 strain R642/YN/CHN/2010, complete genome|2540-3044
+cagcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> MF662686.1 |Enterovirus A71 strain R993/YN/CHN/2010, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> MF662687.1 |Enterovirus A71 strain R1/YN/CHN/2011, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacacccatta
+> MF662688.1 |Enterovirus A71 strain R14/YN/CHN/2011, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> MF662690.1 |Enterovirus A71 strain R22/YN/CHN/2011, complete genome|2540-3044
+--gcaatcgtctgtcacccttgtaataccgtggatcagcaacactcatta
+> MF662693.1 |Enterovirus A71 strain RW14/YN/CHN/2012, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> MF662694.1 |Enterovirus A71 strain RW15/YN/CHN/2012, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> MF662697.1 |Enterovirus A71 strain K36/YN/CHN/2013, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> MF662698.1 |Enterovirus A71 strain K14/YN/CHN/2013, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacacccatta
+> MF662699.1 |Enterovirus A71 strain K34/YN/CHN/2013, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> MF662700.1 |Enterovirus A71 strain K38/YN/CHN/2013, complete genome|2540-3044
+--gcagtcgtctgctacccttgtaataccatggattagcaacactcatta
+> MF662701.1 |Enterovirus A71 strain R50/YN.CHN/2013, complete genome|2540-3044
+--gcaatcgtctgtcacccttgtgattccatggatcagcaacactcatta
+> MN181514.1 |Enterovirus B strain 2014_AFP_NGR, complete genome|2540-3044
+--acaatccagctgtgtcttgtgcataccgtggatcagtcagacacacta
+> MK307505.1 |Enterovirus A71 isolate S0254a, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> MK512666.1 |Enterovirus C96 isolate 127/SD/CHN/1991, complete genome|2540-3044
+--gcaatcaagcgcgacaatggtcgctccttggatttctaacagtgtgta
+> MK512667.1 |Enterovirus C96 isolate 184C5/SD/CHN/2009, complete genome|2540-3044
+--gcagtcaagtgcgacaatggtcgctccatggatctctaacagtgtata
+> MK512668.1 |Enterovirus C96 isolate JN13048, complete genome|2540-3044
+--acagtcaagtgcgacgatggttgccccgtggatttccaacagcgtgta
+> MH330336.1 |Rhinovirus C strain NIV1722289, complete genome|2540-3044
+--acaatcatcatgtactatggtaataccttggatatcctctgggtttta
+> KY425528.1 |Coxsackievirus A16 strain K11/YN/CHN/2011, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> KY425529.1 |Coxsackievirus A16 strain V1/YN/CHN/2015, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> KY425530.1 |Coxsackievirus A16 strain R5/YN/CHN/2011, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> KY425531.1 |Coxsackievirus A16 strain K34/YN/CHN/2011, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtaccatggatcagtaatacacacta
+> KY425532.1 |Coxsackievirus A16 strain R68/YN/CHN/2009, complete genome|2540-3044
+--acaatcttctgtgacgttggttgtgccatggattagcaacacacacta
+> KY425533.1 |Coxsackievirus A16 strain R35/YN/CHN/2012, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> KY425534.1 |Coxsackievirus A16 strain R34/YN/CHN/2012, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtaccatggatcagtaatacacacta
+> KY425535.1 |Coxsackievirus A16 strain R37/YN/CHN/2013, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> KY425536.1 |Coxsackievirus A16 strain V37/YN/CHN/2014, complete genome|2540-3044
+--gcaatcctctgtgacgttggttgtaccgtggattagcaacacacacta
+> KY425537.1 |Coxsackievirus A16 strain R141/YN/CHN/2009, complete genome|2540-3044
+--acaatcttctgtgacgttggttgtgccatggattagcaacacacacta
+> KY425538.1 |Coxsackievirus A16 strain R254/YN/CHN/2010, complete genome|2540-3044
+--acaatcttctgtgacgttggttgtgccatggattagcaacacacacta
+> KY425539.1 |Coxsackievirus A16 strain R255/YN/CHN/2010, complete genome|2540-3044
+--acaatcttctgtgacgttggttgtgccatggattagcaacacacacta
+> KY425540.1 |Coxsackievirus A16 strain V86/YN/CHN/2015, complete genome|2540-3044
+--gcagtcttctgtgacgctggtcgtgccatggatcagtaatacacacta
+> MH484164.1 |Enterovirus C99 isolate 3291/BRA-PA/10, complete genome|2540-3044
+--acaatctagttgcaccatggttgccccctggatatcaaacactgtgta
+> MH484165.1 |Enterovirus C96 isolate 3499/BRA-PA/10, complete genome|2540-3044
+--gcaatctagcgcgacaatggttgcaccatggatatctaacagtgttta
+> MH484166.1 |Enterovirus C99 isolate 3944/BRA-PA/11, complete genome|2540-3044
+--gcaatctagttgcaccatggttgccccctggatatctaacactgtgta
+> MF285621.1 |Coxsackievirus A6 isolate CVA6/S546/BJ/CHN/2010, complete genome|2540-3044
+--acaatcatcagttactctagtcataccctggattagtaacactcattt
+> MF285622.1 |Coxsackievirus A6 isolate CVA6/S845/BJ/CHN/2010, complete genome|2540-3044
+--acaatcatcagttactctagtcataccctggattagtaacactcattt
+> MF285623.1 |Coxsackievirus A6 isolate CVA6/S942/BJ/CHN/2011, complete genome|2540-3044
+--acaatcatcagttactctagtcataccctggattagtaacactcattt
+> MF285624.1 |Coxsackievirus A6 isolate CVA6/S945/BJ/CHN/2011, complete genome|2540-3044
+--acaatcatcagttactctagtcataccctggattagtaacactcattt
+> MF285625.1 |Coxsackievirus A6 isolate CVA6/S983/BJ/CHN/2011, complete genome|2540-3044
+--acaatcatcagttactctagtcataccctggattagtaacactcattt
+> MH229997.1 |Human enterovirus C105 isolate R2759, complete genome|2540-3044
+--gcaatccagtgctacccttgtggccccgtggatctcgaacaccgacta
+> MH341720.1 |Enterovirus D68 isolate 2016-R4934, complete genome|2540-3044
+--acaatctagtgtaaccctgataataccctggattagtggatcccacta
+> MH888020.1 |Coxsackievirus A12 isolate HEV786663, complete genome|2540-3044
+--gcagtcctctgttacactggtgatcccctggataagtaacacccacta
+> MK089787.1 |UNVERIFIED: Human enterovirus C117 isolate CQ6747, complete genome|2540-3044
+--ccagtctagtgcgacacttgttgcaccctggatttcaaatgtcaacta
+> MH118025.1 |Enterovirus B88 strain 11-4644-1, complete genome|2540-3044
+--gcagtcgagttgtgtgctgtgtgtgccatggataagtcagacacacta
+> MH118026.1 |Echovirus E25 strain 10-4339-2, complete genome|2540-3044
+--gcagtcgagctgtgtgctctgtgtgccatggattagtcaaacaaatta
+> MH118027.1 |Coxsackievirus A16 strain 10-2952-1, complete genome|2540-3044
+--gcaatcatcagtttccctggtgataccatggattagtaacacccattt
+> MH118028.1 |Enterovirus A76 strain 10-2188-2, complete genome|2540-3044
+--acaatcatcagtcaccctagtgataccctggattagtaatagtcattt
+> MH118029.1 |Enterovirus A76 strain 10-3291-2, complete genome|2540-3044
+--acaatcttctgtcaccctagttatcccttggatcagtaacagccattt
+> MH118030.1 |Enterovirus A76 strain 11-1302-2, complete genome|2540-3044
+--acaatcttctgttaccctagttatcccctggatcagtaacagtcattt
+> MH118031.1 |Enterovirus A90 strain 10-2879-1, complete genome|2540-3044
+--acagtcctcagtcacattagtcataccttggatcagtaacacacacta
+> MH118041.1 |Coxsackievirus A10 strain 16-2871-1, complete genome|2540-3044
+--gcaatcgtcagtttccctggtgataccatggattagtaacactcattt
+> MH118043.1 |Coxsackievirus A10 strain 15-3857-2, complete genome|2540-3044
+--acagtcgtcagtctccctggtgattccatggatcagcaacacccattt
+> MH118044.1 |Coxsackievirus A10 strain 13-2357-1, complete genome|2540-3044
+--acaatcatcagtctccctggtgataccatggattagtaacacccactt
+> MH118048.1 |Coxsackievirus A10 strain 13-1754-2, complete genome|2540-3044
+--acaatcatcagtctccctggtgataccatggattagtaacacccactt
+> MH118049.1 |Coxsackievirus A10 strain 13-1512-1, complete genome|2540-3044
+--gcagtcatcagtctccctggtaataccatggattagtaacacccactt
+> MH118054.1 |Coxsackievirus A10 strain 12-2067-2, complete genome|2540-3044
+--acagtcgtcagtttctctagtgattccatggatcagcaacactcactt
+> MH118056.1 |Coxsackievirus A10 strain 11-972-1, complete genome|2540-3044
+--acagtcatcagtctccctggtgataccatggattagtaacacccactt
+> MH118057.1 |Coxsackievirus A10 strain 11-964-1, complete genome|2540-3044
+--gcaatcatcagtctccctggtgataccatggattagtaacacccactt
+> MH118058.1 |Coxsackievirus A10 strain 11-863-1, complete genome|2540-3044
+--acaatcatcagtctccctggtgataccatggattagtaacacccactt
+> MH118059.1 |Coxsackievirus A10 strain 11-862-1, complete genome|2540-3044
+--gcaatcatcagtctccctggtgataccatggattagtaacacccactt
+> MH118061.1 |Coxsackievirus A10 strain 11-670-1, complete genome|2540-3044
+--acaatcatcagtctccctggtgataccatggattagtaacacccactt
+> MH118065.1 |Coxsackievirus A10 strain 11-3293-2, complete genome|2540-3044
+--acaatcatcagtctccctggtgataccatggattagtaacactcactt
+> MH118066.1 |Coxsackievirus A10 strain 11-3186-1, complete genome|2540-3044
+--acaatcatcagtctccctggtaataccatggattagtaatactcactt
+> MH118069.1 |Coxsackievirus A10 strain 11-1525-1, complete genome|2540-3044
+--gcaatcatcagtctccctggtgatcccatggatcagcaacacccactt
+> MH118071.1 |Coxsackievirus A10 strain 11-1208-1, complete genome|2540-3044
+--acagtcatcagtctccctggtgataccatggattagtaacacccactt
+> MH118074.1 |Coxsackievirus A10 strain 10-381-2, complete genome|2540-3044
+--gcagtcatcagtctctctagtgataccgtggatcagcaatacccactt
+> MH118076.1 |Coxsackievirus A10 strain 10-3445-2, complete genome|2540-3044
+--acaatcatcagtctccctggtgataccatggattagtaacacccattt
+> MH118077.1 |Coxsackievirus A10 strain 10-3432-2, complete genome|2540-3044
+--gcagtcatcagtctctctagtgataccgtggatcagcaatacccattt
+> MH118078.1 |Coxsackievirus A10 strain 10-3408-2, complete genome|2540-3044
+--acagtcgtcagtctccctggtgataccatggattagtaatacccactt
+> MH118079.1 |Coxsackievirus A10 strain 10-2792-1, complete genome|2540-3044
+--acagtcatcagtctccttggtgataccatggattagtaacactcactt
+> MH118080.1 |Coxsackievirus A10 strain 10-2565-1, complete genome|2540-3044
+--acagtcatcagtctccctcgtgataccatggattagtaacacccactt
+> MH118081.1 |Coxsackievirus A10 strain 10-2064-1, complete genome|2540-3044
+--gcagtcatcagtctctctagtgataccgtggatcagcaatacccactt
+> MH118082.1 |Coxsackievirus A10 strain 10-1989-1, complete genome|2540-3044
+--acagtcgtcagtctccttggtgataccatggattagtaacacccattt
+> MH118083.1 |Coxsackievirus A10 strain 10-1183-1, complete genome|2540-3044
+--gcagtcatcagtctccctggtgataccatggattagtaacacccactt
+> MH118085.1 |Coxsackievirus A10 strain 09-2093-1, complete genome|2540-3044
+--acaatcatcagtctccctggtgattccatggattagtaacacccactt
+> MH118088.1 |Coxsackievirus A10 strain 09-1895-1, complete genome|2540-3044
+--acagtcatcagtctccctggtgataccatggattagtaacacccactt
+> MH118089.1 |Coxsackievirus A10 strain 09-1701-1, complete genome|2540-3044
+--acaatcatcagtctccctggtgattccatggattagtaacacccactt
+> MH144591.1 |Coxsackievirus A10 strain 11-4519-1, complete genome|2540-3044
+--acaatcatcagtctccctggtgataccatggattagtaacacccattt
+> MH144592.1 |Coxsackievirus A10 strain 13-2591-2, complete genome|2540-3044
+--gcagtcatcagtctccttggtgataccatggattagcaacacccactt
+> MH144595.1 |Coxsackievirus A10 strain 11-759-2, complete genome|2540-3044
+--acaatcatcagtctccctggtgataccatggattagtaacacccactt
+> MH144598.1 |Human enterovirus 79 strain 17-2255-1_E79, complete genome|2540-3044
+--gcaatccagctgcgtgttatgtgtgccctggatcagccagtcacacta
+> MH144599.1 |Coxsackievirus A10 strain 13-2380-2_A10, complete genome|2540-3044
+--gcagtcatcagtctccctggtaataccatggattagtaacacccactt
+> MH144600.1 |Coxsackievirus B2 strain 13-2380-2_B2, complete genome|2540-3044
+--gcaatctagctgtgtgttgtgcgtgccttggattagccaaacacatta
+> MH144601.1 |Enterovirus B88 strain 11-1899-1, complete genome|2540-3044
+--gcaatcaagctgtgtgctgtgcgtgccatggataagtcagacacacta
+> MH144603.1 |Coxsackievirus A10 strain 13-2053-1_A10, complete genome|2540-3044
+--acaatcatcagtctccctagtgataccatggattagcaacacccactt
+> MH144604.1 |Echovirus E24 strain 13-2053-1_E24, complete genome|2540-3044
+--acaatctagctgtgtgttgtgtgtgccctggataagtcaaacgcatta
+> MH144605.1 |Echovirus E9 strain 11-2042-1, complete genome|2540-3044
+--acaatctagctgtgtgttgtgtgtaccgtggattagtcaaacacacta
+> MH144606.1 |Enterovirus C99 strain 12-008-2_C99, complete genome|2540-3044
+--gcagtcaagttgcacaatggtagcaccttggatttccaacacagttta
+> MH144607.1 |Enterovirus B88 strain 12-008-2_E88, complete genome|2540-3044
+--gcagtcaagttgtgtgctgtgcgtgccttggataagccagacacacta
+> MG720256.1 |Echovirus E18 isolate E18-221/HeB/CHN/2015, complete genome|2540-3044
+--tcaatcaagctgtgtcttgtgtgttccctggattagtcaatcacacta
+> MG720257.1 |Echovirus E18 isolate E18-291/HeB/CHN/2015, complete genome|2540-3044
+--tcaatcaagctgtgtcttgtgcgttccctggattagtcaatcacacta
+> MG720258.1 |Echovirus E18 isolate E18-393/HeB/CHN/2015, complete genome|2540-3044
+--tcaatcaagctgtgtcttgtgcgttccctggattagtcaatcacacta
+> MG720259.1 |Echovirus E18 isolate E18-398/HeB/CHN/2015, complete genome|2540-3044
+--tcaatcaagctgtgtcttgtgcgttccctggattagtcaatcacacta
+> MG720260.1 |Echovirus E18 isolate E18-HeB15-54462/HeB/CHN/2015, complete genome|2540-3044
+--tcaatcaagttgcgttttgtgcgttccttggatcagtcagtcacacta
+> MG720261.1 |Echovirus E18 isolate E18-HeB15-54498/HeB/CHN/2015, complete genome|2540-3044
+--tcaatcaagctgtgtcttgtgcgttccctggattagtcaatcacacta
+> MH716314.1 |Enterovirus A71 isolate B5-57, complete genome|2540-3044
+--acaatcatctgttactcttgtgataccgtggatcagtaacacccacta
+> MH716315.1 |Enterovirus A71 isolate B5-58, complete genome|2540-3044
+--acaatcatctgttactcttgtgataccgtggatcagtaacacccacta
+> MH716316.1 |Enterovirus A71 isolate B5-59, complete genome|2540-3044
+--acaatcatctgttactcttgtgataccgtggatcagtaacacccacta
+> MH716354.1 |Enterovirus A71 isolate B5-97, complete genome|2540-3044
+--acaatcatctgttacccttgtgataccatggattagtaacacccatta
+> MH716355.1 |Enterovirus A71 isolate B5-98, complete genome|2540-3044
+--acaatcatctgttacccttgtgataccatggattagtaacacccatta
+> MH716356.1 |Enterovirus A71 isolate B5-99, complete genome|2540-3044
+--acaatcatctgttacccttgtgataccatggattagtaacacccatta
+> MH716375.1 |Enterovirus A71 isolate B5-118, complete genome|2540-3044
+--gcaatcatctgttacccttgtgataccatggattagtaacacccacta
+> MK520815.1 |Human rhinovirus C32 strain USA/CA/RGDS-2016-1008, complete genome|2540-3044
+--acaatcaacatgtaacatggttatcccgtggatttcagcgcacaacta
+> MK532311.1 |Echovirus E25 strain USA/CA/RGDS-2017-1010, complete genome|2540-3044
+--gcaatcgagttgtgtgctatgcgtgccatggatcagtcagacaaatta
+> MK580458.1 |Echovirus E9 strain USA/CA/RGDS-2017-1011, complete genome|2540-3044
+--gcaatcaagctgtgtgttatgcgtaccatggattagccagacacatta
+> MG982663.1 |Coxsackievirus A21 strain NIV17-608-2, complete genome|2540-3044
+--gcagtctagctgctctatggtagcaccctggatttccaacacagtgta
+> MG982664.1 |Enterovirus B88 strain NIV-17-3150-2, complete genome|2540-3044
+--gcaatcaagttgtgtgctgtgtgtgccatggataagtcagacacacta
+> MK238483.1 |Echovirus E30 strain USA/2017/CA-RGDS-1005, complete genome|2540-3044
+--gcaatccagctgtgtactgtgcgtgccgtggatcagtcaaaccaacta
+> MK279354.1 |Rhinovirus C41 strain USA/CA/2016-RGDS-1006, complete genome|2540-3044
+--gcaatcatcgtgcactattgtagtgccatggatatcctcaaatttcta
+> MF574099.1 |Coxsackievirus B5 strain KMA2/YN/CHN/2010, complete genome|2540-3044
+--gcaatcgagctgcgtgttgtgcattccatggatcagccaaacgcacta
+> MH201081.1 |Coxsackievirus B5 isolate CVB5-JZ-WT, complete genome|2540-3044
+--gcaatcgagctgcgtgttgtgcattccatggatcagccaaacgcacta
+> MH201082.1 |Coxsackievirus B5 isolate CVB5-JZ-P10, complete genome|2540-3044
+--gcaatcgagctgcgtgttgtgcattccatggatcagccaaacgcacta
+> MH201083.1 |Coxsackievirus B5 isolate CVB5-JZ-P20, complete genome|2540-3044
+--gcaatcgagctgcgtgttgtgcattccatggatcagccaaacgcacta
+> MH201084.1 |Coxsackievirus B5 isolate CVB5-JZ-P30, complete genome|2540-3044
+--gcaatcgagctgcgtgttgtgcattccatggatcagccaaacgcacta
+> MH201085.1 |Coxsackievirus B5 isolate CVB5-JZ-P40, complete genome|2540-3044
+--gcaatcgagctgcgtgttgtgcattccatggatcagccaaacgcacta
+> MH201086.1 |Coxsackievirus B5 isolate CVB5-JZ-P50, complete genome|2540-3044
+--gcaatcgagctgcgtgttgtgcattccatggatcagccaaacgcacta
+> MK105976.1 |Enterovirus D68 isolate 14ISO0043, complete genome|2540-3044
+--acaatccagtgtcactctggtaataccttggatcagtggatcccacta
+> MK105977.1 |Enterovirus D68 isolate 14ISO18022, complete genome|2540-3044
+--acaatccagtgtcactctggtaataccttggatcagtggatcccacta
+> MK105979.1 |Enterovirus D68 isolate 14ISO0120062, complete genome|2540-3044
+--acaatccagtgtcactctggtaataccttggatcagtggatcccacta
+> MK159694.1 |Echovirus E7 strain Nigeria/AFP/2014, complete genome|2540-3044
+--gcagtctagctgtgtattgtgtatcccatggatcagccaaacacatta
+> MK167031.1 |Human rhinovirus A40 strain 7D5, complete genome|2540-3044
+--acaatcaacaatatctttagttgtgccttgggtaagtgctagccactt
+> MF083152.1 |Echovirus E12 strain K605/YN/CHN/2013, complete genome|2540-3044
+--ccagtccagttgtgtgttgtgcgtgccatggatcagtcaaacccacta
+> MF083153.1 |Echovirus E12 strain K624/YN/CHN/2013, complete genome|2540-3044
+--ccagtccagttgtgtgttgtgcgtgccatggatcagtcaaacccacta
+> MF083154.1 |Echovirus E12 strain K1529/YN/CHN/2013, complete genome|2540-3044
+--ccagtccagttgtgtgttgtgcgtgccatggatcagtcaaacccacta
+> MH785183.2 |Coxsackievirus A20 strain NGR_2016, complete genome|2540-3044
+--acagtcatcctgcaccatggtcgttccgtggatt-gcaacactgcata
+> MH614922.1 |Enterovirus B80 isolate HT-LYKH203F/XJ/CHN/2011, complete genome|2540-3044
+--acaatccagctgtgtattgtgcatcccatggataagccaaacacatta
+> MH614923.1 |Enterovirus B80 isolate HT-TSLH64F/XJ/CHN/2011, complete genome|2540-3044
+--acaatccagctgtgtattgtgcatcccatggataagccaaacacatta
+> MH614924.1 |Enterovirus B80 isolate HTYT-XBBZH73F/XJ/CHN/2011, complete genome|2540-3044
+--acaatccagctgtgtattgtgcatcccatggataagccaaacacatta
+> MH614925.1 |Enterovirus B80 isolate KOUAN67/XZ/CHN/2010, complete genome|2540-3044
+--acaatccagctgtgtattgtgtatcccatggataagtcagacacatta
+> MH836323.1 |Coxsackievirus B3 isolate XZ2011028, complete genome|2540-3044
+--gcagtctagttgtgtcctatgcataccatggataagccaaacacacta
+> MH836324.1 |Coxsackievirus B3 isolate XZ2011025, complete genome|2540-3044
+--gcagtctagttgtgtcctatgcataccatggataagccaaacacacta
+> MK069966.1 |Enterovirus B73 isolate TO-127, complete genome|2540-3044
+--acaatcaagttgtgtcctgtgtatcccgtggatcagtcaaacacatta
+> MG756691.1 |Enterovirus A71 strain TW-50837-2016, complete genome|2540-3044
+--gcaatcatctgttacccttgtaataccatggattagcaacactcatta
+> MG756692.1 |Enterovirus A71 strain TW-02392-2016, complete genome|2540-3044
+--gcaatcatctgttacccttgtaataccatggattagcaacactcatta
+> MG756693.1 |Enterovirus A71 strain TW-50996-2015, complete genome|2540-3044
+--gcaatcatctgttacccttgtaataccatggattagcaacactcatta
+> MG756705.1 |Enterovirus A71 strain TW-72043-2007, complete genome|2540-3044
+--acaatcgtctgttactcttgtgataccatggattagcaacacccacta
+> MG756739.1 |Enterovirus A71 strain TW-02369-2012, complete genome|2540-3044
+--acaatcgtctgtcacccttgtgataccatggattagtaacacccacta
+> MG880745.2 |Enterovirus C strain InDRE2764/MEX/2017, complete genome|2540-3044
+--tcaatcctcatgcaccatgctagctccttggatatccaacacagtcta
+> MG880747.2 |Enterovirus C strain InDRE2768/MEX/2017, complete genome|2540-3044
+--tcaatcctcatgcaccatgctagctccttggatatccaacacagtcta
+> MG880748.2 |Enterovirus C strain InDRE2771/MEX/2017, complete genome|2540-3044
+--tcaatcctcatgcaccatgctagctccttggatatccaacacagtcta
+> MG880749.2 |Enterovirus C strain InDRE2773/MEX/2017, complete genome|2540-3044
+--tcaatcctcatgcaccatgctagctccttggatatccaacacagtcta
+> MG880751.2 |Enterovirus C strain InDRE2780/MEX/2017, complete genome|2540-3044
+--tcaatcctcatgcaccatgctagctccttggatatccaacacagtcta
+> MH830353.1 |Echovirus E6 isolate E6-366/HB/CHN/2015, complete genome|2540-3044
+--gcaatccagttgtgtgctgtgcgtaccatggatcagccaaacgcacta
+> KT946713.1 |Enterovirus C99 strain K292/YN/CHN/2013, complete genome|2540-3044
+--acagtctagctgcaccatggttgcaccttggatctccaacaccgtcta
+> KT965725.1 |Echovirus E33 strain YNK35/CHN/2013, complete genome|2540-3044
+--gcagtctagttgcgtgttatgcgtaccttggattagccaaacacatta
+> MH899591.1 |Rhinovirus A isolate HRV_A_SK001, complete genome|2540-3044
+--gcaatcaacaatatctatgattgtaccttgggttagtgctagtcattt
+> MG642820.1 |Enterovirus B strain LEV14, complete genome|2540-3044
+--acaatcaagctgtgtattgtgcataccatggattagccaaacacacta
+> MH732737.1 |Echovirus E7 strain Ibadan_NGR_2010, complete genome|2540-3044
+--gcaatctagttgtgtgctatgcatcccatggattagccaaacgcatta
+> MH745407.1 |Echovirus E19 strain NGR_2014, complete genome|2540-3044
+--gcagtcaagttgcgtgttgtgcgtgccatggatcagtcagacacacta
+> MH752985.1 |Human rhinovirus C42 strain USA/CA/2016-23027, complete genome|2540-3044
+--acaatcatcatgtactatggtaataccttggatatcctctggatttta
+> MH752986.1 |Echovirus E9 strain USA/MI/2004-23028, complete genome|2540-3044
+--gcagtcaagctgcgtgttgtgtgtaccgtggattagtcagacgcacta
+> MH752987.1 |Coxsackievirus A9 strain USA/MI/2005-23029, complete genome|2540-3044
+--gcaatcaagctgcgttctgtgtgtcccatggattagtcaaacccatta
+> MH752988.1 |Coxsackievirus B5 strain USA/MI/2009-23030, complete genome|2540-3044
+--gcaatcaagttgtgtgctgtgcataccatggattagtcaaacacatta
+> MH752989.1 |Echovirus E11 strain USA/MI/2016-23031, complete genome|2540-3044
+--gcagtcctcctgcgtgctgtgcatcccttggatcagtcagactcatta
+> KX641240.1 |Echovirus E6 strain K727/YN/CHN/2013, complete genome|2540-3044
+--acaatctagttgtgtgctgtgcgtaccatggatcagccaaacgcacta
+> KX641241.1 |Echovirus E6 strain K843/YN/CHN/2013, complete genome|2540-3044
+--acaatctagttgtgtgctgtgcgtaccatggatcagccaaacgcacta
+> MH718269.1 |Enterovirus A71 strain USA/CO/2018-23026, complete genome|2540-3044
+--gcaatcgtctgttacccttgtgataccatggattagcaacacccacta
+> MG674827.1 |Coxsackievirus A16 isolate TA271/Shandong/China/2015, complete genome|2540-3044
+--acagtcttctgtgacgttggtcgtgccatggattagtaatacacacta
+> MG957117.1 |Coxsackievirus A16 strain SH-HP-16-51, complete genome|2540-3044
+--acaatcttctgtgacgttagtcataccttggatcagcaacacacatta
+> MG253032.1 |Enterovirus A90 isolate MYH12F/XJ/CHN/2011, complete genome|2540-3044
+--acaatcatctgtcaccttggtaattccctggattagtaacacacatta
+> MG253033.1 |Enterovirus A90 isolate HTH08F/XJ/CHN/2011, complete genome|2540-3044
+--acaatcatctgtcaccttggtaattccctggattagtaacacacatta
+> MG253034.1 |Enterovirus A90 isolate PSH40F/XJ/CHN/2011, complete genome|2540-3044
+--acaatcatctgtcaccttggtaattccctggattagtaacacacatta
+> MG253035.1 |Enterovirus A90 isolate KSH13F/XJ/CHN/2011, complete genome|2540-3044
+--acaatcatctgtcaccttggtaattccctggattagtaacacacatta
+> MG253036.1 |Enterovirus A90 isolate SCH05F/XJ/CHN/2011, complete genome|2540-3044
+--acaatcatctgtcaccttagtaattccctggattagtaacacacatta
+> MF281257.1 |Coxsackievirus A2 isolate 176/GD/CHN/2015, complete genome|2540-3044
+--gcaatcgtcggtcacgctagtggtcccatggataagcaacactcacta
+> MF434051.1 |Coxsackievirus A16 strain ZJ6, complete genome|2540-3044
+--acagtcttctgtgacgttggtcgtgccatggattagtaatacacacta
+> MH152412.1 |Enterovirus B, complete genome|2540-3044
+--acaatccagctgcgtgttatgtgtaccatggattagccaaaccaacta
+> MH128992.1 |Enterovirus C109 strain USA/FL/2016-21002, complete genome|2540-3044
+--gcagtctagtgtcacactagtagcaccatggatttcaaacacggacta
+> MH128993.1 |Enterovirus C109 strain USA/FL/2016-21003, complete genome|2540-3044
+--gcagtctagtgtcacactagtagcaccatggatttcaaacacggacta
+> MG780414.1 |Coxsackievirus B1 strain CVB1/XM0108, complete genome|2540-3044
+--acaatcaagctgcgtgttgtgcgtaccgtggattagccaaacacacta
+> KT946714.1 |Human poliovirus 3 strain RF108/YN/CHN/2010, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KT946715.1 |Human poliovirus 3 strain RF134/YN/CHN/2010, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KT946716.1 |Human poliovirus 3 strain RF146/YN/CHN/2010, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KT946717.1 |Human poliovirus 3 strain RF151/YN/CHN/2010, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> MH010198.1 |Coxsackievirus A16 isolate CVA16/Shenzhen500/CHN/2014, complete genome|2540-3044
+--acaatcttctgtaacgttggttgtaccatggattagtaacacacacta
+> MH010199.1 |Coxsackievirus A16 isolate CVA16/Shenzhen469/CHN/2015, complete genome|2540-3044
+--gcaatcttctgtgacgttggtcgtgccatggatcagtaacacacacta
+> MH010200.1 |Coxsackievirus A16 isolate CVA16/Shenzhen87/CHN/2016, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> MH010201.1 |Coxsackievirus A16 isolate CVA16/Shenzhen289/CHN/2016, complete genome|2540-3044
+--gcaatcttctttgacgttggttgtgccatggatcagtaatacacacta
+> MH010202.1 |Coxsackievirus A16 isolate CVA16/Shenzhen76/CHN/2017, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> MH010203.1 |Coxsackievirus A16 isolate CVA16/Shenzhen169/CHN/2017, complete genome|2540-3044
+--acaatcatctgtgacgttggttgtgccatggattagtaacactcacta
+> MH010204.1 |Coxsackievirus A16 isolate CVA16/Shenzhen174/CHN/2017, complete genome|2540-3044
+--acagtcttccgtgacgttggttgtgccatggattagcaacacacacta
+> MH010205.1 |Coxsackievirus A16 isolate CVA16/Shenzhen189/CHN/2017, complete genome|2540-3044
+--acagtcttccgtgacgttggttgtgccatggattagcaacacacacta
+> MH010206.1 |Coxsackievirus A16 isolate CVA16/Shenzhen220/CHN/2017, complete genome|2540-3044
+--acagtcttctgtgacgttggtcgtaccatggatcagtaatacacacta
+> MG773126.1 |Enterovirus A71 strain Huainan201405, complete genome|2540-3044
+--gcaatcatctgttacccttgtgataccatggattagcaacactcatta
+> MG182694.1 |Coxsackievirus A16 (strain CVA16-GZ), complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> MH043132.1 |Echovirus E7 isolate Wallace, complete genome|2540-3044
+--tcagtcgagctgtgttttgtgcatcccatggataagtcagacacacta
+> MH043133.1 |Echovirus E7 isolate 98-57213, complete genome|2540-3044
+--tcagtcgagctgtgttttgtgcatcccatggataagtcagacacacta
+> MH043134.1 |Echovirus E7 isolate 98-59065, complete genome|2540-3044
+--gcaatctagctgcgtcttgtgcatcccatggattagtcagacacatta
+> MH043135.1 |Echovirus E7 isolate 98-60628, complete genome|2540-3044
+--gcaatctagctgcgtcttgtgcatcccatggattagtcagacacatta
+> MH043136.1 |Echovirus E7 isolate 07VI447, complete genome|2540-3044
+--gcaatctagttgtgttttgtgcattccatggattagtcagacacacta
+> MH043137.1 |Echovirus E7 isolate RIGVIR, complete genome|2540-3044
+--gcaatccagttgcgttctatgtattccatggatcagtcagacacatta
+> MG881840.1 |Human rhinovirus C15 strain HRV/C/BuenosAires/Arg/001/2017, complete genome|2540-3044
+--gcagtcgtcttgcaccattgtggtaccatggatttcatctggttttta
+> MG450666.1 |Coxsackievirus A16 strain HF146/SD/CHN/2008, complete genome|2540-3044
+--acagtcttctgtgacgttggtcgtgccatggattagtaacacacacta
+> MG950178.1 |Human rhinovirus C56 strain USA/2016/CA-RGDS-1002, complete genome|2540-3044
+--gcaatcttcttgcacaatggttgtaccatggatgtcttcaggatttta
+> MG950179.1 |Human rhinovirus C56 strain USA/2017/CA-RGDS-1003, complete genome|2540-3044
+--gcaatcttcttgcacaatggttgtaccatggatgtcttcaggatttta
+> MG581490.1 |Enterovirus A71 isolate EV71-NJ2017iso1, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KY792576.1 |Coxsackievirus A16 isolate CV-A16-A01-BLR-IN, complete genome|2540-3044
+--acagtcttctgtaacgttggtcgtaccgtggatcagtaatacacacta
+> KY792577.1 |Coxsackievirus A16 isolate CV-A16-A02-BLR-IN, complete genome|2540-3044
+--acagtcttctgtgacgttggtcgtaccatggatcagtaacacacacta
+> KY792578.1 |Coxsackievirus A16 isolate CV-A16-A06-BLR-IN, complete genome|2540-3044
+--acagtcttctgtaacgttggtcgtaccgtggatcagtaatacacacta
+> KY792579.1 |Coxsackievirus A16 isolate CV-A16-A10-BLR-IN, complete genome|2540-3044
+--acagtcttctgtaacgtttgtggtaccatggatcagtaatacacacta
+> KY792580.1 |Coxsackievirus A16 isolate CV-A16-A13-BLR-IN, complete genome|2540-3044
+--acagtcttctgtgacgttggtcgtaccatggatcagtaacacacacta
+> KY792581.1 |Coxsackievirus A16 isolate CV-A16-A122-BLR-IN, complete genome|2540-3044
+--acagtcttctgtaacgtttgtggtaccatggatcagtaatacacacta
+> KY792582.1 |Coxsackievirus A16 isolate CV-A16-A128-BLR-IN, complete genome|2540-3044
+--acagtcttctgtgacgttggtcgtaccatggatcagtaacacacacta
+> KY792584.1 |Coxsackievirus A16 isolate CV-A16-M69-BLR-IN, complete genome|2540-3044
+--acagtcttctgtgacgttggtcgtaccatggatcagtaacacacacta
+> KY792585.1 |Echovirus E19 isolate PDV_BLR_IN, complete genome|2540-3044
+--gcagtcgagctgtgtactgtgcgtcccatggattagtcaaacacacta
+> KU379646.1 |Echovirus E33 strain YNA12/CHN/2013, complete genome|2540-3044
+--gcagtctagttgcgtgttatgcgtaccttggattagccaaacacatta
+> MF405075.1 |Enterovirus A71 isolate EV71/SZ08/CHN/2013, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> MF431793.1 |Enterovirus A71 isolate EV71/SZ17/CHN/2013, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> MF678293.1 |Human poliovirus 3 isolate NSW-V01-2005-PV3, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> MF678294.1 |Coxsackievirus A19 isolate NSW-V03-2008-CVA19, complete genome|2540-3044
+--acagtccagtgctacaatggtggccccttggatatcaaatgtcaacta
+> MF678295.1 |Coxsackievirus B2 isolate NSW-V06-2008-CVB2, complete genome|2540-3044
+--gcaatccagctgcgtattgtgtgtaccttggattagccaaacacacta
+> MF678296.1 |Echovirus E25 isolate NSW-V07-2007-ECHO25, complete genome|2540-3044
+--gcagtcgagctgtgtgctatgtgtgccatggattagtcagacaaatta
+> MF678297.1 |Echovirus E25 isolate NSW-V08-2008-ECHO25, complete genome|2540-3044
+--gcagtcaagctgtgtgctctgtgtgccatggattagtcagacaaacta
+> MF678298.1 |Echovirus E25 isolate NSW-V09-2008-ECHO25, complete genome|2540-3044
+--gcagtcaagctgtgtgctctgtgtgccatggattagtcagacaaacta
+> MF678299.1 |Coxsackievirus A16 isolate NSW-V10-2008-CVA16, complete genome|2540-3044
+--acaatcttctgtgacgttggttgtgccatggattagcaacacacacta
+> MF678300.1 |Coxsackievirus B4 isolate NSW-V11-2010-CVB4, complete genome|2540-3044
+--acaatccagctgtgtattatgtgtaccatggattagtcagactcatta
+> MF678301.1 |Echovirus E18 isolate NSW-V13A-2008-ECHO18, complete genome|2540-3044
+--tcaatcaagttgcgttttgtgcgttccctggatcagtcagtcacacta
+> MF678302.1 |Coxsackievirus B3 isolate NSW-V13B-2008-CVB3, complete genome|2540-3044
+--acaatcaagttgcgtgctgtgtataccctggataagccaaacacacta
+> MF678303.1 |Coxsackievirus A9 isolate NSW-V14-2009-CVA9, complete genome|2540-3044
+--gcaatcaagctgcgttctgtgtgtcccatggattagtcaaacccatta
+> MF678304.1 |Coxsackievirus B3 isolate NSW-V15-2012-CVB3, complete genome|2540-3044
+--acagtctagctgcgtcctatgcataccctggattagccaaacacacta
+> MF678305.1 |Coxsackievirus B2 isolate NSW-V16-2005-CVB2, complete genome|2540-3044
+--gcaatccagctgtgtgttgtgcgtaccgtggattagtcaaacacatta
+> MF678306.1 |Coxsackievirus B2 isolate NSW-V17-2006-CVB2, complete genome|2540-3044
+--gcaatccagctgcgtattgtgtgtaccttggattagccaaacacacta
+> MF678307.1 |Echovirus E6 isolate NSW-V18-2007-ECHO6, complete genome|2540-3044
+--gcagtctagctgcgtgttgtgtgtaccatggatcagccagacacatta
+> MF678308.1 |Coxsackievirus B5 isolate NSW-V19-2008-CVB5, complete genome|2540-3044
+--acagtccagctgcgtgttatgtatcccatggattagtcaaacgcatta
+> MF678309.1 |Coxsackievirus A9 isolate NSW-V20-2008-CVA9, complete genome|2540-3044
+--gcaatcaagctgcgttctgtgtgtcccatggattagccaaactcacta
+> MF678310.1 |Coxsackievirus A2 isolate NSW-V21-2010-CVA2, complete genome|2540-3044
+--gcaatcttcagtgacattagtggtcccttggattagcaatactcatta
+> MF678311.1 |Coxsackievirus B3 isolate NSW-V22-2009-CVB3, complete genome|2540-3044
+--gcaatctagctgcgtcctgtgcataccctggattagtcaaacacatta
+> MF678312.1 |Coxsackievirus A10 isolate NSW-V23-2007-CVA10, complete genome|2540-3044
+--acaatcgtcagtttccttagtgataccttggatcagcaacacccactt
+> MF678313.1 |Coxsackievirus A16 isolate NSW-V24-2008-CVA16, complete genome|2540-3044
+--acaatcttctgtgacgttggttgtgccatggattagcaacacacacta
+> MF678314.1 |Coxsackievirus B3 isolate NSW-V25-2015-CVB3, complete genome|2540-3044
+--acagtctagctgcgtcctgtgcataccctggattagccaaacacacta
+> MF678316.1 |Echovirus E7 isolate NSW-V28-2007-ECHO7, complete genome|2540-3044
+--gcaatctagttgtgttttgtgcattccatggattagtcagacacacta
+> MF678317.1 |Coxsackievirus B2 isolate NSW-V29-2008-CVB2, complete genome|2540-3044
+--gcaatccagctgcgtattgtgtgtgccttggattagccaaacacacta
+> MF678319.1 |Coxsackievirus B4 isolate NSW-V31-2010-CVB4, complete genome|2540-3044
+--acaatccagctgtgtattatgtgtaccatggattagtcagactcatta
+> MF678320.1 |Echovirus E9 isolate NSW-V32-2008-ECHO9, complete genome|2540-3044
+--gcagtcaagttgtgtattgtgtgttccatggatcagccaaacgcatta
+> MF678322.1 |Coxsackievirus A2 isolate NSW-V34-2008-CVA2, complete genome|2540-3044
+--gcaatcctcagtgacgttagtggttccctggattagcaatactcacta
+> MF678323.1 |Echovirus E7 isolate NSW-V35A-2006-ECHO7, complete genome|2540-3044
+--acaatctagttgtgttttgtgcattccgtggattagtcagacacacta
+> MF678324.1 |Coxsackievirus B3 isolate NSW-V35B-2006-CVB3, complete genome|2540-3044
+--acagtctagctgcgtcctatgcataccctggattagccaaacacacta
+> MF678325.1 |Echovirus E7 isolate NSW-V36-2012-ECHO7, complete genome|2540-3044
+--acaatctagttgtgttttgtgcattccgtggattagtcagacacacta
+> MF678326.1 |Coxsackievirus B3 isolate NSW-V37-2013-CVB3, complete genome|2540-3044
+--acagtctagctgcgtcctatgcataccctggattagccaaacacacta
+> MF678327.1 |Coxsackievirus B3 isolate NSW-V38A-2009-CVB3, complete genome|2540-3044
+--acagtctagctgcgtcctatgcataccctggattagccaaacacacta
+> MF678328.1 |Coxsackievirus B3 isolate NSW-V39-2009-CVB3, complete genome|2540-3044
+--acagtctagctgcgtcctatgcataccctggattagccaaacacacta
+> MF678329.1 |Coxsackievirus B3 isolate NSW-V40-2006-CVB3, complete genome|2540-3044
+--acagtctagctgcgtcctatgcataccctggattagccaaacacacta
+> MF678330.1 |Coxsackievirus A9 isolate NSW-V41-2013-CVA9, complete genome|2540-3044
+--acaatcaagctgcgttctgtgtgtcccatggattagtcaaacccatta
+> MF678331.1 |Coxsackievirus B2 isolate NSW-V42-2008-CVB2, complete genome|2540-3044
+--gcaatctagctgcgtattgtgtgtaccttggattagccaaacacacta
+> MF678332.1 |Coxsackievirus A16 isolate NSW-V43-2006-CVA16, complete genome|2540-3044
+--acaatcttctgtgacgttggttgtgccatggattagcaacacacacta
+> MF678333.1 |Coxsackievirus A2 isolate NSW-V44-2008-CVA2, complete genome|2540-3044
+--acagtcttcagtgacattagtggtgccctggattagtaatactcatta
+> MF678334.1 |Coxsackievirus A2 isolate NSW-V45-2005-CVA2, complete genome|2540-3044
+--acaatcttcagtgacattagtggtgccctggattagtaatactcatta
+> MF678335.1 |Echovirus E30 isolate NSW-V46-2008-ECHO30, complete genome|2540-3044
+--acaatctagctgtgtattgtgcgtaccatggatcagccaaaccaatta
+> MF678336.1 |Echovirus E9 isolate NSW-V47A-2005-ECHO9, complete genome|2540-3044
+--gcaatcgagctgcgtgttgtgtgtgccatggattagccaaacgcacta
+> MF678337.1 |Echovirus E30 isolate NSW-V47B-2005-ECHO30, complete genome|2540-3044
+--acaatctagctgtgtattgtgcgtaccatggatcagccaaaccaatta
+> MF678338.1 |Coxsackievirus A2 isolate NSW-V48-2008-CVA2, complete genome|2540-3044
+--gcaatcttcagtaacgttggtagttccttggattagcaacactcatta
+> MF678339.1 |Echovirus E7 isolate NSW-V49-2012-ECHO7, complete genome|2540-3044
+--acaatctagttgtgttttgtgcattccgtggattagtcagacacacta
+> MF678340.1 |Coxsackievirus B5 isolate NSW-V50-2008-CVB5, complete genome|2540-3044
+--acagtccagctgcgtgttatgtatcccatggatcagtcaaacacatta
+> MF678341.1 |Coxsackievirus B5 isolate NSW-V51-2008-CVB5, complete genome|2540-3044
+--acagtccagctgcgtgttatgtatcccatggatcagtcaaacacatta
+> MF678342.1 |Coxsackievirus B2 isolate NSW-V52-2008-CVB2, complete genome|2540-3044
+--gcaatccagctgtgtgttgtgcgtaccttggattagccaaacacatta
+> MF678343.1 |Coxsackievirus B2 isolate NSW-V53-2010-CVB2, complete genome|2540-3044
+--gcaatccagctgtgtgttgtgcgtaccgtggattagtcaaacacatta
+> MF678344.1 |Echovirus E9 isolate NSW-V54-2005-ECHO9, complete genome|2540-3044
+--gcaatcaagctgcgtgttgtgtgtgccatggattagccaaacgcacta
+> MF678346.1 |Coxsackievirus A9 isolate NSW-V56-2006-CVA9, complete genome|2540-3044
+--gcaatcaagctgcgttctgtgtgtcccatggattagccaaactcacta
+> MF678347.1 |Coxsackievirus B4 isolate NSW-V57-2007-CVB4, complete genome|2540-3044
+--gcaatccagttgtgtgttgtgtgtgccatggattagtcagacccacta
+> MF678348.1 |Echovirus E25 isolate NSW-V58-2010-ECHO25, complete genome|2540-3044
+--gcaatcgagttgtgtgctctgcgtgccatggattagccagacgaatta
+> MF189180.1 |Coxsackievirus A16 strain USA/CT/2016-19518, complete genome|2540-3044
+--gcagtcttctgtgacgttggttgtgccatggattagcaatacgcacta
+> KY941931.1 |Human poliovirus 1 strain ETH1319533, complete genome|2540-3044
+--acaatcctcatgcaccatggtggtgccttggatcagcaacacaactta
+> KY941933.1 |Human poliovirus 3 strain NIE1219535, complete genome|2540-3044
+--gcagtcctcatgcacgatggtggttccatggattagtaacgtcacata
+> KY941934.1 |Human poliovirus 3 strain PAK1019536, complete genome|2540-3044
+--gcaatcttcatgtactatggtagttccatggatcagcaacgtgacata
+> KY941935.1 |Human poliovirus 1 strain PAK1519534, complete genome|2540-3044
+--acaatcttcctgcaccatggttgtaccgtggattagcaacactacata
+> KY981557.1 |Echovirus E11 strain 23/ISR/1997, complete genome|2540-3044
+--gcaatcctcatgcgtgttatgtatcccttggattagccaaacccatta
+> KY981558.1 |Echovirus E11 strain 535/ISR/1999, complete genome|2540-3044
+--gcagtcctcttgtgtgctatgcatcccttggattagtcagactcatta
+> KY981559.1 |Echovirus E11 strain 674/ISR/1999, complete genome|2540-3044
+--ccaatcctcatgcgtgttatgtatcccttggattagccaaacccatta
+> KY981560.1 |Echovirus E11 strain 675/ISR/1999, complete genome|2540-3044
+--ccaatcctcatgcgtgttatgtatcccttggattagccaaacccatta
+> KY981561.1 |Echovirus E11 strain 1000/ISR/1999, complete genome|2540-3044
+--gcagtcctcctgtgtgctatgcatcccttggattagtcagactcatta
+> KY981562.1 |Echovirus E11 strain 1096/ISR/1999, complete genome|2540-3044
+--ccaatcctcatgcgtgttatgtatcccttggattagccaaacccatta
+> KY981563.1 |Echovirus E11 strain 1315/ISR/1999, complete genome|2540-3044
+--acaatcctcatgtgtgctatgtatcccttggattagccagacccacta
+> KY981564.1 |Echovirus E11 strain 1373/ISR/1999, complete genome|2540-3044
+--acaatcctcatgtgtgctatgtatcccttggattagccagacccacta
+> KY981565.1 |Echovirus E11 strain 1510/ISR/1999, complete genome|2540-3044
+--gcagtcctcttgtgtgctatgcatcccttggattagtcagactcatta
+> KY981566.1 |Echovirus E11 strain 1512/ISR/1999, complete genome|2540-3044
+--gcagtcctcttgtgtgctatgcatcccttggattagtcagactcatta
+> KY981567.1 |Echovirus E11 strain 1513/ISR/1999, complete genome|2540-3044
+--gcaatcctcatgcgtgttatgtatcccttggattagccaaacccatta
+> KY981568.1 |Echovirus E11 strain 1541/ISR/1999, complete genome|2540-3044
+--acaatcctcatgtgtgctatgtatcccttggattagccagacccacta
+> KY981569.1 |Echovirus E11 strain 5789/ISR/1992, complete genome|2540-3044
+--acagtcctcatgtgtgctatgtatcccttggattagccagacccacta
+> KY981570.1 |Echovirus E11 strain 5824/ISR/1992, complete genome|2540-3044
+--acagtcctcatgtgtgctatgtatcccttggattagccagacccacta
+> KY981571.1 |Echovirus E11 strain 5960/ISR/1993, complete genome|2540-3044
+--tcagtcctcatgtgtgctatgtatcccttggattagccagacccacta
+> KY981572.1 |Echovirus E11 strain 6067/ISR/1993, complete genome|2540-3044
+--acagtcctcatgtgtgctatgtatcccttggattagccagacccacta
+> KY981573.1 |Echovirus E11 strain 7482/ISR/1995, complete genome|2540-3044
+--acagtcctcatgtgtgctatgtatcccttggattagccagacccacta
+> KY981574.1 |Echovirus E11 strain 7676/ISR/1996, complete genome|2540-3044
+--acagtcctcatgtgtgctatgtatcccttggattagccagacccacta
+> KY981575.1 |Echovirus E11 strain 8098/ISR/1996, complete genome|2540-3044
+--acaatcatcatgtgtgttatgtatcccctggattagtcagacccacta
+> KY981576.1 |Echovirus E11 strain 8108/ISR/1996, complete genome|2540-3044
+--acagtcctcatgtgtgctatgtatcccttggattagccagacccacta
+> KY981577.1 |Echovirus E11 strain 8416/ISR/1997, complete genome|2540-3044
+--acaatcctcatgtgtgctatgtatcccttggattagccagacccacta
+> KY981578.1 |Echovirus E11 strain 8640/ISR/1998, complete genome|2540-3044
+--acaatcatcatgtgtgttatgtatcccctggattagtcagacccacta
+> KY981579.1 |Echovirus E11 strain 9295/ISR/1998, complete genome|2540-3044
+--acaatcctcatgtgtgctatgtatcccttggattagccagacccacta
+> KY981580.1 |Echovirus E11 strain 9310/ISR/1998, complete genome|2540-3044
+--acaatcctcatgtgtgctatgtatcccttggattagccagacccacta
+> KY981581.1 |Echovirus E11 strain 9368/ISR/1998, complete genome|2540-3044
+--acaatcctcatgtgtgctatgtatcccttggattagccagacccacta
+> MG212430.1 |Human poliovirus 3 isolate 9633_T3, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> MG212431.1 |Human poliovirus 3 isolate 15762, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtggcata
+> MG212432.1 |Human poliovirus 3 isolate 15767_T3, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> MG212436.1 |Human poliovirus 1 isolate 29690_c6, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> MG212437.1 |Human poliovirus 1 isolate 29690_c1, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> MG212438.1 |Human poliovirus 1 isolate 29690_c9, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> MG212439.1 |Human poliovirus 3 isolate 29813, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> MG212441.1 |Human poliovirus 3 isolate 32335_c17, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> MG212442.1 |Human poliovirus 3 isolate 32335_c5, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> MG212443.1 |Human poliovirus 3 isolate 32335_c8, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> MG212444.1 |Human poliovirus 3 isolate 32335_c0, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> MG212445.1 |Human poliovirus 3 isolate 17719_T3, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> MG212447.1 |Human poliovirus 3 isolate 32335_c19, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> MG212448.1 |Human poliovirus 3 isolate 14984, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> MG212449.1 |Human poliovirus 3 isolate 15770, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> MG212451.1 |Human poliovirus 3 isolate 17723, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> MG212458.1 |Human poliovirus 3 isolate 15763_T3, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> MG212460.1 |Human poliovirus 3 isolate 14829, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> MG212461.1 |Human poliovirus 3 isolate 14770, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> MG212466.1 |Human poliovirus 3 isolate 11948, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtaccgtggattagtaatgtgacata
+> MG212467.1 |Human poliovirus 3 isolate 11264, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> MG212468.1 |Human poliovirus 3 isolate 10664, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaacgtgacata
+> MG212470.1 |Human poliovirus 3 isolate 10073, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> MG212472.1 |Human poliovirus 1 isolate 8757, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> MG212474.1 |Human poliovirus 3 isolate 21348_T3, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> MG212476.1 |Human poliovirus 2 isolate 19890, complete genome|2540-3044
+--gcagtcttcatgcactatggtggtaccttggatcagcaataccacata
+> MG212477.1 |Human poliovirus 3 isolate 19017, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> MG212478.1 |Human poliovirus 3 isolate 18963, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> MG212479.1 |Human poliovirus 1 isolate 18339, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> MG212481.1 |Human poliovirus 3 isolate 16938, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> MG212482.1 |Human poliovirus 3 isolate 16204, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> MG212483.1 |Human poliovirus 3 isolate 14385, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> MF973193.1 |Human rhinovirus A1 strain 5Q1, complete genome|2540-3044
+--gcagtctactatatctcttgttgtaccatgggtgagtgccagccactt
+> MF973194.1 |Human rhinovirus A1 strain 7A2, complete genome|2540-3044
+--acaatctactatatctcttgttgtgccatgggtgagtgctagtcactt
+> MG214257.1 |Coxsackievirus A2 strain CVA2-SHZH13-01, complete genome|2540-3044
+--gcaatcgtcggttacactagtggtcccatggataagcaacactcacta
+> MF973162.1 |Enterovirus B strain 7E2, complete genome|2540-3044
+--acaatccagttgtgtgctatgtgtgccatggatcagccaaacacacta
+> MF973166.1 |Coxsackievirus B5 strain 7A4, complete genome|2540-3044
+--acagtccagctgtgtgttatgcatcccatggatcagtcaaacgcatta
+> MF688814.1 |Coxsackievirus A10, complete genome|2540-3044
+--acaatcgtcagtctctttggtgataccgtggatcagtaacactcactt
+> MF554740.1 |Echovirus E4 strain 2F5, complete genome|2540-3044
+--acagtcgagctgtgtgttgtgcatcccatggattagtcaggcacacta
+> KX808644.1 |Echovirus E3 isolate JSev001, complete genome|2540-3044
+--gcagtctagctgtgtgctgtgtgtgccatggataagccaaacacatta
+> MF806525.1 |Human rhinovirus C47 isolate CA-RGDS-1001, complete genome|2540-3044
+--gcaatcttcgtgcactctcgttgccccatggatgtccagtacattcta
+> KY271944.1 |Coxsackievirus A10 strain USA/TN/2016-OB2038, complete genome|2540-3044
+--acaatcgtcagtctctttggtgataccgtggatcagtaacactcattt
+> KY271947.1 |Coxsackievirus A21 strain USA/TN/2015-OB2038, complete genome|2540-3044
+--acaatccagttgctccatggttgcaccatggatctctaatacagtata
+> KY271949.1 |Coxsackievirus A4 strain USA/TN/2015-OB2038, complete genome|2540-3044
+--gcagtcttcagtcacgctcgtggtgccctggataagtaacactcattt
+> MF775366.1 |Human rhinovirus C53 strain USA/CO/2014-20993, complete genome|2540-3044
+--acaatccagctgtagcatggtagcaccctggatatctagtactttttt
+> MF775367.1 |Human rhinovirus C53 strain USA/2015-20994, complete genome|2540-3044
+--acaatccagttgtagcatggtagcaccttggatatccagcaccttctt
+> KY828851.1 |Echovirus E18 strain A83/YN/CHN/2016, complete genome|2540-3044
+--tcaatcaagctgtgtcttgtgcgttccctggattagtcaatcacacta
+> KY828852.1 |Echovirus E18 strain A86/YN/CHN/2016, complete genome|2540-3044
+--tcaatcaagctgtgtcttgtgcgttccctggattagtcaatcacacta
+> KY088084.1 |Coxsackievirus A16 strain K168/8, complete genome|2540-3044
+--gcagtcttctgtaacgctggtcgtgccatggatcagtaatacacacta
+> LC279542.1 |Coxsackievirus A20 genomic RNA, complete genome, strain: CAM1976|2540-3044
+--gcagtcttcttgcactatggtagttccttggatcagcaacactgcgta
+> KX494871.1 |Human rhinovirus B91 isolate ZJ2015_001, complete genome|2540-3044
+--gcagtcaacagttgttatgaacataccatggacatctggtgtgcaatt
+> KX595281.1 |Coxsackievirus A2 isolate CVA2/Shenzhen50/CHN/2012, complete genome|2540-3044
+--gcaatcgtcggttacactagtggtcccatggataagcaacactcacta
+> KX595282.1 |Coxsackievirus A2 isolate CVA2/Shenzhen133/CHN/2013, complete genome|2540-3044
+--gcaatcgtcggttacactagtggtcccatggataagcaacactcacta
+> KX595283.1 |Coxsackievirus A2 isolate CVA2/Shenzhen143/CHN/2013, complete genome|2540-3044
+--gcaatcgtcggttacactggtggtcccatggataagcaacactcacta
+> KX595284.1 |Coxsackievirus A2 isolate CVA2/Shenzhen21/CHN/2015, complete genome|2540-3044
+--gcaatcgtcggttacactagtggtcccatggataagcaacactcacta
+> KX595287.1 |Coxsackievirus A10 isolate CVA10/Shenzhen152/CHN/2013, complete genome|2540-3044
+--acaatcgtcagtctctttggtgataccgtggatcagtaacactcactt
+> KX595288.1 |Coxsackievirus A10 isolate CVA10/Shenzhen18/CHN/2014, complete genome|2540-3044
+--acaatcgtcagtctctttggtgataccgtggatcagtaacactcactt
+> KX595289.1 |Coxsackievirus A10 isolate CVA10/Shenzhen180/CHN/2014, complete genome|2540-3044
+--acaatcgtcagtctctttggtgataccgtggatcagcaacactcactt
+> KX595290.1 |Coxsackievirus A10 isolate CVA10/Shenzhen10/CHN/2015, complete genome|2540-3044
+--acaatcgtcagtttctttggtgataccgtggatcagcaacactcactt
+> KX595291.1 |Coxsackievirus A16 isolate CVA16/Shenzhen36/CHN/2014, complete genome|2540-3044
+--acaatcttctgtgacgttggttgtaccgtggattagcaacacacacta
+> KX595292.1 |Coxsackievirus A16 isolate CVA16/Shenzhen73/CHN/2014, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> KX595293.1 |Coxsackievirus A16 isolate CVA16/Shenzhen74/CHN/2014, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggattagtaacacacacta
+> KX595294.1 |Coxsackievirus A16 isolate CVA16/Shenzhen79/CHN/2014, complete genome|2540-3044
+--gcagtcttctgtgacgttagtcgtgccatggatcagtaatacacacta
+> KX595295.1 |Coxsackievirus A16 isolate CVA16/Shenzhen179/CHN/2014, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> KX189186.1 |Coxsackievirus A6 isolate GD584/2011, complete genome|2540-3044
+--gcagtcatcagtcaccttagttataccttggatcagcaacacccattt
+> KX619440.1 |Echovirus E6 isolate RA/E6/Ahvaz/Iran/2011, complete genome|2540-3044
+--gcaatctagctgcgtattgtgcgtcccatggatcagccagacgcatta
+> KY629935.1 |Human rhinovirus 59 strain 16-J2, complete genome|2540-3044
+--acaatctacaatctctttagttgtaccatgggtcagtgccagccactt
+> KY460514.1 |Human rhinovirus A101 isolate TW-00006-2010, complete genome|2540-3044
+--acagtccactgtatcaatggtagtcccttgggtttctgcaagtcacta
+> KX424991.1 |Echovirus E6 strain E6/2011/Iran/Ahvaz, complete genome|2540-3044
+--gcaatctagctgcgtattgtgcgtcccatggatcagccagacgcatta
+> KX384961.1 |Coxsackievirus A21 strain T197/Ft Jackson South Carolina USA/2002, complete genome|2540-3044
+--acaatccagttgctccatggttgcaccatggatctctaatacagtata
+> KX384962.1 |Coxsackievirus A21 strain 429/Ft Jackson South Carolina USA/1998, complete genome|2540-3044
+--acaatccagttgctccatggttgcaccatggatctctaatacagtata
+> KX384963.1 |Coxsackievirus A21 strain V12125(MSH6283)/Ft Jackson South Carolina USA/2000, complete genome|2540-3044
+--acaatccagttgctccatggttgcaccatggatctccaatacagtata
+> KX384964.1 |Coxsackievirus A21 strain V16073(UC8)/Ft Jackson South Carolina USA/2004, complete genome|2540-3044
+--acaatccagttgctccatggttgcgccatggatctccaatacagtata
+> KY012321.1 |Coxsackievirus A10 strain CVA10-FJ-01, complete genome|2540-3044
+--acaatcgtcagtctctttggtgataccgtggatcagcaacactcactt
+> KY286529.1 |Coxsackievirus B3 strain CB3/2035A, complete genome|2540-3044
+--gcaatctagttgtgtcttatgcataccatggataagtcaaacacacta
+> KY645964.1 |Echovirus E30 strain 16-I10, complete genome|2540-3044
+--gcaatccagctgtgtgctgtgcgtgccatggatcagtcaaaccaacta
+> KY674974.1 |Coxsackievirus A9 strain 16C2, complete genome|2540-3044
+--acagtcaagttgcgttttgtgtgtcccatggattagtcaaacccatta
+> KY674976.1 |Coxsackievirus A9 strain 16C8, complete genome|2540-3044
+--acagtcaagttgcgttttgtgtgtcccatggattagtcaaacccatta
+> KY674980.1 |Coxsackievirus A16 strain 16E4-, complete genome|2540-3044
+--gcagtcttctgtaacgttggttgtgccatggattagcaatacacacta
+> KY684757.1 |Human rhinovirus B3 strain SC2220, complete genome|2540-3044
+--acaatccactatagtcatgaccattccatggacatcgggtgttcagtt
+> KX768156.1 |Coxsackievirus A10 isolate 2014-XMCDC-361-CA10, complete genome|2540-3044
+--acaatcgtcagtatctttggtgataccgtggatcagcaacactcactt
+> KX768159.1 |Coxsackievirus A10 isolate 2015-XMCDC-85-CA10, complete genome|2540-3044
+--acaatcgtcagtctctttggtgataccgtggatcagtaacactcactt
+> KX768163.1 |Coxsackievirus A10 isolate 2015-XMCDC-162-CA10, complete genome|2540-3044
+--acaatcgtcagtctctttggtgataccgtggatcagtaacactcactt
+> KY284011.1 |Coxsackievirus A21 isolate 16SF042, complete sequence|2540-3044
+--acaatccagttgctccatggttgcaccatggatctctaatacggtata
+> KX527626.1 |Echovirus E11 isolate ISO_VR_Echo11, complete genome|2540-3044
+--gcagtcctcttgtgtgttatgcatcccctggattagccagacccatta
+> KX171334.1 |Enterovirus B106 isolate AKS-AWT-AFP2F/XJ/CHN/2011, complete genome|2540-3044
+--gcagtccagttgcgtgttatgtgttccatggataagccaaacgcacta
+> KX171335.1 |Enterovirus B106 isolate HTPS-QDH11F/XJ/CHN/2011, complete genome|2540-3044
+--gcagtccagttgcgtgttatgtgttccatggataagccaaacgcacta
+> KX171336.1 |Enterovirus B106 isolate KS-KSH28F/XJ/CHN/2011, complete genome|2540-3044
+--gcagtccagttgcgtattatgtgttccatggataagccaaacgcacta
+> KX171337.1 |Enterovirus B106 isolate KS-MGTH90F/XJ/CHN/2011, complete genome|2540-3044
+--gcagtccagttgcgtgttatgtgttccatggataagccaaacgcacta
+> KY272007.1 |Coxsackievirus A10 isolate WH21R/Shandong/China/2014, complete genome|2540-3044
+--acaatcatcagtctctttggtgataccgtggatcagtaacacacactt
+> KY272008.1 |Coxsackievirus A10 isolate QD102R/Shandong/China/2014, complete genome|2540-3044
+--acaatcgtcagtctctttggtgataccgtggatcagtaacactcactt
+> KY272009.1 |Coxsackievirus A10 isolate TA151R/Shandong/China/2014, complete genome|2540-3044
+--acaatcgtcagtctctttggtgataccgtggatcagtaacactcactt
+> KY272010.1 |Coxsackievirus A10 isolate HZ302R/Shandong/China/2014, complete genome|2540-3044
+--acaatcgtcagtctctttggtgataccgtggatcagcaacactcactt
+> KU707902.1 |Enterovirus B83 isolate 246/YN/CHN/08, complete genome|2540-3044
+--ccaatctagttgtgtattgtgtgtgccatggatcagccaaacgcacta
+> KY342346.1 |Human rhinovirus A22 strain HRV-A22/Lancaster/2015, complete genome|2540-3044
+--gcaatctactatgtcaatgatagtgccctggatcagtgccagcnnnnn
+> KX893543.1 |Enterovirus A71 strain 32-YN, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KU936121.1 |Enterovirus A71 strain SHAPHC5251/SH/CHN/14, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KU936124.1 |Enterovirus A71 strain SHAPHC5287/SH/CHN/14, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KU936130.1 |Enterovirus A71 strain SHAPHC5330/SH/CHN/14, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KY369873.1 |Human rhinovirus A34 strain SC9783, complete genome|2540-3044
+--gcaatccaccatatcaatggtggttccttgggtaagtgctagccattt
+> KY369874.1 |Human rhinovirus A57 strain SC9723, complete genome|2540-3044
+--gcaatcaacaatatctatggttgtgccatgggttagtgctagtcatta
+> KY369875.1 |Human rhinovirus A98 strain SC176, complete genome|2540-3044
+--gcagtcaacagtctccttggttgtcccttgggtcagtgctagtcattt
+> KY369877.1 |Human rhinovirus C11 strain SC1065, complete genome|2540-3044
+--acaatcaacatgcactatagttgtaccatggatatcccaaggatacta
+> KY369878.1 |Human rhinovirus C43 strain SC174, complete genome|2540-3044
+--acagtcatcatgtcacctcatagtgccatggataagctctcactttta
+> KY369879.1 |Rhinovirus C strain SC983, complete genome|2540-3044
+--acaatccagttgtagcatggtagcaccttggatatccagcaccttctt
+> KY369880.1 |Rhinovirus C strain SC261, complete genome|2540-3044
+--acaatcaacatgcaccattgtagtaccatggatagcccagggatacta
+> KY369881.1 |Human rhinovirus C2 strain SC9735, complete genome|2540-3044
+--gcagtcttcatgtacacttgttgcaccatggatgtccagtaccttcta
+> KY369882.1 |Rhinovirus C strain SC9795, complete genome|2540-3044
+--acaatcgacatgcaccattgtagtaccatggatagcccagggatacta
+> KY369883.1 |Human rhinovirus B97 strain SC1079, complete genome|2540-3044
+--gcaatcaactgtagtgatgaacataccttggactgctggtgcacaatt
+> KY369884.1 |Human rhinovirus A31 strain SC1031, complete genome|2540-3044
+--gcaatctacagtatctttagttgtcccatgggttagtgctagtcattt
+> KY369885.1 |Human rhinovirus A22 strain SC1029, complete genome|2540-3044
+--gcaatccactatatcaatggtagtcccttggattagtgctagtcatta
+> KY369886.1 |Human rhinovirus A61 strain SC628, complete genome|2540-3044
+--gcagtctacagtatcaatggtggttccctgggtcagtgctagtcatta
+> KY369887.1 |Human rhinovirus A68 strain SC305, complete genome|2540-3044
+--gcaatctacagtctccatggttgtaccatgggtttcagcaagccatta
+> KY369888.1 |Human rhinovirus A20 strain SC1006, complete genome|2540-3044
+--tcaatccactgtttccatggtagttccatgggtatcagcaagtcacta
+> KY369889.1 |Human rhinovirus A101 strain SC1124, complete genome|2540-3044
+--gcagtccactgtatcaatggtggtgccctgggtttctgcaagccatta
+> KY369890.1 |Human rhinovirus A47 strain SC122, complete genome|2540-3044
+--gcagtcaacagtgtctttagttgttccatgggttagtgccagtcattt
+> KY369891.1 |Human rhinovirus A101 strain SC996, complete genome|2540-3044
+--gcagtccactgtatcaatggtagtcccttgggtctctgcaagtcacta
+> KY369892.1 |Human rhinovirus A101 strain SC1004, complete genome|2540-3044
+--gcagtccactgtatcaatggtggtgccctgggtttctgcaagccatta
+> KY369893.1 |Human rhinovirus A59 strain SC1095, complete genome|2540-3044
+--acaatctacaatctctttagttgtaccatgggtcagtgccagccactt
+> KY369894.1 |Human rhinovirus A82 strain SC9702, complete genome|2540-3044
+--gcaatcaaccatatcaatgattgtaccctgggttagtgctagtcactt
+> KY369895.1 |Human rhinovirus A59 strain SC1038, complete genome|2540-3044
+--acaatctacaatctctttagttgtaccatgggtcagtgccagccactt
+> KY369896.1 |Human rhinovirus A49 strain SC1066, complete genome|2540-3044
+--tcaatccacaatatcaatggtggtaccatggattagtgccagccatta
+> KY369897.1 |Human rhinovirus A101 strain SC1104, complete genome|2540-3044
+--gcagtccactgtatcaatggtagtgccctgggtttctgcaagccatta
+> KY369898.1 |Human rhinovirus 1B strain SC9813, complete genome|2540-3044
+--gcaatctactatttctcttgttgtaccatgggtaagtgctagccattt
+> KY369899.1 |Human rhinovirus B4 strain SC165, complete genome|2540-3044
+--gcagtctacagtagttctcaacattccctggacttcaggagttcaata
+> KY369900.1 |Human rhinovirus B27 strain SC275, complete genome|2540-3044
+--gcagtcaaccatagtgatgaacataccctggactgccggatcccagtt
+> KY369901.1 |Human rhinovirus B27 strain SC863, complete genome|2540-3044
+--gcagtcaaccatagtgatgaacataccctggactgccggatcccagtt
+> KY369904.1 |Coxsackievirus B4 strain EPV3715, complete genome|2540-3044
+--acaatccagttgcgtgctctgcgtaccatggattagccaaacacacta
+> KX156350.1 |Coxsackievirus A2 isolate HeN13-6/HeN/CHN/2013, complete genome|2540-3044
+--gcaatcgtcagttacattagtggtcccatggataagtaacactcacta
+> KX156360.1 |Coxsackievirus A2 isolate BJ13-53/BJ/CHN/2013, complete genome|2540-3044
+--gcaatcgtcggttacactagtggtcccatggataagcaacactcacta
+> KX752784.1 |Coxsackievirus B4 isolate Laiwu/SD/CHN/2013, complete genome|2540-3044
+--acagtccagttgcgtgttgtgtgttccatggattagtcaaactcacta
+> KR362878.1 |Coxsackievirus B3 strain 08TC170, complete genome|2540-3044
+--gcaatctagttgtgtcttatgcataccatggataagtcaaacacacta
+> KX891411.1 |Human rhinovirus A16 isolate KC939 clone pR16.939, complete genome|2540-3044
+--acaatccacagtgtcattggttgtaccatggatcagtgctagtcagta
+> KT588920.1 |Coxsackievirus A10 strain CV-CNIC/Guizhou/CHN/14, complete genome|2540-3044
+--acaatcgtcagtctctttggtgataccgtggatcagtaacactcactt
+> KU254597.1 |Coxsackievirus A16 isolate BJ14-3, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> KU254598.1 |Coxsackievirus A16 isolate BJ14-4, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> KX162679.1 |Human poliovirus 1 strain CAE1419303, complete genome|2540-3044
+--acaatcttcatgcaccatggtggtgccttggatcagcaacacaacata
+> KX162680.1 |Human poliovirus 1 strain CAE1419304, complete genome|2540-3044
+--acaatcttcatgcaccatggtggtgccttggatcagcaatacaacata
+> KX162681.1 |Human poliovirus 1 strain CAE1419305, complete genome|2540-3044
+--acaatcttcatgcaccatggtggtgccttggatcagcaacacaacata
+> KX162682.1 |Human poliovirus 1 strain CAF2019340, complete genome|2540-3044
+--acaatcttcatgcaccatggtggtgccttggatcagcaacacaactta
+> KX162683.1 |Human poliovirus 1 strain CHA1119341, complete genome|2540-3044
+--acaatcttcatgcaccatggtggtgccttggatcagcaatacaactta
+> KX162684.1 |Human poliovirus 1 strain CHA1218878, complete genome|2540-3044
+--acaatcttcatgcaccatggtggtgccttggatcagcaacacaactta
+> KX162691.1 |Human poliovirus 1 strain EQG1418881, complete genome|2540-3044
+--acaatcttcatgcaccatggtggtgccttggatcagcaacacaacata
+> KX162692.1 |Human poliovirus 1 strain EQG1419328, complete genome|2540-3044
+--acaatcttcatgcaccatggtggtgccttggatcagcaacacaacata
+> KX162693.1 |Human poliovirus 1 strain EQG1419331, complete genome|2540-3044
+--acaatcttcatgcaccatggtggtgccttggatcagcaacacaacata
+> KX162695.1 |Human poliovirus 1 strain EQG1419333, complete genome|2540-3044
+--acaatcttcatgcaccatggtggtgccttggatcagcaacacgacata
+> KX162702.1 |Human poliovirus 2 strain NIE0611523, complete genome|2540-3044
+--gcagtcttcatgcactatggtggtaccttggatcagtaacaccacata
+> KX162707.1 |Human poliovirus 2 strain NIE1116178, complete genome|2540-3044
+--gcagtcttcatgcactatggtggtgccttggatcagcaataccacata
+> KX162708.1 |Human poliovirus 1 strain NIE1116622, complete genome|2540-3044
+--acaatcttcatgcaccatggtggtgccttggattagtaatacaactta
+> KX162709.1 |Human poliovirus 1 strain NIE1116623, complete genome|2540-3044
+--acaatcatcatgcaccatggtggtgccttggattagcaacacaactta
+> KX162712.1 |Human poliovirus 2 strain NIE1419321, complete genome|2540-3044
+--acagtcttcatgcactatggtggtgccatggatcagtaacaccactta
+> KT995581.1 |Enterovirus D68 strain USA/RI/2014-19214, complete genome|2540-3044
+--gcaatctagtgtaaccctgataataccttggatcagtggatcccacta
+> KT995602.1 |Enterovirus D68 strain USA/MI/2014-19238, complete genome|2540-3044
+--acaatctagtgtaaccctgataattccttggattagtggatcccacta
+> KX810065.1 |Coxsackievirus A2 strain USA/2014-19510, complete genome|2540-3044
+--acaatcttcagtgacgctggtggttccatggatcagtaacacccacta
+> KX810066.1 |Echovirus E2 strain USA/2013-19511, complete genome|2540-3044
+--acaatcaagctgtgtgttgtgtgtgccctggatcagccagacacacta
+> KX610685.2 |Echovirus E9 strain UW1, complete genome|2540-3044
+--acaatcaagctgcgtgttgtgtgtgccatggattagccaaacgcacta
+> KX681481.1 |Echovirus E9 strain UW0, complete genome|2540-3044
+--acaatcaagctgcgtgttgtgtgtgccatggattagccaaacgcacta
+> KT779410.1 |Coxsackievirus A6 isolate Changchun046/CHN/2013, complete genome|2540-3044
+--acaatcatcagttaccctagtcataccctggattagtaacactcattt
+> KX499536.1 |Coxsackievirus B2 strain RW41-2/YN/CHN/2012, complete genome|2540-3044
+--acaatccagctgtgtgttgtgtgtgccttggattagtcaaacacacta
+> KX580041.1 |Coxsackievirus A16 strain CA16-196, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggattagtaatacacacta
+> KU761262.1 |Coxsackievirus A5 strain CVA5/13164/HUN/2015, complete genome|2540-3044
+--ccaatcctcggtcaccttagtcatcccctggatcagcaattcacatta
+> KX058533.1 |Coxsackievirus A16 strain ensh01-CHN-12, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> KX398052.1 |Human rhinovirus A12 isolate p211, complete genome|2540-3044
+--acaatcaacagtatctatgattgtaccatgggtatcagcaagccattt
+> KX767786.1 |Echovirus E18 isolate E18-314/HB/CHN/2015, complete genome|2540-3044
+--tcaatcaagctgtgtcttgtgcgttccctggattagtcaatcacacta
+> KU566507.1 |Coxsackievirus B4 isolate HN23/CHN/2013, complete genome|2540-3044
+--acagtctagttgtgtgttgtgtgtaccatggattagtcaaactcatta
+> KX255383.1 |Enterovirus D68 strain EV-D68/Homo sapiens/USA/O810a/2012, complete genome|2540-3044
+--acaatctagtgtaaccttgataataccttggatcagtggatcccacta
+> KR399988.1 |Coxsackievirus A24 isolate Reunion0150638129-FRA15, complete genome|2540-3044
+--tcaatcctcatgcaccatgctagccccttggatatccaacacagtcta
+> KR478685.1 |Coxsackievirus A24 isolate Reunion0150638154-FRA15, complete genome|2540-3044
+--tcaatcctcatgcaccatgctagccccttggatatccaacacagtcta
+> KP890662.1 |Rhinovirus C isolate 7383-MY-10, complete genome|2540-3044
+--ccaatcctcatgtcatcttgtcattccctggatcagctcccatttctt
+> KP890663.1 |Rhinovirus C isolate 3805-MY-10, complete genome|2540-3044
+--gcaatcgtcctgtaccatggttgtaccatggatatcttcaggattcta
+> KP890664.1 |Rhinovirus C isolate 8097-MY-11, complete genome|2540-3044
+--acaatcctcttgtactatggtggcaccctggatatcaagcactttctt
+> KU183495.1 |Coxsackievirus A24 strain K282/YN/CHN/2013, complete genome|2540-3044
+--ccagtcttcttgcaccatgctggcgccgtggatctccaacacggtgta
+> LC126143.1 |Coxsackievirus A6 genomic RNA, complete genome, strain: Hyogo1278|2540-3044
+--gcaatcatcagtcactttagtcataccctggattagtaacacccattt
+> LC126144.1 |Coxsackievirus A6 genomic RNA, complete genome, strain: Hyogo1283|2540-3044
+--gcaatcatcagtcactttagtcataccctggattagtaacacccactt
+> LC126145.1 |Coxsackievirus A6 genomic RNA, complete genome, strain: Hyogo1284|2540-3044
+--gcaatcatcagtcactttagtcataccctggattagtaacacccattt
+> LC126146.1 |Coxsackievirus A6 genomic RNA, complete genome, strain: Hyogo2196|2540-3044
+--gcaatcatcagtcaccttagtcataccctggatcagtaacacccactt
+> LC126147.1 |Coxsackievirus A6 genomic RNA, complete genome, strain: Hyogo3818|2540-3044
+--acaatcatcagttactttagtcataccctggattagtaacactcattt
+> LC126148.1 |Coxsackievirus A6 genomic RNA, complete genome, strain: Hyogo3895|2540-3044
+--acaatcatcagttactttagtcataccctggattagtaacactcattt
+> LC126149.1 |Coxsackievirus A6 genomic RNA, complete genome, strain: Hyogo4604|2540-3044
+--acaatcatcagttactttagtcataccctggattagtaacactcattt
+> KU763188.1 |Human poliovirus 3 isolate 45507, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtaccgtggattagtaatgtgacata
+> KU355273.1 |Echovirus E7 strain 40/Longyou/ZJ, complete genome|2540-3044
+--gcaatctagttgtgttttgtgcattccatggattagtcagacacacta
+> KT726984.1 |Human rhinovirus A39 strain 2-D5-TW, complete genome|2540-3044
+--gcaatcaactgtctcattagttgtaccatgggtaagtgctagtcactt
+> KU695562.1 |Rhinovirus C strain UT-I, complete genome|2540-3044
+--gcaatccagttgtagcatggtagcaccttggatatccagcaccttctt
+> KT353719.1 |Human poliovirus 1 strain 1-B2, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KT353720.1 |Echovirus E30 strain 1-B4-TW, complete genome|2540-3044
+--acaatctagctgtgtgctgtgcgtgccatggattagccaaaccaacta
+> KT353721.1 |Coxsackievirus A9 strain 1-D7-CA9, complete genome|2540-3044
+--gcaatcaagctgcgtcctgtgtgtcccatggattagtcaaacccatta
+> KT353722.1 |Coxsackievirus A4 strain 1-E9-CA4, complete genome|2540-3044
+--gcagtcatcagtcactcttgtggtgccctggataagtaacacacactt
+> KT353723.1 |Echovirus E3 strain 2-E6-TW, complete genome|2540-3044
+--gcaatctagttgtgtgttatgtataccatggattagtcaaacccatta
+> KT353724.1 |Echovirus E6 strain 2-C2, complete genome|2540-3044
+--gcaatccagttgtgtgttgtgcgtaccatggatcagccaaacgcacta
+> KT353725.1 |Echovirus E6 strain 2-D5-TW, complete genome|2540-3044
+--gcaatccagttgtgtgttgtgcgtaccatggatcagccaaacgcacta
+> KT428644.1 |Enterovirus A71 isolate EV71/SZ04/CHN/2014, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KT428645.1 |Enterovirus A71 isolate EV71/SZ07/CHN/2014, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KT428646.1 |Enterovirus A71 isolate EV71/SZ12/CHN/2014, complete genome|2540-3044
+--gcaatcgtctgtcacccttgtaataccgtggattagcaacactcatta
+> KT428647.1 |Enterovirus A71 isolate EV71/SZ25/CHN/2014, complete genome|2540-3044
+--gcaatcgtctgttaccctcgtaataccatggattagtaacactcatta
+> KT428648.1 |Enterovirus A71 isolate EV71/SZ42/CHN/2014, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KT428649.1 |Enterovirus A71 isolate EV71/SZ50/CHN/2014, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KT428650.1 |Enterovirus A71 isolate EV71/SZ88/CHN/2014, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KR107054.1 |Coxsackievirus B3 isolate NIV099351LV53P4, complete genome|2540-3044
+--gcaatccagctgtgtcttgtgtataccctggataagccaaacgcacta
+> KR107055.1 |Coxsackievirus B3 isolate NIV0914321LV141P5, complete genome|2540-3044
+--gcaatccagctgtgtcttgtgtataccctggataagccaaacgcacta
+> KR107056.1 |Coxsackievirus B3 isolate NIV099101LV198P7, complete genome|2540-3044
+--gcaatccagctgcgtcttgtgtataccctggataagccaaacgcacta
+> KR107057.1 |Coxsackievirus B3 isolate NIV1019241LV350P10, complete genome|2540-3044
+--acaatccagctgtgtcttgtgtataccatggataagccaaacacatta
+> KT345959.1 |Enterovirus A71 strain 120/EV71/Wenzhou/CHN/2014, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagtaacactcatta
+> KT345960.1 |Enterovirus A71 strain 15/EV71/Wenzhou/CHN/2014, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> JQ746659.1 |Human coxsackievirus A16 isolate CV-A16-genotypeA, complete genome|2540-3044
+--ccaatcctcagtcacgctagttataccatggataagcaacacacacta
+> JQ746662.1 |Human coxsackievirus A16 isolate PM-12727-99, complete genome|2540-3044
+--acagtcttctgtgacgttagtcgtgccatggattagtaacacacacta
+> JQ746663.1 |Human coxsackievirus A16 isolate PM-13884-97, complete genome|2540-3044
+--acagtcttctgtgacgttggtcgtgccatggattagtaacacacacta
+> JQ746664.1 |Human coxsackievirus A16 isolate PM-13998-00, complete genome|2540-3044
+--acagtcttctgtgacgttggtcgtgccgtggattagtaacacacacta
+> JQ746665.1 |Human coxsackievirus A16 isolate PM-14660-97, complete genome|2540-3044
+--gcagtcttctgtaacgttggtcgtgccatggattagtaacacacacta
+> JQ746667.1 |Human coxsackievirus A16 isolate PM-15922-00, complete genome|2540-3044
+--acagtcttctgtgacgttggtcgtgccatggattagtaacacacacta
+> JQ746668.1 |Human coxsackievirus A16 isolate PM-1651402-06, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccgtggatcagtaatacacacta
+> JQ746669.1 |Human coxsackievirus A16 isolate PM-16809-98, complete genome|2540-3044
+--acagtcttctgtaacgttggtcgtgccatggattagtaacacacacta
+> JQ746670.1 |Human coxsackievirus A16 isolate PM-16985-98, complete genome|2540-3044
+--acagtcttctgtaacgttggtcgtgccatggattagtaacacacacta
+> JQ746671.1 |Human coxsackievirus A16 isolate PM-1791021-07, complete genome|2540-3044
+--acagtcttctgtgacgctggtcgtgccatggattagtaatacacacta
+> JQ746672.1 |Human coxsackievirus A16 isolate PM-1795457-07, complete genome|2540-3044
+--acagtcttctgtgacgttggtcgtaccgtggatcagtaatacacacta
+> JQ746673.1 |Human coxsackievirus A16 isolate PM-22159-02, complete genome|2540-3044
+--acagtcctctgtgacgctggtcgtgccatggattagtaacacacacta
+> JQ746674.1 |Human coxsackievirus A16 isolate PM-22217-02, complete genome|2540-3044
+--acagtcctctgtgacgctggttgtgccatggattagtaacacacacta
+> JQ746675.1 |Human coxsackievirus A16 isolate PM-23208-02, complete genome|2540-3044
+--acagtcttctgtgacgctggtcgtgccatggattagtaacacacacta
+> JQ746676.1 |Human coxsackievirus A16 isolate PM-31131-05, complete genome|2540-3044
+--acagtcttctgtgacgttggtcgtgccgtggatcagtaatacacacta
+> JQ746677.1 |Human coxsackievirus A16 isolate PM-31376-05, complete genome|2540-3044
+--gcagtcttccgtgacgttggtcgtgccatggattagtaacacacacta
+> JQ746678.1 |Human coxsackievirus A16 isolate PM-35210-06, complete genome|2540-3044
+--acagtcttctgtgacgttggtcgtgccgtggatcagtaatacacacta
+> KP262053.1 |Enterovirus B84 isolate AFP452/GD/CHN/2004, complete genome|2540-3044
+--gcaatctagctgcgtgctgtgtgtgccatggattagccagtcacacta
+> KM516102.1 |Coxsackievirus A16 isolate Wh16, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> KT277550.1 |Enterovirus A89 strain KSYPH-TRMH22F/XJ/CHN/2011, complete genome|2540-3044
+--acagtcctccgttacactagtgattccatggattagtaatacacactt
+> KU242683.1 |Enterovirus D68 strain BJ24, complete genome|2540-3044
+--acaatccagtgttaccttggtaataccttggatcagtggatcccacta
+> KJ675505.1 |Rhinovirus C isolate 1570-MY-10, complete genome|2540-3044
+--acaatcatcatgtactatggtaataccttggatatcctctggttttta
+> KJ675506.1 |Rhinovirus C isolate 8713-MY-10, complete genome|2540-3044
+--gcaatcctcctgtacactagtggtaccctggatatcatcaggattcta
+> KJ675507.1 |Rhinovirus C isolate 3430-MY-10, complete genome|2540-3044
+--gcaatcatcttgccacctcgtcattccatggattagttcccattacta
+> KR919804.1 |Enterovirus C96 isolate SZ/GD/CHN/2015, complete genome|2540-3044
+--gcaatctagcgcaacgatggtcgccccatggatctctaacagcgtgta
+> JN864020.1 |Human enterovirus 71 strain EV71/Ningbo.CHN/069/2010, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcacta
+> KR259355.1 |Human poliovirus 1 strain R71712, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KR259358.1 |Human poliovirus 3 strain R46064, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagcaatgtgacata
+> KT161266.1 |Coxsackievirus A21 isolate JN12377/SD/CHN/2012/CVA21, complete genome|2540-3044
+--acaatccagttgctccatggttgcaccatggatctctaatacagtata
+> KP289357.1 |Coxsackievirus A2 isolate CV-A2/P14/2013/China, complete genome|2540-3044
+--gcaatcgtcggttacactagtggtcccatggataagcaacactcacta
+> KP289358.1 |Coxsackievirus A2 isolate CV-A2/P153/2013/China, complete genome|2540-3044
+--gcaatcgtcggttacactagtggtcccatggataagcaacactcacta
+> KP289359.1 |Coxsackievirus A2 isolate CV-A2/P373/2013/China, complete genome|2540-3044
+--gcagtcgtcggttacactcgtggtcccatggataagcaacactcacta
+> KP289360.1 |Coxsackievirus A2 isolate CV-A2/P478/2013/China, complete genome|2540-3044
+--gcaatcgtcggttacactagtggtcccatggataagcaacactcacta
+> KP289361.1 |Coxsackievirus A2 isolate CV-A2/P489/2013/China, complete genome|2540-3044
+--gcagtcgtcggttacacttgtggtcccatggataagcaacactcacta
+> KP289362.1 |Coxsackievirus A5 isolate CV-A5/P74/2013/China, complete genome|2540-3044
+--ccagtcctcggtcaccttggtcatcccttggatcagcaattcacacta
+> KP289363.1 |Coxsackievirus A5 isolate CV-A5/P836/2013/China, complete genome|2540-3044
+--ccagtcctcggtcaccttggtcatcccttggatcagcaattcacatta
+> KP289364.1 |Coxsackievirus A5 isolate CV-A5/P99/2013/China, complete genome|2540-3044
+--tcagtcctcggtcaccttagtcattccttggatcagcaattcacatta
+> KP289394.1 |Coxsackievirus A10 isolate CV-A10/P1005/2013/China, complete genome|2540-3044
+--acaatcatcagtctctttggtgataccgtggatcagtaacacacactt
+> KP289395.1 |Coxsackievirus A10 isolate CV-A10/P118/2013/China, complete genome|2540-3044
+--acaatcgtcagtctctttggtaataccgtggatcagtaacacacactt
+> KP289396.1 |Coxsackievirus A10 isolate CV-A10/P448/2013/China, complete genome|2540-3044
+--acaatcatcagtctctttggtgataccgtggatcagtaacacgcactt
+> KP289397.1 |Coxsackievirus A10 isolate CV-A10/P460/2013/China, complete genome|2540-3044
+--acaatcgtcagtctctttggtaataccgtggatcagtaacacacactt
+> KP289398.1 |Coxsackievirus A10 isolate CV-A10/P630/2013/China, complete genome|2540-3044
+--acaatcatcagtctctttggtgataccgtggatcagtaacacgcactt
+> KP289399.1 |Coxsackievirus A10 isolate CV-A10/P638/2013/China, complete genome|2540-3044
+--acaatcgtcagtctctttggtgataccgtggatcaacaacactcactt
+> KP289400.1 |Coxsackievirus A10 isolate CV-A10/P639/2013/China, complete genome|2540-3044
+--acaatcgtcagtctctttggtaataccgtggatcagtaacacacactt
+> KP289401.1 |Coxsackievirus A10 isolate CV-A10/P670/2013/China, complete genome|2540-3044
+--acaatcgtcagtctctttggtgataccgtggatcagcaacactcactt
+> KP289402.1 |Coxsackievirus A10 isolate CV-A10/P73/2013/China, complete genome|2540-3044
+--acaatcgtcagtctctttggtaataccgtggatcagtaacacacactt
+> KP289403.1 |Coxsackievirus A10 isolate CV-A10/P737/2013/China, complete genome|2540-3044
+--acaatcgtcagtctcattggtgataccgtggatcagtaacactcactt
+> KP289404.1 |Coxsackievirus A10 isolate CV-A10/P864/2013/China, complete genome|2540-3044
+--acaatcgtcagtctcactggtgataccgtggatcagtaacactcactt
+> KP289405.1 |Coxsackievirus A10 isolate CV-A10/P866/2013/China, complete genome|2540-3044
+--acaatcgtcagtctctttggtgataccgtggattagcaacactcactt
+> KP289406.1 |Coxsackievirus A10 isolate CV-A10/P91/2013/China, complete genome|2540-3044
+--acaatcgtcagtctctttggtaataccgtggatcagtaacacacactt
+> KP289407.1 |Coxsackievirus A10 isolate CV-A10/P911/2013/China, complete genome|2540-3044
+--acaatcgtcagtctctttggtgataccgtggatcagtaacactcactt
+> KP289408.1 |Coxsackievirus A10 isolate CV-A10/P935/2013/China, complete genome|2540-3044
+--acaatcatcagtctctttggtgataccgtggatcagtaacacacactt
+> KP289409.1 |Coxsackievirus A10 isolate CV-A10/P962/2013/China, complete genome|2540-3044
+--acaatcatcagtctctttggtgataccgtggatcagtaacacacactt
+> KP289410.1 |Coxsackievirus A10 isolate CV-A10/P978/2013/China, complete genome|2540-3044
+--acaatcgtcagtctctttggtgataccgtggatcagtaatacacactt
+> KP289411.1 |Coxsackievirus A16 isolate CV-A16/P10/2013/China, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> KP289412.1 |Coxsackievirus A16 isolate CV-A16/P1014/2013/China, complete genome|2540-3044
+--acaatcctctgtgacgttagttgtgccatggattagcaacacacacta
+> KP289413.1 |Coxsackievirus A16 isolate CV-A16/P187/2013/China, complete genome|2540-3044
+--acaatcctccgtgacgttagttgtgccatggattagcaacacacacta
+> KP289414.1 |Coxsackievirus A16 isolate CV-A16/P255/2013/China, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> KP289415.1 |Coxsackievirus A16 isolate CV-A16/P301/2013/China, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> KP289416.1 |Coxsackievirus A16 isolate CV-A16/P83/2013/China, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> KP289418.1 |Enterovirus A71 isolate EV71/P1031/2013/China, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KP289420.1 |Enterovirus A71 isolate EV71/P123/2013/China, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KP289421.1 |Enterovirus A71 isolate EV71/P156/2013/China, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KP289422.1 |Enterovirus A71 isolate EV71/P16/2013/China, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KP289423.1 |Enterovirus A71 isolate EV71/P222/2013/China, complete genome|2540-3044
+--gcaatcgtctgtcacccttgtaataccatggattagcaacactcatta
+> KP289424.1 |Enterovirus A71 isolate EV71/P267/2013/China, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KP289426.1 |Enterovirus A71 isolate EV71/P40/2013/China, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KP289429.1 |Enterovirus A71 isolate EV71/P654/2013/China, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KP289430.1 |Enterovirus A71 isolate EV71/P868/2013/China, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KP289433.1 |Coxsackievirus B4 isolate CV-B4/P11/2013/China, complete genome|2540-3044
+--gcagtccagctgcgtgttgtgtgttccatggattagccaaacccacta
+> KP289434.1 |Coxsackievirus A9 isolate CV-A9/P56/2013/China, complete genome|2540-3044
+--gcaatcaagttgcgttctgtgtgtcccatggattagtcaaacccatta
+> KP289435.1 |Coxsackievirus A8 isolate CV-A8/P82/2013/China, complete genome|2540-3044
+--gcagtcatccatcactctagtagtcccatggatcagtaatacacactt
+> KP289436.1 |Echovirus E16 isolate E16/P85/2013/China, complete genome|2540-3044
+--gcaatcaagctgtgtcctgtgtgtcccgtggattagccagacacacta
+> KP289437.1 |Coxsackievirus A9 isolate CV-A9/P351/2013/China, complete genome|2540-3044
+--gcaatcaagttgcgttttgtgtgtcccatggattagtcaaacccatta
+> KP289438.1 |Coxsackievirus B5 isolate CV-B5/P727/2013/China, complete genome|2540-3044
+--gcaatcgagctgcgtgctatgcattccatggattagccaaacgcacta
+> KP289439.1 |Echovirus E6 isolate E6/P735/2013/China, complete genome|2540-3044
+--acaatccagttgtgtgctgtgcgtaccatggatcagccaaacgcacta
+> KP289440.1 |Echovirus E14 isolate E14/P843/2013/China, complete genome|2540-3044
+--gcaatctagttgtgtgctgtgtgtgccatggattagccaaacacatta
+> KP289441.1 |Echovirus E14 isolate E14/P968/2013/China, complete genome|2540-3044
+--gcagtctagttgtgtgctgtgtgtgccatggattagtcaaacacatta
+> KP289442.1 |Coxsackievirus A4 isolate CV-A4/P1033/2013/China, complete genome|2540-3044
+--acagtcttcagtcactcttgtggtgccctggataagtaacacacactt
+> KP290111.1 |Coxsackievirus A9 isolate CV-A9/P220/2013/China, complete genome|2540-3044
+--gcaatcaagttgcgttctgtgtgtcccatggattagccaaacccacta
+> KP984753.1 |Enterovirus C96 strain T49-XZ-CHN-2005, complete genome|2540-3044
+--acagtcaagtgcaacaatggtcgctccgtggatttccaacagtgtgta
+> KP984754.1 |Enterovirus C96 strain XZ94-XZ-CHN-2012, complete genome|2540-3044
+--ccagtcgagtgcaacaatggtcgccccgtggatttccaacagtgtata
+> KM388538.1 |Echovirus E3 isolate HNWY-01, complete genome|2540-3044
+--gcaatccagttgtgtgttatgcataccatggattagtcaaacccatta
+> KR706309.1 |Coxsackievirus A6 isolate TW-2007-00141, complete genome|2540-3044
+--gcaatcatctgtcactttagtcataccctggattagtaacacccattt
+> KR815824.1 |Human enterovirus C104 isolate kvv585-16-TS, complete genome|2540-3044
+--acagtccagtgcaacattagtagccccatggatttcaaatgtcaatta
+> KP765687.1 |Coxsackievirus A8 isolate CVA8/SZ266/CHN/2014, complete genome|2540-3044
+--acaatcatccattacacttgtagtcccatggataagtaacacccactt
+> KP638484.1 |Enterovirus B isolate HB92, complete genome|2540-3044
+--gcagtcaagttgtgtgctgtgtgtgccttggatcagccaaacgcacta
+> KP793687.1 |Enterovirus C isolate Brunenders, complete genome|2540-3044
+--gcaatcctcatgcactatggtagtaccatggataagcaacaccacgta
+> KP266568.1 |Echovirus E6 strain 2005-29-1, complete genome|2540-3044
+--gcaatctagttgtgtgttgtgtgtaccatggattagccaaacacatta
+> KP266569.1 |Echovirus E7 strain 2001-031, complete genome|2540-3044
+--gcagtccagttgtgttctatgcattccatggattagtcagacacacta
+> KP266570.1 |Echovirus E7 strain 2001-31, complete genome|2540-3044
+--gcagtccagttgtgttctatgcattccatggattagtcagacacacta
+> KP266571.1 |Echovirus E30 strain 2002-59, complete genome|2540-3044
+--acagtccagctgcgtgttgtgtgtaccatggattagccaaaccaacta
+> KP266573.1 |Coxsackievirus A16 strain 2008-43-7, complete genome|2540-3044
+--acaatcttctgtgacgttggttgtgccatggattagcaacacacacta
+> KP266574.1 |Coxsackievirus A9 strain LHY03, complete genome|2540-3044
+--gcaatcaagttgtgttctgtgtgtcccatggattagtcaaacccatta
+> KP266576.1 |Coxsackievirus B5 strain 2001-01-101, complete genome|2540-3044
+--gcaatcgagctgcgtgttgtgcataccatggattagccaaacgcacta
+> KP266577.1 |Coxsackievirus B5 strain 2009-154-2, complete genome|2540-3044
+--gcaatcgagctgcgtgctgtgcattccatggattagccaaacgcacta
+> KP266578.1 |Coxsackievirus B5 strain 2009-148-4, complete genome|2540-3044
+--acaatcaagctgtgtgttgtgcataccatggattagccaaacgcacta
+> KP233830.1 |Coxsackievirus B5 isolate 3936/09, complete genome|2540-3044
+--gcaatccagctgcgtgctgtgcatcccgtggattagtcaaacacatta
+> KP202389.1 |Echovirus E7 isolate 3988/09, complete genome|2540-3044
+--acaatctagttgtgttttgtgcattccgtggattagtcagacacacta
+> KJ541163.1 |Coxsackievirus A4 isolate 701/SH/CHN/2010, complete genome|2540-3044
+--gcagtcttcagtcactctcgtggtgccttggataagtaacacacactt
+> KJ541164.1 |Coxsackievirus A4 isolate 1047/SH/CHN/2010, complete genome|2540-3044
+--gcagtcttcagtcactctcgtggtgccctggataagtaacacacactt
+> KP099941.1 |Echovirus E25 strain XM0297, complete genome|2540-3044
+--gcaatcgagttgtgtgctctgcgtgccatggatcagtcagacaaacta
+> KP009574.1 |Coxsackievirus A10 strain FY01/AH/CHN/2013, complete genome|2540-3044
+--acaatcatcagtctctttggtgataccgtggatcagtaacactcactt
+> KP009575.1 |Coxsackievirus A10 strain FY02/AH/CHN/2013, complete genome|2540-3044
+--acaatcgtcagtctctttggtgataccgtggatcagtaacactcactt
+> KP009576.1 |Coxsackievirus A10 strain FY03/AH/CHN/2013, complete genome|2540-3044
+--acaatcgtcagtctctttggtgataccgtggatcagtaacactcactt
+> KP009577.1 |Coxsackievirus A10 strain FY04/AH/CHN/2013, complete genome|2540-3044
+--acaatcgtcagtctctttggtgataccgtggatcagtaacactcactt
+> KP009578.1 |Coxsackievirus A10 strain FY05/AH/CHN/2013, complete genome|2540-3044
+--acaatcgtcagtctctttggtgataccgtggatcagtaacactcactt
+> KP009579.1 |Coxsackievirus A10 strain FY06/AH/CHN/2013, complete genome|2540-3044
+--acaatcgtcagtctctttggtgataccgtggatcagtaacactcactt
+> KP009580.1 |Coxsackievirus A10 strain FY07/AH/CHN/2013, complete genome|2540-3044
+--acaatcgtcagtttctttggtgataccgtggatcagtaacactcactt
+> KP009581.1 |Coxsackievirus A10 strain FY08/AH/CHN/2013, complete genome|2540-3044
+--acaatcgtcagtctctttggtgataccgtggattagcaacactcactt
+> KJ170436.1 |Human poliovirus 1 strain NIE1018316, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170437.1 |Human poliovirus 1 strain NIE1218351, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170438.1 |Human poliovirus 1 strain NIE1018319, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170439.1 |Human poliovirus 1 strain NIE1018354, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170440.1 |Human poliovirus 1 strain NIE1018360, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170441.1 |Human poliovirus 1 strain NIE1018362, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170445.1 |Human poliovirus 1 strain NIE1018365, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170446.1 |Human poliovirus 1 strain NIE1018366, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170447.1 |Human poliovirus 1 strain NIE1118369, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170448.1 |Human poliovirus 1 strain NIE1118376, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170450.1 |Human poliovirus 1 strain NIE1118383, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170451.1 |Human poliovirus 1 strain NIE1018321, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170452.1 |Human poliovirus 1 strain NIE1118397, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170453.1 |Human poliovirus 1 strain NIE1118398, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170454.1 |Human poliovirus 1 strain NIE1118401, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170455.1 |Human poliovirus 1 strain NIE1118402, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170456.1 |Human poliovirus 1 strain NIE1118403, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170457.1 |Human poliovirus 1 strain NIE1118407, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170458.1 |Human poliovirus 1 strain NIE1018322, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170459.1 |Human poliovirus 1 strain NIE1118378, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170475.1 |Human poliovirus 1 strain NIE1018320, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170476.1 |Human poliovirus 1 strain NIE1118404, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170477.1 |Human poliovirus 1 strain NIE0918314, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170478.1 |Human poliovirus 1 strain NIE0918391, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170479.1 |Human poliovirus 1 strain NIE1118386, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170480.1 |Human poliovirus 1 strain NIE1118328, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170481.1 |Human poliovirus 1 strain NIE1118330, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170482.1 |Human poliovirus 1 strain NIE1218341, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170483.1 |Human poliovirus 1 strain NIE1218349, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170484.1 |Human poliovirus 1 strain NIE0918312, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170485.1 |Human poliovirus 1 strain NIE1218348, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170486.1 |Human poliovirus 1 strain NIE0918380, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170487.1 |Human poliovirus 1 strain NIE1118318, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170488.1 |Human poliovirus 1 strain NIE1018325, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170489.1 |Human poliovirus 1 strain NIE1118327, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170490.1 |Human poliovirus 1 strain NIE1118333, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170491.1 |Human poliovirus 1 strain NIE1018324, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170492.1 |Human poliovirus 1 strain NIE1118400, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170493.1 |Human poliovirus 1 strain NIE1118367, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170494.1 |Human poliovirus 1 strain NIE1118329, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170495.1 |Human poliovirus 1 strain NIE1118335, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170496.1 |Human poliovirus 1 strain NIE1218346, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170497.1 |Human poliovirus 1 strain NIE1218344, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170498.1 |Human poliovirus 1 strain NIE1218353, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170499.1 |Human poliovirus 1 strain NIE1118399, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170500.1 |Human poliovirus 1 strain NIE0918315, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170501.1 |Human poliovirus 1 strain NIE1018393, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170502.1 |Human poliovirus 1 strain NIE0918388, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170504.1 |Human poliovirus 1 strain NIE1018326, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170505.1 |Human poliovirus 1 strain NIE1118317, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170506.1 |Human poliovirus 1 strain NIE1018395, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170507.1 |Human poliovirus 1 strain NIE1018359, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170508.1 |Human poliovirus 1 strain NIE1018382, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170509.1 |Human poliovirus 1 strain NIE0918392, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170510.1 |Human poliovirus 1 strain NIE1118371, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170511.1 |Human poliovirus 1 strain NIE1118374, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170512.1 |Human poliovirus 1 strain NIE1118384, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170513.1 |Human poliovirus 1 strain NIE1118385, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170514.1 |Human poliovirus 1 strain NIE1118372, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170515.1 |Human poliovirus 1 strain NIE1018394, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170516.1 |Human poliovirus 1 strain NIE1018358, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170517.1 |Human poliovirus 1 strain NIE1018323, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170518.1 |Human poliovirus 1 strain NIE1118377, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170519.1 |Human poliovirus 1 strain NIE1218352, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170520.1 |Human poliovirus 1 strain NIE1018357, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170521.1 |Human poliovirus 1 strain NIE1118370, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170522.1 |Human poliovirus 1 strain NIE1018381, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170523.1 |Human poliovirus 1 strain NIE0918387, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170524.1 |Human poliovirus 1 strain NIE0918390, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170525.1 |Human poliovirus 1 strain NIE1118405, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170526.1 |Human poliovirus 1 strain NIE1118379, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170527.1 |Human poliovirus 1 strain NIE1118373, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170528.1 |Human poliovirus 1 strain NIE0918313, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170529.1 |Human poliovirus 1 strain NIE1018356, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170530.1 |Human poliovirus 1 strain NIE1018355, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170531.1 |Human poliovirus 1 strain NIE1018363, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170532.1 |Human poliovirus 1 strain NIE1118375, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> KJ170576.1 |Human poliovirus 3 strain NIE1018522, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170577.1 |Human poliovirus 3 strain NIE1118455, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170578.1 |Human poliovirus 3 strain NIE1118498, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170579.1 |Human poliovirus 3 strain NIE1118512, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170587.1 |Human poliovirus 3 strain NIE1118475, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170588.1 |Human poliovirus 3 strain NIE1018480, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170591.1 |Human poliovirus 3 strain NIE1018488, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170594.1 |Human poliovirus 3 strain NIE1018492, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170595.1 |Human poliovirus 3 strain NIE1118500, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170597.1 |Human poliovirus 3 strain NIE1018521, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170598.1 |Human poliovirus 3 strain NIE1018504, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170603.1 |Human poliovirus 3 strain NIE1118508, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170604.1 |Human poliovirus 3 strain NIE1018467, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170612.1 |Human poliovirus 3 strain NIE1218544, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170613.1 |Human poliovirus 3 strain NIE1118494, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170614.1 |Human poliovirus 3 strain NIE1118496, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170615.1 |Human poliovirus 3 strain NIE1218545, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170618.1 |Human poliovirus 3 strain NIE1118456, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170619.1 |Human poliovirus 3 strain NIE1118511, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170620.1 |Human poliovirus 3 strain NIE1218540, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170621.1 |Human poliovirus 3 strain NIE1018466, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170622.1 |Human poliovirus 3 strain NIE1218550, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170623.1 |Human poliovirus 3 strain NIE1218551, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170624.1 |Human poliovirus 3 strain NIE1018459, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170625.1 |Human poliovirus 3 strain NIE1218538, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170626.1 |Human poliovirus 3 strain NIE1218546, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170627.1 |Human poliovirus 3 strain NIE1118497, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170628.1 |Human poliovirus 3 strain NIE1018520, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170629.1 |Human poliovirus 3 strain NIE1118507, complete genome|2540-3044
+--gcaatcatcttgcactatggtggtgccgtggattagtaatgtgacata
+> KJ170630.1 |Human poliovirus 3 strain NIE1018465, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170631.1 |Human poliovirus 3 strain NIE1218542, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170632.1 |Human poliovirus 3 strain NIE1018491, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170633.1 |Human poliovirus 3 strain NIE1218549, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170634.1 |Human poliovirus 3 strain NIE1018486, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170635.1 |Human poliovirus 3 strain NIE1218543, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170636.1 |Human poliovirus 3 strain NIE1018458, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170637.1 |Human poliovirus 3 strain NIE1118534, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170638.1 |Human poliovirus 3 strain NIE1018484, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170639.1 |Human poliovirus 3 strain NIE1018493, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170640.1 |Human poliovirus 3 strain NIE1018454, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170641.1 |Human poliovirus 3 strain NIE1118532, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170642.1 |Human poliovirus 3 strain NIE0918451, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170643.1 |Human poliovirus 3 strain NIE1118529, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170651.1 |Human poliovirus 3 strain NIE1118471, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170652.1 |Human poliovirus 3 strain NIE1118472, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170653.1 |Human poliovirus 3 strain NIE1118473, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170654.1 |Human poliovirus 3 strain NIE1118476, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170655.1 |Human poliovirus 3 strain NIE1118479, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170656.1 |Human poliovirus 3 strain NIE1118509, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170657.1 |Human poliovirus 3 strain NIE1118533, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170658.1 |Human poliovirus 3 strain NIE1118530, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170659.1 |Human poliovirus 3 strain NIE1118510, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170660.1 |Human poliovirus 3 strain NIE1018490, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170661.1 |Human poliovirus 3 strain NIE1118513, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170662.1 |Human poliovirus 3 strain NIE0918452, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170663.1 |Human poliovirus 3 strain NIE0918517, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170664.1 |Human poliovirus 3 strain NIE0918514, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170665.1 |Human poliovirus 3 strain NIE1118531, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170666.1 |Human poliovirus 3 strain NIE1018460, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170667.1 |Human poliovirus 3 strain NIE1218552, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170668.1 |Human poliovirus 3 strain NIE1018462, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170669.1 |Human poliovirus 3 strain NIE0918518, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170670.1 |Human poliovirus 3 strain NIE0918501, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170671.1 |Human poliovirus 3 strain NIE1018485, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170672.1 |Human poliovirus 3 strain NIE1018525, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170673.1 |Human poliovirus 3 strain NIE0918515, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170674.1 |Human poliovirus 3 strain NIE0918516, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170675.1 |Human poliovirus 3 strain NIE1118535, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170676.1 |Human poliovirus 3 strain NIE0918519, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> KJ170677.1 |Human poliovirus 3 strain NIE1018453, complete genome|2540-3044
+--acaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> JQ086366.1 |Human enterovirus 71 strain EV71/Ningbo.CHN/061/2011, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KP308414.1 |Enterovirus A71 strain EV71/Homo sapiens/KHM/277/2012, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KP308419.1 |Enterovirus A71 strain EV71/Homo sapiens/KHM/352/2012, complete genome|2540-3044
+--gcaatcgtctgttaccctcgtaataccgtggatcagcaacactcatta
+> KP308424.1 |Enterovirus A71 strain EV71/Homo sapiens/KHM/388/2012, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KP308428.1 |Enterovirus A71 strain EV71/Homo sapiens/KHM/287/2012, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccgtggatcagcaacactcatta
+> KP308429.1 |Enterovirus A71 strain EV71/Homo sapiens/KHM/359/2012, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaatactcatta
+> KP308438.1 |Enterovirus A71 strain EV71/Homo sapiens/KHM/302/2012, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KP308458.1 |Enterovirus A71 strain EV71/Homo sapiens/KHM/316/2013, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KJ641623.1 |Coxsackievirus A10 strain CVA10/JB141310010, complete genome|2540-3044
+--acaatcgtcagtctctttggtaataccgtggatcagtaacactcactt
+> KJ957190.1 |Echovirus E25 strain E25/2010/CHN/BJ, complete genome|2540-3044
+--gcaatcgagttgtgtgctctgtgtgccatggatcagtcagacaaacta
+> KM609475.1 |Coxsackievirus A8 isolate CVA8/SZ93/CHN/2012, complete genome|2540-3044
+--gcaatcatccatcactttagtgatcccatggattagtaatacacactt
+> KM609476.1 |Coxsackievirus A8 isolate CVA8/SZ124/CHN/2012, complete genome|2540-3044
+--gcaatcatctattactcttgtgatcccatggattagcaacacacactt
+> KM609477.1 |Coxsackievirus A8 isolate CVA8/SZ127/CHN/2012, complete genome|2540-3044
+--gcaatcatccatcactctagtgatcccatggatcagtaatacacactt
+> KM609478.1 |Coxsackievirus A8 isolate CVA8/SZ141/CHN/2012, complete genome|2540-3044
+--gcaatcatctattactcttgtgatcccatggatcagcaacacacactt
+> KM609479.1 |Coxsackievirus A8 isolate CVA8/SZ157/CHN/2012, complete genome|2540-3044
+--gcaatcatctattactcttgtgatcccatggattagcaacacacactt
+> KM609480.1 |Coxsackievirus A8 isolate CVA8/SZ39/CHN/2013, complete genome|2540-3044
+--gcaatcatccatcactctagtgatcccatggatcagtaatacacactt
+> KM609481.1 |Coxsackievirus A8 isolate CVA8/SZ40/CHN/2013, complete genome|2540-3044
+--gcaatcatccatcactctagtgatcccatggatcagtaatacacactt
+> KF734978.1 |Rhinovirus C isolate 1515-MY-10, complete genome|2540-3044
+--ccagtcatcatgccacctcgttgtaccgtggatcagctcccacttctt
+> KJ019831.1 |Human poliovirus 1 isolate ISR1318572, complete genome|2540-3044
+--acaatcctcctgcaccatggttgtaccgtggattagcaatactacata
+> KJ019832.1 |Human poliovirus 1 isolate ISR1318573, complete genome|2540-3044
+--acaatcctcctgcactatggttgtaccgtggattagcaatactacata
+> KJ019833.1 |Human poliovirus 1 isolate ISR1318574, complete genome|2540-3044
+--acaatcctcctgcaccatggttgtaccgtggattagcaatactacata
+> KM402019.1 |Enterovirus A strain S0093b/CA16/2013/CHN, complete genome|2540-3044
+--gcagtcttctgtgacattagtcgtgccatggatcagtaatacacacta
+> KM402020.1 |Enterovirus A strain S0098b/CA16/2013/CHN, complete genome|2540-3044
+--gcagtcttctgtgacattagtcgtgccatggatcagtaatacacacta
+> KM279379.1 |Coxsackievirus A6 strain CA6/CC13/57, complete genome|2540-3044
+--acaatcatcagttactctagtcataccctggattagtaacactcattt
+> KM211579.1 |Enterovirus A71 isolate Puyang-451-2012, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KM211580.1 |Enterovirus A71 isolate Puyang-461-2012, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KM215267.1 |Coxsackievirus A16 isolate CVA16/SZ29/CHN/2014, complete genome|2540-3044
+--gcaatcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> KJ857507.1 |Enterovirus C99 isolate YT23/SD/CHN/11, complete genome|2540-3044
+--acagtctagctgcactatggtagcaccttggatctccaataccgtcta
+> KJ857508.1 |Enterovirus C99 isolate YT31/SD/CHN/11, complete genome|2540-3044
+--acagtctagctgtaccatggtagcaccctggatctctaatactgttta
+> KF874627.1 |Enterovirus B75 isolate 102/SD/CHN/97, complete genome|2540-3044
+--gcagtccagctgtgtcctgtgcgtgccttggattagccagacacacta
+> KM851231.1 |Enterovirus D68 strain US/KY/14-18953, complete genome|2540-3044
+--acaatccagtgtcactctggtaataccttggatcagtggatcccacta
+> KF874626.1 |Enterovirus B73 isolate 088/SD/CHN/04, complete genome|2540-3044
+--acaatcaagttgtgtgttgtgcatcccgtggatcagtcagacacacta
+> KF667358.1 |Coxsackievirus A24 strain INDNIV1034661LV463, complete genome|2540-3044
+--tcaatcctcatgcaccatgctagccccttggatatccaacacagtcta
+> KF667359.1 |Coxsackievirus A24 strain INDNIV1036731LV476, complete genome|2540-3044
+--tcaatcctcatgcaccatgctagccccttggatatccaacacagtcta
+> KF667360.1 |Coxsackievirus A24 strain INDNIV1044161LV530, complete genome|2540-3044
+--tcaatcctcatgcaccatgctagccccttggatatccaacacagtcta
+> KF667361.1 |Coxsackievirus A24 strain INDNIV1040633LV639, complete genome|2540-3044
+--tcaatcctcatgcaccatgctagccccttggatatccaacacagtcta
+> KJ755189.1 |Enterovirus B81 isolate 99279/XZ/CHN/1999, complete genome|2540-3044
+--acagtctagctgtgtgttgtgtgtaccatggataagtcaaacgcatta
+> KJ755190.1 |Enterovirus B81 isolate 99298c/XZ/CHN/1999, complete genome|2540-3044
+--acagtctagctgtgtgttgtgtgtaccatggataagtcaaacgcatta
+> KJ765699.1 |Echovirus E7 strain DH22G/JS/2012, complete genome|2540-3044
+--acaatctagctgtgttctgtgtatcccgtggatcagccagacgcatta
+> KJ746492.1 |Coxsackievirus A16 strain L23, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> KJ746494.1 |Enterovirus A71 strain 306B, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccgtggatcagcaacactcatta
+> KF422142.1 |Coxsackievirus A12 strain QD-LXH535/SD/CHN/2009, complete genome|2540-3044
+--gcagtcctctgtcacactagtgatcccatggataagcaacacccacta
+> KF422143.1 |Coxsackievirus A12 strain QD-HDH507/SD/CHN/2011, complete genome|2540-3044
+--gcagtcctctgttacactggtgatcccttggataagcaacacccacta
+> KF015730.1 |Echovirus E30 VP1 protein gene, partial cds|2540-3044
+--------------------------------------------------
+> KF015731.1 |Echovirus E12 VP1 protein gene, partial cds|2540-3044
+--------------------------------------------------
+> KF015732.1 |Echovirus E20 VP1 protein gene, partial cds|2540-3044
+--------------------------------------------------
+> KF015733.1 |Human rhinovirus A22 VP1 protein gene, partial cds|2540-3044
+--------------------------------------------------
+> KF726085.1 |Enterovirus D68 isolate BCH895A, complete genome|2540-3044
+--acaatccagtgttaccttggtaataccttggatcagtggatcccacta
+> KJ155495.1 |Human poliovirus 1 isolate EGY1218587, complete genome|2540-3044
+--acaatcctcctgcaccatggttgtaccgtggattagcaatactacata
+> KJ155496.1 |Human poliovirus 1 isolate EGY1218588, complete genome|2540-3044
+--acaatcctcctgcaccatggttgtaccgtggattagcaatactacata
+> KJ155499.1 |Human poliovirus 1 isolate EGY1218585, complete genome|2540-3044
+--acaatcctcctgcaccatggttgtaccgtggattagcaatactacata
+> KJ155500.1 |Human poliovirus 1 isolate EGY1218586, complete genome|2540-3044
+--acaatcctcctgcaccatggttgtaccgtggattagcaatactacata
+> KJ686144.1 |Enterovirus A71 strain EV71/Homo sapiens/VNM/94/2012, complete genome|2540-3044
+--acaatcgtctgttactcttgtgataccatggattagcaacacccacta
+> KJ686160.1 |Enterovirus A71 strain EV71/Homo sapiens/VNM/46/2012, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KJ686161.1 |Enterovirus A71 strain EV71/Homo sapiens/VNM/23/2011, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KJ686179.1 |Enterovirus A71 strain EV71/Homo sapiens/VNM/15/2011, complete genome|2540-3044
+--acaatcgtctgttactcttgtgataccatggattagcaacacccacta
+> KJ686180.1 |Enterovirus A71 strain EV71/Homo sapiens/VNM/97/2012, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccgtggatcagcaacactcatta
+> KJ686187.1 |Enterovirus A71 strain EV71/Homo sapiens/VNM/199/2011, complete genome|2540-3044
+--acaatcgtctgttactcttgtgataccatggattagcaacacccacta
+> KJ686191.1 |Enterovirus A71 strain EV71/Homo sapiens/VNM/5/2011, complete genome|2540-3044
+--acaatcgtctgttactcttgtgataccatggattagcaacacccacta
+> KJ686219.1 |Enterovirus A71 strain EV71/Homo sapiens/VNM/164/2012, complete genome|2540-3044
+--gcagtcgtctgttacccttgtaataccgtggatcagcaacactcatta
+> KJ686230.1 |Enterovirus A71 strain EV71/Homo sapiens/VNM/195/2011, complete genome|2540-3044
+--acaatcgtctgttactcttgtgataccatggattagcaacacccacta
+> KJ686250.1 |Enterovirus A71 strain EV71/Homo sapiens/VNM/173/2012, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KJ686251.1 |Enterovirus A71 strain EV71/Homo sapiens/VNM/52/2012, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KJ686258.1 |Enterovirus A71 strain EV71/Homo sapiens/VNM/42/2011, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KJ686262.1 |Enterovirus A71 strain EV71/Homo sapiens/VNM/53/2012, complete genome|2540-3044
+--acaatcgtctgttactcttgtgataccatggattagcaacacccacta
+> KJ686308.1 |Enterovirus A71 strain EV71/Homo sapiens/VNM/191/2011, complete genome|2540-3044
+--acaatcgtctgttactcttgtgataccatggattagcaacacccacta
+> KJ489414.1 |Human coxsackievirus B3 strain 2679, complete genome|2540-3044
+--acaatctagctgcgtcctatgcataccctggattagccaaacacatta
+> KF055239.1 |Coxsackievirus A16 strain changchun028, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> KF055240.1 |Coxsackievirus A16 strain changchun029, complete genome|2540-3044
+--acaatcttctgtgacgttggttgtgccatggattagcaacacacacta
+> KF055242.1 |Coxsackievirus A16 strain changchun075, complete genome|2540-3044
+--acaatcttctgtgacattggttgtgccatggattagcaacacacacta
+> KF055238.1 |Coxsackievirus A16 strain CC024, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> KF055241.1 |Coxsackievirus A16 strain CC045, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> KF055243.1 |Coxsackievirus A16 strain CC090, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> KF055244.1 |Coxsackievirus A16 strain CC097, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> KF055245.1 |Coxsackievirus A16 strain CC163, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> KJ004552.1 |Enterovirus A71 isolate EV71/Hun11-32/2011, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KJ004555.1 |Enterovirus A71 isolate EV71/Hun12-10/2012, complete genome|2540-3044
+--gcagtcgtctgttacccttgtaataccatggattagcaacactcatta
+> KF312882.1 |Enterovirus B111 strain Q0011/XZ/CHN/2000, complete genome|2540-3044
+--acagtctagttgtgtgctgtgcgtaccatggatcagtcaaacacatta
+> KJ020100.1 |Human coxsackievirus B3 isolate KM06, complete genome|2540-3044
+--gcaatctagttgtgtcttgtgcataccatggataagtcaaacacacta
+> KF781524.1 |Human coxsackievirus B4 strain HHHT34T/NM/CHN/2010, complete genome|2540-3044
+--acagtccagctgtgtgctatgtgtaccatggattagtcagactcacta
+> KF781525.1 |Human coxsackievirus B4 strain BM24G/NM/CHN/2010, complete genome|2540-3044
+--acagtctagctgtgtgttgtgtgtaccatggatcagtcagactcatta
+> KF990476.1 |Human enterovirus 106 isolate 148/YN/CHN/12, complete genome|2540-3044
+--gcagtctagttgtgtgttgtgtgtgccatggatcagccagactcatta
+> KF958307.1 |Rhinovirus A isolate 2916, complete genome|2540-3044
+--acagtccactgcctctctagtagtaccatgggttagtgctagtcattt
+> KF958308.1 |Rhinovirus B isolate 3039, complete genome|2540-3044
+--acaatcaacagttgtcatgaacataccatggacaagtggtgtgcaatt
+> KF958309.1 |Rhinovirus B isolate R93, complete genome|2540-3044
+--acagtccacaatagttatgacaataccctggacttcaggggtgcaatt
+> KF958310.1 |Rhinovirus C isolate 6331, complete genome|2540-3044
+--gcagtcttcatgcacacttgttgcaccatggatgtctagtactttcta
+> KF958311.1 |Rhinovirus C isolate 2536, complete genome|2540-3044
+--gcaatcgtcatgcactattgtagtaccatggatatcttcaaatttcta
+> KF991007.1 |Coxsackievirus A16 isolate DL16, complete genome|2540-3044
+--acaatcttctgtgacgttggttgtgccatggattagcaacacacacta
+> KJ025083.1 |Human coxsackievirus B3 strain MKP, complete genome|2540-3044
+--acaatcaagttgcgtgctgtgtataccctggataagccaaacacacta
+> KF924762.1 |Coxsackievirus A16 isolate CVA16-WIBP-P4-731, complete genome|2540-3044
+--gcaatcttctgtgacgttagtcgtgccatggatcagtaatacacacta
+> KF878966.1 |Enterovirus B strain QKM, complete genome|2540-3044
+--acaatccagttgtgtgctctgtgtgccatggatcagccaaacgcacta
+> KF495604.1 |Human enterovirus C96 isolate AFP809/GD/CHN/2011, complete genome|2540-3044
+--gcagtcaagtgctacaatggtcgctccatggatgtcaaactgtgtata
+> KF725085.1 |Coxsackievirus A24 isolate 110390, complete genome|2540-3044
+--tcaatcctcatgcaccatgttagccccttggatatccaacacagtcta
+> KC296444.1 |Enterovirus A71 strain HCM84-VNM-2011, complete genome|2540-3044
+--acaatcgtctgttactcttgtgataccatggattagcaacacccacta
+> KF129411.1 |Human enterovirus C99 isolate HT-XEBGH09F/XJ/CHN/2011, complete genome|2540-3044
+--gcagtctagttgcacaatggtggcaccttggatatccaacactgtgta
+> KF129412.1 |Human enterovirus C99 isolate KSSC-ALXHH01F/XJ/CHN/2011, complete genome|2540-3044
+--acagtctagctgcaccatggtggcaccttggatctccaacaccgttta
+> JX843810.1 |Human coxsackievirus B3 strain A103/KM/09, complete genome|2540-3044
+--gcagtctagttgtgtcttgtgtataccatggataagtcaaacacacta
+> JX843811.1 |Human coxsackievirus B5 strain A210/KM/09, complete genome|2540-3044
+--gcaatcgagctgcgtgttgtgcattccatggatcagccaaacgcacta
+> KF142411.1 |Enterovirus A71 isolate HNCZ/201203, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KF142412.1 |Enterovirus A71 isolate HNCZ/201208, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> KF142413.1 |Enterovirus A71 isolate HNCZ/201211, complete genome|2540-3044
+--gcaatcgtctgtcacccttgtaataccatggattagcaacactcatta
+> KF193620.1 |Coxsackievirus A16 isolate ZJ08-01, complete genome|2540-3044
+--acagtcctctgtgacgttggtcgtgccatggattagtaatacacacta
+> KF193621.1 |Coxsackievirus A16 isolate SD09-05, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> KF193622.1 |Coxsackievirus A16 isolate YN10-02, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> KF193623.1 |Coxsackievirus A16 isolate HN11-03, complete genome|2540-3044
+--gcagtcttctgtgacgttagttgtgccatggatcagtaatacacacta
+> KF193624.1 |Coxsackievirus A16 isolate HN09-02, complete genome|2540-3044
+--acagtcttctgtgacgttggtcgtgccgtggattagtaatacacacta
+> KF193625.1 |Coxsackievirus A16 isolate GX10-01, complete genome|2540-3044
+--gcagtcttctgtaacgctggtcgtgccatggatcagtaatacacacta
+> KF193626.1 |Coxsackievirus A16 isolate FJ10-03, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaacacacacta
+> KF193627.1 |Coxsackievirus A16 isolate FJ09-02, complete genome|2540-3044
+--acagtcttctgtgacgttggtcgtgccatggattagtaatacacacta
+> KF193628.1 |Coxsackievirus A16 isolate FJ09-01, complete genome|2540-3044
+--gcaatcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> KF193629.1 |Coxsackievirus A16 isolate BJ10-03, complete genome|2540-3044
+--acagtcttctgtgacgttggtcgtgccatggattagcaatacacacta
+> KF193630.1 |Coxsackievirus A16 isolate BJ10-01, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> KF193631.1 |Coxsackievirus A16 isolate BJ10-02, complete genome|2540-3044
+--acaatcttctgtgacgttggttgtgccatggattagcaacacacacta
+> KF193632.1 |Coxsackievirus A16 isolate AH08-06, complete genome|2540-3044
+--gcagtcttctgtaacgctggtcgtgccatggatcagtaatacacacta
+> KF042342.1 |Echovirus E6 isolate 2012EM95, complete genome|2540-3044
+--acaatccagttgtgtgctgtgcgtaccatggatcagccaaacgcacta
+> KF042343.1 |Echovirus E6 isolate 2012EM100, complete genome|2540-3044
+--acaatccagttgtgtgctgtgcgtaccatggatcagccaaacgcacta
+> KF311743.1 |Human coxsackievirus B5 strain ChZJ-1, complete genome|2540-3044
+--gcaatcgagctgcgtattgtgtgtgccgtggatcagccaatcgcatta
+> KC897073.1 |Echovirus E30 isolate 2012EM161, complete genome|2540-3044
+--gcaatcgagctgcgtgctgtgcgtaccatggattagtcaaaccaacta
+> KC880365.1 |Human poliovirus 1 isolate RUS39223, complete genome|2540-3044
+--acaatcctcctgtactatggtggtgccgtggattagcaataccacata
+> KC880366.1 |Human poliovirus 1 isolate TJK35363 clone 4, complete genome|2540-3044
+--acaatcctcctgtactatggtggtgccgtggattagcaatactacata
+> KC880367.1 |Human poliovirus 1 isolate TJK35363 clone 6, complete genome|2540-3044
+--acaatcctcctgtactatggtggtgccgtggattagcaatactacata
+> KC880368.1 |Human poliovirus 1 isolate TJK35363 clone 19, complete genome|2540-3044
+--acaatcctcctgtactatggtggtgccgtggattagcaatactacata
+> KC880369.1 |Human poliovirus 1 isolate TJK35363 clone 2, complete genome|2540-3044
+--acaatcctcctgtactatggtggtgccgtggattagcaatactacata
+> KC880370.1 |Human poliovirus 1 isolate RUS39270, complete genome|2540-3044
+--acaatcctcctgtactatggtggtgccgtggattagcaatactacata
+> KC880371.1 |Human poliovirus 1 isolate KAZ38374, complete genome|2540-3044
+--acaatcctcctgtactatggtggtgccgtggattagcaatactacata
+> KC880372.1 |Human poliovirus 1 isolate TJK35325, complete genome|2540-3044
+--acaatcctcctgtactatggtggtgccgtggattagcaatactacata
+> KC880373.1 |Human poliovirus 1 isolate RUS36716, complete genome|2540-3044
+--acaatcctcctgtactatggtggtgccgtggattagcaatactacata
+> KC880374.1 |Human poliovirus 1 isolate TKM37184, complete genome|2540-3044
+--acaatcctcctgtactatggtggtgccgtggattagcaatactacata
+> KC880375.1 |Human poliovirus 1 isolate TJK35389 clone 1, complete genome|2540-3044
+--acaatcctcctgtactatggtggtgccgtggattagcaatactacata
+> KC880376.1 |Human poliovirus 1 isolate TJK35389 clone 9, complete genome|2540-3044
+--acaatcctcctgtactatggtggtgccgtggattagcaatactacata
+> KC880377.1 |Human poliovirus 1 isolate TJK36567, complete genome|2540-3044
+--acaatcctcctgtactatggtggtgccgtggattagcaatactacata
+> KC880378.1 |Human poliovirus 1 isolate RUS37255, complete genome|2540-3044
+--acaatcctcctgtactatggtggtgccgtggattagcaatactacata
+> KC880379.1 |Human poliovirus 1 isolate TJK35453, complete genome|2540-3044
+--acaatcctcctgtactatggtggtgccgtggattagcaatactacata
+> KC880380.1 |Human poliovirus 1 isolate RUS36815, complete genome|2540-3044
+--acaatcctcctgtactatggtggtgccgtggattagcaatactacata
+> KC880381.1 |Human poliovirus 1 isolate TJK37339, complete genome|2540-3044
+--acaatcctcctgtactatggtggtgccgtggattagcaatactacata
+> KC880382.1 |Human poliovirus 1 isolate 36712, complete genome|2540-3044
+--acaatcctcctgtactatggtggtgccgtggattagcaatactacata
+> JX678288.1 |Human enterovirus C118 isolate CQ5185, complete genome|2540-3044
+--tcaatccagtgcaacactggtggctccgtggatttcaaacacagcttt
+> JX867330.1 |Coxsackievirus A2 strain 430895, complete genome|2540-3044
+--gcaatcgtcggttacactagtggtcccatggataagcaacactcacta
+> JX867331.1 |Coxsackievirus A2 strain 2260165, complete genome|2540-3044
+--gcaatcgtcggttacactagtggtcccatggataagcaacactcacta
+> JX867332.1 |Coxsackievirus A2 strain 431135, complete genome|2540-3044
+--gcaatcgtcggttacactagtggtcccatggataagcaacactcacta
+> JX867333.1 |Coxsackievirus A2 strain 431306, complete genome|2540-3044
+--gcaatcgtcggttacactagtggtcccatggataagcaacactcacta
+> KC436265.1 |Enterovirus A71 isolate V04-2218217, complete genome|2540-3044
+--gcagtcgtctgttacccttgtaataccatggattagcaacactcacta
+> KC238667.1 |Echovirus E9 strain DM33, complete genome|2540-3044
+--gcaatcaagctgcgtgttgtgtgtaccgtggattagccaaacgcacta
+> KC238668.1 |Echovirus E9 strain DM34, complete genome|2540-3044
+--gcaatcaagctgcgtgttgtgtgtaccgtggattagccaaacgcacta
+> KC238669.1 |Echovirus E9 strain DM14, complete genome|2540-3044
+--gcaatcaagctgcgtgttgtgtgtaccgtggattagccaaacgcacta
+> KC292019.1 |Enterovirus B87 isolate LY02/SD/CHN/2000, complete genome|2540-3044
+--gcaatctagctgtgttctttgcgtgccttggataagccaaacccatta
+> KC507895.1 |Human coxsackievirus A16 strain YY157, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> JF838278.2 |Human poliovirus 1 isolate PV1-RC2010-45, complete genome|2540-3044
+--acaatcctcctgcactatggtagtgccgtggattagcaacactacata
+> JX476161.2 |Coxsackievirus B3 isolate NIV09001C5LVH7, complete genome|2540-3044
+--gcaatccagctgtgtcttgtgtataccctggataagccaaacgcacta
+> JX476162.2 |Coxsackievirus B3 isolate NIV09001C1LVH1, complete genome|2540-3044
+--gcaatccagctgtgtcttgtgtataccctggataagccaaacgcacta
+> JX476163.2 |Coxsackievirus B3 isolate NIV09001C2LVH2, complete genome|2540-3044
+--gcaatccagctgtgtcttgtgtataccctggataagccaaacgcacta
+> JX476164.2 |Coxsackievirus B3 isolate NIV09001C3LVH4, complete genome|2540-3044
+--gcaatccagctgtgtcttgtgtataccctggataagccaaacgcacta
+> JX476165.2 |Coxsackievirus B3 isolate NIV09001C4LVH5, complete genome|2540-3044
+--gcaatccagctgtgtcttgtgtataccctggataagccaaacgcacta
+> JX476166.2 |Coxsackievirus B3 isolate NIV1021241LV380, complete genome|2540-3044
+--acaatccagctgtgtattgtgtataccatggataagccaaacacatta
+> JX476167.2 |Coxsackievirus B3 isolate NIV0917801LV243, complete genome|2540-3044
+--gcaatccagctgtgtcttgtgtataccctggataagccagacgcacta
+> JX476168.2 |Coxsackievirus B3 isolate NIV099741LV204, complete genome|2540-3044
+--gcaatccagctgtgtcttgtgtataccctggataagccaaacgcacta
+> JX476169.2 |Coxsackievirus B3 isolate NIV0923491LV157, complete genome|2540-3044
+--acaatccagctgtgtcttgtgtataccatggataagccaaacacatta
+> JX476170.2 |Coxsackievirus B3 isolate NIV095181LV33, complete genome|2540-3044
+--gcaatccagctgtgtcttgtgtataccctggataagccaaacgcacta
+> JX476171.2 |Coxsackievirus B3 isolate NIV094331LV26, complete genome|2540-3044
+--gcaatccagctgtgtcttgtgtataccctggataagccaaacgcacta
+> KC481610.1 |Human coxsackievirus B3 strain AH30, complete genome|2540-3044
+--gcaatctagttgtgtcttgtgcataccatggataagtcaaacacacta
+> KC342228.1 |Human coxsackievirus A16 strain G08, complete genome|2540-3044
+--acagtcttctgtgacgttggtcgtgccatggattagtaacacacacta
+> JX678878.1 |Human enterovirus 71 strain FY17.08-7/AH/CHN/2008, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> JX678885.1 |Human enterovirus 71 strain SH-17/SH/CHN/2002, complete genome|2540-3044
+--gcagtcgtctgttacccttgtaataccatggattagcaatactcacta
+> JX274999.1 |Human poliovirus 2 strain NIE0611451, complete genome|2540-3044
+--gcagtcttcatgcactatggtggtaccttggatcagtaatactacata
+> JX275140.1 |Human poliovirus 2 strain NIE0811456, complete genome|2540-3044
+--gcagtcctcatgcactatggtggtaccttggatcagcaacaccacata
+> JX275147.1 |Human poliovirus 2 strain NIE0811460, complete genome|2540-3044
+--gcaatcttcatgcactatggtggtaccttggatcagcaataccacata
+> JX275162.1 |Human poliovirus 2 strain NIE0811454, complete genome|2540-3044
+--gcagtcttcatgcactatggtggtaccttggatcagtaacaccacata
+> JX275380.1 |Human poliovirus 2 strain NIE1116178, complete genome|2540-3044
+--gcagtcttcatgcactatggtggtgccttggatcagcaataccacata
+> JX898905.1 |Human enterovirus 85 strain HTYT-ARLH403F/XJ/CHN/2011, complete genome|2540-3044
+--ccaatccagctgcgtgctgtgcgttccttggattagtcagacacatta
+> JX898906.1 |Human enterovirus 85 strain HTPS-MJH21F/XJ/CHN/2011, complete genome|2540-3044
+--ccaatccagctgtgtgctgtgcgttccttggattagtcagacacatta
+> JX898907.1 |Human enterovirus 85 strain HTPS-MKLH04F/XJ/CHN/2011, complete genome|2540-3044
+--ccaatccagctgcgtgctgtgcgttccttggattagtcagacacatta
+> JX898908.1 |Human enterovirus 85 strain HT-LYKH202F/XJ/CHN/2011, complete genome|2540-3044
+--ccaatccagctgcgtgctgtgcgttccttggattagtcagacacatta
+> KC117317.1 |Human coxsackievirus A16 strain CA16/GD09/24, complete genome|2540-3044
+--acagtcttctgtgacgttggtcgtgccatggattagtaatacacacta
+> KC117318.1 |Human coxsackievirus A16 strain CA16/GD09/119, complete genome|2540-3044
+--acagtcctctgtgacattggtcgtgccatggattagtaacacacacta
+> JX986740.1 |Human coxsackievirus A16 isolate Wuhan0109/HuB/CHN/2011, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaacacacacta
+> JX986741.1 |Human coxsackievirus A16 isolate Wuhan0157/HuB/CHN/2011, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaacacacacta
+> JX986742.1 |Human coxsackievirus A16 isolate Wuhan0127/HuB/CHN/2011, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaacacacacta
+> JX976769.1 |Human coxsackievirus B1 isolate CVB1SD2011CHN, complete genome|2540-3044
+--acaatcaagctgcgtgttgtgcgtaccgtggattagccaaacacacta
+> JX976770.1 |Human coxsackievirus B3 isolate CVB3SD2012CHN, complete genome|2540-3044
+--gcagtctagttgtgtcctgtgcataccatggataagccaaacacacta
+> JX976771.1 |Echovirus E6 isolate E6SD11CHN, complete genome|2540-3044
+--acaatctagttgtgtgctgtgcgtaccatggatcagccaaacgcacta
+> JX976772.1 |Echovirus E25 isolate E25SD2010CHN, complete genome|2540-3044
+--gcagtcgagttgtgtgctctgtgtgccatggattagtcagacaaacta
+> JX976773.1 |Echovirus E30 isolate E30SD2010CHN, complete genome|2540-3044
+--gcaatccagctgtgtgctgtgcgtgccatggatcagtcaaaccaacta
+> JX507808.1 |Human coxsackievirus A16 strain BJ1208, complete genome|2540-3044
+--acagtcctctgtgacgttggtcgtaccatggattagtaatacacacta
+> JQ801739.1 |Echovirus E6 strain KM57-09, complete genome|2540-3044
+--gcaatccagctgcgtgctgtgtgtgccttggatcagccaaacacacta
+> JQ746660.1 |Human coxsackievirus A16 isolate PM-00033-07, complete genome|2540-3044
+--acagtcttctgtgacgctggtcgtgccatggattagtaatacacacta
+> JQ746661.1 |Human coxsackievirus A16 isolate PM-12284-99, complete genome|2540-3044
+--acagtcttctgtgacgttggtcgtgccatggattagtaacacacacta
+> JQ746666.1 |Human coxsackievirus A16 isolate PM-15765-00, complete genome|2540-3044
+--acagtcttctgtgacgttggtcgtgccatggattagtaacacacacta
+> JX982253.1 |Human enterovirus C104 strain Pavia259-7712, complete genome|2540-3044
+--acagtccagtgcaacattagtagccccatggatttcaaatgtcaatta
+> JX982254.1 |Human enterovirus C104 strain Pavia260-9210, complete genome|2540-3044
+--acagtccagtgcaacattagtagccccatggatttcaaatgtcaatta
+> JX982255.1 |Human enterovirus C104 strain Pavia263-11230, complete genome|2540-3044
+--acagtccagtgcaacattagtagccccatggatttcaaatgtcaatta
+> JX982256.1 |Human enterovirus C104 strain Pavia264-16291, complete genome|2540-3044
+--acagtccagtgcaacattagtagccccatggatttcaaatgtcaatta
+> JX982257.1 |Human enterovirus C104 strain Pavia261-9570, complete genome|2540-3044
+--acagtccagtgcaacattagtagccccgtggatttcaaatgttaatta
+> JX982258.1 |Human enterovirus C104 strain Pavia68-10804B, complete genome|2540-3044
+--acagtccagtgcaacattagtagccccatggatttcaaatgtcaatta
+> JX982259.1 |Human enterovirus C104 strain Pavia262-11228, complete genome|2540-3044
+--acagtccagtgcaacattagtagccccatggatttcaaatgtcaatta
+> JX854435.1 |Echovirus E30 isolate ECV30/GX10/05, complete genome|2540-3044
+--acaatccagctgtgtgctgtgcgtaccatggattagccaaaccaacta
+> JX644073.1 |Human enterovirus 80 isolate HZ01/SD/CHN/2004, complete genome|2540-3044
+--acaatccagctgcgtactgtgcatcccatggataagtcagacacatta
+> JX961708.1 |Human enterovirus C118 strain ISR10, complete genome|2540-3044
+--tcaatccagtgcaacactggtggccccgtggatttcaaacacggcttt
+> JX961709.1 |Human enterovirus C118 strain ISR38, complete genome|2540-3044
+--tcaatccagtgcaacactggtggccccgtggatttcaaacacggcttt
+> JQ929657.2 |Echovirus E6 strain FIN09-NPA, complete genome|2540-3044
+--acaatccagttgtgtgttgtgtgtaccatggattagccagacacacta
+> JN596587.1 |Echovirus E9 strain MSH/KM812/2010, complete genome|2540-3044
+--gcaatcaagctgcgtattatgtgtgccgtggattagccaaacgcacta
+> JN596588.1 |Human coxsackievirus B1 strain MSH/KM9/2009, complete genome|2540-3044
+--acagtcaagctgcgtgttgtgcgtaccgtggattagtcaaacacacta
+> JX898909.1 |Human enterovirus 85 strain HTYT-ARL-AFP02F/XJ/CHN/2011, complete genome|2540-3044
+--gcaatccagctgcgtgctgtgcgttccttggattagtcagacacatta
+> JX839965.1 |Human coxsackievirus A16 strain Kor08-CVA16, complete genome|2540-3044
+--acagtcttctgtgacgttggttgtgccatggattagtaacacacacta
+> JX481738.1 |Human coxsackievirus A16 strain BJCA08, complete genome|2540-3044
+--gcagtcttctgtgacgttagttgtgccatggatcagtaatacacacta
+> JX312064.1 |Human coxsackievirus B3 strain Nancy, complete genome|2540-3044
+--acaatcaagttgcgtgctgtgtataccctggataagccaaacacacta
+> JX308222.1 |Human coxsackievirus B4 isolate CVB4/GX/10, complete genome|2540-3044
+--acagtctagctgtgtgttatgtgtaccatggattagtcagactcatta
+> JX262382.1 |Human enterovirus C117 strain LIT22, complete genome|2540-3044
+--ccagtctagtgcgacacttgttgcaccctggatttcaaatgtcaacta
+> JQ397329.1 |Human enterovirus 74 strain Rikaze-136/XZ/CHN/2010, complete genome|2540-3044
+--acaatcaagttgcgtactctgcgtaccgtggattagccaatctcacta
+> JX244186.1 |Human enterovirus 71 strain SDLY107, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> JX174176.1 |Human coxsackievirus A1 isolate HT-THLH02F/XJ/CHN/2011, complete genome|2540-3044
+--gcaatccagcgccaccatggtggccccatggatatctaatgtcaacta
+> JX174177.1 |Human coxsackievirus A1 isolate KS-ZPH01F/XJ/CHN/2011, complete genome|2540-3044
+--gcaatccagcgccaccatggtggccccatggatatctaatgtcaacta
+> JX025561.1 |Human enterovirus 71 strain FY7VP5/AH/CHN/2008, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> JX017382.1 |Human coxsackievirus B5 isolate 17Y, complete genome|2540-3044
+--gcaatcgagctgcgtgctatgcattccatggattagccaaacgcacta
+> JX017383.1 |Human coxsackievirus B5 isolate 03001N, complete genome|2540-3044
+--gcaatcgagctgcgtgctatgcattccatggattagccaaacgcacta
+> JX068827.1 |Human coxsackievirus A16 strain TS10/07, complete genome|2540-3044
+--gcaatcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> JX068828.1 |Human coxsackievirus A16 strain BJ11/12, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccgtggatcagtaatacacacta
+> JX068829.1 |Human coxsackievirus A16 strain TS10/08, complete genome|2540-3044
+--acaatcttctgtgacgttggttgtgccatggattagcaacacacacta
+> JX068830.1 |Human coxsackievirus A16 strain BJ11/03, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> JX068831.1 |Human coxsackievirus A16 strain BJ/11/11, complete genome|2540-3044
+--acaatcctctgtgacgttggttgtgccatggattagcaacacacacta
+> JX068832.1 |Human coxsackievirus A16 strain BJ09/06, complete genome|2540-3044
+--acagtcttctgtgacgttggtcgtgccatggattagtaatacacacta
+> JX068833.1 |Human coxsackievirus A16 strain BJ08/07, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> JQ964234.1 |Human coxsackievirus A6 strain HN421, complete genome|2540-3044
+--acaatcatcagttactctagtcataccctggattagtaacactcattt
+> JN205461.1 |Human rhinovirus C strain WA823M02, complete genome|2540-3044
+--acaatcaacatgtaacatggttattccgtggatctcagcacacaatta
+> JQ354992.1 |Human coxsackievirus A16 strain Ningbo.CHN/028-2/2009, complete genome|2540-3044
+--acaatcttctgtgacgttggttgtgccatggattagcaacacacacta
+> JQ729993.1 |Human echovirus 6 strain FJLY2010327, complete genome|2540-3044
+--gcaatccagttatgtgttgtgcgtaccatggatcagccaaacgcacta
+> JQ040513.1 |Human coxsackievirus B3 strain Macocy, complete genome|2540-3044
+--acaatcaagttgcgtgctgtgtataccctggataagccaaacacacta
+> JQ041367.1 |Human coxsackievirus A7 strain LEV8, complete genome|2540-3044
+--gcaatcatctgtcacactagttgtaccatggattagcaacactcatta
+> JQ041368.1 |Human coxsackievirus B6 strain LEV15, complete genome|2540-3044
+--gcagtccagctgtgtgctatgtataccatggattagccagacacatta
+> JN964686.1 |Human enterovirus 71 strain EV71/Xiamen/2009, complete genome|2540-3044
+--acaatcatctgtcacccttgtgataccatggattagtaatacccacta
+> JN695050.1 |Human coxsackievirus B5 strain CVB5/CC10/16, complete genome|2540-3044
+--acaatcaagctgcgtgctgtgcattccatggatcagccaaacgcacta
+> JN695051.1 |Human coxsackievirus B5 strain CVB5/CC10/17, complete genome|2540-3044
+--acaatcaagctgcgtgctgtgcattccatggatcagccaaacgcacta
+> JN704615.1 |Human echovirus 30 strain Kor08-ECV30, complete genome|2540-3044
+--acaatccagctgtgtgctgtgcgtaccatggattagccaaaccaacta
+> JN674176.1 |Human coxsackievirus A16 strain HN1662/HN/CHN/2010, complete genome|2540-3044
+--acagtcctctgtgacattggtcgtgccatggattagtaacacacacta
+> JN590244.1 |Human coxsackievirus A16 strain G20, complete genome|2540-3044
+--gcagtcttctgtaacgctggtcgtgccatggatcagtaatacacacta
+> JN580070.1 |Human coxsackievirus B5 strain CVB5/CC10/10, complete genome|2540-3044
+--acaatcaagctgcgtgctgtgcattccatggatcagccaaacgcacta
+> HQ738291.1 |Human enterovirus C isolate V3-TUL, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> HQ738296.1 |Human enterovirus C isolate V3-Tul.1, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> HQ738297.1 |Human enterovirus C isolate V3-Tul.2, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> HQ738298.1 |Human enterovirus C isolate V3-Tul.3, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> HQ738299.1 |Human enterovirus C isolate V3-Tul.4, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> HQ738300.1 |Human enterovirus C isolate V3-Tul.5, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> HQ738301.1 |Human enterovirus C isolate V3-Tul.6, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> HQ738302.1 |Human enterovirus C isolate V3-Tul.7, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> JN542510.1 |Human coxsackievirus A22 strain 438913, complete genome|2540-3044
+--acagtctagtgtgacacttgtcgcaccgtggatctccaatgttaatta
+> JF738003.1 |Human coxsackievirus A16 isolate THA-CA16-090, complete genome|2540-3044
+--acaatcctctgtgacgttggttgtgccatggattagcaacacacatta
+> JF738004.1 |Human coxsackievirus A16 isolate THA-CA16-069, complete genome|2540-3044
+--acaatcttctgtgacgttggttgtgccatggattagcaacacacacta
+> GU180608.1 |Human poliovirus 3 isolate MB1, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> HM245928.1 |Human enterovirus 71 isolate EV71/Henan/399/2010, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> JF742576.1 |Human coxsackievirus A24 strain China/GD46/2010, complete genome|2540-3044
+--tcaatcctcatgcaccatgctagccccttggatatccaacacagtcta
+> JF742577.1 |Human coxsackievirus A24 strain China/GD01/2010, complete genome|2540-3044
+--tcaatcctcatgcaccatgctagccccttggatatccaacacagtcta
+> JF742578.1 |Human coxsackievirus A24 strain China/GD391/2007, complete genome|2540-3044
+--tcaatcctcatgcaccatgctagccccttggatatcctacacagtcta
+> JF742579.1 |Human coxsackievirus A24 strain China/GD332/2007, complete genome|2540-3044
+--tcaatcctcatgcaccatgctagccccttggatatcctacacagtcta
+> JF260917.1 |Human coxsackievirus A11 isolate CV-A11_66122, complete genome|2540-3044
+--gcaatcctcagccacaatggtcgtgccctggattagtaatgtcatgta
+> JF260918.1 |Human coxsackievirus A11 isolate CV-A11_66990, complete genome|2540-3044
+--gcaatcatcggctaccatggttgtaccctggattagtaatgtcatgta
+> JF260919.1 |Human coxsackievirus A11 isolate CV-A11_67874, complete genome|2540-3044
+--acaatcctcagctactatggttgtgccctggattagcaatgtcatgta
+> JF260920.1 |Human coxsackievirus A13 isolate CV-A13_67001, complete genome|2540-3044
+--ccaatcatcatgcacaatggtggtgccgtggattagcaacaccagcta
+> JF260921.1 |Human coxsackievirus A13 isolate CV-A13_67900, complete genome|2540-3044
+--tcaatcgtcatgcaccatggtggttccgtggattagtaacaccagtta
+> JF260922.1 |Human coxsackievirus A13 isolate CV-A13_68095, complete genome|2540-3044
+--ccaatcatcctgcacaatggtagttccatggattagcaacaccagcta
+> JF260923.1 |Human coxsackievirus A13 isolate CV-A13_68145, complete genome|2540-3044
+--tcaatcatcatgcacaatggtggtgccgtggattagtaacaccagcta
+> JF260924.1 |Human coxsackievirus A17 isolate CV-A17_67610, complete genome|2540-3044
+--gcaatcgtcttgcacaatggtggttccatggatcagcaacacggcgta
+> JF260925.1 |Human coxsackievirus A17 isolate CV-A17_68154, complete genome|2540-3044
+--acagtcatcttgtacaatggtggtcccgtggattagcaacacggcatt
+> JF260926.1 |Human enterovirus 99 isolate HEV-99_68229, complete genome|2540-3044
+--acaatccagttgcacaatggtggctccttggatatcaaacacagtata
+> JN228097.1 |Human coxsackievirus A24, complete genome|2540-3044
+--tcaatcctcatgcaccatgttagccccttggatatccaacacagtata
+> JF317013.1 |Human rhinovirus C isolate LZ269, complete genome|2540-3044
+--gcagtcttcatgcactatagtggtgccgtggatatcatcagggtttta
+> JF317014.1 |Human rhinovirus C isolate LZY79, complete genome|2540-3044
+--acagtcgtcttgcaccattgtggtaccatggatttcatccggttttta
+> JF317015.1 |Human rhinovirus C51 isolate LZ508, complete genome|2540-3044
+--acaatcatcctgtagcatggtggcaccttggatctccagcaccttttt
+> JF317016.1 |Human rhinovirus C isolate LZ651, complete genome|2540-3044
+--ccagtcatcatgtcacctcgttgtaccctggatcagctcccacttctt
+> JF317017.1 |Human rhinovirus C isolate LZY101, complete genome|2540-3044
+--gcaatcatcctgcaccatggttgtaccatggatatcttcagggtttta
+> HQ647168.1 |Human enterovirus 71 isolate EV92_07, complete genome|2540-3044
+-tcctatccctaagctggattgctttcccgcagactaatggactgcaccg
+> HQ647170.1 |Human enterovirus 71 isolate EV124_07, complete genome|2540-3044
+-tcctatccctaagctggattgctttcccgcagactaatggactgcaccg
+> HQ998851.1 |Human coxsackievirus B5 strain COXB5/Henan/2010, complete genome|2540-3044
+--gcaatcgagctgcgtgctatgcattccatggattagccaaacgcacta
+> HQ728259.1 |Human coxsackievirus A2 strain CVA2/SD/CHN/09, complete genome|2540-3044
+--gcagtcgtcagtgacactcgtggttccctggatcagtaacactcacta
+> HQ728260.1 |Human coxsackievirus A4 strain CVA4/SZ/CHN/09, complete genome|2540-3044
+--gcagtcttcagtcactctcgtggtgccctggataagtaacacacactt
+> HQ728261.1 |Human coxsackievirus A5 strain CVA5/SD/CHN/09, complete genome|2540-3044
+--ccagtcctcggtcaccttagtcatcccttggatcagcaattcacatta
+> HQ728262.1 |Human coxsackievirus A10 strain CVA10/SD/CHN/09, complete genome|2540-3044
+--acaatcgtcagtctctttggtgataccgtggatcagtaacactcactt
+> HQ415758.1 |Human enterovirus 96 strain 05517, complete genome|2540-3044
+--acaatcaagcgcgacgatggtcgccccgtggatttccaacagcgtgta
+> HQ415759.1 |Human enterovirus 96 strain 09228C1, complete genome|2540-3044
+--gcaatcaagtgcaaccatggttgccccatggatttccaacagtgtgta
+> HQ423141.1 |Human coxsackievirus A16 strain KMM/08, complete genome|2540-3044
+--acaatcttctgtgacgttggttgtgccatggattagcaacacacacta
+> HQ269389.1 |Human coxsackievirus A16 isolate XM-CA16-3560, complete genome|2540-3044
+--gcaatcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> GU219984.1 |Human rhinovirus C strain HRV-C15 isolate W10, complete genome|2540-3044
+--gcagtcgtcctgcaccattgtggtaccatggatttcatctggtttcta
+> HM775882.1 |Human echovirus 5 isolate Kor06-ECV5-253cn, complete genome|2540-3044
+--acaatccagttgtgtgttgtgcgttccatggatcagtcagactcacta
+> HM777023.1 |Human echovirus 18 isolate Kor05-ECV18-054cn, complete genome|2540-3044
+--tcaatcaagctgcgttttgtgcgttccctggatcagtcagtcacacta
+> GU568096.2 |Rhinovirus B isolate BCH214, complete genome|2540-3044
+--acaatcaacggtagtgttgaacataccttggacctcaggagtacaatt
+> FJ859058.1 |Human poliovirus 1 isolate 10050, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> FJ859059.1 |Human poliovirus 1 isolate 10086c, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> FJ859060.1 |Human poliovirus 1 isolate 10091c, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> FJ859061.1 |Human poliovirus 1 isolate 10092c, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtaccatggattagcaacaccacgta
+> FJ859062.1 |Human poliovirus 1 isolate 10094c, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> FJ859063.1 |Human poliovirus 1 isolate 10095c, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> FJ859064.1 |Human poliovirus 1 isolate 10097c, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> GQ279368.1 |Human coxsackievirus A16 strain SZ/HK08-3, complete genome|2540-3044
+--acaatcttctgtgacgttggttgtgccatggattagcaacacacacta
+> GQ279371.1 |Human coxsackievirus A16 strain SZ/HK08-7, complete genome|2540-3044
+--gcagtcttctgtgacgttggtcgtgccatggatcagtaatacacacta
+> HM185055.1 |Human echovirus 6 strain Echo6/Henan/116/2008, complete genome|2540-3044
+--gcaatccagttgtgtattgtgcgtaccatggatcagccaaacgcacta
+> HM185056.1 |Human echovirus 6 strain Echo6/Henan/127/2008, complete genome|2540-3044
+--gcaatccagttgtgtactgtgcgtaccatggatcagccaaacgcacta
+> GQ865517.1 |Human enterovirus 109 isolate NICA08-4327, complete genome|2540-3044
+--gcagtctagtgtcacactagtggcgccatggatttcaaacacggacta
+> HM053669.1 |Human enterovirus 71 strain BJ293, complete genome|2540-3044
+--gcaatcgtctgttaccctcgtaataccatggattagcaacactcatta
+> FJ769378.1 |Human poliovirus 1 strain CHN8184/GZ/CHN/2004, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> FJ769379.1 |Human poliovirus 1 strain CHN8229-1/GZ/CHN/2004, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> FJ769380.1 |Human poliovirus 1 strain CHN8229-2/GZ/CHN/2004, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> FJ769381.1 |Human poliovirus 1 strain CHN8229-3/GZ/CHN/2004, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> FJ769383.1 |Human poliovirus 1 strain CHN8225c/GZ/CHN/2004, complete genome|2540-3044
+--gcagtcctcatgtactatggtagtgccatggattagcaacaccacgta
+> HM002487.1 |Human enterovirus 71 strain BJ303, complete genome|2540-3044
+--gcaatcgtctgttacccttgtaataccatggattagcaacactcatta
+> HM031191.1 |Human echovirus 25 strain HN-2, complete genome|2540-3044
+--gcagtcgagttgtgtgctctgtgtgccatggattagtcagacaaacta
+> GU550508.1 |Human enterovirus 97 strain 99188/SD/CHN/1999/EV97, complete genome|2540-3044
+--acaatccagttgtgttctgtgtgtgccttggatcagccagacccacta
+> GU256222.1 |Human poliovirus 3 isolate P3/Jinan/1/09, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> FJ914252.2 |Human poliovirus 3 strain SWI10947, complete genome|2540-3044
+--acaatcctcatgtacgatggttgtaccgtggatcagcaatgtaacgta
+> GQ415051.1 |Human rhinovirus A isolate hrv-A101, complete genome|2540-3044
+--acagtccactgtatcaatggtggttccctgggtttccgcaagtcacta
+> GQ415052.1 |Human rhinovirus A isolate hrv-A101-v1, complete genome|2540-3044
+--acagtccactgtgtcaatggtagtcccttgggtctctgcaagtcacta
+> FJ842158.1 |Human poliovirus 3 strain FIN84-60212, complete genome|2540-3044
+--acaatcctcatgtacgatggttgtaccgtggatcagcaatgtcacata
+> FJ842159.1 |Human poliovirus 3 strain FIN84-2493, complete genome|2540-3044
+--acaatcctcatgtacgatggttgtaccgtggatcagcaatgtcacata
+> GQ323774.1 |Human rhinovirus C strain QCE, complete genome|2540-3044
+--tcagtcatcatgccatctcgttgtaccttggatcagttctcacttctt
+> EU840952.2 |Human rhinovirus C11 strain CL-170085, complete genome|2540-3044
+--acaatcaacatgttccattgtggtaccatggatatctcagggttacta
+> GQ223227.1 |Human rhinovirus C isolate N4, complete genome|2540-3044
+--acaatcctcatgcaccatggttataccctggatgtcatctggttttta
+> GQ223228.1 |Human rhinovirus C isolate N10, complete genome|2540-3044
+--acaatcaagttgcaccatggttgcaccatggatctcaagcacatactt
+> GQ223229.1 |Human rhinovirus A isolate N13, complete genome|2540-3044
+--gcaatcaacagtgtctttagttgttccatgggttagtgccagtcattt
+> FJ751914.1 |Human enterovirus 96 isolate FIN04-7, complete genome|2540-3044
+--gcagtctagcgcaactatggtagcaccatggatatccaatagtgtgta
+> FJ751915.1 |Human enterovirus 96 isolate FIN05-2, complete genome|2540-3044
+--acaatcaagtgcaacgatggtggccccgtggatctctaacagtgtata
+> GQ141875.1 |Human coxsackievirus B3 strain Beijing0811, complete genome|2540-3044
+--gcaatctagttgtgtcttgtgcataccttggataagtcaaacacacta
+> FJ460226.1 |Human poliovirus 3 isolate 33239, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> FJ460227.1 |Human poliovirus 3 isolate 31974, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> FJ517648.1 |Human poliovirus 2 isolate PV2/Bel, complete genome|2540-3044
+--gcagtcttcatgcactatggtggtaccttggatcagtaacaccacata
+> FJ445114.1 |Human rhinovirus 9 isolate F01, complete genome|2540-3044
+--gcagtcaactatatccatggtagtgccctgggttagtgctagtcattt
+> FJ445115.1 |Human rhinovirus 9 isolate F02, complete genome|2540-3044
+--gcagtcaactatatccatggtggtgccctgggttagtgctagtcattt
+> FJ445117.1 |Human rhinovirus 13 isolate F03, complete genome|2540-3044
+--tcaatcaactgtgtcaatggtggttccatgggttagtgctagtcatta
+> FJ445134.1 |Human rhinovirus 49 isolate F04, complete genome|2540-3044
+--tcaatctacaatatcaatggtggtaccatggattagtgctagccacta
+> FJ445137.1 |Human rhinovirus 52 isolate F10, complete genome|2540-3044
+--acagtcaacagttgtcatgaacataccatggacaagtggtgtacaatt
+> FJ445139.1 |Human rhinovirus 54 isolate F05, complete genome|2540-3044
+--acaatcgactgtttctctggttgtcccttgggttagtgctagccactt
+> FJ445141.1 |Human rhinovirus 57 isolate fs ship#1-hrv-57, complete genome|2540-3044
+--acaatcaacaatatctatggttgtaccatgggttagtgctagccacta
+> FJ445158.1 |Human rhinovirus 81 isolate F06, complete genome|2540-3044
+--gcagtcaacagtatctttagttgtaccatgggttagtgctagtcaata
+> FJ445159.1 |Human rhinovirus 81 isolate F07, complete genome|2540-3044
+--gcagtcaacagtatctttagttgtaccatgggttagtgctagtcaata
+> FJ445165.1 |Human rhinovirus 89 isolate F09, complete genome|2540-3044
+--gcagtccactgcctcgctagttgtaccatgggttagtgctagccattt
+> FJ445166.1 |Human rhinovirus 89 isolate F08, complete genome|2540-3044
+--gcagtccaccgcctcactagttgtaccatgggtcagtgctagccactt
+> FJ357838.1 |Human coxsackievirus B3 strain GZ803, complete genome|2540-3044
+--gcaatctagttgtgtcttgtgcataccatggataagccaaacacacta
+> FJ198212.1 |Human coxsackievirus A16 strain GZ08, complete genome|2540-3044
+--acagtcttctgtgacgttggtcgtgccatggattagtaatacacacta
+> FJ172447.1 |Human echovirus 4 strain AUS250G, complete genome|2540-3044
+--acagtcaagctgtgtgttgtgcatcccatggatcagtcaggcacacta
+> FJ000001.1 |Human coxsackievirus B3 strain Fuyang19, complete genome|2540-3044
+--gcaatctagctgtgtcctgtgcataccatggataagtcaaacacacta
+> EU684056.1 |Human poliovirus 3 strain IRA10853, complete genome|2540-3044
+--acaatcatcttgtactatggtggtgccgtggattagtaatgtgacata
+> EU684057.1 |Human poliovirus 3 strain IRA10852, complete genome|2540-3044
+--gcaatcatcttgtactatggtggtgccgtggattagtaatgtgacata

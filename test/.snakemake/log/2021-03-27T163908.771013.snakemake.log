@@ -1,0 +1,176 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	12	test
+	13
+Select jobs to execute...
+
+[Sat Mar 27 16:39:09 2021]
+rule test:
+    input: /datater/wu/stage_m2/test/reverse0-504.fasta
+    output: /datater/wu/stage_m2/test/reverse0-504.out
+    jobid: 2
+    wildcards: seg=0-504
+
+
+[Sat Mar 27 16:39:09 2021]
+rule test:
+    input: /datater/wu/stage_m2/test/reverse251-752.fasta
+    output: /datater/wu/stage_m2/test/reverse251-752.out
+    jobid: 8
+    wildcards: seg=251-752
+
+
+[Sat Mar 27 16:39:09 2021]
+rule test:
+    input: /datater/wu/stage_m2/test/reverse2286-2790.fasta
+    output: /datater/wu/stage_m2/test/reverse2286-2790.out
+    jobid: 6
+    wildcards: seg=2286-2790
+
+
+[Sat Mar 27 16:39:09 2021]
+rule test:
+    input: /datater/wu/stage_m2/test/reverse2032-2536.fasta
+    output: /datater/wu/stage_m2/test/reverse2032-2536.out
+    jobid: 4
+    wildcards: seg=2032-2536
+
+
+[Sat Mar 27 16:39:09 2021]
+rule test:
+    input: /datater/wu/stage_m2/test/reverse2540-3044.fasta
+    output: /datater/wu/stage_m2/test/reverse2540-3044.out
+    jobid: 9
+    wildcards: seg=2540-3044
+
+
+[Sat Mar 27 16:39:09 2021]
+rule test:
+    input: /datater/wu/stage_m2/test/reverse2761-3262.fasta
+    output: /datater/wu/stage_m2/test/reverse2761-3262.out
+    jobid: 11
+    wildcards: seg=2761-3262
+
+
+[Sat Mar 27 16:39:09 2021]
+rule test:
+    input: /datater/wu/stage_m2/test/reverse0-501.fasta
+    output: /datater/wu/stage_m2/test/reverse0-501.out
+    jobid: 1
+    wildcards: seg=0-501
+
+
+[Sat Mar 27 16:39:09 2021]
+rule test:
+    input: /datater/wu/stage_m2/test/reverse2008-2509.fasta
+    output: /datater/wu/stage_m2/test/reverse2008-2509.out
+    jobid: 3
+    wildcards: seg=2008-2509
+
+
+[Sat Mar 27 16:39:09 2021]
+rule test:
+    input: /datater/wu/stage_m2/test/reverse2259-2760.fasta
+    output: /datater/wu/stage_m2/test/reverse2259-2760.out
+    jobid: 5
+    wildcards: seg=2259-2760
+
+
+[Sat Mar 27 16:39:09 2021]
+rule test:
+    input: /datater/wu/stage_m2/test/reverse2510-3011.fasta
+    output: /datater/wu/stage_m2/test/reverse2510-3011.out
+    jobid: 7
+    wildcards: seg=2510-3011
+
+
+[Sat Mar 27 16:39:09 2021]
+rule test:
+    input: /datater/wu/stage_m2/test/reverse254-758.fasta
+    output: /datater/wu/stage_m2/test/reverse254-758.out
+    jobid: 10
+    wildcards: seg=254-758
+
+
+[Sat Mar 27 16:39:09 2021]
+rule test:
+    input: /datater/wu/stage_m2/test/reverse2794-3298.fasta
+    output: /datater/wu/stage_m2/test/reverse2794-3298.out
+    jobid: 12
+    wildcards: seg=2794-3298
+
+[Sat Mar 27 16:39:11 2021]
+Error in rule test:
+    jobid: 8
+    output: /datater/wu/stage_m2/test/reverse251-752.out
+    shell:
+        python3 kmerSelect_iterac.py /datater/wu/stage_m2/test/reverse251-752.fasta /datater/wu/stage_m2/test/reverse251-752.out
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job test since they might be corrupted:
+/datater/wu/stage_m2/test/reverse251-752.out
+[Sat Mar 27 16:39:11 2021]
+Error in rule test:
+    jobid: 5
+    output: /datater/wu/stage_m2/test/reverse2259-2760.out
+    shell:
+        python3 kmerSelect_iterac.py /datater/wu/stage_m2/test/reverse2259-2760.fasta /datater/wu/stage_m2/test/reverse2259-2760.out
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job test since they might be corrupted:
+/datater/wu/stage_m2/test/reverse2259-2760.out
+[Sat Mar 27 16:39:11 2021]
+Error in rule test:
+    jobid: 1
+    output: /datater/wu/stage_m2/test/reverse0-501.out
+    shell:
+        python3 kmerSelect_iterac.py /datater/wu/stage_m2/test/reverse0-501.fasta /datater/wu/stage_m2/test/reverse0-501.out
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job test since they might be corrupted:
+/datater/wu/stage_m2/test/reverse0-501.out
+[Sat Mar 27 16:39:11 2021]
+Error in rule test:
+    jobid: 7
+    output: /datater/wu/stage_m2/test/reverse2510-3011.out
+    shell:
+        python3 kmerSelect_iterac.py /datater/wu/stage_m2/test/reverse2510-3011.fasta /datater/wu/stage_m2/test/reverse2510-3011.out
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job test since they might be corrupted:
+/datater/wu/stage_m2/test/reverse2510-3011.out
+[Sat Mar 27 16:39:11 2021]
+Error in rule test:
+    jobid: 6
+    output: /datater/wu/stage_m2/test/reverse2286-2790.out
+    shell:
+        python3 kmerSelect_iterac.py /datater/wu/stage_m2/test/reverse2286-2790.fasta /datater/wu/stage_m2/test/reverse2286-2790.out
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job test since they might be corrupted:
+/datater/wu/stage_m2/test/reverse2286-2790.out
+[Sat Mar 27 16:39:13 2021]
+Finished job 11.
+1 of 13 steps (8%) done
+[Sat Mar 27 16:39:14 2021]
+Finished job 10.
+2 of 13 steps (15%) done
+[Sat Mar 27 16:39:16 2021]
+Finished job 3.
+3 of 13 steps (23%) done
+[Sat Mar 27 16:39:18 2021]
+Finished job 12.
+4 of 13 steps (31%) done
+[Sat Mar 27 16:39:18 2021]
+Finished job 4.
+5 of 13 steps (38%) done
+[Sat Mar 27 16:39:18 2021]
+Finished job 2.
+6 of 13 steps (46%) done
+Terminating processes on user request, this might take some time.
+Cancelling snakemake on user request.

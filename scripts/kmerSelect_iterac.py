@@ -7,7 +7,7 @@ import re
 inputFile = sys.argv[1]
 outputFile = sys.argv[2]
 kmerCount = seqNumber = int(os.popen(f"egrep -c '^>' {inputFile}").read())
-filename = os.path.splitext(outputFile)[0]
+filename = os.path.splitext(inputFile)[0]
 outputFile = open(outputFile, "w")
 
 ### functions 
@@ -15,8 +15,7 @@ def calculate_kmer(input):
 
     dskH5 = f"{filename}.h5"
     os.system(
-        f"../stage_m2/lib/dsk/build/bin/dsk \
-        -verbose 0 \
+        f"lib/dsk/build/bin/dsk \
         -nb-cores 0 \
         -max-memory 5000 \
         -max-disk 0 \
@@ -32,8 +31,7 @@ def calculate_kmer(input):
 
     dskh5txt = f"{filename}.kCount"
     os.system(
-        f"../stage_m2/lib/dsk/build/bin/dsk2ascii \
-        -verbose 0 \
+        f"lib/dsk/build/bin/dsk2ascii \
         -nb-cores 0 \
         -file {dskH5} -out {dskh5txt}"
     )
@@ -72,59 +70,47 @@ def parse_fasta(input):
 
     return(dict)
 
-# ~ for n in range(0,5):
-while kmerCount > seqNumber * 0.1 : 
+while kmerCount > seqNumber*0.1: 
    
     kmerDict = calculate_kmer(inputFile)
     kmerList = [key for key in kmerDict if kmerDict]     
     fastaDict = parse_fasta(inputFile)
-    
-    for kmer in kmerList if kmerList: 
-        boolean = [bool(re.search(kmer, fastaDict[key], re.I)) for key in fastaDict]
-        if True in boolean: 
-			kmerCount = kmerDict[kmer]
-            outputFile.write(f"{kmer}\t{kmerDict[kmer]}\n")
-            intermediate = open(f"{filename}.inter", "w")
-            for key in fastaDict: 
-                seq = fastaDict[key]
-                if re.search(kmerList[0], seq, re.I) is None: 
-                    intermediate.write(f"{key}\n{seq}\n")
-            intermediate.close()
-            break 
+
+    if kmerList: 
+        for kmer in kmerList: 
+            boolean = [bool(re.search(kmer, fastaDict[key], re.I)) for key in fastaDict]
+            if True in boolean: 
+                kmerCount = int(kmerDict[kmer])
+                outputFile.write(f"{kmer}\t{kmerDict[kmer]}\n")
+                intermediate = open(f"{filename}.inter", "w")
+                for key in fastaDict: 
+                    seq = fastaDict[key]
+                    if re.search(kmer, seq, re.I) is None: 
+                        intermediate.write(f"{key}\n{seq}\n")
+                intermediate.close()
+                break 
             
     inputFile = f"{filename}.inter"
-  
-    # ~ boolean = []
-    
-	# ~ if kmerList: 
-		# ~ boolean = [bool(re.search(kmerList[0], fastaDict[key], re.I)) for key in fastaDict]
 
-    # ~ if boolean: 
-        # ~ if True in boolean: 
-			# ~ kmerCount = kmerDict[kmerList[0]]
-            # ~ outputFile.write(f"{kmerList[0]}\t{kmerDict[kmerList[0]]}\n")
-            # ~ intermediate = open(f"{filename}.inter", "w")
-            # ~ for key in fastaDict: 
-                # ~ seq = fastaDict[key]
-                # ~ if re.search(kmerList[0], seq, re.I) is None: 
-                    # ~ intermediate.write(f"{key}\n{seq}\n")
-            # ~ intermediate.close()
-        # ~ else: 
-			# ~ kmerCount = kmerDict[kmerList[1]]
-            # ~ outputFile.write(f"{kmerList[1]}\t{kmerDict[kmerList[1]]}\n")
-            # ~ intermediate = open(f"{filename}.inter", "w")
-            # ~ for key in fastaDict: 
-                # ~ seq = fastaDict[key]
-                # ~ if re.search(kmerList[1], seq, re.I) is None: 
-                    # ~ intermediate.write(f"{key}\n{seq}\n")
-            # ~ intermediate.close()
+    # ~ boolean = [bool(re.search(kmerList[0], fastaDict[key], re.I)) for key in fastaDict]
+
+    # ~ if True in boolean: 
+        # ~ outputFile.write(f"{kmerList[0]}\t{kmerDict[kmerList[0]]}\n")
+        # ~ intermediate = open(f"{filename}.inter", "w")
+        # ~ for key in fastaDict: 
+            # ~ seq = fastaDict[key]
+            # ~ if re.search(kmerList[0], seq, re.I) is None: 
+                # ~ intermediate.write(f"{key}\n{seq}\n")
+        # ~ intermediate.close()
+    # ~ else: 
+        # ~ outputFile.write(f"{kmerList[1]}\t{kmerDict[kmerList[1]]}\n")
+        # ~ intermediate = open(f"{filename}.inter", "w")
+        # ~ for key in fastaDict: 
+            # ~ seq = fastaDict[key]
+            # ~ if re.search(kmerList[1], seq, re.I) is None: 
+                # ~ intermediate.write(f"{key}\n{seq}\n")
+        # ~ intermediate.close()
     
     # ~ inputFile = f"{filename}.inter"
 
 outputFile.close()
-    
-
-            
-
-
-
