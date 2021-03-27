@@ -1,0 +1,3 @@
+SyntaxError in line 11 of /datater/wu/stage_m2/rules/reverse_kmer_dsk_test.smk:
+f-string: single '}' is not allowed
+  File "/datater/wu/stage_m2/Snakefile", line 49, in <module>

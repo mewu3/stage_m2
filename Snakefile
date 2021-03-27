@@ -38,19 +38,25 @@ def fetchConfigParameters():
         config["mafft"]["quiet"] = ""
 fetchConfigParameters()
 
-
-
 rule all:
-    input:
-        dynamic(
-            expand(
-                f"{dataDir}/{{sample}}/checkSpecifity/reverse{{seg}}_filtered.blatn.out",
-                sample = samples,
-                seg = "{seg}"
-            )
-        )
+    input: 
+        # ~ dynamic(
+			# ~ expand(
+				# ~ f"{dataDir}/{{sample}}/checkSpecifity/reverse{{seg}}_filtered.tsv",
+				# ~ sample=samples,
+				# ~ seg="{seg}"
+			# ~ )
+		# ~ )
+		expand(
+			f"{dataDir}/{{sample}}/dsk/test.txt",
+			sample = samples 
+		)
+		
+        
+        
 
 include: "rules/all_preprocessing.smk"
-include: "rules/reverse_kmer_dsk.smk"
-include: "rules/reverse_oligo_filter.smk"
-include: "rules/reverse_check_specifity.smk"
+include: "rules/reverse_kmer_dsk_test.smk"
+# ~ include: "rules/reverse_kmer_dsk.smk"
+# ~ include: "rules/reverse_oligo_filter.smk"
+# ~ include: "rules/reverse_check_specifity.smk"

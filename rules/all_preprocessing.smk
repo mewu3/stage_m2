@@ -84,8 +84,8 @@ checkpoint splitFiles:
 
             seg = str(chunk[0])+"-"+str(chunk[1])
 
-            f1 = open(output[0] + "/forward{}.fasta".format(seg), "w")
-            f2 = open(output[0] + "/reverse{}.fasta".format(seg), "w")
+            f1 = open(output[0] + f"/forward{seg}.fasta", "w")
+            f2 = open(output[0] + f"/reverse{seg}.fasta", "w")
 
             for id in fasta.keys() :
                 segment = fasta[id][chunk[0]:chunk[1]]

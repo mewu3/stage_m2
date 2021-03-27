@@ -179,5 +179,5 @@ rule reverse_filtering:
         TmSeuilLess = mean - 2*std
 
         df_filtered = df[(df["Tm"] >= TmSeuilLess) & (df["Tm"] <= TmSeuilPlus) & (df["CG%"] >= 40) & (df["CG%"] <= 60) & (df["hairpin-dG"] > -9000) & (df["homodimer-dG"] > -9000) & (df["LC"] >= 0.75)]
-        df_filtered = df_filtered.sort_values("position", ascending=False)
+        df_filtered = df_filtered.sort_values(["position", "kmerCount"], ascending=False)
         df_filtered.to_csv(output[0], sep='\t', index=False)

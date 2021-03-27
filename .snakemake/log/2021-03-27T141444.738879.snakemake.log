@@ -1,0 +1,176 @@
+Building DAG of jobs...
+Updating job aggregate.
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	aggregate
+	1	all
+	43	dskReverse
+	45
+Select jobs to execute...
+
+[Sat Mar 27 14:14:45 2021]
+rule dskReverse:
+    input: /datater/wu/data/zika/splitFiles/reverse10040-10541.fasta
+    output: /datater/wu/data/zika/dsk/reverse10040-10541.out
+    jobid: 9
+    wildcards: sample=zika, seg=10040-10541
+
+
+[Sat Mar 27 14:14:45 2021]
+rule dskReverse:
+    input: /datater/wu/data/zika/splitFiles/reverse1506-2007.fasta
+    output: /datater/wu/data/zika/dsk/reverse1506-2007.out
+    jobid: 8
+    wildcards: sample=zika, seg=1506-2007
+
+
+[Sat Mar 27 14:14:45 2021]
+rule dskReverse:
+    input: /datater/wu/data/zika/splitFiles/reverse8785-9286.fasta
+    output: /datater/wu/data/zika/dsk/reverse8785-9286.out
+    jobid: 15
+    wildcards: sample=zika, seg=8785-9286
+
+
+[Sat Mar 27 14:14:45 2021]
+rule dskReverse:
+    input: /datater/wu/data/zika/splitFiles/reverse1757-2258.fasta
+    output: /datater/wu/data/zika/dsk/reverse1757-2258.out
+    jobid: 23
+    wildcards: sample=zika, seg=1757-2258
+
+
+[Sat Mar 27 14:14:45 2021]
+rule dskReverse:
+    input: /datater/wu/data/zika/splitFiles/reverse0-501.fasta
+    output: /datater/wu/data/zika/dsk/reverse0-501.out
+    jobid: 30
+    wildcards: sample=zika, seg=0-501
+
+
+[Sat Mar 27 14:14:45 2021]
+rule dskReverse:
+    input: /datater/wu/data/zika/splitFiles/reverse6275-6776.fasta
+    output: /datater/wu/data/zika/dsk/reverse6275-6776.out
+    jobid: 38
+    wildcards: sample=zika, seg=6275-6776
+
+
+[Sat Mar 27 14:14:45 2021]
+rule dskReverse:
+    input: /datater/wu/data/zika/splitFiles/reverse4267-4768.fasta
+    output: /datater/wu/data/zika/dsk/reverse4267-4768.out
+    jobid: 29
+    wildcards: sample=zika, seg=4267-4768
+
+
+[Sat Mar 27 14:14:45 2021]
+rule dskReverse:
+    input: /datater/wu/data/zika/splitFiles/reverse10542-10780.fasta
+    output: /datater/wu/data/zika/dsk/reverse10542-10780.out
+    jobid: 7
+    wildcards: sample=zika, seg=10542-10780
+
+
+[Sat Mar 27 14:14:45 2021]
+rule dskReverse:
+    input: /datater/wu/data/zika/splitFiles/reverse8534-9035.fasta
+    output: /datater/wu/data/zika/dsk/reverse8534-9035.out
+    jobid: 22
+    wildcards: sample=zika, seg=8534-9035
+
+
+[Sat Mar 27 14:14:45 2021]
+rule dskReverse:
+    input: /datater/wu/data/zika/splitFiles/reverse7028-7529.fasta
+    output: /datater/wu/data/zika/dsk/reverse7028-7529.out
+    jobid: 14
+    wildcards: sample=zika, seg=7028-7529
+
+
+[Sat Mar 27 14:14:45 2021]
+rule dskReverse:
+    input: /datater/wu/data/zika/splitFiles/reverse251-752.fasta
+    output: /datater/wu/data/zika/dsk/reverse251-752.out
+    jobid: 37
+    wildcards: sample=zika, seg=251-752
+
+
+[Sat Mar 27 14:14:45 2021]
+rule dskReverse:
+    input: /datater/wu/data/zika/splitFiles/reverse4518-5019.fasta
+    output: /datater/wu/data/zika/dsk/reverse4518-5019.out
+    jobid: 44
+    wildcards: sample=zika, seg=4518-5019
+
+[Sat Mar 27 14:14:47 2021]
+Error in rule dskReverse:
+    jobid: 8
+    output: /datater/wu/data/zika/dsk/reverse1506-2007.out
+    shell:
+        python3 scripts/kmerSelect_iterac.py /datater/wu/data/zika/splitFiles/reverse1506-2007.fasta /datater/wu/data/zika/dsk/reverse1506-2007.out
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job dskReverse since they might be corrupted:
+/datater/wu/data/zika/dsk/reverse1506-2007.out
+[Sat Mar 27 14:14:47 2021]
+Error in rule dskReverse:
+    jobid: 37
+    output: /datater/wu/data/zika/dsk/reverse251-752.out
+    shell:
+        python3 scripts/kmerSelect_iterac.py /datater/wu/data/zika/splitFiles/reverse251-752.fasta /datater/wu/data/zika/dsk/reverse251-752.out
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job dskReverse since they might be corrupted:
+/datater/wu/data/zika/dsk/reverse251-752.out
+[Sat Mar 27 14:14:47 2021]
+Error in rule dskReverse:
+    jobid: 30
+    output: /datater/wu/data/zika/dsk/reverse0-501.out
+    shell:
+        python3 scripts/kmerSelect_iterac.py /datater/wu/data/zika/splitFiles/reverse0-501.fasta /datater/wu/data/zika/dsk/reverse0-501.out
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job dskReverse since they might be corrupted:
+/datater/wu/data/zika/dsk/reverse0-501.out
+[Sat Mar 27 14:14:47 2021]
+Error in rule dskReverse:
+    jobid: 15
+    output: /datater/wu/data/zika/dsk/reverse8785-9286.out
+    shell:
+        python3 scripts/kmerSelect_iterac.py /datater/wu/data/zika/splitFiles/reverse8785-9286.fasta /datater/wu/data/zika/dsk/reverse8785-9286.out
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job dskReverse since they might be corrupted:
+/datater/wu/data/zika/dsk/reverse8785-9286.out
+[Sat Mar 27 14:14:56 2021]
+Finished job 7.
+1 of 45 steps (2%) done
+[Sat Mar 27 14:14:56 2021]
+Finished job 9.
+2 of 45 steps (4%) done
+[Sat Mar 27 14:14:56 2021]
+Finished job 14.
+3 of 45 steps (7%) done
+[Sat Mar 27 14:14:56 2021]
+Finished job 22.
+4 of 45 steps (9%) done
+[Sat Mar 27 14:14:56 2021]
+Finished job 23.
+5 of 45 steps (11%) done
+[Sat Mar 27 14:14:56 2021]
+Finished job 29.
+6 of 45 steps (13%) done
+[Sat Mar 27 14:14:56 2021]
+Finished job 44.
+7 of 45 steps (16%) done
+[Sat Mar 27 14:14:56 2021]
+Finished job 38.
+8 of 45 steps (18%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-27T141444.738879.snakemake.log

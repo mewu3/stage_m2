@@ -1,24 +1,22 @@
 #!/usr/bin/env python3.8
 import sys
 import os
-from Bio import SeqIO
 import re
-from collections import Counter
 
-inputfile = sys.argv[1]
-outputfile = open(sys.argv[2], "w")
-dataDir = "/datater/wu/data"
-sample = "enterovirus"
-seg = "0-504"
-seqNum = int(os.popen(f"grep '^>' -c {inputfile}").read())
-# dataDir = snakemake.params.dataDir
-# sample = snakemake.wildcards.sample
-# seg = snakemake.wildcards.seg
+### global variables 
+inputFile = sys.argv[1]
+outputFile = sys.argv[2]
+kmerCount = seqNumber = int(os.popen(f"egrep -c '^>' {inputFile}").read())
+filename = os.path.splitext(outputFile)[0]
+outputFile = open(outputFile, "w")
 
-def calculate_kmer(inputfile):
-    dskH5 = f"{dataDir}/{sample}/dsk/{seg}.inter.h5"
+### functions 
+def calculate_kmer(input):
+
+    dskH5 = f"{filename}.h5"
     os.system(
-        f"lib/dsk/build/bin/dsk \
+        f"../stage_m2/lib/dsk/build/bin/dsk \
+        -verbose 0 \
         -nb-cores 0 \
         -max-memory 5000 \
         -max-disk 0 \
@@ -28,77 +26,105 @@ def calculate_kmer(inputfile):
         -abundance-min 2 \
         -abundance-max 2147483647 \
         -solidity-kind sum \
-        -file {inputfile} \
+        -file {input} \
         -out {dskH5}"
     )
 
-    dskh5txt = f"{dataDir}/{sample}/dsk/{seg}.inter.txt"
+    dskh5txt = f"{filename}.kCount"
     os.system(
-        f"lib/dsk/build/bin/dsk2ascii \
+        f"../stage_m2/lib/dsk/build/bin/dsk2ascii \
+        -verbose 0 \
         -nb-cores 0 \
         -file {dskH5} -out {dskh5txt}"
     )
 
-    dskh5txtSorted = f"{dataDir}/{sample}/dsk/{seg}.inter.sorted"
+    dskh5txtSorted = f"{filename}.kCountSorted"
     os.system(
         f"sort -s -n -k 2 -nr {dskh5txt} > {dskh5txtSorted}"
     )
 
-    kmerDict = {}
-    with open(dskh5txtSorted, "r") as file:
-        for line in file.readlines()[0:3]:
-            kmer = line.split()[0]
-            kmerCount = line.split()[1]
-            kmerDict[kmer]=kmerCount
-    return kmerDict
+    dict = {}
 
-n=0
-kmerCount = seqNum
+    file = open(dskh5txtSorted, "r") 
+    for line in file.readlines()[0:2]:
+        kmer = line.split()[0]
+        kmerCount = line.split()[1]
+        dict[kmer]=kmerCount
+    file.close()
+
+    return dict
+
+def parse_fasta(input): 
+
+    dict={}
+
+    file = open(input, "r")
+
+    for line in file: 
+        line = line.rstrip("\n")
+        if line.startswith(">"): 
+            header = line 
+            dict[header] = ""
+        else: 
+            dict[header] += line 
+
+    file.close()
+
+    return(dict)
+
+# ~ for n in range(0,5):
+while kmerCount > seqNumber * 0.1 : 
+   
+    kmerDict = calculate_kmer(inputFile)
+    kmerList = [key for key in kmerDict if kmerDict]     
+    fastaDict = parse_fasta(inputFile)
+    
+    for kmer in kmerList if kmerList: 
+        boolean = [bool(re.search(kmer, fastaDict[key], re.I)) for key in fastaDict]
+        if True in boolean: 
+			kmerCount = kmerDict[kmer]
+            outputFile.write(f"{kmer}\t{kmerDict[kmer]}\n")
+            intermediate = open(f"{filename}.inter", "w")
+            for key in fastaDict: 
+                seq = fastaDict[key]
+                if re.search(kmerList[0], seq, re.I) is None: 
+                    intermediate.write(f"{key}\n{seq}\n")
+            intermediate.close()
+            break 
+            
+    inputFile = f"{filename}.inter"
+  
+    # ~ boolean = []
+    
+	# ~ if kmerList: 
+		# ~ boolean = [bool(re.search(kmerList[0], fastaDict[key], re.I)) for key in fastaDict]
+
+    # ~ if boolean: 
+        # ~ if True in boolean: 
+			# ~ kmerCount = kmerDict[kmerList[0]]
+            # ~ outputFile.write(f"{kmerList[0]}\t{kmerDict[kmerList[0]]}\n")
+            # ~ intermediate = open(f"{filename}.inter", "w")
+            # ~ for key in fastaDict: 
+                # ~ seq = fastaDict[key]
+                # ~ if re.search(kmerList[0], seq, re.I) is None: 
+                    # ~ intermediate.write(f"{key}\n{seq}\n")
+            # ~ intermediate.close()
+        # ~ else: 
+			# ~ kmerCount = kmerDict[kmerList[1]]
+            # ~ outputFile.write(f"{kmerList[1]}\t{kmerDict[kmerList[1]]}\n")
+            # ~ intermediate = open(f"{filename}.inter", "w")
+            # ~ for key in fastaDict: 
+                # ~ seq = fastaDict[key]
+                # ~ if re.search(kmerList[1], seq, re.I) is None: 
+                    # ~ intermediate.write(f"{key}\n{seq}\n")
+            # ~ intermediate.close()
+    
+    # ~ inputFile = f"{filename}.inter"
+
+outputFile.close()
+    
+
+            
 
 
 
-# for n in range(0,3):
-# # # while int(kmerCount) > int(seqNum*0.1):
-#     kmerList=[]
-#     kmerDict = calculate_kmer(inputfile)
-#     kmerList = [key for key in kmerDict]
-#     record_dict = SeqIO.to_dict(SeqIO.parse(inputfile, "fasta"))
-#
-#     boolean = [bool(re.search(kmerList[0], str(record_dict[record].seq), re.IGNORECASE)) for record in record_dict]
-#
-#     for kmer in kmerList:
-#
-#         if True in boolean:
-#             intermediate = f"{dataDir}/{sample}/dsk/{seg}.inter{n}.truncated"
-#             intermediate = open(intermediate, "w")
-#             for record in record_dict:
-#                 seq = str(record_dict[record].seq)
-#                 if re.search(kmer, seq, re.IGNORECASE) is None:
-#                     outputfile.write(f"{kmer}\t{kmerDict[kmer]}\n")
-#                 else:
-#                     intermediate.write(record_dict[record].format("fasta"))
-#                     outputfile.write(f"{kmer}\t{kmerDict[kmer]}\n")
-#             intermediate.close()
-#     inputfile = intermediate
-#     n += 1
-
-for n in range(0,3):
-    kmerList=[]
-    kmerDict = calculate_kmer(inputfile)
-    kmerList = [key for key in kmerDict]
-    record_dict = SeqIO.to_dict(SeqIO.parse(inputfile, "fasta"))
-    intermediate = open(f"{dataDir}/{sample}/dsk/{seg}.inter{n}.truncated", "w")
-
-    for kmer in kmerList[0:3]:
-        for record in record_dict:
-            seq = str(record_dict[record].seq)
-            boolean = [bool(re.search(kmer, seq, re.IGNORECASE)) for record in record_dict]
-            if True in boolean:
-                if re.search(kmer, seq, re.IGNORECASE) is None:
-                    outputfile.write(f"{kmer}\t{kmerDict[kmer]}\n")
-                    intermediate.write(record_dict[record].format("fasta"))
-    intermediate.close()
-    inputfile = f"{dataDir}/{sample}/dsk/{seg}.inter{n}.truncated"
-    n+=1
-
-    outputfile.close()

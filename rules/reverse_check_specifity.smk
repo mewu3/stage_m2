@@ -27,8 +27,8 @@ rule splitTableToFasta:
         outFile = open(output[0], "w")
         n = 0
         with open(input[0], "r") as file:
-            next(file)
-            for li in file:
+            #next(file)
+            for li in file.readlines()[1:4]:
                 li = li.rstrip("\n")
                 ls = li.split()
                 oligo = ls[7]
@@ -133,7 +133,7 @@ rule blastn_short:
     input:
         f"{dataDir}/{{sample}}/checkSpecifity/reverse{{seg}}_filtered.fasta"
     output:
-        f"{dataDir}/{{sample}}/checkSpecifity/reverse{{seg}}_filtered.blatn.out"
+        f"{dataDir}/{{sample}}/checkSpecifity/reverse{{seg}}_filtered.blastn.out"
     shell:
         "blastn -task blastn-short \
         -db refseq_genomes -remote \

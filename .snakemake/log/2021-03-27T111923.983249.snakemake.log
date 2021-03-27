@@ -1,0 +1,33 @@
+Building DAG of jobs...
+Updating job test.
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	test
+	2
+Select jobs to execute...
+
+[Sat Mar 27 11:19:24 2021]
+rule test:
+    output: /datater/wu/data/enterovirus/dsk/test.txt
+    jobid: 1
+    wildcards: sample=enterovirus
+
+[Sat Mar 27 11:19:24 2021]
+Finished job 1.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Sat Mar 27 11:19:24 2021]
+localrule all:
+    input: /datater/wu/data/enterovirus/dsk/test.txt
+    jobid: 0
+
+[Sat Mar 27 11:19:24 2021]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-27T111923.983249.snakemake.log

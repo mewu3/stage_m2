@@ -1,0 +1,3 @@
+SyntaxError in line 10 of /datater/wu/stage_m2/rules/reverse_kmer_dsk_test.smk:
+No rule keywords allowed after run/shell/script/wrapper/cwl in rule dskReverse. (reverse_kmer_dsk_test.smk, line 10)
+  File "/datater/wu/stage_m2/Snakefile", line 50, in <module>
