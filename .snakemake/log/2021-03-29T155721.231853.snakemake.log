@@ -1,0 +1,53 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	MSA
+	1	aggregateAllReverseOligo
+	1	all
+	1	filterAggregateAllReverseOligo
+	1	removeDuplicateSeq
+	1	splitIntoOverlappingWindows
+	1	toFasta
+	7
+Select jobs to execute...
+
+[Mon Mar 29 15:57:21 2021]
+rule removeDuplicateSeq:
+    input: /datater/wu/data/enterovirus.fasta
+    output: /datater/wu/data/enterovirus/enterovirus.uniq
+    jobid: 6
+    wildcards: sample=enterovirus
+
+[Mon Mar 29 15:57:22 2021]
+Finished job 6.
+1 of 7 steps (14%) done
+Select jobs to execute...
+
+[Mon Mar 29 15:57:22 2021]
+rule MSA:
+    input: /datater/wu/data/enterovirus/enterovirus.uniq
+    output: /datater/wu/data/enterovirus/enterovirus.msa
+    log: /datater/wu/data/enterovirus/log/mafft.log
+    jobid: 5
+    wildcards: sample=enterovirus
+
+[Mon Mar 29 16:00:27 2021]
+Finished job 5.
+2 of 7 steps (29%) done
+Select jobs to execute...
+
+[Mon Mar 29 16:00:28 2021]
+checkpoint splitIntoOverlappingWindows:
+    input: /datater/wu/data/enterovirus/enterovirus.msa
+    output: /datater/wu/data/enterovirus/splitFiles
+    jobid: 4
+    wildcards: sample=enterovirus
+Downstream jobs will be updated after completion.
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-29T155721.231853.snakemake.log

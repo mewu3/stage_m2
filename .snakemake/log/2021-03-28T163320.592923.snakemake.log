@@ -1,0 +1,34 @@
+Building DAG of jobs...
+Updating job aggregate_allReverseOligo.
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	toFasta
+	2
+Select jobs to execute...
+
+[Sun Mar 28 16:33:21 2021]
+rule toFasta:
+    input: /datater/wu/data/zika/filtering/allOligos_reverse.filtered
+    output: /datater/wu/data/zika/filtering/allOligos_reverse.filtered.fasta
+    jobid: 1
+    wildcards: sample=zika
+
+[Sun Mar 28 16:33:22 2021]
+Finished job 1.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Sun Mar 28 16:33:22 2021]
+localrule all:
+    input: /datater/wu/data/zika/filtering/allOligos_reverse.filtered.fasta
+    jobid: 0
+
+[Sun Mar 28 16:33:22 2021]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-28T163320.592923.snakemake.log

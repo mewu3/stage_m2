@@ -1,0 +1,3 @@
+SyntaxError in line 207 of /datater/wu/stage_m2/rules/reverse_kmer_spec.smk:
+f-string: unmatched '('
+  File "/datater/wu/stage_m2/Snakefile", line 66, in <module>

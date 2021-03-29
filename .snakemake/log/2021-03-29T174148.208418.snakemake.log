@@ -1,0 +1,23 @@
+Building DAG of jobs...
+Updating job aggregateAllReverseOligo.
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	filterOutUnSpecifickmer
+	2
+Select jobs to execute...
+
+[Mon Mar 29 17:41:49 2021]
+rule filterOutUnSpecifickmer:
+    input: /datater/wu/data/enterovirus/checkSpecifity/allOligos_reverse.filtered.blastn.out, /datater/wu/data/enterovirus/checkSpecifity/allOligos_reverse.filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/allOligos_reverse.filtered.spec.fasta
+    jobid: 1
+    wildcards: sample=enterovirus
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-29T174148.208418.snakemake.log

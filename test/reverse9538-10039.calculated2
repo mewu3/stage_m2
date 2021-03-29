@@ -1,0 +1,14 @@
+>p0|position 10039|count 4|CG% 61.538|Tm 38.408|homodimer_dG -4484.629|hairpin_dG 0.000 |LC 0.890
+GGTTCTCCCGGTT
+>p1|position 10039|count 4|CG% 61.538|Tm 38.408|homodimer_dG -4484.629|hairpin_dG 0.000 |LC 0.927
+GTTCTCCCGGTTG
+>p2|position 10039|count 4|CG% 61.538|Tm 38.408|homodimer_dG -4484.629|hairpin_dG 0.000 |LC 0.939
+TTCTCCCGGTTGG
+>p3|position 10039|count 4|CG% 61.538|Tm 38.408|homodimer_dG -4484.629|hairpin_dG 224.420 |LC 0.927
+TGGTTCTCCCGGT
+>p4|position 10039|count 4|CG% 69.231|Tm 41.562|homodimer_dG -3810.559|hairpin_dG 224.420 |LC 0.939
+GTGGTTCTCCCGG
+>p5|position 10039|count 4|CG% 69.231|Tm 41.562|homodimer_dG -1399.461|hairpin_dG 224.420 |LC 0.927
+GGTGGTTCTCCCG
+>p6|position 10039|count 3|CG% 61.538|Tm 38.408|homodimer_dG -4484.629|hairpin_dG 270.280 |LC 0.927
+TCTCCCGGTTGGT

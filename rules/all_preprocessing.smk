@@ -1,4 +1,4 @@
-rule seqkit: # remove duplicate sequences ######################################
+rule removeDuplicateSeq:
     input:
         lambda wildcards: config["samples"][wildcards.sample]
     output:
@@ -8,7 +8,7 @@ rule seqkit: # remove duplicate sequences ######################################
     shell:
         "cat {input} | seqkit rmdup -s -o {output}"
 
-rule mafft: # multiple sequences alignment #####################################
+rule MSA:
     input:
         f"{dataDir}/{{sample}}/{{sample}}.uniq"
     output:
@@ -48,7 +48,7 @@ rule mafft: # multiple sequences alignment #####################################
         {input} > {output} \
         2> {log}"
 
-checkpoint splitFiles:
+checkpoint splitIntoOverlappingWindows:
     input:
         f"{dataDir}/{{sample}}/{{sample}}.msa"
     output:

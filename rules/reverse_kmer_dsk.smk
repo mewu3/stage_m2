@@ -1,4 +1,4 @@
-rule dskReverse:
+rule calculateKmer_DSK_h5:
     input:
         f"{dataDir}/{{sample}}/splitFiles/reverse{{seg}}.fasta"
     output:
@@ -27,7 +27,7 @@ rule dskReverse:
         -file {input} \
         -out {output}"
 
-rule dskReverseOutput:
+rule calculateKmer_DSK_txt:
     input:
         f"{dataDir}/{{sample}}/dsk/reverse{{seg}}.h5"
     output:
@@ -39,7 +39,7 @@ rule dskReverseOutput:
         -nb-cores {params.nbCores} \
         -file {input} -out {output}"
 
-rule dskReverseOutputSort:
+rule calculateKmer_DSK_txt_sort:
     input:
         f"{dataDir}/{{sample}}/dsk/reverse{{seg}}.kCount"
     output:
