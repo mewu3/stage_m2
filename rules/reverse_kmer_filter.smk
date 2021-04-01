@@ -48,8 +48,6 @@ rule calculate_TmCGHomodierHairpin:
 
         output.close()
 
-
-### calculate complexity with nessie, input format require fasta
 rule calculate_TmCGHomodierHairpin_toFasta:
     input:
         f"{dataDir}/{{sample}}/filtering/reverse{{seg}}.calculated"

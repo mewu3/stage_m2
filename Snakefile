@@ -56,7 +56,7 @@ rule all:
         #
         # )
         expand(
-            f"{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.filtered.spec.fasta",
+            f"{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.set",
             sample = samples
         )
 
@@ -64,3 +64,4 @@ include: "rules/all_preprocessing.smk"
 include: "rules/reverse_kmer_dsk.smk"
 include: "rules/reverse_kmer_filter.smk"
 include: "rules/reverse_kmer_spec.smk"
+include: "rules/reverse_kmer_dimer.smk"
