@@ -72,9 +72,11 @@ rule allHeterodimerCheck:
 
 rule oligoSet:
     input:
-        f"{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.filtered.spec.heterodimer"
+        f"{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.filtered.spec.heterodimer",
+        f"{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.filtered.spec.fasta"
     output:
-        f"{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.set"
+        f"{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.set",
+        f"{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.set.fasta"
     params:
         monovalentConc = config["oligotm"]["monovalent-conc"],
         divalentConc = config["oligotm"]["divalent-conc"],
@@ -87,71 +89,28 @@ rule oligoSet:
         import re
         import pandas as pd
         import primer3
+        from Bio import SeqIO
 
-        inputOpen = open(input[0], "r")
-        outputOpen = open(output[0], "w")
+        input1_open = open(input[0], "r")
+        # input2_open = open(input[1], "r")
+        output1_open = open(output[0], "w")
+        output2_open = open(output[1], "w")
 
         dict = defaultdict(lambda: defaultdict(lambda:defaultdict(list)))
-        # dict=defaultdict(list)
-        # seenPosition1 = []
-        # seenPosition2 =[]
-        # seenOligo = []
-        # seenOligo1 = []
-        # seenOligo2 = []
 
 
-        for line in inputOpen.readlines()[1:]:
+
+        for line in input1_open.readlines()[1:]:
             line = line.rstrip("\n")
             ls = line.split('\t')
             posi1 = str(ls[0])
             oligo1=ls[1]
             posi2=str(ls[2])
             oligo2=ls[3]
-            # if posi1 not in dict:
-            #     dict[posi1]={}
-            # if posi2 not in dict and oligo2 not in dict[posi1][posi2][oligo1]:
-            #     dict[posi1][posi2]={}
             if posi2 not in dict and oligo2 not in dict[posi1]:
                 dict[posi1][oligo1][posi2].append(oligo2)
-            # if posi1 not in dict:
-            #     dict[posi1]={}
-                # seenPosition1.append(o)
-            # if posi2 not in dict[posi1] and posi2 not in dict:
-                # dict[posi1][posi2]=[oligo1, oligo2]
-                # dict[posi1][posi2]={}
-                # dict[posi1][posi2][oligo1]=oligo2
-        #     if posi2 not in seenPosition2 :
-        #         seenPosition1.append(posi2)
-        #         print(line)
-                # seenPosition.append(posi2)
-                # if oligo1 not in seenOligo and oligo2 not in seenOligo:
-                #     seenOligo.append(oligo1)
-                #     seenOligo.append(oligo2)
-                #     print(line)
-                # if oligo1 in seenOligo or oligo2 in seenOligo:
-                #     oligoSet.add(oligo1)
-                #     oligoSet.add(oligo2)
-                #     print(line)
-                # if posi2 not in dict[posi1] and posi2 != posi1 :
-                #         dict[posi1][posi2] = [oligo1, oligo2]
-                #         print(posi1, posi2, oligo1, oligo2)
-
-        # print(dict)
-        # print(oligoSet)
 
         oligoSet = []
-
-        # firstPosi1 = list(dict.keys())[0]
-        # firstOligo1 = list(dict[firstPosi1].keys())[0]
-        # firstPosi2 = list(dict[firstPosi1][firstOligo1].keys())[0]
-        # firstOligo2 = dict[firstPosi1][firstOligo1][firstPosi2][0]
-        # print(firstOligo1, firstOligo2)
-
-        # secondPosi1 = list(dict.keys())[1]
-        # secondOligo1 = firstOligo2
-        # secondPosi2 = list(dict[secondPosi1][secondOligo1].keys())[0]
-        # secondOligo2 = dict[secondPosi1][secondOligo1][secondPosi2][0]
-        # print(secondOligo1, secondOligo2)
 
         keyCount = len(list(dict.keys()))
 
@@ -171,15 +130,19 @@ rule oligoSet:
             # print(secondPosi1, secondOligo1, secondPosi2, secondOligo2)
             oligoSet.append(secondOligo2)
 
-            # if secondOligo2 in dict[firstPosi1][firstOligo1][secondPosi2]:
-            #     print(firstOligo1, secondOligo2)
+        record_dict = SeqIO.to_dict(SeqIO.parse(input[1], "fasta"))
 
+        oligoSet = list(map(lambda x: "p"+x, oligoSet))
         formatedHeader = "\t".join(map(str,oligoSet))
-        outputOpen.write(f"ID\t{formatedHeader}\n")
-        for o1 in oligoSet:
+        output1_open.write(f"ID\t{formatedHeader}\n")
+
+        for id1 in oligoSet:
             ls=[]
-            for o2 in oligoSet:
-                heterodimer = primer3.calcHeterodimer(o1, o2,
+            seq1 = str(record_dict[id1].seq)
+            output2_open.write(record_dict[id1].format("fasta"))
+            for id2 in oligoSet:
+                seq2 = str(record_dict[id2].seq)
+                heterodimer = primer3.calcHeterodimer(seq1, seq2,
                                                       mv_conc = params.monovalentConc,
                                                       dv_conc = params.divalentConc,
                                                       dntp_conc = params.dNTPConc,
@@ -188,53 +151,30 @@ rule oligoSet:
                     ls.append("0")
                 else:
                     ls.append("1")
-                    print(f"{o1} is not compatible with {o2}")
+                    print(f"{id1} is not compatible with {id2}")
             formatedList = "\t".join(map(str,ls))
-            outputOpen.write(f"{o1}\t{formatedList}\n")
-
-        # oligoSet.append(firstOligo1)
-        # oligoSet.append(firstOligo2)
-        #
-        # for p1 in dict:
-        #     for k1 in dict[p1]:
-        #         for p2 in dict[p1][k1]:
-        #             if dict[p1][k1][p2]
+            output1_open.write(f"{id1}\t{formatedList}\n")
 
 
+        # formatedHeader = "\t".join(map(str,oligoSet))
+        # output1_open.write(f"ID\t{formatedHeader}\n")
+        # for o1 in oligoSet:
+        #     ls=[]
+        #     for o2 in oligoSet:
+        #         heterodimer = primer3.calcHeterodimer(o1, o2,
+        #                                               mv_conc = params.monovalentConc,
+        #                                               dv_conc = params.divalentConc,
+        #                                               dntp_conc = params.dNTPConc,
+        #                                               dna_conc = params.dnaConc).dg
+        #         if float(heterodimer) > -9000:
+        #             ls.append("0")
+        #         else:
+        #             ls.append("1")
+        #             print(f"{o1} is not compatible with {o2}")
+        #     formatedList = "\t".join(map(str,ls))
+        #     output1_open.write(f"{o1}\t{formatedList}\n")
 
-                # oligo1 = dict[p1][p2][0]
-                # oligo2 = dict[p1][p2][1]
-                # print(p1, p2, oligo1, oligo2)
-                # print(dict[p1][p2])
-                # if oligo1 not in seenOligo1:
-                #     seenOligo1.append(oligo1)
-                # if oligo2 not in seenOligo2:
-                #     seenOligo2.append(oligo2)
-                # if oligo1 in seenOligo2:
-                #     print(dict[p1][p2])
-                # print(seenOligo1)
-                # print(seenOligo2)
-                # if oligo1 in seenOligo2:
-                #     print(dict[p1][p2])
-                #     if oligo1 in seenOligo or oligo2 in seenOligo:
-                #         oligoSet.append(dict[p1][p2])
-                #         print(dict[p1][p2])
-
-
-        # df = pd.read_table(input[0], sep="\t", header=0)
-        # df_group = df.groupby(["position1","position2"])
-        # print(df.groupby("position1")["position1"].count())
-        #
-        # pd.set_option("display.max_rows", None, "display.max_columns", None)
-
-        # df_first = df_group.first()
-        # print(df_first["ID1"].unique())
-        # print(df_first["ID2"].unique())
-        # print(df_first)
-        # ~ print(df_group.apply(list).to_dict())
-
-        # ~ for k, v in df_group:
-            # ~ print(v.first())
-
-        inputOpen.close()
-        outputOpen.close()
+        input1_open.close()
+        # input2_open.close()
+        output1_open.close()
+        output2_open.close()

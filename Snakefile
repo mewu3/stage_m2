@@ -49,12 +49,12 @@ fetchConfigParameters()
 
 rule all:
     input:
-        # expand(
-        #     f"{dataDir}/{{sample}}/checkSpecifity/references.DB.{{ext}}",
-        #     sample = samples,
-        #     ext = ["nhr", "nin", "nog", "nsd", "nsi", "nsq"]
-        #
-        # )
+        expand(
+            f"{dataDir}/{{sample}}/checkSpecifity/references.DB.{{ext}}",
+            sample = samples,
+            ext = ["nhr", "nin", "nog", "nsd", "nsi", "nsq"]
+
+        ),
         expand(
             f"{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.set",
             sample = samples
