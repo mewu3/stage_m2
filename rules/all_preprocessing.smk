@@ -76,11 +76,16 @@ checkpoint splitIntoOverlappingWindows:
         if remainder <= step/2: # primux fasta_tile_overlap.pl
             newStep = int(remainder/chunkNumber) + 1 + step
             print("Changing step size from {} to {} so there will be no remainder.".format(step, newStep))
+            step = newStep
 
-        chunks = [[i,i+newStep] for i in range(0, seqLength, newStep-overlap)]
-        chunks[-1][1] = len(fasta[0])
+        chunks = [[i,i+step] for i in range(0, seqLength, step-overlap)]
+        chunkNumber=len(chunks)
+        print(f"Final chunk number: {chunkNumber}")
 
         for chunk in chunks:
+
+            if chunk[-1] > seqLength:
+                chunk[-1] = seqLength
 
             seg = str(chunk[0])+"-"+str(chunk[1])
 

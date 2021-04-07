@@ -149,7 +149,7 @@ rule blastDB:
         out = f"{dataDir}/{{sample}}/checkSpecifity/references.DB"
     shell:
         "makeblastdb -in {input} -out {params.out} \
-        -dbtype nucl\
+        -dbtype nucl \
         -parse_seqids"
 
 rule blastn_short_prok:

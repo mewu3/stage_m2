@@ -44,7 +44,7 @@ rule calculate_TmCGHomodierHairpin:
                                                      dntp_conc = params.dNTPConc,
                                                      dna_conc = params.dnaConc).dg
                 hairpin_dg = primer3.calcHairpin(oligo).dg
-                output.write("{}\t{}\t{}\t{}\t{:.3f}\t{:.3f}\t{:.3f}\n".format(oligo, wildcards.seg.split("-")[1], ls[1], cgPercent, tm, homodimer_dg, hairpin_dg))
+                output.write("{}\t{}\t{}\t{}\t{:.3f}\t{:.3f}\t{:.3f}\n".format(oligo, wildcards.seg, ls[1], cgPercent, tm, homodimer_dg, hairpin_dg))
 
         output.close()
 
