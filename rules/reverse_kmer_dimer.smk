@@ -2,7 +2,7 @@ rule allHeterodimerCheck:
     input:
         f"{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.filtered.spec.fasta"
     output:
-        f"{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.filtered.spec.heterodimer"
+        f"{dataDir}/{{sample}}/dimer/allOligos_reverse.filtered.spec.heterodimer"
     params:
         monovalentConc = config["oligotm"]["monovalent-conc"],
         divalentConc = config["oligotm"]["divalent-conc"],
@@ -72,11 +72,11 @@ rule allHeterodimerCheck:
 
 rule oligoSet:
     input:
-        f"{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.filtered.spec.heterodimer",
+        f"{dataDir}/{{sample}}/dimer/allOligos_reverse.filtered.spec.heterodimer",
         f"{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.filtered.spec.fasta"
     output:
-        f"{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.set",
-        f"{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.set.fasta"
+        f"{dataDir}/{{sample}}/dimer/allOligos_reverse.set",
+        f"{dataDir}/{{sample}}/dimer/allOligos_reverse.set.fasta"
     params:
         monovalentConc = config["oligotm"]["monovalent-conc"],
         divalentConc = config["oligotm"]["divalent-conc"],
@@ -110,7 +110,7 @@ rule oligoSet:
             if posi2 not in dict and oligo2 not in dict[posi1]:
                 dict[posi1][oligo1][posi2].append(oligo2)
 
-        oligoSet = []
+        oligoSet = set()
 
         keyCount = len(list(dict.keys()))
 
@@ -121,14 +121,14 @@ rule oligoSet:
             firstPosi2 = list(dict[firstPosi1][firstOligo1].keys())[0]
             firstOligo2 = dict[firstPosi1][firstOligo1][firstPosi2][0]
             # print(firstPosi1, firstOligo1, firstPosi2, firstOligo2)
-            oligoSet.append(firstOligo1)
+            oligoSet.add(firstOligo1)
 
             secondPosi1 = list(dict.keys())[n+1]
             secondOligo1 = firstOligo2
             secondPosi2 = list(dict[secondPosi1][secondOligo1].keys())[0]
             secondOligo2 = dict[secondPosi1][secondOligo1][secondPosi2][0]
             # print(secondPosi1, secondOligo1, secondPosi2, secondOligo2)
-            oligoSet.append(secondOligo2)
+            oligoSet.add(secondOligo2)
 
         record_dict = SeqIO.to_dict(SeqIO.parse(input[1], "fasta"))
 

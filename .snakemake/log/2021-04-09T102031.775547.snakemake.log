@@ -1,0 +1,3 @@
+NameError in line 83 of /datater/wu/stage_m2/Snakefile:
+free variable 'combinator' referenced before assignment in enclosing scope
+  File "/datater/wu/stage_m2/Snakefile", line 83, in <module>

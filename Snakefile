@@ -50,18 +50,72 @@ fetchConfigParameters()
 rule all:
     input:
         expand(
+            f"{dataDir}/{{sample}}/{{sample}}.uniq",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/{{sample}}.msa",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/filtering/allOligos_reverse.filtered",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.filtered.fasta",
+            sample = samples
+        ),
+        expand(
             f"{dataDir}/{{sample}}/checkSpecifity/references.DB.{{ext}}",
             sample = samples,
             ext = ["nhr", "nin", "nog", "nsd", "nsi", "nsq"]
 
         ),
         expand(
-            f"{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.set",
+            f"{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.filtered.blastn.out",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.filtered.spec.fasta",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/dimer/allOligos_reverse.filtered.spec.heterodimer",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/dimer/allOligos_reverse.set",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/dimer/allOligos_reverse.set.fasta",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/evaluation/allOligos_reverse.set.coverage",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/evaluation/allOligo_before.tsv",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/evaluation/allOligo_after1.tsv",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/evaluation/allOligo_after2.tsv",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/evaluation/allOligo_after3.tsv",
             sample = samples
         )
 
+
 include: "rules/all_preprocessing.smk"
-include: "rules/reverse_kmer_dsk.smk"
+include: "rules/reverse_kmer_jellyfish.smk"
 include: "rules/reverse_kmer_filter.smk"
 include: "rules/reverse_kmer_spec.smk"
 include: "rules/reverse_kmer_dimer.smk"
+include: "rules/evaluation.smk"

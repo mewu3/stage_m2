@@ -1,6 +1,6 @@
 rule calculate_TmCGHomodierHairpin:
     input:
-        f"{dataDir}/{{sample}}/dsk/reverse{{seg}}.kCountSorted"
+        f"{dataDir}/{{sample}}/kmerCounting/reverse{{seg}}.kCountSorted"
     output:
         f"{dataDir}/{{sample}}/filtering/reverse{{seg}}.calculated"
     params:
@@ -69,7 +69,7 @@ rule calculate_TmCGHomodierHairpin_toFasta:
 
         outFile.close()
 
-rule transformeToTSV:
+rule calculate_LC:
     input:
         f"{dataDir}/{{sample}}/filtering/reverse{{seg}}.fasta"
     output:

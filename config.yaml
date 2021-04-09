@@ -6,7 +6,7 @@ samples:
     # coronavirus: "/datater/wu/data/coronavirus.fasta"
     # zika : "/datater/wu/data/ZIKV-96seqs.fasta"
 
-# multiple sequence aligment ###################################################
+### multiple sequence aligment
 mafft:
     # excution parameters
     threads: -1 # automatic
@@ -26,39 +26,14 @@ mafft:
     treeout: "off" # default
     quiet: "off" # default
 
-# split overlapping chunks #####################################################
+### split overlapping chunks
 step: 500
 overlap: 250
 
-# kmer counting ################################################################
-dsk:
-    nb-cores: 0 # default
-    max-memory: 5000 # default
-    max-disk: 0 # default
-    out-compress: 0 # default
-    storage-type: "hdf5" # default
-    kmer-size: 13 # default 31
-    abundance-min: 2 # default
-    abundance-max: 2147483647 # default
-    solidity-kind: "sum" # default
+### kmer counting
+jellyfish:
 
-dsk2ascii:
-    nb-cores: 0
-
-kmc3:
-    kmer-size: 13
-    ram: 12
-    signature: 9
-    input-format: "-fa"
-    min-kmer-number: 2
-    max-kmer-number: 2147483647
-    max-exclu-kmer: 1e9
-    threads: 8
-    fq-read-threads: 8
-    split-threads: 8
-    second-stage-threads: 8
-
-# Tm calculation by primer3 ####################################################
+### filtering
 oligotm:
     monovalent-conc: 50 # unity mM
     divalent-conc: 0 # unity mM
@@ -75,3 +50,7 @@ mfeprimer:
     divalent-conc: 1.5
     dNTP-conc: 0.6
     oligo-conc: 50
+
+### checkSpecifity
+
+### heterodimer checking
