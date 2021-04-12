@@ -1,14 +1,15 @@
 rule species_coverage:
     input:
         f"{dataDir}/{{sample}}/{{sample}}.uniq",
-        f"{dataDir}/{{sample}}/dimer/allOligos_reverse.set.fasta"
+        f"{dataDir}/{{sample}}/dimer{kmerSize}/allOligos_reverse.set.fasta"
     output:
-        f"{dataDir}/{{sample}}/evaluation/allOligos_reverse.set.coverage"
+        f"{dataDir}/{{sample}}/evaluation{kmerSize}/allOligos_reverse.set.coverage"
     params:
         splitFilesDir = f"{dataDir}/{{sample}}/splitFiles"
     run:
         import os
         import sys
+        import re
         from collections import defaultdict
         from Bio import Entrez
         from Bio import SeqIO
@@ -21,6 +22,8 @@ rule species_coverage:
         dict_aceIDtaxID=defaultdict(str)
         dict_posiSeq = defaultdict(str)
         dict_posiAce = defaultdict(list)
+        dict_taxIDSpecies = defaultdict(str)
+        dict_speciesCount = defaultdict(int)
 
         Entrez.email = "wu.meiju@outlook.com"
 
@@ -36,6 +39,24 @@ rule species_coverage:
                 ace = x.split()[0]
                 tax = x.split()[1]
                 dict_aceIDtaxID[ace]=tax
+
+        for aceID in dict_aceIDtaxID:
+            taxID = dict_aceIDtaxID[aceID]
+            handle = Entrez.efetch(db="taxonomy", id=taxID, mode="text")
+            records = Entrez.read(handle)
+            for taxon in records:
+                for t in taxon["LineageEx"]:
+                    if t["Rank"] == "species":
+                        species = t["ScientificName"]
+                        # print(species)
+                        if len(species) > 0 :
+                            dict_taxIDSpecies[taxID] = species
+                        else:
+                            dict_taxIDSpecies[taxID] = "unknow"
+
+        for taxId in dict_taxIDSpecies:
+            species = dict_taxIDSpecies[taxId]
+            dict_speciesCount[species]+=1
 
         input2_open = open(input2, "r")
         for line in input2_open.readlines():
@@ -70,30 +91,25 @@ rule species_coverage:
             dict=defaultdict(int)
             for acessionID in dict_posiAce[posi]:
                 taxID = dict_aceIDtaxID[acessionID]
-                handle = Entrez.efetch(db="taxonomy", id=taxID, mode="text")
-                records = Entrez.read(handle)
-                species = "unknow"
-                for taxon in records:
-                    for t in taxon["LineageEx"]:
-                        if t["Rank"] == "species":
-                            species = t["ScientificName"]
+                species = dict_taxIDSpecies[taxID]
                 dict[species]+=1
             for species in dict:
                 species_count = dict[species]
-                output1_open.write(f"{posi}\t{species}\t{species_count}\n")
+                totolCount = dict_speciesCount[species]
+                output1_open.write(f"{posi}\t{species}\t{species_count}\t{totolCount}\n")
         output1_open.close()
 
 rule oligoCount:
     input:
-        f"{dataDir}/{{sample}}/filtering/allOligos_reverse.calculated2",
-        f"{dataDir}/{{sample}}/filtering/allOligos_reverse.filtered",
-        f"{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.filtered.spec.fasta",
-        f"{dataDir}/{{sample}}/dimer/allOligos_reverse.set.fasta"
+        f"{dataDir}/{{sample}}/filtering{kmerSize}/allOligos_reverse.calculated2",
+        f"{dataDir}/{{sample}}/filtering{kmerSize}/allOligos_reverse.filtered",
+        f"{dataDir}/{{sample}}/checkSpecifity{kmerSize}/allOligos_reverse.filtered.spec.fasta",
+        f"{dataDir}/{{sample}}/dimer{kmerSize}/allOligos_reverse.set.fasta"
     output:
-        f"{dataDir}/{{sample}}/evaluation/allOligo_before.tsv",
-        f"{dataDir}/{{sample}}/evaluation/allOligo_after1.tsv",
-        f"{dataDir}/{{sample}}/evaluation/allOligo_after2.tsv",
-        f"{dataDir}/{{sample}}/evaluation/allOligo_after3.tsv"
+        f"{dataDir}/{{sample}}/evaluation{kmerSize}/allOligo_before.tsv",
+        f"{dataDir}/{{sample}}/evaluation{kmerSize}/allOligo_after1.tsv",
+        f"{dataDir}/{{sample}}/evaluation{kmerSize}/allOligo_after2.tsv",
+        f"{dataDir}/{{sample}}/evaluation{kmerSize}/allOligo_after3.tsv"
     run:
         import sys
         import pandas as pd

@@ -1,196 +1,95 @@
 import os
+import sys
+import re
 from collections import defaultdict
 from Bio import Entrez
-import re
+from Bio import SeqIO
 from Bio.Seq import Seq
 
-# uniq_seq = "/datater/wu/data/enterovirus/enterovirus.uniq"
-# uniq_seq_DB = "/datater/wu/data/enterovirus/enterovirus.uniq.DB"
-# oligoSet = "/datater/wu/data/enterovirus/checkSpecifity/allOligos_reverse.set.fasta"
-# oligoSet_blastn = "/datater/wu/data/enterovirus/checkSpecifity/allOligos_reverse.set.fasta.coverage"
-# taxID_in="/home/meijun/Téléchargements/taxid_input.txt"
-# taxID_out = "/home/meijun/Téléchargements/taxid_out.txt"
-# coverage_tax = "/home/meijun/Téléchargements/taxCoverage.txt"
-# execute = False
-#
-# if execute:
-#     os.system(f"makeblastdb -in {uniq_seq} -out {uniq_seq_DB} -dbtype nucl -parse_seqids")
-#     os.system(f"blastn -task blastn-short -db {uniq_seq_DB} -word_size 7 -max_target_seqs 5 -query {oligoSet} -out {oligoSet_blastn} -outfmt '6 qacc sacc stitle pident length mismatch gapopen sstart send evalue'")
-#     os.system(f"cat {oligoSet_blastn} |cut -f2 |epost -db nuccore |esummary -db nuccore |xtract -pattern DocumentSummary -element Caption,TaxId |cut -f2")
-#     os.system(f"egrep '^>' {uniq_seq} |cut -f1 -d" " |sed 's/>//g' |epost -db nuccore |esummary -db nuccore |xtract -pattern DocumentSummary -element Caption,TaxId |cut -f2")
-#
-# taxID_in_open = open(taxID_in, "r")
-# taxID_out_open = open(taxID_out, "r")
-# coverage_tax_open = open(coverage_tax, "w")
-#
-# def count_taxid(file):
-#     dict_count = defaultdict(int)
-#     for line in file:
-#         line = line.rstrip("\n")
-#         dict_count[line] += 1
-#     return dict_countls
-#
-# dict_in = count_taxid(taxID_in_open)
-# dict_out = count_taxid(taxID_out_open)
-#
-# Entrez.email = "wu.meiju@outlook.com"
-#
-# out_count_sum = 0
-# in_count_sum = 0
-#
-# dict_specie_inCount = defaultdict(int)
-# dict_specie_outCount = defaultdict(int)
-#
-# for id in dict_in:
-#     handle = Entrez.efetch(db="taxonomy", id=id, mode="text")
-#     records = Entrez.read(handle)
-#     species = "unknow"
-#     for taxon in records:
-#         for t in taxon["LineageEx"]:
-#             if t["Rank"] == "species":
-#                 species = t["ScientificName"]
-#     # dict_specie_inCount[species] = 0
-#     # dict_specie_outCount[species] = 0
-#     in_count_sum += dict_in[id]
-#     ### variants levels
-#     if id in dict_out:
-#         percentage = dict_out[id]/dict_in[id]
-#         out_count = dict_out[id]
-#         in_count = dict_in[id]
-#         out_count_sum += dict_out[id]
-#         dict_specie_inCount[species] += in_count
-#         dict_specie_outCount[species] += out_count
-#         coverage_tax_open.write(f"{species}\t{id}\t{out_count}\t{in_count}\t{percentage}\n")
-#     else:
-#         percentage = 0
-#         out_count = 0
-#         in_count = dict_in[id]
-#         dict_specie_inCount[species] += in_count
-#         dict_specie_outCount[species] += out_count
-#         coverage_tax_open.write(f"{species}\t{id}\t{out_count}\t{in_count}\t{percentage}\n")
-#
-# CoveragePercentage = out_count_sum/in_count_sum *100
-# coverage_tax_open.write(f"The output oligoSet target (variant levels) {out_count_sum} out of {in_count_sum}: {CoveragePercentage:.3f}%.\n")
-#
-# for species in dict_specie_inCount:
-#     inCount = dict_specie_inCount[species]
-#     out_count = dict_specie_outCount[species]
-#     percentage = out_count/inCount
-#     coverage_tax_open.write(f"The output oligoSet target {species} : {out_count} / {inCount} = {percentage:.3f} \n")
-#
-# taxID_in_open.close()
-# taxID_out_open.close()
-# coverage_tax_open.close()
+input1 = "/datater/wu/data/enterovirus/enterovirus.uniq"
+input2 = "/datater/wu/data/enterovirus/dimer13/allOligos_reverse.set.fasta"
+output1 = "/datater/wu/data/enterovirus/evaluation13/aceID-taxID-species.tsv"
 
-### 07/04/2021
-oligoSet = "/datater/wu/data/enterovirus/checkSpecifity/allOligos_reverse.set.fasta"
 splitFilesDir = "/datater/wu/data/enterovirus/splitFiles"
-taxid = "/datater/wu/data/enterovirus/evaluation/taxid.txt"
 
-oligoset_open = open(oligoSet, "r")
-taxid = open(taxid, "w")
+dict_aceIDtaxID=defaultdict(str)
+dict_posiSeq = defaultdict(str)
+dict_posiAce = defaultdict(list)
+dict_taxIDSpecies = defaultdict(str)
+dict_speciesCount = defaultdict(int)
 
-dictSeq = defaultdict(str)
-dict = defaultdict(lambda: defaultdict(str))
+Entrez.email = "wu.meiju@outlook.com"
 
-for line in oligoset_open:
-    line = line.rstrip("\n")
-    if line.startswith(">"):
-        header = line
-        position = header.split("|")[1].split()[1]
-        dictSeq[position] = ""
-    else:
-        kmer = Seq(line)
-        oligo = str(kmer.reverse_complement())
-        dictSeq[position] = oligo
+acessionID = os.popen(f"cat {input1}|grep '^>'|cut -f1 -d' '|sed 's/>//g'").read()
+taxID = os.popen(f"cat {input1}|grep '^>'|cut -f1 -d' '|sed 's/>//g'|epost -db nuccore|esummary -db nuccore|xtract -pattern DocumentSummary -element Caption,TaxId|cut -f2").read()
+acessionID = acessionID.split("\n")
+taxID = taxID.split("\n")
+combine = [' '.join(x) for x in zip(acessionID, taxID)]
 
-for k in dictSeq:
-    seq = dictSeq[k]
-    splitFiles = f"{splitFilesDir}/reverse{k}.fasta"
-    matchCount = 0
-    accessionID_ls = []
-    with open(splitFiles, "r") as file:
-        for line in file:
-            line = line.rstrip("\n")
-            if line.startswith(">"):
-                accessionID = line.split()[1]
-                # taxID = os.popen(f"efetch -db nuccore -id {accessionID} -format docsum | xtract -pattern DocumentSummary -element TaxId").read().rstrip("\n")
-                accessionID_ls.append(accessionID)
-            if not line.startswith(">"):
-                if re.search(seq, line, re.I):
-                    matchCount += 1
-    dict[k][matchCount]=accessionID_ls
-    # print(k, matchCount)
-    # print(accessionID_ls)
+for x in combine:
+    ls = x.split()
+    if len(ls) > 1 :
+        ace = x.split()[0]
+        tax = x.split()[1]
+        dict_aceIDtaxID[ace]=tax
 
-for position in dict :
-    for matchCount in dict[k]:
-        for id in dict[k][matchCount]:
-            taxID = os.popen(f"efetch -db nuccore -id {id} -format docsum | xtract -pattern DocumentSummary -element TaxId").read()
-            print(f"{position}\t{matchCount}\t{id}\t{taxID}")
+output1_open = open(output1, "w")
+for aceID in dict_aceIDtaxID:
+    taxID = dict_aceIDtaxID[aceID]
+    handle = Entrez.efetch(db="taxonomy", id=taxID, mode="text")
+    records = Entrez.read(handle)
+    for taxon in records:
+        for t in taxon["LineageEx"]:
+            if t["Rank"] == "species":
+                species = t["ScientificName"]
+                output1_open.write(f"{aceID}\t{taxID}\t{species}\n")
+                if len(species) > 0 :
+                    dict_taxIDSpecies[taxID] = species
+                else:
+                    dict_taxIDSpecies[taxID] = "unknow"
+output1_open.close()
 
-oligoset_open.close()
-taxid.close()
-
-# taxID_in_open = open(taxID_in, "r")
-# taxID_out_open = open(taxID_out, "r")
-# coverage_tax_open = open(coverage_tax, "w")
+# for taxId in dict_taxIDSpecies:
+#     species = dict_taxIDSpecies[taxId]
+#     dict_speciesCount[species]+=1
 #
-# def count_taxid(file):
-#     dict_count = defaultdict(int)
+# input2_open = open(input2, "r")
+# for line in input2_open.readlines():
+#     line = line.rstrip("\n")
+#     if line.startswith(">"):
+#         header = line
+#         position = header.split("|")[1].split()[1]
+#         dict_posiSeq[position] = ""
+#     else:
+#         kmer = Seq(line)
+#         oligo = str(kmer.reverse_complement())
+#         dict_posiSeq[position] = oligo
+# input2_open.close()
+#
+# for posi in dict_posiSeq:
+#     seq = dict_posiSeq[posi]
+#     splitFiles = f"{splitFilesDir}/reverse{posi}.fasta"
+#     accessionID_ls = []
+#     file = open(splitFiles, "r")
 #     for line in file:
 #         line = line.rstrip("\n")
-#         dict_count[line] += 1
-#     return dict_count
+#         if line.startswith(">"):
+#             accessionID = line.split()[1]
+#         if not line.startswith(">"):
+#             if re.search(seq, line, re.I):
+#                 accessionID_ls.append(accessionID)
+#     file.close()
+#     dict_posiAce[posi]=accessionID_ls
 #
-# dict_in = count_taxid(taxID_in_open)
-# dict_out = count_taxid(taxID_out_open)
-#
-# Entrez.email = "wu.meiju@outlook.com"
-#
-# out_count_sum = 0
-# in_count_sum = 0
-#
-# dict_specie_inCount = defaultdict(int)
-# dict_specie_outCount = defaultdict(int)
-#
-# for id in dict_in:
-#     handle = Entrez.efetch(db="taxonomy", id=id, mode="text")
-#     records = Entrez.read(handle)
-#     species = "unknow"
-#     for taxon in records:
-#         for t in taxon["LineageEx"]:
-#             if t["Rank"] == "species":
-#                 species = t["ScientificName"]
-#     # dict_specie_inCount[species] = 0
-#     # dict_specie_outCount[species] = 0
-#     in_count_sum += dict_in[id]
-#     ### variants levels
-#     if id in dict_out:
-#         percentage = dict_out[id]/dict_in[id]
-#         out_count = dict_out[id]
-#         in_count = dict_in[id]
-#         out_count_sum += dict_out[id]
-#         dict_specie_inCount[species] += in_count
-#         dict_specie_outCount[species] += out_count
-#         coverage_tax_open.write(f"{species}\t{id}\t{out_count}\t{in_count}\t{percentage}\n")
-#     else:
-#         percentage = 0
-#         out_count = 0
-#         in_count = dict_in[id]
-#         dict_specie_inCount[species] += in_count
-#         dict_specie_outCount[species] += out_count
-#         coverage_tax_open.write(f"{species}\t{id}\t{out_count}\t{in_count}\t{percentage}\n")
-#
-# CoveragePercentage = out_count_sum/in_count_sum *100
-# coverage_tax_open.write(f"The output oligoSet target (variant levels) {out_count_sum} out of {in_count_sum}: {CoveragePercentage:.3f}%.\n")
-#
-# for species in dict_specie_inCount:
-#     inCount = dict_specie_inCount[species]
-#     out_count = dict_specie_outCount[species]
-#     percentage = out_count/inCount
-#     coverage_tax_open.write(f"The output oligoSet target {species} : {out_count} / {inCount} = {percentage:.3f} \n")
-#
-# taxID_in_open.close()
-# taxID_out_open.close()
-# coverage_tax_open.close()
+# output1_open = open(output1, "w")
+# for posi in dict_posiAce:
+#     dict=defaultdict(int)
+#     for acessionID in dict_posiAce[posi]:
+#         taxID = dict_aceIDtaxID[acessionID]
+#         species = dict_taxIDSpecies[taxID]
+#         dict[species]+=1
+#     for species in dict:
+#         species_count = dict[species]
+#         totolCount = dict_speciesCount[species]
+#         output1_open.write(f"{posi}\t{species}\t{species_count}\t{totolCount}\n")
+# output1_open.close()

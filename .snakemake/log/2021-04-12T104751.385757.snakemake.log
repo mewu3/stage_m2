@@ -1,0 +1,87 @@
+Building DAG of jobs...
+Updating job aggregateAllReverseOligo.
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	allHeterodimerCheck
+	1	blastn_short_prok
+	1	filterOutUnSpecifickmer
+	1	oligoCount
+	1	oligoSet
+	1	species_coverage
+	7
+Select jobs to execute...
+
+[Mon Apr 12 10:47:51 2021]
+rule blastn_short_prok:
+    input: /datater/wu/data/enterovirus/checkSpecifity13/allOligos_reverse.filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity13/allOligos_reverse.filtered.blastn.out
+    jobid: 8
+    wildcards: sample=enterovirus
+
+[Mon Apr 12 11:03:12 2021]
+Finished job 8.
+1 of 7 steps (14%) done
+Select jobs to execute...
+
+[Mon Apr 12 11:03:12 2021]
+rule filterOutUnSpecifickmer:
+    input: /datater/wu/data/enterovirus/checkSpecifity13/allOligos_reverse.filtered.blastn.out, /datater/wu/data/enterovirus/checkSpecifity13/allOligos_reverse.filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity13/allOligos_reverse.filtered.spec.fasta
+    jobid: 9
+    wildcards: sample=enterovirus
+
+[Mon Apr 12 11:03:16 2021]
+Finished job 9.
+2 of 7 steps (29%) done
+Select jobs to execute...
+
+[Mon Apr 12 11:03:16 2021]
+rule allHeterodimerCheck:
+    input: /datater/wu/data/enterovirus/checkSpecifity13/allOligos_reverse.filtered.spec.fasta
+    output: /datater/wu/data/enterovirus/dimer13/allOligos_reverse.filtered.spec.heterodimer
+    jobid: 10
+    wildcards: sample=enterovirus
+
+[Mon Apr 12 11:14:56 2021]
+Finished job 10.
+3 of 7 steps (43%) done
+Select jobs to execute...
+
+[Mon Apr 12 11:14:56 2021]
+rule oligoSet:
+    input: /datater/wu/data/enterovirus/dimer13/allOligos_reverse.filtered.spec.heterodimer, /datater/wu/data/enterovirus/checkSpecifity13/allOligos_reverse.filtered.spec.fasta
+    output: /datater/wu/data/enterovirus/dimer13/allOligos_reverse.set, /datater/wu/data/enterovirus/dimer13/allOligos_reverse.set.fasta
+    jobid: 11
+    wildcards: sample=enterovirus
+
+[Mon Apr 12 11:15:14 2021]
+Finished job 11.
+4 of 7 steps (57%) done
+Select jobs to execute...
+
+[Mon Apr 12 11:15:14 2021]
+rule oligoCount:
+    input: /datater/wu/data/enterovirus/filtering13/allOligos_reverse.calculated2, /datater/wu/data/enterovirus/filtering13/allOligos_reverse.filtered, /datater/wu/data/enterovirus/checkSpecifity13/allOligos_reverse.filtered.spec.fasta, /datater/wu/data/enterovirus/dimer13/allOligos_reverse.set.fasta
+    output: /datater/wu/data/enterovirus/evaluation13/allOligo_before.tsv, /datater/wu/data/enterovirus/evaluation13/allOligo_after1.tsv, /datater/wu/data/enterovirus/evaluation13/allOligo_after2.tsv, /datater/wu/data/enterovirus/evaluation13/allOligo_after3.tsv
+    jobid: 13
+    wildcards: sample=enterovirus
+
+[Mon Apr 12 11:15:14 2021]
+rule species_coverage:
+    input: /datater/wu/data/enterovirus/enterovirus.uniq, /datater/wu/data/enterovirus/dimer13/allOligos_reverse.set.fasta
+    output: /datater/wu/data/enterovirus/evaluation13/allOligos_reverse.set.coverage
+    jobid: 12
+    wildcards: sample=enterovirus
+
+[Mon Apr 12 11:15:16 2021]
+Finished job 13.
+5 of 7 steps (71%) done
+Terminating processes on user request, this might take some time.
+Removing output files of failed job species_coverage since they might be corrupted:
+/datater/wu/data/enterovirus/evaluation13/allOligos_reverse.set.coverage
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-04-12T104751.385757.snakemake.log

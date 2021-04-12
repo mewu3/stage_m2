@@ -6,7 +6,8 @@ rule removeDuplicateSeq:
     conda:
         "envs/seqkit.yaml"
     shell:
-        "cat {input} | seqkit rmdup -s -o {output}"
+        # "cat {input} | seqkit rmdup -s -o {output}"
+        "lib/cd-hit-v4.8.1-2019-0228/cd-hit-auxtools/cd-hit-dup -i {input} -o {output}"
 
 rule MSA:
     input:
@@ -89,15 +90,15 @@ checkpoint splitIntoOverlappingWindows:
 
             seg = str(chunk[0])+"-"+str(chunk[1])
 
-            f1 = open(output[0] + f"/forward{seg}.fasta", "w")
+            # f1 = open(output[0] + f"/forward{seg}.fasta", "w")
             f2 = open(output[0] + f"/reverse{seg}.fasta", "w")
 
             for id in fasta.keys() :
                 segment = fasta[id][chunk[0]:chunk[1]]
-                forward = str(segment[:50])
+                # forward = str(segment[:50])
                 reverse = str(segment[-50:])
-                f1.write("> {}|{}-{}\n{}\n".format(fasta[id].long_name, str(chunk[0]), str(chunk[1]), forward))
+                # f1.write("> {}|{}-{}\n{}\n".format(fasta[id].long_name, str(chunk[0]), str(chunk[1]), forward))
                 f2.write("> {}|{}-{}\n{}\n".format(fasta[id].long_name, str(chunk[0]), str(chunk[1]), reverse))
 
-            f1.close()
+            # f1.close()
             f2.close()

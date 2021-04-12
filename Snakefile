@@ -6,6 +6,7 @@ configfile: "config.yaml"
 samples = list(config["samples"].keys())
 dataDir = config["dataDir"]
 refSeq = config["refSeq"]
+kmerSize = config["jellyfish-count"]["kmer-size"]
 
 def fetchConfigParameters():
     if config["mafft"]["fmodel"] == "on":
@@ -58,63 +59,63 @@ rule all:
             sample = samples
         ),
         expand(
-            f"{dataDir}/{{sample}}/filtering/allOligos_reverse.filtered",
+            f"{dataDir}/{{sample}}/filtering{kmerSize}/allOligos_reverse.filtered",
             sample = samples
         ),
         expand(
-            f"{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.filtered.fasta",
+            f"{dataDir}/{{sample}}/checkSpecifity{kmerSize}/allOligos_reverse.filtered.fasta",
             sample = samples
         ),
         expand(
-            f"{dataDir}/{{sample}}/checkSpecifity/references.DB.{{ext}}",
+            f"{dataDir}/{{sample}}/checkSpecifity{kmerSize}/references.DB.{{ext}}",
             sample = samples,
             ext = ["nhr", "nin", "nog", "nsd", "nsi", "nsq"]
 
         ),
         expand(
-            f"{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.filtered.blastn.out",
+            f"{dataDir}/{{sample}}/checkSpecifity{kmerSize}/allOligos_reverse.filtered.blastn.out",
             sample = samples
         ),
         expand(
-            f"{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.filtered.spec.fasta",
+            f"{dataDir}/{{sample}}/checkSpecifity{kmerSize}/allOligos_reverse.filtered.spec.fasta",
             sample = samples
         ),
         expand(
-            f"{dataDir}/{{sample}}/dimer/allOligos_reverse.filtered.spec.heterodimer",
+            f"{dataDir}/{{sample}}/dimer{kmerSize}/allOligos_reverse.filtered.spec.heterodimer",
             sample = samples
         ),
         expand(
-            f"{dataDir}/{{sample}}/dimer/allOligos_reverse.set",
+            f"{dataDir}/{{sample}}/dimer{kmerSize}/allOligos_reverse.set",
             sample = samples
         ),
         expand(
-            f"{dataDir}/{{sample}}/dimer/allOligos_reverse.set.fasta",
+            f"{dataDir}/{{sample}}/dimer{kmerSize}/allOligos_reverse.set.fasta",
             sample = samples
         ),
         expand(
-            f"{dataDir}/{{sample}}/evaluation/allOligos_reverse.set.coverage",
+            f"{dataDir}/{{sample}}/evaluation{kmerSize}/allOligos_reverse.set.coverage",
             sample = samples
         ),
         expand(
-            f"{dataDir}/{{sample}}/evaluation/allOligo_before.tsv",
+            f"{dataDir}/{{sample}}/evaluation{kmerSize}/allOligo_before.tsv",
             sample = samples
         ),
         expand(
-            f"{dataDir}/{{sample}}/evaluation/allOligo_after1.tsv",
+            f"{dataDir}/{{sample}}/evaluation{kmerSize}/allOligo_after1.tsv",
             sample = samples
         ),
         expand(
-            f"{dataDir}/{{sample}}/evaluation/allOligo_after2.tsv",
+            f"{dataDir}/{{sample}}/evaluation{kmerSize}/allOligo_after2.tsv",
             sample = samples
         ),
         expand(
-            f"{dataDir}/{{sample}}/evaluation/allOligo_after3.tsv",
+            f"{dataDir}/{{sample}}/evaluation{kmerSize}/allOligo_after3.tsv",
             sample = samples
         )
 
 
 include: "rules/all_preprocessing.smk"
-include: "rules/reverse_kmer_jellyfish.smk"
+include: "rules/reverse_kmer_kmerCount.smk"
 include: "rules/reverse_kmer_filter.smk"
 include: "rules/reverse_kmer_spec.smk"
 include: "rules/reverse_kmer_dimer.smk"

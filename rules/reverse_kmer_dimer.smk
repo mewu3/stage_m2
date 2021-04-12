@@ -1,8 +1,8 @@
 rule allHeterodimerCheck:
     input:
-        f"{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.filtered.spec.fasta"
+        f"{dataDir}/{{sample}}/checkSpecifity{kmerSize}/allOligos_reverse.filtered.spec.fasta"
     output:
-        f"{dataDir}/{{sample}}/dimer/allOligos_reverse.filtered.spec.heterodimer"
+        f"{dataDir}/{{sample}}/dimer{kmerSize}/allOligos_reverse.filtered.spec.heterodimer"
     params:
         monovalentConc = config["oligotm"]["monovalent-conc"],
         divalentConc = config["oligotm"]["divalent-conc"],
@@ -72,11 +72,11 @@ rule allHeterodimerCheck:
 
 rule oligoSet:
     input:
-        f"{dataDir}/{{sample}}/dimer/allOligos_reverse.filtered.spec.heterodimer",
-        f"{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.filtered.spec.fasta"
+        f"{dataDir}/{{sample}}/dimer{kmerSize}/allOligos_reverse.filtered.spec.heterodimer",
+        f"{dataDir}/{{sample}}/checkSpecifity{kmerSize}/allOligos_reverse.filtered.spec.fasta"
     output:
-        f"{dataDir}/{{sample}}/dimer/allOligos_reverse.set",
-        f"{dataDir}/{{sample}}/dimer/allOligos_reverse.set.fasta"
+        f"{dataDir}/{{sample}}/dimer{kmerSize}/allOligos_reverse.set",
+        f"{dataDir}/{{sample}}/dimer{kmerSize}/allOligos_reverse.set.fasta"
     params:
         monovalentConc = config["oligotm"]["monovalent-conc"],
         divalentConc = config["oligotm"]["divalent-conc"],

@@ -1,8 +1,8 @@
 rule allToFasta:
     input:
-        f"{dataDir}/{{sample}}/filtering/allOligos_reverse.filtered"
+        f"{dataDir}/{{sample}}/filtering{kmerSize}/allOligos_reverse.filtered"
     output:
-        f"{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.filtered.fasta"
+        f"{dataDir}/{{sample}}/checkSpecifity{kmerSize}/allOligos_reverse.filtered.fasta"
     run:
         import os
 
@@ -143,10 +143,10 @@ rule blastDB:
         refSeq
     output:
         multiext(
-            f"{dataDir}/{{sample}}/checkSpecifity/references.DB.", "nhr", "nin", "nog", "nsd", "nsi", "nsq"
+            f"{dataDir}/{{sample}}/checkSpecifity{kmerSize}/references.DB.", "nhr", "nin", "nog", "nsd", "nsi", "nsq"
         )
     params:
-        out = f"{dataDir}/{{sample}}/checkSpecifity/references.DB"
+        out = f"{dataDir}/{{sample}}/checkSpecifity{kmerSize}/references.DB"
     shell:
         "makeblastdb -in {input} -out {params.out} \
         -dbtype nucl \
@@ -154,26 +154,29 @@ rule blastDB:
 
 rule blastn_short_prok:
     input:
-        f"{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.filtered.fasta"
+        f"{dataDir}/{{sample}}/checkSpecifity{kmerSize}/allOligos_reverse.filtered.fasta"
     output:
-        f"{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.filtered.blastn.out"
+        f"{dataDir}/{{sample}}/checkSpecifity{kmerSize}/allOligos_reverse.filtered.blastn.out"
     params:
-        refDB = f"{dataDir}/{{sample}}/checkSpecifity/references.DB"
+        refDB = f"{dataDir}/{{sample}}/checkSpecifity{kmerSize}/references.DB",
+        evalue = config["blast"]["evalue"],
+        wordSize = config["blast"]["word-size"],
+        maxTargetSeq = config["blast"]["max-target-seqs"]
     shell:
         "blastn -task blastn-short \
         -db {params.refDB} \
-        -word_size 7 \
-        -max_target_seqs 5 \
+        -word_size {params.wordSize} \
+        -max_target_seqs {params.maxTargetSeq} \
         -query {input} \
         -out {output} \
         -outfmt '6 qacc sacc stitle pident length mismatch gapopen sstart send evalue'"
 
 rule filterOutUnSpecifickmer:
     input:
-        f"{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.filtered.blastn.out",
-        f"{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.filtered.fasta"
+        f"{dataDir}/{{sample}}/checkSpecifity{kmerSize}/allOligos_reverse.filtered.blastn.out",
+        f"{dataDir}/{{sample}}/checkSpecifity{kmerSize}/allOligos_reverse.filtered.fasta"
     output:
-        f"{dataDir}/{{sample}}/checkSpecifity/allOligos_reverse.filtered.spec.fasta"
+        f"{dataDir}/{{sample}}/checkSpecifity{kmerSize}/allOligos_reverse.filtered.spec.fasta"
     run:
         from Bio import SeqIO
 

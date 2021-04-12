@@ -31,9 +31,12 @@ step: 500
 overlap: 250
 
 ### kmer counting
-jellyfish:
+jellyfish-count:
+    kmer-size: 13
+    hash-size: 100M
+    thread: 1
 
-### filtering
+### filtering $ dimer
 oligotm:
     monovalent-conc: 50 # unity mM
     divalent-conc: 0 # unity mM
@@ -42,15 +45,15 @@ oligotm:
     thermodynamic-para: 1
     salt-correlation: 1
 
-mfeprimer:
-    deltaG-cutoff : -9.0
-    Tm-cutoff: 0
-    score-cutoff: 5
-    monovalent-conc: 50
-    divalent-conc: 1.5
-    dNTP-conc: 0.6
-    oligo-conc: 50
+dimer-deltaG: -9000 # value inferior than this one will be eliminated
+
+GC-upper: 40 # inferir than this value will be eliminated
+GC-lower: 60  # superior than this value will be eliminated
+
+LC: 0.75 # inferior than this value will be eliminated
 
 ### checkSpecifity
-
-### heterodimer checking
+blast:
+    evalue: 10
+    word-size: 7
+    max-target-seqs: 500

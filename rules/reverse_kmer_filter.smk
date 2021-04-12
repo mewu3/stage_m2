@@ -1,8 +1,8 @@
 rule calculate_TmCGHomodierHairpin:
     input:
-        f"{dataDir}/{{sample}}/kmerCounting/reverse{{seg}}.kCountSorted"
+        f"{dataDir}/{{sample}}/kmerCounting{kmerSize}/reverse{{seg}}.kCountSorted"
     output:
-        f"{dataDir}/{{sample}}/filtering/reverse{{seg}}.calculated"
+        f"{dataDir}/{{sample}}/filtering{kmerSize}/reverse{{seg}}.calculated"
     params:
         monovalentConc = config["oligotm"]["monovalent-conc"],
         divalentConc = config["oligotm"]["divalent-conc"],
@@ -50,9 +50,9 @@ rule calculate_TmCGHomodierHairpin:
 
 rule calculate_TmCGHomodierHairpin_toFasta:
     input:
-        f"{dataDir}/{{sample}}/filtering/reverse{{seg}}.calculated"
+        f"{dataDir}/{{sample}}/filtering{kmerSize}/reverse{{seg}}.calculated"
     output:
-        f"{dataDir}/{{sample}}/filtering/reverse{{seg}}.fasta"
+        f"{dataDir}/{{sample}}/filtering{kmerSize}/reverse{{seg}}.fasta"
     run:
         import os
 
@@ -71,18 +71,18 @@ rule calculate_TmCGHomodierHairpin_toFasta:
 
 rule calculate_LC:
     input:
-        f"{dataDir}/{{sample}}/filtering/reverse{{seg}}.fasta"
+        f"{dataDir}/{{sample}}/filtering{kmerSize}/reverse{{seg}}.fasta"
     output:
-        f"{dataDir}/{{sample}}/filtering/reverse{{seg}}.nessieOut"
+        f"{dataDir}/{{sample}}/filtering{kmerSize}/reverse{{seg}}.nessieOut"
     shell:
         "lib/nessie/nessie -I {input} -O {output} -E"
 
 rule reverse_add_LC:
     input:
-        f"{dataDir}/{{sample}}/filtering/reverse{{seg}}.nessieOut",
-        f"{dataDir}/{{sample}}/filtering/reverse{{seg}}.fasta"
+        f"{dataDir}/{{sample}}/filtering{kmerSize}/reverse{{seg}}.nessieOut",
+        f"{dataDir}/{{sample}}/filtering{kmerSize}/reverse{{seg}}.fasta"
     output:
-        f"{dataDir}/{{sample}}/filtering/reverse{{seg}}.calculated2"
+        f"{dataDir}/{{sample}}/filtering{kmerSize}/reverse{{seg}}.calculated2"
     run:
         input2 = open(input[1], "r")
         outputFile = open(output[0], "w")
@@ -142,7 +142,7 @@ rule reverse_add_LC:
 
 def aggregate_reverseInput(wildcards):
     checkpoint_output = checkpoints.splitIntoOverlappingWindows.get(**wildcards).output[0]
-    return expand(f"{dataDir}/{{sample}}/filtering/reverse{{seg}}.calculated2",
+    return expand(f"{dataDir}/{{sample}}/filtering{kmerSize}/reverse{{seg}}.calculated2",
                   sample = wildcards.sample,
                   seg = glob_wildcards(os.path.join(checkpoint_output, "reverse{seg}.fasta")).seg)
 
@@ -150,7 +150,7 @@ rule aggregateAllReverseOligo:
     input:
         aggregate_reverseInput
     output:
-        f"{dataDir}/{{sample}}/filtering/allOligos_reverse.calculated2"
+        f"{dataDir}/{{sample}}/filtering{kmerSize}/allOligos_reverse.calculated2"
     shell:
         """
         echo -e "position\tkmerCount\tCG%\tTm\thomodimer-dG\thairpin-dG\tLC\tkmer" > {output}
@@ -159,9 +159,14 @@ rule aggregateAllReverseOligo:
 
 rule filterAggregateAllReverseOligo:
     input:
-        f"{dataDir}/{{sample}}/filtering/allOligos_reverse.calculated2"
+        f"{dataDir}/{{sample}}/filtering{kmerSize}/allOligos_reverse.calculated2"
     output:
-        f"{dataDir}/{{sample}}/filtering/allOligos_reverse.filtered"
+        f"{dataDir}/{{sample}}/filtering{kmerSize}/allOligos_reverse.filtered"
+    params:
+        deltaG = config["dimer-deltaG"],
+        GCUp = config["GC-upper"],
+        GCDown = config["GC-lower"],
+        LC = config["LC"]
     run:
         import pandas as pd
         import os
@@ -171,12 +176,17 @@ rule filterAggregateAllReverseOligo:
         mean = float(df["Tm"].mean())
         std = float(df["Tm"].std())
 
+        deltaG = params.deltaG
+        GCUp = params.GCUp
+        GCDown = params.GCDown
+        LC = params.LC
+
         # MSSPE Deng et al. (2020), don't know the philosophy behind yet. with
         # tm range from 60 - 70 no oligo could pass the criteria
         TmSeuilPlus = mean + 2*std
         TmSeuilLess = mean - 2*std
 
-        df_filtered = df[(df["Tm"] >= TmSeuilLess) & (df["Tm"] <= TmSeuilPlus) & (df["CG%"] >= 40) & (df["CG%"] <= 60) & (df["hairpin-dG"] > -9000) & (df["homodimer-dG"] > -9000) & (df["LC"] >= 0.75)]
+        df_filtered = df[(df["Tm"] >= TmSeuilLess) & (df["Tm"] <= TmSeuilPlus) & (df["CG%"] >= GCUp) & (df["CG%"] <= GCDown) & (df["hairpin-dG"] > deltaG) & (df["homodimer-dG"] > deltaG) & (df["LC"] >= LC)]
         df_filtered = df_filtered.sort_values(["position", "kmerCount"], ascending=False)
         # df_filtered = df_filtered.groupby("position").head(5)
         df_filtered.to_csv(output[0], sep='\t', index=False)

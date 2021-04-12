@@ -1,0 +1,437 @@
+Building DAG of jobs...
+Updating job aggregateAllReverseOligo.
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	aggregateAllReverseOligo
+	1	all
+	1	allHeterodimerCheck
+	1	allToFasta
+	1	blastn_short_prok
+	10	calculateKmer_jellyfishCount
+	39	calculateKmer_jellyfishDump
+	42	calculateKmer_sort
+	43	calculate_LC
+	43	calculate_TmCGHomodierHairpin
+	43	calculate_TmCGHomodierHairpin_toFasta
+	1	filterAggregateAllReverseOligo
+	1	filterOutUnSpecifickmer
+	1	oligoCount
+	1	oligoSet
+	43	reverse_add_LC
+	1	species_coverage
+	273
+Select jobs to execute...
+
+[Fri Apr  9 13:28:51 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/zika/kmerCounting/reverse4016-4517.jf
+    output: /datater/wu/data/zika/kmerCounting/reverse4016-4517.kCount
+    jobid: 307
+    wildcards: sample=zika, seg=4016-4517
+
+
+[Fri Apr  9 13:28:51 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/zika/kmerCounting/reverse9036-9537.kCount
+    output: /datater/wu/data/zika/kmerCounting/reverse9036-9537.kCountSorted
+    jobid: 152
+    wildcards: sample=zika, seg=9036-9537
+
+[Fri Apr  9 13:28:51 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/zika/kmerCounting/reverse1004-1505.jf
+    output: /datater/wu/data/zika/kmerCounting/reverse1004-1505.kCount
+    jobid: 181
+    wildcards: sample=zika, seg=1004-1505
+
+
+[Fri Apr  9 13:28:51 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/zika/kmerCounting/reverse1255-1756.jf
+    output: /datater/wu/data/zika/kmerCounting/reverse1255-1756.kCount
+    jobid: 62
+    wildcards: sample=zika, seg=1255-1756
+
+
+[Fri Apr  9 13:28:51 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/zika/kmerCounting/reverse7028-7529.jf
+    output: /datater/wu/data/zika/kmerCounting/reverse7028-7529.kCount
+    jobid: 76
+    wildcards: sample=zika, seg=7028-7529
+
+[Fri Apr  9 13:28:51 2021]
+Finished job 307.
+1 of 273 steps (0.37%) done
+
+[Fri Apr  9 13:28:51 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/zika/splitFiles/reverse8283-8784.fasta
+    output: /datater/wu/data/zika/kmerCounting/reverse8283-8784.jf
+    jobid: 210
+    wildcards: sample=zika, seg=8283-8784
+
+
+[Fri Apr  9 13:28:51 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/zika/kmerCounting/reverse4267-4768.jf
+    output: /datater/wu/data/zika/kmerCounting/reverse4267-4768.kCount
+    jobid: 188
+    wildcards: sample=zika, seg=4267-4768
+[Fri Apr  9 13:28:51 2021]
+
+Finished job 181.
+2 of 273 steps (0.73%) done
+
+[Fri Apr  9 13:28:51 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/zika/kmerCounting/reverse7279-7780.jf
+    output: /datater/wu/data/zika/kmerCounting/reverse7279-7780.kCount
+    jobid: 300
+    wildcards: sample=zika, seg=7279-7780
+
+[Fri Apr  9 13:28:51 2021]
+Finished job 62.
+3 of 273 steps (1%) done
+
+[Fri Apr  9 13:28:51 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/zika/splitFiles/reverse8032-8533.fasta
+    output: /datater/wu/data/zika/kmerCounting/reverse8032-8533.jf
+    jobid: 112
+    wildcards: sample=zika, seg=8032-8533
+
+[Fri Apr  9 13:28:51 2021]
+Finished job 76.
+4 of 273 steps (1%) done
+
+[Fri Apr  9 13:28:51 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/zika/kmerCounting/reverse8785-9286.jf
+    output: /datater/wu/data/zika/kmerCounting/reverse8785-9286.kCount
+    jobid: 83
+    wildcards: sample=zika, seg=8785-9286
+
+[Fri Apr  9 13:28:51 2021]
+Finished job 188.
+5 of 273 steps (2%) done
+
+[Fri Apr  9 13:28:51 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/zika/kmerCounting/reverse5773-6274.jf
+    output: /datater/wu/data/zika/kmerCounting/reverse5773-6274.kCount
+    jobid: 174
+    wildcards: sample=zika, seg=5773-6274
+
+[Fri Apr  9 13:28:51 2021]
+Finished job 300.
+
+6 of 273 steps (2%) done
+[Fri Apr  9 13:28:51 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/zika/kmerCounting/reverse753-1254.jf
+    output: /datater/wu/data/zika/kmerCounting/reverse753-1254.kCount
+    jobid: 279
+    wildcards: sample=zika, seg=753-1254
+
+Select jobs to execute...
+[Fri Apr  9 13:28:51 2021]
+Finished job 83.
+7 of 273 steps (3%) done
+[Fri Apr  9 13:28:51 2021]
+Finished job 279.
+8 of 273 steps (3%) done
+[Fri Apr  9 13:28:51 2021]
+Finished job 174.
+9 of 273 steps (3%) done
+
+[Fri Apr  9 13:28:51 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/zika/kmerCounting/reverse7279-7780.kCount
+    output: /datater/wu/data/zika/kmerCounting/reverse7279-7780.kCountSorted
+    jobid: 299
+    wildcards: sample=zika, seg=7279-7780
+
+[Fri Apr  9 13:28:51 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/zika/kmerCounting/reverse7530-8031.jf
+    output: /datater/wu/data/zika/kmerCounting/reverse7530-8031.kCount
+    jobid: 272
+    wildcards: sample=zika, seg=7530-8031
+
+
+[Fri Apr  9 13:28:51 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/zika/kmerCounting/reverse4267-4768.kCount
+    output: /datater/wu/data/zika/kmerCounting/reverse4267-4768.kCountSorted
+    jobid: 187
+    wildcards: sample=zika, seg=4267-4768
+
+[Fri Apr  9 13:28:51 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/zika/kmerCounting/reverse0-501.jf
+    output: /datater/wu/data/zika/kmerCounting/reverse0-501.kCount
+    jobid: 195
+    wildcards: sample=zika, seg=0-501
+
+
+[Fri Apr  9 13:28:51 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/zika/kmerCounting/reverse2510-3011.jf
+    output: /datater/wu/data/zika/kmerCounting/reverse2510-3011.kCount
+    jobid: 314
+    wildcards: sample=zika, seg=2510-3011
+
+
+[Fri Apr  9 13:28:51 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/zika/kmerCounting/reverse5271-5772.jf
+    output: /datater/wu/data/zika/kmerCounting/reverse5271-5772.kCount
+    jobid: 90
+    wildcards: sample=zika, seg=5271-5772
+
+[Fri Apr  9 13:28:51 2021]
+Finished job 272.
+
+10 of 273 steps (4%) done
+[Fri Apr  9 13:28:51 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/zika/splitFiles/reverse3765-4266.fasta
+    output: /datater/wu/data/zika/kmerCounting/reverse3765-4266.jf
+    jobid: 203
+    wildcards: sample=zika, seg=3765-4266
+
+Select jobs to execute...
+[Fri Apr  9 13:28:51 2021]
+Finished job 195.
+11 of 273 steps (4%) done
+[Fri Apr  9 13:28:51 2021]
+Finished job 314.
+12 of 273 steps (4%) done
+[Fri Apr  9 13:28:51 2021]
+Finished job 90.
+13 of 273 steps (5%) done
+
+[Fri Apr  9 13:28:51 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/zika/kmerCounting/reverse251-752.kCountSorted
+    output: /datater/wu/data/zika/filtering/reverse251-752.calculated
+    jobid: 235
+    wildcards: sample=zika, seg=251-752
+
+[Fri Apr  9 13:28:51 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/zika/kmerCounting/reverse8785-9286.kCount
+    output: /datater/wu/data/zika/kmerCounting/reverse8785-9286.kCountSorted
+    jobid: 82
+    wildcards: sample=zika, seg=8785-9286
+
+[Fri Apr  9 13:28:51 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/zika/kmerCounting/reverse4769-5270.jf
+    output: /datater/wu/data/zika/kmerCounting/reverse4769-5270.kCount
+    jobid: 97
+    wildcards: sample=zika, seg=4769-5270
+
+Select jobs to execute...
+[Fri Apr  9 13:28:51 2021]
+Finished job 97.
+14 of 273 steps (5%) done
+
+[Fri Apr  9 13:28:51 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/zika/kmerCounting/reverse2761-3262.jf
+    output: /datater/wu/data/zika/kmerCounting/reverse2761-3262.kCount
+    jobid: 293
+    wildcards: sample=zika, seg=2761-3262
+
+
+[Fri Apr  9 13:28:51 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/zika/kmerCounting/reverse1255-1756.kCount
+    output: /datater/wu/data/zika/kmerCounting/reverse1255-1756.kCountSorted
+    jobid: 61
+    wildcards: sample=zika, seg=1255-1756
+
+[Fri Apr  9 13:28:51 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/zika/kmerCounting/reverse7028-7529.kCount
+    output: /datater/wu/data/zika/kmerCounting/reverse7028-7529.kCountSorted
+    jobid: 75
+    wildcards: sample=zika, seg=7028-7529
+
+Select jobs to execute...
+[Fri Apr  9 13:28:51 2021]
+Finished job 293.
+15 of 273 steps (5%) done
+
+[Fri Apr  9 13:28:51 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/zika/kmerCounting/reverse6526-7027.jf
+    output: /datater/wu/data/zika/kmerCounting/reverse6526-7027.kCount
+    jobid: 160
+    wildcards: sample=zika, seg=6526-7027
+
+Select jobs to execute...
+[Fri Apr  9 13:28:51 2021]
+Finished job 160.
+16 of 273 steps (6%) done
+
+[Fri Apr  9 13:28:51 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/zika/kmerCounting/reverse9538-10039.kCount
+    output: /datater/wu/data/zika/kmerCounting/reverse9538-10039.kCountSorted
+    jobid: 131
+    wildcards: sample=zika, seg=9538-10039
+
+Select jobs to execute...
+
+[Fri Apr  9 13:28:51 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/zika/kmerCounting/reverse5522-6023.jf
+    output: /datater/wu/data/zika/kmerCounting/reverse5522-6023.kCount
+    jobid: 167
+    wildcards: sample=zika, seg=5522-6023
+
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+[Fri Apr  9 13:28:51 2021]
+Finished job 167.
+17 of 273 steps (6%) done
+Select jobs to execute...
+
+[Fri Apr  9 13:28:51 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/zika/kmerCounting/reverse10542-10780.kCount
+    output: /datater/wu/data/zika/kmerCounting/reverse10542-10780.kCountSorted
+    jobid: 26
+    wildcards: sample=zika, seg=10542-10780
+
+[Fri Apr  9 13:28:52 2021]
+Finished job 152.
+18 of 273 steps (7%) done
+Select jobs to execute...
+
+[Fri Apr  9 13:28:52 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/zika/kmerCounting/reverse3514-4015.jf
+    output: /datater/wu/data/zika/kmerCounting/reverse3514-4015.kCount
+    jobid: 55
+    wildcards: sample=zika, seg=3514-4015
+
+[Fri Apr  9 13:28:52 2021]
+Finished job 55.
+19 of 273 steps (7%) done
+Select jobs to execute...
+
+[Fri Apr  9 13:28:52 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/zika/kmerCounting/reverse4518-5019.jf
+    output: /datater/wu/data/zika/kmerCounting/reverse4518-5019.kCount
+    jobid: 286
+    wildcards: sample=zika, seg=4518-5019
+
+[Fri Apr  9 13:28:52 2021]
+Finished job 286.
+20 of 273 steps (7%) done
+Select jobs to execute...
+[Fri Apr  9 13:28:52 2021]
+Finished job 82.
+21 of 273 steps (8%) done
+[Fri Apr  9 13:28:52 2021]
+Finished job 299.
+22 of 273 steps (8%) done
+
+[Fri Apr  9 13:28:52 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/zika/kmerCounting/reverse6777-7278.jf
+    output: /datater/wu/data/zika/kmerCounting/reverse6777-7278.kCount
+    jobid: 223
+    wildcards: sample=zika, seg=6777-7278
+
+[Fri Apr  9 13:28:52 2021]
+Finished job 187.
+23 of 273 steps (8%) done
+Select jobs to execute...
+[Fri Apr  9 13:28:52 2021]
+Finished job 223.
+24 of 273 steps (9%) done
+
+[Fri Apr  9 13:28:52 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/zika/splitFiles/reverse6024-6525.fasta
+    output: /datater/wu/data/zika/kmerCounting/reverse6024-6525.jf
+    jobid: 252
+    wildcards: sample=zika, seg=6024-6525
+
+
+[Fri Apr  9 13:28:52 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/zika/kmerCounting/reverse7530-8031.kCount
+    output: /datater/wu/data/zika/kmerCounting/reverse7530-8031.kCountSorted
+    jobid: 271
+    wildcards: sample=zika, seg=7530-8031
+
+[Fri Apr  9 13:28:52 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/zika/kmerCounting/reverse2510-3011.kCount
+    output: /datater/wu/data/zika/kmerCounting/reverse2510-3011.kCountSorted
+    jobid: 313
+    wildcards: sample=zika, seg=2510-3011
+
+Select jobs to execute...
+
+[Fri Apr  9 13:28:52 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/zika/kmerCounting/reverse6777-7278.kCount
+    output: /datater/wu/data/zika/kmerCounting/reverse6777-7278.kCountSorted
+    jobid: 222
+    wildcards: sample=zika, seg=6777-7278
+
+Select jobs to execute...
+Select jobs to execute...
+[Fri Apr  9 13:28:52 2021]
+Finished job 61.
+25 of 273 steps (9%) done
+[Fri Apr  9 13:28:52 2021]
+Finished job 235.
+26 of 273 steps (10%) done
+[Fri Apr  9 13:28:52 2021]
+Finished job 75.
+27 of 273 steps (10%) done
+[Fri Apr  9 13:28:53 2021]
+Finished job 271.
+28 of 273 steps (10%) done
+[Fri Apr  9 13:28:53 2021]
+Finished job 222.
+29 of 273 steps (11%) done
+[Fri Apr  9 13:28:53 2021]
+Finished job 313.
+30 of 273 steps (11%) done
+[Fri Apr  9 13:28:53 2021]
+Finished job 210.
+31 of 273 steps (11%) done
+[Fri Apr  9 13:28:53 2021]
+Finished job 203.
+32 of 273 steps (12%) done
+[Fri Apr  9 13:28:53 2021]
+Finished job 112.
+33 of 273 steps (12%) done
+[Fri Apr  9 13:28:54 2021]
+Finished job 252.
+34 of 273 steps (12%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-04-09T132850.668272.snakemake.log
