@@ -1,0 +1,24 @@
+Building DAG of jobs...
+Updating job aggregateAllReverseOligo.
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	species_coverage
+	1	taxID_and_specieName
+	3
+Select jobs to execute...
+
+[Mon Apr 12 16:01:56 2021]
+rule taxID_and_specieName:
+    input: /datater/wu/data/enterovirus/enterovirus.uniq
+    output: /datater/wu/data/enterovirus/evaluation13/aceID-taxID-species.tsv
+    jobid: 12
+    wildcards: sample=enterovirus
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-04-12T160156.059690.snakemake.log

@@ -1,11 +1,8 @@
-rule species_coverage:
+rule get taxID_and_specieName:
     input:
-        f"{dataDir}/{{sample}}/{{sample}}.uniq",
-        f"{dataDir}/{{sample}}/dimer{kmerSize}/allOligos_reverse.set.fasta"
+        f"{dataDir}/{{sample}}/{{sample}}.uniq"
     output:
-        f"{dataDir}/{{sample}}/evaluation{kmerSize}/allOligos_reverse.set.coverage"
-    params:
-        splitFilesDir = f"{dataDir}/{{sample}}/splitFiles"
+        f"{dataDir}/{{sample}}/evaluation{kmerSize}/aceID-taxID-species.tsv"
     run:
         import os
         import sys
@@ -16,14 +13,9 @@ rule species_coverage:
         from Bio.Seq import Seq
 
         input1 = input[0]
-        input2 = input[1]
         output1 = output[0]
 
         dict_aceIDtaxID=defaultdict(str)
-        dict_posiSeq = defaultdict(str)
-        dict_posiAce = defaultdict(list)
-        dict_taxIDSpecies = defaultdict(str)
-        dict_speciesCount = defaultdict(int)
 
         Entrez.email = "wu.meiju@outlook.com"
 
@@ -40,26 +32,70 @@ rule species_coverage:
                 tax = x.split()[1]
                 dict_aceIDtaxID[ace]=tax
 
+        # handle = Entrez.efetch(db="taxonomy", id="2760819", mode="text")
+        # records = Entrez.read(handle)
+        # for taxon in records:
+        #     print(taxon)
+            # if taxon["Rank"] == "species":
+            #     species = taxon["ScientificName"]
+
+        # handle = Entrez.efetch(db="taxonomy", id="86107", mode="text")
+        # records = Entrez.read(handle)
+        # for taxon in records:
+        #     if taxon["Rank"] == "serotype":
+        #         for t in taxon["LineageEx"]:
+        #             if t["Rank"] == "species":
+        #                 species = t["ScientificName"]
+                        # output1_open.write(f"{aceID}\t{taxID}\t{species}\n")
+
+        output1_open = open(output1, "w")
         for aceID in dict_aceIDtaxID:
             taxID = dict_aceIDtaxID[aceID]
             handle = Entrez.efetch(db="taxonomy", id=taxID, mode="text")
             records = Entrez.read(handle)
+            species = "unknow"
             for taxon in records:
-                for t in taxon["LineageEx"]:
-                    if t["Rank"] == "species":
-                        species = t["ScientificName"]
-                        # print(species)
-                        if len(species) > 0 :
-                            dict_taxIDSpecies[taxID] = species
-                        else:
-                            dict_taxIDSpecies[taxID] = "unknow"
+                if taxon["Rank"] == "species":
+                    species = taxon["ScientificName"]
+                # if taxon["Rank"] == "serotype":
+                #     for t in taxon["LineageEx"]:
+                #         if t["Rank"] == "species":
+                #             species = t["ScientificName"]
+                # if taxon["Rank"] == "no rank":
+                else: 
+                    for t in taxon["LineageEx"]:
+                        if t["Rank"] == "species":
+                            species = t["ScientificName"]
+                output1_open.write(f"{aceID}\t{taxID}\t{species}\n")
+        output1_open.close()
 
-        for taxId in dict_taxIDSpecies:
-            species = dict_taxIDSpecies[taxId]
-            dict_speciesCount[species]+=1
+rule species_coverage:
+    input:
+        f"{dataDir}/{{sample}}/dimer{kmerSize}/allOligos_reverse.set.fasta",
+        f"{dataDir}/{{sample}}/evaluation{kmerSize}/aceID-taxID-species.tsv"
+    output:
+        f"{dataDir}/{{sample}}/evaluation{kmerSize}/allOligos_reverse.set.coverage"
+    params:
+        splitFilesDir = f"{dataDir}/{{sample}}/splitFiles"
+    run:
+        import os
+        import sys
+        import re
+        from collections import defaultdict
+        from Bio import SeqIO
+        from Bio.Seq import Seq
 
-        input2_open = open(input2, "r")
-        for line in input2_open.readlines():
+        input1 = input[0]
+        input2 = input[1]
+        output1 = output[0]
+
+        dict_posiSeq = defaultdict(str)
+        dict_posiAce = defaultdict(list)
+        dict_aceIdSpecie = defaultdict(str)
+        dict_speciesCount = defaultdict(int)
+
+        input1_open = open(input1, "r")
+        for line in input1_open.readlines():
             line = line.rstrip("\n")
             if line.startswith(">"):
                 header = line
@@ -69,34 +105,38 @@ rule species_coverage:
                 kmer = Seq(line)
                 oligo = str(kmer.reverse_complement())
                 dict_posiSeq[position] = oligo
-        input2_open.close()
+        input1_open.close()
 
         for posi in dict_posiSeq:
             seq = dict_posiSeq[posi]
             splitFiles = f"{params.splitFilesDir}/reverse{posi}.fasta"
             accessionID_ls = []
-            file = open(splitFiles, "r")
-            for line in file:
-                line = line.rstrip("\n")
-                if line.startswith(">"):
-                    accessionID = line.split()[1]
-                if not line.startswith(">"):
-                    if re.search(seq, line, re.I):
-                        accessionID_ls.append(accessionID)
-            file.close()
+            record_dict = SeqIO.to_dict(SeqIO.parse(splitFiles, "fasta"))
+            for record in record_dict:
+                if re.search(seq, str(record_dict[record].seq), re.I):
+                    accessionID_ls.append(record_dict[record].id)
             dict_posiAce[posi]=accessionID_ls
+
+        input2_open = open(input2, "r")
+        for li in input2_open:
+            li = li.rstrip("\n")
+            ls = li.split("\t")
+            aceId = ls[0]
+            specie = ls[2]
+            dict_aceIdSpecie[aceId]=specie
+            dict_speciesCount[specie] += 1
+        input2_open.close()
 
         output1_open = open(output1, "w")
         for posi in dict_posiAce:
             dict=defaultdict(int)
             for acessionID in dict_posiAce[posi]:
-                taxID = dict_aceIDtaxID[acessionID]
-                species = dict_taxIDSpecies[taxID]
-                dict[species]+=1
-            for species in dict:
-                species_count = dict[species]
-                totolCount = dict_speciesCount[species]
-                output1_open.write(f"{posi}\t{species}\t{species_count}\t{totolCount}\n")
+                spec = dict_aceIdSpecie[acessionID]
+                dict[spec]+=1
+            for specie in dict:
+                species_count = dict[specie]
+                totolCount = dict_speciesCount[specie]
+                output1_open.write(f"{posi}\t{specie}\t{species_count}\t{totolCount}\n")
         output1_open.close()
 
 rule oligoCount:

@@ -93,6 +93,10 @@ rule all:
             sample = samples
         ),
         expand(
+            f"{dataDir}/{{sample}}/evaluation{kmerSize}/aceID-taxID-species.tsv",
+            sample = samples
+        ),
+        expand(
             f"{dataDir}/{{sample}}/evaluation{kmerSize}/allOligos_reverse.set.coverage",
             sample = samples
         ),

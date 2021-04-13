@@ -6,7 +6,6 @@ rule removeDuplicateSeq:
     conda:
         "envs/seqkit.yaml"
     shell:
-        # "cat {input} | seqkit rmdup -s -o {output}"
         "lib/cd-hit-v4.8.1-2019-0228/cd-hit-auxtools/cd-hit-dup -i {input} -o {output}"
 
 rule MSA:
