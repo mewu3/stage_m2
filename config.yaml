@@ -2,9 +2,16 @@ dataDir: "/datater/wu/data"
 refSeq : "/datater/wu/RefSeqProkaryota/RefSeqProkaryota.fna"
 
 samples:
-    enterovirus: "/datater/wu/data/enterovirus.fasta"
-    # coronavirus: "/datater/wu/data/coronavirus.fasta"
+    # enterovirus: "/datater/wu/data/enterovirus.fasta"
+    coronavirus: "/datater/wu/data/coronavirus.fasta"
     # zika : "/datater/wu/data/ZIKV-96seqs.fasta"
+
+### clustering
+clustering: "True"
+cd-hit:
+    identity: 0.99
+    thread: 8
+    memory: 16000
 
 ### multiple sequence aligment
 mafft:

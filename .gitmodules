@@ -7,3 +7,6 @@
 [submodule "lib/nessie"]
 	path = lib/nessie
 	url = https://github.com/B3rse/nessie.git
+[submodule "reptyr"]
+	path = reptyr
+	url = https://github.com/nelhage/reptyr.git

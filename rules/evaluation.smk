@@ -1,73 +1,145 @@
-rule get taxID_and_specieName:
-    input:
-        f"{dataDir}/{{sample}}/{{sample}}.uniq"
-    output:
-        f"{dataDir}/{{sample}}/evaluation{kmerSize}/aceID-taxID-species.tsv"
-    run:
-        import os
-        import sys
-        import re
-        from collections import defaultdict
-        from Bio import Entrez
-        from Bio import SeqIO
-        from Bio.Seq import Seq
+if clustering:
+    rule get taxID_and_specieName:
+        input:
+            f"{dataDir}/{{sample}}/{{sample}}{clustering_identity}.uniq"
+        output:
+            f"{dataDir}/{{sample}}/evaluation{kmerSize}/aceID-taxID-species.tsv"
+        run:
+            import os
+            import sys
+            import re
+            from collections import defaultdict
+            from Bio import Entrez
+            from Bio import SeqIO
+            from Bio.Seq import Seq
 
-        input1 = input[0]
-        output1 = output[0]
+            input1 = input[0]
+            output1 = output[0]
 
-        dict_aceIDtaxID=defaultdict(str)
+            dict_aceIDtaxID=defaultdict(str)
 
-        Entrez.email = "wu.meiju@outlook.com"
+            Entrez.email = "wu.meiju@outlook.com"
 
-        acessionID = os.popen(f"cat {input1}|grep '^>'|cut -f1 -d' '|sed 's/>//g'").read()
-        taxID = os.popen(f"cat {input1}|grep '^>'|cut -f1 -d' '|sed 's/>//g'|epost -db nuccore|esummary -db nuccore|xtract -pattern DocumentSummary -element Caption,TaxId|cut -f2").read()
-        acessionID = acessionID.split("\n")
-        taxID = taxID.split("\n")
-        combine = [' '.join(x) for x in zip(acessionID, taxID)]
+            acessionID = os.popen(f"cat {input1}|grep '^>'|cut -f1 -d' '|sed 's/>//g'").read()
+            taxID = os.popen(f"cat {input1}|grep '^>'|cut -f1 -d' '|sed 's/>//g'|epost -db nuccore|esummary -db nuccore|xtract -pattern DocumentSummary -element Caption,TaxId|cut -f2").read()
+            acessionID = acessionID.split("\n")
+            taxID = taxID.split("\n")
+            combine = [' '.join(x) for x in zip(acessionID, taxID)]
 
-        for x in combine:
-            ls = x.split()
-            if len(ls) > 1 :
-                ace = x.split()[0]
-                tax = x.split()[1]
-                dict_aceIDtaxID[ace]=tax
+            for x in combine:
+                ls = x.split()
+                if len(ls) > 1 :
+                    ace = x.split()[0]
+                    tax = x.split()[1]
+                    dict_aceIDtaxID[ace]=tax
 
-        # handle = Entrez.efetch(db="taxonomy", id="2760819", mode="text")
-        # records = Entrez.read(handle)
-        # for taxon in records:
-        #     print(taxon)
-            # if taxon["Rank"] == "species":
-            #     species = taxon["ScientificName"]
+            # handle = Entrez.efetch(db="taxonomy", id="2760819", mode="text")
+            # records = Entrez.read(handle)
+            # for taxon in records:
+            #     print(taxon)
+                # if taxon["Rank"] == "species":
+                #     species = taxon["ScientificName"]
 
-        # handle = Entrez.efetch(db="taxonomy", id="86107", mode="text")
-        # records = Entrez.read(handle)
-        # for taxon in records:
-        #     if taxon["Rank"] == "serotype":
-        #         for t in taxon["LineageEx"]:
-        #             if t["Rank"] == "species":
-        #                 species = t["ScientificName"]
-                        # output1_open.write(f"{aceID}\t{taxID}\t{species}\n")
+            # handle = Entrez.efetch(db="taxonomy", id="86107", mode="text")
+            # records = Entrez.read(handle)
+            # for taxon in records:
+            #     if taxon["Rank"] == "serotype":
+            #         for t in taxon["LineageEx"]:
+            #             if t["Rank"] == "species":
+            #                 species = t["ScientificName"]
+                            # output1_open.write(f"{aceID}\t{taxID}\t{species}\n")
 
-        output1_open = open(output1, "w")
-        for aceID in dict_aceIDtaxID:
-            taxID = dict_aceIDtaxID[aceID]
-            handle = Entrez.efetch(db="taxonomy", id=taxID, mode="text")
-            records = Entrez.read(handle)
-            species = "unknow"
-            for taxon in records:
-                if taxon["Rank"] == "species":
-                    species = taxon["ScientificName"]
-                # if taxon["Rank"] == "serotype":
-                #     for t in taxon["LineageEx"]:
-                #         if t["Rank"] == "species":
-                #             species = t["ScientificName"]
-                # if taxon["Rank"] == "no rank":
-                else: 
-                    for t in taxon["LineageEx"]:
-                        if t["Rank"] == "species":
-                            species = t["ScientificName"]
-                output1_open.write(f"{aceID}\t{taxID}\t{species}\n")
-        output1_open.close()
+            output1_open = open(output1, "w")
+            for aceID in dict_aceIDtaxID:
+                taxID = dict_aceIDtaxID[aceID]
+                handle = Entrez.efetch(db="taxonomy", id=taxID, mode="text")
+                records = Entrez.read(handle)
+                species = "unknow"
+                for taxon in records:
+                    if taxon["Rank"] == "species":
+                        species = taxon["ScientificName"]
+                    # if taxon["Rank"] == "serotype":
+                    #     for t in taxon["LineageEx"]:
+                    #         if t["Rank"] == "species":
+                    #             species = t["ScientificName"]
+                    # if taxon["Rank"] == "no rank":
+                    else:
+                        for t in taxon["LineageEx"]:
+                            if t["Rank"] == "species":
+                                species = t["ScientificName"]
+                    output1_open.write(f"{aceID}\t{taxID}\t{species}\n")
+            output1_open.close()
+else:
+    rule get taxID_and_specieName:
+        input:
+            f"{dataDir}/{{sample}}/{{sample}}.uniq"
+        output:
+            f"{dataDir}/{{sample}}/evaluation{kmerSize}/aceID-taxID-species.tsv"
+        run:
+            import os
+            import sys
+            import re
+            from collections import defaultdict
+            from Bio import Entrez
+            from Bio import SeqIO
+            from Bio.Seq import Seq
+
+            input1 = input[0]
+            output1 = output[0]
+
+            dict_aceIDtaxID=defaultdict(str)
+
+            Entrez.email = "wu.meiju@outlook.com"
+
+            acessionID = os.popen(f"cat {input1}|grep '^>'|cut -f1 -d' '|sed 's/>//g'").read()
+            taxID = os.popen(f"cat {input1}|grep '^>'|cut -f1 -d' '|sed 's/>//g'|epost -db nuccore|esummary -db nuccore|xtract -pattern DocumentSummary -element Caption,TaxId|cut -f2").read()
+            acessionID = acessionID.split("\n")
+            taxID = taxID.split("\n")
+            combine = [' '.join(x) for x in zip(acessionID, taxID)]
+
+            for x in combine:
+                ls = x.split()
+                if len(ls) > 1 :
+                    ace = x.split()[0]
+                    tax = x.split()[1]
+                    dict_aceIDtaxID[ace]=tax
+
+            # handle = Entrez.efetch(db="taxonomy", id="2760819", mode="text")
+            # records = Entrez.read(handle)
+            # for taxon in records:
+            #     print(taxon)
+                # if taxon["Rank"] == "species":
+                #     species = taxon["ScientificName"]
+
+            # handle = Entrez.efetch(db="taxonomy", id="86107", mode="text")
+            # records = Entrez.read(handle)
+            # for taxon in records:
+            #     if taxon["Rank"] == "serotype":
+            #         for t in taxon["LineageEx"]:
+            #             if t["Rank"] == "species":
+            #                 species = t["ScientificName"]
+                            # output1_open.write(f"{aceID}\t{taxID}\t{species}\n")
+
+            output1_open = open(output1, "w")
+            for aceID in dict_aceIDtaxID:
+                taxID = dict_aceIDtaxID[aceID]
+                handle = Entrez.efetch(db="taxonomy", id=taxID, mode="text")
+                records = Entrez.read(handle)
+                species = "unknow"
+                for taxon in records:
+                    if taxon["Rank"] == "species":
+                        species = taxon["ScientificName"]
+                    # if taxon["Rank"] == "serotype":
+                    #     for t in taxon["LineageEx"]:
+                    #         if t["Rank"] == "species":
+                    #             species = t["ScientificName"]
+                    # if taxon["Rank"] == "no rank":
+                    else:
+                        for t in taxon["LineageEx"]:
+                            if t["Rank"] == "species":
+                                species = t["ScientificName"]
+                    output1_open.write(f"{aceID}\t{taxID}\t{species}\n")
+            output1_open.close()
 
 rule species_coverage:
     input:

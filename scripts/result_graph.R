@@ -1,11 +1,13 @@
 library(tidyverse)
 
-datadir <- "/home/meijun/Documents/server/data/enterovirus/evaluation13"
+datadir <- "/home/meijun/Documents/server/data/coronavirus/evaluation13"
+files <- list.files(path=datadir, full.names = TRUE)
+pattern = grep(pattern = "allOligo",files,value = TRUE,perl=TRUE)
+pattern = grep(pattern = "tsv",pattern,value = TRUE)
 
-files <- list.files(path=datadir, pattern='.tsv', full.names = TRUE)
 specieCoverage = paste(datadir, "allOligos_reverse.set.coverage", sep="/")
 
-totolSeq = 3265
+totolSeq = 1257
 
 savePlot <- function(myPlot, plotname) {
   pdf(plotname)
@@ -14,9 +16,29 @@ savePlot <- function(myPlot, plotname) {
 }
 
 ### the most abondunce kmer coverage 
+file = pattern[1]
+filename = tools::file_path_sans_ext(file)
+table = read.delim(file=file, sep="\t")
+table[,2] <- table[,2]/totolSeq *100
+table2 <- table %>% separate(position, into = c("position1", "position2"))
+table3 <- cbind(table$position, table2)
+cols.num <- c("position1", "position2")
+table3[cols.num] <- sapply(table3[cols.num],as.numeric)
+colnames(table3)[1] <- "position"
+table3 <- table3 %>%
+  arrange(position1)
+table3$position <- factor(table3$position, levels=table3$position)
+plot <- ggplot(table3, aes(x=position, y=kmerCount)) +
+  geom_col() +
+  theme(axis.text.x = element_text(angle=90, size=10)) +
+  ylim(0,100) +
+  ylab("kmer Coverage")
+plotname = paste(filename, ".pdf", sep="")
+savePlot(plot, plotname)
+
 for (file in files) {
   filename = tools::file_path_sans_ext(file)
-  table = read.delim(file=file, sep="\t")
+  table = read.delim(file=file, sep="\t",header=TRUE)
   table[,2] <- table[,2]/totolSeq *100
   table2 <- table %>% separate(position, into = c("position1", "position2"))
   table3 <- cbind(table$position, table2)

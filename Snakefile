@@ -7,6 +7,8 @@ samples = list(config["samples"].keys())
 dataDir = config["dataDir"]
 refSeq = config["refSeq"]
 kmerSize = config["jellyfish-count"]["kmer-size"]
+clustering = config["clustering"]
+clustering_identity = config["cd-hit"]["identity"]
 
 def fetchConfigParameters():
     if config["mafft"]["fmodel"] == "on":
@@ -47,75 +49,148 @@ fetchConfigParameters()
 #                   sample = wildcards.sample,
 #                   seg = glob_wildcards(os.path.join(checkpoint_output, "reverse{seg}.fasta")).seg)
 
+if clustering:
+    rule all:
+        input:
+            expand(
+                f"{dataDir}/{{sample}}/{{sample}}.uniq",
+                sample = samples
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/{{sample}}{clustering_identity}.uniq",
+                sample = samples
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/{{sample}}{clustering_identity}.msa",
+                sample = samples
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/filtering{kmerSize}/allOligos_reverse.filtered",
+                sample = samples
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/checkSpecifity{kmerSize}/allOligos_reverse.filtered.fasta",
+                sample = samples
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/checkSpecifity{kmerSize}/references.DB.{{ext}}",
+                sample = samples,
+                ext = ["nhr", "nin", "nog", "nsd", "nsi", "nsq"]
 
-rule all:
-    input:
-        expand(
-            f"{dataDir}/{{sample}}/{{sample}}.uniq",
-            sample = samples
-        ),
-        expand(
-            f"{dataDir}/{{sample}}/{{sample}}.msa",
-            sample = samples
-        ),
-        expand(
-            f"{dataDir}/{{sample}}/filtering{kmerSize}/allOligos_reverse.filtered",
-            sample = samples
-        ),
-        expand(
-            f"{dataDir}/{{sample}}/checkSpecifity{kmerSize}/allOligos_reverse.filtered.fasta",
-            sample = samples
-        ),
-        expand(
-            f"{dataDir}/{{sample}}/checkSpecifity{kmerSize}/references.DB.{{ext}}",
-            sample = samples,
-            ext = ["nhr", "nin", "nog", "nsd", "nsi", "nsq"]
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/checkSpecifity{kmerSize}/allOligos_reverse.filtered.blastn.out",
+                sample = samples
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/checkSpecifity{kmerSize}/allOligos_reverse.filtered.spec.fasta",
+                sample = samples
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/dimer{kmerSize}/allOligos_reverse.filtered.spec.heterodimer",
+                sample = samples
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/dimer{kmerSize}/allOligos_reverse.set",
+                sample = samples
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/dimer{kmerSize}/allOligos_reverse.set.fasta",
+                sample = samples
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/evaluation{kmerSize}/aceID-taxID-species.tsv",
+                sample = samples
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/evaluation{kmerSize}/allOligos_reverse.set.coverage",
+                sample = samples
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/evaluation{kmerSize}/allOligo_before.tsv",
+                sample = samples
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/evaluation{kmerSize}/allOligo_after1.tsv",
+                sample = samples
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/evaluation{kmerSize}/allOligo_after2.tsv",
+                sample = samples
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/evaluation{kmerSize}/allOligo_after3.tsv",
+                sample = samples
+            )
+else:
+    rule all:
+        input:
+            expand(
+                f"{dataDir}/{{sample}}/{{sample}}.uniq",
+                sample = samples
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/{{sample}}.msa",
+                sample = samples
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/filtering{kmerSize}/allOligos_reverse.filtered",
+                sample = samples
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/checkSpecifity{kmerSize}/allOligos_reverse.filtered.fasta",
+                sample = samples
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/checkSpecifity{kmerSize}/references.DB.{{ext}}",
+                sample = samples,
+                ext = ["nhr", "nin", "nog", "nsd", "nsi", "nsq"]
 
-        ),
-        expand(
-            f"{dataDir}/{{sample}}/checkSpecifity{kmerSize}/allOligos_reverse.filtered.blastn.out",
-            sample = samples
-        ),
-        expand(
-            f"{dataDir}/{{sample}}/checkSpecifity{kmerSize}/allOligos_reverse.filtered.spec.fasta",
-            sample = samples
-        ),
-        expand(
-            f"{dataDir}/{{sample}}/dimer{kmerSize}/allOligos_reverse.filtered.spec.heterodimer",
-            sample = samples
-        ),
-        expand(
-            f"{dataDir}/{{sample}}/dimer{kmerSize}/allOligos_reverse.set",
-            sample = samples
-        ),
-        expand(
-            f"{dataDir}/{{sample}}/dimer{kmerSize}/allOligos_reverse.set.fasta",
-            sample = samples
-        ),
-        expand(
-            f"{dataDir}/{{sample}}/evaluation{kmerSize}/aceID-taxID-species.tsv",
-            sample = samples
-        ),
-        expand(
-            f"{dataDir}/{{sample}}/evaluation{kmerSize}/allOligos_reverse.set.coverage",
-            sample = samples
-        ),
-        expand(
-            f"{dataDir}/{{sample}}/evaluation{kmerSize}/allOligo_before.tsv",
-            sample = samples
-        ),
-        expand(
-            f"{dataDir}/{{sample}}/evaluation{kmerSize}/allOligo_after1.tsv",
-            sample = samples
-        ),
-        expand(
-            f"{dataDir}/{{sample}}/evaluation{kmerSize}/allOligo_after2.tsv",
-            sample = samples
-        ),
-        expand(
-            f"{dataDir}/{{sample}}/evaluation{kmerSize}/allOligo_after3.tsv",
-            sample = samples
-        )
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/checkSpecifity{kmerSize}/allOligos_reverse.filtered.blastn.out",
+                sample = samples
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/checkSpecifity{kmerSize}/allOligos_reverse.filtered.spec.fasta",
+                sample = samples
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/dimer{kmerSize}/allOligos_reverse.filtered.spec.heterodimer",
+                sample = samples
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/dimer{kmerSize}/allOligos_reverse.set",
+                sample = samples
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/dimer{kmerSize}/allOligos_reverse.set.fasta",
+                sample = samples
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/evaluation{kmerSize}/aceID-taxID-species.tsv",
+                sample = samples
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/evaluation{kmerSize}/allOligos_reverse.set.coverage",
+                sample = samples
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/evaluation{kmerSize}/allOligo_before.tsv",
+                sample = samples
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/evaluation{kmerSize}/allOligo_after1.tsv",
+                sample = samples
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/evaluation{kmerSize}/allOligo_after2.tsv",
+                sample = samples
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/evaluation{kmerSize}/allOligo_after3.tsv",
+                sample = samples
+            )
 
 
 include: "rules/all_preprocessing.smk"
