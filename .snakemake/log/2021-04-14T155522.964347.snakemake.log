@@ -1,0 +1,3236 @@
+Building DAG of jobs...
+Updating job aggregateAllReverseOligo.
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	aggregateAllReverseOligo
+	1	all
+	1	allHeterodimerCheck
+	1	allToFasta
+	1	blastDB
+	1	blastn_short_prok
+	37	calculateKmer_jellyfishCount
+	37	calculateKmer_jellyfishDump
+	37	calculateKmer_sort
+	37	calculate_LC
+	37	calculate_TmCGHomodierHairpin
+	37	calculate_TmCGHomodierHairpin_toFasta
+	1	filterAggregateAllReverseOligo
+	1	filterOutUnSpecifickmer
+	1	oligoCount
+	1	oligoSet
+	37	reverse_add_LC
+	1	species_coverage
+	1	taxID_and_specieName
+	271
+Select jobs to execute...
+
+[Wed Apr 14 15:55:23 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse3048-3552.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse3048-3552.jf
+    jobid: 197
+    wildcards: sample=enterovirus, seg=3048-3552
+
+
+[Wed Apr 14 15:55:23 2021]
+rule taxID_and_specieName:
+    input: /datater/wu/data/enterovirus/enterovirus.uniq
+    output: /datater/wu/data/enterovirus/evaluation16/aceID-taxID-species.tsv
+    jobid: 12
+    wildcards: sample=enterovirus
+
+[Wed Apr 14 15:55:23 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse1778-2282.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse1778-2282.jf
+    jobid: 92
+    wildcards: sample=enterovirus, seg=1778-2282
+
+
+[Wed Apr 14 15:55:23 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse6604-7108.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse6604-7108.jf
+    jobid: 176
+    wildcards: sample=enterovirus, seg=6604-7108
+
+
+[Wed Apr 14 15:55:23 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse508-1012.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse508-1012.jf
+    jobid: 78
+    wildcards: sample=enterovirus, seg=508-1012
+
+
+[Wed Apr 14 15:55:23 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse8890-9382.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse8890-9382.jf
+    jobid: 183
+    wildcards: sample=enterovirus, seg=8890-9382
+
+
+[Wed Apr 14 15:55:23 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse7366-7870.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse7366-7870.jf
+    jobid: 71
+    wildcards: sample=enterovirus, seg=7366-7870
+
+
+[Wed Apr 14 15:55:23 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse3302-3806.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse3302-3806.jf
+    jobid: 169
+    wildcards: sample=enterovirus, seg=3302-3806
+
+
+[Wed Apr 14 15:55:23 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse2032-2536.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse2032-2536.jf
+    jobid: 64
+    wildcards: sample=enterovirus, seg=2032-2536
+
+
+[Wed Apr 14 15:55:23 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse8128-8632.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse8128-8632.jf
+    jobid: 274
+    wildcards: sample=enterovirus, seg=8128-8632
+
+
+[Wed Apr 14 15:55:23 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse9144-9382.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse9144-9382.jf
+    jobid: 260
+    wildcards: sample=enterovirus, seg=9144-9382
+
+
+[Wed Apr 14 15:55:23 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse5334-5838.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse5334-5838.jf
+    jobid: 246
+    wildcards: sample=enterovirus, seg=5334-5838
+
+
+[Wed Apr 14 15:55:23 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse762-1266.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse762-1266.jf
+    jobid: 29
+    wildcards: sample=enterovirus, seg=762-1266
+
+
+[Wed Apr 14 15:55:23 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse7874-8378.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse7874-8378.jf
+    jobid: 127
+    wildcards: sample=enterovirus, seg=7874-8378
+
+
+[Wed Apr 14 15:55:23 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse2794-3298.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse2794-3298.jf
+    jobid: 232
+    wildcards: sample=enterovirus, seg=2794-3298
+
+
+[Wed Apr 14 15:55:23 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse7112-7616.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse7112-7616.jf
+    jobid: 120
+    wildcards: sample=enterovirus, seg=7112-7616
+
+
+[Wed Apr 14 15:55:23 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse0-504.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse0-504.jf
+    jobid: 225
+    wildcards: sample=enterovirus, seg=0-504
+
+
+[Wed Apr 14 15:55:23 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse5842-6346.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse5842-6346.jf
+    jobid: 22
+    wildcards: sample=enterovirus, seg=5842-6346
+
+
+[Wed Apr 14 15:55:23 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse254-758.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse254-758.jf
+    jobid: 113
+    wildcards: sample=enterovirus, seg=254-758
+
+
+[Wed Apr 14 15:55:23 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse4826-5330.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse4826-5330.jf
+    jobid: 218
+    wildcards: sample=enterovirus, seg=4826-5330
+
+
+[Wed Apr 14 15:55:23 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse4572-5076.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse4572-5076.jf
+    jobid: 106
+    wildcards: sample=enterovirus, seg=4572-5076
+
+
+[Wed Apr 14 15:55:23 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse3556-4060.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse3556-4060.jf
+    jobid: 211
+    wildcards: sample=enterovirus, seg=3556-4060
+
+
+[Wed Apr 14 15:55:23 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse5080-5584.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse5080-5584.jf
+    jobid: 99
+    wildcards: sample=enterovirus, seg=5080-5584
+
+
+[Wed Apr 14 15:55:23 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse6096-6600.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse6096-6600.jf
+    jobid: 204
+    wildcards: sample=enterovirus, seg=6096-6600
+
+[Wed Apr 14 15:55:26 2021]
+Finished job 64.
+1 of 271 steps (0.37%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:26 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse8636-9140.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse8636-9140.jf
+    jobid: 57
+    wildcards: sample=enterovirus, seg=8636-9140
+
+[Wed Apr 14 15:55:26 2021]
+Finished job 274.
+2 of 271 steps (0.74%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:26 2021]
+Finished job 106.
+3 of 271 steps (1%) done
+[Wed Apr 14 15:55:26 2021]
+Finished job 183.
+4 of 271 steps (1%) done
+
+[Wed Apr 14 15:55:26 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse4064-4568.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse4064-4568.jf
+    jobid: 162
+    wildcards: sample=enterovirus, seg=4064-4568
+
+Select jobs to execute...
+
+[Wed Apr 14 15:55:26 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse2286-2790.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse2286-2790.jf
+    jobid: 253
+    wildcards: sample=enterovirus, seg=2286-2790
+
+
+[Wed Apr 14 15:55:26 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse1270-1774.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse1270-1774.jf
+    jobid: 141
+    wildcards: sample=enterovirus, seg=1270-1774
+
+Select jobs to execute...
+[Wed Apr 14 15:55:26 2021]
+Finished job 260.
+5 of 271 steps (2%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:26 2021]
+Finished job 211.
+6 of 271 steps (2%) done
+
+[Wed Apr 14 15:55:26 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse1016-1520.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse1016-1520.jf
+    jobid: 85
+    wildcards: sample=enterovirus, seg=1016-1520
+
+Select jobs to execute...
+
+[Wed Apr 14 15:55:26 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse8382-8886.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse8382-8886.jf
+    jobid: 190
+    wildcards: sample=enterovirus, seg=8382-8886
+
+[Wed Apr 14 15:55:26 2021]
+Finished job 169.
+7 of 271 steps (3%) done
+[Wed Apr 14 15:55:26 2021]
+Finished job 204.
+8 of 271 steps (3%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:26 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse3556-4060.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse3556-4060.kCount
+    jobid: 210
+    wildcards: sample=enterovirus, seg=3556-4060
+
+
+[Wed Apr 14 15:55:26 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse6096-6600.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse6096-6600.kCount
+    jobid: 203
+    wildcards: sample=enterovirus, seg=6096-6600
+
+Select jobs to execute...
+[Wed Apr 14 15:55:26 2021]
+Finished job 210.
+9 of 271 steps (3%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:26 2021]
+Finished job 203.
+10 of 271 steps (4%) done
+[Wed Apr 14 15:55:26 2021]
+Finished job 127.
+11 of 271 steps (4%) done
+
+[Wed Apr 14 15:55:26 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse3302-3806.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse3302-3806.kCount
+    jobid: 168
+    wildcards: sample=enterovirus, seg=3302-3806
+
+Select jobs to execute...
+[Wed Apr 14 15:55:26 2021]
+Finished job 168.
+12 of 271 steps (4%) done
+
+[Wed Apr 14 15:55:26 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse3556-4060.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse3556-4060.kCountSorted
+    jobid: 209
+    wildcards: sample=enterovirus, seg=3556-4060
+
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse7874-8378.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse7874-8378.kCount
+    jobid: 126
+    wildcards: sample=enterovirus, seg=7874-8378
+
+Select jobs to execute...
+[Wed Apr 14 15:55:27 2021]
+Finished job 209.
+13 of 271 steps (5%) done
+[Wed Apr 14 15:55:27 2021]
+Finished job 126.
+14 of 271 steps (5%) done
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse1524-2028.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse1524-2028.jf
+    jobid: 134
+    wildcards: sample=enterovirus, seg=1524-2028
+
+Select jobs to execute...
+[Wed Apr 14 15:55:27 2021]
+Finished job 232.
+15 of 271 steps (6%) done
+[Wed Apr 14 15:55:27 2021]
+Finished job 246.
+16 of 271 steps (6%) done
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse3302-3806.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse3302-3806.kCountSorted
+    jobid: 167
+    wildcards: sample=enterovirus, seg=3302-3806
+
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse6096-6600.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse6096-6600.kCountSorted
+    jobid: 202
+    wildcards: sample=enterovirus, seg=6096-6600
+
+Select jobs to execute...
+[Wed Apr 14 15:55:27 2021]
+Finished job 78.
+17 of 271 steps (6%) done
+[Wed Apr 14 15:55:27 2021]
+Finished job 167.
+18 of 271 steps (7%) done
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse9144-9382.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse9144-9382.kCount
+    jobid: 259
+    wildcards: sample=enterovirus, seg=9144-9382
+
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse2794-3298.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse2794-3298.kCount
+    jobid: 231
+    wildcards: sample=enterovirus, seg=2794-3298
+
+[Wed Apr 14 15:55:27 2021]
+Finished job 22.
+19 of 271 steps (7%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:27 2021]
+Finished job 202.
+20 of 271 steps (7%) done
+[Wed Apr 14 15:55:27 2021]
+Finished job 259.
+21 of 271 steps (8%) done
+[Wed Apr 14 15:55:27 2021]
+Finished job 231.
+22 of 271 steps (8%) done
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse5334-5838.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse5334-5838.kCount
+    jobid: 245
+    wildcards: sample=enterovirus, seg=5334-5838
+
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse5842-6346.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse5842-6346.kCount
+    jobid: 21
+    wildcards: sample=enterovirus, seg=5842-6346
+
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse6858-7362.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse6858-7362.jf
+    jobid: 267
+    wildcards: sample=enterovirus, seg=6858-7362
+
+[Wed Apr 14 15:55:27 2021]
+Finished job 71.
+23 of 271 steps (8%) done
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse8890-9382.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse8890-9382.kCount
+    jobid: 182
+    wildcards: sample=enterovirus, seg=8890-9382
+
+Select jobs to execute...
+[Wed Apr 14 15:55:27 2021]
+Finished job 245.
+24 of 271 steps (9%) done
+[Wed Apr 14 15:55:27 2021]
+Finished job 21.
+25 of 271 steps (9%) done
+[Wed Apr 14 15:55:27 2021]
+Finished job 182.
+26 of 271 steps (10%) done
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse7366-7870.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse7366-7870.kCount
+    jobid: 70
+    wildcards: sample=enterovirus, seg=7366-7870
+
+
+[Wed Apr 14 15:55:27 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse6096-6600.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse6096-6600.calculated
+    jobid: 201
+    wildcards: sample=enterovirus, seg=6096-6600
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse9144-9382.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse9144-9382.kCountSorted
+    jobid: 258
+    wildcards: sample=enterovirus, seg=9144-9382
+
+Select jobs to execute...
+[Wed Apr 14 15:55:27 2021]
+Finished job 70.
+27 of 271 steps (10%) done
+[Wed Apr 14 15:55:27 2021]
+Finished job 258.
+28 of 271 steps (10%) done
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse7620-8124.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse7620-8124.jf
+    jobid: 148
+    wildcards: sample=enterovirus, seg=7620-8124
+
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse8890-9382.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse8890-9382.kCountSorted
+    jobid: 181
+    wildcards: sample=enterovirus, seg=8890-9382
+
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse508-1012.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse508-1012.kCount
+    jobid: 77
+    wildcards: sample=enterovirus, seg=508-1012
+
+Select jobs to execute...
+[Wed Apr 14 15:55:27 2021]
+Finished job 181.
+29 of 271 steps (11%) done
+[Wed Apr 14 15:55:27 2021]
+Finished job 176.
+30 of 271 steps (11%) done
+[Wed Apr 14 15:55:27 2021]
+Finished job 197.
+31 of 271 steps (11%) done
+[Wed Apr 14 15:55:27 2021]
+Finished job 77.
+32 of 271 steps (12%) done
+[Wed Apr 14 15:55:27 2021]
+Finished job 92.
+33 of 271 steps (12%) done
+
+[Wed Apr 14 15:55:27 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse9144-9382.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse9144-9382.calculated
+    jobid: 257
+    wildcards: sample=enterovirus, seg=9144-9382
+
+[Wed Apr 14 15:55:27 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse3556-4060.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse3556-4060.calculated
+    jobid: 208
+    wildcards: sample=enterovirus, seg=3556-4060
+
+Select jobs to execute...
+
+[Wed Apr 14 15:55:27 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse8890-9382.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse8890-9382.calculated
+    jobid: 180
+    wildcards: sample=enterovirus, seg=8890-9382
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse1778-2282.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse1778-2282.kCount
+    jobid: 91
+    wildcards: sample=enterovirus, seg=1778-2282
+
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse6350-6854.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse6350-6854.jf
+    jobid: 43
+    wildcards: sample=enterovirus, seg=6350-6854
+
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse5588-6092.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse5588-6092.jf
+    jobid: 50
+    wildcards: sample=enterovirus, seg=5588-6092
+
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse3810-4314.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse3810-4314.jf
+    jobid: 155
+    wildcards: sample=enterovirus, seg=3810-4314
+
+[Wed Apr 14 15:55:27 2021]
+Finished job 29.
+34 of 271 steps (13%) done
+[Wed Apr 14 15:55:27 2021]
+Finished job 91.
+35 of 271 steps (13%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse6604-7108.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse6604-7108.kCount
+    jobid: 175
+    wildcards: sample=enterovirus, seg=6604-7108
+
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse508-1012.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse508-1012.kCountSorted
+    jobid: 76
+    wildcards: sample=enterovirus, seg=508-1012
+
+[Wed Apr 14 15:55:27 2021]
+Finished job 218.
+36 of 271 steps (13%) done
+[Wed Apr 14 15:55:27 2021]
+Finished job 225.
+37 of 271 steps (14%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:27 2021]
+Finished job 76.
+38 of 271 steps (14%) done
+[Wed Apr 14 15:55:27 2021]
+Finished job 113.
+39 of 271 steps (14%) done
+[Wed Apr 14 15:55:27 2021]
+Finished job 175.
+40 of 271 steps (15%) done
+[Wed Apr 14 15:55:27 2021]
+Finished job 120.
+41 of 271 steps (15%) done
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse3048-3552.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse3048-3552.kCount
+    jobid: 196
+    wildcards: sample=enterovirus, seg=3048-3552
+
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse4826-5330.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse4826-5330.kCount
+    jobid: 217
+    wildcards: sample=enterovirus, seg=4826-5330
+
+Select jobs to execute...
+[Wed Apr 14 15:55:27 2021]
+Finished job 196.
+42 of 271 steps (15%) done
+[Wed Apr 14 15:55:27 2021]
+Finished job 217.
+43 of 271 steps (16%) done
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse0-504.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse0-504.kCount
+    jobid: 224
+    wildcards: sample=enterovirus, seg=0-504
+
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse1778-2282.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse1778-2282.kCountSorted
+    jobid: 90
+    wildcards: sample=enterovirus, seg=1778-2282
+
+
+[Wed Apr 14 15:55:27 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse508-1012.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse508-1012.calculated
+    jobid: 75
+    wildcards: sample=enterovirus, seg=508-1012
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse7366-7870.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse7366-7870.kCountSorted
+    jobid: 69
+    wildcards: sample=enterovirus, seg=7366-7870
+
+[Wed Apr 14 15:55:27 2021]
+Finished job 90.
+44 of 271 steps (16%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:27 2021]
+Finished job 224.
+45 of 271 steps (17%) done
+[Wed Apr 14 15:55:27 2021]
+Finished job 69.
+46 of 271 steps (17%) done
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse4572-5076.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse4572-5076.kCount
+    jobid: 105
+    wildcards: sample=enterovirus, seg=4572-5076
+
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse4318-4822.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse4318-4822.jf
+    jobid: 239
+    wildcards: sample=enterovirus, seg=4318-4822
+
+
+[Wed Apr 14 15:55:27 2021]
+rule blastDB:
+    input: /datater/wu/RefSeqProkaryota/RefSeqProkaryota.fna
+    output: /datater/wu/data/enterovirus/checkSpecifity16/references.DB.nhr, /datater/wu/data/enterovirus/checkSpecifity16/references.DB.nin, /datater/wu/data/enterovirus/checkSpecifity16/references.DB.nog, /datater/wu/data/enterovirus/checkSpecifity16/references.DB.nsd, /datater/wu/data/enterovirus/checkSpecifity16/references.DB.nsi, /datater/wu/data/enterovirus/checkSpecifity16/references.DB.nsq
+    jobid: 7
+    wildcards: sample=enterovirus
+
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse6604-7108.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse6604-7108.kCountSorted
+    jobid: 174
+    wildcards: sample=enterovirus, seg=6604-7108
+
+[Wed Apr 14 15:55:27 2021]
+Finished job 105.
+47 of 271 steps (17%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse254-758.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse254-758.kCount
+    jobid: 112
+    wildcards: sample=enterovirus, seg=254-758
+
+
+[Wed Apr 14 15:55:27 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse7366-7870.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse7366-7870.calculated
+    jobid: 68
+    wildcards: sample=enterovirus, seg=7366-7870
+
+[Wed Apr 14 15:55:27 2021]
+Finished job 174.
+48 of 271 steps (18%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:27 2021]
+Finished job 112.
+49 of 271 steps (18%) done
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse2032-2536.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse2032-2536.kCount
+    jobid: 63
+    wildcards: sample=enterovirus, seg=2032-2536
+
+Select jobs to execute...
+[Wed Apr 14 15:55:27 2021]
+Finished job 63.
+50 of 271 steps (18%) done
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse5334-5838.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse5334-5838.kCountSorted
+    jobid: 244
+    wildcards: sample=enterovirus, seg=5334-5838
+
+Select jobs to execute...
+[Wed Apr 14 15:55:27 2021]
+Finished job 99.
+51 of 271 steps (19%) done
+[Wed Apr 14 15:55:27 2021]
+Finished job 244.
+52 of 271 steps (19%) done
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse762-1266.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse762-1266.kCount
+    jobid: 28
+    wildcards: sample=enterovirus, seg=762-1266
+
+Select jobs to execute...
+[Wed Apr 14 15:55:27 2021]
+Finished job 28.
+53 of 271 steps (20%) done
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse0-504.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse0-504.kCountSorted
+    jobid: 223
+    wildcards: sample=enterovirus, seg=0-504
+
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse5080-5584.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse5080-5584.kCount
+    jobid: 98
+    wildcards: sample=enterovirus, seg=5080-5584
+
+Select jobs to execute...
+[Wed Apr 14 15:55:27 2021]
+Finished job 223.
+54 of 271 steps (20%) done
+[Wed Apr 14 15:55:27 2021]
+Finished job 98.
+55 of 271 steps (20%) done
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse8128-8632.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse8128-8632.kCount
+    jobid: 273
+    wildcards: sample=enterovirus, seg=8128-8632
+
+Select jobs to execute...
+[Wed Apr 14 15:55:27 2021]
+Finished job 273.
+56 of 271 steps (21%) done
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse2032-2536.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse2032-2536.kCountSorted
+    jobid: 62
+    wildcards: sample=enterovirus, seg=2032-2536
+
+
+[Wed Apr 14 15:55:27 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse5334-5838.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse5334-5838.calculated
+    jobid: 243
+    wildcards: sample=enterovirus, seg=5334-5838
+
+Select jobs to execute...
+[Wed Apr 14 15:55:27 2021]
+Finished job 62.
+57 of 271 steps (21%) done
+
+[Wed Apr 14 15:55:27 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse762-1266.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse762-1266.kCountSorted
+    jobid: 27
+    wildcards: sample=enterovirus, seg=762-1266
+
+Select jobs to execute...
+
+[Wed Apr 14 15:55:27 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse0-504.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse0-504.calculated
+    jobid: 222
+    wildcards: sample=enterovirus, seg=0-504
+
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+[Wed Apr 14 15:55:28 2021]
+Finished job 27.
+58 of 271 steps (21%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:28 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse4826-5330.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse4826-5330.kCountSorted
+    jobid: 216
+    wildcards: sample=enterovirus, seg=4826-5330
+
+[Wed Apr 14 15:55:28 2021]
+Finished job 216.
+59 of 271 steps (22%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:28 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse2032-2536.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse2032-2536.calculated
+    jobid: 61
+    wildcards: sample=enterovirus, seg=2032-2536
+
+[Wed Apr 14 15:55:28 2021]
+Finished job 7.
+60 of 271 steps (22%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:28 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse8128-8632.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse8128-8632.kCountSorted
+    jobid: 272
+    wildcards: sample=enterovirus, seg=8128-8632
+
+[Wed Apr 14 15:55:28 2021]
+Finished job 272.
+61 of 271 steps (23%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:28 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse5842-6346.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse5842-6346.kCountSorted
+    jobid: 20
+    wildcards: sample=enterovirus, seg=5842-6346
+
+[Wed Apr 14 15:55:28 2021]
+Finished job 180.
+62 of 271 steps (23%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:28 2021]
+Finished job 257.
+63 of 271 steps (23%) done
+[Wed Apr 14 15:55:28 2021]
+Finished job 75.
+64 of 271 steps (24%) done
+
+[Wed Apr 14 15:55:28 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse2794-3298.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse2794-3298.kCountSorted
+    jobid: 230
+    wildcards: sample=enterovirus, seg=2794-3298
+
+Select jobs to execute...
+[Wed Apr 14 15:55:28 2021]
+Finished job 20.
+65 of 271 steps (24%) done
+
+[Wed Apr 14 15:55:28 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse8128-8632.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse8128-8632.calculated
+    jobid: 271
+    wildcards: sample=enterovirus, seg=8128-8632
+
+[Wed Apr 14 15:55:28 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse9144-9382.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse9144-9382.fasta
+    jobid: 256
+    wildcards: sample=enterovirus, seg=9144-9382
+
+Select jobs to execute...
+[Wed Apr 14 15:55:28 2021]
+Finished job 230.
+66 of 271 steps (24%) done
+
+[Wed Apr 14 15:55:28 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse7874-8378.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse7874-8378.kCountSorted
+    jobid: 125
+    wildcards: sample=enterovirus, seg=7874-8378
+
+Select jobs to execute...
+
+[Wed Apr 14 15:55:28 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse508-1012.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse508-1012.fasta
+    jobid: 74
+    wildcards: sample=enterovirus, seg=508-1012
+
+Select jobs to execute...
+[Wed Apr 14 15:55:28 2021]
+Finished job 125.
+67 of 271 steps (25%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:28 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse8890-9382.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse8890-9382.fasta
+    jobid: 179
+    wildcards: sample=enterovirus, seg=8890-9382
+
+[Wed Apr 14 15:55:29 2021]
+Finished job 57.
+68 of 271 steps (25%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:29 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse254-758.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse254-758.kCountSorted
+    jobid: 111
+    wildcards: sample=enterovirus, seg=254-758
+
+[Wed Apr 14 15:55:29 2021]
+Finished job 111.
+69 of 271 steps (25%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:29 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse4826-5330.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse4826-5330.calculated
+    jobid: 215
+    wildcards: sample=enterovirus, seg=4826-5330
+
+[Wed Apr 14 15:55:29 2021]
+Finished job 85.
+70 of 271 steps (26%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:29 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse1016-1520.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse1016-1520.kCount
+    jobid: 84
+    wildcards: sample=enterovirus, seg=1016-1520
+
+[Wed Apr 14 15:55:29 2021]
+Finished job 84.
+71 of 271 steps (26%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:29 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse4572-5076.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse4572-5076.kCountSorted
+    jobid: 104
+    wildcards: sample=enterovirus, seg=4572-5076
+
+[Wed Apr 14 15:55:29 2021]
+Finished job 104.
+72 of 271 steps (27%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:29 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse254-758.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse254-758.calculated
+    jobid: 110
+    wildcards: sample=enterovirus, seg=254-758
+
+[Wed Apr 14 15:55:29 2021]
+Finished job 256.
+73 of 271 steps (27%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:29 2021]
+Finished job 208.
+74 of 271 steps (27%) done
+
+[Wed Apr 14 15:55:29 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse9144-9382.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse9144-9382.nessieOut
+    jobid: 255
+    wildcards: sample=enterovirus, seg=9144-9382
+
+Select jobs to execute...
+
+[Wed Apr 14 15:55:29 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse1778-2282.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse1778-2282.calculated
+    jobid: 89
+    wildcards: sample=enterovirus, seg=1778-2282
+
+[Wed Apr 14 15:55:29 2021]
+Finished job 255.
+75 of 271 steps (28%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:29 2021]
+Finished job 162.
+76 of 271 steps (28%) done
+
+[Wed Apr 14 15:55:29 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse9144-9382.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse9144-9382.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse9144-9382.calculated2
+    jobid: 254
+    wildcards: sample=enterovirus, seg=9144-9382
+
+Select jobs to execute...
+[Wed Apr 14 15:55:29 2021]
+Finished job 253.
+77 of 271 steps (28%) done
+
+[Wed Apr 14 15:55:29 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse4064-4568.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse4064-4568.kCount
+    jobid: 161
+    wildcards: sample=enterovirus, seg=4064-4568
+
+Select jobs to execute...
+[Wed Apr 14 15:55:29 2021]
+Finished job 161.
+78 of 271 steps (29%) done
+
+[Wed Apr 14 15:55:29 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse4572-5076.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse4572-5076.calculated
+    jobid: 103
+    wildcards: sample=enterovirus, seg=4572-5076
+
+[Wed Apr 14 15:55:29 2021]
+Finished job 74.
+79 of 271 steps (29%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:29 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse3302-3806.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse3302-3806.calculated
+    jobid: 166
+    wildcards: sample=enterovirus, seg=3302-3806
+
+[Wed Apr 14 15:55:29 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse2794-3298.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse2794-3298.calculated
+    jobid: 229
+    wildcards: sample=enterovirus, seg=2794-3298
+
+Select jobs to execute...
+[Wed Apr 14 15:55:29 2021]
+Finished job 61.
+80 of 271 steps (30%) done
+[Wed Apr 14 15:55:29 2021]
+Finished job 271.
+81 of 271 steps (30%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:29 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse8636-9140.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse8636-9140.kCount
+    jobid: 56
+    wildcards: sample=enterovirus, seg=8636-9140
+
+
+[Wed Apr 14 15:55:29 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse7874-8378.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse7874-8378.calculated
+    jobid: 124
+    wildcards: sample=enterovirus, seg=7874-8378
+
+Select jobs to execute...
+[Wed Apr 14 15:55:29 2021]
+Finished job 56.
+82 of 271 steps (30%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:29 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse7112-7616.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse7112-7616.kCount
+    jobid: 119
+    wildcards: sample=enterovirus, seg=7112-7616
+
+[Wed Apr 14 15:55:29 2021]
+Finished job 119.
+83 of 271 steps (31%) done
+[Wed Apr 14 15:55:29 2021]
+Finished job 179.
+84 of 271 steps (31%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:29 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse3556-4060.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse3556-4060.fasta
+    jobid: 207
+    wildcards: sample=enterovirus, seg=3556-4060
+
+[Wed Apr 14 15:55:29 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse1016-1520.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse1016-1520.kCountSorted
+    jobid: 83
+    wildcards: sample=enterovirus, seg=1016-1520
+
+Select jobs to execute...
+[Wed Apr 14 15:55:29 2021]
+Finished job 83.
+85 of 271 steps (31%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:29 2021]
+Finished job 190.
+86 of 271 steps (32%) done
+[Wed Apr 14 15:55:29 2021]
+Finished job 222.
+87 of 271 steps (32%) done
+
+[Wed Apr 14 15:55:29 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse3048-3552.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse3048-3552.kCountSorted
+    jobid: 195
+    wildcards: sample=enterovirus, seg=3048-3552
+
+Select jobs to execute...
+
+[Wed Apr 14 15:55:30 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse8890-9382.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse8890-9382.nessieOut
+    jobid: 178
+    wildcards: sample=enterovirus, seg=8890-9382
+
+
+[Wed Apr 14 15:55:30 2021]
+rule calculateKmer_jellyfishCount:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse2540-3044.fasta
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse2540-3044.jf
+    jobid: 36
+    wildcards: sample=enterovirus, seg=2540-3044
+
+Select jobs to execute...
+[Wed Apr 14 15:55:30 2021]
+Finished job 195.
+88 of 271 steps (32%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:30 2021]
+Finished job 178.
+89 of 271 steps (33%) done
+[Wed Apr 14 15:55:30 2021]
+Finished job 134.
+90 of 271 steps (33%) done
+
+[Wed Apr 14 15:55:30 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse5080-5584.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse5080-5584.kCountSorted
+    jobid: 97
+    wildcards: sample=enterovirus, seg=5080-5584
+
+Select jobs to execute...
+[Wed Apr 14 15:55:30 2021]
+Finished job 267.
+91 of 271 steps (34%) done
+
+[Wed Apr 14 15:55:30 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse508-1012.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse508-1012.nessieOut
+    jobid: 73
+    wildcards: sample=enterovirus, seg=508-1012
+
+
+[Wed Apr 14 15:55:30 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse6604-7108.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse6604-7108.calculated
+    jobid: 173
+    wildcards: sample=enterovirus, seg=6604-7108
+
+Select jobs to execute...
+[Wed Apr 14 15:55:30 2021]
+Finished job 97.
+92 of 271 steps (34%) done
+[Wed Apr 14 15:55:30 2021]
+Finished job 73.
+93 of 271 steps (34%) done
+
+[Wed Apr 14 15:55:30 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse2286-2790.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse2286-2790.kCount
+    jobid: 252
+    wildcards: sample=enterovirus, seg=2286-2790
+
+Select jobs to execute...
+[Wed Apr 14 15:55:30 2021]
+Finished job 252.
+94 of 271 steps (35%) done
+
+[Wed Apr 14 15:55:30 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse6858-7362.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse6858-7362.kCount
+    jobid: 266
+    wildcards: sample=enterovirus, seg=6858-7362
+
+
+[Wed Apr 14 15:55:30 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse4064-4568.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse4064-4568.kCountSorted
+    jobid: 160
+    wildcards: sample=enterovirus, seg=4064-4568
+
+Select jobs to execute...
+[Wed Apr 14 15:55:30 2021]
+Finished job 160.
+95 of 271 steps (35%) done
+[Wed Apr 14 15:55:30 2021]
+Finished job 266.
+96 of 271 steps (35%) done
+
+[Wed Apr 14 15:55:30 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse762-1266.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse762-1266.calculated
+    jobid: 26
+    wildcards: sample=enterovirus, seg=762-1266
+
+Select jobs to execute...
+
+[Wed Apr 14 15:55:30 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse8636-9140.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse8636-9140.kCountSorted
+    jobid: 55
+    wildcards: sample=enterovirus, seg=8636-9140
+
+
+[Wed Apr 14 15:55:30 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse5842-6346.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse5842-6346.calculated
+    jobid: 19
+    wildcards: sample=enterovirus, seg=5842-6346
+
+Select jobs to execute...
+[Wed Apr 14 15:55:30 2021]
+Finished job 141.
+97 of 271 steps (36%) done
+[Wed Apr 14 15:55:30 2021]
+Finished job 55.
+98 of 271 steps (36%) done
+
+[Wed Apr 14 15:55:30 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse2032-2536.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse2032-2536.fasta
+    jobid: 60
+    wildcards: sample=enterovirus, seg=2032-2536
+
+Select jobs to execute...
+
+[Wed Apr 14 15:55:30 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse8636-9140.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse8636-9140.calculated
+    jobid: 54
+    wildcards: sample=enterovirus, seg=8636-9140
+
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+[Wed Apr 14 15:55:30 2021]
+Finished job 155.
+99 of 271 steps (37%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:30 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse3810-4314.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse3810-4314.kCount
+    jobid: 154
+    wildcards: sample=enterovirus, seg=3810-4314
+
+[Wed Apr 14 15:55:30 2021]
+Finished job 154.
+100 of 271 steps (37%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:30 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse7112-7616.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse7112-7616.kCountSorted
+    jobid: 118
+    wildcards: sample=enterovirus, seg=7112-7616
+
+[Wed Apr 14 15:55:30 2021]
+Finished job 148.
+101 of 271 steps (37%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:30 2021]
+Finished job 243.
+102 of 271 steps (38%) done
+
+[Wed Apr 14 15:55:30 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse7620-8124.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse7620-8124.kCount
+    jobid: 147
+    wildcards: sample=enterovirus, seg=7620-8124
+
+Select jobs to execute...
+[Wed Apr 14 15:55:30 2021]
+Finished job 118.
+103 of 271 steps (38%) done
+[Wed Apr 14 15:55:30 2021]
+Finished job 147.
+104 of 271 steps (38%) done
+
+[Wed Apr 14 15:55:30 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse5334-5838.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse5334-5838.fasta
+    jobid: 242
+    wildcards: sample=enterovirus, seg=5334-5838
+
+Select jobs to execute...
+
+[Wed Apr 14 15:55:30 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse7112-7616.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse7112-7616.calculated
+    jobid: 117
+    wildcards: sample=enterovirus, seg=7112-7616
+
+[Wed Apr 14 15:55:30 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse8382-8886.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse8382-8886.kCount
+    jobid: 189
+    wildcards: sample=enterovirus, seg=8382-8886
+
+Select jobs to execute...
+[Wed Apr 14 15:55:30 2021]
+Finished job 189.
+105 of 271 steps (39%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:30 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse4064-4568.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse4064-4568.calculated
+    jobid: 159
+    wildcards: sample=enterovirus, seg=4064-4568
+
+[Wed Apr 14 15:55:30 2021]
+Finished job 50.
+106 of 271 steps (39%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:30 2021]
+Finished job 239.
+107 of 271 steps (39%) done
+
+[Wed Apr 14 15:55:30 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse5588-6092.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse5588-6092.kCount
+    jobid: 49
+    wildcards: sample=enterovirus, seg=5588-6092
+
+Select jobs to execute...
+[Wed Apr 14 15:55:30 2021]
+Finished job 49.
+108 of 271 steps (40%) done
+[Wed Apr 14 15:55:30 2021]
+Finished job 254.
+109 of 271 steps (40%) done
+
+[Wed Apr 14 15:55:30 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse1270-1774.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse1270-1774.kCount
+    jobid: 140
+    wildcards: sample=enterovirus, seg=1270-1774
+
+Select jobs to execute...
+[Wed Apr 14 15:55:30 2021]
+Finished job 68.
+110 of 271 steps (41%) done
+[Wed Apr 14 15:55:30 2021]
+Finished job 140.
+111 of 271 steps (41%) done
+
+[Wed Apr 14 15:55:30 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse4318-4822.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse4318-4822.kCount
+    jobid: 238
+    wildcards: sample=enterovirus, seg=4318-4822
+
+
+[Wed Apr 14 15:55:30 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse3810-4314.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse3810-4314.kCountSorted
+    jobid: 153
+    wildcards: sample=enterovirus, seg=3810-4314
+
+Select jobs to execute...
+[Wed Apr 14 15:55:30 2021]
+Finished job 238.
+112 of 271 steps (41%) done
+
+[Wed Apr 14 15:55:30 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse1524-2028.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse1524-2028.kCount
+    jobid: 133
+    wildcards: sample=enterovirus, seg=1524-2028
+
+
+[Wed Apr 14 15:55:30 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse8890-9382.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse8890-9382.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse8890-9382.calculated2
+    jobid: 177
+    wildcards: sample=enterovirus, seg=8890-9382
+
+[Wed Apr 14 15:55:30 2021]
+Finished job 153.
+113 of 271 steps (42%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:30 2021]
+Finished job 133.
+114 of 271 steps (42%) done
+
+[Wed Apr 14 15:55:30 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse3048-3552.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse3048-3552.calculated
+    jobid: 194
+    wildcards: sample=enterovirus, seg=3048-3552
+
+[Wed Apr 14 15:55:30 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse4318-4822.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse4318-4822.kCountSorted
+    jobid: 237
+    wildcards: sample=enterovirus, seg=4318-4822
+
+Select jobs to execute...
+[Wed Apr 14 15:55:30 2021]
+Finished job 43.
+115 of 271 steps (42%) done
+
+[Wed Apr 14 15:55:30 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse1016-1520.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse1016-1520.calculated
+    jobid: 82
+    wildcards: sample=enterovirus, seg=1016-1520
+
+Select jobs to execute...
+[Wed Apr 14 15:55:31 2021]
+Finished job 237.
+116 of 271 steps (43%) done
+
+[Wed Apr 14 15:55:31 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse8128-8632.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse8128-8632.fasta
+    jobid: 270
+    wildcards: sample=enterovirus, seg=8128-8632
+
+Select jobs to execute...
+[Wed Apr 14 15:55:31 2021]
+Finished job 89.
+117 of 271 steps (43%) done
+
+[Wed Apr 14 15:55:31 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse1524-2028.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse1524-2028.kCountSorted
+    jobid: 132
+    wildcards: sample=enterovirus, seg=1524-2028
+
+
+[Wed Apr 14 15:55:31 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse8382-8886.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse8382-8886.kCountSorted
+    jobid: 188
+    wildcards: sample=enterovirus, seg=8382-8886
+
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+[Wed Apr 14 15:55:31 2021]
+Finished job 188.
+118 of 271 steps (44%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:31 2021]
+Finished job 132.
+119 of 271 steps (44%) done
+
+[Wed Apr 14 15:55:31 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse2286-2790.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse2286-2790.kCountSorted
+    jobid: 251
+    wildcards: sample=enterovirus, seg=2286-2790
+
+Select jobs to execute...
+
+[Wed Apr 14 15:55:31 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse7620-8124.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse7620-8124.kCountSorted
+    jobid: 146
+    wildcards: sample=enterovirus, seg=7620-8124
+
+[Wed Apr 14 15:55:31 2021]
+Finished job 201.
+120 of 271 steps (44%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:31 2021]
+Finished job 251.
+121 of 271 steps (45%) done
+
+[Wed Apr 14 15:55:31 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse0-504.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse0-504.fasta
+    jobid: 221
+    wildcards: sample=enterovirus, seg=0-504
+
+Select jobs to execute...
+[Wed Apr 14 15:55:31 2021]
+Finished job 146.
+122 of 271 steps (45%) done
+
+[Wed Apr 14 15:55:31 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse6096-6600.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse6096-6600.fasta
+    jobid: 200
+    wildcards: sample=enterovirus, seg=6096-6600
+
+Select jobs to execute...
+[Wed Apr 14 15:55:31 2021]
+Finished job 207.
+123 of 271 steps (45%) done
+
+[Wed Apr 14 15:55:31 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse3810-4314.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse3810-4314.calculated
+    jobid: 152
+    wildcards: sample=enterovirus, seg=3810-4314
+
+Select jobs to execute...
+
+[Wed Apr 14 15:55:31 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse1778-2282.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse1778-2282.fasta
+    jobid: 88
+    wildcards: sample=enterovirus, seg=1778-2282
+
+[Wed Apr 14 15:55:31 2021]
+Finished job 60.
+124 of 271 steps (46%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:31 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse2032-2536.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse2032-2536.nessieOut
+    jobid: 59
+    wildcards: sample=enterovirus, seg=2032-2536
+
+[Wed Apr 14 15:55:31 2021]
+Finished job 54.
+125 of 271 steps (46%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:31 2021]
+Finished job 59.
+126 of 271 steps (46%) done
+
+[Wed Apr 14 15:55:31 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse6350-6854.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse6350-6854.kCount
+    jobid: 42
+    wildcards: sample=enterovirus, seg=6350-6854
+
+Select jobs to execute...
+[Wed Apr 14 15:55:31 2021]
+Finished job 42.
+127 of 271 steps (47%) done
+
+[Wed Apr 14 15:55:31 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse7366-7870.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse7366-7870.fasta
+    jobid: 67
+    wildcards: sample=enterovirus, seg=7366-7870
+
+Select jobs to execute...
+
+[Wed Apr 14 15:55:31 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse4318-4822.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse4318-4822.calculated
+    jobid: 236
+    wildcards: sample=enterovirus, seg=4318-4822
+
+[Wed Apr 14 15:55:31 2021]
+Finished job 242.
+128 of 271 steps (47%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:31 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse8382-8886.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse8382-8886.calculated
+    jobid: 187
+    wildcards: sample=enterovirus, seg=8382-8886
+
+[Wed Apr 14 15:55:31 2021]
+Finished job 110.
+129 of 271 steps (48%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:31 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse3556-4060.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse3556-4060.nessieOut
+    jobid: 206
+    wildcards: sample=enterovirus, seg=3556-4060
+
+[Wed Apr 14 15:55:31 2021]
+Finished job 206.
+130 of 271 steps (48%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:31 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse2286-2790.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse2286-2790.calculated
+    jobid: 250
+    wildcards: sample=enterovirus, seg=2286-2790
+
+[Wed Apr 14 15:55:31 2021]
+Finished job 177.
+131 of 271 steps (48%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:32 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse1524-2028.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse1524-2028.calculated
+    jobid: 131
+    wildcards: sample=enterovirus, seg=1524-2028
+
+[Wed Apr 14 15:55:32 2021]
+Finished job 221.
+132 of 271 steps (49%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:32 2021]
+Finished job 103.
+133 of 271 steps (49%) done
+[Wed Apr 14 15:55:32 2021]
+Finished job 88.
+134 of 271 steps (49%) done
+
+[Wed Apr 14 15:55:32 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse0-504.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse0-504.nessieOut
+    jobid: 220
+    wildcards: sample=enterovirus, seg=0-504
+
+[Wed Apr 14 15:55:32 2021]
+Finished job 270.
+135 of 271 steps (50%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:32 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse8128-8632.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse8128-8632.nessieOut
+    jobid: 269
+    wildcards: sample=enterovirus, seg=8128-8632
+
+
+[Wed Apr 14 15:55:32 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse4572-5076.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse4572-5076.fasta
+    jobid: 102
+    wildcards: sample=enterovirus, seg=4572-5076
+
+[Wed Apr 14 15:55:32 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse3556-4060.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse3556-4060.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse3556-4060.calculated2
+    jobid: 205
+    wildcards: sample=enterovirus, seg=3556-4060
+
+[Wed Apr 14 15:55:32 2021]
+Finished job 215.
+136 of 271 steps (50%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:32 2021]
+Finished job 269.
+137 of 271 steps (51%) done
+[Wed Apr 14 15:55:32 2021]
+Finished job 220.
+138 of 271 steps (51%) done
+[Wed Apr 14 15:55:32 2021]
+Finished job 159.
+139 of 271 steps (51%) done
+
+[Wed Apr 14 15:55:32 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse2032-2536.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse2032-2536.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse2032-2536.calculated2
+    jobid: 58
+    wildcards: sample=enterovirus, seg=2032-2536
+
+Select jobs to execute...
+
+[Wed Apr 14 15:55:32 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse6350-6854.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse6350-6854.kCountSorted
+    jobid: 41
+    wildcards: sample=enterovirus, seg=6350-6854
+
+
+[Wed Apr 14 15:55:32 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse4826-5330.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse4826-5330.fasta
+    jobid: 214
+    wildcards: sample=enterovirus, seg=4826-5330
+
+[Wed Apr 14 15:55:32 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse1270-1774.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse1270-1774.kCountSorted
+    jobid: 139
+    wildcards: sample=enterovirus, seg=1270-1774
+
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+[Wed Apr 14 15:55:32 2021]
+Finished job 41.
+140 of 271 steps (52%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:32 2021]
+Finished job 139.
+141 of 271 steps (52%) done
+
+[Wed Apr 14 15:55:32 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse5334-5838.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse5334-5838.nessieOut
+    jobid: 241
+    wildcards: sample=enterovirus, seg=5334-5838
+
+Select jobs to execute...
+[Wed Apr 14 15:55:32 2021]
+Finished job 200.
+142 of 271 steps (52%) done
+
+[Wed Apr 14 15:55:32 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse1270-1774.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse1270-1774.calculated
+    jobid: 138
+    wildcards: sample=enterovirus, seg=1270-1774
+
+Select jobs to execute...
+
+[Wed Apr 14 15:55:32 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse6096-6600.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse6096-6600.nessieOut
+    jobid: 199
+    wildcards: sample=enterovirus, seg=6096-6600
+
+[Wed Apr 14 15:55:32 2021]
+Finished job 241.
+143 of 271 steps (53%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:32 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse5334-5838.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse5334-5838.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse5334-5838.calculated2
+    jobid: 240
+    wildcards: sample=enterovirus, seg=5334-5838
+
+[Wed Apr 14 15:55:32 2021]
+Finished job 67.
+144 of 271 steps (53%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:32 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse7366-7870.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse7366-7870.nessieOut
+    jobid: 66
+    wildcards: sample=enterovirus, seg=7366-7870
+
+[Wed Apr 14 15:55:32 2021]
+Finished job 199.
+145 of 271 steps (54%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:32 2021]
+Finished job 187.
+146 of 271 steps (54%) done
+
+[Wed Apr 14 15:55:32 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse6350-6854.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse6350-6854.calculated
+    jobid: 40
+    wildcards: sample=enterovirus, seg=6350-6854
+
+Select jobs to execute...
+
+[Wed Apr 14 15:55:32 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse8382-8886.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse8382-8886.fasta
+    jobid: 186
+    wildcards: sample=enterovirus, seg=8382-8886
+
+[Wed Apr 14 15:55:33 2021]
+Finished job 66.
+147 of 271 steps (54%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:33 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse7366-7870.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse7366-7870.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse7366-7870.calculated2
+    jobid: 65
+    wildcards: sample=enterovirus, seg=7366-7870
+
+[Wed Apr 14 15:55:33 2021]
+Finished job 36.
+148 of 271 steps (55%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:33 2021]
+rule calculateKmer_jellyfishDump:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse2540-3044.jf
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse2540-3044.kCount
+    jobid: 35
+    wildcards: sample=enterovirus, seg=2540-3044
+
+[Wed Apr 14 15:55:33 2021]
+Finished job 35.
+149 of 271 steps (55%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:33 2021]
+Finished job 102.
+150 of 271 steps (55%) done
+
+[Wed Apr 14 15:55:33 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse5588-6092.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse5588-6092.kCountSorted
+    jobid: 48
+    wildcards: sample=enterovirus, seg=5588-6092
+
+Select jobs to execute...
+
+[Wed Apr 14 15:55:33 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse4572-5076.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse4572-5076.nessieOut
+    jobid: 101
+    wildcards: sample=enterovirus, seg=4572-5076
+
+[Wed Apr 14 15:55:33 2021]
+Finished job 48.
+151 of 271 steps (56%) done
+[Wed Apr 14 15:55:33 2021]
+Finished job 82.
+152 of 271 steps (56%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:33 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse6096-6600.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse6096-6600.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse6096-6600.calculated2
+    jobid: 198
+    wildcards: sample=enterovirus, seg=6096-6600
+
+[Wed Apr 14 15:55:33 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse2540-3044.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse2540-3044.kCountSorted
+    jobid: 34
+    wildcards: sample=enterovirus, seg=2540-3044
+
+Select jobs to execute...
+[Wed Apr 14 15:55:33 2021]
+Finished job 34.
+153 of 271 steps (56%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:33 2021]
+Finished job 101.
+154 of 271 steps (57%) done
+
+[Wed Apr 14 15:55:33 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse5588-6092.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse5588-6092.calculated
+    jobid: 47
+    wildcards: sample=enterovirus, seg=5588-6092
+
+Select jobs to execute...
+[Wed Apr 14 15:55:33 2021]
+Finished job 124.
+155 of 271 steps (57%) done
+
+[Wed Apr 14 15:55:33 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse6858-7362.kCount
+    output: /datater/wu/data/enterovirus/kmerCounting16/reverse6858-7362.kCountSorted
+    jobid: 265
+    wildcards: sample=enterovirus, seg=6858-7362
+
+Select jobs to execute...
+
+[Wed Apr 14 15:55:33 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse7874-8378.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse7874-8378.fasta
+    jobid: 123
+    wildcards: sample=enterovirus, seg=7874-8378
+
+[Wed Apr 14 15:55:33 2021]
+Finished job 265.
+156 of 271 steps (58%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:33 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse6858-7362.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse6858-7362.calculated
+    jobid: 264
+    wildcards: sample=enterovirus, seg=6858-7362
+
+[Wed Apr 14 15:55:33 2021]
+Finished job 214.
+157 of 271 steps (58%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:33 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse4826-5330.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse4826-5330.nessieOut
+    jobid: 213
+    wildcards: sample=enterovirus, seg=4826-5330
+
+[Wed Apr 14 15:55:33 2021]
+Finished job 173.
+158 of 271 steps (58%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:33 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse1778-2282.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse1778-2282.nessieOut
+    jobid: 87
+    wildcards: sample=enterovirus, seg=1778-2282
+
+[Wed Apr 14 15:55:33 2021]
+Finished job 213.
+159 of 271 steps (59%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:33 2021]
+Finished job 87.
+160 of 271 steps (59%) done
+
+[Wed Apr 14 15:55:33 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse8128-8632.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse8128-8632.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse8128-8632.calculated2
+    jobid: 268
+    wildcards: sample=enterovirus, seg=8128-8632
+
+Select jobs to execute...
+
+[Wed Apr 14 15:55:33 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse1778-2282.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse1778-2282.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse1778-2282.calculated2
+    jobid: 86
+    wildcards: sample=enterovirus, seg=1778-2282
+
+[Wed Apr 14 15:55:33 2021]
+Finished job 58.
+161 of 271 steps (59%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:33 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse0-504.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse0-504.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse0-504.calculated2
+    jobid: 219
+    wildcards: sample=enterovirus, seg=0-504
+
+[Wed Apr 14 15:55:33 2021]
+Finished job 186.
+162 of 271 steps (60%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:34 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse508-1012.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse508-1012.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse508-1012.calculated2
+    jobid: 72
+    wildcards: sample=enterovirus, seg=508-1012
+
+[Wed Apr 14 15:55:34 2021]
+Finished job 117.
+163 of 271 steps (60%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:34 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse6604-7108.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse6604-7108.fasta
+    jobid: 172
+    wildcards: sample=enterovirus, seg=6604-7108
+
+[Wed Apr 14 15:55:34 2021]
+Finished job 166.
+164 of 271 steps (61%) done
+[Wed Apr 14 15:55:34 2021]
+Finished job 229.
+165 of 271 steps (61%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:34 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse8382-8886.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse8382-8886.nessieOut
+    jobid: 185
+    wildcards: sample=enterovirus, seg=8382-8886
+
+
+[Wed Apr 14 15:55:34 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse8636-9140.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse8636-9140.fasta
+    jobid: 53
+    wildcards: sample=enterovirus, seg=8636-9140
+
+Select jobs to execute...
+[Wed Apr 14 15:55:34 2021]
+Finished job 185.
+166 of 271 steps (61%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:34 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse4826-5330.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse4826-5330.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse4826-5330.calculated2
+    jobid: 212
+    wildcards: sample=enterovirus, seg=4826-5330
+
+[Wed Apr 14 15:55:34 2021]
+Finished job 131.
+167 of 271 steps (62%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:34 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse8382-8886.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse8382-8886.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse8382-8886.calculated2
+    jobid: 184
+    wildcards: sample=enterovirus, seg=8382-8886
+
+[Wed Apr 14 15:55:34 2021]
+Finished job 19.
+168 of 271 steps (62%) done
+[Wed Apr 14 15:55:34 2021]
+Finished job 26.
+169 of 271 steps (62%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:34 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse762-1266.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse762-1266.fasta
+    jobid: 25
+    wildcards: sample=enterovirus, seg=762-1266
+
+[Wed Apr 14 15:55:34 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse1016-1520.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse1016-1520.fasta
+    jobid: 81
+    wildcards: sample=enterovirus, seg=1016-1520
+
+Select jobs to execute...
+[Wed Apr 14 15:55:34 2021]
+Finished job 123.
+170 of 271 steps (63%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:34 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse5842-6346.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse5842-6346.fasta
+    jobid: 18
+    wildcards: sample=enterovirus, seg=5842-6346
+
+[Wed Apr 14 15:55:34 2021]
+Finished job 268.
+171 of 271 steps (63%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:34 2021]
+Finished job 72.
+172 of 271 steps (63%) done
+
+[Wed Apr 14 15:55:34 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse7112-7616.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse7112-7616.fasta
+    jobid: 116
+    wildcards: sample=enterovirus, seg=7112-7616
+
+Select jobs to execute...
+
+[Wed Apr 14 15:55:34 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse3302-3806.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse3302-3806.fasta
+    jobid: 165
+    wildcards: sample=enterovirus, seg=3302-3806
+
+[Wed Apr 14 15:55:35 2021]
+Finished job 86.
+173 of 271 steps (64%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:35 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse1524-2028.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse1524-2028.fasta
+    jobid: 130
+    wildcards: sample=enterovirus, seg=1524-2028
+
+[Wed Apr 14 15:55:35 2021]
+Finished job 194.
+174 of 271 steps (64%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:35 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse3048-3552.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse3048-3552.fasta
+    jobid: 193
+    wildcards: sample=enterovirus, seg=3048-3552
+
+[Wed Apr 14 15:55:35 2021]
+Finished job 53.
+175 of 271 steps (65%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:35 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse8636-9140.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse8636-9140.nessieOut
+    jobid: 52
+    wildcards: sample=enterovirus, seg=8636-9140
+
+[Wed Apr 14 15:55:35 2021]
+Finished job 172.
+176 of 271 steps (65%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:35 2021]
+Finished job 52.
+177 of 271 steps (65%) done
+
+[Wed Apr 14 15:55:35 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse6604-7108.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse6604-7108.nessieOut
+    jobid: 171
+    wildcards: sample=enterovirus, seg=6604-7108
+
+Select jobs to execute...
+
+[Wed Apr 14 15:55:35 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse2794-3298.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse2794-3298.fasta
+    jobid: 228
+    wildcards: sample=enterovirus, seg=2794-3298
+
+[Wed Apr 14 15:55:35 2021]
+Finished job 152.
+178 of 271 steps (66%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:35 2021]
+Finished job 171.
+179 of 271 steps (66%) done
+
+[Wed Apr 14 15:55:35 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse5080-5584.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse5080-5584.calculated
+    jobid: 96
+    wildcards: sample=enterovirus, seg=5080-5584
+
+Select jobs to execute...
+[Wed Apr 14 15:55:35 2021]
+Finished job 219.
+180 of 271 steps (66%) done
+
+[Wed Apr 14 15:55:35 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse6604-7108.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse6604-7108.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse6604-7108.calculated2
+    jobid: 170
+    wildcards: sample=enterovirus, seg=6604-7108
+
+Select jobs to execute...
+
+[Wed Apr 14 15:55:35 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse7620-8124.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse7620-8124.calculated
+    jobid: 145
+    wildcards: sample=enterovirus, seg=7620-8124
+
+[Wed Apr 14 15:55:35 2021]
+Finished job 25.
+181 of 271 steps (67%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:35 2021]
+rule calculate_TmCGHomodierHairpin:
+    input: /datater/wu/data/enterovirus/kmerCounting16/reverse2540-3044.kCountSorted
+    output: /datater/wu/data/enterovirus/filtering16/reverse2540-3044.calculated
+    jobid: 33
+    wildcards: sample=enterovirus, seg=2540-3044
+
+[Wed Apr 14 15:55:35 2021]
+Finished job 184.
+182 of 271 steps (67%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:35 2021]
+Finished job 205.
+183 of 271 steps (68%) done
+
+[Wed Apr 14 15:55:35 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse762-1266.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse762-1266.nessieOut
+    jobid: 24
+    wildcards: sample=enterovirus, seg=762-1266
+
+Select jobs to execute...
+[Wed Apr 14 15:55:35 2021]
+Finished job 81.
+184 of 271 steps (68%) done
+
+[Wed Apr 14 15:55:35 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse3810-4314.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse3810-4314.fasta
+    jobid: 151
+    wildcards: sample=enterovirus, seg=3810-4314
+
+Select jobs to execute...
+
+[Wed Apr 14 15:55:36 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse1016-1520.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse1016-1520.nessieOut
+    jobid: 80
+    wildcards: sample=enterovirus, seg=1016-1520
+
+[Wed Apr 14 15:55:36 2021]
+Finished job 116.
+185 of 271 steps (68%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:36 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse7112-7616.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse7112-7616.nessieOut
+    jobid: 115
+    wildcards: sample=enterovirus, seg=7112-7616
+
+[Wed Apr 14 15:55:36 2021]
+Finished job 18.
+186 of 271 steps (69%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:36 2021]
+Finished job 236.
+187 of 271 steps (69%) done
+[Wed Apr 14 15:55:36 2021]
+Finished job 80.
+188 of 271 steps (69%) done
+[Wed Apr 14 15:55:36 2021]
+Finished job 250.
+189 of 271 steps (70%) done
+
+[Wed Apr 14 15:55:36 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse5842-6346.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse5842-6346.nessieOut
+    jobid: 17
+    wildcards: sample=enterovirus, seg=5842-6346
+
+Select jobs to execute...
+[Wed Apr 14 15:55:36 2021]
+Finished job 165.
+190 of 271 steps (70%) done
+
+[Wed Apr 14 15:55:36 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse8636-9140.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse8636-9140.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse8636-9140.calculated2
+    jobid: 51
+    wildcards: sample=enterovirus, seg=8636-9140
+
+[Wed Apr 14 15:55:36 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse7874-8378.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse7874-8378.nessieOut
+    jobid: 122
+    wildcards: sample=enterovirus, seg=7874-8378
+
+
+[Wed Apr 14 15:55:36 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse254-758.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse254-758.fasta
+    jobid: 109
+    wildcards: sample=enterovirus, seg=254-758
+
+[Wed Apr 14 15:55:36 2021]
+Finished job 24.
+191 of 271 steps (70%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:36 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse4318-4822.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse4318-4822.fasta
+    jobid: 235
+    wildcards: sample=enterovirus, seg=4318-4822
+
+[Wed Apr 14 15:55:36 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse4064-4568.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse4064-4568.fasta
+    jobid: 158
+    wildcards: sample=enterovirus, seg=4064-4568
+
+[Wed Apr 14 15:55:36 2021]
+Finished job 130.
+192 of 271 steps (71%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:36 2021]
+Finished job 115.
+193 of 271 steps (71%) done
+
+[Wed Apr 14 15:55:36 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse3302-3806.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse3302-3806.nessieOut
+    jobid: 164
+    wildcards: sample=enterovirus, seg=3302-3806
+
+Select jobs to execute...
+
+[Wed Apr 14 15:55:36 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse7112-7616.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse7112-7616.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse7112-7616.calculated2
+    jobid: 114
+    wildcards: sample=enterovirus, seg=7112-7616
+
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+[Wed Apr 14 15:55:36 2021]
+Finished job 17.
+194 of 271 steps (72%) done
+[Wed Apr 14 15:55:36 2021]
+Finished job 193.
+195 of 271 steps (72%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:36 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse4572-5076.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse4572-5076.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse4572-5076.calculated2
+    jobid: 100
+    wildcards: sample=enterovirus, seg=4572-5076
+
+[Wed Apr 14 15:55:36 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse762-1266.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse762-1266.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse762-1266.calculated2
+    jobid: 23
+    wildcards: sample=enterovirus, seg=762-1266
+
+Select jobs to execute...
+[Wed Apr 14 15:55:36 2021]
+Finished job 47.
+196 of 271 steps (72%) done
+[Wed Apr 14 15:55:36 2021]
+Finished job 138.
+197 of 271 steps (73%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:36 2021]
+Finished job 122.
+198 of 271 steps (73%) done
+
+[Wed Apr 14 15:55:36 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse5588-6092.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse5588-6092.fasta
+    jobid: 46
+    wildcards: sample=enterovirus, seg=5588-6092
+
+[Wed Apr 14 15:55:36 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse1524-2028.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse1524-2028.nessieOut
+    jobid: 129
+    wildcards: sample=enterovirus, seg=1524-2028
+
+Select jobs to execute...
+
+[Wed Apr 14 15:55:36 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse1270-1774.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse1270-1774.fasta
+    jobid: 137
+    wildcards: sample=enterovirus, seg=1270-1774
+
+Select jobs to execute...
+[Wed Apr 14 15:55:36 2021]
+Finished job 240.
+199 of 271 steps (73%) done
+[Wed Apr 14 15:55:36 2021]
+Finished job 164.
+200 of 271 steps (74%) done
+
+[Wed Apr 14 15:55:36 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse2286-2790.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse2286-2790.fasta
+    jobid: 249
+    wildcards: sample=enterovirus, seg=2286-2790
+
+Select jobs to execute...
+
+[Wed Apr 14 15:55:36 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse1016-1520.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse1016-1520.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse1016-1520.calculated2
+    jobid: 79
+    wildcards: sample=enterovirus, seg=1016-1520
+
+Select jobs to execute...
+[Wed Apr 14 15:55:36 2021]
+Finished job 129.
+201 of 271 steps (74%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:36 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse5842-6346.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse5842-6346.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse5842-6346.calculated2
+    jobid: 16
+    wildcards: sample=enterovirus, seg=5842-6346
+
+[Wed Apr 14 15:55:36 2021]
+Finished job 228.
+202 of 271 steps (75%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:36 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse3302-3806.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse3302-3806.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse3302-3806.calculated2
+    jobid: 163
+    wildcards: sample=enterovirus, seg=3302-3806
+
+[Wed Apr 14 15:55:37 2021]
+Finished job 40.
+203 of 271 steps (75%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:37 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse6350-6854.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse6350-6854.fasta
+    jobid: 39
+    wildcards: sample=enterovirus, seg=6350-6854
+
+[Wed Apr 14 15:55:37 2021]
+Finished job 151.
+204 of 271 steps (75%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:37 2021]
+Finished job 51.
+205 of 271 steps (76%) done
+
+[Wed Apr 14 15:55:37 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse3048-3552.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse3048-3552.nessieOut
+    jobid: 192
+    wildcards: sample=enterovirus, seg=3048-3552
+
+Select jobs to execute...
+
+[Wed Apr 14 15:55:37 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse1524-2028.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse1524-2028.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse1524-2028.calculated2
+    jobid: 128
+    wildcards: sample=enterovirus, seg=1524-2028
+
+[Wed Apr 14 15:55:37 2021]
+Finished job 235.
+206 of 271 steps (76%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:37 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse4318-4822.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse4318-4822.nessieOut
+    jobid: 234
+    wildcards: sample=enterovirus, seg=4318-4822
+
+[Wed Apr 14 15:55:37 2021]
+Finished job 109.
+207 of 271 steps (76%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:37 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse7874-8378.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse7874-8378.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse7874-8378.calculated2
+    jobid: 121
+    wildcards: sample=enterovirus, seg=7874-8378
+
+[Wed Apr 14 15:55:37 2021]
+Finished job 158.
+208 of 271 steps (77%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:37 2021]
+Finished job 192.
+209 of 271 steps (77%) done
+
+[Wed Apr 14 15:55:37 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse4064-4568.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse4064-4568.nessieOut
+    jobid: 157
+    wildcards: sample=enterovirus, seg=4064-4568
+
+Select jobs to execute...
+
+[Wed Apr 14 15:55:37 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse3048-3552.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse3048-3552.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse3048-3552.calculated2
+    jobid: 191
+    wildcards: sample=enterovirus, seg=3048-3552
+
+[Wed Apr 14 15:55:37 2021]
+Finished job 157.
+210 of 271 steps (77%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:37 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse4064-4568.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse4064-4568.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse4064-4568.calculated2
+    jobid: 156
+    wildcards: sample=enterovirus, seg=4064-4568
+
+[Wed Apr 14 15:55:37 2021]
+Finished job 46.
+211 of 271 steps (78%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:37 2021]
+Finished job 234.
+212 of 271 steps (78%) done
+
+[Wed Apr 14 15:55:37 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse2794-3298.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse2794-3298.nessieOut
+    jobid: 227
+    wildcards: sample=enterovirus, seg=2794-3298
+
+Select jobs to execute...
+
+[Wed Apr 14 15:55:37 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse4318-4822.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse4318-4822.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse4318-4822.calculated2
+    jobid: 233
+    wildcards: sample=enterovirus, seg=4318-4822
+
+[Wed Apr 14 15:55:37 2021]
+Finished job 264.
+213 of 271 steps (79%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:37 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse6858-7362.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse6858-7362.fasta
+    jobid: 263
+    wildcards: sample=enterovirus, seg=6858-7362
+
+[Wed Apr 14 15:55:37 2021]
+Finished job 249.
+214 of 271 steps (79%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:37 2021]
+Finished job 137.
+215 of 271 steps (79%) done
+
+[Wed Apr 14 15:55:37 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse2286-2790.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse2286-2790.nessieOut
+    jobid: 248
+    wildcards: sample=enterovirus, seg=2286-2790
+
+Select jobs to execute...
+
+[Wed Apr 14 15:55:37 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse3810-4314.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse3810-4314.nessieOut
+    jobid: 150
+    wildcards: sample=enterovirus, seg=3810-4314
+
+[Wed Apr 14 15:55:37 2021]
+Finished job 227.
+216 of 271 steps (80%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:38 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse2794-3298.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse2794-3298.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse2794-3298.calculated2
+    jobid: 226
+    wildcards: sample=enterovirus, seg=2794-3298
+
+[Wed Apr 14 15:55:38 2021]
+Finished job 150.
+217 of 271 steps (80%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:38 2021]
+Finished job 248.
+218 of 271 steps (80%) done
+
+[Wed Apr 14 15:55:38 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse3810-4314.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse3810-4314.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse3810-4314.calculated2
+    jobid: 149
+    wildcards: sample=enterovirus, seg=3810-4314
+
+Select jobs to execute...
+
+[Wed Apr 14 15:55:38 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse2286-2790.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse2286-2790.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse2286-2790.calculated2
+    jobid: 247
+    wildcards: sample=enterovirus, seg=2286-2790
+
+[Wed Apr 14 15:55:38 2021]
+Finished job 39.
+219 of 271 steps (81%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:38 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse6350-6854.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse6350-6854.nessieOut
+    jobid: 38
+    wildcards: sample=enterovirus, seg=6350-6854
+
+[Wed Apr 14 15:55:38 2021]
+Finished job 38.
+220 of 271 steps (81%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:38 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse6350-6854.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse6350-6854.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse6350-6854.calculated2
+    jobid: 37
+    wildcards: sample=enterovirus, seg=6350-6854
+
+[Wed Apr 14 15:55:38 2021]
+Finished job 156.
+221 of 271 steps (82%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:38 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse5588-6092.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse5588-6092.nessieOut
+    jobid: 45
+    wildcards: sample=enterovirus, seg=5588-6092
+
+[Wed Apr 14 15:55:38 2021]
+Finished job 263.
+222 of 271 steps (82%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:38 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse6858-7362.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse6858-7362.nessieOut
+    jobid: 262
+    wildcards: sample=enterovirus, seg=6858-7362
+
+[Wed Apr 14 15:55:39 2021]
+Finished job 45.
+223 of 271 steps (82%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:39 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse5588-6092.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse5588-6092.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse5588-6092.calculated2
+    jobid: 44
+    wildcards: sample=enterovirus, seg=5588-6092
+
+[Wed Apr 14 15:55:39 2021]
+Finished job 262.
+224 of 271 steps (83%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:39 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse6858-7362.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse6858-7362.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse6858-7362.calculated2
+    jobid: 261
+    wildcards: sample=enterovirus, seg=6858-7362
+
+[Wed Apr 14 15:55:39 2021]
+Finished job 33.
+225 of 271 steps (83%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:39 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse254-758.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse254-758.nessieOut
+    jobid: 108
+    wildcards: sample=enterovirus, seg=254-758
+
+[Wed Apr 14 15:55:39 2021]
+Finished job 108.
+226 of 271 steps (83%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:39 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse1270-1774.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse1270-1774.nessieOut
+    jobid: 136
+    wildcards: sample=enterovirus, seg=1270-1774
+
+[Wed Apr 14 15:55:39 2021]
+Finished job 212.
+227 of 271 steps (84%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:39 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse254-758.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse254-758.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse254-758.calculated2
+    jobid: 107
+    wildcards: sample=enterovirus, seg=254-758
+
+[Wed Apr 14 15:55:39 2021]
+Finished job 96.
+228 of 271 steps (84%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:39 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse2540-3044.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse2540-3044.fasta
+    jobid: 32
+    wildcards: sample=enterovirus, seg=2540-3044
+
+[Wed Apr 14 15:55:39 2021]
+Finished job 136.
+229 of 271 steps (85%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:39 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse1270-1774.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse1270-1774.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse1270-1774.calculated2
+    jobid: 135
+    wildcards: sample=enterovirus, seg=1270-1774
+
+[Wed Apr 14 15:55:39 2021]
+Finished job 79.
+230 of 271 steps (85%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:39 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse5080-5584.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse5080-5584.fasta
+    jobid: 95
+    wildcards: sample=enterovirus, seg=5080-5584
+
+[Wed Apr 14 15:55:39 2021]
+Finished job 100.
+231 of 271 steps (85%) done
+[Wed Apr 14 15:55:40 2021]
+Finished job 145.
+232 of 271 steps (86%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:40 2021]
+rule calculate_TmCGHomodierHairpin_toFasta:
+    input: /datater/wu/data/enterovirus/filtering16/reverse7620-8124.calculated
+    output: /datater/wu/data/enterovirus/filtering16/reverse7620-8124.fasta
+    jobid: 144
+    wildcards: sample=enterovirus, seg=7620-8124
+
+[Wed Apr 14 15:55:40 2021]
+Finished job 32.
+233 of 271 steps (86%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:40 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse2540-3044.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse2540-3044.nessieOut
+    jobid: 31
+    wildcards: sample=enterovirus, seg=2540-3044
+
+[Wed Apr 14 15:55:40 2021]
+Finished job 95.
+234 of 271 steps (86%) done
+Select jobs to execute...
+[Wed Apr 14 15:55:40 2021]
+Finished job 31.
+235 of 271 steps (87%) done
+
+[Wed Apr 14 15:55:40 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse5080-5584.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse5080-5584.nessieOut
+    jobid: 94
+    wildcards: sample=enterovirus, seg=5080-5584
+
+Select jobs to execute...
+
+[Wed Apr 14 15:55:40 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse2540-3044.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse2540-3044.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse2540-3044.calculated2
+    jobid: 30
+    wildcards: sample=enterovirus, seg=2540-3044
+
+[Wed Apr 14 15:55:41 2021]
+Finished job 94.
+236 of 271 steps (87%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:41 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse5080-5584.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse5080-5584.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse5080-5584.calculated2
+    jobid: 93
+    wildcards: sample=enterovirus, seg=5080-5584
+
+[Wed Apr 14 15:55:41 2021]
+Finished job 107.
+237 of 271 steps (87%) done
+[Wed Apr 14 15:55:41 2021]
+Finished job 144.
+238 of 271 steps (88%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:41 2021]
+rule calculate_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse7620-8124.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse7620-8124.nessieOut
+    jobid: 143
+    wildcards: sample=enterovirus, seg=7620-8124
+
+[Wed Apr 14 15:55:42 2021]
+Finished job 143.
+239 of 271 steps (88%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:42 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/enterovirus/filtering16/reverse7620-8124.nessieOut, /datater/wu/data/enterovirus/filtering16/reverse7620-8124.fasta
+    output: /datater/wu/data/enterovirus/filtering16/reverse7620-8124.calculated2
+    jobid: 142
+    wildcards: sample=enterovirus, seg=7620-8124
+
+[Wed Apr 14 15:55:42 2021]
+Finished job 128.
+240 of 271 steps (89%) done
+[Wed Apr 14 15:55:43 2021]
+Finished job 170.
+241 of 271 steps (89%) done
+[Wed Apr 14 15:55:43 2021]
+Finished job 198.
+242 of 271 steps (89%) done
+[Wed Apr 14 15:55:45 2021]
+Finished job 65.
+243 of 271 steps (90%) done
+[Wed Apr 14 15:55:45 2021]
+Finished job 114.
+244 of 271 steps (90%) done
+[Wed Apr 14 15:55:46 2021]
+Finished job 149.
+245 of 271 steps (90%) done
+[Wed Apr 14 15:55:47 2021]
+Finished job 37.
+246 of 271 steps (91%) done
+[Wed Apr 14 15:55:47 2021]
+Finished job 135.
+247 of 271 steps (91%) done
+[Wed Apr 14 15:55:47 2021]
+Finished job 121.
+248 of 271 steps (92%) done
+[Wed Apr 14 15:55:48 2021]
+Finished job 30.
+249 of 271 steps (92%) done
+[Wed Apr 14 15:55:48 2021]
+Finished job 23.
+250 of 271 steps (92%) done
+[Wed Apr 14 15:55:48 2021]
+Finished job 44.
+251 of 271 steps (93%) done
+[Wed Apr 14 15:55:48 2021]
+Finished job 16.
+252 of 271 steps (93%) done
+[Wed Apr 14 15:55:48 2021]
+Finished job 163.
+253 of 271 steps (93%) done
+[Wed Apr 14 15:55:48 2021]
+Finished job 93.
+254 of 271 steps (94%) done
+[Wed Apr 14 15:55:49 2021]
+Finished job 247.
+255 of 271 steps (94%) done
+[Wed Apr 14 15:55:50 2021]
+Finished job 233.
+256 of 271 steps (94%) done
+[Wed Apr 14 15:55:50 2021]
+Finished job 191.
+257 of 271 steps (95%) done
+[Wed Apr 14 15:55:51 2021]
+Finished job 226.
+258 of 271 steps (95%) done
+[Wed Apr 14 15:55:52 2021]
+Finished job 261.
+259 of 271 steps (96%) done
+[Wed Apr 14 15:55:53 2021]
+Finished job 142.
+260 of 271 steps (96%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:53 2021]
+rule aggregateAllReverseOligo:
+    input: /datater/wu/data/enterovirus/filtering16/reverse5842-6346.calculated2, /datater/wu/data/enterovirus/filtering16/reverse762-1266.calculated2, /datater/wu/data/enterovirus/filtering16/reverse2540-3044.calculated2, /datater/wu/data/enterovirus/filtering16/reverse6350-6854.calculated2, /datater/wu/data/enterovirus/filtering16/reverse5588-6092.calculated2, /datater/wu/data/enterovirus/filtering16/reverse8636-9140.calculated2, /datater/wu/data/enterovirus/filtering16/reverse2032-2536.calculated2, /datater/wu/data/enterovirus/filtering16/reverse7366-7870.calculated2, /datater/wu/data/enterovirus/filtering16/reverse508-1012.calculated2, /datater/wu/data/enterovirus/filtering16/reverse1016-1520.calculated2, /datater/wu/data/enterovirus/filtering16/reverse1778-2282.calculated2, /datater/wu/data/enterovirus/filtering16/reverse5080-5584.calculated2, /datater/wu/data/enterovirus/filtering16/reverse4572-5076.calculated2, /datater/wu/data/enterovirus/filtering16/reverse254-758.calculated2, /datater/wu/data/enterovirus/filtering16/reverse7112-7616.calculated2, /datater/wu/data/enterovirus/filtering16/reverse7874-8378.calculated2, /datater/wu/data/enterovirus/filtering16/reverse1524-2028.calculated2, /datater/wu/data/enterovirus/filtering16/reverse1270-1774.calculated2, /datater/wu/data/enterovirus/filtering16/reverse7620-8124.calculated2, /datater/wu/data/enterovirus/filtering16/reverse3810-4314.calculated2, /datater/wu/data/enterovirus/filtering16/reverse4064-4568.calculated2, /datater/wu/data/enterovirus/filtering16/reverse3302-3806.calculated2, /datater/wu/data/enterovirus/filtering16/reverse6604-7108.calculated2, /datater/wu/data/enterovirus/filtering16/reverse8890-9382.calculated2, /datater/wu/data/enterovirus/filtering16/reverse8382-8886.calculated2, /datater/wu/data/enterovirus/filtering16/reverse3048-3552.calculated2, /datater/wu/data/enterovirus/filtering16/reverse6096-6600.calculated2, /datater/wu/data/enterovirus/filtering16/reverse3556-4060.calculated2, /datater/wu/data/enterovirus/filtering16/reverse4826-5330.calculated2, /datater/wu/data/enterovirus/filtering16/reverse0-504.calculated2, /datater/wu/data/enterovirus/filtering16/reverse2794-3298.calculated2, /datater/wu/data/enterovirus/filtering16/reverse4318-4822.calculated2, /datater/wu/data/enterovirus/filtering16/reverse5334-5838.calculated2, /datater/wu/data/enterovirus/filtering16/reverse2286-2790.calculated2, /datater/wu/data/enterovirus/filtering16/reverse9144-9382.calculated2, /datater/wu/data/enterovirus/filtering16/reverse6858-7362.calculated2, /datater/wu/data/enterovirus/filtering16/reverse8128-8632.calculated2
+    output: /datater/wu/data/enterovirus/filtering16/allOligos_reverse.calculated2
+    jobid: 4
+    wildcards: sample=enterovirus
+
+[Wed Apr 14 15:55:53 2021]
+Finished job 4.
+261 of 271 steps (96%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:53 2021]
+rule filterAggregateAllReverseOligo:
+    input: /datater/wu/data/enterovirus/filtering16/allOligos_reverse.calculated2
+    output: /datater/wu/data/enterovirus/filtering16/allOligos_reverse.filtered
+    jobid: 3
+    wildcards: sample=enterovirus
+
+[Wed Apr 14 15:55:57 2021]
+Finished job 3.
+262 of 271 steps (97%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:57 2021]
+rule allToFasta:
+    input: /datater/wu/data/enterovirus/filtering16/allOligos_reverse.filtered
+    output: /datater/wu/data/enterovirus/checkSpecifity16/allOligos_reverse.filtered.fasta
+    jobid: 6
+    wildcards: sample=enterovirus
+
+[Wed Apr 14 15:55:58 2021]
+Finished job 6.
+263 of 271 steps (97%) done
+Select jobs to execute...
+
+[Wed Apr 14 15:55:58 2021]
+rule blastn_short_prok:
+    input: /datater/wu/data/enterovirus/checkSpecifity16/allOligos_reverse.filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity16/allOligos_reverse.filtered.blastn.out
+    jobid: 8
+    wildcards: sample=enterovirus
+
+[Wed Apr 14 16:26:27 2021]
+Finished job 12.
+264 of 271 steps (97%) done
+[Wed Apr 14 16:26:48 2021]
+Finished job 8.
+265 of 271 steps (98%) done
+Select jobs to execute...
+
+[Wed Apr 14 16:26:48 2021]
+rule filterOutUnSpecifickmer:
+    input: /datater/wu/data/enterovirus/checkSpecifity16/allOligos_reverse.filtered.blastn.out, /datater/wu/data/enterovirus/checkSpecifity16/allOligos_reverse.filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity16/allOligos_reverse.filtered.spec.fasta
+    jobid: 9
+    wildcards: sample=enterovirus
+
+[Wed Apr 14 16:26:56 2021]
+Finished job 9.
+266 of 271 steps (98%) done
+Select jobs to execute...
+
+[Wed Apr 14 16:26:56 2021]
+rule allHeterodimerCheck:
+    input: /datater/wu/data/enterovirus/checkSpecifity16/allOligos_reverse.filtered.spec.fasta
+    output: /datater/wu/data/enterovirus/dimer16/allOligos_reverse.filtered.spec.heterodimer
+    jobid: 10
+    wildcards: sample=enterovirus
+
+[Wed Apr 14 16:27:09 2021]
+Finished job 10.
+267 of 271 steps (99%) done
+Select jobs to execute...
+
+[Wed Apr 14 16:27:09 2021]
+rule oligoSet:
+    input: /datater/wu/data/enterovirus/dimer16/allOligos_reverse.filtered.spec.heterodimer, /datater/wu/data/enterovirus/checkSpecifity16/allOligos_reverse.filtered.spec.fasta
+    output: /datater/wu/data/enterovirus/dimer16/allOligos_reverse.set, /datater/wu/data/enterovirus/dimer16/allOligos_reverse.set.fasta
+    jobid: 11
+    wildcards: sample=enterovirus
+
+[Wed Apr 14 16:27:11 2021]
+Finished job 11.
+268 of 271 steps (99%) done
+Select jobs to execute...
+
+[Wed Apr 14 16:27:11 2021]
+rule species_coverage:
+    input: /datater/wu/data/enterovirus/dimer16/allOligos_reverse.set.fasta, /datater/wu/data/enterovirus/evaluation16/aceID-taxID-species.tsv
+    output: /datater/wu/data/enterovirus/evaluation16/allOligos_reverse.set.coverage
+    jobid: 13
+    wildcards: sample=enterovirus
+
+[Wed Apr 14 16:27:11 2021]
+rule oligoCount:
+    input: /datater/wu/data/enterovirus/filtering16/allOligos_reverse.calculated2, /datater/wu/data/enterovirus/filtering16/allOligos_reverse.filtered, /datater/wu/data/enterovirus/checkSpecifity16/allOligos_reverse.filtered.spec.fasta, /datater/wu/data/enterovirus/dimer16/allOligos_reverse.set.fasta
+    output: /datater/wu/data/enterovirus/evaluation16/allOligo_before.tsv, /datater/wu/data/enterovirus/evaluation16/allOligo_after1.tsv, /datater/wu/data/enterovirus/evaluation16/allOligo_after2.tsv, /datater/wu/data/enterovirus/evaluation16/allOligo_after3.tsv
+    jobid: 14
+    wildcards: sample=enterovirus
+
+[Wed Apr 14 16:27:13 2021]
+Finished job 14.
+269 of 271 steps (99%) done
+[Wed Apr 14 16:27:14 2021]
+Finished job 13.
+270 of 271 steps (100%) done
+Select jobs to execute...
+
+[Wed Apr 14 16:27:14 2021]
+localrule all:
+    input: /datater/wu/data/enterovirus/enterovirus.uniq, /datater/wu/data/enterovirus/enterovirus.msa, /datater/wu/data/enterovirus/filtering16/allOligos_reverse.filtered, /datater/wu/data/enterovirus/checkSpecifity16/allOligos_reverse.filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity16/references.DB.nhr, /datater/wu/data/enterovirus/checkSpecifity16/references.DB.nin, /datater/wu/data/enterovirus/checkSpecifity16/references.DB.nog, /datater/wu/data/enterovirus/checkSpecifity16/references.DB.nsd, /datater/wu/data/enterovirus/checkSpecifity16/references.DB.nsi, /datater/wu/data/enterovirus/checkSpecifity16/references.DB.nsq, /datater/wu/data/enterovirus/checkSpecifity16/allOligos_reverse.filtered.blastn.out, /datater/wu/data/enterovirus/checkSpecifity16/allOligos_reverse.filtered.spec.fasta, /datater/wu/data/enterovirus/dimer16/allOligos_reverse.filtered.spec.heterodimer, /datater/wu/data/enterovirus/dimer16/allOligos_reverse.set, /datater/wu/data/enterovirus/dimer16/allOligos_reverse.set.fasta, /datater/wu/data/enterovirus/evaluation16/aceID-taxID-species.tsv, /datater/wu/data/enterovirus/evaluation16/allOligos_reverse.set.coverage, /datater/wu/data/enterovirus/evaluation16/allOligo_before.tsv, /datater/wu/data/enterovirus/evaluation16/allOligo_after1.tsv, /datater/wu/data/enterovirus/evaluation16/allOligo_after2.tsv, /datater/wu/data/enterovirus/evaluation16/allOligo_after3.tsv
+    jobid: 0
+
+[Wed Apr 14 16:27:14 2021]
+Finished job 0.
+271 of 271 steps (100%) done
+Complete log: /datater/wu/MSSPE-pipeline/.snakemake/log/2021-04-14T155522.964347.snakemake.log

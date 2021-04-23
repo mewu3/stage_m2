@@ -1,0 +1,108 @@
+Building DAG of jobs...
+Updating job aggregateAllReverseOligo.
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	allHeterodimerCheck
+	1	blastn_short_prok
+	1	filterOutUnSpecifickmer
+	1	oligoCount
+	1	oligoSet
+	1	species_coverage
+	1	taxID_and_specieName
+	8
+Select jobs to execute...
+
+[Wed Apr 14 11:56:04 2021]
+rule taxID_and_specieName:
+    input: /datater/wu/data/enterovirus/enterovirus.uniq
+    output: /datater/wu/data/enterovirus/evaluation15/aceID-taxID-species.tsv
+    jobid: 12
+    wildcards: sample=enterovirus
+
+[Wed Apr 14 11:56:04 2021]
+rule blastn_short_prok:
+    input: /datater/wu/data/enterovirus/checkSpecifity15/allOligos_reverse.filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity15/allOligos_reverse.filtered.blastn.out
+    jobid: 8
+    wildcards: sample=enterovirus
+
+[Wed Apr 14 12:25:20 2021]
+Finished job 12.
+1 of 8 steps (12%) done
+[Wed Apr 14 12:36:45 2021]
+Finished job 8.
+2 of 8 steps (25%) done
+Select jobs to execute...
+
+[Wed Apr 14 12:36:45 2021]
+rule filterOutUnSpecifickmer:
+    input: /datater/wu/data/enterovirus/checkSpecifity15/allOligos_reverse.filtered.blastn.out, /datater/wu/data/enterovirus/checkSpecifity15/allOligos_reverse.filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity15/allOligos_reverse.filtered.spec.fasta
+    jobid: 9
+    wildcards: sample=enterovirus
+
+[Wed Apr 14 12:36:54 2021]
+Finished job 9.
+3 of 8 steps (38%) done
+Select jobs to execute...
+
+[Wed Apr 14 12:36:54 2021]
+rule allHeterodimerCheck:
+    input: /datater/wu/data/enterovirus/checkSpecifity15/allOligos_reverse.filtered.spec.fasta
+    output: /datater/wu/data/enterovirus/dimer15/allOligos_reverse.filtered.spec.heterodimer
+    jobid: 10
+    wildcards: sample=enterovirus
+
+[Wed Apr 14 12:38:10 2021]
+Finished job 10.
+4 of 8 steps (50%) done
+Select jobs to execute...
+
+[Wed Apr 14 12:38:10 2021]
+rule oligoSet:
+    input: /datater/wu/data/enterovirus/dimer15/allOligos_reverse.filtered.spec.heterodimer, /datater/wu/data/enterovirus/checkSpecifity15/allOligos_reverse.filtered.spec.fasta
+    output: /datater/wu/data/enterovirus/dimer15/allOligos_reverse.set, /datater/wu/data/enterovirus/dimer15/allOligos_reverse.set.fasta
+    jobid: 11
+    wildcards: sample=enterovirus
+
+[Wed Apr 14 12:38:12 2021]
+Finished job 11.
+5 of 8 steps (62%) done
+Select jobs to execute...
+
+[Wed Apr 14 12:38:12 2021]
+rule species_coverage:
+    input: /datater/wu/data/enterovirus/dimer15/allOligos_reverse.set.fasta, /datater/wu/data/enterovirus/evaluation15/aceID-taxID-species.tsv
+    output: /datater/wu/data/enterovirus/evaluation15/allOligos_reverse.set.coverage
+    jobid: 13
+    wildcards: sample=enterovirus
+
+[Wed Apr 14 12:38:12 2021]
+rule oligoCount:
+    input: /datater/wu/data/enterovirus/filtering15/allOligos_reverse.calculated2, /datater/wu/data/enterovirus/filtering15/allOligos_reverse.filtered, /datater/wu/data/enterovirus/checkSpecifity15/allOligos_reverse.filtered.spec.fasta, /datater/wu/data/enterovirus/dimer15/allOligos_reverse.set.fasta
+    output: /datater/wu/data/enterovirus/evaluation15/allOligo_before.tsv, /datater/wu/data/enterovirus/evaluation15/allOligo_after1.tsv, /datater/wu/data/enterovirus/evaluation15/allOligo_after2.tsv, /datater/wu/data/enterovirus/evaluation15/allOligo_after3.tsv
+    jobid: 14
+    wildcards: sample=enterovirus
+
+[Wed Apr 14 12:38:15 2021]
+Finished job 14.
+6 of 8 steps (75%) done
+[Wed Apr 14 12:38:15 2021]
+Finished job 13.
+7 of 8 steps (88%) done
+Select jobs to execute...
+
+[Wed Apr 14 12:38:15 2021]
+localrule all:
+    input: /datater/wu/data/enterovirus/enterovirus.uniq, /datater/wu/data/enterovirus/enterovirus.msa, /datater/wu/data/enterovirus/filtering15/allOligos_reverse.filtered, /datater/wu/data/enterovirus/checkSpecifity15/allOligos_reverse.filtered.fasta, /datater/wu/data/enterovirus/checkSpecifity15/references.DB.nhr, /datater/wu/data/enterovirus/checkSpecifity15/references.DB.nin, /datater/wu/data/enterovirus/checkSpecifity15/references.DB.nog, /datater/wu/data/enterovirus/checkSpecifity15/references.DB.nsd, /datater/wu/data/enterovirus/checkSpecifity15/references.DB.nsi, /datater/wu/data/enterovirus/checkSpecifity15/references.DB.nsq, /datater/wu/data/enterovirus/checkSpecifity15/allOligos_reverse.filtered.blastn.out, /datater/wu/data/enterovirus/checkSpecifity15/allOligos_reverse.filtered.spec.fasta, /datater/wu/data/enterovirus/dimer15/allOligos_reverse.filtered.spec.heterodimer, /datater/wu/data/enterovirus/dimer15/allOligos_reverse.set, /datater/wu/data/enterovirus/dimer15/allOligos_reverse.set.fasta, /datater/wu/data/enterovirus/evaluation15/aceID-taxID-species.tsv, /datater/wu/data/enterovirus/evaluation15/allOligos_reverse.set.coverage, /datater/wu/data/enterovirus/evaluation15/allOligo_before.tsv, /datater/wu/data/enterovirus/evaluation15/allOligo_after1.tsv, /datater/wu/data/enterovirus/evaluation15/allOligo_after2.tsv, /datater/wu/data/enterovirus/evaluation15/allOligo_after3.tsv
+    jobid: 0
+
+[Wed Apr 14 12:38:15 2021]
+Finished job 0.
+8 of 8 steps (100%) done
+Complete log: /datater/wu/MSSPE-pipeline/.snakemake/log/2021-04-14T115603.925826.snakemake.log

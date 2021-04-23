@@ -1,0 +1,4 @@
+KeyError in line 7 of /datater/wu/MSSPE/rules-basic/reverse_kmer_kmerCount.smk:
+'jellyfish-count'
+  File "/datater/wu/MSSPE/snakefile-basic", line 91, in <module>
+  File "/datater/wu/MSSPE/rules-basic/reverse_kmer_kmerCount.smk", line 7, in <module>

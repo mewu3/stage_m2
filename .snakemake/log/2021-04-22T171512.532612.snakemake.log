@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 217 of /datater/wu/MSSPE/rules-basic/reverse_kmer_spec.smk:
+Missing input files for rule specific2:
+/datater/wu/RefSeqProkaryota/RefSeqProkaryota.fna

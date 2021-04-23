@@ -1,0 +1,133 @@
+#!/usr/bin/env python3.8
+import os
+
+### Global variable
+configfile: "config-variant.yaml"
+
+samples = list(config["samples"].keys())
+refSeq = config["refSeq"]
+
+dataDir = config["dataDir"]
+refSeqFile = os.path.splitext(refSeq)[0]
+
+kmerSize = config["jellyfish"]["kmer-size"]
+clusterIden = config["cd-hit"]["identity"]
+
+### functions
+def fetchConfigParameters():
+    if config["mafft"]["fmodel"] == "on":
+        config["mafft"]["fmodel"] = "--fmodel"
+    else:
+        config["mafft"]["fmodel"] = ""
+
+    if config["mafft"]["clustalout"] == "on":
+        config["mafft"]["clustalout"] = "--clustalout"
+    else:
+        config["mafft"]["clustalout"] = ""
+
+    if config["mafft"]["inputorder"] == "on":
+        config["mafft"]["inputorder"] = "--inputorder"
+    else :
+        config["mafft"]["inputorder"] = ""
+
+    if config["mafft"]["reorder"] == "on":
+        config["mafft"]["reorder"] = "--reorder"
+    else:
+        config["mafft"]["reorder"] = ""
+
+    if config["mafft"]["treeout"] == "on":
+        config["mafft"]["treeout"] = "--treeout"
+    else :
+        config["mafft"]["treeout"] = ""
+
+    if config["mafft"]["quiet"] == "on":
+        config["mafft"]["quiet"] = "--quiet"
+    else:
+        config["mafft"]["quiet"] = ""
+fetchConfigParameters()
+
+# def aggregate_input(wildcards):
+#     checkpoint_output = checkpoints.splitFiles.get(**wildcards).output[0]
+#     return expand(f"{dataDir}/{{sample}}/filtering/reverse{{seg}}.calculated2.filtered",
+#                   sample = wildcards.sample,
+#                   seg = glob_wildcards(os.path.join(checkpoint_output, "reverse{seg}.fasta")).seg)
+
+### snakemake rules
+rule all:
+    input:
+        expand(
+            f"{dataDir}/{{sample}}/{{sample}}.uniq",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.jf",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.txt",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.txt",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmerCount.sorted.calculated.txt",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmerCount.sorted.calculated.filtered.txt",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.fasta",
+            sample = samples
+        ),
+        expand(
+            f"{refSeqFile}.DB.{{ext}}",
+            sample = samples,
+            ext = ["1.ebwt", "2.ebwt", "3.ebwt", "4.ebwt", "rev.1.ebwt", "rev.2.ebwt"]
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.bowtie",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmerCount.sorted.calculated.filtered.spec.txt",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/{{sample}}{clusterIden}.uniq",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/{{sample}}{clusterIden}.msa",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.spec.fasta",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/{{sample}}{clusterIden}.msa.DB.{{ext}}",
+            sample = samples,
+            ext = ["1.ebwt", "2.ebwt", "3.ebwt", "4.ebwt", "rev.1.ebwt", "rev.2.ebwt"]
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.spec.bowtie",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.spec.position",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/kmer{kmerSize}/allOligo.set",
+            sample = samples
+        )
+
+include: "rules-variant/all_preprocessing.smk"
+include: "rules-variant/reverse_kmer_filter.smk"
+include: "rules-variant/reverse_kmer_spec.smk"
+include: "rules-variant/reverse_kmer_dimer.smk"
+include: "rules-variant/all_evaluation.smk"

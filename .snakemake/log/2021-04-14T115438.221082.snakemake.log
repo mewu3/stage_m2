@@ -1,0 +1,4 @@
+SyntaxError:
+Not all output, log and benchmark files of rule calculate_LC contain the same wildcards. This is crucial though, in order to avoid that two or more jobs write to the same file.
+  File "/datater/wu/MSSPE-pipeline/Snakefile", line 198, in <module>
+  File "/datater/wu/MSSPE-pipeline/rules/reverse_kmer_filter.smk", line 80, in <module>
