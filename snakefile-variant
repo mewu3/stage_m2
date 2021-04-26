@@ -6,6 +6,8 @@ configfile: "config-variant.yaml"
 
 samples = list(config["samples"].keys())
 refSeq = config["refSeq"]
+taxID = config["taxID"]
+taxLineage = config["taxLineage"]
 
 dataDir = config["dataDir"]
 refSeqFile = os.path.splitext(refSeq)[0]
@@ -123,6 +125,15 @@ rule all:
         ),
         expand(
             f"{dataDir}/{{sample}}/kmer{kmerSize}/allOligo.set",
+            sample = samples
+        ),
+        ### Evaluation
+        expand(
+            f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/aceID-taxID-species.tsv",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allOligos_reverse.set.coverage",
             sample = samples
         )
 

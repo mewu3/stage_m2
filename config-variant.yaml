@@ -1,9 +1,13 @@
 dataDir: "/datater/wu/data/MSSPE-variant"
+
 refSeq : "/datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna"
+taxID: "/datater/wu/data/ncbiTaxonomy/nucl_gb.accession2taxid" # ftp://ftp.ncbi.nih.gov/pub/taxonomy/accession2taxid/
+taxLineage: "/datater/wu/data/ncbiTaxonomy/ncbi_lineages_2021-04-23.csv" # ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy and https://github.com/zyxue/ncbitax2lin
 
 samples:
     enterovirus: "/datater/wu/data/enterovirus.fasta"
     zika : "/datater/wu/data/ZIKV-96seqs.fasta"
+    # coronavirus: "/datater/wu/data/coronavirus.fasta"
 
 ### all_preprocessing
 jellyfish:

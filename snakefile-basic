@@ -5,6 +5,8 @@ configfile: "config-basic.yaml"
 
 samples = list(config["samples"].keys())
 refSeq = config["refSeq"]
+taxID = config["taxID"]
+taxLineage = config["taxLineage"]
 
 dataDir = config["dataDir"]
 refSeqFile = os.path.splitext(refSeq)[0]
@@ -88,6 +90,15 @@ rule all:
         expand(
             f"{dataDir}/{{sample}}/kmer{kmerSize}/allOligo.set",
             sample = samples
+        ),
+        ### EVALUATION
+        expand(
+            f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/aceID-taxID-species.tsv",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allOligos_reverse.set.coverage",
+            sample = samples
         )
 
 
@@ -96,4 +107,4 @@ include: "rules-basic/reverse_kmer_kmerCount.smk"
 include: "rules-basic/reverse_kmer_filter.smk"
 include: "rules-basic/reverse_kmer_spec.smk"
 include: "rules-basic/reverse_kmer_dimer.smk"
-include: "rules-basic/evaluation.smk"
+include: "rules-basic/all_evaluation.smk"

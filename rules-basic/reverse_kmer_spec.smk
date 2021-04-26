@@ -17,57 +17,56 @@ rule specific1:
         input1Open.close()
         outFile.close()
 
+# checkpoint splitFilteredTable:
+    # input:
+        # f"{dataDir}/{{sample}}/filtering/allOligos_reverse.filtered"
+    # output:
+        # directory(f"{dataDir}/{{sample}}/checkSpecifity")
+        # dynamic(f"{dataDir}/{{sample}}/checkSpecifity/reverse{{seg}}_filtered.tsv")
+    # run:
+        # import os
+        # from Bio.Seq import Seq
+        # import pandas as pd
 
-# ~ checkpoint splitFilteredTable:
-    # ~ input:
-        # ~ f"{dataDir}/{{sample}}/filtering/allOligos_reverse.filtered"
-    # ~ output:
-        # ~ directory(f"{dataDir}/{{sample}}/checkSpecifity")
-        # ~ dynamic(f"{dataDir}/{{sample}}/checkSpecifity/reverse{{seg}}_filtered.tsv")
-    # ~ run:
-        # ~ import os
-        # ~ from Bio.Seq import Seq
-        # ~ import pandas as pd
+        # df = pd.read_table(input[0], sep="\t", header=0)
+        # for seg, table in df.groupby("position"):
+            # outputFile = open(f"{dataDir}/{wildcards.sample}/checkSpecifity/reverse{seg}_filtered.tsv", "w")
+            # outputFile = open(f"{output[0]}/reverse{seg}_filtered.tsv", "w")
+            # table.to_csv(outputFile, sep="\t", index=False)
+            # outputFile.close()
 
-        # ~ df = pd.read_table(input[0], sep="\t", header=0)
-        # ~ for seg, table in df.groupby("position"):
-            # ~ outputFile = open(f"{dataDir}/{wildcards.sample}/checkSpecifity/reverse{seg}_filtered.tsv", "w")
-            # ~ # outputFile = open(f"{output[0]}/reverse{seg}_filtered.tsv", "w")
-            # ~ table.to_csv(outputFile, sep="\t", index=False)
-            # ~ outputFile.close()
+# rule splitTableToFasta:
+    # input:
+        # f"{dataDir}/{{sample}}/checkSpecifity/reverse{{seg}}_filtered.tsv"
+    # output:
+        # f"{dataDir}/{{sample}}/checkSpecifity/reverse{{seg}}_filtered.fasta"
+    # run:
+        # import os
 
-# ~ rule splitTableToFasta:
-    # ~ input:
-        # ~ f"{dataDir}/{{sample}}/checkSpecifity/reverse{{seg}}_filtered.tsv"
-    # ~ output:
-        # ~ f"{dataDir}/{{sample}}/checkSpecifity/reverse{{seg}}_filtered.fasta"
-    # ~ run:
-        # ~ import os
+        # outFile = open(output[0], "w")
+        # n = 0
+        # with open(input[0], "r") as file:
+            # for li in file.readlines()[1:21]:
+                # li = li.rstrip("\n")
+                # ls = li.split()
+                # oligo = ls[7]
+                # outFile.write(f">p{n}|position {ls[0]}|count {ls[1]}|CG% {ls[2]}|Tm {ls[3]}|homodimer_dG {ls[4]}|hairpin_dG {ls[5]}|LC {ls[6]}\n{oligo}\n")
+                # n += 1
+        # outFile.close()
 
-        # ~ outFile = open(output[0], "w")
-        # ~ n = 0
-        # ~ with open(input[0], "r") as file:
-            # ~ for li in file.readlines()[1:21]:
-                # ~ li = li.rstrip("\n")
-                # ~ ls = li.split()
-                # ~ oligo = ls[7]
-                # ~ outFile.write(f">p{n}|position {ls[0]}|count {ls[1]}|CG% {ls[2]}|Tm {ls[3]}|homodimer_dG {ls[4]}|hairpin_dG {ls[5]}|LC {ls[6]}\n{oligo}\n")
-                # ~ n += 1
-        # ~ outFile.close()
+# def aggregate_input(wildcards):
+    # checkpoint_out = checkpoints.splitFilteredTable.get(**wildcards).output[0]
+    # return expand(
+        # f"{dataDir}/{{sample}}/checkSpecifity/reverse{{seg}}_filtered.fasta",
+        # sample = wildcards.sample,
+        # seg = glob_wildcards(os.path.join(checkpoint_out, "reverse{seg}_filtered.tsv")).seg
+    # )
 
-# ~ def aggregate_input(wildcards):
-    # ~ checkpoint_out = checkpoints.splitFilteredTable.get(**wildcards).output[0]
-    # ~ return expand(
-        # ~ f"{dataDir}/{{sample}}/checkSpecifity/reverse{{seg}}_filtered.fasta",
-        # ~ sample = wildcards.sample,
-        # ~ seg = glob_wildcards(os.path.join(checkpoint_out, "reverse{seg}_filtered.tsv")).seg
-    # ~ )
-
-# ~ rule aggregateAllToFasta:
-	# ~ input:
-		# ~ aggregate_input
-	# ~ output:
-		# ~ f"{dataDir}/{{sample}}/checkSpecifity/reverse{{seg}}_filtered.fasta"
+# rule aggregateAllToFasta:
+	# input:
+		# aggregate_input
+	# output:
+		# f"{dataDir}/{{sample}}/checkSpecifity/reverse{{seg}}_filtered.fasta"
 
 # rule RNAtoDNA:
 #     input:
@@ -243,7 +242,7 @@ rule specific3:
         """
         bowtie \
         -x {params.refDB} -f {input} \
-        -v 0 -l 7 \
+        -v 0 -l 7 -a \
         --sam \
         -p {params.threads} \
         {output}

@@ -97,7 +97,7 @@ checkpoint splitIntoOverlappingWindows:
                 # forward = str(segment[:50])
                 reverse = str(segment[-50:])
                 # f1.write("> {}|{}-{}\n{}\n".format(fasta[id].long_name, str(chunk[0]), str(chunk[1]), forward))
-                f2.write("> {}|{}-{}\n{}\n".format(fasta[id].long_name, str(chunk[0]), str(chunk[1]), reverse))
+                f2.write(f">{fasta[id].long_name}\n{reverse}\n")
 
             # f1.close()
             f2.close()

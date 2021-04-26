@@ -1,0 +1,354 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            test
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/xrange.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+        <script>https://code.highcharts.com/css/highcharts.css</script>
+    </head>
+    <body>
+        <figure class="highcharts-figure">
+            <div id="container"></div>
+        </figure>
+        <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            const chart = Highcharts.chart('container', {
+                chart: {
+                    type: 'xrange',
+                    styledMode: true
+                },
+                title: {
+                    text: "MSSPE report"
+                },
+                yAxis: {
+                    title: {
+                        text: ''
+                    },
+                    categories: ['Genome', 'oligonucleotide']
+                },
+                tooltip: {
+                    useHTML: true,
+                    pointFormat : (
+                        '{point.name}<br/>'+'{point.description}'
+                    ),
+                },
+                series: [{
+                    borderColor: 'gray',
+                    pointWidth: 20,
+                    data: [{
+                            accesibility: {description: "genome"},
+                            name: "KU940224",
+                            description: "nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnntgctaaaacgcggagtagcccgtgtgagcccctttgggggcttgaagaggctgccagccggacttctgctgggtcatgggcccatcaggatggtcttggcgattctagcctttttgagattcacggcaatcaagccatcactgggtctcatcaatagatggggttcagtggggaaaaaagaggctatggaaataataaagaagttcaagaaagatctggctgccatgctgagaataatcaatgctaggaaggagaagaagagacgaggcgcagatactagtgtcggaattgttggcctcctgctgaccacagctatggcagcggaggtcactagacgtgggagtgcatactatatgtacttggacagaaacgatgctggggaggccatatcttttccaaccacattggggatgaataagtgttatatacagatcatggatcttggacacatgtgtgatgccaccatgagctatgaatgccctatgctggatgagggggtggaaccagatgacgtcgattgttggtgcaacacgacgtcaacttgggttgtgtacggaacctgccatcacaaaaaaggtgaagcacggagatctagaagagctgtgacgctcccctcccattccactaggaagctgcaaacgcggtcgcaaacctggttggaatcaagagaatacacaaagcacttgattagagtcgaaaattggatattcaggaaccctggcttcgcgttagcagcagctgccatcgcttggcttttgggaagctcaacgagccaaaaagtcatatacttggtcatgatactgctgattgccccggcatacagcatcaggtgcataggagtcagcaatagggactttgtggaaggtatgtcaggtgggacttgggttgatgttgtcttggaacatggaggttgtgtcaccgtaatggcacaggacaaaccgactgtcgacatagagctggttacaacaacagtcagcaacatggcggaggtaagatcctactgctatgaggcatcaatatcagacatggcttcggacagccgctgcccaacacaaggtgaagcctaccttgacaagcaatcagacactcaatatgtctgcaaaagaacgttagtggacagaggctggggaaatggatgtggactttttggcaaagggagcctggtgacatgcgctaagtttgcatgctccaagaaaatgaccgggaagagcatccagccagagaatctggagtaccggataatgctgtcagttcatggctcccagcacagtgggatgatcgttaatgacacaggacatgaaactgatgagaatagagcgaaggttgagataacgcccaattcaccaagagccgaagccaccctggggggttttggaagcctaggacttgattgtgaaccgaggacaggccttgacttttcagatttgtattacttgannatgaataacaagcactggttggttcacaaggagtggttccacgacattccattaccttggcacgctggggcagacaccggaactccacactggaacaacaaagaagcactggtagagttcaaggacgcacatgccaaaaggcaaactgtcgtggttctagggagtcaagaaggagcagttcacacggcccttgctggagctctagaggctgagatggatggtgcaaagggaaggctgtcctctggccacttgaaatgtcgcctgaaaatggataaacttagattgaagggcgtgtcatactccttgtgtaccgcagcgttcacattcaccaagatcccggctgaaacactgcacgggacagtcacagtggaggtacagtacgcagggactgatggaccttgcaaggttccagctcagatggcggtggacatgcaaactctgaccccagttgggaggttgataaccgctaaccccgtaatcactgaaagcactgagaactctaagatgatgctggaacttgatccaccatttggggactcctacattgtcataggagtcggggagaagaagatcacccaccactggcacaggagtggcagcaccattggaaaagcatttgaagccactgtgagaggtgccaagagaatggcagtcttgggagacacagcctgggactttggatcagttggaggcgctctcaactcattgggcaagggcatccatcaaatttttggagcagctttcaaatcattgtttggaggaatgtcctggttctcacaaattctcattggaacgttgctgatgtggttgggtctgaacacaaagaatggatctatttcccttatgtgcttggccttagggggagtgttgatcttcttatccacagccgtctctgctgatgtggggtgctcggtggacttctcaaagaaggagacgagatgcggtacaggggtgttcgtctataacgacgttgaagcctggagggacaggtacaagtaccatcctgactccccccgtagattggcagcagcagtcaagcaagcctgggaagatggtatctgcgggatctcctctgtttcaagaatggaaaacatcatgtggagatcagtagaaggggagctcaacgcaatcctggaagagaatggagttcaactgacggtcgttgtgggatctgtaaaaaaccccatgtggagaggtccacagagattgcccgtgcctgtgaacgagctgccccacggctggaaggcttgggggaaatcgtacttcgtcagagcagcaaagacaaataacagctttgtcgtggatggtgacacactgaaggaatgcccactcaaacatagagcatggaacagctttcttgtggaggatcatgggttcggggtatttcacactagtgtctggctcaaggttagagaagattattcattagagtgtgatccagccgttattggaacagctgttaagggaaaggaggctgtacacagtgatctaggctactggattgagagtgagaagaatgacacatggaggctgaagagggcccatctgatcgagatgaaaacatgtgaatggccaaagtcccacacattgtggacagatggaatagaagagagtgatctgatcatacccaagtctttagctgggccactcagccatcacaataccagagagggctacaggacccaaatgaaagggccatggcacagtgaagagcttgaaattcggtttgaggaatgcccaggcactaaggtccacgtggaggaaacatgtggaacaagaggaccatctctgagatcaaccactgcaagcggaagggtgatcgaggaatggtgctgcagggagtgcacaatgcccccactgtcgttccgggctaaagatggctgttggtatggaatggagataaggcccaggaaagaaccagaaagcaacttagtaaggtcaatggtgactgcaggatcaactgatcacatggatcacttctcccttggagtgcttgtgattctgctcatggtgcaggaagggctgaagaagagaatgaccacaaagatcatcataagcacatcaatggcagtgctggtagctatgatcctgggaggattttcaatgagtgacctggctaagcttgcaattttgatgggtgccaccttcgcggaaatgaacactggaggagatgtagctcatctggcgctgatagcggcattcaaagtcagaccagcgttgctggtatctttcatcttcagagctaattggacaccccgtgaaagcatgctgctggccttggcctcgtgtcttttgcaaactgcgatctccgccttggaaggcgacctgatggttctcatcaatggttttgctttggcctggttggcaatacgagcgatggttgttccacgcactgataacatcaccttggcaatcttggctgctctgacaccactggcccggggcacactgcttgtggcgtggagagcaggccttgctacttgcggggggtttatgctcctctctctgaagggaaaaggcagtgtgaagaagaacttaccatttgtcatggccctgggactaaccgctgtgaggctggtcgaccccatcaacgtggtgggactgctgttgctcacaaggagtgggaagcggagctggccccccagcgaagtactcacagctgttggcctgatatgcgcattggctggagggttcgccaaggcagatatagagatggctgggcccatggccgcggtcggtctgctaattgtcagttacgtggtctcaggaaagagtgtggacatgtacattgaaagagcaggtgacatcacatgggaaaaagatgcggaagtcactggaaacagtccccggctcgatgtggcgctagatgagagtggtgatttctccctggtggaggatgacggtccccccatgagagagatcatactcaaggtggtcctgatgaccatctgtggcatgaacccaatagccataccctttgcagctggagcgtggtacgtatacgtgaagactggaaaaaggagtggtgctctatgggatgtgcctgctcccaaggaagtaaaaaagggggagaccacagatggagtgtacagagtaatgactcgtagactgctaggttcaacacaagttggagtgggagttatgcaagagggggtctttcacactatgtggcacgtcacaaaaggatccgcgctgagaagcggtgaagggagacttgatccatactggggagatgtcaagcaggatctggtgtcatactgtggtccatggaagctagatgccgcctgggacgggcacagcgaggtgcagctcttggccgtgccccccggagagagagcgaggaacatccagactctgcccggaatatttaagacaaagggtggggacattggagcggttgcgctggattacccagcaggaacttcaggatctccaatcctagacaagtgtgggagagtgataggactttatggcaatggggtcgtgatcaaaaatgggagttatgttagtgccatcacccaagggaggagggaggaagagactcctgttgagtgcttcgagccttcgatgctgaagaagaagcagctaactgtcttagacttgcatcctggagctgggaaaaccaggagagttcttcctgaaatagtccgtgaagccataaaaacaagactccgtactgtgatcttagctccaaccagggttgtcgctgctgaaatggaggaagcccttagagggcttccagtgcgttatatgacaacagcagtcaatgtcacccactctggaacagaaatcgtcgacttaatgtgccatgccaccttcacttcacgtctactacagccaatcagagtccccaattataatctgtatattatggatgaggcccacttcacagatccctcaagtatagcagcaagaggatacatttcaacaagggttgagatgggcgaggcggctgccatcttcatgaccgccacgccaccaggaacccgtgacgcatttccggactccaactcaccaattatggacaccgaagtggaagtcccagagagagcctggagctcaggctttgattgggtgacggatcattctggaaaaacagtttggtttgttccaagcgtgaggaacggcaatgagatcgcagcttgtctgacaaaggctggaaaacgggtcatacagctcagcagaaagacttttgagacagagttccagaaaacaaaacatcaagagtgggactttgtcgtgacaactgacatttcagagatgggcgccaactttaaagctgaccgtgtcatagattccaggagatgcctaaagccggtcatacttgatggcgagagagtcattctggctggacccatgcctgtcacacatgccagcgctgcccagaggagggggcgcataggcaggaatcccaacaaacctggagatgagtatctgtatggaggtgggtgcgcagagactgacgaagaccatgcacactggcttgaagcaagaatgctccttgacaatatttacctccaagatggcctcatagcctcgctctatcgacctgaggccgacaaagtagcagccattgagggagagttcaagcttaggacggagcaaaggaagacctttgtggaactcatgaaaagaggagatcttcctgtttggctggcctatcaggttgcatctgccggaataacctacacagatagaagatggtgctttgatggcacgaccaacaacaccataatggaagacagtgtgccggcagaggtgtggaccagacacggagagaaaagagtgctcaaaccgaggtggatggatgccagagtttgttcagatcatgcggccctgaagtcattcaaggagtttgccgctgggaaaagaggagcggctcttggagtgatggaagccctgggaacactgccaggacacatgacagagagattccaggaagccattgacaacctcgctgtgctcatgcgggcagagactggaagcaggccttacaaagccgcggcggcccaaatgccggagaccctagagaccattatgcttttggggttgctaggaacagtctcgctgggaatctttttcgtcttgatgaggaacaagggcatagggaagatgggctttggaatggtgactcttggggccagcgcatggctcatgtggctctcggaaattgagccagccagaattgcatgtgtcctcattgttgtgttcctattgctggtggtgctcatacctgagccagaaaagcaaagatctccccaggacaaccaaatggcaatcatcatcatggtagcagtaggtcttctgggcttgattaccgccaatgaactcggatggttggagagaacaaagagtgacctaagccatctaatgggaaggagagaggagggggcaaccataggattctcaatggacattgacctgcggccagcctcagcttgggccatctatgctgccttgacaactttcattaccccagccgtccaacatgcagtgaccacttcatacaacaactactccttaatggcgatggccacgcaagctggagtgttgtttggtatgggcaaagggatgccattctacgcat-gggactttggagtcccgctgctaatgataggttgctactcacaattaacacccctgaccctaatagtggccatcattttgctcgtggcgcactacatgtacttgatcccagggctgcaggcagcagctgcgcgtgctgcccagaagagaacggcagctggcatcatgaagaaccctgttgtggatggaatagtggtgactgacattgacacaatgacaattgacccccaagtggagaaaaagatgggacaggtgctactcatagcagtagccgtctccagcgccatactgtcgcggaccgcctgggggtggggggaggctggggctctgatcacagccgcaacttccactttgtgggaaggctctccgaacaagtactggaactcctctacagccacttcactgtgtaacatttttaggggaagttacttggctggagcttctctaatctacacagtaacaagaaacgctggcttggtcaagagacgtgggggtggaacaggagagaccctgggagagaaatggaaggcccgcttgaaccagatgtcggccctggagttctactcctacaaaaagtcaggcatcaccgaggtgtgcagagaagaggcccgccgcgccctcaaggacggtgtggcaacgggaggccatgctgtgtcccgaggaagtgcaaagctgagatggttggtggagcggggatacctgcagccccatggaaaggtcattgatcttggatgtggcagagggggctggagttactacgccgccaccatccgcaaagttcaagaagtgaaaggatacacaaaaggaggccctggtcatgaagaacccgtgttggtgcaaagctatgggtggaacatagtccgtcttaagagtggggtggacgtctttcatatggcggctgagccgtgtgacacgttgctgtgtgacataggtgagtcatcatctagtcctgaagtggaagaagcacggacgctcagagttctctccatggtgggggattggcttgaaaaaagaccaggagccttttgtataaaagtgttgtgcccatacaccagcactatgatggaaaccctggagcgactgcagcgtaggtatgggggaggactggtcagagtgccactctcccgcaactctacacatgagatgtactgggtctctggagcgaaaagcaacaccataaaaagtgtgtccaccacgagccagctcctcttggggcgcatggacgggcctaggaggccagtgaaatatgaggaggatgtgaatctcggctctggcacgcgggctgtggtaagctgcgctgaagctcccaacatgaagatcattggtaaccgcattgaaaggatccgcagtgagcacgcggaaacgtggttctttgacgagaaccacccatataggacatgggcttaccatggaagctatgaggcccccacacaagggtcagcgtcctctctagtaaacggggttgtcaggctcctgtcaaaaccctgggatgtggtgactggagtcacaggaatagccatgaccgacaccacaccgtatggtcagcaaagagttttcaaggaaaaagtggacactagggtgccagacccccaagaaggcactcgtcaggttatgagcatggtctcttcctggttgtggaaagagctaggcaaacacaaacggccacgagtctgtaccaaagaagagttcatcaacaaggttcgtagcaatgcagcactaggggcaatatttgaagaggaaaaagagtggaagactgcagtggaagctgtgaacgatccaaggttctgggctctagtggacaaggaaagagagcaccacctgagaggagagtgccagagttgtgtgtacaacatgatgggaaaaagagaaaagaaacaaggggaatttggaaaggccaagggcagccgcgccatctggtatatgtggctaggggctagatttctagagttcgaagcccttggattcttgaacgaggatcactggatggggagagagaactcaggaggtggtgttgaagggctgggattacaaagactcggatatgtcctagaagagatgagtcgcataccaggaggaaggatgtatgcagatgacactgctggctgggacacccgcatcagcaggtttgatctggagaatgaagctctaatcaccaaccaaatggagaaagggcacagggccttggcattggccataatcaagtacacataccaaaacaaagtggtaaaggtccttagaccagctgaaaaagggaaaacagttatggacattatttcgagacaagaccaaagggggagcggacaagttgtcacttacgctcttaacacatttaccaacctagtggtgcaactcattcggaatatggaggctgaggaagttctcgagatgcaagacttgtggctgctgcggaggccagagaaagtgaccaactggttgcagagcaacggatgggataggctcaaacgaatggcagtcagtggagatgattgcgttgtgaagccaattgatgataggtttgcacatgccctcaggttcttgaatgatatgggaaaagttaggaaggacacacaagagtggaaaccctcaactggatgggacaactgggaagaagttccgttttgctcccaccacttcaacaagctccatctcaaggacgggaggtccattgtggttccctgccgccaccaagatgaactgattggccgggcccgcgtctctccaggggcgggatggagcatccgggagactgcttgcctagcaaaatcatatgcgcaaatgtggcagctcctttatttccacagaagggacctccgactgatggccaatgccatttgctcatctgtgccagttgactgggttccaactgggagaactacctggtcaatccatggaaagggagaatggatgaccactgaagacatgcttgtggtgtggaacagagtgtggattgaggagaacgaccacatggaagacaagaccccagttacgaaatggacagacattccctatttgggaaaaagggaagacttgtggtgtggatctctcatagggcacagaccgcgcaccacctgggctgagaacattaaaaacacagtcaacatggtgcgcaggatcataggtgatgaagaaaagtacatggactacctatccacccaagttcgctacttgggtgaagaagggtctacacctggagtgctgtaagcaccagtcttaatgttgtcaggcctgctagtcagccacagcttggggaaagctgtgcagcctgtgacccccccaggagaagctgggaaaccaagcctatagtcaggccgagaacgccatggcacggaagaagccatgctgcctgtgagcccctcagaggacactgagtcaaaaaaccccacgcgcttggaggcgcaggatgggaaaagaaggtggcgaccttccccacccttcaatctggggcctgaactggagatcagctgtggatctccagaagagggactagtggttagaggagannnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+                            x: 0,
+                            x2: 10780,
+                            y: 0,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "TCCCACGTCTAGTGA",
+                            description: "kmerCount:73, CG%:53.333, Entropy:0.983, Tm:41.94",
+                            x: 452,
+                            x2: 501,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "CTTCTAGATCTCCGT",
+                            description: "kmerCount:68, CG%:46.667, Entropy:0.916, Tm:39.207",
+                            x: 703,
+                            x2: 752,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "CTGACTCCTATGCAC",
+                            description: "kmerCount:66, CG%:53.333, Entropy:0.945, Tm:41.94",
+                            x: 954,
+                            x2: 1003,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "CATATTGAGTGTCTG",
+                            description: "kmerCount:87, CG%:40.0, Entropy:0.945, Tm:36.473",
+                            x: 1205,
+                            x2: 1254,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "GCTCTTGGTGAATTG",
+                            description: "kmerCount:78, CG%:46.667, Entropy:0.916, Tm:39.207",
+                            x: 1456,
+                            x2: 1505,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "GACTCCCTAGAACCA",
+                            description: "kmerCount:65, CG%:53.333, Entropy:0.916, Tm:41.94",
+                            x: 1707,
+                            x2: 1756,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "TCCACCGCCATCTGA",
+                            description: "kmerCount:69, CG%:60.0, Entropy:0.915, Tm:44.673",
+                            x: 1958,
+                            x2: 2007,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "TGATCCAAAGTCCCA",
+                            description: "kmerCount:73, CG%:46.667, Entropy:0.954, Tm:39.207",
+                            x: 2209,
+                            x2: 2258,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "TTTGAGAAGTCCACC",
+                            description: "kmerCount:80, CG%:46.667, Entropy:0.995, Tm:39.207",
+                            x: 2460,
+                            x2: 2509,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "CCACATGGGGTTTTT",
+                            description: "kmerCount:87, CG%:46.667, Entropy:0.945, Tm:39.207",
+                            x: 2711,
+                            x2: 2760,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "ACGGCTGGATCACAC",
+                            description: "kmerCount:67, CG%:60.0, Entropy:0.966, Tm:44.673",
+                            x: 2962,
+                            x2: 3011,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "TGTAGCCCTCTCTGG",
+                            description: "kmerCount:62, CG%:60.0, Entropy:0.913, Tm:44.673",
+                            x: 3213,
+                            x2: 3262,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "GTCACCATTGACCTT",
+                            description: "kmerCount:64, CG%:46.667, Entropy:0.954, Tm:39.207",
+                            x: 3464,
+                            x2: 3513,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "CTCCTCCAGTGTTCA",
+                            description: "kmerCount:92, CG%:53.333, Entropy:0.916, Tm:41.94",
+                            x: 3715,
+                            x2: 3764,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "GTGTCAGAGCAGCCA",
+                            description: "kmerCount:72, CG%:60.0, Entropy:0.966, Tm:44.673",
+                            x: 3966,
+                            x2: 4015,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "CATATCAGGCCAACA",
+                            description: "kmerCount:78, CG%:46.667, Entropy:0.916, Tm:39.207",
+                            x: 4217,
+                            x2: 4266,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "GTATGATCTCTCTCA",
+                            description: "kmerCount:92, CG%:40.0, Entropy:0.945, Tm:36.473",
+                            x: 4468,
+                            x2: 4517,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "TTGTGACGTGCCACA",
+                            description: "kmerCount:84, CG%:53.333, Entropy:0.995, Tm:41.94",
+                            x: 4719,
+                            x2: 4768,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "AGGATTGGAGATCCT",
+                            description: "kmerCount:72, CG%:46.667, Entropy:0.966, Tm:39.207",
+                            x: 4970,
+                            x2: 5019,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "CAACCCTGGTTGGAG",
+                            description: "kmerCount:74, CG%:60.0, Entropy:0.983, Tm:44.673",
+                            x: 5221,
+                            x2: 5270,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "TCTCAACCCTTGTTG",
+                            description: "kmerCount:64, CG%:46.667, Entropy:0.916, Tm:39.207",
+                            x: 5472,
+                            x2: 5521,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "TCTGTCTCAAAAGTC",
+                            description: "kmerCount:92, CG%:40.0, Entropy:0.966, Tm:36.473",
+                            x: 5723,
+                            x2: 5772,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "TACTCATCTCCAGGT",
+                            description: "kmerCount:86, CG%:46.667, Entropy:0.954, Tm:39.207",
+                            x: 5974,
+                            x2: 6023,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "AAAGCACCATCTTCT",
+                            description: "kmerCount:91, CG%:40.0, Entropy:0.913, Tm:36.473",
+                            x: 6225,
+                            x2: 6274,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "GTCAATGGCTTCCTG",
+                            description: "kmerCount:83, CG%:53.333, Entropy:0.966, Tm:41.94",
+                            x: 6476,
+                            x2: 6525,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "ACAATGAGGACACAT",
+                            description: "kmerCount:91, CG%:40.0, Entropy:0.915, Tm:36.473",
+                            x: 6727,
+                            x2: 6776,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "TGGCCGCAGGTCAAT",
+                            description: "kmerCount:63, CG%:60.0, Entropy:0.983, Tm:44.673",
+                            x: 6978,
+                            x2: 7027,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "TGGGATCAAGTACAT",
+                            description: "kmerCount:85, CG%:40.0, Entropy:0.966, Tm:36.473",
+                            x: 7229,
+                            x2: 7278,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "AGAGCCTTCCCACAA",
+                            description: "kmerCount:74, CG%:53.333, Entropy:0.916, Tm:41.94",
+                            x: 7480,
+                            x2: 7529,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "ACACCTCGGTGATGC",
+                            description: "kmerCount:62, CG%:60.0, Entropy:0.983, Tm:44.673",
+                            x: 7731,
+                            x2: 7780,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "CCCATAGCTTTGCAC",
+                            description: "kmerCount:85, CG%:53.333, Entropy:0.945, Tm:41.94",
+                            x: 7982,
+                            x2: 8031,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "CCATACCTACGCTGC",
+                            description: "kmerCount:69, CG%:60.0, Entropy:0.915, Tm:44.673",
+                            x: 8233,
+                            x2: 8282,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "AAGAACCACGTTTCC",
+                            description: "kmerCount:70, CG%:46.667, Entropy:0.954, Tm:39.207",
+                            x: 8484,
+                            x2: 8533,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "CGAGTGCCTTCTTGG",
+                            description: "kmerCount:85, CG%:60.0, Entropy:0.913, Tm:44.673",
+                            x: 8735,
+                            x2: 8784,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "CCCATCATGTTGTAC",
+                            description: "kmerCount:88, CG%:46.667, Entropy:0.954, Tm:39.207",
+                            x: 8986,
+                            x2: 9035,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "CCAGCAGTGTCATCT",
+                            description: "kmerCount:77, CG%:53.333, Entropy:0.983, Tm:41.94",
+                            x: 9237,
+                            x2: 9286,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "TCTAGAACTTCCTCA",
+                            description: "kmerCount:57, CG%:40.0, Entropy:0.913, Tm:36.473",
+                            x: 9488,
+                            x2: 9537,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "GCAAAACGGAACTTC",
+                            description: "kmerCount:66, CG%:46.667, Entropy:0.945, Tm:39.207",
+                            x: 9739,
+                            x2: 9788,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "ATGGATTGACCAGGT",
+                            description: "kmerCount:86, CG%:46.667, Entropy:0.966, Tm:39.207",
+                            x: 9990,
+                            x2: 10039,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "CTTCATCACCTATGA",
+                            description: "kmerCount:90, CG%:40.0, Entropy:0.913, Tm:36.473",
+                            x: 10241,
+                            x2: 10290,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "TCTGAGGGGCTCACA",
+                            description: "kmerCount:70, CG%:60.0, Entropy:0.983, Tm:44.673",
+                            x: 10492,
+                            x2: 10541,
+                            y: 1,
+                        },{
+                            accesibility: {description: "oligonucleotide"},
+                            name: "TTCGGCGATCTGTGC",
+                            description: "kmerCount:29, CG%:60.0, Entropy:0.913, Tm:44.673",
+                            x: 10731,
+                            x2: 10780,
+                            y: 1,
+                        },],
+                    dataLabels: {
+                        enabled:true
+                    }
+                }]
+            });
+        })
+        </script>
+    </body>
+</html>
