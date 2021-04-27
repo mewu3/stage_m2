@@ -28,7 +28,7 @@ rule evaluation2:
         f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/aceID-taxID-species.tsv",
         f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.spec.bowtie"
     output:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allOligos_reverse.set.coverage"
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligos_reverse.set.coverage"
     params:
         splitFilesDir = f"{dataDir}/{{sample}}/splitFiles"
     run:
@@ -41,12 +41,47 @@ rule evaluation2:
         import pandas as pd
 
         oligoId = []
+        dict_idPosi = defaultdict(list)
+        # dict_idSpecieCount = defaultdict(lambda: defaultdict(int))
+        dict_aceIdSpecie = defaultdict(str)
+        dict_speciesCount = defaultdict(int)
 
         with open(input[0], "r") as file:
             for li in file.readlines()[1:]:
                 li = li.rstrip("\n").split()
                 oligoId.append(f"p{li[0]}")
+                position = f"{li[-2]}-{li[-1]}"
+                dict_idPosi[li[0]] = li[8:]
 
         df_bowtie = pd.read_table(input[2], comment="@", sep="\t", names=["QNAME", "FLAG", "RNAME", "POS", "MAPQ", "CIGAR", "RNEXT", "PNEXT", "TLEN", "SEQ", "QUAL", "OPT1", "OPT2", "OPT3", "OPT4"])
 
-        print(df_bowtie[df_bowtie["QNAME"].isin(oligoId)][["QNAME", "RNAME"]].to_dict)
+        df_bowtie = df_bowtie[df_bowtie["QNAME"].isin(oligoId)][["QNAME", "RNAME"]]
+
+        dict_idAce = {k: g["RNAME"].tolist() for k, g in df_bowtie.groupby("QNAME")}
+
+        for id in dict_idAce:
+            dict_idAce[id] = list(map(lambda x: x.split(".")[0], dict_idAce[id]))
+
+        input2_open = open(input[1], "r")
+        for li in input2_open.readlines()[1:]:
+            li = li.rstrip("\n").split("\t")
+            aceId = li[1]
+            specie = li[4]
+            dict_aceIdSpecie[aceId]=specie
+            dict_speciesCount[specie] += 1
+        input2_open.close()
+
+        outputOpen = open(output[0], "w")
+        for id in dict_idAce:
+            dict = defaultdict(int)
+            for ace in  dict_idAce[id]:
+                specie = dict_aceIdSpecie[ace]
+                dict[specie]+=1
+            id = id.lstrip("p")
+            posi = dict_idPosi[id]
+            posi = "\t".join(map(str, dict_idPosi[id]))
+            for specie in dict:
+                species_count = dict[specie]
+                totolCount = dict_speciesCount[specie]
+                outputOpen.write(f"{posi}\t{specie}\t{species_count}\t{totolCount}\n")
+        outputOpen.close()

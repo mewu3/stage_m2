@@ -1,93 +1,61 @@
-library(tidyverse)
+library("tidyverse")
 
-datadir <- "/home/meijun/Documents/server/data/coronavirus/evaluation13"
-files <- list.files(path=datadir, full.names = TRUE)
-pattern = grep(pattern = "allOligo",files,value = TRUE,perl=TRUE)
-pattern = grep(pattern = "tsv",pattern,value = TRUE)
+### load input files
+# datadir <- "/home/meijun/Documents/server/data/MSSPE-basic/enterovirus/kmer13/evaluation"
+datadir <- "/datater/wu/data/MSSPE-basic/enterovirus/kmer13/evaluation"
+# datadir <- "/home/meijun/Documents/server/data/MSSPE-basic/enterovirus/kmer15/evaluation"
+# datadir <- "/datater/wu/data/MSSPE-basic/enterovirus/kmer15/evaluation"
+kmerCount <- list.files(path=datadir, pattern = "tsv", full.names = TRUE)
+specieCoverage = paste(datadir, "allOligo.set.coverage", sep="/")
 
-specieCoverage = paste(datadir, "allOligos_reverse.set.coverage", sep="/")
+### global variables
+totolSeq = 3625
 
-totolSeq = 1257
-
-savePlot <- function(myPlot, plotname) {
-  pdf(plotname)
-  print(myPlot)
-  dev.off()
+### plot oligonucleotides count coverage
+for (file in kmerCount){
+    filename <- tools::file_path_sans_ext(file)
+    filename <- paste(filename, ".png", sep="")
+    table <- read_delim(file=file, delim="\t", col_names=TRUE)
+    table[,2] <- table[,2]/totolSeq*100
+    table$position <- paste(table$start, table$end, sep="-")
+    table$position <- factor(table$position, levels=table$position)
+    plot <- ggplot(table, aes(x=position, y=kmerCount)) +
+      geom_col() +
+      theme(axis.text.x = element_text(angle=90, size=10)) +
+      ylim(0,100) +
+      xlab("position")
+      ylab("kmer Coverage")
+    ggsave(plot, file=filename)
 }
 
-### the most abondunce kmer coverage 
-file = pattern[1]
-filename = tools::file_path_sans_ext(file)
-table = read.delim(file=file, sep="\t")
-table[,2] <- table[,2]/totolSeq *100
-table2 <- table %>% separate(position, into = c("position1", "position2"))
-table3 <- cbind(table$position, table2)
-cols.num <- c("position1", "position2")
-table3[cols.num] <- sapply(table3[cols.num],as.numeric)
-colnames(table3)[1] <- "position"
-table3 <- table3 %>%
-  arrange(position1)
-table3$position <- factor(table3$position, levels=table3$position)
-plot <- ggplot(table3, aes(x=position, y=kmerCount)) +
-  geom_col() +
-  theme(axis.text.x = element_text(angle=90, size=10)) +
-  ylim(0,100) +
-  ylab("kmer Coverage")
-plotname = paste(filename, ".pdf", sep="")
-savePlot(plot, plotname)
+### plot oligonucleotides species coverage
+table = read_delim(file=specieCoverage, delim="\t", col_names=FALSE)
+names(table) = c("start", "end", "species", "speciesCount", "totalCount")
+table[, "speciesCoverage"] = table[,4]/totolSeq*100
+table <- arrange(table, start)
+table$position <- paste(table$start, table$end, sep="-")
+table$position <- factor(table$position, levels=unique(table$position))
 
-for (file in files) {
-  filename = tools::file_path_sans_ext(file)
-  table = read.delim(file=file, sep="\t",header=TRUE)
-  table[,2] <- table[,2]/totolSeq *100
-  table2 <- table %>% separate(position, into = c("position1", "position2"))
-  table3 <- cbind(table$position, table2)
-  cols.num <- c("position1", "position2")
-  table3[cols.num] <- sapply(table3[cols.num],as.numeric)
-  colnames(table3)[1] <- "position"
-  table3 <- table3 %>%
-    arrange(position1)
-  table3$position <- factor(table3$position, levels=table3$position)
-  plot <- ggplot(table3, aes(x=position, y=kmerCount)) +
+# all together
+plot <- ggplot(table, aes(x=position, y=speciesCoverage, fill=species)) +
     geom_col() +
     theme(axis.text.x = element_text(angle=90, size=10)) +
-    ylim(0,100) +
-    ylab("kmer Coverage")
-  plotname = paste(filename, ".pdf", sep="")
-  savePlot(plot, plotname)
-}
-
-### species coverage 
-table = read.delim(file=specieCoverage, sep="\t", header=FALSE)
-names(table) = c("position", "species", "count", "totalCount")
-table[,3] <- table[,3]/table[,4] *100
-table2 <- table %>% separate(position, into = c("position1", "position2"))
-table3 <- cbind(table$position, table2)
-cols.num <- c("position1", "position2")
-table3[cols.num] <- sapply(table3[cols.num],as.numeric)
-colnames(table3)[1] <- "position"
-table3 <- table3 %>%
-  arrange(position1)
-table3$position <- factor(table3$position, levels=unique(table3$position))
-
-lsspecies = unique(table3$species)
-
-for (spec in lsspecies){
-  speTable = table3 %>% filter(species == spec)
-  plot <- ggplot(speTable, aes(x=position, y=count, fill=species)) +
-    geom_col() +
-    theme(axis.text.x = element_text(angle=90, size=10)) + 
-    ylim(0,100) + 
+    ylim(0, 100)
     labs(x='position', y='Frequency of species')
-  filename = paste(datadir, spec, sep="/")
-  plotname = paste(filename, ".pdf", sep="")
-  savePlot(plot, plotname)
-}
+filename <- tools::file_path_sans_ext(specieCoverage)
+filename <- paste(filename, "allSpecies.png", sep=".")
+ggsave(plot, file=filename)
 
-ggplot(table3, aes(x=position, y=count, fill=species)) +
-  geom_col() +
-  theme(axis.text.x = element_text(angle=90, size=10)) + 
-  # ylim(0,100) + 
-  labs(x='position', y='Frequency of species')
-plotname = paste(datadir, "allSpecies.pdf", sep="/")
-savePlot(plot, plotname)
+# per species
+species = unique(table$species)
+for (specie in species){
+    specieTable = table %>% filter(species == specie)
+    filename <- tools::file_path_sans_ext(specieCoverage)
+    filename <- paste(filename, specie, sep=".")
+    filename <- paste(filename, ".png", sep="")
+    plot <- ggplot(specieTable, aes(x=position, y=speciesCoverage, fill=species)) +
+        geom_col() +
+        theme(axis.text.x = element_text(angle=90, size=10)) +
+        labs(x='position', y='Frequency of species')
+    ggsave(plot, file=filename)
+}

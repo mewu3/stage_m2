@@ -272,7 +272,12 @@ rule getKmerPosition2:
 
 rule getKmerPosition3:
     input:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.spec.fasta"
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.spec.fasta",
+        lambda wildcards: expand(
+            f"{dataDir}/{{sample}}/{{sample}}{clusterIden}.msa.DB.{{ext}}",
+            ext = ["1.ebwt", "2.ebwt", "3.ebwt", "4.ebwt", "rev.1.ebwt", "rev.2.ebwt"],
+            sample = wildcards.sample
+        )
     output:
         f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.spec.bowtie"
     params:
@@ -281,7 +286,7 @@ rule getKmerPosition3:
     shell:
         """
         bowtie \
-        -x {params.refDB} -f {input} \
+        -x {params.refDB} -f {input[0]} \
         -v 0 -l 7 --ff \
         -a \
         --sam \

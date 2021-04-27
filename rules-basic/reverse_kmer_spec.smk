@@ -232,7 +232,11 @@ rule specific2:
 
 rule specific3:
     input:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.fasta"
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.fasta",
+        lambda wildcards: expand(
+            f"{refSeqFile}.DB.{{ext}}",
+            ext = ["1.ebwt", "2.ebwt", "3.ebwt", "4.ebwt", "rev.1.ebwt", "rev.2.ebwt"]
+        )
     output:
         f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.bowtie"
     params:
@@ -241,7 +245,7 @@ rule specific3:
     shell:
         """
         bowtie \
-        -x {params.refDB} -f {input} \
+        -x {params.refDB} -f {input[0]} \
         -v 0 -l 7 -a \
         --sam \
         -p {params.threads} \

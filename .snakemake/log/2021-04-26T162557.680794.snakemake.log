@@ -1,0 +1,71 @@
+Building DAG of jobs...
+Updating job filtering2.
+Updating job filtering2.
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	2	generateWebPage
+	3
+Select jobs to execute...
+
+[Mon Apr 26 16:25:59 2021]
+rule generateWebPage:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer13/allOligo.set, /datater/wu/data/MSSPE-basic/zika/zika.msa
+    output: /datater/wu/data/MSSPE-basic/zika/kmer13/evaluation/report.html, /datater/wu/data/MSSPE-basic/zika/kmer13/evaluation/style.css
+    jobid: 27
+    wildcards: sample=zika
+
+[Mon Apr 26 16:25:59 2021]
+rule generateWebPage:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer13/allOligo.set, /datater/wu/data/MSSPE-basic/enterovirus/enterovirus.msa
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer13/evaluation/report.html, /datater/wu/data/MSSPE-basic/enterovirus/kmer13/evaluation/style.css
+    jobid: 26
+    wildcards: sample=enterovirus
+
+[Mon Apr 26 16:25:59 2021]
+[Mon Apr 26 16:25:59 2021]
+Error in rule generateWebPage:
+Error in rule generateWebPage:
+    jobid: 26
+    jobid: 27
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer13/evaluation/report.html, /datater/wu/data/MSSPE-basic/enterovirus/kmer13/evaluation/style.css
+    output: /datater/wu/data/MSSPE-basic/zika/kmer13/evaluation/report.html, /datater/wu/data/MSSPE-basic/zika/kmer13/evaluation/style.css
+
+
+RuleException:
+URLError in line 123 of /datater/wu/MSSPE/rules-basic/all_evaluation.smk:
+<urlopen error [Errno 2] No such file or directory: '/datater/wu/MSSPE/rules-basic/scripts/evaluation-basic.py'>
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 2326, in run_wrapper
+  File "/datater/wu/MSSPE/rules-basic/all_evaluation.smk", line 123, in __rule_generateWebPage
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/urllib/request.py", line 214, in urlopen
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/urllib/request.py", line 517, in open
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/urllib/request.py", line 534, in _open
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/urllib/request.py", line 494, in _call_chain
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/urllib/request.py", line 1481, in file_open
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/urllib/request.py", line 1520, in open_local_file
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 568, in _callback
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 554, in cached_or_run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 2357, in run_wrapper
+RuleException:
+URLError in line 123 of /datater/wu/MSSPE/rules-basic/all_evaluation.smk:
+<urlopen error [Errno 2] No such file or directory: '/datater/wu/MSSPE/rules-basic/scripts/evaluation-basic.py'>
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 2326, in run_wrapper
+  File "/datater/wu/MSSPE/rules-basic/all_evaluation.smk", line 123, in __rule_generateWebPage
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/urllib/request.py", line 214, in urlopen
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/urllib/request.py", line 517, in open
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/urllib/request.py", line 534, in _open
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/urllib/request.py", line 494, in _call_chain
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/urllib/request.py", line 1481, in file_open
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/urllib/request.py", line 1520, in open_local_file
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 568, in _callback
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 554, in cached_or_run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 2357, in run_wrapper
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/MSSPE/.snakemake/log/2021-04-26T162557.680794.snakemake.log

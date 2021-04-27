@@ -1,0 +1,49 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	MSA
+	1	all
+	1	checkHeterodimer
+	1	clustering
+	1	evaluation2
+	1	getKmerPosition2
+	1	getKmerPosition3
+	1	getKmerPosition4
+	8
+Select jobs to execute...
+
+[Mon Apr 26 12:03:18 2021]
+rule clustering:
+    input: /datater/wu/data/MSSPE-variant/coronavirus/coronavirus.uniq
+    output: /datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.uniq
+    jobid: 11
+    wildcards: sample=coronavirus
+
+
+[Mon Apr 26 12:03:18 2021]
+rule getKmerPosition3:
+    input: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.spec.fasta
+    output: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.spec.bowtie
+    jobid: 15
+    wildcards: sample=coronavirus
+
+[Mon Apr 26 12:03:18 2021]
+Error in rule getKmerPosition3:
+    jobid: 15
+    output: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.spec.bowtie
+    shell:
+        
+        bowtie         -x /datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.msa.DB -f /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.spec.fasta         -v 0 -l 7 --ff         -a         --sam         -p 12         /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.spec.bowtie
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Mon Apr 26 13:14:29 2021]
+Finished job 11.
+1 of 8 steps (12%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/MSSPE/.snakemake/log/2021-04-26T120317.777110.snakemake.log

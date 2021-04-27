@@ -1,7 +1,7 @@
 #!/usr/bin/env python3.8
 import os
 
-configfile: "config-basic.yaml"
+configfile: "configs/config-basic.yaml"
 
 samples = list(config["samples"].keys())
 refSeq = config["refSeq"]
@@ -97,10 +97,25 @@ rule all:
             sample = samples
         ),
         expand(
-            f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allOligos_reverse.set.coverage",
+            f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo.set.coverage",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo_before.tsv",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo_after1.tsv",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo_after2.tsv",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo_after3.tsv",
             sample = samples
         )
-
 
 include: "rules-basic/all_preprocessing.smk"
 include: "rules-basic/reverse_kmer_kmerCount.smk"

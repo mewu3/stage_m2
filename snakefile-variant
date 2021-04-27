@@ -2,7 +2,7 @@
 import os
 
 ### Global variable
-configfile: "config-variant.yaml"
+configfile: "configs/config-variant.yaml"
 
 samples = list(config["samples"].keys())
 refSeq = config["refSeq"]
@@ -133,7 +133,7 @@ rule all:
             sample = samples
         ),
         expand(
-            f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allOligos_reverse.set.coverage",
+            f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligos_reverse.set.coverage",
             sample = samples
         )
 

@@ -51,11 +51,20 @@ for id in dict_kmerInfo:
         nature = 'oligonucleotide',
         sequence = info[0],
         description=formatedList,
-        start = int(info[-1]) - 50 + 1,
-        end = info[-1],
+        start = info[-4],
+        end = info[-3],
         order = 1
     )
     dataContent += content
+    content2 = formattedContent.format(
+        nature = 'oligonucleotide',
+        sequence = info[0],
+        description=formatedList,
+        start = info[-2],
+        end = info[-1],
+        order = 2
+    )
+    dataContent += content2
 
 htmlFileOpen.write(f"""<!doctype html>
 <html>
@@ -89,7 +98,7 @@ htmlFileOpen.write(f"""<!doctype html>
                     title: {{
                         text: ''
                     }},
-                    categories: ['Genome', 'oligonucleotide']
+                    categories: ['Genome', 'oligonucleotide-readPosition', 'oligonucleotide']
                 }},
                 tooltip: {{
                     useHTML: true,

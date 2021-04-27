@@ -27,7 +27,7 @@ rule evaluation2:
         f"{dataDir}/{{sample}}/kmer{kmerSize}/allOligo.set",
         f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/aceID-taxID-species.tsv"
     output:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allOligos_reverse.set.coverage"
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo.set.coverage"
     params:
         splitFilesDir = f"{dataDir}/{{sample}}/splitFiles"
     run:
@@ -84,66 +84,31 @@ rule evaluation2:
             for specie in dict:
                 species_count = dict[specie]
                 totolCount = dict_speciesCount[specie]
+                posi = "\t".join(map(str, posi.split("-")))
                 output1_open.write(f"{posi}\t{specie}\t{species_count}\t{totolCount}\n")
         output1_open.close()
 
-# rule oligoCount:
-#     input:
-#         f"{dataDir}/{{sample}}/filtering{kmerSize}/allOligos_reverse.calculated2",
-#         f"{dataDir}/{{sample}}/filtering{kmerSize}/allOligos_reverse.filtered",
-#         f"{dataDir}/{{sample}}/checkSpecifity{kmerSize}/allOligos_reverse.filtered.spec.fasta",
-#         f"{dataDir}/{{sample}}/dimer{kmerSize}/allOligos_reverse.set.fasta"
-#     output:
-#         f"{dataDir}/{{sample}}/evaluation{kmerSize}/allOligo_before.tsv",
-#         f"{dataDir}/{{sample}}/evaluation{kmerSize}/allOligo_after1.tsv",
-#         f"{dataDir}/{{sample}}/evaluation{kmerSize}/allOligo_after2.tsv",
-#         f"{dataDir}/{{sample}}/evaluation{kmerSize}/allOligo_after3.tsv"
-#     run:
-#         import sys
-#         import pandas as pd
-#         from collections import defaultdict
-#
-#         input1 = input[0]
-#         input2 = input[1]
-#         input3 = input[2]
-#         input4 = input[3]
-#
-#         tables = {
-#             input1: output[0],
-#             input2: output[1]
-#         }
-#
-#         fastas = {
-#             input3: output[2],
-#             input4: output[3]
-#         }
-#
-#         for table in tables:
-#             df = pd.read_table(table, sep="\t", header=0)
-#             df = df.sort_values(["position", "kmerCount"], ascending=False)
-#             df_first = df.groupby("position").first().reset_index()
-#             df_first=df_first[["position", "kmerCount"]]
-#             df_first.to_csv(tables[table] , sep="\t", index=False)
-#
-#         for fasta in fastas:
-#             dict = defaultdict(list)
-#             input_open = open(fasta, "r")
-#             output_open = open(fastas[fasta], "w")
-#
-#             for line in input_open:
-#                 line = line.rstrip("\n")
-#                 if line.startswith(">"):
-#                     ls = line.split("|")
-#                     position = ls[1].split()[1]
-#                     count = int(ls[2].split()[1])
-#                     # print(ls)
-#                     # print(position, count)
-#                     dict[position].append(count)
-#
-#             output_open.write(f"position\tkmerCount\n")
-#             for key in dict:
-#                 ls = sorted(dict[key])
-#                 output_open.write(f"{key}\t{ls[-1]}\n")
-#
-#             input_open.close()
-#             output_open.close()
+rule oligoCount:
+    input:
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmercount.sorted.calculated.txt",
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmerCount.sorted.calculated.filtered.txt",
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmerCount.sorted.calculated.filtered.spec.txt",
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/allOligo.set"
+    output:
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo_before.tsv",
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo_after1.tsv",
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo_after2.tsv",
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo_after3.tsv"
+    run:
+        import sys
+        import pandas as pd
+        from collections import defaultdict
+
+
+        for index in range(len(input)):
+            df = pd.read_table(input[index], sep="\t", header=0, index_col=0)
+            df = df.sort_values(["start", "kmerCount"], ascending=False)
+            df_first = df.groupby("start", as_index=False).first()
+            df_first = df_first[['kmerCount', 'CG%', 'Entropy', 'Tm', 'homodimer-dG', 'hairpin-dG',
+       'start', 'end']]
+            df_first.to_csv(output[index] , sep="\t", index=True)

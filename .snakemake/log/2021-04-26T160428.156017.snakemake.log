@@ -1,0 +1,3 @@
+SyntaxError in line 93 of /datater/wu/MSSPE/rules-basic/all_evaluation.smk:
+EOL while scanning string literal
+  File "/datater/wu/MSSPE/snakefile-basic", line 126, in <module>

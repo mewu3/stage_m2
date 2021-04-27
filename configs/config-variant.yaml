@@ -1,0 +1,65 @@
+dataDir: "/datater/wu/data/MSSPE-variant"
+
+refSeq : "/datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna"
+taxID: "/datater/wu/data/ncbiTaxonomy/nucl_gb.accession2taxid" # ftp://ftp.ncbi.nih.gov/pub/taxonomy/accession2taxid/
+taxLineage: "/datater/wu/data/ncbiTaxonomy/ncbi_lineages_2021-04-23.csv" # ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy and https://github.com/zyxue/ncbitax2lin
+
+samples:
+    # enterovirus: "/datater/wu/data/enterovirus.fasta"
+    # zika : "/datater/wu/data/ZIKV-96seqs.fasta"
+    coronavirus: "/datater/wu/data/coronavirus.fasta"
+
+### all_preprocessing
+jellyfish:
+    kmer-size: 13
+    hash-size: 3G
+    thread: 12
+    lower-count: 0
+
+### filtering & dimer
+oligotm:
+    monovalent-conc: 50 # unity mM
+    divalent-conc: 0 # unity mM
+    dNTP-conc: 0 # unity mM
+    dna-conc: 50 # unity nM
+    thermodynamic-para: 1
+    salt-correlation: 1
+
+dimer-deltaG: -9000 # value inferior than this one will be eliminated
+
+GC-upper: 40 # inferir than this value will be eliminated
+GC-lower: 60  # superior than this value will be eliminated
+
+### checkSpecifity
+blast:
+    thread: 12
+    max-target-seqs: 5
+
+### evaluation
+mafft:
+    # excution parameters
+    threads: -1 # automatic
+    ## choose algorithm
+    algorithm: "--auto"
+    ## parameters
+    op: 1.53 # default
+    ep: 0.123 # default
+    bl: 62 # default
+    jtt: 62 # default
+    tm: 62 # default
+    fmodel: "off" # default
+    ## outpet parameters
+    clustalout: "off" # customized
+    inputorder: "on" # default
+    reorder: "off" # default
+    treeout: "off" # default
+    quiet: "off" # default
+
+clustering: "True"
+cd-hit:
+    identity: 0.99
+    thread: 8
+    memory: 16000
+
+step: 500
+overlap: 250
