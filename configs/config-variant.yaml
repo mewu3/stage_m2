@@ -9,15 +9,14 @@ samples:
     # zika : "/datater/wu/data/ZIKV-96seqs.fasta"
     coronavirus: "/datater/wu/data/coronavirus.fasta"
 
-### all_preprocessing
+### snakemafile all_preprocessing
 jellyfish:
-    kmer-size: 13
+    kmer-size: 15
     hash-size: 3G
     thread: 12
-    lower-count: 0
 
-### filtering & dimer
-oligotm:
+### snakefile reverse_kmer_filter
+filter-oligotm:
     monovalent-conc: 50 # unity mM
     divalent-conc: 0 # unity mM
     dNTP-conc: 0 # unity mM
@@ -25,20 +24,24 @@ oligotm:
     thermodynamic-para: 1
     salt-correlation: 1
 
-dimer-deltaG: -9000 # value inferior than this one will be eliminated
+homodimer-deltaG: -9000 # value inferior than this one will be eliminated
 
 GC-upper: 40 # inferir than this value will be eliminated
 GC-lower: 60  # superior than this value will be eliminated
 
-### checkSpecifity
-blast:
-    thread: 12
-    max-target-seqs: 5
+### snakefile reverse_kmer_spec
+bowtie:
+    threads: 12
 
-### evaluation
+### snakefile reverse_kmer_dimer
+cd-hit:
+    identity: 0.99
+    thread: 8
+    memory: 16000
+
 mafft:
     # excution parameters
-    threads: -1 # automatic
+    threads: 12
     ## choose algorithm
     algorithm: "--auto"
     ## parameters
@@ -55,11 +58,16 @@ mafft:
     treeout: "off" # default
     quiet: "off" # default
 
-clustering: "True"
-cd-hit:
-    identity: 0.99
-    thread: 8
-    memory: 16000
+dimer-oligotm:
+    monovalent-conc: 50 # unity mM
+    divalent-conc: 0 # unity mM
+    dNTP-conc: 0 # unity mM
+    dna-conc: 50 # unity nM
+    thermodynamic-para: 1
+    salt-correlation: 1
 
 step: 500
-overlap: 250
+
+heterodimer-deltaG: -9000
+
+### snakemake all_evaluation

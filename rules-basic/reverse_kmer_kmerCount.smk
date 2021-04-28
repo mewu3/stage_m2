@@ -13,7 +13,7 @@ rule countKmer1:
         -m {params.kmerSize} \
         -s {params.hash} \
         -t {params.thread} \
-        -o {output} {input}
+        -o {output} {input} \
         """
 
 rule countKmer2:
@@ -22,7 +22,9 @@ rule countKmer2:
     output:
         f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/reverse{{seg}}.Kmercount.txt"
     shell:
-        "jellyfish dump -c {input} > {output}"
+        """
+        jellyfish dump -c {input} > {output}
+        """
 
 rule calculateKmer_sort:
     input:

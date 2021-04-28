@@ -1,0 +1,4 @@
+CreateRuleException in line 1 of /datater/wu/MSSPE/rules-clustering/reverse_kmer_dimer.smk:
+The name checkHeterodimer is already used by another rule
+  File "/datater/wu/MSSPE/snakefile-clustering", line 132, in <module>
+  File "/datater/wu/MSSPE/rules-clustering/reverse_kmer_dimer.smk", line 1, in <module>

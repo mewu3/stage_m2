@@ -1,0 +1,99 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	MSA
+	1	all
+	1	checkHeterodimer
+	1	clustering
+	1	evaluation1
+	1	evaluation2
+	1	evaluation3
+	1	filtering2
+	1	filtering3
+	1	removeDuplicateSeq
+	1	specific1
+	1	specific2
+	1	specific3
+	1	specific4
+	1	splitIntoOverlappingWindows
+	15
+Select jobs to execute...
+
+[Tue Apr 27 15:21:29 2021]
+rule removeDuplicateSeq:
+    input: /datater/wu/data/enterovirus.fasta
+    output: /datater/wu/data/MSSPE-clustering/enterovirus/enterovirus.uniq
+    jobid: 1
+    wildcards: sample=enterovirus
+
+
+[Tue Apr 27 15:21:29 2021]
+rule specific2:
+    input: /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna
+    output: /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.2.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.3.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.4.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.rev.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.rev.2.ebwt
+    jobid: 8
+
+[Tue Apr 27 15:21:29 2021]
+Finished job 1.
+1 of 15 steps (7%) done
+Select jobs to execute...
+
+[Tue Apr 27 15:21:29 2021]
+rule evaluation1:
+    input: /datater/wu/data/MSSPE-clustering/enterovirus/enterovirus.uniq, /datater/wu/data/ncbiTaxonomy/nucl_gb.accession2taxid, /datater/wu/data/ncbiTaxonomy/ncbi_lineages_2021-04-23.csv
+    output: /datater/wu/data/MSSPE-clustering/enterovirus/kmer15/intermediate/aceID-taxID-species.tsv
+    jobid: 12
+    wildcards: sample=enterovirus
+
+[Tue Apr 27 15:21:29 2021]
+rule clustering:
+    input: /datater/wu/data/MSSPE-clustering/enterovirus/enterovirus.uniq
+    output: /datater/wu/data/MSSPE-clustering/enterovirus/enterovirus0.99.uniq
+    jobid: 2
+    wildcards: sample=enterovirus
+
+[Tue Apr 27 15:21:41 2021]
+Finished job 2.
+2 of 15 steps (13%) done
+Select jobs to execute...
+
+[Tue Apr 27 15:21:41 2021]
+rule MSA:
+    input: /datater/wu/data/MSSPE-clustering/enterovirus/enterovirus0.99.uniq
+    output: /datater/wu/data/MSSPE-clustering/enterovirus/enterovirus0.99.msa
+    log: /datater/wu/data/MSSPE-clustering/enterovirus/log/mafft.log
+    jobid: 3
+    wildcards: sample=enterovirus
+
+[Tue Apr 27 15:22:12 2021]
+Finished job 8.
+3 of 15 steps (20%) done
+[Tue Apr 27 15:24:06 2021]
+Finished job 3.
+4 of 15 steps (27%) done
+Select jobs to execute...
+
+[Tue Apr 27 15:24:06 2021]
+checkpoint splitIntoOverlappingWindows:
+    input: /datater/wu/data/MSSPE-clustering/enterovirus/enterovirus0.99.msa
+    output: /datater/wu/data/MSSPE-clustering/enterovirus/splitFiles
+    jobid: 5
+    wildcards: sample=enterovirus
+Downstream jobs will be updated after completion.
+
+Updating job filtering2.
+MissingInputException in line 1 of /datater/wu/MSSPE/rules-clustering/reverse_kmer_filter.smk:
+Missing input files for rule filtering1:
+/datater/wu/data/MSSPE-clustering/enterovirus/kmer15/intermediate/reverse7905-8410.Kmercount.sorted.txt
+Removing output files of failed job splitIntoOverlappingWindows since they might be corrupted:
+/datater/wu/data/MSSPE-clustering/enterovirus/splitFiles
+[Tue Apr 27 15:24:27 2021]
+Finished job 12.
+5 of 14 steps (36%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/MSSPE/.snakemake/log/2021-04-27T152128.414063.snakemake.log

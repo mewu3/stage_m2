@@ -4,12 +4,12 @@ rule filtering1:
     output:
         f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmerCount.sorted.calculated.txt"
     params:
-        monovalentConc = config["oligotm"]["monovalent-conc"],
-        divalentConc = config["oligotm"]["divalent-conc"],
-        dNTPConc = config["oligotm"]["dNTP-conc"],
-        dnaConc = config["oligotm"]["dna-conc"],
-        thermodynamicPara = config["oligotm"]["thermodynamic-para"],
-        saltCorrelation = config["oligotm"]["salt-correlation"],
+        monovalentConc = config["filter-oligotm"]["monovalent-conc"],
+        divalentConc = config["filter-oligotm"]["divalent-conc"],
+        dNTPConc = config["filter-oligotm"]["dNTP-conc"],
+        dnaConc = config["filter-oligotm"]["dna-conc"],
+        thermodynamicPara = config["filter-oligotm"]["thermodynamic-para"],
+        saltCorrelation = config["filter-oligotm"]["salt-correlation"],
     run:
         import os
         from Bio.SeqUtils import GC
@@ -120,7 +120,7 @@ rule filtering2:
     output:
         f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmerCount.sorted.calculated.filtered.txt"
     params:
-        deltaG = config["dimer-deltaG"],
+        deltaG = config["homodimer-deltaG"],
         GCUp = config["GC-upper"],
         GCDown = config["GC-lower"],
     run:

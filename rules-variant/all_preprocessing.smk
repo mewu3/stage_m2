@@ -29,10 +29,8 @@ rule countAllKmer2:
         f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.jf"
     output:
         f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.txt"
-    params:
-        lowerCount = config["jellyfish"]["lower-count"]
     shell:
-        "jellyfish dump -c -t -L {params.lowerCount} {input} > {output}"
+        "jellyfish dump -c {input} > {output}"
 
 rule sortAllKmer:
     input:

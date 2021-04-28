@@ -1,15 +1,15 @@
-rule calculate_TmCGHomodierHairpin:
+rule filtering1:
     input:
-        f"{dataDir}/{{sample}}{clustering_identity}/kmer{kmerSize}/intermediate/reverse{{seg}}.Kmercount.sorted.txt"
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/reverse{{seg}}.Kmercount.sorted.txt"
     output:
-        f"{dataDir}/{{sample}}{clustering_identity}/kmer{kmerSize}/intermediate/reverse{{seg}}.Kmercount.sorted.calculated.txt"
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/reverse{{seg}}.Kmercount.sorted.calculated.txt"
     params:
-        monovalentConc = config["oligotm"]["monovalent-conc"],
-        divalentConc = config["oligotm"]["divalent-conc"],
-        dNTPConc = config["oligotm"]["dNTP-conc"],
-        dnaConc = config["oligotm"]["dna-conc"],
-        thermodynamicPara = config["oligotm"]["thermodynamic-para"],
-        saltCorrelation = config["oligotm"]["salt-correlation"],
+        monovalentConc = config["filter-oligotm"]["monovalent-conc"],
+        divalentConc = config["filter-oligotm"]["divalent-conc"],
+        dNTPConc = config["filter-oligotm"]["dNTP-conc"],
+        dnaConc = config["filter-oligotm"]["dna-conc"],
+        thermodynamicPara = config["filter-oligotm"]["thermodynamic-para"],
+        saltCorrelation = config["filter-oligotm"]["salt-correlation"],
     run:
         import os
         from Bio.SeqUtils import GC
@@ -84,8 +84,11 @@ rule calculate_TmCGHomodierHairpin:
 
             return lc
 
+        startPosi = wildcards.seg.split("-")[0]
+        endPosi = wildcards.seg.split("-")[1]
+
         output1Open = open(output[0], "w")
-        output1Open.write(f"oligo\tkmerCount\tCG%\tEntropy\tTm\thomodimer-dG\thairpin-dG\n")
+        output1Open.write(f"oligo\tkmerCount\tCG%\tEntropy\tTm\thomodimer-dG\thairpin-dG\tstart\tend\n")
 
         input1Open = open(input[0], "r")
         for li in input1Open:
@@ -109,38 +112,37 @@ rule calculate_TmCGHomodierHairpin:
                                                  dna_conc = params.dnaConc).dg
             hairpin_dg = primer3.calcHairpin(oligo).dg
             entropy = estimate_shannon_entropy(oligo)
-            output1Open.write(f"{oligo}\t{count}\t{cgPercent:.3f}\t{entropy:.3f}\t{tm:.3f}\t{homodimer_dg:.3f}\t{hairpin_dg:.3f}\n")
+            output1Open.write(f"{oligo}\t{count}\t{cgPercent:.3f}\t{entropy:.3f}\t{tm:.3f}\t{homodimer_dg:.3f}\t{hairpin_dg:.3f}\t{startPosi}\t{endPosi}\n")
 
         input1Open.close()
         output1Open.close()
 
 def aggregate_reverseInput(wildcards):
     checkpoint_output = checkpoints.splitIntoOverlappingWindows.get(**wildcards).output[0]
-    return expand(f"{dataDir}/{{sample}}{clustering_identity}/kmer{kmerSize}/intermediate/reverse{{seg}}.Kmercount.sorted.calculated.txt",
+    return expand(f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/reverse{{seg}}.Kmercount.sorted.calculated.txt",
                   sample = wildcards.sample,
                   seg = glob_wildcards(os.path.join(checkpoint_output, "reverse{seg}.fasta")).seg)
 
-rule aggregateAllReverseOligo:
+rule filtering2:
     input:
         aggregate_reverseInput
     output:
-        f"{dataDir}/{{sample}}{clustering_identity}/kmer{kmerSize}/allKmercount.sorted.calculated.txt"
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmercount.sorted.calculated.txt"
     shell:
         """
-        echo -e "oligo\tkmerCount\tCG%\tEntropy\tTm\thomodimer-dG\thairpin-dG\n" > {output}
+        echo -e "oligo\tkmerCount\tCG%\tEntropy\tTm\thomodimer-dG\thairpin-dG\tstart\tend\n" > {output}
         sed -s 1d {input} >> {output}
         """
 
-rule filterAggregateAllReverseOligo:
+rule filtering3:
     input:
-        f"{dataDir}/{{sample}}{clustering_identity}/kmer{kmerSize}/allKmercount.sorted.calculated.txt"
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmercount.sorted.calculated.txt"
     output:
-        f"{dataDir}/{{sample}}{clustering_identity}/kmer{kmerSize}/allKmerCount.sorted.calculated.filtered.txt"
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmerCount.sorted.calculated.filtered.txt"
     params:
-        deltaG = config["dimer-deltaG"],
+        deltaG = config["homodimer-deltaG"],
         GCUp = config["GC-upper"],
         GCDown = config["GC-lower"],
-        LC = config["LC"]
     run:
         import pandas as pd
         import os

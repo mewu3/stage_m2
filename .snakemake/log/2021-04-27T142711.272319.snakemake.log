@@ -1,0 +1,4 @@
+WorkflowError in line 133 of /datater/wu/MSSPE/snakefile-clustering:
+Failed to open source file /datater/wu/MSSPE/rules-clustering/evaluation.smk
+FileNotFoundError: [Errno 2] No such file or directory: '/datater/wu/MSSPE/rules-clustering/evaluation.smk'
+  File "/datater/wu/MSSPE/snakefile-clustering", line 133, in <module>

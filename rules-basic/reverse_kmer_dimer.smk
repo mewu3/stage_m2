@@ -4,12 +4,12 @@ rule checkHeterodimer:
     output:
         f"{dataDir}/{{sample}}/kmer{kmerSize}/allOligo.set"
     params:
-        monovalentConc = config["oligotm"]["monovalent-conc"],
-        divalentConc = config["oligotm"]["divalent-conc"],
-        dNTPConc = config["oligotm"]["dNTP-conc"],
-        dnaConc = config["oligotm"]["dna-conc"],
-        thermodynamicPara = config["oligotm"]["thermodynamic-para"],
-        saltCorrelation = config["oligotm"]["salt-correlation"]
+        monovalentConc = config["dimer-oligotm"]["monovalent-conc"],
+        divalentConc = config["dimer-oligotm"]["divalent-conc"],
+        dNTPConc = config["dimer-oligotm"]["dNTP-conc"],
+        dnaConc = config["dimer-oligotm"]["dna-conc"],
+        thermodynamicPara = config["dimer-oligotm"]["thermodynamic-para"],
+        saltCorrelation = config["dimer-oligotm"]["salt-correlation"]
     run:
         import pandas as pd
         from Bio import SeqIO

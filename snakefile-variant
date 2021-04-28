@@ -15,6 +15,8 @@ refSeqFile = os.path.splitext(refSeq)[0]
 kmerSize = config["jellyfish"]["kmer-size"]
 clusterIden = config["cd-hit"]["identity"]
 
+report: f"{dataDir}/{{sample}}/kmer{kmerSize}/report.html"
+
 ### functions
 def fetchConfigParameters():
     if config["mafft"]["fmodel"] == "on":
@@ -133,7 +135,11 @@ rule all:
             sample = samples
         ),
         expand(
-            f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligos_reverse.set.coverage",
+            f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo.set.coverage",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo_after3.tsv",
             sample = samples
         )
 

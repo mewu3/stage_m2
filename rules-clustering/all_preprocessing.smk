@@ -69,7 +69,7 @@ checkpoint splitIntoOverlappingWindows:
     input:
         f"{dataDir}/{{sample}}/{{sample}}{clustering_identity}.msa"
     output:
-        directory(f"{dataDir}/{{sample}}{clustering_identity}/splitFiles")
+        directory(f"{dataDir}/{{sample}}/splitFiles")
     params:
         step = config["step"],
         overlap = config["overlap"]

@@ -5,14 +5,18 @@ import os
 from collections import defaultdict
 from Bio import SeqIO
 
+# python3 scripts/evaluation-basic.py /datater/wu/data/MSSPE-basic/enterovirus/kmer15/allOligo.set /datater/wu/data/MSSPE-basic/enterovirus/enterovirus.msa /datater/wu/data/MSSPE-basic/enterovirus/kmer15/evaluation/report.html /datater/wu/data/MSSPE-basic/enterovirus/kmer15/evaluation/style.css enterovirus
+
+
 inputOligo = sys.argv[1]
 inputMSA = sys.argv[2]
 htmlFile = sys.argv[3]
 cssFile = sys.argv[4]
+virusName = sys.argv[5]
 
 records = list(SeqIO.parse(inputMSA, "fasta"))
 seqLength = len(records[0].seq)
-virusName = "ZIKA virus"
+# virusName = "ZIKA virus"
 
 dict_kmerInfo = defaultdict(list)
 
@@ -116,7 +120,7 @@ htmlFileOpen.write(f"""<!doctype html>
 htmlFileOpen.close()
 
 # fichier CSS ##################################################################
-cssFileOpen = open("style.css", "w")
+cssFileOpen = open(cssFile, "w")
 
 cssFileOpen.write('''@import 'https://code.highcharts.com/css/highcharts.css';
 #container {

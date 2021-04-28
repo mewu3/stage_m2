@@ -3,8 +3,6 @@ rule removeDuplicateSeq:
         lambda wildcards: config["samples"][wildcards.sample]
     output:
         f"{dataDir}/{{sample}}/{{sample}}.uniq"
-    conda:
-        "envs/seqkit.yaml"
     shell:
         "lib/cd-hit-v4.8.1-2019-0228/cd-hit-auxtools/cd-hit-dup -i {input} -o {output}"
 
@@ -14,7 +12,7 @@ rule MSA:
     output:
         f"{dataDir}/{{sample}}/{{sample}}.msa"
     log:
-        f"{dataDir}/{{sample}}/log/mafft.log"
+        f"{dataDir}/{{sample}}/mafft.log"
     conda:
         "envs/mafft.yaml"
     params:
@@ -32,7 +30,8 @@ rule MSA:
         treeout = config["mafft"]["treeout"],
         quiet = config["mafft"]["quiet"]
     shell:
-        "mafft {params.algorithm} \
+        """
+        mafft {params.algorithm} \
         --thread {params.threads} \
         --op {params.op} \
         --ep {params.ep} \
@@ -46,7 +45,8 @@ rule MSA:
         {params.treeout} \
         {params.quiet} \
         {input} > {output} \
-        2> {log}"
+        2> {log}
+        """
 
 checkpoint splitIntoOverlappingWindows:
     input:

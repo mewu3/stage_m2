@@ -13,6 +13,8 @@ refSeqFile = os.path.splitext(refSeq)[0]
 
 kmerSize = config["jellyfish"]["kmer-size"]
 
+report: f"{dataDir}/{{sample}}/kmer{kmerSize}/report.html"
+
 def fetchConfigParameters():
     if config["mafft"]["fmodel"] == "on":
         config["mafft"]["fmodel"] = "--fmodel"

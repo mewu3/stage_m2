@@ -28,9 +28,7 @@ rule evaluation2:
         f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/aceID-taxID-species.tsv",
         f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.spec.bowtie"
     output:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligos_reverse.set.coverage"
-    params:
-        splitFilesDir = f"{dataDir}/{{sample}}/splitFiles"
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo.set.coverage"
     run:
         import os
         import sys
@@ -74,7 +72,9 @@ rule evaluation2:
         outputOpen = open(output[0], "w")
         for id in dict_idAce:
             dict = defaultdict(int)
-            for ace in  dict_idAce[id]:
+            for specie in dict_speciesCount:
+                dict[specie]=0
+            for ace in dict_idAce[id]:
                 specie = dict_aceIdSpecie[ace]
                 dict[specie]+=1
             id = id.lstrip("p")
@@ -85,3 +85,11 @@ rule evaluation2:
                 totolCount = dict_speciesCount[specie]
                 outputOpen.write(f"{posi}\t{specie}\t{species_count}\t{totolCount}\n")
         outputOpen.close()
+
+rule evaluation3:
+    input:
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/allOligo.set"
+    output:
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo_after3.tsv"
+    shell:
+        "cp {input[0]} {output[0]}"
