@@ -1,0 +1,8 @@
+Building DAG of jobs...
+InputFunctionException in line 96 of /datater/wu/MSSPE/scripts/test.smk:
+Error:
+  AttributeError: 'Wildcards' object has no attribute 'sample'
+Wildcards:
+
+Traceback:
+  File "/datater/wu/MSSPE/scripts/test.smk", line 99, in <lambda>

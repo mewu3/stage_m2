@@ -1,0 +1,11 @@
+Building DAG of jobs...
+Updating job filtering2.
+InputFunctionException in line 63 of /datater/wu/MSSPE/rules-clustering/reverse_kmer_kmerCount.smk:
+Error:
+  WildcardError:
+    No values given for wildcard 'seg'.
+Wildcards:
+  sample=zika
+  seg=3263-3764
+Traceback:
+  File "/datater/wu/MSSPE/rules-clustering/reverse_kmer_kmerCount.smk", line 65, in <lambda>

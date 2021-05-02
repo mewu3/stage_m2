@@ -10,3 +10,9 @@
 [submodule "reptyr"]
 	path = reptyr
 	url = https://github.com/nelhage/reptyr.git
+[submodule "lib/gerbil"]
+	path = lib/gerbil
+	url = https://github.com/uni-halle/gerbil.git
+[submodule "lib/squeakr"]
+	path = lib/squeakr
+	url = https://github.com/splatlab/squeakr.git

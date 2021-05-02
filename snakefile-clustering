@@ -1,20 +1,14 @@
 #!/usr/bin/env python3.8
 import os
 
-configfile: "configs/config-clustering.yaml"
-
+configfile: "config.yaml"
 samples = list(config["samples"].keys())
-refSeq = config["refSeq"]
-taxID = config["taxID"]
-taxLineage = config["taxLineage"]
-
+file_refSeq = config["file_refSeq"]
+file_aceIDtaxID = config["file_aceIDtaxID"]
+file_taxIDLineage = config["file_taxIDLineage"]
 dataDir = config["dataDir"]
-refSeqFile = os.path.splitext(refSeq)[0]
-
-clustering_identity = config["cd-hit"]["identity"]
-kmerSize = config["jellyfish"]["kmer-size"]
-
-report: f"{dataDir}/{{sample}}/kmer{kmerSize}/report.html"
+kmerSize = config["kmerSize"]
+clusterIdentity = config["cd-hit"]["identity"]
 
 def fetchConfigParameters():
     if config["mafft"]["fmodel"] == "on":
@@ -63,11 +57,11 @@ rule all:
             sample = samples
         ),
         expand(
-            f"{dataDir}/{{sample}}/{{sample}}{clustering_identity}.uniq",
+            f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.uniq",
             sample = samples
         ),
         expand(
-            f"{dataDir}/{{sample}}/{{sample}}{clustering_identity}.msa",
+            f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.msa",
             sample = samples
             ),
         expand(
@@ -83,7 +77,7 @@ rule all:
             sample = samples
         ),
         expand(
-            f"{refSeqFile}.DB.{{ext}}",
+            f"{file_refSeq}.DB.{{ext}}",
             sample = samples,
             ext = ["1.ebwt", "2.ebwt", "3.ebwt", "4.ebwt", "rev.1.ebwt", "rev.2.ebwt"]
         ),
@@ -125,9 +119,9 @@ rule all:
             sample = samples
         )
 
-include: "rules-clustering/all_preprocessing.smk"
-include: "rules-clustering/reverse_kmer_kmerCount.smk"
-include: "rules-clustering/reverse_kmer_filter.smk"
-include: "rules-clustering/reverse_kmer_spec.smk"
-include: "rules-clustering/reverse_kmer_dimer.smk"
-include: "rules-clustering/all_evaluation.smk"
+include: "rules/clust_preprocessing.smk"
+include: "rules/basic_kmerCount.smk"
+include: "rules/basic_filtering.smk"
+include: "rules/basic_specificCheck.smk"
+include: "rules/basic_dimerCheck.smk"
+include: "rules/basic_evaluation.smk"

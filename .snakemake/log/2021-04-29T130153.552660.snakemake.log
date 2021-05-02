@@ -1,0 +1,207 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 6
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	MSA
+	1	all
+	1	checkHeterodimer
+	1	clustering
+	1	evaluation1
+	1	evaluation2
+	1	evaluation3
+	1	filtering2
+	1	filtering3
+	1	removeDuplicateSeq
+	1	specific1
+	1	specific3
+	1	specific4
+	1	splitIntoOverlappingWindows
+	14
+Select jobs to execute...
+
+[Thu Apr 29 13:01:54 2021]
+rule removeDuplicateSeq:
+    input: /datater/wu/data/ZIKV-96seqs.fasta
+    output: /datater/wu/data/MSSPE-clustering/zika/zika.uniq
+    jobid: 1
+    wildcards: sample=zika
+
+[Thu Apr 29 13:01:54 2021]
+Finished job 1.
+1 of 14 steps (7%) done
+Select jobs to execute...
+
+[Thu Apr 29 13:01:54 2021]
+rule evaluation1:
+    input: /datater/wu/data/MSSPE-clustering/zika/zika.uniq, /datater/wu/data/ncbiTaxonomy/nucl_gb.accession2taxid, /datater/wu/data/ncbiTaxonomy/ncbi_lineages_2021-04-23.csv
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/aceID-taxID-species.tsv
+    jobid: 12
+    wildcards: sample=zika
+
+[Thu Apr 29 13:01:54 2021]
+rule clustering:
+    input: /datater/wu/data/MSSPE-clustering/zika/zika.uniq
+    output: /datater/wu/data/MSSPE-clustering/zika/zika0.99.uniq
+    jobid: 2
+    wildcards: sample=zika
+
+[Thu Apr 29 13:01:55 2021]
+Finished job 2.
+2 of 14 steps (14%) done
+Select jobs to execute...
+
+[Thu Apr 29 13:01:55 2021]
+rule MSA:
+    input: /datater/wu/data/MSSPE-clustering/zika/zika0.99.uniq
+    output: /datater/wu/data/MSSPE-clustering/zika/zika0.99.msa
+    log: /datater/wu/data/MSSPE-clustering/zika/log/mafft.log
+    jobid: 3
+    wildcards: sample=zika
+
+[Thu Apr 29 13:02:05 2021]
+Finished job 3.
+3 of 14 steps (21%) done
+Select jobs to execute...
+
+[Thu Apr 29 13:02:05 2021]
+checkpoint splitIntoOverlappingWindows:
+    input: /datater/wu/data/MSSPE-clustering/zika/zika0.99.msa
+    output: /datater/wu/data/MSSPE-clustering/zika/splitFiles
+    jobid: 5
+    wildcards: sample=zika
+Downstream jobs will be updated after completion.
+
+Updating job filtering2.
+[Thu Apr 29 13:02:06 2021]
+Finished job 5.
+4 of 186 steps (2%) done
+Select jobs to execute...
+
+[Thu Apr 29 13:02:06 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-clustering/zika/splitFiles/reverse5271-5772.fasta
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse5271-5772.jf
+    jobid: 63
+    wildcards: sample=zika, seg=5271-5772
+
+
+[Thu Apr 29 13:02:06 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-clustering/zika/splitFiles/reverse5773-6274.fasta
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse5773-6274.jf
+    jobid: 107
+    wildcards: sample=zika, seg=5773-6274
+
+
+[Thu Apr 29 13:02:06 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-clustering/zika/splitFiles/reverse251-752.fasta
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse251-752.jf
+    jobid: 143
+    wildcards: sample=zika, seg=251-752
+
+
+[Thu Apr 29 13:02:06 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-clustering/zika/splitFiles/reverse1757-2258.fasta
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse1757-2258.jf
+    jobid: 91
+    wildcards: sample=zika, seg=1757-2258
+
+
+[Thu Apr 29 13:02:06 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-clustering/zika/splitFiles/reverse9538-10039.fasta
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse9538-10039.jf
+    jobid: 83
+    wildcards: sample=zika, seg=9538-10039
+
+[Thu Apr 29 13:05:39 2021]
+Finished job 12.
+5 of 186 steps (3%) done
+Select jobs to execute...
+
+[Thu Apr 29 13:05:39 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-clustering/zika/splitFiles/reverse9789-10290.fasta
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse9789-10290.jf
+    jobid: 75
+    wildcards: sample=zika, seg=9789-10290
+
+Terminating processes on user request, this might take some time.
+[Thu Apr 29 13:13:10 2021]
+Error in rule countKmer1:
+    jobid: 63
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse5271-5772.jf
+    shell:
+        
+        jellyfish count         -m 15         -s 3G         -t 12         -o /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse5271-5772.jf /datater/wu/data/MSSPE-clustering/zika/splitFiles/reverse5271-5772.fasta
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job countKmer1 since they might be corrupted:
+/datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse5271-5772.jf
+[Thu Apr 29 13:13:10 2021]
+[Thu Apr 29 13:13:10 2021]
+Error in rule countKmer1:
+Error in rule countKmer1:
+    jobid: 91
+    jobid: 83
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse1757-2258.jf
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse9538-10039.jf
+    shell:
+        
+        jellyfish count         -m 15         -s 3G         -t 12         -o /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse1757-2258.jf /datater/wu/data/MSSPE-clustering/zika/splitFiles/reverse1757-2258.fasta
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+[Thu Apr 29 13:13:10 2021]
+    shell:
+        
+        jellyfish count         -m 15         -s 3G         -t 12         -o /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse9538-10039.jf /datater/wu/data/MSSPE-clustering/zika/splitFiles/reverse9538-10039.fasta
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+[Thu Apr 29 13:13:10 2021]
+
+Error in rule countKmer1:
+
+Error in rule countKmer1:
+Removing output files of failed job countKmer1 since they might be corrupted:
+/datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse1757-2258.jf
+    jobid: 143
+[Thu Apr 29 13:13:10 2021]
+    jobid: 107
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse251-752.jf
+Error in rule countKmer1:
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse5773-6274.jf
+    shell:
+        
+        jellyfish count         -m 15         -s 3G         -t 12         -o /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse251-752.jf /datater/wu/data/MSSPE-clustering/zika/splitFiles/reverse251-752.fasta
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    jobid: 75
+Removing output files of failed job countKmer1 since they might be corrupted:
+/datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse9538-10039.jf
+    shell:
+        
+        jellyfish count         -m 15         -s 3G         -t 12         -o /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse5773-6274.jf /datater/wu/data/MSSPE-clustering/zika/splitFiles/reverse5773-6274.fasta
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse9789-10290.jf
+
+    shell:
+        
+        jellyfish count         -m 15         -s 3G         -t 12         -o /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse9789-10290.jf /datater/wu/data/MSSPE-clustering/zika/splitFiles/reverse9789-10290.fasta
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job countKmer1 since they might be corrupted:
+/datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse251-752.jf
+Removing output files of failed job countKmer1 since they might be corrupted:
+/datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse5773-6274.jf
+Removing output files of failed job countKmer1 since they might be corrupted:
+/datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse9789-10290.jf
+Complete log: /datater/wu/MSSPE/.snakemake/log/2021-04-29T130153.552660.snakemake.log

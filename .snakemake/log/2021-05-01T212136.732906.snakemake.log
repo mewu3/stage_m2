@@ -1,0 +1,8 @@
+Building DAG of jobs...
+Creating report...
+Missing metadata for file /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.1.ebwt. Maybe metadata was deleted or it was created using an older version of Snakemake. This is a non critical warning.
+Missing metadata for file /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.2.ebwt. Maybe metadata was deleted or it was created using an older version of Snakemake. This is a non critical warning.
+Missing metadata for file /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.3.ebwt. Maybe metadata was deleted or it was created using an older version of Snakemake. This is a non critical warning.
+Missing metadata for file /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.4.ebwt. Maybe metadata was deleted or it was created using an older version of Snakemake. This is a non critical warning.
+Missing metadata for file /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.1.ebwt. Maybe metadata was deleted or it was created using an older version of Snakemake. This is a non critical warning.
+Missing metadata for file /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.2.ebwt. Maybe metadata was deleted or it was created using an older version of Snakemake. This is a non critical warning.

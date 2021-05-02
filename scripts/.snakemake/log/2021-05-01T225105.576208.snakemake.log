@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 12 of /datater/wu/MSSPE/scripts/test.smk:
+Missing input files for rule all:
+/datater/wu/data/tmp/allKmerCount.sorted.calculated.filtered.allOligo.set.coverage

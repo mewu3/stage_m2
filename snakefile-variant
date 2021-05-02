@@ -1,21 +1,14 @@
 #!/usr/bin/env python3.8
 import os
 
-### Global variable
-configfile: "configs/config-variant.yaml"
-
+configfile: "config.yaml"
 samples = list(config["samples"].keys())
-refSeq = config["refSeq"]
-taxID = config["taxID"]
-taxLineage = config["taxLineage"]
-
+file_refSeq = config["file_refSeq"]
+file_aceIDtaxID = config["file_aceIDtaxID"]
+file_taxIDLineage = config["file_taxIDLineage"]
 dataDir = config["dataDir"]
-refSeqFile = os.path.splitext(refSeq)[0]
-
-kmerSize = config["jellyfish"]["kmer-size"]
-clusterIden = config["cd-hit"]["identity"]
-
-report: f"{dataDir}/{{sample}}/kmer{kmerSize}/report.html"
+kmerSize = config["kmerSize"]
+clusterIdentity = config["cd-hit"]["identity"]
 
 ### functions
 def fetchConfigParameters():
@@ -64,7 +57,11 @@ rule all:
             sample = samples
         ),
         expand(
-            f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.jf",
+            f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.int.kmc_pre",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.int.kmc_suf",
             sample = samples
         ),
         expand(
@@ -88,7 +85,7 @@ rule all:
             sample = samples
         ),
         expand(
-            f"{refSeqFile}.DB.{{ext}}",
+            f"{file_refSeq}.DB.{{ext}}",
             sample = samples,
             ext = ["1.ebwt", "2.ebwt", "3.ebwt", "4.ebwt", "rev.1.ebwt", "rev.2.ebwt"]
         ),
@@ -101,11 +98,11 @@ rule all:
             sample = samples
         ),
         expand(
-            f"{dataDir}/{{sample}}/{{sample}}{clusterIden}.uniq",
+            f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.uniq",
             sample = samples
         ),
         expand(
-            f"{dataDir}/{{sample}}/{{sample}}{clusterIden}.msa",
+            f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.msa",
             sample = samples
         ),
         expand(
@@ -113,7 +110,7 @@ rule all:
             sample = samples
         ),
         expand(
-            f"{dataDir}/{{sample}}/{{sample}}{clusterIden}.msa.DB.{{ext}}",
+            f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.msa.DB.{{ext}}",
             sample = samples,
             ext = ["1.ebwt", "2.ebwt", "3.ebwt", "4.ebwt", "rev.1.ebwt", "rev.2.ebwt"]
         ),
@@ -143,8 +140,8 @@ rule all:
             sample = samples
         )
 
-include: "rules-variant/all_preprocessing.smk"
-include: "rules-variant/reverse_kmer_filter.smk"
-include: "rules-variant/reverse_kmer_spec.smk"
-include: "rules-variant/reverse_kmer_dimer.smk"
-include: "rules-variant/all_evaluation.smk"
+include: "rules/variant_preprocessing_kmerCount.smk"
+include: "rules/variant_filtering.smk"
+include: "rules/variant_specificCheck.smk"
+include: "rules/variant_dimerCheck.smk"
+include: "rules/variant_evaluation.smk"

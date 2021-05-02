@@ -1,0 +1,33 @@
+Building DAG of jobs...
+Updating job filtering2.
+Job counts:
+	count	jobs
+	1	all
+	32	calculateKmer_sort
+	1	checkHeterodimer
+	18	countKmer1
+	32	countKmer2
+	1	evaluation2
+	1	evaluation3
+	32	filtering1
+	1	filtering2
+	1	filtering3
+	1	specific1
+	1	specific3
+	1	specific4
+	123
+
+[Fri Apr 30 09:58:41 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1260-1762.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1260-1762.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1260-1762.Kmercount.txt
+    jobid: 61
+    wildcards: sample=enterovirusCurated, seg=1260-1762
+
+RuleException in line 22 of /datater/wu/MSSPE/rules-basic/reverse_kmer_kmerCount.smk:
+'Params' object has no attribute 'output'
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 136, in run_jobs
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 145, in run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 156, in _run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 176, in printjob
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 162, in printjob

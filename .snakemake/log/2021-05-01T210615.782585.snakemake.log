@@ -1,0 +1,3 @@
+AttributeError in line 6 of /datater/wu/MSSPE/snakefile-variant:
+'NoneType' object has no attribute 'keys'
+  File "/datater/wu/MSSPE/snakefile-variant", line 6, in <module>

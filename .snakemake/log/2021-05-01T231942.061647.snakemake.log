@@ -1,0 +1,65 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	MSA
+	1	all
+	1	checkHeterodimer
+	1	evaluation1
+	1	evaluation2
+	1	evaluation3
+	1	filtering1
+	1	filtering2
+	1	getKmerPosition1
+	1	getKmerPosition2
+	1	getKmerPosition3
+	1	getKmerPosition4
+	1	specific1
+	1	specific3
+	1	specific4
+	15
+Select jobs to execute...
+
+[Sat May  1 23:19:42 2021]
+rule MSA:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.uniq
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa
+    log: /datater/wu/data/MSSPE-variant/enterovirusCurated/log/mafft.log
+    jobid: 12
+    wildcards: sample=enterovirusCurated
+
+
+[Sat May  1 23:19:42 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/allKmerCount.sorted.calculated.txt
+    jobid: 5
+    wildcards: sample=enterovirusCurated
+
+[Sat May  1 23:19:42 2021]
+rule evaluation1:
+    input: /datater/wu/data/enterovirusCurated.fasta, /datater/wu/data/ncbiTaxonomy/nucl_gb.accession2taxid, /datater/wu/data/ncbiTaxonomy/ncbi_lineages_2021-04-23.csv
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/aceID-taxID-species.tsv
+    jobid: 18
+    wildcards: sample=enterovirusCurated
+
+Terminating processes on user request, this might take some time.
+[Sat May  1 23:19:57 2021]
+Error in rule MSA:
+    jobid: 12
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa
+    log: /datater/wu/data/MSSPE-variant/enterovirusCurated/log/mafft.log (check log file(s) for error message)
+    shell:
+        mafft --auto         --thread 12         --op 1.53         --ep 0.123         --bl 62         --jtt 62         --tm 62                           --inputorder                                    /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.uniq > /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa         2> /datater/wu/data/MSSPE-variant/enterovirusCurated/log/mafft.log
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job MSA since they might be corrupted:
+/datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa
+Removing output files of failed job filtering1 since they might be corrupted:
+/datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/allKmerCount.sorted.calculated.txt
+Removing output files of failed job evaluation1 since they might be corrupted:
+/datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/aceID-taxID-species.tsv
+Complete log: /datater/wu/MSSPE/.snakemake/log/2021-05-01T231942.061647.snakemake.log

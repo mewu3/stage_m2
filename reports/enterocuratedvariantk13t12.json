@@ -1,0 +1,312 @@
+{
+    "total_runtime": 87.75059247016907,
+    "rules": {
+        "MSA": {
+            "mean-runtime": 80.75276446342468,
+            "min-runtime": 80.75276446342468,
+            "max-runtime": 80.75276446342468
+        },
+        "countAllKmer1": {
+            "mean-runtime": 24.580767393112183,
+            "min-runtime": 24.580767393112183,
+            "max-runtime": 24.580767393112183
+        },
+        "countAllKmer2": {
+            "mean-runtime": 0.43041157722473145,
+            "min-runtime": 0.43041157722473145,
+            "max-runtime": 0.43041157722473145
+        },
+        "sortAllKmer": {
+            "mean-runtime": 0.250105619430542,
+            "min-runtime": 0.250105619430542,
+            "max-runtime": 0.250105619430542
+        },
+        "filtering1": {
+            "mean-runtime": 23.072779417037964,
+            "min-runtime": 23.072779417037964,
+            "max-runtime": 23.072779417037964
+        },
+        "filtering2": {
+            "mean-runtime": 2.8480372428894043,
+            "min-runtime": 2.8480372428894043,
+            "max-runtime": 2.8480372428894043
+        },
+        "specific1": {
+            "mean-runtime": 1.0562853813171387,
+            "min-runtime": 1.0562853813171387,
+            "max-runtime": 1.0562853813171387
+        },
+        "specific3": {
+            "mean-runtime": 0.1975550651550293,
+            "min-runtime": 0.1975550651550293,
+            "max-runtime": 0.1975550651550293
+        },
+        "specific4": {
+            "mean-runtime": 1.4045751094818115,
+            "min-runtime": 1.4045751094818115,
+            "max-runtime": 1.4045751094818115
+        },
+        "getKmerPosition1": {
+            "mean-runtime": 0.8364579677581787,
+            "min-runtime": 0.8364579677581787,
+            "max-runtime": 0.8364579677581787
+        },
+        "getKmerPosition2": {
+            "mean-runtime": 0.7627594470977783,
+            "min-runtime": 0.7627594470977783,
+            "max-runtime": 0.7627594470977783
+        },
+        "getKmerPosition3": {
+            "mean-runtime": 0.2095494270324707,
+            "min-runtime": 0.2095494270324707,
+            "max-runtime": 0.2095494270324707
+        },
+        "getKmerPosition4": {
+            "mean-runtime": 2.015901803970337,
+            "min-runtime": 2.015901803970337,
+            "max-runtime": 2.015901803970337
+        },
+        "checkHeterodimer": {
+            "mean-runtime": 1.965684413909912,
+            "min-runtime": 1.965684413909912,
+            "max-runtime": 1.965684413909912
+        },
+        "evaluation3": {
+            "mean-runtime": 0.011533498764038086,
+            "min-runtime": 0.011533498764038086,
+            "max-runtime": 0.011533498764038086
+        },
+        "evaluation2": {
+            "mean-runtime": 1.8569319248199463,
+            "min-runtime": 1.8569319248199463,
+            "max-runtime": 1.8569319248199463
+        },
+        "all": {
+            "mean-runtime": 0.0011489391326904297,
+            "min-runtime": 0.0011489391326904297,
+            "max-runtime": 0.0011489391326904297
+        }
+    },
+    "files": {
+        "/datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa": {
+            "start-time": "Sun May  2 12:38:14 2021",
+            "stop-time": "Sun May  2 12:39:35 2021",
+            "duration": 80.75276446342468,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.int.kmc_pre": {
+            "start-time": "Sun May  2 12:38:14 2021",
+            "stop-time": "Sun May  2 12:38:38 2021",
+            "duration": 24.580767393112183,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.int.kmc_suf": {
+            "start-time": "Sun May  2 12:38:14 2021",
+            "stop-time": "Sun May  2 12:38:38 2021",
+            "duration": 24.580767393112183,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.txt": {
+            "start-time": "Sun May  2 12:38:39 2021",
+            "stop-time": "Sun May  2 12:38:39 2021",
+            "duration": 0.43041157722473145,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.sorted.txt": {
+            "start-time": "Sun May  2 12:38:39 2021",
+            "stop-time": "Sun May  2 12:38:39 2021",
+            "duration": 0.250105619430542,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/allKmerCount.sorted.calculated.txt": {
+            "start-time": "Sun May  2 12:38:39 2021",
+            "stop-time": "Sun May  2 12:39:02 2021",
+            "duration": 23.072779417037964,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/allKmerCount.sorted.calculated.filtered.txt": {
+            "start-time": "Sun May  2 12:39:02 2021",
+            "stop-time": "Sun May  2 12:39:05 2021",
+            "duration": 2.8480372428894043,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.fasta": {
+            "start-time": "Sun May  2 12:39:05 2021",
+            "stop-time": "Sun May  2 12:39:06 2021",
+            "duration": 1.0562853813171387,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.bowtie": {
+            "start-time": "Sun May  2 12:39:06 2021",
+            "stop-time": "Sun May  2 12:39:07 2021",
+            "duration": 0.1975550651550293,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/allKmerCount.sorted.calculated.filtered.spec.txt": {
+            "start-time": "Sun May  2 12:39:07 2021",
+            "stop-time": "Sun May  2 12:39:08 2021",
+            "duration": 1.4045751094818115,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.spec.fasta": {
+            "start-time": "Sun May  2 12:39:08 2021",
+            "stop-time": "Sun May  2 12:39:09 2021",
+            "duration": 0.8364579677581787,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa.DB.1.ebwt": {
+            "start-time": "Sun May  2 12:39:35 2021",
+            "stop-time": "Sun May  2 12:39:35 2021",
+            "duration": 0.7627594470977783,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa.DB.2.ebwt": {
+            "start-time": "Sun May  2 12:39:35 2021",
+            "stop-time": "Sun May  2 12:39:35 2021",
+            "duration": 0.7627594470977783,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa.DB.3.ebwt": {
+            "start-time": "Sun May  2 12:39:35 2021",
+            "stop-time": "Sun May  2 12:39:35 2021",
+            "duration": 0.7627594470977783,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa.DB.4.ebwt": {
+            "start-time": "Sun May  2 12:39:35 2021",
+            "stop-time": "Sun May  2 12:39:35 2021",
+            "duration": 0.7627594470977783,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa.DB.rev.1.ebwt": {
+            "start-time": "Sun May  2 12:39:35 2021",
+            "stop-time": "Sun May  2 12:39:35 2021",
+            "duration": 0.7627594470977783,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa.DB.rev.2.ebwt": {
+            "start-time": "Sun May  2 12:39:35 2021",
+            "stop-time": "Sun May  2 12:39:35 2021",
+            "duration": 0.7627594470977783,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.spec.bowtie": {
+            "start-time": "Sun May  2 12:39:35 2021",
+            "stop-time": "Sun May  2 12:39:36 2021",
+            "duration": 0.2095494270324707,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.spec.position": {
+            "start-time": "Sun May  2 12:39:36 2021",
+            "stop-time": "Sun May  2 12:39:38 2021",
+            "duration": 2.015901803970337,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/allOligo.set": {
+            "start-time": "Sun May  2 12:39:38 2021",
+            "stop-time": "Sun May  2 12:39:40 2021",
+            "duration": 1.965684413909912,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/evaluation/allOligo_after3.tsv": {
+            "start-time": "Sun May  2 12:39:40 2021",
+            "stop-time": "Sun May  2 12:39:40 2021",
+            "duration": 0.011533498764038086,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/evaluation/allOligo.set.coverage": {
+            "start-time": "Sun May  2 12:39:40 2021",
+            "stop-time": "Sun May  2 12:39:42 2021",
+            "duration": 1.8569319248199463,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        }
+    }
+}
