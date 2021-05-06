@@ -1,10 +1,10 @@
 rule evaluation1:
     input:
-        f"{dataDir}/{{sample}}/{{sample}}.uniq" if config["curated"] != "true" else lambda wildcards: config["samples"][wildcards.sample],
+        lambda wildcards: config["samples"][wildcards.sample] if config["curated"] else f"{dataDir}/{{sample}}/{{sample}}.uniq",
         file_aceIDtaxID,
         file_taxIDLineage
     output:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/aceID-taxID-species.tsv"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/aceID-taxID-species.tsv"
     run:
         import os
         import pandas as pd
@@ -24,11 +24,11 @@ rule evaluation1:
 
 rule evaluation2:
     input:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/allOligo.set",
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/aceID-taxID-species.tsv",
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.bowtie"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/allOligo.set",
+        f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/aceID-taxID-species.tsv",
+        f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.bowtie"
     output:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo.set.coverage"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/evaluation/allOligo.set.coverage"
     run:
         import os
         import sys
@@ -37,7 +37,7 @@ rule evaluation2:
         from Bio import SeqIO
         from Bio.Seq import Seq
         import pandas as pd
-        import numpy as np 
+        import numpy as np
 
         oligoId = []
         dict_idPosi = defaultdict(list)
@@ -88,25 +88,25 @@ rule evaluation2:
 
 rule evaluation3:
     input:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/allOligo.set"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/allOligo.set"
     output:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo_after3.tsv"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/evaluation/allOligo_after3.tsv"
     shell:
         "cp {input[0]} {output[0]}"
 
 rule evaluation4:
     input:
         f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.msa",
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.position",
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmerCount.sorted.calculated.filtered.txt",
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmerCount.sorted.calculated.filtered.spec.txt"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.position",
+        f"{dataDir}/{{sample}}/{{kmerSize}}/allKmerCount.sorted.calculated.filtered.txt",
+        f"{dataDir}/{{sample}}/{{kmerSize}}/allKmerCount.sorted.calculated.filtered.spec.txt"
     output:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo_before.tsv",
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo_after1.tsv",
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo_after2.tsv"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/evaluation/allOligo_before.tsv",
+        f"{dataDir}/{{sample}}/{{kmerSize}}/evaluation/allOligo_after1.tsv",
+        f"{dataDir}/{{sample}}/{{kmerSize}}/evaluation/allOligo_after2.tsv"
     params:
         step = config["step"],
-        kmerSize = config["kmerSize"],
+        kmerSize = lambda wildcards: config["kmerSize"][wildcards.kmerSize],
     run:
         import pandas as pd
         from Bio import SeqIO
@@ -142,11 +142,11 @@ rule evaluation4:
 
         df_before["chunk-start"] = np.select(criteria, chunk_start, 0)
         df_before["chunk-end"] = np.select(criteria, chunk_end, 0)
-        
+
         df_position = df_before[["start", "end", "chunk-start", "chunk-end"]]
-        
+
         df_before = df_before.sort_values(["kmerCount"], ascending=False).groupby("chunk-end", as_index=False).head(1)
-        
+
 
         df_after1 = pd.read_csv(input[2], sep="\t", header=0, index_col=0)
         df_after1 = df_after1.merge(df_position, how="left", left_index=True, right_index=True)
@@ -163,7 +163,3 @@ rule evaluation4:
         df_before.to_csv(output[0], sep="\t", index=True)
         df_after1.to_csv(output[1], sep="\t", index=True)
         df_after2.to_csv(output[2], sep="\t", index=True)
-
-        
-        
-        

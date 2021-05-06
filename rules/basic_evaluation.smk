@@ -1,10 +1,10 @@
 rule evaluation1:
     input:
-        f"{dataDir}/{{sample}}/{{sample}}.uniq" if config["curated"] != "true" else lambda wildcards: config["samples"][wildcards.sample],
+        lambda wildcards: config["samples"][wildcards.sample] if config["curated"] else f"{dataDir}/{{sample}}/{{sample}}.uniq",
         file_aceIDtaxID,
         file_taxIDLineage
     output:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/aceID-taxID-species.tsv"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/aceID-taxID-species.tsv"
     run:
         import os
         import pandas as pd
@@ -24,10 +24,10 @@ rule evaluation1:
 
 rule evaluation2:
     input:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/allOligo.set",
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/aceID-taxID-species.tsv"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/allOligo.set",
+        f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/aceID-taxID-species.tsv"
     output:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo.set.coverage"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/evaluation/allOligo.set.coverage"
     params:
         splitFilesDir = f"{dataDir}/{{sample}}/splitFiles"
     run:
@@ -92,15 +92,15 @@ rule evaluation2:
 
 rule evaluation3:
     input:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmercount.sorted.calculated.txt",
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmerCount.sorted.calculated.filtered.txt",
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmerCount.sorted.calculated.filtered.spec.txt",
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/allOligo.set"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/allKmercount.sorted.calculated.txt",
+        f"{dataDir}/{{sample}}/{{kmerSize}}/allKmerCount.sorted.calculated.filtered.txt",
+        f"{dataDir}/{{sample}}/{{kmerSize}}/allKmerCount.sorted.calculated.filtered.spec.txt",
+        f"{dataDir}/{{sample}}/{{kmerSize}}/allOligo.set"
     output:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo_before.tsv",
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo_after1.tsv",
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo_after2.tsv",
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo_after3.tsv"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/evaluation/allOligo_before.tsv",
+        f"{dataDir}/{{sample}}/{{kmerSize}}/evaluation/allOligo_after1.tsv",
+        f"{dataDir}/{{sample}}/{{kmerSize}}/evaluation/allOligo_after2.tsv",
+        f"{dataDir}/{{sample}}/{{kmerSize}}/evaluation/allOligo_after3.tsv"
     run:
         import sys
         import pandas as pd

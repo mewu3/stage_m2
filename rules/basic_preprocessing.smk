@@ -8,7 +8,7 @@ rule removeDuplicateSeq:
 
 rule MSA:
     input:
-        f"{dataDir}/{{sample}}/{{sample}}.uniq" if config["curated"] != "true" else lambda wildcards: config["samples"][wildcards.sample]
+        lambda wildcards: config["samples"][wildcards.sample] if config["curated"] else f"{dataDir}/{{sample}}/{{sample}}.uniq"
     output:
         f"{dataDir}/{{sample}}/{{sample}}.msa"
     log:

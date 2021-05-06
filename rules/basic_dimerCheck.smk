@@ -1,8 +1,8 @@
 rule checkHeterodimer:
     input:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmerCount.sorted.calculated.filtered.spec.txt"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/allKmerCount.sorted.calculated.filtered.spec.txt"
     output:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/allOligo.set"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/allOligo.set"
     params:
         monovalentConc = config["dimer-oligotm"]["monovalent-conc"],
         divalentConc = config["dimer-oligotm"]["divalent-conc"],

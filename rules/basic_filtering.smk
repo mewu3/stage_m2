@@ -1,8 +1,8 @@
 rule filtering1:
     input:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/reverse{{seg}}.Kmercount.sorted.txt"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/reverse{{seg}}.Kmercount.sorted.txt"
     output:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/reverse{{seg}}.Kmercount.sorted.calculated.txt"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/reverse{{seg}}.Kmercount.sorted.calculated.txt"
     params:
         monovalentConc = config["filter-oligotm"]["monovalent-conc"],
         divalentConc = config["filter-oligotm"]["divalent-conc"],
@@ -121,15 +121,16 @@ rule filtering1:
 
 def aggregate_reverseInput(wildcards):
     checkpoint_output = checkpoints.splitIntoOverlappingWindows.get(**wildcards).output[0]
-    return expand(f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/reverse{{seg}}.Kmercount.sorted.calculated.txt",
+    return expand(f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/reverse{{seg}}.Kmercount.sorted.calculated.txt",
                   sample = wildcards.sample,
+                  kmerSize = wildcards.kmerSize,
                   seg = glob_wildcards(os.path.join(checkpoint_output, "reverse{seg}.fasta")).seg)
 
 rule filtering2:
     input:
         aggregate_reverseInput
     output:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmercount.sorted.calculated.txt"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/allKmercount.sorted.calculated.txt"
     run:
         import pandas as pd
 
@@ -146,9 +147,9 @@ rule filtering2:
 
 rule filtering3:
     input:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmercount.sorted.calculated.txt"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/allKmercount.sorted.calculated.txt"
     output:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmerCount.sorted.calculated.filtered.txt"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/allKmerCount.sorted.calculated.filtered.txt"
     params:
         deltaG = config["homodimer-deltaG"],
         GCUp = config["GC-upper"],

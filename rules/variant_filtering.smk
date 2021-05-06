@@ -1,8 +1,8 @@
 rule filtering1:
     input:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.txt"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.txt"
     output:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmerCount.sorted.calculated.txt"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/allKmerCount.sorted.calculated.txt"
     params:
         monovalentConc = config["filter-oligotm"]["monovalent-conc"],
         divalentConc = config["filter-oligotm"]["divalent-conc"],
@@ -120,9 +120,9 @@ rule filtering1:
 
 rule filtering2:
     input:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmerCount.sorted.calculated.txt"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/allKmerCount.sorted.calculated.txt"
     output:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmerCount.sorted.calculated.filtered.txt"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/allKmerCount.sorted.calculated.filtered.txt"
     params:
         deltaG = config["homodimer-deltaG"],
         GCUp = config["GC-upper"],

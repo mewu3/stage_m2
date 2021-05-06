@@ -57,11 +57,11 @@ rule MSA:
 
 rule getKmerPosition1:
     input:
-        # f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmerCount.sorted.calculated.filtered.spec.txt"
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmerCount.sorted.calculated.txt"
+        # f"{dataDir}/{{sample}}/{{kmerSize}}/allKmerCount.sorted.calculated.filtered.spec.txt"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/allKmerCount.sorted.calculated.txt"
     output:
-        # f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.spec.fasta"
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.fasta"
+        # f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.filtered.spec.fasta"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.fasta"
     run:
         import os
         from Bio.Seq import Seq
@@ -96,16 +96,16 @@ rule getKmerPosition2:
 
 rule getKmerPosition3:
     input:
-        # f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.spec.fasta",
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.fasta",
+        # f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.filtered.spec.fasta",
+        f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.fasta",
         lambda wildcards: expand(
             f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.msa.DB.{{ext}}",
             ext = ["1.ebwt", "2.ebwt", "3.ebwt", "4.ebwt", "rev.1.ebwt", "rev.2.ebwt"],
             sample = wildcards.sample
         )
     output:
-        # f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.spec.bowtie"
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.bowtie"
+        # f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.filtered.spec.bowtie"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.bowtie"
     params:
         refDB = f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.msa.DB",
         threads = config["thread"]
@@ -119,13 +119,13 @@ rule getKmerPosition3:
 
 rule getKmerPosition4:
     input:
-        # f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.spec.bowtie",
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.bowtie",
-        # f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmerCount.sorted.calculated.filtered.spec.txt"
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmerCount.sorted.calculated.txt"
+        # f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.filtered.spec.bowtie",
+        f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.bowtie",
+        # f"{dataDir}/{{sample}}/{{kmerSize}}/allKmerCount.sorted.calculated.filtered.spec.txt"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/allKmerCount.sorted.calculated.txt"
     output:
-        #f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.spec.position"
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.position"
+        #f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.filtered.spec.position"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.position"
     run:
         import os
         import pandas as pd
@@ -156,14 +156,14 @@ rule getKmerPosition4:
 rule checkHeterodimer:
     input:
         f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.msa",
-        # f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.spec.position"
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.position",
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmerCount.sorted.calculated.filtered.spec.txt"
+        # f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.filtered.spec.position"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.position",
+        f"{dataDir}/{{sample}}/{{kmerSize}}/allKmerCount.sorted.calculated.filtered.spec.txt"
     output:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/allOligo.set"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/allOligo.set"
     params:
         step = config["step"],
-        kmerSize = config["kmerSize"],
+        kmerSize = lambda wildcards: config["kmerSize"][wildcards.kmerSize],
         deltaG = config["heterodimer-deltaG"],
         monovalentConc = config["dimer-oligotm"]["monovalent-conc"],
         divalentConc = config["dimer-oligotm"]["divalent-conc"],
@@ -217,7 +217,7 @@ rule checkHeterodimer:
 
         df_before["chunk-start"] = np.select(criteria, chunk_start, 0)
         df_before["chunk-end"] = np.select(criteria, chunk_end, 0)
-        
+
         df_position = df_before[["start", "end", "chunk-start", "chunk-end"]]
 
         df_after2 = pd.read_csv(input[2], sep="\t", header=0, index_col=0)

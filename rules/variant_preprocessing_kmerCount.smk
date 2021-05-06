@@ -10,7 +10,7 @@ rule removeDuplicateSeq:
 #     input:
 #         f"{dataDir}/{{sample}}/{{sample}}.uniq"
 #     output:
-#         f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.int"
+#         f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.int"
 #     params:
 #         kmerSize = config["kmerSize"],
 #         hash = config["jellyfish"]["hash-size"],
@@ -26,33 +26,33 @@ rule removeDuplicateSeq:
 #
 # rule countAllKmer2:
 #     input:
-#         f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.int"
+#         f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.int"
 #     output:
-#         f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.txt"
+#         f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.txt"
 #     shell:
 #         "jellyfish dump -c {input} > {output}"
 #
 # rule sortAllKmer:
 #     input:
-#         f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.txt"
+#         f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.txt"
 #     output:
-#         f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.txt"
+#         f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.txt"
 #     shell:
 #         "cat {input} | sort -n -k2 -r > {output}"
 
 rule countAllKmer1:
     input:
-        f"{dataDir}/{{sample}}/{{sample}}.uniq" if config["curated"] != "true" else lambda wildcards: config["samples"][wildcards.sample]
+        lambda wildcards: config["samples"][wildcards.sample] if config["curated"] else f"{dataDir}/{{sample}}/{{sample}}.uniq"
     output:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.int.kmc_pre",
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.int.kmc_suf",
+        f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.int.kmc_pre",
+        f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.int.kmc_suf",
     params:
-        kmerSize = config["kmerSize"],
+        kmerSize = lambda wildcards: config["kmerSize"][wildcards.kmerSize],
         memory = config["kmc3"]["memory"],
         maxCount = config["kmc3"]["maxCount"],
         thread = config["thread"],
-        output = f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.int",
-        tmpdir = f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate"
+        output = f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.int",
+        tmpdir = f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate"
     shell:
         """kmc -k{params.kmerSize} \
         -m{params.memory} -b \
@@ -62,19 +62,19 @@ rule countAllKmer1:
 
 rule countAllKmer2:
     input:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.int.kmc_pre",
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.int.kmc_suf",
+        f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.int.kmc_pre",
+        f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.int.kmc_suf",
     output:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.txt"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.txt"
     params:
-        output = f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.int"
+        output = f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.int"
     shell:
         "kmc_dump {params.output} {output[0]}"
 
 rule sortAllKmer:
     input:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.txt"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.txt"
     output:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.txt"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.txt"
     shell:
         "cat {input} | sort -n -k2 -r > {output}"

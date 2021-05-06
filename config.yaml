@@ -1,25 +1,24 @@
 ### output directory path
-# dataDir: "/datater/wu/data/MSSPE-basic"
+dataDir: "/datater/wu/data/MSSPE-basic"
 # dataDir: "/datater/wu/data/MSSPE-clustering"
-dataDir: "/datater/wu/data/MSSPE-variant"
+# dataDir: "/datater/wu/data/MSSPE-variant"
 
 ### files path
 file_refSeq : "/datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna"
 file_aceIDtaxID: "/datater/wu/data/ncbiTaxonomy/nucl_gb.accession2taxid" # ftp://ftp.ncbi.nih.gov/pub/taxonomy/accession2taxid/
 file_taxIDLineage: "/datater/wu/data/ncbiTaxonomy/ncbi_lineages_2021-04-23.csv" # ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy and https://github.com/zyxue/ncbitax2lin
 samples:
-    zika : "/datater/wu/data/ZIKV-96seqs.fasta"
-    # enterovirus: "/datater/wu/data/enterovirus.fasta"
+    # zika : "/datater/wu/data/ZIKV-96seqs.fasta"
+    enterovirus: "/datater/wu/data/enterovirus.fasta"
     # coronavirus: "/datater/wu/data/coronavirus.fasta"
-    # enterovirusCurated: "/datater/wu/data/enterovirusCurated.fasta"
-    # coronavirusCurated: "/datater/wu/data/coronavirusCurated.fasta"
-    # coronavirusWithoutSarsCov2: "/datater/wu/data/coronavirus_withoutSarsCov2.fasta"
-    # coronavirusCuratedWithoutSarsCov2: "/datater/wu/data/coronavirusCurated_withoutSarsCov2.fasta"
+    enterovirusCurated: "/datater/wu/data/enterovirusCurated.fasta"
+    coronavirusCurated: "/datater/wu/data/coronavirusCurated.fasta"
+    coronavirusWithoutSarsCov2: "/datater/wu/data/coronavirus_withoutSarsCov2.fasta"
+    coronavirusCuratedWithoutSarsCov2: "/datater/wu/data/coronavirusCurated_withoutSarsCov2.fasta"
 
 ### global parameters
-curated: "false" # ture or false
+curated: False # True or False
 thread: 12
-# kmerSize: 15
 kmerSize:
     kmer13: 13
     kmer15: 15

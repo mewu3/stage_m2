@@ -1,0 +1,30 @@
+Building DAG of jobs...
+Updating job filtering2.
+Updating job filtering2.
+Updating job filtering2.
+Updating job filtering2.
+Updating job filtering2.
+Updating job filtering2.
+Updating job filtering2.
+Updating job filtering2.
+Updating job filtering2.
+Updating job filtering2.
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	evaluation1
+	1	evaluation2
+	3
+Select jobs to execute...
+
+[Thu May  6 11:46:43 2021]
+rule evaluation1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/enterovirusCurated.uniq, /datater/wu/data/ncbiTaxonomy/nucl_gb.accession2taxid, /datater/wu/data/ncbiTaxonomy/ncbi_lineages_2021-04-23.csv
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer13/intermediate/aceID-taxID-species.tsv
+    jobid: 79
+    wildcards: sample=enterovirusCurated, kmerSize=kmer13
+
