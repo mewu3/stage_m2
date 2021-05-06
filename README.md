@@ -6,7 +6,7 @@ This is a snakemake pipeline designed to construct oligonucleotide sequences for
 * ncbi_lineages_YYYY-MM-DD.csv (ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy, it's recommended to use https://github.com/zyxue/ncbitax2lin) 
 * etc. 
 
-The pilosophie of this pipeliine is inspiered by the work of Dr. Charles Chiu (https://github.com/chiulab/MSSPE-design), a primer design pipeliine integrated in [1]. At this basic, the workflow was modified to adapt for environmental sample. 
+The pilosophie of this pipeline is inspiered by the work of Dr. Charles Chiu (https://github.com/chiulab/MSSPE-design), a primer design pipeliine integrated in [1]. At this basic, the workflow was modified to adapt for environmental sample. 
 
 
 
