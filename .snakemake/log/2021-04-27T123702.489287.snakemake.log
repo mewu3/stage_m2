@@ -1,4 +1,0 @@
-SyntaxError:
-Not all output, log and benchmark files of rule countKmer1 contain the same wildcards. This is crucial though, in order to avoid that two or more jobs write to the same file.
-  File "/datater/wu/MSSPE/snakefile-basic", line 121, in <module>
-  File "/datater/wu/MSSPE/rules-basic/reverse_kmer_kmerCount.smk", line 13, in <module>

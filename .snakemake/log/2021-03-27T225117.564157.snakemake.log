@@ -1,3 +1,0 @@
-AttributeError in line 6 of /datater/wu/stage_m2/Snakefile:
-'NoneType' object has no attribute 'keys'
-  File "/datater/wu/stage_m2/Snakefile", line 6, in <module>

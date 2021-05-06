@@ -1,4 +1,0 @@
-KeyError in line 29 of /datater/wu/MSSPE/rules-basic/reverse_kmer_spec.smk:
-'bowtie'
-  File "/datater/wu/MSSPE/snakefile-basic", line 123, in <module>
-  File "/datater/wu/MSSPE/rules-basic/reverse_kmer_spec.smk", line 29, in <module>

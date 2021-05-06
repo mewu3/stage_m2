@@ -1,8 +1,0 @@
-Building DAG of jobs...
-InputFunctionException in line 151 of /datater/wu/stage_m2/rules/reverse_kmer_filter.smk:
-Error:
-  AttributeError: 'Checkpoints' object has no attribute 'splitFiles'
-Wildcards:
-  sample=enterovirus
-Traceback:
-  File "/datater/wu/stage_m2/rules/reverse_kmer_filter.smk", line 146, in aggregate_reverseInput

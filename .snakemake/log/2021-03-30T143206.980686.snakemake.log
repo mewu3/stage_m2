@@ -1,3 +1,0 @@
-IndentationError in line 60 of /datater/wu/stage_m2/rules/reverse_kmer_dimer.smk:
-expected an indented block
-  File "/datater/wu/stage_m2/Snakefile", line 67, in <module>

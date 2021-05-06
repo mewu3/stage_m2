@@ -1,3 +1,0 @@
-NameError in line 106 of /datater/wu/stage_m2/Snakefile:
-name 'kmerCounter' is not defined
-  File "/datater/wu/stage_m2/Snakefile", line 106, in <module>

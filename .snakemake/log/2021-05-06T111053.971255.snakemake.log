@@ -1,4 +1,0 @@
-NameError in line 8 of /datater/wu/MSSPE/rules/basic_kmerCount.smk:
-name 'wildcards' is not defined
-  File "/datater/wu/MSSPE/snakefile-basic", line 131, in <module>
-  File "/datater/wu/MSSPE/rules/basic_kmerCount.smk", line 8, in <module>

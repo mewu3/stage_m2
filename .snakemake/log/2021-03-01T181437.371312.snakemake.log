@@ -1,3 +1,0 @@
-FileNotFoundError in line 42 of /datater/wu/stage_m2/Snakefile:
-[Errno 2] No such file or directory: '/datater/wu/data/splitFiles'
-  File "/datater/wu/stage_m2/Snakefile", line 42, in <module>

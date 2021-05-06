@@ -1,5 +1,0 @@
-Building DAG of jobs...
-MissingInputException in line 57 of /datater/wu/MSSPE/snakefile-variant:
-Missing input files for rule all:
-/datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/allKmerCount.int.kmc_sur
-/datater/wu/data/MSSPE-basic/coronavirusCurated/kmer15/intermediate/allKmerCount.int.kmc_sur

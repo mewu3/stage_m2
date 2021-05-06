@@ -1,3 +1,0 @@
-NameError in line 77 of /datater/wu/MSSPE/snakefile-basic:
-name 'refSeqFile' is not defined
-  File "/datater/wu/MSSPE/snakefile-basic", line 77, in <module>

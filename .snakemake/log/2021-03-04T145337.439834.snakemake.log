@@ -1,4 +1,0 @@
-WorkflowError in line 15 of /home/meijun/Documents/stage_m2/rules/oligo_filter.smk:
-Duplicate output file pattern in rule dskTm_calculate. First two duplicate for entries 0 and 1
-  File "/home/meijun/Documents/stage_m2/Snakefile", line 141, in <module>
-  File "/home/meijun/Documents/stage_m2/rules/oligo_filter.smk", line 15, in <module>

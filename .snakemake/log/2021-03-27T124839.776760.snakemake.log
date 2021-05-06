@@ -1,3 +1,0 @@
-NameError in line 42 of /datater/wu/stage_m2/Snakefile:
-name 'aggregate_input' is not defined
-  File "/datater/wu/stage_m2/Snakefile", line 42, in <module>

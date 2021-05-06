@@ -1,3 +1,0 @@
-NameError in line 51 of /datater/wu/stage_m2_merge/Snakefile:
-name 'aggregate_forwardInput' is not defined
-  File "/datater/wu/stage_m2_merge/Snakefile", line 51, in <module>

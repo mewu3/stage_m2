@@ -1,3 +1,0 @@
-IndentationError in line 130 of /datater/wu/stage_m2/rules/dsk_oligo_filter.smk:
-expected an indented block
-  File "/datater/wu/stage_m2/Snakefile", line 123, in <module>

@@ -1,4 +1,0 @@
-KeyError in line 143 of /datater/wu/MSSPE/rules-basic/reverse_kmer_filter.smk:
-'homodimer-deltaG'
-  File "/datater/wu/MSSPE/snakefile-basic", line 122, in <module>
-  File "/datater/wu/MSSPE/rules-basic/reverse_kmer_filter.smk", line 143, in <module>

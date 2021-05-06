@@ -1,3 +1,0 @@
-WorkflowError in line 4 of /datater/wu/MSSPE/snakefile-basic:
-Config file configs.yaml not found.
-  File "/datater/wu/MSSPE/snakefile-basic", line 4, in <module>

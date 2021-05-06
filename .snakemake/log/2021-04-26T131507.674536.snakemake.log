@@ -1,9 +1,0 @@
-Building DAG of jobs...
-InputFunctionException in line 273 of /datater/wu/MSSPE/rules-variant/reverse_kmer_dimer.smk:
-Error:
-  WildcardError:
-    No values given for wildcard 'sample'.
-Wildcards:
-  sample=coronavirus
-Traceback:
-  File "/datater/wu/MSSPE/rules-variant/reverse_kmer_dimer.smk", line 276, in <lambda>

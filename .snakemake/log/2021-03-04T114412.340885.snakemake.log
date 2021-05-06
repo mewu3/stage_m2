@@ -1,4 +1,0 @@
-Building DAG of jobs...
-MissingInputException in line 7 of /home/meijun/Documents/stage_m2/rules/kmer_dsk.smk:
-Missing input files for rule dskForward:
-/home/meijun/Documents/data/splitFiles/zika/forward.__snakemake_dynamic__.fasta

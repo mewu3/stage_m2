@@ -1,3 +1,0 @@
-KeyError in line 5 of /home/wu/Documents/stage_m2/Snakefile:
-'outputdir'
-  File "/home/wu/Documents/stage_m2/Snakefile", line 5, in <module>

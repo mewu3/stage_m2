@@ -1,5 +1,0 @@
-Building DAG of jobs...
-ChildIOException:
-File/directory is a child to another output:
-('/datater/wu/data/enterovirus/checkSpecifity', splitFilteredTable)
-('/datater/wu/data/enterovirus/checkSpecifity/collect.txt', collect)
