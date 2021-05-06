@@ -4,7 +4,7 @@ rule removeDuplicateSeq:
     output:
         f"{dataDir}/{{sample}}/{{sample}}.uniq"
     shell:
-        "lib/cd-hit-v4.8.1-2019-0228/cd-hit-auxtools/cd-hit-dup -i {input} -o {output}"
+        "lib/cdhit/cd-hit-auxtools/cd-hit-dup -i {input} -o {output}"
 
 # rule countAllKmer1:
 #     input:

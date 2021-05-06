@@ -16,3 +16,6 @@
 [submodule "lib/squeakr"]
 	path = lib/squeakr
 	url = https://github.com/splatlab/squeakr.git
+[submodule "lib/cdhit"]
+	path = lib/cdhit
+	url = https://github.com/weizhongli/cdhit.git

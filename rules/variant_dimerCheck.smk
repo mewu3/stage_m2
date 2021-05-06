@@ -8,7 +8,7 @@ rule clustering:
         threads = config["thread"],
         memory = config["cd-hit"]["memory"]
     shell:
-        "./lib/cd-hit-v4.8.1-2019-0228/cd-hit-est \
+        "./lib/cdhit/cd-hit-est \
         -i {input} \
         -o {output} \
         -c {params.identity} \

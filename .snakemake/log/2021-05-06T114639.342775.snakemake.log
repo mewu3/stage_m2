@@ -28,3 +28,7 @@ rule evaluation1:
     jobid: 79
     wildcards: sample=enterovirusCurated, kmerSize=kmer13
 
+Terminating processes on user request, this might take some time.
+Removing output files of failed job evaluation1 since they might be corrupted:
+/datater/wu/data/MSSPE-basic/enterovirusCurated/kmer13/intermediate/aceID-taxID-species.tsv
+Complete log: /datater/wu/MSSPE/.snakemake/log/2021-05-06T114639.342775.snakemake.log
