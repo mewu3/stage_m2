@@ -1,0 +1,22 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	evaluation4
+	2
+Select jobs to execute...
+
+[Sun May  2 15:26:04 2021]
+rule evaluation4:
+    input: /datater/wu/data/MSSPE-variant/enterovirus/enterovirus0.99.msa, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/intermediate/allKmerCount.sorted.calculated.position, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/allKmerCount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/allKmerCount.sorted.calculated.filtered.txt, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt
+    output: /datater/wu/data/MSSPE-variant/enterovirus/kmer15/evaluation/allOligo_before.tsv, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/evaluation/allOligo_after1.tsv, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/evaluation/allOligo_after2.tsv
+    jobid: 20
+    wildcards: sample=enterovirus
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/MSSPE/.snakemake/log/2021-05-02T152603.345739.snakemake.log

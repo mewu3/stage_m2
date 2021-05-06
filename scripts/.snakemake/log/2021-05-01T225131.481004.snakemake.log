@@ -1,6 +1,0 @@
-Building DAG of jobs...
-File path //datater/wu/data/MSSPE-basic/enterovirus/kmer13/evaluation/allKmerCount.sorted.calculated.filtered.allOligo.set.coverage contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
-File path //datater/wu/data/MSSPE-basic/enterovirus/kmer13/evaluation/allKmerCount.sorted.calculated.filtered.allOligo.set.coverage contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
-WildcardError in line 19 of /datater/wu/MSSPE/scripts/test.smk:
-Wildcards in input files cannot be determined from output files:
-'sample'

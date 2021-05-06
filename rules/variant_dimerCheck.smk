@@ -57,9 +57,11 @@ rule MSA:
 
 rule getKmerPosition1:
     input:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmerCount.sorted.calculated.filtered.spec.txt"
+        # f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmerCount.sorted.calculated.filtered.spec.txt"
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmerCount.sorted.calculated.txt"
     output:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.spec.fasta"
+        # f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.spec.fasta"
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.fasta"
     run:
         import os
         from Bio.Seq import Seq
@@ -94,14 +96,16 @@ rule getKmerPosition2:
 
 rule getKmerPosition3:
     input:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.spec.fasta",
+        # f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.spec.fasta",
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.fasta",
         lambda wildcards: expand(
             f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.msa.DB.{{ext}}",
             ext = ["1.ebwt", "2.ebwt", "3.ebwt", "4.ebwt", "rev.1.ebwt", "rev.2.ebwt"],
             sample = wildcards.sample
         )
     output:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.spec.bowtie"
+        # f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.spec.bowtie"
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.bowtie"
     params:
         refDB = f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.msa.DB",
         threads = config["thread"]
@@ -115,13 +119,17 @@ rule getKmerPosition3:
 
 rule getKmerPosition4:
     input:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.spec.bowtie",
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmerCount.sorted.calculated.filtered.spec.txt"
+        # f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.spec.bowtie",
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.bowtie",
+        # f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmerCount.sorted.calculated.filtered.spec.txt"
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmerCount.sorted.calculated.txt"
     output:
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.spec.position"
+        #f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.spec.position"
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.position"
     run:
         import os
         import pandas as pd
+        import numpy as np
         from collections import defaultdict
 
         dict_idPosiCount = defaultdict(lambda: defaultdict(int))
@@ -129,22 +137,28 @@ rule getKmerPosition4:
 
         df_bowtie = pd.read_table(input[0], comment="@", sep="\t", names=["QNAME", "FLAG", "RNAME", "POS", "MAPQ", "CIGAR", "RNEXT", "PNEXT", "TLEN", "SEQ", "QUAL", "OPT1", "OPT2", "OPT3", "OPT4"])
 
-        Match = df_bowtie[df_bowtie["FLAG"] == 0]["QNAME"].tolist()
-        Match = set(map(lambda x : int(x.lstrip("p")), Match))
+        # Match = df_bowtie[df_bowtie["FLAG"] == 0]["QNAME"].tolist()
+        # Match = set(map(lambda x : int(x.lstrip("p")), Match))
 
         position = df_bowtie[df_bowtie["FLAG"] == 0].groupby(["QNAME", "POS"]).size().reset_index(name = "POScount")
         position = position.sort_values(["QNAME","POScount"], ascending=False).groupby("QNAME").first()
         position.index = position.index.str.replace("p", "").astype("int64")
+        position=position[["POS", "POScount"]]
 
         df = pd.read_table(input[1], sep="\t", header=0, index_col=0)
-        df_filtered = df[df.index.isin(Match)]
-        df_out = df_filtered.join(position)
+        # df_filtered = df[df.index.isin(Match)]
+        df_out = df.merge(position, how="left", left_index=True, right_index=True)
+        # df_out.fillna(0)
+        # df_out["POS"] = df_out["POS"].replace(np.nan, 0)
+        # print(df_out)
         df_out.to_csv(output[0], sep='\t', index=True)
 
 rule checkHeterodimer:
     input:
         f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.msa",
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.spec.position"
+        # f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.spec.position"
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.position",
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmerCount.sorted.calculated.filtered.spec.txt"
     output:
         f"{dataDir}/{{sample}}/kmer{kmerSize}/allOligo.set"
     params:
@@ -186,25 +200,30 @@ rule checkHeterodimer:
             if chunk[-1] > seqLength:
                 chunk[-1] = seqLength
 
-        df = pd.read_table(input[1], sep="\t", header=0, index_col=0)
-        df.index.name = "index"
-        df = df.drop("POScount", 1)
-        df = df.rename(columns={"POS":"start"})
-        df["end"] = df["start"] + kmerSize -1
-        df["chunk-start"] = ""
-        df["chunk-end"] = ""
+        df_before = pd.read_table(input[1], sep="\t", header=0, index_col=0)
+        df_before.index.name = "index"
+        df_before = df_before.drop("POScount", 1)
+        df_before = df_before.rename(columns={"POS":"start"})
+        df_before["end"] = df_before["start"] + kmerSize -1
+        df_before["chunk-start"] = ""
+        df_before["chunk-end"] = ""
 
         criteria =[]
         for chunk in chunks:
-            criteria.append(df.end.between(chunk[0], chunk[1]))
+            criteria.append(df_before.end.between(chunk[0], chunk[1]))
 
         chunk_start = [x[0] for x in chunks]
         chunk_end = [x[1] for x in chunks]
 
-        df["chunk-start"] = np.select(criteria, chunk_start, 0)
-        df["chunk-end"] = np.select(criteria, chunk_end, 0)
+        df_before["chunk-start"] = np.select(criteria, chunk_start, 0)
+        df_before["chunk-end"] = np.select(criteria, chunk_end, 0)
+        
+        df_position = df_before[["start", "end", "chunk-start", "chunk-end"]]
 
-        df = df.sort_values(["kmerCount"], ascending=False).groupby("chunk-end").head(3)
+        df_after2 = pd.read_csv(input[2], sep="\t", header=0, index_col=0)
+        df_after2 = df_after2.merge(df_position, how="left", left_index=True, right_index=True)
+
+        df = df_after2.sort_values(["kmerCount"], ascending=False).groupby("chunk-end").head(3)
 
         dict_idInfo = df.to_dict("index")
         df["index"] = df.index
@@ -248,4 +267,5 @@ rule checkHeterodimer:
 
         df_filtered = df[df.index.isin(oligoSet)].drop("index", axis=1)
         df_filtered = df_filtered.sort_values("chunk-end")
+        df_filtered.fillna(0, inplace=True)
         df_filtered.to_csv(output[0], sep='\t', index=True)

@@ -26,7 +26,7 @@ rule evaluation2:
     input:
         f"{dataDir}/{{sample}}/kmer{kmerSize}/allOligo.set",
         f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/aceID-taxID-species.tsv",
-        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.spec.bowtie"
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.bowtie"
     output:
         f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo.set.coverage"
     run:
@@ -37,6 +37,7 @@ rule evaluation2:
         from Bio import SeqIO
         from Bio.Seq import Seq
         import pandas as pd
+        import numpy as np 
 
         oligoId = []
         dict_idPosi = defaultdict(list)
@@ -52,7 +53,6 @@ rule evaluation2:
                 dict_idPosi[li[0]] = li[8:]
 
         df_bowtie = pd.read_table(input[2], comment="@", sep="\t", names=["QNAME", "FLAG", "RNAME", "POS", "MAPQ", "CIGAR", "RNEXT", "PNEXT", "TLEN", "SEQ", "QUAL", "OPT1", "OPT2", "OPT3", "OPT4"])
-
         df_bowtie = df_bowtie[df_bowtie["QNAME"].isin(oligoId)][["QNAME", "RNAME"]]
 
         dict_idAce = {k: g["RNAME"].tolist() for k, g in df_bowtie.groupby("QNAME")}
@@ -93,3 +93,77 @@ rule evaluation3:
         f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo_after3.tsv"
     shell:
         "cp {input[0]} {output[0]}"
+
+rule evaluation4:
+    input:
+        f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.msa",
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.position",
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmerCount.sorted.calculated.filtered.txt",
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/allKmerCount.sorted.calculated.filtered.spec.txt"
+    output:
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo_before.tsv",
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo_after1.tsv",
+        f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo_after2.tsv"
+    params:
+        step = config["step"],
+        kmerSize = config["kmerSize"],
+    run:
+        import pandas as pd
+        from Bio import SeqIO
+        import numpy as np
+        from collections import defaultdict
+
+        step = params.step
+        kmerSize = params.kmerSize
+
+        records = list(SeqIO.parse(input[0], "fasta"))
+        seqLength = len(records[0].seq)
+
+        chunks = [[i,i+step] for i in range(0, seqLength, step)]
+
+        for chunk in chunks:
+            if chunk[-1] > seqLength:
+                chunk[-1] = seqLength
+
+        df_before = pd.read_table(input[1], sep="\t", header=0, index_col=0)
+        df_before.index.name = "index"
+        df_before = df_before.drop("POScount", 1)
+        df_before = df_before.rename(columns={"POS":"start"})
+        df_before["end"] = df_before["start"] + kmerSize -1
+        df_before["chunk-start"] = ""
+        df_before["chunk-end"] = ""
+
+        criteria =[]
+        for chunk in chunks:
+            criteria.append(df_before.end.between(chunk[0], chunk[1]))
+
+        chunk_start = [x[0] for x in chunks]
+        chunk_end = [x[1] for x in chunks]
+
+        df_before["chunk-start"] = np.select(criteria, chunk_start, 0)
+        df_before["chunk-end"] = np.select(criteria, chunk_end, 0)
+        
+        df_position = df_before[["start", "end", "chunk-start", "chunk-end"]]
+        
+        df_before = df_before.sort_values(["kmerCount"], ascending=False).groupby("chunk-end", as_index=False).head(1)
+        
+
+        df_after1 = pd.read_csv(input[2], sep="\t", header=0, index_col=0)
+        df_after1 = df_after1.merge(df_position, how="left", left_index=True, right_index=True)
+        df_after1 = df_after1.sort_values(["kmerCount"], ascending=False).groupby("chunk-end", as_index=False).head(1)
+
+        df_after2 = pd.read_csv(input[3], sep="\t", header=0, index_col=0)
+        df_after2 = df_after2.merge(df_position, how="left", left_index=True, right_index=True)
+        df_after2 = df_after2.sort_values(["kmerCount"], ascending=False).groupby("chunk-end", as_index=False).head(1)
+
+        df_before.fillna(0, inplace=True)
+        df_after1.fillna(0, inplace=True)
+        df_after2.fillna(0, inplace=True)
+
+        df_before.to_csv(output[0], sep="\t", index=True)
+        df_after1.to_csv(output[1], sep="\t", index=True)
+        df_after2.to_csv(output[2], sep="\t", index=True)
+
+        
+        
+        

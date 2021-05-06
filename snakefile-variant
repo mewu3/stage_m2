@@ -7,7 +7,7 @@ file_refSeq = config["file_refSeq"]
 file_aceIDtaxID = config["file_aceIDtaxID"]
 file_taxIDLineage = config["file_taxIDLineage"]
 dataDir = config["dataDir"]
-kmerSize = config["kmerSize"]
+kmerSize = list(config["kmerSize"].keys())
 clusterIdentity = config["cd-hit"]["identity"]
 
 ### functions
@@ -106,7 +106,7 @@ rule all:
             sample = samples
         ),
         expand(
-            f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.spec.fasta",
+            f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.fasta",
             sample = samples
         ),
         expand(
@@ -115,11 +115,11 @@ rule all:
             ext = ["1.ebwt", "2.ebwt", "3.ebwt", "4.ebwt", "rev.1.ebwt", "rev.2.ebwt"]
         ),
         expand(
-            f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.spec.bowtie",
+            f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.bowtie",
             sample = samples
         ),
         expand(
-            f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.filtered.spec.position",
+            f"{dataDir}/{{sample}}/kmer{kmerSize}/intermediate/allKmerCount.sorted.calculated.position",
             sample = samples
         ),
         expand(
@@ -133,6 +133,18 @@ rule all:
         ),
         expand(
             f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo.set.coverage",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo_before.tsv",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo_after1.tsv",
+            sample = samples
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/kmer{kmerSize}/evaluation/allOligo_after2.tsv",
             sample = samples
         ),
         expand(

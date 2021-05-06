@@ -1,0 +1,20 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	clustering
+	1	removeDuplicateSeq
+	1	test1
+	4
+Select jobs to execute...
+
+[Thu May  6 10:57:09 2021]
+rule removeDuplicateSeq:
+    input: /datater/wu/data/tmp/sars2.fasta
+    output: /datater/wu/data/tmp/sars2.uniq.fasta
+    jobid: 1
+

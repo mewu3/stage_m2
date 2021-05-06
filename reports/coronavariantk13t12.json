@@ -1,0 +1,457 @@
+{
+    "total_runtime": 69348.26315903664,
+    "rules": {
+        "removeDuplicateSeq": {
+            "mean-runtime": 33.79837083816528,
+            "min-runtime": 33.79837083816528,
+            "max-runtime": 33.79837083816528
+        },
+        "specific2": {
+            "mean-runtime": 30.252691745758057,
+            "min-runtime": 30.252691745758057,
+            "max-runtime": 30.252691745758057
+        },
+        "clustering": {
+            "mean-runtime": 2915.0337419509888,
+            "min-runtime": 2915.0337419509888,
+            "max-runtime": 2915.0337419509888
+        },
+        "countAllKmer1": {
+            "mean-runtime": 41.914358615875244,
+            "min-runtime": 41.914358615875244,
+            "max-runtime": 41.914358615875244
+        },
+        "evaluation1": {
+            "mean-runtime": 214.7338469028473,
+            "min-runtime": 214.7338469028473,
+            "max-runtime": 214.7338469028473
+        },
+        "countAllKmer2": {
+            "mean-runtime": 0.537452220916748,
+            "min-runtime": 0.537452220916748,
+            "max-runtime": 0.537452220916748
+        },
+        "sortAllKmer": {
+            "mean-runtime": 1.1160533428192139,
+            "min-runtime": 1.1160533428192139,
+            "max-runtime": 1.1160533428192139
+        },
+        "filtering1": {
+            "mean-runtime": 79.00605988502502,
+            "min-runtime": 79.00605988502502,
+            "max-runtime": 79.00605988502502
+        },
+        "getKmerPosition1": {
+            "mean-runtime": 3.503066301345825,
+            "min-runtime": 3.503066301345825,
+            "max-runtime": 3.503066301345825
+        },
+        "filtering2": {
+            "mean-runtime": 2.918276786804199,
+            "min-runtime": 2.918276786804199,
+            "max-runtime": 2.918276786804199
+        },
+        "specific1": {
+            "mean-runtime": 0.982900857925415,
+            "min-runtime": 0.982900857925415,
+            "max-runtime": 0.982900857925415
+        },
+        "specific3": {
+            "mean-runtime": 0.2286844253540039,
+            "min-runtime": 0.2286844253540039,
+            "max-runtime": 0.2286844253540039
+        },
+        "specific4": {
+            "mean-runtime": 1.928588628768921,
+            "min-runtime": 1.928588628768921,
+            "max-runtime": 1.928588628768921
+        },
+        "MSA": {
+            "mean-runtime": 66188.15522122383,
+            "min-runtime": 66188.15522122383,
+            "max-runtime": 66188.15522122383
+        },
+        "getKmerPosition2": {
+            "mean-runtime": 92.58392262458801,
+            "min-runtime": 92.58392262458801,
+            "max-runtime": 92.58392262458801
+        },
+        "getKmerPosition3": {
+            "mean-runtime": 9.7913498878479,
+            "min-runtime": 9.7913498878479,
+            "max-runtime": 9.7913498878479
+        },
+        "getKmerPosition4": {
+            "mean-runtime": 55.800782442092896,
+            "min-runtime": 55.800782442092896,
+            "max-runtime": 55.800782442092896
+        },
+        "checkHeterodimer": {
+            "mean-runtime": 6.890119552612305,
+            "min-runtime": 6.890119552612305,
+            "max-runtime": 6.890119552612305
+        },
+        "evaluation4": {
+            "mean-runtime": 3.0458192825317383,
+            "min-runtime": 3.0458192825317383,
+            "max-runtime": 3.0458192825317383
+        },
+        "evaluation2": {
+            "mean-runtime": 45.99681115150452,
+            "min-runtime": 45.99681115150452,
+            "max-runtime": 45.99681115150452
+        },
+        "evaluation3": {
+            "mean-runtime": 0.011664152145385742,
+            "min-runtime": 0.011664152145385742,
+            "max-runtime": 0.011664152145385742
+        },
+        "all": {
+            "mean-runtime": 0.0011000633239746094,
+            "min-runtime": 0.0011000633239746094,
+            "max-runtime": 0.0011000633239746094
+        }
+    },
+    "files": {
+        "/datater/wu/data/MSSPE-variant/coronavirus/coronavirus.uniq": {
+            "start-time": "Mon May  3 09:56:55 2021",
+            "stop-time": "Mon May  3 09:57:29 2021",
+            "duration": 33.79837083816528,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.1.ebwt": {
+            "start-time": "Mon May  3 09:56:55 2021",
+            "stop-time": "Mon May  3 09:57:25 2021",
+            "duration": 30.252691745758057,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.2.ebwt": {
+            "start-time": "Mon May  3 09:56:55 2021",
+            "stop-time": "Mon May  3 09:57:25 2021",
+            "duration": 30.252691745758057,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.3.ebwt": {
+            "start-time": "Mon May  3 09:56:55 2021",
+            "stop-time": "Mon May  3 09:57:25 2021",
+            "duration": 30.252691745758057,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.4.ebwt": {
+            "start-time": "Mon May  3 09:56:55 2021",
+            "stop-time": "Mon May  3 09:57:25 2021",
+            "duration": 30.252691745758057,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.1.ebwt": {
+            "start-time": "Mon May  3 09:56:55 2021",
+            "stop-time": "Mon May  3 09:57:25 2021",
+            "duration": 30.252691745758057,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.2.ebwt": {
+            "start-time": "Mon May  3 09:56:55 2021",
+            "stop-time": "Mon May  3 09:57:25 2021",
+            "duration": 30.252691745758057,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.uniq": {
+            "start-time": "Mon May  3 09:57:29 2021",
+            "stop-time": "Mon May  3 10:46:04 2021",
+            "duration": 2915.0337419509888,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.int.kmc_pre": {
+            "start-time": "Mon May  3 09:57:29 2021",
+            "stop-time": "Mon May  3 09:58:10 2021",
+            "duration": 41.914358615875244,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.int.kmc_suf": {
+            "start-time": "Mon May  3 09:57:29 2021",
+            "stop-time": "Mon May  3 09:58:10 2021",
+            "duration": 41.914358615875244,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/aceID-taxID-species.tsv": {
+            "start-time": "Mon May  3 09:57:29 2021",
+            "stop-time": "Mon May  3 10:01:03 2021",
+            "duration": 214.7338469028473,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.txt": {
+            "start-time": "Mon May  3 09:58:10 2021",
+            "stop-time": "Mon May  3 09:58:11 2021",
+            "duration": 0.537452220916748,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.txt": {
+            "start-time": "Mon May  3 09:58:11 2021",
+            "stop-time": "Mon May  3 09:58:12 2021",
+            "duration": 1.1160533428192139,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/coronavirus/kmer13/allKmerCount.sorted.calculated.txt": {
+            "start-time": "Mon May  3 09:58:12 2021",
+            "stop-time": "Mon May  3 09:59:31 2021",
+            "duration": 79.00605988502502,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.calculated.fasta": {
+            "start-time": "Mon May  3 09:59:31 2021",
+            "stop-time": "Mon May  3 09:59:35 2021",
+            "duration": 3.503066301345825,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/coronavirus/kmer13/allKmerCount.sorted.calculated.filtered.txt": {
+            "start-time": "Mon May  3 09:59:31 2021",
+            "stop-time": "Mon May  3 09:59:34 2021",
+            "duration": 2.918276786804199,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.fasta": {
+            "start-time": "Mon May  3 09:59:34 2021",
+            "stop-time": "Mon May  3 09:59:35 2021",
+            "duration": 0.982900857925415,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.bowtie": {
+            "start-time": "Mon May  3 09:59:35 2021",
+            "stop-time": "Mon May  3 09:59:35 2021",
+            "duration": 0.2286844253540039,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/coronavirus/kmer13/allKmerCount.sorted.calculated.filtered.spec.txt": {
+            "start-time": "Mon May  3 09:59:35 2021",
+            "stop-time": "Mon May  3 09:59:37 2021",
+            "duration": 1.928588628768921,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.msa": {
+            "start-time": "Mon May  3 10:46:04 2021",
+            "stop-time": "Tue May  4 05:09:12 2021",
+            "duration": 66188.15522122383,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.msa.DB.1.ebwt": {
+            "start-time": "Tue May  4 05:09:12 2021",
+            "stop-time": "Tue May  4 05:10:44 2021",
+            "duration": 92.58392262458801,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.msa.DB.2.ebwt": {
+            "start-time": "Tue May  4 05:09:12 2021",
+            "stop-time": "Tue May  4 05:10:44 2021",
+            "duration": 92.58392262458801,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.msa.DB.3.ebwt": {
+            "start-time": "Tue May  4 05:09:12 2021",
+            "stop-time": "Tue May  4 05:10:44 2021",
+            "duration": 92.58392262458801,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.msa.DB.4.ebwt": {
+            "start-time": "Tue May  4 05:09:12 2021",
+            "stop-time": "Tue May  4 05:10:44 2021",
+            "duration": 92.58392262458801,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.msa.DB.rev.1.ebwt": {
+            "start-time": "Tue May  4 05:09:12 2021",
+            "stop-time": "Tue May  4 05:10:44 2021",
+            "duration": 92.58392262458801,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.msa.DB.rev.2.ebwt": {
+            "start-time": "Tue May  4 05:09:12 2021",
+            "stop-time": "Tue May  4 05:10:44 2021",
+            "duration": 92.58392262458801,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.calculated.bowtie": {
+            "start-time": "Tue May  4 05:10:44 2021",
+            "stop-time": "Tue May  4 05:10:54 2021",
+            "duration": 9.7913498878479,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.calculated.position": {
+            "start-time": "Tue May  4 05:10:54 2021",
+            "stop-time": "Tue May  4 05:11:50 2021",
+            "duration": 55.800782442092896,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/coronavirus/kmer13/allOligo.set": {
+            "start-time": "Tue May  4 05:11:50 2021",
+            "stop-time": "Tue May  4 05:11:57 2021",
+            "duration": 6.890119552612305,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/coronavirus/kmer13/evaluation/allOligo_before.tsv": {
+            "start-time": "Tue May  4 05:11:50 2021",
+            "stop-time": "Tue May  4 05:11:53 2021",
+            "duration": 3.0458192825317383,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/coronavirus/kmer13/evaluation/allOligo_after1.tsv": {
+            "start-time": "Tue May  4 05:11:50 2021",
+            "stop-time": "Tue May  4 05:11:53 2021",
+            "duration": 3.0458192825317383,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/coronavirus/kmer13/evaluation/allOligo_after2.tsv": {
+            "start-time": "Tue May  4 05:11:50 2021",
+            "stop-time": "Tue May  4 05:11:53 2021",
+            "duration": 3.0458192825317383,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/coronavirus/kmer13/evaluation/allOligo.set.coverage": {
+            "start-time": "Tue May  4 05:11:57 2021",
+            "stop-time": "Tue May  4 05:12:43 2021",
+            "duration": 45.99681115150452,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        },
+        "/datater/wu/data/MSSPE-variant/coronavirus/kmer13/evaluation/allOligo_after3.tsv": {
+            "start-time": "Tue May  4 05:11:57 2021",
+            "stop-time": "Tue May  4 05:11:57 2021",
+            "duration": 0.011664152145385742,
+            "priority": 0,
+            "resources": {
+                "_cores": 1,
+                "_nodes": 1
+            }
+        }
+    }
+}

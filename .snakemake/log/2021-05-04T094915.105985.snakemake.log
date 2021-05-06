@@ -1,0 +1,3 @@
+WorkflowError in line 4 of /datater/wu/MSSPE/scripts/test.smk:
+Config file ../config.yaml not found.
+  File "/datater/wu/MSSPE/scripts/test.smk", line 4, in <module>

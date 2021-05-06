@@ -1,0 +1,112 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	2	MSA
+	1	all
+	2	checkHeterodimer
+	2	evaluation1
+	2	evaluation2
+	2	evaluation3
+	2	filtering2
+	2	filtering3
+	2	removeDuplicateSeq
+	2	specific1
+	2	specific3
+	2	specific4
+	2	splitIntoOverlappingWindows
+	25
+Select jobs to execute...
+
+[Tue May  4 17:23:24 2021]
+rule removeDuplicateSeq:
+    input: /datater/wu/data/coronavirus_withoutSarsCov2.fasta
+    output: /datater/wu/data/MSSPE-basic/coronavirusWithoutSarsCov2/coronavirusWithoutSarsCov2.uniq
+    jobid: 1
+    wildcards: sample=coronavirusWithoutSarsCov2
+
+
+[Tue May  4 17:23:24 2021]
+rule removeDuplicateSeq:
+    input: /datater/wu/data/coronavirusCurated_withoutSarsCov2.fasta
+    output: /datater/wu/data/MSSPE-basic/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov2.uniq
+    jobid: 2
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2
+
+[Tue May  4 17:23:24 2021]
+Finished job 1.
+1 of 25 steps (4%) done
+Select jobs to execute...
+
+[Tue May  4 17:23:24 2021]
+rule MSA:
+    input: /datater/wu/data/MSSPE-basic/coronavirusWithoutSarsCov2/coronavirusWithoutSarsCov2.uniq
+    output: /datater/wu/data/MSSPE-basic/coronavirusWithoutSarsCov2/coronavirusWithoutSarsCov2.msa
+    log: /datater/wu/data/MSSPE-basic/coronavirusWithoutSarsCov2/log/mafft.log
+    jobid: 3
+    wildcards: sample=coronavirusWithoutSarsCov2
+
+
+[Tue May  4 17:23:24 2021]
+rule evaluation1:
+    input: /datater/wu/data/MSSPE-basic/coronavirusWithoutSarsCov2/coronavirusWithoutSarsCov2.uniq, /datater/wu/data/ncbiTaxonomy/nucl_gb.accession2taxid, /datater/wu/data/ncbiTaxonomy/ncbi_lineages_2021-04-23.csv
+    output: /datater/wu/data/MSSPE-basic/coronavirusWithoutSarsCov2/kmer13/intermediate/aceID-taxID-species.tsv
+    jobid: 20
+    wildcards: sample=coronavirusWithoutSarsCov2
+
+[Tue May  4 17:23:25 2021]
+Finished job 2.
+2 of 25 steps (8%) done
+Select jobs to execute...
+
+[Tue May  4 17:23:25 2021]
+rule MSA:
+    input: /datater/wu/data/MSSPE-basic/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov2.uniq
+    output: /datater/wu/data/MSSPE-basic/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov2.msa
+    log: /datater/wu/data/MSSPE-basic/coronavirusCuratedWithoutSarsCov2/log/mafft.log
+    jobid: 4
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2
+
+
+[Tue May  4 17:23:25 2021]
+rule evaluation1:
+    input: /datater/wu/data/MSSPE-basic/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov2.uniq, /datater/wu/data/ncbiTaxonomy/nucl_gb.accession2taxid, /datater/wu/data/ncbiTaxonomy/ncbi_lineages_2021-04-23.csv
+    output: /datater/wu/data/MSSPE-basic/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/aceID-taxID-species.tsv
+    jobid: 21
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2
+
+Terminating processes on user request, this might take some time.
+[Tue May  4 17:23:32 2021]
+Error in rule MSA:
+    jobid: 4
+    output: /datater/wu/data/MSSPE-basic/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov2.msa
+    log: /datater/wu/data/MSSPE-basic/coronavirusCuratedWithoutSarsCov2/log/mafft.log (check log file(s) for error message)
+    shell:
+        
+        mafft --auto         --thread 12         --op 1.53         --ep 0.123         --bl 62         --jtt 62         --tm 62                           --inputorder                                    /datater/wu/data/MSSPE-basic/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov2.uniq > /datater/wu/data/MSSPE-basic/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov2.msa         2> /datater/wu/data/MSSPE-basic/coronavirusCuratedWithoutSarsCov2/log/mafft.log
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job MSA since they might be corrupted:
+/datater/wu/data/MSSPE-basic/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov2.msa
+[Tue May  4 17:23:32 2021]
+Error in rule MSA:
+    jobid: 3
+    output: /datater/wu/data/MSSPE-basic/coronavirusWithoutSarsCov2/coronavirusWithoutSarsCov2.msa
+    log: /datater/wu/data/MSSPE-basic/coronavirusWithoutSarsCov2/log/mafft.log (check log file(s) for error message)
+    shell:
+        
+        mafft --auto         --thread 12         --op 1.53         --ep 0.123         --bl 62         --jtt 62         --tm 62                           --inputorder                                    /datater/wu/data/MSSPE-basic/coronavirusWithoutSarsCov2/coronavirusWithoutSarsCov2.uniq > /datater/wu/data/MSSPE-basic/coronavirusWithoutSarsCov2/coronavirusWithoutSarsCov2.msa         2> /datater/wu/data/MSSPE-basic/coronavirusWithoutSarsCov2/log/mafft.log
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job MSA since they might be corrupted:
+/datater/wu/data/MSSPE-basic/coronavirusWithoutSarsCov2/coronavirusWithoutSarsCov2.msa
+Removing output files of failed job evaluation1 since they might be corrupted:
+/datater/wu/data/MSSPE-basic/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/aceID-taxID-species.tsv
+Removing output files of failed job evaluation1 since they might be corrupted:
+/datater/wu/data/MSSPE-basic/coronavirusWithoutSarsCov2/kmer13/intermediate/aceID-taxID-species.tsv
+Complete log: /datater/wu/MSSPE/.snakemake/log/2021-05-04T172324.147087.snakemake.log

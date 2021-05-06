@@ -1,0 +1,25 @@
+Job counts:
+	count	jobs
+	1	MSA
+	1	all
+	1	checkHeterodimer
+	1	clustering
+	1	countAllKmer1
+	1	countAllKmer2
+	1	evaluation1
+	1	evaluation2
+	1	evaluation3
+	1	evaluation4
+	1	filtering1
+	1	filtering2
+	1	getKmerPosition1
+	1	getKmerPosition2
+	1	getKmerPosition3
+	1	getKmerPosition4
+	1	removeDuplicateSeq
+	1	sortAllKmer
+	1	specific1
+	1	specific2
+	1	specific3
+	1	specific4
+	22

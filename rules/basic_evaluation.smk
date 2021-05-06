@@ -109,6 +109,6 @@ rule evaluation3:
         for index in range(len(input)):
             df = pd.read_table(input[index], sep="\t", header=0)
             df = df.sort_values(["start", "kmerCount"], ascending=False)
-            df_first = df.groupby("start", as_index=False).first()
+            df_first = df.groupby("start", as_index=False).head(1)
             df_first = df_first[["oligo", 'kmerCount', 'CG%', 'Entropy', 'Tm', 'homodimer-dG', 'hairpin-dG', 'start', 'end']]
-            df_first.to_csv(output[index] , sep="\t", index=False)
+            df_first.to_csv(output[index] , sep="\t", index=True)

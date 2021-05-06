@@ -54,13 +54,6 @@ rule filtering1:
 
             return counts
 
-        # from: https://github.com/bioinform/somaticseq/blob/e6f5b1c6b98b324d418
-        # 407154392778164215a65/somaticseq/utilities/linguistic_sequence_complex
-        # ity.py
-        # Calculate linguistic sequence complexity according to
-        # https://doi.org/10.1093/bioinformatics/18.5.679
-        # Assume 4 different nucleotides
-
         def LC(sequence):
 
             sequence = sequence.upper()
@@ -134,7 +127,8 @@ rule filtering2:
         deltaG = config["homodimer-deltaG"],
         GCUp = config["GC-upper"],
         GCDown = config["GC-lower"],
-        TmMax = config["Tm-max"]
+        TmMax = config["Tm-max"],
+        LCSeuil = config["linguistic-complexity"]
     run:
         import pandas as pd
         import os
@@ -143,12 +137,13 @@ rule filtering2:
         GCUp = params.GCUp
         GCDown = params.GCDown
         TmMax = params.TmMax
+        LCSeuil = params.LCSeuil
 
         df = pd.read_table(input[0], sep="\t", header=0, index_col=0)
 
         # entropyThreshold = float(df["Entropy"].quantile(0.75))
         # entropyThreshold = float(df["Entropy"].median())
-        entropyThreshold = float(df["Entropy"].mean())
+        # entropyThreshold = float(df["Entropy"].mean())
         tmMean = float(df["Tm"].mean())
         tmStd = float(df["Tm"].std())
 
@@ -157,6 +152,6 @@ rule filtering2:
         TmSeuilPlus = tmMean + 2*tmStd
         TmSeuilLess = tmMean - 2*tmStd
 
-        df_filtered = df[(df["Tm"] >= TmSeuilLess) & (df["Tm"] <= TmSeuilPlus) & (df["Tm"] <= TmMax) & (df["CG%"] >= GCUp) & (df["CG%"] <= GCDown) & (df["hairpin-dG"] > deltaG) & (df["homodimer-dG"] > deltaG) & (df["Entropy"] >= entropyThreshold)]
+        df_filtered = df[(df["Tm"] >= TmSeuilLess) & (df["Tm"] <= TmSeuilPlus) & (df["Tm"] <= TmMax) & (df["CG%"] >= GCUp) & (df["CG%"] <= GCDown) & (df["hairpin-dG"] > deltaG) & (df["homodimer-dG"] > deltaG) & (df["Entropy"] > LCSeuil)]
         df_filtered = df_filtered.sort_values("kmerCount", ascending=False)
         df_filtered.to_csv(output[0], sep='\t', index=True)

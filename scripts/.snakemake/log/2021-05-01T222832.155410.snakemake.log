@@ -1,3 +1,0 @@
-NameError in line 14 of /datater/wu/MSSPE/scripts/test.smk:
-name 'expqnd' is not defined
-  File "/datater/wu/MSSPE/scripts/test.smk", line 14, in <module>

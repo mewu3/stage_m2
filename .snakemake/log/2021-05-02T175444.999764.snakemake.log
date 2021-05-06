@@ -1,0 +1,81 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	checkHeterodimer
+	1	evaluation2
+	1	evaluation3
+	1	evaluation4
+	1	getKmerPosition4
+	6
+Select jobs to execute...
+
+[Sun May  2 17:54:45 2021]
+rule getKmerPosition4:
+    input: /datater/wu/data/MSSPE-variant/enterovirus/kmer15/intermediate/allKmerCount.sorted.calculated.bowtie, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/allKmerCount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/enterovirus/kmer15/intermediate/allKmerCount.sorted.calculated.position
+    jobid: 16
+    wildcards: sample=enterovirus
+
+[Sun May  2 17:55:19 2021]
+Finished job 16.
+1 of 6 steps (17%) done
+Select jobs to execute...
+
+[Sun May  2 17:55:19 2021]
+rule checkHeterodimer:
+    input: /datater/wu/data/MSSPE-variant/enterovirus/enterovirus0.99.msa, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/intermediate/allKmerCount.sorted.calculated.position, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt
+    output: /datater/wu/data/MSSPE-variant/enterovirus/kmer15/allOligo.set
+    jobid: 17
+    wildcards: sample=enterovirus
+
+[Sun May  2 17:55:19 2021]
+rule evaluation4:
+    input: /datater/wu/data/MSSPE-variant/enterovirus/enterovirus0.99.msa, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/intermediate/allKmerCount.sorted.calculated.position, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/allKmerCount.sorted.calculated.filtered.txt, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt
+    output: /datater/wu/data/MSSPE-variant/enterovirus/kmer15/evaluation/allOligo_before.tsv, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/evaluation/allOligo_after1.tsv, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/evaluation/allOligo_after2.tsv
+    jobid: 20
+    wildcards: sample=enterovirus
+
+[Sun May  2 17:55:23 2021]
+Finished job 17.
+2 of 6 steps (33%) done
+Select jobs to execute...
+
+[Sun May  2 17:55:23 2021]
+rule evaluation2:
+    input: /datater/wu/data/MSSPE-variant/enterovirus/kmer15/allOligo.set, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/intermediate/aceID-taxID-species.tsv, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/intermediate/allKmerCount.sorted.calculated.bowtie
+    output: /datater/wu/data/MSSPE-variant/enterovirus/kmer15/evaluation/allOligo.set.coverage
+    jobid: 19
+    wildcards: sample=enterovirus
+
+[Sun May  2 17:55:23 2021]
+rule evaluation3:
+    input: /datater/wu/data/MSSPE-variant/enterovirus/kmer15/allOligo.set
+    output: /datater/wu/data/MSSPE-variant/enterovirus/kmer15/evaluation/allOligo_after3.tsv
+    jobid: 21
+    wildcards: sample=enterovirus
+
+[Sun May  2 17:55:23 2021]
+Finished job 21.
+3 of 6 steps (50%) done
+[Sun May  2 17:55:24 2021]
+Finished job 20.
+4 of 6 steps (67%) done
+[Sun May  2 17:55:40 2021]
+Finished job 19.
+5 of 6 steps (83%) done
+Select jobs to execute...
+
+[Sun May  2 17:55:40 2021]
+localrule all:
+    input: /datater/wu/data/MSSPE-variant/enterovirus/enterovirus.uniq, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/intermediate/allKmerCount.int.kmc_pre, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/intermediate/allKmerCount.int.kmc_suf, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/intermediate/allKmerCount.txt, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/intermediate/allKmerCount.sorted.txt, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/allKmerCount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/allKmerCount.sorted.calculated.filtered.txt, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.fasta, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.2.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.3.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.4.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.2.ebwt, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.bowtie, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt, /datater/wu/data/MSSPE-variant/enterovirus/enterovirus0.99.uniq, /datater/wu/data/MSSPE-variant/enterovirus/enterovirus0.99.msa, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/intermediate/allKmerCount.sorted.calculated.fasta, /datater/wu/data/MSSPE-variant/enterovirus/enterovirus0.99.msa.DB.1.ebwt, /datater/wu/data/MSSPE-variant/enterovirus/enterovirus0.99.msa.DB.2.ebwt, /datater/wu/data/MSSPE-variant/enterovirus/enterovirus0.99.msa.DB.3.ebwt, /datater/wu/data/MSSPE-variant/enterovirus/enterovirus0.99.msa.DB.4.ebwt, /datater/wu/data/MSSPE-variant/enterovirus/enterovirus0.99.msa.DB.rev.1.ebwt, /datater/wu/data/MSSPE-variant/enterovirus/enterovirus0.99.msa.DB.rev.2.ebwt, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/intermediate/allKmerCount.sorted.calculated.bowtie, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/intermediate/allKmerCount.sorted.calculated.position, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/allOligo.set, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/intermediate/aceID-taxID-species.tsv, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/evaluation/allOligo.set.coverage, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/evaluation/allOligo_before.tsv, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/evaluation/allOligo_after1.tsv, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/evaluation/allOligo_after2.tsv, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/evaluation/allOligo_after3.tsv
+    jobid: 0
+
+[Sun May  2 17:55:40 2021]
+Finished job 0.
+6 of 6 steps (100%) done
+Complete log: /datater/wu/MSSPE/.snakemake/log/2021-05-02T175444.999764.snakemake.log

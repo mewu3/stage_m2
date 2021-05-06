@@ -8,16 +8,21 @@ file_refSeq : "/datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna"
 file_aceIDtaxID: "/datater/wu/data/ncbiTaxonomy/nucl_gb.accession2taxid" # ftp://ftp.ncbi.nih.gov/pub/taxonomy/accession2taxid/
 file_taxIDLineage: "/datater/wu/data/ncbiTaxonomy/ncbi_lineages_2021-04-23.csv" # ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy and https://github.com/zyxue/ncbitax2lin
 samples:
-    # zika : "/datater/wu/data/ZIKV-96seqs.fasta"
-    enterovirus: "/datater/wu/data/enterovirus.fasta"
+    zika : "/datater/wu/data/ZIKV-96seqs.fasta"
+    # enterovirus: "/datater/wu/data/enterovirus.fasta"
     # coronavirus: "/datater/wu/data/coronavirus.fasta"
     # enterovirusCurated: "/datater/wu/data/enterovirusCurated.fasta"
     # coronavirusCurated: "/datater/wu/data/coronavirusCurated.fasta"
+    # coronavirusWithoutSarsCov2: "/datater/wu/data/coronavirus_withoutSarsCov2.fasta"
+    # coronavirusCuratedWithoutSarsCov2: "/datater/wu/data/coronavirusCurated_withoutSarsCov2.fasta"
 
 ### global parameters
-curated: "true" 
+curated: "false" # ture or false
 thread: 12
-kmerSize: 15
+# kmerSize: 15
+kmerSize:
+    kmer13: 13
+    kmer15: 15
 
 ### multiple sequence alignemnt
 mafft:
@@ -43,7 +48,7 @@ kmc3:
     memory: 12 # unit GB, default value is 12
     maxCount: 4294967295 # max value allowed by kmc3
 
-### filtering : melting temperature, CG%, homodier, hairpin ...
+### filtering : melting temperature, CG%, linguistic complexity, homodier, hairpin ...
 filter-oligotm:
     monovalent-conc: 50 # unity mM
     divalent-conc: 0 # unity mM
@@ -58,6 +63,8 @@ GC-upper: 40 # inferir than this value will be eliminated
 GC-lower: 60  # superior than this value will be eliminated
 
 Tm-max: 65
+
+linguistic-complexity: 0.8 # inferir than this value will be eliminated
 
 ### heterodimer checking
 dimer-oligotm:

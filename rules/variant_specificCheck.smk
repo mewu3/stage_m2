@@ -31,7 +31,7 @@ rule specific2:
         """
         bowtie-build \
         --threads {params.threads} \
-        {input} {params.out}
+        {input[0]} {params.out}
         """
 
 rule specific3:
