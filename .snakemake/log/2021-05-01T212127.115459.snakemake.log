@@ -1,0 +1,5 @@
+Building DAG of jobs...
+Updating job filtering2.
+WorkflowError:
+Report file does not end with .html or .zip
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/report/__init__.py", line 599, in auto_report

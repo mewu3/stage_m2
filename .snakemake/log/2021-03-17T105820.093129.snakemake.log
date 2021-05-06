@@ -1,0 +1,34 @@
+Building DAG of jobs...
+Updating job aggregate_allReverseOligo.
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	mktree_index
+	2
+Select jobs to execute...
+
+[Wed Mar 17 10:58:20 2021]
+rule mktree_index:
+    input: /datater/wu/data/enterovirus/enterovirus.uniq
+    output: /datater/wu/data/enterovirus/enterovirus.uniq.al1, /datater/wu/data/enterovirus/enterovirus.uniq.bck, /datater/wu/data/enterovirus/enterovirus.uniq.bwt, /datater/wu/data/enterovirus/enterovirus.uniq.des, /datater/wu/data/enterovirus/enterovirus.uniq.lcp, /datater/wu/data/enterovirus/enterovirus.uniq.llv, /datater/wu/data/enterovirus/enterovirus.uniq.ois, /datater/wu/data/enterovirus/enterovirus.uniq.prj, /datater/wu/data/enterovirus/enterovirus.uniq.sds, /datater/wu/data/enterovirus/enterovirus.uniq.skp, /datater/wu/data/enterovirus/enterovirus.uniq.ssp, /datater/wu/data/enterovirus/enterovirus.uniq.sti1, /datater/wu/data/enterovirus/enterovirus.uniq.suf, /datater/wu/data/enterovirus/enterovirus.uniq.tis
+    jobid: 7
+    wildcards: sample=enterovirus
+
+[Wed Mar 17 10:58:55 2021]
+Finished job 7.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Wed Mar 17 10:58:55 2021]
+localrule all:
+    input: /datater/wu/data/enterovirus/filtering/allOligos_reverse.fasta, /datater/wu/data/enterovirus/enterovirus.uniq.al1, /datater/wu/data/enterovirus/enterovirus.uniq.bck, /datater/wu/data/enterovirus/enterovirus.uniq.bwt, /datater/wu/data/enterovirus/enterovirus.uniq.des, /datater/wu/data/enterovirus/enterovirus.uniq.lcp, /datater/wu/data/enterovirus/enterovirus.uniq.llv, /datater/wu/data/enterovirus/enterovirus.uniq.ois, /datater/wu/data/enterovirus/enterovirus.uniq.prj, /datater/wu/data/enterovirus/enterovirus.uniq.sds, /datater/wu/data/enterovirus/enterovirus.uniq.skp, /datater/wu/data/enterovirus/enterovirus.uniq.ssp, /datater/wu/data/enterovirus/enterovirus.uniq.sti1, /datater/wu/data/enterovirus/enterovirus.uniq.suf, /datater/wu/data/enterovirus/enterovirus.uniq.tis
+    jobid: 0
+
+[Wed Mar 17 10:58:55 2021]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-17T105820.093129.snakemake.log

@@ -1,0 +1,31 @@
+Building DAG of jobs...
+Updating job aggregate_allReverseOligo.
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	aggregate_allReverseOligo
+	1	all
+	2
+Select jobs to execute...
+
+[Tue Mar 16 16:45:16 2021]
+rule aggregate_allReverseOligo:
+    output: /datater/wu/data_test/zika/filtering/allOligos_reverse.calculated2
+    jobid: 1
+    wildcards: sample=zika
+
+Terminating processes on user request, this might take some time.
+[Tue Mar 16 16:46:40 2021]
+Error in rule aggregate_allReverseOligo:
+    jobid: 1
+    output: /datater/wu/data_test/zika/filtering/allOligos_reverse.calculated2
+    shell:
+        cat  >> /datater/wu/data_test/zika/filtering/allOligos_reverse.calculated2
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job aggregate_allReverseOligo since they might be corrupted:
+/datater/wu/data_test/zika/filtering/allOligos_reverse.calculated2
+Complete log: /datater/wu/stage_m2_merge/.snakemake/log/2021-03-16T164516.219005.snakemake.log

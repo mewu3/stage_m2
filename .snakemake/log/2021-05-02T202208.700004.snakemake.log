@@ -1,0 +1,43 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	checkHeterodimer
+	1	countAllKmer1
+	1	countAllKmer2
+	1	evaluation2
+	1	evaluation3
+	1	evaluation4
+	1	filtering1
+	1	filtering2
+	1	getKmerPosition1
+	1	getKmerPosition3
+	1	getKmerPosition4
+	1	sortAllKmer
+	1	specific1
+	1	specific3
+	1	specific4
+	16
+Select jobs to execute...
+
+[Sun May  2 20:22:09 2021]
+rule countAllKmer1:
+    input: /datater/wu/data/MSSPE-variant/coronavirus/coronavirus.uniq
+    output: /datater/wu/data/MSSPE-variant/coronavirus/kmer15/intermediate/allKmerCount.int.kmc_pre, /datater/wu/data/MSSPE-variant/coronavirus/kmer15/intermediate/allKmerCount.int.kmc_suf
+    jobid: 2
+    wildcards: sample=coronavirus
+
+Terminating processes on user request, this might take some time.
+[Sun May  2 20:22:09 2021]
+Error in rule countAllKmer1:
+    jobid: 2
+    output: /datater/wu/data/MSSPE-variant/coronavirus/kmer15/intermediate/allKmerCount.int.kmc_pre, /datater/wu/data/MSSPE-variant/coronavirus/kmer15/intermediate/allKmerCount.int.kmc_suf
+    shell:
+        kmc -k15         -m12 -b         -cs4294967295         -r12         -fm /datater/wu/data/MSSPE-variant/coronavirus/coronavirus.uniq /datater/wu/data/MSSPE-variant/coronavirus/kmer15/intermediate/allKmerCount.int /datater/wu/data/MSSPE-variant/coronavirus/kmer15/intermediate
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Complete log: /datater/wu/MSSPE/.snakemake/log/2021-05-02T202208.700004.snakemake.log

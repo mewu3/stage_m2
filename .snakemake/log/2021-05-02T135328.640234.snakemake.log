@@ -1,0 +1,1756 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	MSA
+	1	all
+	1	checkHeterodimer
+	1	evaluation1
+	1	evaluation2
+	1	evaluation3
+	1	filtering2
+	1	filtering3
+	1	removeDuplicateSeq
+	1	specific1
+	1	specific2
+	1	specific3
+	1	specific4
+	1	splitIntoOverlappingWindows
+	14
+Select jobs to execute...
+
+[Sun May  2 13:53:29 2021]
+rule evaluation1:
+    input: /datater/wu/data/enterovirusCurated.fasta, /datater/wu/data/ncbiTaxonomy/nucl_gb.accession2taxid, /datater/wu/data/ncbiTaxonomy/ncbi_lineages_2021-04-23.csv
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/aceID-taxID-species.tsv
+    jobid: 11
+    wildcards: sample=enterovirusCurated
+
+[Sun May  2 13:53:29 2021]
+rule removeDuplicateSeq:
+    input: /datater/wu/data/enterovirusCurated.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/enterovirusCurated.uniq
+    jobid: 1
+    wildcards: sample=enterovirusCurated
+
+
+[Sun May  2 13:53:29 2021]
+rule MSA:
+    input: /datater/wu/data/enterovirusCurated.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/enterovirusCurated.msa
+    log: /datater/wu/data/MSSPE-basic/enterovirusCurated/log/mafft.log
+    jobid: 2
+    wildcards: sample=enterovirusCurated
+
+
+[Sun May  2 13:53:29 2021]
+rule specific2:
+    input: /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna
+    output: /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.2.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.3.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.4.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.2.ebwt
+    jobid: 7
+
+[Sun May  2 13:53:29 2021]
+Finished job 1.
+1 of 14 steps (7%) done
+[Sun May  2 13:54:10 2021]
+Finished job 7.
+2 of 14 steps (14%) done
+[Sun May  2 13:55:25 2021]
+Finished job 2.
+3 of 14 steps (21%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:25 2021]
+checkpoint splitIntoOverlappingWindows:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/enterovirusCurated.msa
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles
+    jobid: 4
+    wildcards: sample=enterovirusCurated
+Downstream jobs will be updated after completion.
+
+Updating job filtering2.
+[Sun May  2 13:55:26 2021]
+Finished job 4.
+4 of 146 steps (3%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:26 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse3315-3820.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3315-3820.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3315-3820.int.kmc_suf
+    jobid: 122
+    wildcards: sample=enterovirusCurated, seg=3315-3820
+
+
+[Sun May  2 13:55:26 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse2805-3310.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2805-3310.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2805-3310.int.kmc_suf
+    jobid: 38
+    wildcards: sample=enterovirusCurated, seg=2805-3310
+
+
+[Sun May  2 13:55:26 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse6120-6625.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6120-6625.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6120-6625.int.kmc_suf
+    jobid: 98
+    wildcards: sample=enterovirusCurated, seg=6120-6625
+
+
+[Sun May  2 13:55:26 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse3570-4075.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3570-4075.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3570-4075.int.kmc_suf
+    jobid: 46
+    wildcards: sample=enterovirusCurated, seg=3570-4075
+
+
+[Sun May  2 13:55:26 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse3060-3565.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3060-3565.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3060-3565.int.kmc_suf
+    jobid: 106
+    wildcards: sample=enterovirusCurated, seg=3060-3565
+
+
+[Sun May  2 13:55:26 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse4080-4585.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4080-4585.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4080-4585.int.kmc_suf
+    jobid: 82
+    wildcards: sample=enterovirusCurated, seg=4080-4585
+
+
+[Sun May  2 13:55:26 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse1020-1525.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1020-1525.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1020-1525.int.kmc_suf
+    jobid: 90
+    wildcards: sample=enterovirusCurated, seg=1020-1525
+
+
+[Sun May  2 13:55:26 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse4335-4840.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4335-4840.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4335-4840.int.kmc_suf
+    jobid: 142
+    wildcards: sample=enterovirusCurated, seg=4335-4840
+
+
+[Sun May  2 13:55:26 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse5100-5605.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5100-5605.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5100-5605.int.kmc_suf
+    jobid: 22
+    wildcards: sample=enterovirusCurated, seg=5100-5605
+
+
+[Sun May  2 13:55:26 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse7140-7645.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7140-7645.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7140-7645.int.kmc_suf
+    jobid: 114
+    wildcards: sample=enterovirusCurated, seg=7140-7645
+
+
+[Sun May  2 13:55:26 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse255-760.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse255-760.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse255-760.int.kmc_suf
+    jobid: 54
+    wildcards: sample=enterovirusCurated, seg=255-760
+
+[Sun May  2 13:55:29 2021]
+Finished job 98.
+5 of 146 steps (3%) done
+Select jobs to execute...
+[Sun May  2 13:55:29 2021]
+Finished job 38.
+6 of 146 steps (4%) done
+
+[Sun May  2 13:55:29 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse4590-5095.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4590-5095.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4590-5095.int.kmc_suf
+    jobid: 70
+    wildcards: sample=enterovirusCurated, seg=4590-5095
+
+Select jobs to execute...
+[Sun May  2 13:55:29 2021]
+Finished job 122.
+7 of 146 steps (5%) done
+
+[Sun May  2 13:55:29 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse2550-3055.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2550-3055.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2550-3055.int.kmc_suf
+    jobid: 134
+    wildcards: sample=enterovirusCurated, seg=2550-3055
+
+
+[Sun May  2 13:55:29 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse5865-6370.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5865-6370.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5865-6370.int.kmc_suf
+    jobid: 34
+    wildcards: sample=enterovirusCurated, seg=5865-6370
+
+[Sun May  2 13:55:29 2021]
+Finished job 22.
+8 of 146 steps (5%) done
+[Sun May  2 13:55:29 2021]
+Finished job 114.
+9 of 146 steps (6%) done
+[Sun May  2 13:55:29 2021]
+Finished job 46.
+10 of 146 steps (7%) done
+Select jobs to execute...
+[Sun May  2 13:55:29 2021]
+Finished job 90.
+11 of 146 steps (8%) done
+[Sun May  2 13:55:29 2021]
+Finished job 82.
+12 of 146 steps (8%) done
+
+[Sun May  2 13:55:29 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse4845-5350.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4845-5350.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4845-5350.int.kmc_suf
+    jobid: 42
+    wildcards: sample=enterovirusCurated, seg=4845-5350
+
+
+[Sun May  2 13:55:29 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse1530-2035.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1530-2035.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1530-2035.int.kmc_suf
+    jobid: 18
+    wildcards: sample=enterovirusCurated, seg=1530-2035
+
+[Sun May  2 13:55:29 2021]
+Finished job 106.
+13 of 146 steps (9%) done
+
+[Sun May  2 13:55:29 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse6630-7135.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6630-7135.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6630-7135.int.kmc_suf
+    jobid: 94
+    wildcards: sample=enterovirusCurated, seg=6630-7135
+
+[Sun May  2 13:55:29 2021]
+Finished job 142.
+14 of 146 steps (10%) done
+Select jobs to execute...
+[Sun May  2 13:55:29 2021]
+Finished job 54.
+15 of 146 steps (10%) done
+
+[Sun May  2 13:55:29 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse1275-1780.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1275-1780.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1275-1780.int.kmc_suf
+    jobid: 118
+    wildcards: sample=enterovirusCurated, seg=1275-1780
+
+
+[Sun May  2 13:55:29 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse6885-7390.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6885-7390.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6885-7390.int.kmc_suf
+    jobid: 102
+    wildcards: sample=enterovirusCurated, seg=6885-7390
+
+
+[Sun May  2 13:55:29 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse0-505.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse0-505.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse0-505.int.kmc_suf
+    jobid: 110
+    wildcards: sample=enterovirusCurated, seg=0-505
+
+
+[Sun May  2 13:55:29 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6120-6625.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6120-6625.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6120-6625.Kmercount.txt
+    jobid: 97
+    wildcards: sample=enterovirusCurated, seg=6120-6625
+
+Select jobs to execute...
+
+[Sun May  2 13:55:29 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse7905-8384.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7905-8384.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7905-8384.int.kmc_suf
+    jobid: 62
+    wildcards: sample=enterovirusCurated, seg=7905-8384
+
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+[Sun May  2 13:55:30 2021]
+Finished job 97.
+16 of 146 steps (11%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:30 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse1785-2290.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1785-2290.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1785-2290.int.kmc_suf
+    jobid: 146
+    wildcards: sample=enterovirusCurated, seg=1785-2290
+
+[Sun May  2 13:55:32 2021]
+Finished job 94.
+17 of 146 steps (12%) done
+Select jobs to execute...
+[Sun May  2 13:55:32 2021]
+Finished job 18.
+18 of 146 steps (12%) done
+
+[Sun May  2 13:55:32 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse5355-5860.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5355-5860.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5355-5860.int.kmc_suf
+    jobid: 26
+    wildcards: sample=enterovirusCurated, seg=5355-5860
+
+Select jobs to execute...
+[Sun May  2 13:55:32 2021]
+Finished job 70.
+19 of 146 steps (13%) done
+[Sun May  2 13:55:32 2021]
+Finished job 34.
+20 of 146 steps (14%) done
+
+[Sun May  2 13:55:32 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1530-2035.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1530-2035.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1530-2035.Kmercount.txt
+    jobid: 17
+    wildcards: sample=enterovirusCurated, seg=1530-2035
+
+Select jobs to execute...
+[Sun May  2 13:55:32 2021]
+Finished job 102.
+21 of 146 steps (14%) done
+
+[Sun May  2 13:55:32 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse2040-2545.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2040-2545.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2040-2545.int.kmc_suf
+    jobid: 86
+    wildcards: sample=enterovirusCurated, seg=2040-2545
+
+
+[Sun May  2 13:55:32 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse510-1015.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse510-1015.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse510-1015.int.kmc_suf
+    jobid: 126
+    wildcards: sample=enterovirusCurated, seg=510-1015
+
+Select jobs to execute...
+[Sun May  2 13:55:32 2021]
+Finished job 42.
+22 of 146 steps (15%) done
+
+[Sun May  2 13:55:32 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6630-7135.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6630-7135.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6630-7135.Kmercount.txt
+    jobid: 93
+    wildcards: sample=enterovirusCurated, seg=6630-7135
+
+Select jobs to execute...
+[Sun May  2 13:55:32 2021]
+Finished job 134.
+23 of 146 steps (16%) done
+[Sun May  2 13:55:32 2021]
+Finished job 110.
+24 of 146 steps (16%) done
+[Sun May  2 13:55:32 2021]
+Finished job 118.
+25 of 146 steps (17%) done
+
+[Sun May  2 13:55:32 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6885-7390.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6885-7390.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6885-7390.Kmercount.txt
+    jobid: 101
+    wildcards: sample=enterovirusCurated, seg=6885-7390
+
+Select jobs to execute...
+
+[Sun May  2 13:55:32 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse7650-8155.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7650-8155.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7650-8155.int.kmc_suf
+    jobid: 58
+    wildcards: sample=enterovirusCurated, seg=7650-8155
+
+
+[Sun May  2 13:55:32 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5865-6370.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5865-6370.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5865-6370.Kmercount.txt
+    jobid: 33
+    wildcards: sample=enterovirusCurated, seg=5865-6370
+
+
+[Sun May  2 13:55:32 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2550-3055.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2550-3055.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2550-3055.Kmercount.txt
+    jobid: 133
+    wildcards: sample=enterovirusCurated, seg=2550-3055
+[Sun May  2 13:55:32 2021]
+
+Finished job 62.
+26 of 146 steps (18%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:32 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4845-5350.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4845-5350.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4845-5350.Kmercount.txt
+    jobid: 41
+    wildcards: sample=enterovirusCurated, seg=4845-5350
+
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+[Sun May  2 13:55:32 2021]
+Finished job 17.
+27 of 146 steps (18%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:32 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse2295-2800.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2295-2800.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2295-2800.int.kmc_suf
+    jobid: 138
+    wildcards: sample=enterovirusCurated, seg=2295-2800
+
+[Sun May  2 13:55:32 2021]
+Finished job 93.
+28 of 146 steps (19%) done
+Select jobs to execute...
+[Sun May  2 13:55:32 2021]
+Finished job 146.
+29 of 146 steps (20%) done
+
+[Sun May  2 13:55:32 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6630-7135.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6630-7135.Kmercount.sorted.txt
+    jobid: 92
+    wildcards: sample=enterovirusCurated, seg=6630-7135
+
+Select jobs to execute...
+[Sun May  2 13:55:32 2021]
+Finished job 101.
+30 of 146 steps (21%) done
+[Sun May  2 13:55:32 2021]
+Finished job 92.
+31 of 146 steps (21%) done
+
+[Sun May  2 13:55:32 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse8160-8384.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse8160-8384.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse8160-8384.int.kmc_suf
+    jobid: 130
+    wildcards: sample=enterovirusCurated, seg=8160-8384
+
+Select jobs to execute...
+[Sun May  2 13:55:32 2021]
+Finished job 33.
+32 of 146 steps (22%) done
+[Sun May  2 13:55:32 2021]
+Finished job 133.
+33 of 146 steps (23%) done
+
+[Sun May  2 13:55:32 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1020-1525.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1020-1525.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1020-1525.Kmercount.txt
+    jobid: 89
+    wildcards: sample=enterovirusCurated, seg=1020-1525
+
+
+[Sun May  2 13:55:32 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse6375-6880.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6375-6880.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6375-6880.int.kmc_suf
+    jobid: 78
+    wildcards: sample=enterovirusCurated, seg=6375-6880
+
+
+[Sun May  2 13:55:33 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5100-5605.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5100-5605.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5100-5605.Kmercount.txt
+    jobid: 21
+    wildcards: sample=enterovirusCurated, seg=5100-5605
+
+Select jobs to execute...
+[Sun May  2 13:55:33 2021]
+Finished job 41.
+34 of 146 steps (23%) done
+
+[Sun May  2 13:55:33 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1785-2290.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1785-2290.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1785-2290.Kmercount.txt
+    jobid: 145
+    wildcards: sample=enterovirusCurated, seg=1785-2290
+
+Select jobs to execute...
+
+[Sun May  2 13:55:33 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6885-7390.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6885-7390.Kmercount.sorted.txt
+    jobid: 100
+    wildcards: sample=enterovirusCurated, seg=6885-7390
+
+Select jobs to execute...
+Select jobs to execute...
+[Sun May  2 13:55:33 2021]
+Finished job 100.
+35 of 146 steps (24%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:33 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5865-6370.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5865-6370.Kmercount.sorted.txt
+    jobid: 32
+    wildcards: sample=enterovirusCurated, seg=5865-6370
+
+[Sun May  2 13:55:33 2021]
+Finished job 32.
+36 of 146 steps (25%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:33 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1275-1780.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1275-1780.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1275-1780.Kmercount.txt
+    jobid: 117
+    wildcards: sample=enterovirusCurated, seg=1275-1780
+
+[Sun May  2 13:55:33 2021]
+Finished job 89.
+37 of 146 steps (25%) done
+Select jobs to execute...
+[Sun May  2 13:55:33 2021]
+Finished job 21.
+38 of 146 steps (26%) done
+
+[Sun May  2 13:55:33 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2550-3055.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2550-3055.Kmercount.sorted.txt
+    jobid: 132
+    wildcards: sample=enterovirusCurated, seg=2550-3055
+
+Select jobs to execute...
+[Sun May  2 13:55:33 2021]
+Finished job 132.
+39 of 146 steps (27%) done
+
+[Sun May  2 13:55:33 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse0-505.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse0-505.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse0-505.Kmercount.txt
+    jobid: 109
+    wildcards: sample=enterovirusCurated, seg=0-505
+
+Select jobs to execute...
+[Sun May  2 13:55:33 2021]
+Finished job 145.
+40 of 146 steps (27%) done
+
+[Sun May  2 13:55:33 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2550-3055.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2550-3055.Kmercount.sorted.calculated.txt
+    jobid: 131
+    wildcards: sample=enterovirusCurated, seg=2550-3055
+
+Select jobs to execute...
+
+[Sun May  2 13:55:33 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1020-1525.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1020-1525.Kmercount.sorted.txt
+    jobid: 88
+    wildcards: sample=enterovirusCurated, seg=1020-1525
+
+[Sun May  2 13:55:33 2021]
+Finished job 88.
+41 of 146 steps (28%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:33 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1020-1525.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1020-1525.Kmercount.sorted.calculated.txt
+    jobid: 87
+    wildcards: sample=enterovirusCurated, seg=1020-1525
+
+[Sun May  2 13:55:33 2021]
+Finished job 117.
+42 of 146 steps (29%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:33 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1275-1780.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1275-1780.Kmercount.sorted.txt
+    jobid: 116
+    wildcards: sample=enterovirusCurated, seg=1275-1780
+
+[Sun May  2 13:55:33 2021]
+Finished job 116.
+43 of 146 steps (29%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:33 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4845-5350.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4845-5350.Kmercount.sorted.txt
+    jobid: 40
+    wildcards: sample=enterovirusCurated, seg=4845-5350
+
+[Sun May  2 13:55:33 2021]
+Finished job 40.
+44 of 146 steps (30%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:33 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse7395-7900.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7395-7900.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7395-7900.int.kmc_suf
+    jobid: 50
+    wildcards: sample=enterovirusCurated, seg=7395-7900
+
+[Sun May  2 13:55:34 2021]
+Finished job 109.
+45 of 146 steps (31%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:34 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse0-505.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse0-505.Kmercount.sorted.txt
+    jobid: 108
+    wildcards: sample=enterovirusCurated, seg=0-505
+
+[Sun May  2 13:55:34 2021]
+Finished job 108.
+46 of 146 steps (32%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:34 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse0-505.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse0-505.Kmercount.sorted.calculated.txt
+    jobid: 107
+    wildcards: sample=enterovirusCurated, seg=0-505
+
+[Sun May  2 13:55:34 2021]
+Finished job 131.
+47 of 146 steps (32%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:34 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5100-5605.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5100-5605.Kmercount.sorted.txt
+    jobid: 20
+    wildcards: sample=enterovirusCurated, seg=5100-5605
+
+[Sun May  2 13:55:34 2021]
+Finished job 20.
+48 of 146 steps (33%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:34 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5100-5605.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5100-5605.Kmercount.sorted.calculated.txt
+    jobid: 19
+    wildcards: sample=enterovirusCurated, seg=5100-5605
+
+[Sun May  2 13:55:34 2021]
+Finished job 87.
+49 of 146 steps (34%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:34 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4080-4585.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4080-4585.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4080-4585.Kmercount.txt
+    jobid: 81
+    wildcards: sample=enterovirusCurated, seg=4080-4585
+
+[Sun May  2 13:55:34 2021]
+Finished job 26.
+50 of 146 steps (34%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:35 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1275-1780.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1275-1780.Kmercount.sorted.calculated.txt
+    jobid: 115
+    wildcards: sample=enterovirusCurated, seg=1275-1780
+
+[Sun May  2 13:55:35 2021]
+Finished job 86.
+51 of 146 steps (35%) done
+Select jobs to execute...
+[Sun May  2 13:55:35 2021]
+Finished job 126.
+52 of 146 steps (36%) done
+
+[Sun May  2 13:55:35 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5355-5860.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5355-5860.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5355-5860.Kmercount.txt
+    jobid: 25
+    wildcards: sample=enterovirusCurated, seg=5355-5860
+
+Select jobs to execute...
+
+[Sun May  2 13:55:35 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse510-1015.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse510-1015.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse510-1015.Kmercount.txt
+    jobid: 125
+    wildcards: sample=enterovirusCurated, seg=510-1015
+
+[Sun May  2 13:55:35 2021]
+Finished job 107.
+53 of 146 steps (36%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:35 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6120-6625.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6120-6625.Kmercount.sorted.txt
+    jobid: 96
+    wildcards: sample=enterovirusCurated, seg=6120-6625
+
+[Sun May  2 13:55:35 2021]
+Finished job 96.
+54 of 146 steps (37%) done
+Select jobs to execute...
+[Sun May  2 13:55:35 2021]
+Finished job 58.
+55 of 146 steps (38%) done
+
+[Sun May  2 13:55:35 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6120-6625.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6120-6625.Kmercount.sorted.calculated.txt
+    jobid: 95
+    wildcards: sample=enterovirusCurated, seg=6120-6625
+
+Select jobs to execute...
+
+[Sun May  2 13:55:35 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7650-8155.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7650-8155.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7650-8155.Kmercount.txt
+    jobid: 57
+    wildcards: sample=enterovirusCurated, seg=7650-8155
+
+[Sun May  2 13:55:35 2021]
+Finished job 81.
+56 of 146 steps (38%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:35 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4080-4585.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4080-4585.Kmercount.sorted.txt
+    jobid: 80
+    wildcards: sample=enterovirusCurated, seg=4080-4585
+
+[Sun May  2 13:55:35 2021]
+Finished job 80.
+57 of 146 steps (39%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:35 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4080-4585.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4080-4585.Kmercount.sorted.calculated.txt
+    jobid: 79
+    wildcards: sample=enterovirusCurated, seg=4080-4585
+
+[Sun May  2 13:55:35 2021]
+Finished job 138.
+58 of 146 steps (40%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:35 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2295-2800.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2295-2800.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2295-2800.Kmercount.txt
+    jobid: 137
+    wildcards: sample=enterovirusCurated, seg=2295-2800
+
+[Sun May  2 13:55:35 2021]
+Finished job 25.
+59 of 146 steps (40%) done
+Select jobs to execute...
+[Sun May  2 13:55:35 2021]
+Finished job 125.
+60 of 146 steps (41%) done
+
+[Sun May  2 13:55:35 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse765-1270.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse765-1270.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse765-1270.int.kmc_suf
+    jobid: 74
+    wildcards: sample=enterovirusCurated, seg=765-1270
+
+Select jobs to execute...
+[Sun May  2 13:55:35 2021]
+Finished job 78.
+61 of 146 steps (42%) done
+
+[Sun May  2 13:55:35 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse510-1015.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse510-1015.Kmercount.sorted.txt
+    jobid: 124
+    wildcards: sample=enterovirusCurated, seg=510-1015
+
+Select jobs to execute...
+[Sun May  2 13:55:35 2021]
+Finished job 130.
+62 of 146 steps (42%) done
+[Sun May  2 13:55:35 2021]
+Finished job 124.
+63 of 146 steps (43%) done
+
+[Sun May  2 13:55:35 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6375-6880.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6375-6880.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6375-6880.Kmercount.txt
+    jobid: 77
+    wildcards: sample=enterovirusCurated, seg=6375-6880
+
+Select jobs to execute...
+[Sun May  2 13:55:35 2021]
+Finished job 57.
+64 of 146 steps (44%) done
+
+[Sun May  2 13:55:35 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4845-5350.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4845-5350.Kmercount.sorted.calculated.txt
+    jobid: 39
+    wildcards: sample=enterovirusCurated, seg=4845-5350
+
+[Sun May  2 13:55:35 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7140-7645.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7140-7645.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7140-7645.Kmercount.txt
+    jobid: 113
+    wildcards: sample=enterovirusCurated, seg=7140-7645
+
+Select jobs to execute...
+[Sun May  2 13:55:35 2021]
+Finished job 19.
+65 of 146 steps (45%) done
+
+[Sun May  2 13:55:35 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7650-8155.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7650-8155.Kmercount.sorted.txt
+    jobid: 56
+    wildcards: sample=enterovirusCurated, seg=7650-8155
+
+Select jobs to execute...
+[Sun May  2 13:55:35 2021]
+Finished job 56.
+66 of 146 steps (45%) done
+
+[Sun May  2 13:55:35 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse510-1015.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse510-1015.Kmercount.sorted.calculated.txt
+    jobid: 123
+    wildcards: sample=enterovirusCurated, seg=510-1015
+
+Select jobs to execute...
+
+[Sun May  2 13:55:35 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2040-2545.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2040-2545.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2040-2545.Kmercount.txt
+    jobid: 85
+    wildcards: sample=enterovirusCurated, seg=2040-2545
+
+Select jobs to execute...
+[Sun May  2 13:55:36 2021]
+Finished job 115.
+67 of 146 steps (46%) done
+Select jobs to execute...
+[Sun May  2 13:55:36 2021]
+Finished job 137.
+68 of 146 steps (47%) done
+
+[Sun May  2 13:55:36 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4335-4840.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4335-4840.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4335-4840.Kmercount.txt
+    jobid: 141
+    wildcards: sample=enterovirusCurated, seg=4335-4840
+
+Select jobs to execute...
+
+[Sun May  2 13:55:36 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse5610-6115.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5610-6115.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5610-6115.int.kmc_suf
+    jobid: 66
+    wildcards: sample=enterovirusCurated, seg=5610-6115
+
+[Sun May  2 13:55:36 2021]
+Finished job 77.
+69 of 146 steps (47%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:36 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3315-3820.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3315-3820.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3315-3820.Kmercount.txt
+    jobid: 121
+    wildcards: sample=enterovirusCurated, seg=3315-3820
+
+[Sun May  2 13:55:36 2021]
+Finished job 113.
+70 of 146 steps (48%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:36 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse255-760.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse255-760.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse255-760.Kmercount.txt
+    jobid: 53
+    wildcards: sample=enterovirusCurated, seg=255-760
+
+[Sun May  2 13:55:36 2021]
+Finished job 85.
+71 of 146 steps (49%) done
+Select jobs to execute...
+[Sun May  2 13:55:36 2021]
+Finished job 95.
+72 of 146 steps (49%) done
+
+[Sun May  2 13:55:36 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7905-8384.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7905-8384.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7905-8384.Kmercount.txt
+    jobid: 61
+    wildcards: sample=enterovirusCurated, seg=7905-8384
+
+Select jobs to execute...
+
+[Sun May  2 13:55:36 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1530-2035.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1530-2035.Kmercount.sorted.txt
+    jobid: 16
+    wildcards: sample=enterovirusCurated, seg=1530-2035
+
+[Sun May  2 13:55:36 2021]
+Finished job 79.
+73 of 146 steps (50%) done
+Select jobs to execute...
+[Sun May  2 13:55:36 2021]
+Finished job 50.
+74 of 146 steps (51%) done
+[Sun May  2 13:55:36 2021]
+Finished job 16.
+75 of 146 steps (51%) done
+
+[Sun May  2 13:55:36 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6630-7135.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6630-7135.Kmercount.sorted.calculated.txt
+    jobid: 91
+    wildcards: sample=enterovirusCurated, seg=6630-7135
+
+Select jobs to execute...
+
+[Sun May  2 13:55:36 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5355-5860.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5355-5860.Kmercount.sorted.txt
+    jobid: 24
+    wildcards: sample=enterovirusCurated, seg=5355-5860
+
+
+[Sun May  2 13:55:36 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2805-3310.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2805-3310.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2805-3310.Kmercount.txt
+    jobid: 37
+    wildcards: sample=enterovirusCurated, seg=2805-3310
+
+Select jobs to execute...
+[Sun May  2 13:55:36 2021]
+Finished job 24.
+76 of 146 steps (52%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:36 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7395-7900.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7395-7900.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7395-7900.Kmercount.txt
+    jobid: 49
+    wildcards: sample=enterovirusCurated, seg=7395-7900
+
+[Sun May  2 13:55:36 2021]
+Finished job 141.
+77 of 146 steps (53%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:36 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5865-6370.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5865-6370.Kmercount.sorted.calculated.txt
+    jobid: 31
+    wildcards: sample=enterovirusCurated, seg=5865-6370
+
+[Sun May  2 13:55:36 2021]
+Finished job 121.
+78 of 146 steps (53%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:36 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2295-2800.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2295-2800.Kmercount.sorted.txt
+    jobid: 136
+    wildcards: sample=enterovirusCurated, seg=2295-2800
+
+[Sun May  2 13:55:36 2021]
+Finished job 136.
+79 of 146 steps (54%) done
+Select jobs to execute...
+[Sun May  2 13:55:36 2021]
+Finished job 53.
+80 of 146 steps (55%) done
+
+[Sun May  2 13:55:36 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6375-6880.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6375-6880.Kmercount.sorted.txt
+    jobid: 76
+    wildcards: sample=enterovirusCurated, seg=6375-6880
+
+Select jobs to execute...
+[Sun May  2 13:55:36 2021]
+Finished job 76.
+81 of 146 steps (55%) done
+[Sun May  2 13:55:36 2021]
+Finished job 61.
+82 of 146 steps (56%) done
+[Sun May  2 13:55:36 2021]
+Finished job 39.
+83 of 146 steps (57%) done
+
+[Sun May  2 13:55:36 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5355-5860.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5355-5860.Kmercount.sorted.calculated.txt
+    jobid: 23
+    wildcards: sample=enterovirusCurated, seg=5355-5860
+
+Select jobs to execute...
+
+[Sun May  2 13:55:36 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6375-6880.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6375-6880.Kmercount.sorted.calculated.txt
+    jobid: 75
+    wildcards: sample=enterovirusCurated, seg=6375-6880
+
+[Sun May  2 13:55:36 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/splitFiles/reverse3825-4330.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3825-4330.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3825-4330.int.kmc_suf
+    jobid: 30
+    wildcards: sample=enterovirusCurated, seg=3825-4330
+
+
+[Sun May  2 13:55:36 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3060-3565.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3060-3565.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3060-3565.Kmercount.txt
+    jobid: 105
+    wildcards: sample=enterovirusCurated, seg=3060-3565
+
+Select jobs to execute...
+Select jobs to execute...
+[Sun May  2 13:55:36 2021]
+Finished job 37.
+84 of 146 steps (58%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:36 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3315-3820.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3315-3820.Kmercount.sorted.txt
+    jobid: 120
+    wildcards: sample=enterovirusCurated, seg=3315-3820
+
+[Sun May  2 13:55:36 2021]
+Finished job 120.
+85 of 146 steps (58%) done
+[Sun May  2 13:55:36 2021]
+Finished job 49.
+86 of 146 steps (59%) done
+[Sun May  2 13:55:36 2021]
+Finished job 123.
+87 of 146 steps (60%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:37 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7650-8155.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7650-8155.Kmercount.sorted.calculated.txt
+    jobid: 55
+    wildcards: sample=enterovirusCurated, seg=7650-8155
+
+[Sun May  2 13:55:37 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1530-2035.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1530-2035.Kmercount.sorted.calculated.txt
+    jobid: 15
+    wildcards: sample=enterovirusCurated, seg=1530-2035
+
+[Sun May  2 13:55:37 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3315-3820.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3315-3820.Kmercount.sorted.calculated.txt
+    jobid: 119
+    wildcards: sample=enterovirusCurated, seg=3315-3820
+
+Select jobs to execute...
+Select jobs to execute...
+[Sun May  2 13:55:37 2021]
+Finished job 105.
+88 of 146 steps (60%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:37 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse255-760.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse255-760.Kmercount.sorted.txt
+    jobid: 52
+    wildcards: sample=enterovirusCurated, seg=255-760
+
+[Sun May  2 13:55:37 2021]
+Finished job 52.
+89 of 146 steps (61%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:37 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7905-8384.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7905-8384.Kmercount.sorted.txt
+    jobid: 60
+    wildcards: sample=enterovirusCurated, seg=7905-8384
+
+[Sun May  2 13:55:37 2021]
+Finished job 60.
+90 of 146 steps (62%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:37 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4590-5095.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4590-5095.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4590-5095.Kmercount.txt
+    jobid: 69
+    wildcards: sample=enterovirusCurated, seg=4590-5095
+
+[Sun May  2 13:55:37 2021]
+Finished job 91.
+91 of 146 steps (62%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:37 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6885-7390.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6885-7390.Kmercount.sorted.calculated.txt
+    jobid: 99
+    wildcards: sample=enterovirusCurated, seg=6885-7390
+
+[Sun May  2 13:55:37 2021]
+Finished job 31.
+92 of 146 steps (63%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:37 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1785-2290.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1785-2290.Kmercount.sorted.txt
+    jobid: 144
+    wildcards: sample=enterovirusCurated, seg=1785-2290
+
+[Sun May  2 13:55:37 2021]
+Finished job 144.
+93 of 146 steps (64%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:37 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4335-4840.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4335-4840.Kmercount.sorted.txt
+    jobid: 140
+    wildcards: sample=enterovirusCurated, seg=4335-4840
+
+[Sun May  2 13:55:37 2021]
+Finished job 140.
+94 of 146 steps (64%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:37 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2295-2800.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2295-2800.Kmercount.sorted.calculated.txt
+    jobid: 135
+    wildcards: sample=enterovirusCurated, seg=2295-2800
+
+[Sun May  2 13:55:37 2021]
+Finished job 69.
+95 of 146 steps (65%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:37 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7140-7645.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7140-7645.Kmercount.sorted.txt
+    jobid: 112
+    wildcards: sample=enterovirusCurated, seg=7140-7645
+
+[Sun May  2 13:55:37 2021]
+Finished job 112.
+96 of 146 steps (66%) done
+Select jobs to execute...
+[Sun May  2 13:55:37 2021]
+Finished job 23.
+97 of 146 steps (66%) done
+[Sun May  2 13:55:38 2021]
+Finished job 75.
+98 of 146 steps (67%) done
+
+[Sun May  2 13:55:38 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3570-4075.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3570-4075.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3570-4075.Kmercount.txt
+    jobid: 45
+    wildcards: sample=enterovirusCurated, seg=3570-4075
+
+Select jobs to execute...
+[Sun May  2 13:55:38 2021]
+Finished job 119.
+99 of 146 steps (68%) done
+
+[Sun May  2 13:55:38 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7905-8384.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7905-8384.Kmercount.sorted.calculated.txt
+    jobid: 59
+    wildcards: sample=enterovirusCurated, seg=7905-8384
+
+[Sun May  2 13:55:38 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7140-7645.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7140-7645.Kmercount.sorted.calculated.txt
+    jobid: 111
+    wildcards: sample=enterovirusCurated, seg=7140-7645
+
+Select jobs to execute...
+
+[Sun May  2 13:55:38 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2040-2545.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2040-2545.Kmercount.sorted.txt
+    jobid: 84
+    wildcards: sample=enterovirusCurated, seg=2040-2545
+
+Select jobs to execute...
+[Sun May  2 13:55:38 2021]
+Finished job 84.
+100 of 146 steps (68%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:38 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse8160-8384.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse8160-8384.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse8160-8384.Kmercount.txt
+    jobid: 129
+    wildcards: sample=enterovirusCurated, seg=8160-8384
+
+[Sun May  2 13:55:38 2021]
+Finished job 15.
+101 of 146 steps (69%) done
+Select jobs to execute...
+[Sun May  2 13:55:38 2021]
+Finished job 55.
+102 of 146 steps (70%) done
+
+[Sun May  2 13:55:38 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7395-7900.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7395-7900.Kmercount.sorted.txt
+    jobid: 48
+    wildcards: sample=enterovirusCurated, seg=7395-7900
+
+Select jobs to execute...
+[Sun May  2 13:55:38 2021]
+Finished job 48.
+103 of 146 steps (71%) done
+
+[Sun May  2 13:55:38 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2040-2545.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2040-2545.Kmercount.sorted.calculated.txt
+    jobid: 83
+    wildcards: sample=enterovirusCurated, seg=2040-2545
+
+Select jobs to execute...
+
+[Sun May  2 13:55:38 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4590-5095.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4590-5095.Kmercount.sorted.txt
+    jobid: 68
+    wildcards: sample=enterovirusCurated, seg=4590-5095
+
+[Sun May  2 13:55:38 2021]
+Finished job 68.
+104 of 146 steps (71%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:38 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4590-5095.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4590-5095.Kmercount.sorted.calculated.txt
+    jobid: 67
+    wildcards: sample=enterovirusCurated, seg=4590-5095
+
+[Sun May  2 13:55:38 2021]
+Finished job 74.
+105 of 146 steps (72%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:38 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse765-1270.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse765-1270.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse765-1270.Kmercount.txt
+    jobid: 73
+    wildcards: sample=enterovirusCurated, seg=765-1270
+
+[Sun May  2 13:55:38 2021]
+Finished job 45.
+106 of 146 steps (73%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:38 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3570-4075.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3570-4075.Kmercount.sorted.txt
+    jobid: 44
+    wildcards: sample=enterovirusCurated, seg=3570-4075
+
+[Sun May  2 13:55:38 2021]
+Finished job 44.
+107 of 146 steps (73%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:38 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3570-4075.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3570-4075.Kmercount.sorted.calculated.txt
+    jobid: 43
+    wildcards: sample=enterovirusCurated, seg=3570-4075
+
+[Sun May  2 13:55:38 2021]
+Finished job 129.
+108 of 146 steps (74%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:38 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse8160-8384.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse8160-8384.Kmercount.sorted.txt
+    jobid: 128
+    wildcards: sample=enterovirusCurated, seg=8160-8384
+
+[Sun May  2 13:55:38 2021]
+Finished job 99.
+109 of 146 steps (75%) done
+Select jobs to execute...
+[Sun May  2 13:55:38 2021]
+Finished job 128.
+110 of 146 steps (75%) done
+
+[Sun May  2 13:55:38 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4335-4840.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4335-4840.Kmercount.sorted.calculated.txt
+    jobid: 139
+    wildcards: sample=enterovirusCurated, seg=4335-4840
+
+Select jobs to execute...
+
+[Sun May  2 13:55:38 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse8160-8384.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse8160-8384.Kmercount.sorted.calculated.txt
+    jobid: 127
+    wildcards: sample=enterovirusCurated, seg=8160-8384
+
+[Sun May  2 13:55:38 2021]
+Finished job 66.
+111 of 146 steps (76%) done
+Select jobs to execute...
+[Sun May  2 13:55:38 2021]
+Finished job 73.
+112 of 146 steps (77%) done
+
+[Sun May  2 13:55:38 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5610-6115.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5610-6115.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5610-6115.Kmercount.txt
+    jobid: 65
+    wildcards: sample=enterovirusCurated, seg=5610-6115
+
+Select jobs to execute...
+
+[Sun May  2 13:55:38 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse765-1270.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse765-1270.Kmercount.sorted.txt
+    jobid: 72
+    wildcards: sample=enterovirusCurated, seg=765-1270
+
+[Sun May  2 13:55:38 2021]
+Finished job 135.
+113 of 146 steps (77%) done
+Select jobs to execute...
+[Sun May  2 13:55:38 2021]
+Finished job 72.
+114 of 146 steps (78%) done
+
+[Sun May  2 13:55:38 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse255-760.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse255-760.Kmercount.sorted.calculated.txt
+    jobid: 51
+    wildcards: sample=enterovirusCurated, seg=255-760
+
+Select jobs to execute...
+
+[Sun May  2 13:55:38 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse765-1270.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse765-1270.Kmercount.sorted.calculated.txt
+    jobid: 71
+    wildcards: sample=enterovirusCurated, seg=765-1270
+
+[Sun May  2 13:55:39 2021]
+Finished job 59.
+115 of 146 steps (79%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:39 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7395-7900.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7395-7900.Kmercount.sorted.calculated.txt
+    jobid: 47
+    wildcards: sample=enterovirusCurated, seg=7395-7900
+
+[Sun May  2 13:55:39 2021]
+Finished job 111.
+116 of 146 steps (79%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:39 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2805-3310.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2805-3310.Kmercount.sorted.txt
+    jobid: 36
+    wildcards: sample=enterovirusCurated, seg=2805-3310
+
+[Sun May  2 13:55:39 2021]
+Finished job 36.
+117 of 146 steps (80%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:39 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2805-3310.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2805-3310.Kmercount.sorted.calculated.txt
+    jobid: 35
+    wildcards: sample=enterovirusCurated, seg=2805-3310
+
+[Sun May  2 13:55:39 2021]
+Finished job 83.
+118 of 146 steps (81%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:39 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1785-2290.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1785-2290.Kmercount.sorted.calculated.txt
+    jobid: 143
+    wildcards: sample=enterovirusCurated, seg=1785-2290
+
+[Sun May  2 13:55:39 2021]
+Finished job 65.
+119 of 146 steps (82%) done
+Select jobs to execute...
+[Sun May  2 13:55:39 2021]
+Finished job 67.
+120 of 146 steps (82%) done
+
+[Sun May  2 13:55:39 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3060-3565.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3060-3565.Kmercount.sorted.txt
+    jobid: 104
+    wildcards: sample=enterovirusCurated, seg=3060-3565
+
+Select jobs to execute...
+[Sun May  2 13:55:39 2021]
+Finished job 104.
+121 of 146 steps (83%) done
+
+[Sun May  2 13:55:39 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5610-6115.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5610-6115.Kmercount.sorted.txt
+    jobid: 64
+    wildcards: sample=enterovirusCurated, seg=5610-6115
+
+Select jobs to execute...
+[Sun May  2 13:55:39 2021]
+Finished job 64.
+122 of 146 steps (84%) done
+
+[Sun May  2 13:55:39 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3060-3565.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3060-3565.Kmercount.sorted.calculated.txt
+    jobid: 103
+    wildcards: sample=enterovirusCurated, seg=3060-3565
+
+Select jobs to execute...
+[Sun May  2 13:55:39 2021]
+Finished job 30.
+123 of 146 steps (84%) done
+
+[Sun May  2 13:55:39 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5610-6115.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5610-6115.Kmercount.sorted.calculated.txt
+    jobid: 63
+    wildcards: sample=enterovirusCurated, seg=5610-6115
+
+Select jobs to execute...
+
+[Sun May  2 13:55:39 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3825-4330.int.kmc_pre, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3825-4330.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3825-4330.Kmercount.txt
+    jobid: 29
+    wildcards: sample=enterovirusCurated, seg=3825-4330
+
+[Sun May  2 13:55:39 2021]
+Finished job 43.
+124 of 146 steps (85%) done
+[Sun May  2 13:55:39 2021]
+Finished job 127.
+125 of 146 steps (86%) done
+[Sun May  2 13:55:39 2021]
+Finished job 51.
+126 of 146 steps (86%) done
+[Sun May  2 13:55:39 2021]
+Finished job 139.
+127 of 146 steps (87%) done
+[Sun May  2 13:55:40 2021]
+Finished job 29.
+128 of 146 steps (88%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:40 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3825-4330.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3825-4330.Kmercount.sorted.txt
+    jobid: 28
+    wildcards: sample=enterovirusCurated, seg=3825-4330
+
+[Sun May  2 13:55:40 2021]
+Finished job 28.
+129 of 146 steps (88%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:40 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3825-4330.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3825-4330.Kmercount.sorted.calculated.txt
+    jobid: 27
+    wildcards: sample=enterovirusCurated, seg=3825-4330
+
+[Sun May  2 13:55:40 2021]
+Finished job 71.
+130 of 146 steps (89%) done
+[Sun May  2 13:55:40 2021]
+Finished job 47.
+131 of 146 steps (90%) done
+[Sun May  2 13:55:40 2021]
+Finished job 35.
+132 of 146 steps (90%) done
+[Sun May  2 13:55:40 2021]
+Finished job 143.
+133 of 146 steps (91%) done
+[Sun May  2 13:55:40 2021]
+Finished job 103.
+134 of 146 steps (92%) done
+[Sun May  2 13:55:40 2021]
+Finished job 63.
+135 of 146 steps (92%) done
+[Sun May  2 13:55:41 2021]
+Finished job 27.
+136 of 146 steps (93%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:41 2021]
+rule filtering2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1530-2035.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5100-5605.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5355-5860.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3825-4330.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5865-6370.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2805-3310.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4845-5350.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3570-4075.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7395-7900.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse255-760.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7650-8155.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7905-8384.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse5610-6115.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4590-5095.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse765-1270.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6375-6880.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4080-4585.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2040-2545.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1020-1525.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6630-7135.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6120-6625.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse6885-7390.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3060-3565.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse0-505.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse7140-7645.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1275-1780.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse3315-3820.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse510-1015.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse8160-8384.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2550-3055.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse2295-2800.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse4335-4840.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/reverse1785-2290.Kmercount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/allKmercount.sorted.calculated.txt
+    jobid: 3
+    wildcards: sample=enterovirusCurated
+
+[Sun May  2 13:55:43 2021]
+Finished job 3.
+137 of 146 steps (94%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:43 2021]
+rule filtering3:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/allKmercount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/allKmerCount.sorted.calculated.filtered.txt
+    jobid: 5
+    wildcards: sample=enterovirusCurated
+
+[Sun May  2 13:55:44 2021]
+Finished job 5.
+138 of 146 steps (95%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:44 2021]
+rule specific1:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/allKmerCount.sorted.calculated.filtered.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.fasta
+    jobid: 6
+    wildcards: sample=enterovirusCurated
+
+[Sun May  2 13:55:45 2021]
+Finished job 6.
+139 of 146 steps (95%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:45 2021]
+rule specific3:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.fasta, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.2.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.3.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.4.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.2.ebwt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.bowtie
+    jobid: 8
+    wildcards: sample=enterovirusCurated
+
+[Sun May  2 13:55:45 2021]
+Finished job 8.
+140 of 146 steps (96%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:45 2021]
+rule specific4:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.bowtie, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/allKmerCount.sorted.calculated.filtered.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt
+    jobid: 9
+    wildcards: sample=enterovirusCurated
+
+[Sun May  2 13:55:47 2021]
+Finished job 9.
+141 of 146 steps (97%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:47 2021]
+rule checkHeterodimer:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/allOligo.set
+    jobid: 10
+    wildcards: sample=enterovirusCurated
+
+[Sun May  2 13:55:50 2021]
+Finished job 10.
+142 of 146 steps (97%) done
+Select jobs to execute...
+
+[Sun May  2 13:55:50 2021]
+rule evaluation3:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/allKmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/allKmerCount.sorted.calculated.filtered.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/allOligo.set
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/evaluation/allOligo_before.tsv, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/evaluation/allOligo_after1.tsv, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/evaluation/allOligo_after2.tsv, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/evaluation/allOligo_after3.tsv
+    jobid: 13
+    wildcards: sample=enterovirusCurated
+
+[Sun May  2 13:55:51 2021]
+Finished job 13.
+143 of 146 steps (98%) done
+[Sun May  2 13:57:30 2021]
+Finished job 11.
+144 of 146 steps (99%) done
+Select jobs to execute...
+
+[Sun May  2 13:57:30 2021]
+rule evaluation2:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/allOligo.set, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/aceID-taxID-species.tsv
+    output: /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/evaluation/allOligo.set.coverage
+    jobid: 12
+    wildcards: sample=enterovirusCurated
+
+[Sun May  2 13:57:31 2021]
+Finished job 12.
+145 of 146 steps (99%) done
+Select jobs to execute...
+
+[Sun May  2 13:57:31 2021]
+localrule all:
+    input: /datater/wu/data/MSSPE-basic/enterovirusCurated/enterovirusCurated.uniq, /datater/wu/data/MSSPE-basic/enterovirusCurated/enterovirusCurated.msa, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/allKmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/allKmerCount.sorted.calculated.filtered.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.fasta, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.2.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.3.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.4.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.2.ebwt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.bowtie, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/allOligo.set, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/intermediate/aceID-taxID-species.tsv, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/evaluation/allOligo.set.coverage, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/evaluation/allOligo_before.tsv, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/evaluation/allOligo_after1.tsv, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/evaluation/allOligo_after2.tsv, /datater/wu/data/MSSPE-basic/enterovirusCurated/kmer15/evaluation/allOligo_after3.tsv
+    jobid: 0
+
+[Sun May  2 13:57:31 2021]
+Finished job 0.
+146 of 146 steps (100%) done
+Complete log: /datater/wu/MSSPE/.snakemake/log/2021-05-02T135328.640234.snakemake.log

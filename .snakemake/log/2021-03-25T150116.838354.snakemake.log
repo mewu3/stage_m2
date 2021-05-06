@@ -1,0 +1,5 @@
+Building DAG of jobs...
+Updating job aggregate_allReverseOligo.
+MissingInputException in line 1 of /datater/wu/stage_m2/rules/reverse_kmer_dsk.smk:
+Missing input files for rule dskReverse:
+/datater/wu/data/enterovirus/splitFiles/reverse1778-2282.nessieOut/datater/wu/data/enterovirus/splitFiles/reverse1778-2282.LC.fasta

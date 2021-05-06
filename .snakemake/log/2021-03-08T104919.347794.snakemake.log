@@ -1,0 +1,12 @@
+Building DAG of jobs...
+AmbiguousRuleException:
+Rules filterOut_forward and merge_all_kmers are ambiguous for the file /datater/wu/data/filtering/zika/dsk/forward/all_oligo.tsv.
+Consider starting rule output with a unique prefix, constrain your wildcards, or use the ruleorder directive.
+Wildcards:
+	filterOut_forward: sample=zika,seg=all_oligo
+	merge_all_kmers: sample=zika
+Expected input files:
+	filterOut_forward: /datater/wu/data/filtering/zika/dsk/forward/all_oligo.table
+	merge_all_kmers: Expected output files:
+	filterOut_forward: /datater/wu/data/filtering/zika/dsk/forward/all_oligo.tsv
+	merge_all_kmers: /datater/wu/data/filtering/zika/dsk/forward/all_oligo.tsv

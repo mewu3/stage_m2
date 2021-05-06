@@ -1,0 +1,99 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	43	filterOut_within_segments
+	44
+Select jobs to execute...
+
+[Wed Mar 10 18:21:26 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_4267-4768.calculated
+    output: /datater/wu/data/zika/primer3/forward_4267-4768.filtered
+    jobid: 189
+    wildcards: sample=zika, seg=4267-4768
+
+[Wed Mar 10 18:21:26 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_2761-3262.calculated
+    output: /datater/wu/data/zika/primer3/forward_2761-3262.filtered
+    jobid: 223
+    wildcards: sample=zika, seg=2761-3262
+
+[Wed Mar 10 18:21:26 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_4769-5270.calculated
+    output: /datater/wu/data/zika/primer3/forward_4769-5270.filtered
+    jobid: 188
+    wildcards: sample=zika, seg=4769-5270
+
+[Wed Mar 10 18:21:26 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_6275-6776.calculated
+    output: /datater/wu/data/zika/primer3/forward_6275-6776.filtered
+    jobid: 195
+    wildcards: sample=zika, seg=6275-6776
+
+[Wed Mar 10 18:21:26 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_9789-10290.calculated
+    output: /datater/wu/data/zika/primer3/forward_9789-10290.filtered
+    jobid: 203
+    wildcards: sample=zika, seg=9789-10290
+
+[Wed Mar 10 18:21:26 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_502-1003.calculated
+    output: /datater/wu/data/zika/primer3/forward_502-1003.filtered
+    jobid: 210
+    wildcards: sample=zika, seg=502-1003
+
+[Wed Mar 10 18:21:26 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_3765-4266.calculated
+    output: /datater/wu/data/zika/primer3/forward_3765-4266.filtered
+    jobid: 194
+    wildcards: sample=zika, seg=3765-4266
+
+[Wed Mar 10 18:21:26 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_4518-5019.calculated
+    output: /datater/wu/data/zika/primer3/forward_4518-5019.filtered
+    jobid: 187
+    wildcards: sample=zika, seg=4518-5019
+
+[Wed Mar 10 18:21:26 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_7781-8282.calculated
+    output: /datater/wu/data/zika/primer3/forward_7781-8282.filtered
+    jobid: 202
+    wildcards: sample=zika, seg=7781-8282
+
+[Wed Mar 10 18:21:26 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_8785-9286.calculated
+    output: /datater/wu/data/zika/primer3/forward_8785-9286.filtered
+    jobid: 209
+    wildcards: sample=zika, seg=8785-9286
+
+[Wed Mar 10 18:21:26 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_7530-8031.calculated
+    output: /datater/wu/data/zika/primer3/forward_7530-8031.filtered
+    jobid: 217
+    wildcards: sample=zika, seg=7530-8031
+
+[Wed Mar 10 18:21:26 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_3012-3513.calculated
+    output: /datater/wu/data/zika/primer3/forward_3012-3513.filtered
+    jobid: 224
+    wildcards: sample=zika, seg=3012-3513
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-10T182126.128548.snakemake.log

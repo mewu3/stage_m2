@@ -1,0 +1,4348 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	2	checkHeterodimer
+	2	evaluation2
+	2	evaluation3
+	2	filtering2
+	2	filtering3
+	2	specific1
+	2	specific3
+	2	specific4
+	1	splitIntoOverlappingWindows
+	18
+Select jobs to execute...
+
+[Thu May  6 11:31:22 2021]
+checkpoint splitIntoOverlappingWindows:
+    input: /datater/wu/data/MSSPE-variant/zika/zika.msa
+    output: /datater/wu/data/MSSPE-variant/zika/splitFiles
+    jobid: 4
+    wildcards: sample=zika
+Downstream jobs will be updated after completion.
+
+Updating job filtering2.
+Updating job filtering2.
+[Thu May  6 11:31:23 2021]
+Finished job 4.
+1 of 362 steps (0.28%) done
+Select jobs to execute...
+
+[Thu May  6 11:31:23 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse8283-8784.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8283-8784.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8283-8784.int.kmc_suf
+    jobid: 308
+    wildcards: sample=zika, kmerSize=kmer15, seg=8283-8784
+
+
+[Thu May  6 11:31:23 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse10542-10780.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse10542-10780.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse10542-10780.int.kmc_suf
+    jobid: 204
+    wildcards: sample=zika, kmerSize=kmer15, seg=10542-10780
+
+
+[Thu May  6 11:31:23 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse2510-3011.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2510-3011.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2510-3011.int.kmc_suf
+    jobid: 368
+    wildcards: sample=zika, kmerSize=kmer15, seg=2510-3011
+
+
+[Thu May  6 11:31:23 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse10291-10780.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse10291-10780.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse10291-10780.int.kmc_suf
+    jobid: 248
+    wildcards: sample=zika, kmerSize=kmer15, seg=10291-10780
+
+
+[Thu May  6 11:31:23 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse10040-10541.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse10040-10541.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse10040-10541.int.kmc_suf
+    jobid: 40
+    wildcards: sample=zika, kmerSize=kmer13, seg=10040-10541
+
+
+[Thu May  6 11:31:23 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse1757-2258.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1757-2258.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1757-2258.int.kmc_suf
+    jobid: 100
+    wildcards: sample=zika, kmerSize=kmer13, seg=1757-2258
+
+
+[Thu May  6 11:31:23 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse1004-1505.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1004-1505.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1004-1505.int.kmc_suf
+    jobid: 292
+    wildcards: sample=zika, kmerSize=kmer15, seg=1004-1505
+
+
+[Thu May  6 11:31:23 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse753-1254.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse753-1254.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse753-1254.int.kmc_suf
+    jobid: 348
+    wildcards: sample=zika, kmerSize=kmer15, seg=753-1254
+
+
+[Thu May  6 11:31:23 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse3012-3513.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3012-3513.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3012-3513.int.kmc_suf
+    jobid: 56
+    wildcards: sample=zika, kmerSize=kmer13, seg=3012-3513
+
+
+[Thu May  6 11:31:23 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse753-1254.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse753-1254.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse753-1254.int.kmc_suf
+    jobid: 176
+    wildcards: sample=zika, kmerSize=kmer13, seg=753-1254
+
+
+[Thu May  6 11:31:23 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse5773-6274.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5773-6274.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5773-6274.int.kmc_suf
+    jobid: 116
+    wildcards: sample=zika, kmerSize=kmer13, seg=5773-6274
+
+
+[Thu May  6 11:31:23 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse3514-4015.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3514-4015.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3514-4015.int.kmc_suf
+    jobid: 220
+    wildcards: sample=zika, kmerSize=kmer15, seg=3514-4015
+
+[Thu May  6 11:31:27 2021]
+Finished job 248.
+2 of 362 steps (0.55%) done
+Select jobs to execute...
+[Thu May  6 11:31:27 2021]
+Finished job 308.
+3 of 362 steps (0.83%) done
+
+[Thu May  6 11:31:27 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse8785-9286.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8785-9286.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8785-9286.int.kmc_suf
+    jobid: 64
+    wildcards: sample=zika, kmerSize=kmer13, seg=8785-9286
+
+Select jobs to execute...
+
+[Thu May  6 11:31:27 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse7781-8282.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7781-8282.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7781-8282.int.kmc_suf
+    jobid: 340
+    wildcards: sample=zika, kmerSize=kmer15, seg=7781-8282
+
+[Thu May  6 11:31:27 2021]
+Finished job 220.
+4 of 362 steps (1%) done
+Select jobs to execute...
+
+[Thu May  6 11:31:27 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse8785-9286.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8785-9286.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8785-9286.int.kmc_suf
+    jobid: 236
+    wildcards: sample=zika, kmerSize=kmer15, seg=8785-9286
+
+[Thu May  6 11:31:27 2021]
+Finished job 368.
+5 of 362 steps (1%) done
+Select jobs to execute...
+[Thu May  6 11:31:27 2021]
+Finished job 204.
+6 of 362 steps (2%) done
+
+[Thu May  6 11:31:27 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse4769-5270.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4769-5270.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4769-5270.int.kmc_suf
+    jobid: 72
+    wildcards: sample=zika, kmerSize=kmer13, seg=4769-5270
+
+Select jobs to execute...
+
+[Thu May  6 11:31:27 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse8032-8533.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8032-8533.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8032-8533.int.kmc_suf
+    jobid: 80
+    wildcards: sample=zika, kmerSize=kmer13, seg=8032-8533
+
+[Thu May  6 11:31:27 2021]
+Finished job 292.
+7 of 362 steps (2%) done
+Select jobs to execute...
+[Thu May  6 11:31:27 2021]
+Finished job 348.
+8 of 362 steps (2%) done
+
+[Thu May  6 11:31:27 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse2761-3262.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2761-3262.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2761-3262.int.kmc_suf
+    jobid: 356
+    wildcards: sample=zika, kmerSize=kmer15, seg=2761-3262
+
+Select jobs to execute...
+
+[Thu May  6 11:31:27 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse6024-6525.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6024-6525.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6024-6525.int.kmc_suf
+    jobid: 332
+    wildcards: sample=zika, kmerSize=kmer15, seg=6024-6525
+
+[Thu May  6 11:31:30 2021]
+Finished job 340.
+9 of 362 steps (2%) done
+Select jobs to execute...
+
+[Thu May  6 11:31:30 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse502-1003.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse502-1003.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse502-1003.int.kmc_suf
+    jobid: 88
+    wildcards: sample=zika, kmerSize=kmer13, seg=502-1003
+
+[Thu May  6 11:31:30 2021]
+Finished job 236.
+10 of 362 steps (3%) done
+Select jobs to execute...
+
+[Thu May  6 11:31:30 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse3012-3513.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3012-3513.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3012-3513.int.kmc_suf
+    jobid: 228
+    wildcards: sample=zika, kmerSize=kmer15, seg=3012-3513
+
+[Thu May  6 11:31:30 2021]
+Finished job 332.
+11 of 362 steps (3%) done
+Select jobs to execute...
+
+[Thu May  6 11:31:31 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8785-9286.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8785-9286.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8785-9286.Kmercount.txt
+    jobid: 235
+    wildcards: sample=zika, kmerSize=kmer15, seg=8785-9286
+
+[Thu May  6 11:31:31 2021]
+Finished job 356.
+12 of 362 steps (3%) done
+Select jobs to execute...
+
+[Thu May  6 11:31:31 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2761-3262.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2761-3262.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2761-3262.Kmercount.txt
+    jobid: 355
+    wildcards: sample=zika, kmerSize=kmer15, seg=2761-3262
+
+[Thu May  6 11:31:31 2021]
+Finished job 355.
+13 of 362 steps (4%) done
+Select jobs to execute...
+[Thu May  6 11:31:31 2021]
+Finished job 235.
+14 of 362 steps (4%) done
+
+[Thu May  6 11:31:31 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse9287-9788.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9287-9788.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9287-9788.int.kmc_suf
+    jobid: 140
+    wildcards: sample=zika, kmerSize=kmer13, seg=9287-9788
+
+Select jobs to execute...
+
+[Thu May  6 11:31:31 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse6526-7027.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6526-7027.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6526-7027.int.kmc_suf
+    jobid: 280
+    wildcards: sample=zika, kmerSize=kmer15, seg=6526-7027
+
+[Thu May  6 11:31:33 2021]
+Finished job 228.
+15 of 362 steps (4%) done
+Select jobs to execute...
+
+[Thu May  6 11:31:34 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3012-3513.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3012-3513.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3012-3513.Kmercount.txt
+    jobid: 227
+    wildcards: sample=zika, kmerSize=kmer15, seg=3012-3513
+
+[Thu May  6 11:31:34 2021]
+Finished job 227.
+16 of 362 steps (4%) done
+Select jobs to execute...
+
+[Thu May  6 11:31:34 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse3765-4266.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3765-4266.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3765-4266.int.kmc_suf
+    jobid: 132
+    wildcards: sample=zika, kmerSize=kmer13, seg=3765-4266
+
+[Thu May  6 11:31:34 2021]
+Finished job 280.
+17 of 362 steps (5%) done
+Select jobs to execute...
+
+[Thu May  6 11:31:34 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse5773-6274.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5773-6274.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5773-6274.int.kmc_suf
+    jobid: 288
+    wildcards: sample=zika, kmerSize=kmer15, seg=5773-6274
+
+[Thu May  6 11:31:37 2021]
+Finished job 288.
+18 of 362 steps (5%) done
+Select jobs to execute...
+
+[Thu May  6 11:31:37 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5773-6274.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5773-6274.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5773-6274.Kmercount.txt
+    jobid: 287
+    wildcards: sample=zika, kmerSize=kmer15, seg=5773-6274
+
+[Thu May  6 11:31:38 2021]
+Finished job 287.
+19 of 362 steps (5%) done
+Select jobs to execute...
+
+[Thu May  6 11:31:38 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse4016-4517.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4016-4517.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4016-4517.int.kmc_suf
+    jobid: 192
+    wildcards: sample=zika, kmerSize=kmer13, seg=4016-4517
+
+[Thu May  6 11:31:52 2021]
+Finished job 176.
+20 of 362 steps (6%) done
+Select jobs to execute...
+
+[Thu May  6 11:31:52 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse3263-3764.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3263-3764.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3263-3764.int.kmc_suf
+    jobid: 28
+    wildcards: sample=zika, kmerSize=kmer13, seg=3263-3764
+
+[Thu May  6 11:31:52 2021]
+Finished job 100.
+21 of 362 steps (6%) done
+Select jobs to execute...
+
+[Thu May  6 11:31:52 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse5020-5521.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5020-5521.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5020-5521.int.kmc_suf
+    jobid: 148
+    wildcards: sample=zika, kmerSize=kmer13, seg=5020-5521
+
+[Thu May  6 11:31:52 2021]
+Finished job 116.
+22 of 362 steps (6%) done
+Select jobs to execute...
+
+[Thu May  6 11:31:53 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse753-1254.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse753-1254.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse753-1254.Kmercount.txt
+    jobid: 347
+    wildcards: sample=zika, kmerSize=kmer15, seg=753-1254
+
+[Thu May  6 11:31:54 2021]
+Finished job 347.
+23 of 362 steps (6%) done
+Select jobs to execute...
+
+[Thu May  6 11:31:54 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse4267-4768.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4267-4768.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4267-4768.int.kmc_suf
+    jobid: 296
+    wildcards: sample=zika, kmerSize=kmer15, seg=4267-4768
+
+[Thu May  6 11:31:57 2021]
+Finished job 296.
+24 of 362 steps (7%) done
+Select jobs to execute...
+
+[Thu May  6 11:31:57 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4267-4768.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4267-4768.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4267-4768.Kmercount.txt
+    jobid: 295
+    wildcards: sample=zika, kmerSize=kmer15, seg=4267-4768
+
+[Thu May  6 11:31:57 2021]
+Finished job 80.
+25 of 362 steps (7%) done
+Select jobs to execute...
+
+[Thu May  6 11:31:57 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8032-8533.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8032-8533.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8032-8533.Kmercount.txt
+    jobid: 79
+    wildcards: sample=zika, kmerSize=kmer13, seg=8032-8533
+
+[Thu May  6 11:31:58 2021]
+Finished job 40.
+26 of 362 steps (7%) done
+Select jobs to execute...
+
+[Thu May  6 11:31:58 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6024-6525.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6024-6525.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6024-6525.Kmercount.txt
+    jobid: 331
+    wildcards: sample=zika, kmerSize=kmer15, seg=6024-6525
+
+[Thu May  6 11:31:58 2021]
+Finished job 295.
+27 of 362 steps (7%) done
+Select jobs to execute...
+[Thu May  6 11:31:58 2021]
+Finished job 79.
+28 of 362 steps (8%) done
+
+[Thu May  6 11:31:58 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse1757-2258.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1757-2258.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1757-2258.int.kmc_suf
+    jobid: 272
+    wildcards: sample=zika, kmerSize=kmer15, seg=1757-2258
+
+Select jobs to execute...
+
+[Thu May  6 11:31:58 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1004-1505.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1004-1505.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1004-1505.Kmercount.txt
+    jobid: 291
+    wildcards: sample=zika, kmerSize=kmer15, seg=1004-1505
+
+[Thu May  6 11:31:58 2021]
+Finished job 331.
+29 of 362 steps (8%) done
+Select jobs to execute...
+
+[Thu May  6 11:31:58 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7781-8282.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7781-8282.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7781-8282.Kmercount.txt
+    jobid: 339
+    wildcards: sample=zika, kmerSize=kmer15, seg=7781-8282
+
+[Thu May  6 11:31:58 2021]
+Finished job 64.
+30 of 362 steps (8%) done
+Select jobs to execute...
+
+[Thu May  6 11:31:58 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse8032-8533.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8032-8533.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8032-8533.int.kmc_suf
+    jobid: 252
+    wildcards: sample=zika, kmerSize=kmer15, seg=8032-8533
+
+[Thu May  6 11:31:58 2021]
+Finished job 291.
+31 of 362 steps (9%) done
+Select jobs to execute...
+
+[Thu May  6 11:31:58 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse1255-1756.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1255-1756.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1255-1756.int.kmc_suf
+    jobid: 224
+    wildcards: sample=zika, kmerSize=kmer15, seg=1255-1756
+
+[Thu May  6 11:31:58 2021]
+Finished job 56.
+32 of 362 steps (9%) done
+Select jobs to execute...
+
+[Thu May  6 11:31:58 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse4267-4768.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4267-4768.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4267-4768.int.kmc_suf
+    jobid: 124
+    wildcards: sample=zika, kmerSize=kmer13, seg=4267-4768
+
+[Thu May  6 11:31:59 2021]
+Finished job 339.
+33 of 362 steps (9%) done
+Select jobs to execute...
+
+[Thu May  6 11:31:59 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse9287-9788.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9287-9788.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9287-9788.int.kmc_suf
+    jobid: 312
+    wildcards: sample=zika, kmerSize=kmer15, seg=9287-9788
+
+[Thu May  6 11:31:59 2021]
+Finished job 72.
+34 of 362 steps (9%) done
+Select jobs to execute...
+
+[Thu May  6 11:31:59 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse6275-6776.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6275-6776.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6275-6776.int.kmc_suf
+    jobid: 156
+    wildcards: sample=zika, kmerSize=kmer13, seg=6275-6776
+
+[Thu May  6 11:32:00 2021]
+Finished job 88.
+35 of 362 steps (10%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:00 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse502-1003.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse502-1003.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse502-1003.Kmercount.txt
+    jobid: 87
+    wildcards: sample=zika, kmerSize=kmer13, seg=502-1003
+
+[Thu May  6 11:32:00 2021]
+Finished job 87.
+36 of 362 steps (10%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:00 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse7781-8282.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7781-8282.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7781-8282.int.kmc_suf
+    jobid: 168
+    wildcards: sample=zika, kmerSize=kmer13, seg=7781-8282
+
+[Thu May  6 11:32:01 2021]
+Finished job 272.
+37 of 362 steps (10%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:01 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse3514-4015.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3514-4015.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3514-4015.int.kmc_suf
+    jobid: 48
+    wildcards: sample=zika, kmerSize=kmer13, seg=3514-4015
+
+[Thu May  6 11:32:01 2021]
+Finished job 252.
+38 of 362 steps (10%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:01 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8032-8533.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8032-8533.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8032-8533.Kmercount.txt
+    jobid: 251
+    wildcards: sample=zika, kmerSize=kmer15, seg=8032-8533
+
+[Thu May  6 11:32:02 2021]
+Finished job 224.
+39 of 362 steps (11%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:02 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1255-1756.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1255-1756.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1255-1756.Kmercount.txt
+    jobid: 223
+    wildcards: sample=zika, kmerSize=kmer15, seg=1255-1756
+
+[Thu May  6 11:32:02 2021]
+Finished job 251.
+40 of 362 steps (11%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:02 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8032-8533.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8032-8533.Kmercount.sorted.txt
+    jobid: 250
+    wildcards: sample=zika, kmerSize=kmer15, seg=8032-8533
+
+[Thu May  6 11:32:02 2021]
+Finished job 250.
+41 of 362 steps (11%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:02 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse2008-2509.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2008-2509.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2008-2509.int.kmc_suf
+    jobid: 164
+    wildcards: sample=zika, kmerSize=kmer13, seg=2008-2509
+
+[Thu May  6 11:32:02 2021]
+Finished job 223.
+42 of 362 steps (12%) done
+[Thu May  6 11:32:02 2021]
+Finished job 140.
+43 of 362 steps (12%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:02 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse753-1254.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse753-1254.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse753-1254.Kmercount.txt
+    jobid: 175
+    wildcards: sample=zika, kmerSize=kmer13, seg=753-1254
+
+
+[Thu May  6 11:32:02 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse0-501.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse0-501.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse0-501.int.kmc_suf
+    jobid: 300
+    wildcards: sample=zika, kmerSize=kmer15, seg=0-501
+
+Select jobs to execute...
+[Thu May  6 11:32:03 2021]
+Finished job 312.
+44 of 362 steps (12%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:03 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1255-1756.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1255-1756.Kmercount.sorted.txt
+    jobid: 222
+    wildcards: sample=zika, kmerSize=kmer15, seg=1255-1756
+
+[Thu May  6 11:32:03 2021]
+Finished job 222.
+45 of 362 steps (12%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:03 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1255-1756.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1255-1756.Kmercount.sorted.calculated.txt
+    jobid: 221
+    wildcards: sample=zika, kmerSize=kmer15, seg=1255-1756
+
+[Thu May  6 11:32:03 2021]
+Finished job 175.
+46 of 362 steps (13%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:03 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse10291-10780.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse10291-10780.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse10291-10780.int.kmc_suf
+    jobid: 76
+    wildcards: sample=zika, kmerSize=kmer13, seg=10291-10780
+
+[Thu May  6 11:32:04 2021]
+Finished job 221.
+47 of 362 steps (13%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:04 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9287-9788.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9287-9788.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9287-9788.Kmercount.txt
+    jobid: 311
+    wildcards: sample=zika, kmerSize=kmer15, seg=9287-9788
+
+[Thu May  6 11:32:05 2021]
+Finished job 311.
+48 of 362 steps (13%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:05 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9287-9788.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9287-9788.Kmercount.sorted.txt
+    jobid: 310
+    wildcards: sample=zika, kmerSize=kmer15, seg=9287-9788
+
+[Thu May  6 11:32:05 2021]
+Finished job 310.
+49 of 362 steps (14%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:05 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse1506-2007.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1506-2007.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1506-2007.int.kmc_suf
+    jobid: 36
+    wildcards: sample=zika, kmerSize=kmer13, seg=1506-2007
+
+[Thu May  6 11:32:05 2021]
+Finished job 132.
+50 of 362 steps (14%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:05 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9287-9788.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9287-9788.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9287-9788.Kmercount.txt
+    jobid: 139
+    wildcards: sample=zika, kmerSize=kmer13, seg=9287-9788
+
+[Thu May  6 11:32:06 2021]
+Finished job 139.
+51 of 362 steps (14%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:06 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9287-9788.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9287-9788.Kmercount.sorted.txt
+    jobid: 138
+    wildcards: sample=zika, kmerSize=kmer13, seg=9287-9788
+
+[Thu May  6 11:32:06 2021]
+Finished job 138.
+52 of 362 steps (14%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:06 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse8534-9035.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8534-9035.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8534-9035.int.kmc_suf
+    jobid: 96
+    wildcards: sample=zika, kmerSize=kmer13, seg=8534-9035
+
+[Thu May  6 11:32:06 2021]
+Finished job 300.
+53 of 362 steps (15%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:06 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse0-501.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse0-501.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse0-501.Kmercount.txt
+    jobid: 299
+    wildcards: sample=zika, kmerSize=kmer15, seg=0-501
+
+[Thu May  6 11:32:07 2021]
+Finished job 299.
+54 of 362 steps (15%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:07 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse3263-3764.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3263-3764.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3263-3764.int.kmc_suf
+    jobid: 200
+    wildcards: sample=zika, kmerSize=kmer15, seg=3263-3764
+
+[Thu May  6 11:32:10 2021]
+Finished job 192.
+55 of 362 steps (15%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:10 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse2761-3262.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2761-3262.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2761-3262.int.kmc_suf
+    jobid: 184
+    wildcards: sample=zika, kmerSize=kmer13, seg=2761-3262
+
+[Thu May  6 11:32:10 2021]
+Finished job 200.
+56 of 362 steps (15%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:10 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3263-3764.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3263-3764.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3263-3764.Kmercount.txt
+    jobid: 199
+    wildcards: sample=zika, kmerSize=kmer15, seg=3263-3764
+
+[Thu May  6 11:32:10 2021]
+Finished job 199.
+57 of 362 steps (16%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:11 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3263-3764.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3263-3764.Kmercount.sorted.txt
+    jobid: 198
+    wildcards: sample=zika, kmerSize=kmer15, seg=3263-3764
+
+[Thu May  6 11:32:11 2021]
+Finished job 198.
+58 of 362 steps (16%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:11 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse4016-4517.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4016-4517.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4016-4517.int.kmc_suf
+    jobid: 364
+    wildcards: sample=zika, kmerSize=kmer15, seg=4016-4517
+
+[Thu May  6 11:32:13 2021]
+Finished job 364.
+59 of 362 steps (16%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:13 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4016-4517.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4016-4517.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4016-4517.Kmercount.txt
+    jobid: 363
+    wildcards: sample=zika, kmerSize=kmer15, seg=4016-4517
+
+[Thu May  6 11:32:14 2021]
+Finished job 363.
+60 of 362 steps (17%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:14 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4016-4517.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4016-4517.Kmercount.sorted.txt
+    jobid: 362
+    wildcards: sample=zika, kmerSize=kmer15, seg=4016-4517
+
+[Thu May  6 11:32:14 2021]
+Finished job 362.
+61 of 362 steps (17%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:14 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4267-4768.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4267-4768.Kmercount.sorted.txt
+    jobid: 294
+    wildcards: sample=zika, kmerSize=kmer15, seg=4267-4768
+
+[Thu May  6 11:32:14 2021]
+Finished job 294.
+62 of 362 steps (17%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:14 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse4769-5270.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4769-5270.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4769-5270.int.kmc_suf
+    jobid: 244
+    wildcards: sample=zika, kmerSize=kmer15, seg=4769-5270
+
+[Thu May  6 11:32:16 2021]
+Finished job 244.
+63 of 362 steps (17%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:16 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4769-5270.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4769-5270.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4769-5270.Kmercount.txt
+    jobid: 243
+    wildcards: sample=zika, kmerSize=kmer15, seg=4769-5270
+
+[Thu May  6 11:32:17 2021]
+Finished job 243.
+64 of 362 steps (18%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:17 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4769-5270.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4769-5270.Kmercount.sorted.txt
+    jobid: 242
+    wildcards: sample=zika, kmerSize=kmer15, seg=4769-5270
+
+[Thu May  6 11:32:17 2021]
+Finished job 242.
+65 of 362 steps (18%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:17 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse3765-4266.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3765-4266.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3765-4266.int.kmc_suf
+    jobid: 304
+    wildcards: sample=zika, kmerSize=kmer15, seg=3765-4266
+
+[Thu May  6 11:32:20 2021]
+Finished job 304.
+66 of 362 steps (18%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:20 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3765-4266.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3765-4266.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3765-4266.Kmercount.txt
+    jobid: 303
+    wildcards: sample=zika, kmerSize=kmer15, seg=3765-4266
+
+[Thu May  6 11:32:20 2021]
+Finished job 303.
+67 of 362 steps (19%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:20 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3765-4266.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3765-4266.Kmercount.sorted.txt
+    jobid: 302
+    wildcards: sample=zika, kmerSize=kmer15, seg=3765-4266
+
+[Thu May  6 11:32:20 2021]
+Finished job 302.
+68 of 362 steps (19%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:20 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse1506-2007.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1506-2007.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1506-2007.int.kmc_suf
+    jobid: 208
+    wildcards: sample=zika, kmerSize=kmer15, seg=1506-2007
+
+[Thu May  6 11:32:21 2021]
+Finished job 148.
+69 of 362 steps (19%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:21 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5020-5521.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5020-5521.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5020-5521.Kmercount.txt
+    jobid: 147
+    wildcards: sample=zika, kmerSize=kmer13, seg=5020-5521
+
+[Thu May  6 11:32:22 2021]
+Finished job 147.
+70 of 362 steps (19%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:22 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5020-5521.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5020-5521.Kmercount.sorted.txt
+    jobid: 146
+    wildcards: sample=zika, kmerSize=kmer13, seg=5020-5521
+
+[Thu May  6 11:32:22 2021]
+Finished job 146.
+71 of 362 steps (20%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:22 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3514-4015.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3514-4015.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3514-4015.Kmercount.txt
+    jobid: 219
+    wildcards: sample=zika, kmerSize=kmer15, seg=3514-4015
+
+[Thu May  6 11:32:22 2021]
+Finished job 219.
+72 of 362 steps (20%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:22 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse2259-2760.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2259-2760.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2259-2760.int.kmc_suf
+    jobid: 44
+    wildcards: sample=zika, kmerSize=kmer13, seg=2259-2760
+
+[Thu May  6 11:32:23 2021]
+Finished job 208.
+73 of 362 steps (20%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:23 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1506-2007.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1506-2007.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1506-2007.Kmercount.txt
+    jobid: 207
+    wildcards: sample=zika, kmerSize=kmer15, seg=1506-2007
+
+[Thu May  6 11:32:24 2021]
+Finished job 207.
+74 of 362 steps (20%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:24 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1506-2007.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1506-2007.Kmercount.sorted.txt
+    jobid: 206
+    wildcards: sample=zika, kmerSize=kmer15, seg=1506-2007
+
+[Thu May  6 11:32:24 2021]
+Finished job 206.
+75 of 362 steps (21%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:24 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7781-8282.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7781-8282.Kmercount.sorted.txt
+    jobid: 338
+    wildcards: sample=zika, kmerSize=kmer15, seg=7781-8282
+
+[Thu May  6 11:32:24 2021]
+Finished job 338.
+76 of 362 steps (21%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:24 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse7028-7529.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7028-7529.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7028-7529.int.kmc_suf
+    jobid: 60
+    wildcards: sample=zika, kmerSize=kmer13, seg=7028-7529
+
+[Thu May  6 11:32:26 2021]
+Finished job 28.
+77 of 362 steps (21%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:26 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3263-3764.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3263-3764.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3263-3764.Kmercount.txt
+    jobid: 27
+    wildcards: sample=zika, kmerSize=kmer13, seg=3263-3764
+
+[Thu May  6 11:32:26 2021]
+Finished job 27.
+78 of 362 steps (22%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:26 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse9036-9537.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9036-9537.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9036-9537.int.kmc_suf
+    jobid: 104
+    wildcards: sample=zika, kmerSize=kmer13, seg=9036-9537
+
+[Thu May  6 11:32:29 2021]
+Finished job 156.
+79 of 362 steps (22%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:29 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6275-6776.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6275-6776.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6275-6776.Kmercount.txt
+    jobid: 155
+    wildcards: sample=zika, kmerSize=kmer13, seg=6275-6776
+
+[Thu May  6 11:32:29 2021]
+Finished job 48.
+80 of 362 steps (22%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:29 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse6526-7027.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6526-7027.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6526-7027.int.kmc_suf
+    jobid: 108
+    wildcards: sample=zika, kmerSize=kmer13, seg=6526-7027
+
+[Thu May  6 11:32:29 2021]
+Finished job 155.
+81 of 362 steps (22%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:29 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6275-6776.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6275-6776.Kmercount.sorted.txt
+    jobid: 154
+    wildcards: sample=zika, kmerSize=kmer13, seg=6275-6776
+
+[Thu May  6 11:32:29 2021]
+Finished job 154.
+82 of 362 steps (23%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:29 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3765-4266.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3765-4266.Kmercount.sorted.calculated.txt
+    jobid: 301
+    wildcards: sample=zika, kmerSize=kmer15, seg=3765-4266
+
+[Thu May  6 11:32:30 2021]
+Finished job 124.
+83 of 362 steps (23%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:30 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7781-8282.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7781-8282.Kmercount.sorted.calculated.txt
+    jobid: 337
+    wildcards: sample=zika, kmerSize=kmer15, seg=7781-8282
+
+[Thu May  6 11:32:31 2021]
+Finished job 301.
+84 of 362 steps (23%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:31 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3514-4015.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3514-4015.Kmercount.sorted.txt
+    jobid: 218
+    wildcards: sample=zika, kmerSize=kmer15, seg=3514-4015
+
+[Thu May  6 11:32:31 2021]
+Finished job 218.
+85 of 362 steps (23%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:31 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5773-6274.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5773-6274.Kmercount.sorted.txt
+    jobid: 286
+    wildcards: sample=zika, kmerSize=kmer15, seg=5773-6274
+
+[Thu May  6 11:32:31 2021]
+Finished job 286.
+86 of 362 steps (24%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:31 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5773-6274.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5773-6274.Kmercount.sorted.calculated.txt
+    jobid: 285
+    wildcards: sample=zika, kmerSize=kmer15, seg=5773-6274
+
+[Thu May  6 11:32:31 2021]
+Finished job 168.
+87 of 362 steps (24%) done
+Select jobs to execute...
+[Thu May  6 11:32:31 2021]
+Finished job 337.
+88 of 362 steps (24%) done
+
+[Thu May  6 11:32:31 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8032-8533.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8032-8533.Kmercount.sorted.calculated.txt
+    jobid: 249
+    wildcards: sample=zika, kmerSize=kmer15, seg=8032-8533
+
+Select jobs to execute...
+
+[Thu May  6 11:32:31 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse502-1003.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse502-1003.Kmercount.sorted.txt
+    jobid: 86
+    wildcards: sample=zika, kmerSize=kmer13, seg=502-1003
+
+[Thu May  6 11:32:31 2021]
+Finished job 86.
+89 of 362 steps (25%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:31 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3263-3764.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3263-3764.Kmercount.sorted.txt
+    jobid: 26
+    wildcards: sample=zika, kmerSize=kmer13, seg=3263-3764
+
+[Thu May  6 11:32:31 2021]
+Finished job 26.
+90 of 362 steps (25%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:31 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3263-3764.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3263-3764.Kmercount.sorted.calculated.txt
+    jobid: 25
+    wildcards: sample=zika, kmerSize=kmer13, seg=3263-3764
+
+[Thu May  6 11:32:32 2021]
+Finished job 285.
+91 of 362 steps (25%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:32 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse9538-10039.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9538-10039.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9538-10039.int.kmc_suf
+    jobid: 92
+    wildcards: sample=zika, kmerSize=kmer13, seg=9538-10039
+
+[Thu May  6 11:32:32 2021]
+Finished job 164.
+92 of 362 steps (25%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:32 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2008-2509.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2008-2509.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2008-2509.Kmercount.txt
+    jobid: 163
+    wildcards: sample=zika, kmerSize=kmer13, seg=2008-2509
+
+[Thu May  6 11:32:32 2021]
+Finished job 249.
+93 of 362 steps (26%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:32 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9287-9788.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9287-9788.Kmercount.sorted.calculated.txt
+    jobid: 309
+    wildcards: sample=zika, kmerSize=kmer15, seg=9287-9788
+
+[Thu May  6 11:32:32 2021]
+Finished job 25.
+94 of 362 steps (26%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:32 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse5020-5521.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5020-5521.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5020-5521.int.kmc_suf
+    jobid: 320
+    wildcards: sample=zika, kmerSize=kmer15, seg=5020-5521
+
+[Thu May  6 11:32:32 2021]
+Finished job 163.
+95 of 362 steps (26%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:33 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2008-2509.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2008-2509.Kmercount.sorted.txt
+    jobid: 162
+    wildcards: sample=zika, kmerSize=kmer13, seg=2008-2509
+
+[Thu May  6 11:32:33 2021]
+Finished job 162.
+96 of 362 steps (27%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:33 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2008-2509.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2008-2509.Kmercount.sorted.calculated.txt
+    jobid: 161
+    wildcards: sample=zika, kmerSize=kmer13, seg=2008-2509
+
+[Thu May  6 11:32:33 2021]
+Finished job 309.
+97 of 362 steps (27%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:33 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse251-752.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse251-752.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse251-752.int.kmc_suf
+    jobid: 324
+    wildcards: sample=zika, kmerSize=kmer15, seg=251-752
+
+[Thu May  6 11:32:34 2021]
+Finished job 161.
+98 of 362 steps (27%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:34 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse502-1003.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse502-1003.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse502-1003.int.kmc_suf
+    jobid: 260
+    wildcards: sample=zika, kmerSize=kmer15, seg=502-1003
+
+[Thu May  6 11:32:35 2021]
+Finished job 36.
+99 of 362 steps (27%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:35 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1506-2007.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1506-2007.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1506-2007.Kmercount.txt
+    jobid: 35
+    wildcards: sample=zika, kmerSize=kmer13, seg=1506-2007
+
+[Thu May  6 11:32:35 2021]
+Finished job 320.
+100 of 362 steps (28%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:35 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5020-5521.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5020-5521.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5020-5521.Kmercount.txt
+    jobid: 319
+    wildcards: sample=zika, kmerSize=kmer15, seg=5020-5521
+
+[Thu May  6 11:32:35 2021]
+Finished job 96.
+101 of 362 steps (28%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:35 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8534-9035.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8534-9035.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8534-9035.Kmercount.txt
+    jobid: 95
+    wildcards: sample=zika, kmerSize=kmer13, seg=8534-9035
+
+[Thu May  6 11:32:36 2021]
+Finished job 35.
+102 of 362 steps (28%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:36 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1506-2007.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1506-2007.Kmercount.sorted.txt
+    jobid: 34
+    wildcards: sample=zika, kmerSize=kmer13, seg=1506-2007
+
+[Thu May  6 11:32:36 2021]
+Finished job 34.
+103 of 362 steps (28%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:36 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1506-2007.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1506-2007.Kmercount.sorted.calculated.txt
+    jobid: 33
+    wildcards: sample=zika, kmerSize=kmer13, seg=1506-2007
+
+[Thu May  6 11:32:36 2021]
+Finished job 319.
+104 of 362 steps (29%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:36 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5020-5521.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5020-5521.Kmercount.sorted.txt
+    jobid: 318
+    wildcards: sample=zika, kmerSize=kmer15, seg=5020-5521
+
+[Thu May  6 11:32:36 2021]
+Finished job 318.
+105 of 362 steps (29%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:36 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5020-5521.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5020-5521.Kmercount.sorted.calculated.txt
+    jobid: 317
+    wildcards: sample=zika, kmerSize=kmer15, seg=5020-5521
+
+[Thu May  6 11:32:36 2021]
+Finished job 324.
+106 of 362 steps (29%) done
+Select jobs to execute...
+[Thu May  6 11:32:36 2021]
+Finished job 76.
+107 of 362 steps (30%) done
+
+[Thu May  6 11:32:36 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse10542-10780.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse10542-10780.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse10542-10780.int.kmc_suf
+    jobid: 32
+    wildcards: sample=zika, kmerSize=kmer13, seg=10542-10780
+
+Select jobs to execute...
+
+[Thu May  6 11:32:36 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse10291-10780.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse10291-10780.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse10291-10780.Kmercount.txt
+    jobid: 75
+    wildcards: sample=zika, kmerSize=kmer13, seg=10291-10780
+
+[Thu May  6 11:32:36 2021]
+Finished job 95.
+108 of 362 steps (30%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:36 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8534-9035.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8534-9035.Kmercount.sorted.txt
+    jobid: 94
+    wildcards: sample=zika, kmerSize=kmer13, seg=8534-9035
+
+[Thu May  6 11:32:36 2021]
+Finished job 94.
+109 of 362 steps (30%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:36 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8534-9035.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8534-9035.Kmercount.sorted.calculated.txt
+    jobid: 93
+    wildcards: sample=zika, kmerSize=kmer13, seg=8534-9035
+
+[Thu May  6 11:32:36 2021]
+Finished job 260.
+110 of 362 steps (30%) done
+Select jobs to execute...
+[Thu May  6 11:32:36 2021]
+Finished job 75.
+111 of 362 steps (31%) done
+
+[Thu May  6 11:32:36 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse502-1003.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse502-1003.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse502-1003.Kmercount.txt
+    jobid: 259
+    wildcards: sample=zika, kmerSize=kmer15, seg=502-1003
+
+Select jobs to execute...
+
+[Thu May  6 11:32:36 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse10291-10780.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse10291-10780.Kmercount.sorted.txt
+    jobid: 74
+    wildcards: sample=zika, kmerSize=kmer13, seg=10291-10780
+
+[Thu May  6 11:32:37 2021]
+Finished job 74.
+112 of 362 steps (31%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:37 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse10291-10780.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse10291-10780.Kmercount.sorted.calculated.txt
+    jobid: 73
+    wildcards: sample=zika, kmerSize=kmer13, seg=10291-10780
+
+[Thu May  6 11:32:37 2021]
+Finished job 317.
+113 of 362 steps (31%) done
+Select jobs to execute...
+[Thu May  6 11:32:37 2021]
+Finished job 33.
+114 of 362 steps (31%) done
+
+[Thu May  6 11:32:37 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8785-9286.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8785-9286.Kmercount.sorted.txt
+    jobid: 234
+    wildcards: sample=zika, kmerSize=kmer15, seg=8785-9286
+
+Select jobs to execute...
+[Thu May  6 11:32:37 2021]
+Finished job 234.
+115 of 362 steps (32%) done
+
+[Thu May  6 11:32:37 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4769-5270.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4769-5270.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4769-5270.Kmercount.txt
+    jobid: 71
+    wildcards: sample=zika, kmerSize=kmer13, seg=4769-5270
+
+Select jobs to execute...
+[Thu May  6 11:32:37 2021]
+Finished job 259.
+116 of 362 steps (32%) done
+
+[Thu May  6 11:32:37 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7781-8282.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7781-8282.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7781-8282.Kmercount.txt
+    jobid: 167
+    wildcards: sample=zika, kmerSize=kmer13, seg=7781-8282
+
+Select jobs to execute...
+
+[Thu May  6 11:32:37 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8785-9286.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8785-9286.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8785-9286.Kmercount.txt
+    jobid: 63
+    wildcards: sample=zika, kmerSize=kmer13, seg=8785-9286
+
+[Thu May  6 11:32:37 2021]
+Finished job 93.
+117 of 362 steps (32%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:37 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3514-4015.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3514-4015.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3514-4015.Kmercount.txt
+    jobid: 47
+    wildcards: sample=zika, kmerSize=kmer13, seg=3514-4015
+
+[Thu May  6 11:32:38 2021]
+Finished job 71.
+118 of 362 steps (33%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:38 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse6275-6776.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6275-6776.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6275-6776.int.kmc_suf
+    jobid: 328
+    wildcards: sample=zika, kmerSize=kmer15, seg=6275-6776
+
+[Thu May  6 11:32:38 2021]
+Finished job 167.
+119 of 362 steps (33%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:38 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse8534-9035.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8534-9035.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8534-9035.int.kmc_suf
+    jobid: 268
+    wildcards: sample=zika, kmerSize=kmer15, seg=8534-9035
+
+[Thu May  6 11:32:38 2021]
+Finished job 63.
+120 of 362 steps (33%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:38 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse4518-5019.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4518-5019.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4518-5019.int.kmc_suf
+    jobid: 180
+    wildcards: sample=zika, kmerSize=kmer13, seg=4518-5019
+
+[Thu May  6 11:32:38 2021]
+Finished job 47.
+121 of 362 steps (33%) done
+Select jobs to execute...
+[Thu May  6 11:32:38 2021]
+Finished job 184.
+122 of 362 steps (34%) done
+
+[Thu May  6 11:32:38 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6526-7027.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6526-7027.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6526-7027.Kmercount.txt
+    jobid: 279
+    wildcards: sample=zika, kmerSize=kmer15, seg=6526-7027
+
+Select jobs to execute...
+
+[Thu May  6 11:32:38 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse1004-1505.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1004-1505.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1004-1505.int.kmc_suf
+    jobid: 120
+    wildcards: sample=zika, kmerSize=kmer13, seg=1004-1505
+
+[Thu May  6 11:32:38 2021]
+Finished job 73.
+123 of 362 steps (34%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:38 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse0-501.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse0-501.Kmercount.sorted.txt
+    jobid: 298
+    wildcards: sample=zika, kmerSize=kmer15, seg=0-501
+
+[Thu May  6 11:32:38 2021]
+Finished job 298.
+124 of 362 steps (34%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:38 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1004-1505.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1004-1505.Kmercount.sorted.txt
+    jobid: 290
+    wildcards: sample=zika, kmerSize=kmer15, seg=1004-1505
+
+[Thu May  6 11:32:38 2021]
+Finished job 290.
+125 of 362 steps (35%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:38 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse5522-6023.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5522-6023.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5522-6023.int.kmc_suf
+    jobid: 112
+    wildcards: sample=zika, kmerSize=kmer13, seg=5522-6023
+
+[Thu May  6 11:32:38 2021]
+Finished job 279.
+126 of 362 steps (35%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:39 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse2259-2760.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2259-2760.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2259-2760.int.kmc_suf
+    jobid: 216
+    wildcards: sample=zika, kmerSize=kmer15, seg=2259-2760
+
+[Thu May  6 11:32:41 2021]
+Finished job 328.
+127 of 362 steps (35%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:41 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse7530-8031.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7530-8031.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7530-8031.int.kmc_suf
+    jobid: 172
+    wildcards: sample=zika, kmerSize=kmer13, seg=7530-8031
+
+[Thu May  6 11:32:41 2021]
+Finished job 268.
+128 of 362 steps (35%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:41 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse1255-1756.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1255-1756.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1255-1756.int.kmc_suf
+    jobid: 52
+    wildcards: sample=zika, kmerSize=kmer13, seg=1255-1756
+
+[Thu May  6 11:32:42 2021]
+Finished job 216.
+129 of 362 steps (36%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:42 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse251-752.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse251-752.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse251-752.Kmercount.txt
+    jobid: 323
+    wildcards: sample=zika, kmerSize=kmer15, seg=251-752
+
+[Thu May  6 11:32:43 2021]
+Finished job 323.
+130 of 362 steps (36%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:43 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse251-752.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse251-752.Kmercount.sorted.txt
+    jobid: 322
+    wildcards: sample=zika, kmerSize=kmer15, seg=251-752
+
+[Thu May  6 11:32:43 2021]
+Finished job 322.
+131 of 362 steps (36%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:43 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse502-1003.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse502-1003.Kmercount.sorted.calculated.txt
+    jobid: 85
+    wildcards: sample=zika, kmerSize=kmer13, seg=502-1003
+
+[Thu May  6 11:32:44 2021]
+Finished job 85.
+132 of 362 steps (36%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:44 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8534-9035.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8534-9035.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8534-9035.Kmercount.txt
+    jobid: 267
+    wildcards: sample=zika, kmerSize=kmer15, seg=8534-9035
+
+[Thu May  6 11:32:44 2021]
+Finished job 267.
+133 of 362 steps (37%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:44 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6275-6776.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6275-6776.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6275-6776.Kmercount.txt
+    jobid: 327
+    wildcards: sample=zika, kmerSize=kmer15, seg=6275-6776
+
+[Thu May  6 11:32:45 2021]
+Finished job 327.
+134 of 362 steps (37%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:45 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse0-501.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse0-501.Kmercount.sorted.calculated.txt
+    jobid: 297
+    wildcards: sample=zika, kmerSize=kmer15, seg=0-501
+
+[Thu May  6 11:32:46 2021]
+Finished job 297.
+135 of 362 steps (37%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:46 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse7530-8031.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7530-8031.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7530-8031.int.kmc_suf
+    jobid: 344
+    wildcards: sample=zika, kmerSize=kmer15, seg=7530-8031
+
+[Thu May  6 11:32:48 2021]
+Finished job 344.
+136 of 362 steps (38%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:48 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7530-8031.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7530-8031.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7530-8031.Kmercount.txt
+    jobid: 343
+    wildcards: sample=zika, kmerSize=kmer15, seg=7530-8031
+
+[Thu May  6 11:32:49 2021]
+Finished job 343.
+137 of 362 steps (38%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:49 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7530-8031.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7530-8031.Kmercount.sorted.txt
+    jobid: 342
+    wildcards: sample=zika, kmerSize=kmer15, seg=7530-8031
+
+[Thu May  6 11:32:49 2021]
+Finished job 342.
+138 of 362 steps (38%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:49 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2259-2760.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2259-2760.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2259-2760.Kmercount.txt
+    jobid: 215
+    wildcards: sample=zika, kmerSize=kmer15, seg=2259-2760
+
+[Thu May  6 11:32:49 2021]
+Finished job 215.
+139 of 362 steps (38%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:49 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1004-1505.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1004-1505.Kmercount.sorted.calculated.txt
+    jobid: 289
+    wildcards: sample=zika, kmerSize=kmer15, seg=1004-1505
+
+[Thu May  6 11:32:50 2021]
+Finished job 289.
+140 of 362 steps (39%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:50 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4016-4517.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4016-4517.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4016-4517.Kmercount.txt
+    jobid: 191
+    wildcards: sample=zika, kmerSize=kmer13, seg=4016-4517
+
+[Thu May  6 11:32:51 2021]
+Finished job 191.
+141 of 362 steps (39%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:51 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3514-4015.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3514-4015.Kmercount.sorted.txt
+    jobid: 46
+    wildcards: sample=zika, kmerSize=kmer13, seg=3514-4015
+
+[Thu May  6 11:32:51 2021]
+Finished job 46.
+142 of 362 steps (39%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:51 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3514-4015.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3514-4015.Kmercount.sorted.calculated.txt
+    jobid: 45
+    wildcards: sample=zika, kmerSize=kmer13, seg=3514-4015
+
+[Thu May  6 11:32:51 2021]
+Finished job 44.
+143 of 362 steps (40%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:51 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2259-2760.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2259-2760.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2259-2760.Kmercount.txt
+    jobid: 43
+    wildcards: sample=zika, kmerSize=kmer13, seg=2259-2760
+
+[Thu May  6 11:32:52 2021]
+Finished job 43.
+144 of 362 steps (40%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:52 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7530-8031.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7530-8031.Kmercount.sorted.calculated.txt
+    jobid: 341
+    wildcards: sample=zika, kmerSize=kmer15, seg=7530-8031
+
+[Thu May  6 11:32:52 2021]
+Finished job 45.
+145 of 362 steps (40%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:52 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse7279-7780.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7279-7780.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7279-7780.int.kmc_suf
+    jobid: 188
+    wildcards: sample=zika, kmerSize=kmer13, seg=7279-7780
+
+[Thu May  6 11:32:53 2021]
+Finished job 341.
+146 of 362 steps (40%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:53 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse0-501.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse0-501.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse0-501.int.kmc_suf
+    jobid: 128
+    wildcards: sample=zika, kmerSize=kmer13, seg=0-501
+
+[Thu May  6 11:32:54 2021]
+Finished job 60.
+147 of 362 steps (41%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:54 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7028-7529.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7028-7529.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7028-7529.Kmercount.txt
+    jobid: 59
+    wildcards: sample=zika, kmerSize=kmer13, seg=7028-7529
+
+[Thu May  6 11:32:55 2021]
+Finished job 59.
+148 of 362 steps (41%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:55 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7028-7529.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7028-7529.Kmercount.sorted.txt
+    jobid: 58
+    wildcards: sample=zika, kmerSize=kmer13, seg=7028-7529
+
+[Thu May  6 11:32:55 2021]
+Finished job 58.
+149 of 362 steps (41%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:55 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6275-6776.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6275-6776.Kmercount.sorted.txt
+    jobid: 326
+    wildcards: sample=zika, kmerSize=kmer15, seg=6275-6776
+
+[Thu May  6 11:32:55 2021]
+Finished job 326.
+150 of 362 steps (41%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:55 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8534-9035.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8534-9035.Kmercount.sorted.txt
+    jobid: 266
+    wildcards: sample=zika, kmerSize=kmer15, seg=8534-9035
+
+[Thu May  6 11:32:55 2021]
+Finished job 266.
+151 of 362 steps (42%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:55 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse502-1003.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse502-1003.Kmercount.sorted.txt
+    jobid: 258
+    wildcards: sample=zika, kmerSize=kmer15, seg=502-1003
+
+[Thu May  6 11:32:55 2021]
+Finished job 258.
+152 of 362 steps (42%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:55 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2259-2760.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2259-2760.Kmercount.sorted.txt
+    jobid: 214
+    wildcards: sample=zika, kmerSize=kmer15, seg=2259-2760
+
+[Thu May  6 11:32:55 2021]
+Finished job 214.
+153 of 362 steps (42%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:55 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8534-9035.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8534-9035.Kmercount.sorted.calculated.txt
+    jobid: 265
+    wildcards: sample=zika, kmerSize=kmer15, seg=8534-9035
+
+[Thu May  6 11:32:56 2021]
+Finished job 265.
+154 of 362 steps (43%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:56 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse9036-9537.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9036-9537.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9036-9537.int.kmc_suf
+    jobid: 276
+    wildcards: sample=zika, kmerSize=kmer15, seg=9036-9537
+
+[Thu May  6 11:32:57 2021]
+Finished job 104.
+155 of 362 steps (43%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:57 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse7028-7529.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7028-7529.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7028-7529.int.kmc_suf
+    jobid: 232
+    wildcards: sample=zika, kmerSize=kmer15, seg=7028-7529
+
+[Thu May  6 11:32:58 2021]
+Finished job 276.
+156 of 362 steps (43%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:58 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9036-9537.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9036-9537.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9036-9537.Kmercount.txt
+    jobid: 275
+    wildcards: sample=zika, kmerSize=kmer15, seg=9036-9537
+
+[Thu May  6 11:32:59 2021]
+Finished job 275.
+157 of 362 steps (43%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:59 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9036-9537.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9036-9537.Kmercount.sorted.txt
+    jobid: 274
+    wildcards: sample=zika, kmerSize=kmer15, seg=9036-9537
+
+[Thu May  6 11:32:59 2021]
+Finished job 274.
+158 of 362 steps (44%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:59 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9036-9537.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9036-9537.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9036-9537.Kmercount.txt
+    jobid: 103
+    wildcards: sample=zika, kmerSize=kmer13, seg=9036-9537
+
+[Thu May  6 11:32:59 2021]
+Finished job 108.
+159 of 362 steps (44%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:59 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9036-9537.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9036-9537.Kmercount.sorted.calculated.txt
+    jobid: 273
+    wildcards: sample=zika, kmerSize=kmer15, seg=9036-9537
+
+[Thu May  6 11:32:59 2021]
+Finished job 103.
+160 of 362 steps (44%) done
+Select jobs to execute...
+
+[Thu May  6 11:32:59 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9036-9537.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9036-9537.Kmercount.sorted.txt
+    jobid: 102
+    wildcards: sample=zika, kmerSize=kmer13, seg=9036-9537
+
+[Thu May  6 11:33:00 2021]
+Finished job 102.
+161 of 362 steps (44%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:00 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4016-4517.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4016-4517.Kmercount.sorted.txt
+    jobid: 190
+    wildcards: sample=zika, kmerSize=kmer13, seg=4016-4517
+
+[Thu May  6 11:33:00 2021]
+Finished job 190.
+162 of 362 steps (45%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:00 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4016-4517.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4016-4517.Kmercount.sorted.calculated.txt
+    jobid: 189
+    wildcards: sample=zika, kmerSize=kmer13, seg=4016-4517
+
+[Thu May  6 11:33:00 2021]
+Finished job 232.
+163 of 362 steps (45%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:00 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7028-7529.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7028-7529.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7028-7529.Kmercount.txt
+    jobid: 231
+    wildcards: sample=zika, kmerSize=kmer15, seg=7028-7529
+
+[Thu May  6 11:33:00 2021]
+Finished job 273.
+164 of 362 steps (45%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:00 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse6024-6525.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6024-6525.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6024-6525.int.kmc_suf
+    jobid: 160
+    wildcards: sample=zika, kmerSize=kmer13, seg=6024-6525
+
+[Thu May  6 11:33:00 2021]
+Finished job 231.
+165 of 362 steps (46%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:00 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7028-7529.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7028-7529.Kmercount.sorted.txt
+    jobid: 230
+    wildcards: sample=zika, kmerSize=kmer15, seg=7028-7529
+
+[Thu May  6 11:33:00 2021]
+Finished job 230.
+166 of 362 steps (46%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:00 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7028-7529.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7028-7529.Kmercount.sorted.calculated.txt
+    jobid: 229
+    wildcards: sample=zika, kmerSize=kmer15, seg=7028-7529
+
+[Thu May  6 11:33:01 2021]
+Finished job 189.
+167 of 362 steps (46%) done
+Select jobs to execute...
+[Thu May  6 11:33:01 2021]
+Finished job 92.
+168 of 362 steps (46%) done
+
+[Thu May  6 11:33:01 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse2008-2509.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2008-2509.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2008-2509.int.kmc_suf
+    jobid: 336
+    wildcards: sample=zika, kmerSize=kmer15, seg=2008-2509
+
+Select jobs to execute...
+
+[Thu May  6 11:33:01 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse5271-5772.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5271-5772.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5271-5772.int.kmc_suf
+    jobid: 68
+    wildcards: sample=zika, kmerSize=kmer13, seg=5271-5772
+
+[Thu May  6 11:33:02 2021]
+Finished job 229.
+169 of 362 steps (47%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:02 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6275-6776.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6275-6776.Kmercount.sorted.calculated.txt
+    jobid: 325
+    wildcards: sample=zika, kmerSize=kmer15, seg=6275-6776
+
+[Thu May  6 11:33:03 2021]
+Finished job 325.
+170 of 362 steps (47%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:03 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3514-4015.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3514-4015.Kmercount.sorted.calculated.txt
+    jobid: 217
+    wildcards: sample=zika, kmerSize=kmer15, seg=3514-4015
+
+[Thu May  6 11:33:04 2021]
+Finished job 336.
+171 of 362 steps (47%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:04 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2008-2509.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2008-2509.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2008-2509.Kmercount.txt
+    jobid: 335
+    wildcards: sample=zika, kmerSize=kmer15, seg=2008-2509
+
+[Thu May  6 11:33:04 2021]
+Finished job 217.
+172 of 362 steps (48%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:04 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7028-7529.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7028-7529.Kmercount.sorted.calculated.txt
+    jobid: 57
+    wildcards: sample=zika, kmerSize=kmer13, seg=7028-7529
+
+[Thu May  6 11:33:04 2021]
+Finished job 335.
+173 of 362 steps (48%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:04 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2008-2509.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2008-2509.Kmercount.sorted.txt
+    jobid: 334
+    wildcards: sample=zika, kmerSize=kmer15, seg=2008-2509
+
+[Thu May  6 11:33:04 2021]
+Finished job 334.
+174 of 362 steps (48%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:04 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2008-2509.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2008-2509.Kmercount.sorted.calculated.txt
+    jobid: 333
+    wildcards: sample=zika, kmerSize=kmer15, seg=2008-2509
+
+[Thu May  6 11:33:05 2021]
+Finished job 32.
+175 of 362 steps (48%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:05 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse251-752.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse251-752.Kmercount.sorted.calculated.txt
+    jobid: 321
+    wildcards: sample=zika, kmerSize=kmer15, seg=251-752
+
+[Thu May  6 11:33:05 2021]
+Finished job 57.
+176 of 362 steps (49%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:05 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse2510-3011.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2510-3011.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2510-3011.int.kmc_suf
+    jobid: 196
+    wildcards: sample=zika, kmerSize=kmer13, seg=2510-3011
+
+[Thu May  6 11:33:05 2021]
+Finished job 333.
+177 of 362 steps (49%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:05 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2259-2760.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2259-2760.Kmercount.sorted.txt
+    jobid: 42
+    wildcards: sample=zika, kmerSize=kmer13, seg=2259-2760
+
+[Thu May  6 11:33:05 2021]
+Finished job 42.
+178 of 362 steps (49%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:05 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2259-2760.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2259-2760.Kmercount.sorted.calculated.txt
+    jobid: 213
+    wildcards: sample=zika, kmerSize=kmer15, seg=2259-2760
+
+[Thu May  6 11:33:06 2021]
+Finished job 120.
+179 of 362 steps (49%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:06 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1004-1505.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1004-1505.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1004-1505.Kmercount.txt
+    jobid: 119
+    wildcards: sample=zika, kmerSize=kmer13, seg=1004-1505
+
+[Thu May  6 11:33:06 2021]
+Finished job 321.
+180 of 362 steps (50%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:06 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse8283-8784.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8283-8784.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8283-8784.int.kmc_suf
+    jobid: 136
+    wildcards: sample=zika, kmerSize=kmer13, seg=8283-8784
+
+[Thu May  6 11:33:07 2021]
+Finished job 213.
+181 of 362 steps (50%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:07 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse251-752.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse251-752.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse251-752.int.kmc_suf
+    jobid: 152
+    wildcards: sample=zika, kmerSize=kmer13, seg=251-752
+
+[Thu May  6 11:33:07 2021]
+Finished job 119.
+182 of 362 steps (50%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:07 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse7279-7780.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7279-7780.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7279-7780.int.kmc_suf
+    jobid: 360
+    wildcards: sample=zika, kmerSize=kmer15, seg=7279-7780
+
+[Thu May  6 11:33:08 2021]
+Finished job 112.
+183 of 362 steps (51%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:09 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3012-3513.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3012-3513.Kmercount.sorted.txt
+    jobid: 226
+    wildcards: sample=zika, kmerSize=kmer15, seg=3012-3513
+
+[Thu May  6 11:33:09 2021]
+Finished job 226.
+184 of 362 steps (51%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:09 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse5271-5772.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5271-5772.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5271-5772.int.kmc_suf
+    jobid: 240
+    wildcards: sample=zika, kmerSize=kmer15, seg=5271-5772
+
+[Thu May  6 11:33:09 2021]
+Finished job 52.
+185 of 362 steps (51%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:09 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9287-9788.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9287-9788.Kmercount.sorted.calculated.txt
+    jobid: 137
+    wildcards: sample=zika, kmerSize=kmer13, seg=9287-9788
+
+[Thu May  6 11:33:10 2021]
+Finished job 137.
+186 of 362 steps (51%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:10 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4267-4768.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4267-4768.Kmercount.sorted.calculated.txt
+    jobid: 293
+    wildcards: sample=zika, kmerSize=kmer15, seg=4267-4768
+
+[Thu May  6 11:33:10 2021]
+Finished job 180.
+187 of 362 steps (52%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:10 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3012-3513.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3012-3513.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3012-3513.Kmercount.txt
+    jobid: 55
+    wildcards: sample=zika, kmerSize=kmer13, seg=3012-3513
+
+[Thu May  6 11:33:10 2021]
+Finished job 360.
+188 of 362 steps (52%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:10 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5020-5521.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5020-5521.Kmercount.sorted.calculated.txt
+    jobid: 145
+    wildcards: sample=zika, kmerSize=kmer13, seg=5020-5521
+
+[Thu May  6 11:33:10 2021]
+Finished job 55.
+189 of 362 steps (52%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:10 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8785-9286.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8785-9286.Kmercount.sorted.txt
+    jobid: 62
+    wildcards: sample=zika, kmerSize=kmer13, seg=8785-9286
+
+[Thu May  6 11:33:10 2021]
+Finished job 62.
+190 of 362 steps (52%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:10 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5773-6274.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5773-6274.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5773-6274.Kmercount.txt
+    jobid: 115
+    wildcards: sample=zika, kmerSize=kmer13, seg=5773-6274
+
+[Thu May  6 11:33:11 2021]
+Finished job 172.
+191 of 362 steps (53%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:11 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4769-5270.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4769-5270.Kmercount.sorted.txt
+    jobid: 70
+    wildcards: sample=zika, kmerSize=kmer13, seg=4769-5270
+
+[Thu May  6 11:33:11 2021]
+Finished job 70.
+192 of 362 steps (53%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:11 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6526-7027.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6526-7027.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6526-7027.Kmercount.txt
+    jobid: 107
+    wildcards: sample=zika, kmerSize=kmer13, seg=6526-7027
+
+[Thu May  6 11:33:11 2021]
+Finished job 293.
+193 of 362 steps (53%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:11 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9538-10039.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9538-10039.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9538-10039.Kmercount.txt
+    jobid: 91
+    wildcards: sample=zika, kmerSize=kmer13, seg=9538-10039
+
+[Thu May  6 11:33:11 2021]
+Finished job 145.
+194 of 362 steps (54%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:11 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse10542-10780.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse10542-10780.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse10542-10780.Kmercount.txt
+    jobid: 31
+    wildcards: sample=zika, kmerSize=kmer13, seg=10542-10780
+
+[Thu May  6 11:33:11 2021]
+Finished job 115.
+195 of 362 steps (54%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:11 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7781-8282.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7781-8282.Kmercount.sorted.txt
+    jobid: 166
+    wildcards: sample=zika, kmerSize=kmer13, seg=7781-8282
+
+[Thu May  6 11:33:11 2021]
+Finished job 166.
+196 of 362 steps (54%) done
+Select jobs to execute...
+[Thu May  6 11:33:11 2021]
+Finished job 240.
+197 of 362 steps (54%) done
+
+[Thu May  6 11:33:11 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse5522-6023.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5522-6023.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5522-6023.int.kmc_suf
+    jobid: 284
+    wildcards: sample=zika, kmerSize=kmer15, seg=5522-6023
+
+Select jobs to execute...
+
+[Thu May  6 11:33:11 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3012-3513.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3012-3513.Kmercount.sorted.calculated.txt
+    jobid: 225
+    wildcards: sample=zika, kmerSize=kmer15, seg=3012-3513
+
+[Thu May  6 11:33:11 2021]
+Finished job 107.
+198 of 362 steps (55%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:11 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7279-7780.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7279-7780.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7279-7780.Kmercount.txt
+    jobid: 359
+    wildcards: sample=zika, kmerSize=kmer15, seg=7279-7780
+
+[Thu May  6 11:33:11 2021]
+Finished job 91.
+199 of 362 steps (55%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:11 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9538-10039.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9538-10039.Kmercount.sorted.txt
+    jobid: 90
+    wildcards: sample=zika, kmerSize=kmer13, seg=9538-10039
+
+[Thu May  6 11:33:11 2021]
+Finished job 90.
+200 of 362 steps (55%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:11 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7781-8282.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7781-8282.Kmercount.sorted.calculated.txt
+    jobid: 165
+    wildcards: sample=zika, kmerSize=kmer13, seg=7781-8282
+
+[Thu May  6 11:33:11 2021]
+Finished job 31.
+201 of 362 steps (56%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:11 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse10542-10780.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse10542-10780.Kmercount.sorted.txt
+    jobid: 30
+    wildcards: sample=zika, kmerSize=kmer13, seg=10542-10780
+
+[Thu May  6 11:33:11 2021]
+Finished job 30.
+202 of 362 steps (56%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:11 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4769-5270.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4769-5270.Kmercount.sorted.calculated.txt
+    jobid: 241
+    wildcards: sample=zika, kmerSize=kmer15, seg=4769-5270
+
+[Thu May  6 11:33:12 2021]
+Finished job 359.
+203 of 362 steps (56%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:12 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7279-7780.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7279-7780.Kmercount.sorted.txt
+    jobid: 358
+    wildcards: sample=zika, kmerSize=kmer15, seg=7279-7780
+
+[Thu May  6 11:33:12 2021]
+Finished job 358.
+204 of 362 steps (56%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:12 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7279-7780.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7279-7780.Kmercount.sorted.calculated.txt
+    jobid: 357
+    wildcards: sample=zika, kmerSize=kmer15, seg=7279-7780
+
+[Thu May  6 11:33:12 2021]
+Finished job 225.
+205 of 362 steps (57%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:12 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse10542-10780.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse10542-10780.Kmercount.sorted.calculated.txt
+    jobid: 29
+    wildcards: sample=zika, kmerSize=kmer13, seg=10542-10780
+
+[Thu May  6 11:33:12 2021]
+Finished job 165.
+206 of 362 steps (57%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:12 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8785-9286.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8785-9286.Kmercount.sorted.calculated.txt
+    jobid: 61
+    wildcards: sample=zika, kmerSize=kmer13, seg=8785-9286
+
+[Thu May  6 11:33:12 2021]
+Finished job 241.
+207 of 362 steps (57%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:12 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9538-10039.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9538-10039.Kmercount.sorted.calculated.txt
+    jobid: 89
+    wildcards: sample=zika, kmerSize=kmer13, seg=9538-10039
+
+[Thu May  6 11:33:13 2021]
+Finished job 357.
+208 of 362 steps (57%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:13 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5271-5772.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5271-5772.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5271-5772.Kmercount.txt
+    jobid: 239
+    wildcards: sample=zika, kmerSize=kmer15, seg=5271-5772
+
+[Thu May  6 11:33:13 2021]
+Finished job 29.
+209 of 362 steps (58%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:13 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4518-5019.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4518-5019.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4518-5019.Kmercount.txt
+    jobid: 179
+    wildcards: sample=zika, kmerSize=kmer13, seg=4518-5019
+
+[Thu May  6 11:33:13 2021]
+Finished job 61.
+210 of 362 steps (58%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:13 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6526-7027.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6526-7027.Kmercount.sorted.txt
+    jobid: 106
+    wildcards: sample=zika, kmerSize=kmer13, seg=6526-7027
+
+[Thu May  6 11:33:13 2021]
+Finished job 106.
+211 of 362 steps (58%) done
+Select jobs to execute...
+[Thu May  6 11:33:13 2021]
+Finished job 239.
+212 of 362 steps (59%) done
+
+[Thu May  6 11:33:13 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6526-7027.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6526-7027.Kmercount.sorted.calculated.txt
+    jobid: 105
+    wildcards: sample=zika, kmerSize=kmer13, seg=6526-7027
+
+Select jobs to execute...
+
+[Thu May  6 11:33:13 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5271-5772.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5271-5772.Kmercount.sorted.txt
+    jobid: 238
+    wildcards: sample=zika, kmerSize=kmer15, seg=5271-5772
+
+[Thu May  6 11:33:13 2021]
+Finished job 89.
+213 of 362 steps (59%) done
+[Thu May  6 11:33:13 2021]
+Finished job 238.
+214 of 362 steps (59%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:13 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8283-8784.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8283-8784.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8283-8784.Kmercount.txt
+    jobid: 307
+    wildcards: sample=zika, kmerSize=kmer15, seg=8283-8784
+
+
+[Thu May  6 11:33:13 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1506-2007.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1506-2007.Kmercount.sorted.calculated.txt
+    jobid: 205
+    wildcards: sample=zika, kmerSize=kmer15, seg=1506-2007
+
+Select jobs to execute...
+[Thu May  6 11:33:14 2021]
+Finished job 284.
+215 of 362 steps (59%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:14 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5271-5772.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5271-5772.Kmercount.sorted.calculated.txt
+    jobid: 237
+    wildcards: sample=zika, kmerSize=kmer15, seg=5271-5772
+
+[Thu May  6 11:33:14 2021]
+Finished job 179.
+216 of 362 steps (60%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:14 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7530-8031.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7530-8031.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7530-8031.Kmercount.txt
+    jobid: 171
+    wildcards: sample=zika, kmerSize=kmer13, seg=7530-8031
+
+[Thu May  6 11:33:14 2021]
+Finished job 307.
+217 of 362 steps (60%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:14 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5522-6023.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5522-6023.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5522-6023.Kmercount.txt
+    jobid: 283
+    wildcards: sample=zika, kmerSize=kmer15, seg=5522-6023
+
+[Thu May  6 11:33:14 2021]
+Finished job 105.
+218 of 362 steps (60%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:14 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8283-8784.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8283-8784.Kmercount.sorted.txt
+    jobid: 306
+    wildcards: sample=zika, kmerSize=kmer15, seg=8283-8784
+
+[Thu May  6 11:33:14 2021]
+Finished job 306.
+219 of 362 steps (60%) done
+Select jobs to execute...
+[Thu May  6 11:33:14 2021]
+Finished job 171.
+220 of 362 steps (61%) done
+
+[Thu May  6 11:33:14 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8283-8784.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8283-8784.Kmercount.sorted.calculated.txt
+    jobid: 305
+    wildcards: sample=zika, kmerSize=kmer15, seg=8283-8784
+
+Select jobs to execute...
+[Thu May  6 11:33:14 2021]
+Finished job 283.
+221 of 362 steps (61%) done
+
+[Thu May  6 11:33:14 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1255-1756.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1255-1756.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1255-1756.Kmercount.txt
+    jobid: 51
+    wildcards: sample=zika, kmerSize=kmer13, seg=1255-1756
+
+Select jobs to execute...
+
+[Thu May  6 11:33:14 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5522-6023.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5522-6023.Kmercount.sorted.txt
+    jobid: 282
+    wildcards: sample=zika, kmerSize=kmer15, seg=5522-6023
+
+[Thu May  6 11:33:14 2021]
+Finished job 282.
+222 of 362 steps (61%) done
+Select jobs to execute...
+[Thu May  6 11:33:14 2021]
+Finished job 205.
+223 of 362 steps (62%) done
+
+[Thu May  6 11:33:14 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5522-6023.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5522-6023.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5522-6023.Kmercount.txt
+    jobid: 111
+    wildcards: sample=zika, kmerSize=kmer13, seg=5522-6023
+
+Select jobs to execute...
+
+[Thu May  6 11:33:14 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5522-6023.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5522-6023.Kmercount.sorted.calculated.txt
+    jobid: 281
+    wildcards: sample=zika, kmerSize=kmer15, seg=5522-6023
+
+[Thu May  6 11:33:15 2021]
+Finished job 237.
+224 of 362 steps (62%) done
+Select jobs to execute...
+[Thu May  6 11:33:15 2021]
+Finished job 51.
+225 of 362 steps (62%) done
+
+[Thu May  6 11:33:15 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4769-5270.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4769-5270.Kmercount.sorted.calculated.txt
+    jobid: 69
+    wildcards: sample=zika, kmerSize=kmer13, seg=4769-5270
+
+Select jobs to execute...
+[Thu May  6 11:33:15 2021]
+Finished job 111.
+226 of 362 steps (62%) done
+
+[Thu May  6 11:33:15 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1757-2258.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1757-2258.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1757-2258.Kmercount.txt
+    jobid: 99
+    wildcards: sample=zika, kmerSize=kmer13, seg=1757-2258
+
+
+[Thu May  6 11:33:15 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse4518-5019.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4518-5019.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4518-5019.int.kmc_suf
+    jobid: 352
+    wildcards: sample=zika, kmerSize=kmer15, seg=4518-5019
+
+Select jobs to execute...
+[Thu May  6 11:33:15 2021]
+Finished job 305.
+227 of 362 steps (63%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:15 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse6777-7278.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6777-7278.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6777-7278.int.kmc_suf
+    jobid: 144
+    wildcards: sample=zika, kmerSize=kmer13, seg=6777-7278
+
+[Thu May  6 11:33:15 2021]
+Finished job 99.
+228 of 362 steps (63%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:15 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1757-2258.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1757-2258.Kmercount.sorted.txt
+    jobid: 98
+    wildcards: sample=zika, kmerSize=kmer13, seg=1757-2258
+
+[Thu May  6 11:33:15 2021]
+Finished job 281.
+229 of 362 steps (63%) done
+[Thu May  6 11:33:15 2021]
+Finished job 98.
+230 of 362 steps (64%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:15 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5773-6274.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5773-6274.Kmercount.sorted.txt
+    jobid: 114
+    wildcards: sample=zika, kmerSize=kmer13, seg=5773-6274
+
+
+[Thu May  6 11:33:15 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse9789-10290.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9789-10290.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9789-10290.int.kmc_suf
+    jobid: 84
+    wildcards: sample=zika, kmerSize=kmer13, seg=9789-10290
+
+Select jobs to execute...
+[Thu May  6 11:33:15 2021]
+Finished job 114.
+231 of 362 steps (64%) done
+
+[Thu May  6 11:33:15 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6526-7027.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6526-7027.Kmercount.sorted.txt
+    jobid: 278
+    wildcards: sample=zika, kmerSize=kmer15, seg=6526-7027
+
+Select jobs to execute...
+[Thu May  6 11:33:16 2021]
+Finished job 278.
+232 of 362 steps (64%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:16 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5773-6274.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5773-6274.Kmercount.sorted.calculated.txt
+    jobid: 113
+    wildcards: sample=zika, kmerSize=kmer13, seg=5773-6274
+
+[Thu May  6 11:33:16 2021]
+Finished job 69.
+233 of 362 steps (64%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:16 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2761-3262.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2761-3262.Kmercount.sorted.txt
+    jobid: 354
+    wildcards: sample=zika, kmerSize=kmer15, seg=2761-3262
+
+[Thu May  6 11:33:16 2021]
+Finished job 354.
+234 of 362 steps (65%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:16 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2761-3262.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2761-3262.Kmercount.sorted.calculated.txt
+    jobid: 353
+    wildcards: sample=zika, kmerSize=kmer15, seg=2761-3262
+
+[Thu May  6 11:33:17 2021]
+Finished job 113.
+235 of 362 steps (65%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:17 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3765-4266.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3765-4266.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3765-4266.Kmercount.txt
+    jobid: 131
+    wildcards: sample=zika, kmerSize=kmer13, seg=3765-4266
+
+[Thu May  6 11:33:17 2021]
+Finished job 353.
+236 of 362 steps (65%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:17 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3263-3764.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3263-3764.Kmercount.sorted.calculated.txt
+    jobid: 197
+    wildcards: sample=zika, kmerSize=kmer15, seg=3263-3764
+
+[Thu May  6 11:33:18 2021]
+Finished job 131.
+237 of 362 steps (65%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:18 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3765-4266.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3765-4266.Kmercount.sorted.txt
+    jobid: 130
+    wildcards: sample=zika, kmerSize=kmer13, seg=3765-4266
+
+[Thu May  6 11:33:18 2021]
+Finished job 130.
+238 of 362 steps (66%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:18 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse6777-7278.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6777-7278.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6777-7278.int.kmc_suf
+    jobid: 316
+    wildcards: sample=zika, kmerSize=kmer15, seg=6777-7278
+
+[Thu May  6 11:33:18 2021]
+Finished job 352.
+239 of 362 steps (66%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:18 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8032-8533.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8032-8533.Kmercount.sorted.txt
+    jobid: 78
+    wildcards: sample=zika, kmerSize=kmer13, seg=8032-8533
+
+[Thu May  6 11:33:18 2021]
+Finished job 78.
+240 of 362 steps (66%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:18 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8032-8533.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8032-8533.Kmercount.sorted.calculated.txt
+    jobid: 77
+    wildcards: sample=zika, kmerSize=kmer13, seg=8032-8533
+
+[Thu May  6 11:33:18 2021]
+Finished job 197.
+241 of 362 steps (67%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:18 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse9789-10290.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9789-10290.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9789-10290.int.kmc_suf
+    jobid: 256
+    wildcards: sample=zika, kmerSize=kmer15, seg=9789-10290
+
+[Thu May  6 11:33:19 2021]
+Finished job 77.
+242 of 362 steps (67%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:19 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6275-6776.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6275-6776.Kmercount.sorted.calculated.txt
+    jobid: 153
+    wildcards: sample=zika, kmerSize=kmer13, seg=6275-6776
+
+[Thu May  6 11:33:20 2021]
+Finished job 153.
+243 of 362 steps (67%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:20 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse753-1254.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse753-1254.Kmercount.sorted.txt
+    jobid: 346
+    wildcards: sample=zika, kmerSize=kmer15, seg=753-1254
+
+[Thu May  6 11:33:20 2021]
+Finished job 346.
+244 of 362 steps (67%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:20 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse753-1254.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse753-1254.Kmercount.sorted.calculated.txt
+    jobid: 345
+    wildcards: sample=zika, kmerSize=kmer15, seg=753-1254
+
+[Thu May  6 11:33:20 2021]
+Finished job 316.
+245 of 362 steps (68%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:21 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6777-7278.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6777-7278.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6777-7278.Kmercount.txt
+    jobid: 315
+    wildcards: sample=zika, kmerSize=kmer15, seg=6777-7278
+
+[Thu May  6 11:33:21 2021]
+Finished job 256.
+246 of 362 steps (68%) done
+Select jobs to execute...
+[Thu May  6 11:33:21 2021]
+Finished job 315.
+247 of 362 steps (68%) done
+
+[Thu May  6 11:33:21 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9789-10290.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9789-10290.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9789-10290.Kmercount.txt
+    jobid: 255
+    wildcards: sample=zika, kmerSize=kmer15, seg=9789-10290
+
+Select jobs to execute...
+[Thu May  6 11:33:21 2021]
+Finished job 345.
+248 of 362 steps (69%) done
+
+[Thu May  6 11:33:21 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4016-4517.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4016-4517.Kmercount.sorted.calculated.txt
+    jobid: 361
+    wildcards: sample=zika, kmerSize=kmer15, seg=4016-4517
+
+Select jobs to execute...
+
+[Thu May  6 11:33:21 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse9538-10039.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9538-10039.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9538-10039.int.kmc_suf
+    jobid: 264
+    wildcards: sample=zika, kmerSize=kmer15, seg=9538-10039
+
+[Thu May  6 11:33:21 2021]
+Finished job 255.
+249 of 362 steps (69%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:21 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9036-9537.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9036-9537.Kmercount.sorted.calculated.txt
+    jobid: 101
+    wildcards: sample=zika, kmerSize=kmer13, seg=9036-9537
+
+[Thu May  6 11:33:22 2021]
+Finished job 188.
+250 of 362 steps (69%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:22 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2259-2760.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2259-2760.Kmercount.sorted.calculated.txt
+    jobid: 41
+    wildcards: sample=zika, kmerSize=kmer13, seg=2259-2760
+
+[Thu May  6 11:33:22 2021]
+Finished job 361.
+251 of 362 steps (69%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:22 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2761-3262.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2761-3262.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2761-3262.Kmercount.txt
+    jobid: 183
+    wildcards: sample=zika, kmerSize=kmer13, seg=2761-3262
+
+[Thu May  6 11:33:22 2021]
+Finished job 101.
+252 of 362 steps (70%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:22 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1757-2258.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1757-2258.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1757-2258.Kmercount.txt
+    jobid: 271
+    wildcards: sample=zika, kmerSize=kmer15, seg=1757-2258
+
+[Thu May  6 11:33:22 2021]
+Finished job 183.
+253 of 362 steps (70%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:23 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2761-3262.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2761-3262.Kmercount.sorted.txt
+    jobid: 182
+    wildcards: sample=zika, kmerSize=kmer13, seg=2761-3262
+
+[Thu May  6 11:33:23 2021]
+Finished job 182.
+254 of 362 steps (70%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:23 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4267-4768.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4267-4768.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4267-4768.Kmercount.txt
+    jobid: 123
+    wildcards: sample=zika, kmerSize=kmer13, seg=4267-4768
+
+[Thu May  6 11:33:23 2021]
+Finished job 41.
+255 of 362 steps (70%) done
+Select jobs to execute...
+[Thu May  6 11:33:23 2021]
+Finished job 271.
+256 of 362 steps (71%) done
+
+[Thu May  6 11:33:23 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/splitFiles/reverse10040-10541.fasta
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse10040-10541.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse10040-10541.int.kmc_suf
+    jobid: 212
+    wildcards: sample=zika, kmerSize=kmer15, seg=10040-10541
+
+Select jobs to execute...
+
+[Thu May  6 11:33:23 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1757-2258.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1757-2258.Kmercount.sorted.txt
+    jobid: 270
+    wildcards: sample=zika, kmerSize=kmer15, seg=1757-2258
+
+[Thu May  6 11:33:23 2021]
+Finished job 270.
+257 of 362 steps (71%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:23 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse502-1003.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse502-1003.Kmercount.sorted.calculated.txt
+    jobid: 257
+    wildcards: sample=zika, kmerSize=kmer15, seg=502-1003
+
+[Thu May  6 11:33:23 2021]
+Finished job 123.
+258 of 362 steps (71%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:23 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4267-4768.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4267-4768.Kmercount.sorted.txt
+    jobid: 122
+    wildcards: sample=zika, kmerSize=kmer13, seg=4267-4768
+
+[Thu May  6 11:33:23 2021]
+Finished job 122.
+259 of 362 steps (72%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:23 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5522-6023.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5522-6023.Kmercount.sorted.txt
+    jobid: 110
+    wildcards: sample=zika, kmerSize=kmer13, seg=5522-6023
+
+[Thu May  6 11:33:23 2021]
+Finished job 110.
+260 of 362 steps (72%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:23 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5522-6023.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5522-6023.Kmercount.sorted.calculated.txt
+    jobid: 109
+    wildcards: sample=zika, kmerSize=kmer13, seg=5522-6023
+
+[Thu May  6 11:33:24 2021]
+Finished job 264.
+261 of 362 steps (72%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:24 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6024-6525.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6024-6525.Kmercount.sorted.txt
+    jobid: 330
+    wildcards: sample=zika, kmerSize=kmer15, seg=6024-6525
+
+[Thu May  6 11:33:24 2021]
+Finished job 330.
+262 of 362 steps (72%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:24 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4518-5019.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4518-5019.Kmercount.sorted.txt
+    jobid: 178
+    wildcards: sample=zika, kmerSize=kmer13, seg=4518-5019
+
+[Thu May  6 11:33:24 2021]
+Finished job 178.
+263 of 362 steps (73%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:24 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4518-5019.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4518-5019.Kmercount.sorted.calculated.txt
+    jobid: 177
+    wildcards: sample=zika, kmerSize=kmer13, seg=4518-5019
+
+[Thu May  6 11:33:24 2021]
+Finished job 257.
+264 of 362 steps (73%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:24 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1004-1505.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1004-1505.Kmercount.sorted.txt
+    jobid: 118
+    wildcards: sample=zika, kmerSize=kmer13, seg=1004-1505
+
+[Thu May  6 11:33:24 2021]
+Finished job 118.
+265 of 362 steps (73%) done
+Select jobs to execute...
+[Thu May  6 11:33:24 2021]
+Finished job 109.
+266 of 362 steps (73%) done
+
+[Thu May  6 11:33:24 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1004-1505.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1004-1505.Kmercount.sorted.calculated.txt
+    jobid: 117
+    wildcards: sample=zika, kmerSize=kmer13, seg=1004-1505
+
+Select jobs to execute...
+
+[Thu May  6 11:33:24 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1255-1756.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1255-1756.Kmercount.sorted.txt
+    jobid: 50
+    wildcards: sample=zika, kmerSize=kmer13, seg=1255-1756
+
+[Thu May  6 11:33:24 2021]
+Finished job 50.
+267 of 362 steps (74%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:24 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1255-1756.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1255-1756.Kmercount.sorted.calculated.txt
+    jobid: 49
+    wildcards: sample=zika, kmerSize=kmer13, seg=1255-1756
+
+[Thu May  6 11:33:25 2021]
+Finished job 177.
+268 of 362 steps (74%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:25 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7530-8031.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7530-8031.Kmercount.sorted.txt
+    jobid: 170
+    wildcards: sample=zika, kmerSize=kmer13, seg=7530-8031
+
+[Thu May  6 11:33:25 2021]
+Finished job 170.
+269 of 362 steps (74%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:25 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7530-8031.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7530-8031.Kmercount.sorted.calculated.txt
+    jobid: 169
+    wildcards: sample=zika, kmerSize=kmer13, seg=7530-8031
+
+[Thu May  6 11:33:25 2021]
+Finished job 128.
+270 of 362 steps (75%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:25 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7279-7780.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7279-7780.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7279-7780.Kmercount.txt
+    jobid: 187
+    wildcards: sample=zika, kmerSize=kmer13, seg=7279-7780
+
+[Thu May  6 11:33:25 2021]
+Finished job 117.
+271 of 362 steps (75%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:25 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse0-501.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse0-501.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse0-501.Kmercount.txt
+    jobid: 127
+    wildcards: sample=zika, kmerSize=kmer13, seg=0-501
+
+[Thu May  6 11:33:25 2021]
+Finished job 49.
+272 of 362 steps (75%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:25 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6777-7278.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6777-7278.Kmercount.sorted.txt
+    jobid: 314
+    wildcards: sample=zika, kmerSize=kmer15, seg=6777-7278
+
+[Thu May  6 11:33:25 2021]
+Finished job 314.
+273 of 362 steps (75%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:25 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9789-10290.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9789-10290.Kmercount.sorted.txt
+    jobid: 254
+    wildcards: sample=zika, kmerSize=kmer15, seg=9789-10290
+
+[Thu May  6 11:33:25 2021]
+Finished job 254.
+274 of 362 steps (76%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:25 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9538-10039.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9538-10039.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9538-10039.Kmercount.txt
+    jobid: 263
+    wildcards: sample=zika, kmerSize=kmer15, seg=9538-10039
+
+[Thu May  6 11:33:25 2021]
+Finished job 187.
+275 of 362 steps (76%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:25 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7279-7780.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7279-7780.Kmercount.sorted.txt
+    jobid: 186
+    wildcards: sample=zika, kmerSize=kmer13, seg=7279-7780
+
+[Thu May  6 11:33:25 2021]
+Finished job 186.
+276 of 362 steps (76%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:25 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2761-3262.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2761-3262.Kmercount.sorted.calculated.txt
+    jobid: 181
+    wildcards: sample=zika, kmerSize=kmer13, seg=2761-3262
+
+[Thu May  6 11:33:25 2021]
+Finished job 212.
+277 of 362 steps (77%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:26 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4518-5019.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4518-5019.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4518-5019.Kmercount.txt
+    jobid: 351
+    wildcards: sample=zika, kmerSize=kmer15, seg=4518-5019
+
+[Thu May  6 11:33:26 2021]
+Finished job 127.
+278 of 362 steps (77%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:26 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse0-501.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse0-501.Kmercount.sorted.txt
+    jobid: 126
+    wildcards: sample=zika, kmerSize=kmer13, seg=0-501
+
+[Thu May  6 11:33:26 2021]
+Finished job 169.
+279 of 362 steps (77%) done
+[Thu May  6 11:33:26 2021]
+Finished job 126.
+280 of 362 steps (77%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:26 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse10542-10780.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse10542-10780.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse10542-10780.Kmercount.txt
+    jobid: 203
+    wildcards: sample=zika, kmerSize=kmer15, seg=10542-10780
+
+
+[Thu May  6 11:33:26 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse0-501.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse0-501.Kmercount.sorted.calculated.txt
+    jobid: 125
+    wildcards: sample=zika, kmerSize=kmer13, seg=0-501
+
+Select jobs to execute...
+[Thu May  6 11:33:26 2021]
+Finished job 263.
+281 of 362 steps (78%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:26 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1757-2258.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1757-2258.Kmercount.sorted.calculated.txt
+    jobid: 269
+    wildcards: sample=zika, kmerSize=kmer15, seg=1757-2258
+
+[Thu May  6 11:33:26 2021]
+Finished job 351.
+282 of 362 steps (78%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:26 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4267-4768.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4267-4768.Kmercount.sorted.calculated.txt
+    jobid: 121
+    wildcards: sample=zika, kmerSize=kmer13, seg=4267-4768
+
+[Thu May  6 11:33:26 2021]
+Finished job 203.
+283 of 362 steps (78%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:26 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6024-6525.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6024-6525.Kmercount.sorted.calculated.txt
+    jobid: 329
+    wildcards: sample=zika, kmerSize=kmer15, seg=6024-6525
+
+[Thu May  6 11:33:26 2021]
+Finished job 181.
+284 of 362 steps (78%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:26 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse10542-10780.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse10542-10780.Kmercount.sorted.txt
+    jobid: 202
+    wildcards: sample=zika, kmerSize=kmer15, seg=10542-10780
+
+[Thu May  6 11:33:26 2021]
+Finished job 202.
+285 of 362 steps (79%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:26 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse10040-10541.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse10040-10541.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse10040-10541.Kmercount.txt
+    jobid: 211
+    wildcards: sample=zika, kmerSize=kmer15, seg=10040-10541
+
+[Thu May  6 11:33:27 2021]
+Finished job 125.
+286 of 362 steps (79%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:27 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1757-2258.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1757-2258.Kmercount.sorted.calculated.txt
+    jobid: 97
+    wildcards: sample=zika, kmerSize=kmer13, seg=1757-2258
+
+[Thu May  6 11:33:27 2021]
+Finished job 269.
+287 of 362 steps (79%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:27 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3012-3513.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3012-3513.Kmercount.sorted.txt
+    jobid: 54
+    wildcards: sample=zika, kmerSize=kmer13, seg=3012-3513
+
+[Thu May  6 11:33:27 2021]
+Finished job 54.
+288 of 362 steps (80%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:27 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8785-9286.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8785-9286.Kmercount.sorted.calculated.txt
+    jobid: 233
+    wildcards: sample=zika, kmerSize=kmer15, seg=8785-9286
+
+[Thu May  6 11:33:27 2021]
+Finished job 211.
+289 of 362 steps (80%) done
+Select jobs to execute...
+[Thu May  6 11:33:27 2021]
+Finished job 121.
+290 of 362 steps (80%) done
+
+[Thu May  6 11:33:27 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse10291-10780.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse10291-10780.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse10291-10780.Kmercount.txt
+    jobid: 247
+    wildcards: sample=zika, kmerSize=kmer15, seg=10291-10780
+
+Select jobs to execute...
+
+[Thu May  6 11:33:27 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse10040-10541.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse10040-10541.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse10040-10541.Kmercount.txt
+    jobid: 39
+    wildcards: sample=zika, kmerSize=kmer13, seg=10040-10541
+
+[Thu May  6 11:33:27 2021]
+Finished job 329.
+291 of 362 steps (80%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:27 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6526-7027.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6526-7027.Kmercount.sorted.calculated.txt
+    jobid: 277
+    wildcards: sample=zika, kmerSize=kmer15, seg=6526-7027
+
+[Thu May  6 11:33:27 2021]
+Finished job 247.
+292 of 362 steps (81%) done
+Select jobs to execute...
+[Thu May  6 11:33:27 2021]
+Finished job 39.
+293 of 362 steps (81%) done
+
+[Thu May  6 11:33:27 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse753-1254.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse753-1254.Kmercount.sorted.txt
+    jobid: 174
+    wildcards: sample=zika, kmerSize=kmer13, seg=753-1254
+
+Select jobs to execute...
+[Thu May  6 11:33:27 2021]
+Finished job 174.
+294 of 362 steps (81%) done
+
+[Thu May  6 11:33:27 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2510-3011.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2510-3011.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2510-3011.Kmercount.txt
+    jobid: 367
+    wildcards: sample=zika, kmerSize=kmer15, seg=2510-3011
+
+Select jobs to execute...
+
+[Thu May  6 11:33:28 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9789-10290.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9789-10290.Kmercount.sorted.calculated.txt
+    jobid: 253
+    wildcards: sample=zika, kmerSize=kmer15, seg=9789-10290
+
+[Thu May  6 11:33:28 2021]
+Finished job 97.
+295 of 362 steps (81%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:28 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3765-4266.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3765-4266.Kmercount.sorted.calculated.txt
+    jobid: 129
+    wildcards: sample=zika, kmerSize=kmer13, seg=3765-4266
+
+[Thu May  6 11:33:28 2021]
+Finished job 233.
+296 of 362 steps (82%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:28 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9538-10039.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9538-10039.Kmercount.sorted.txt
+    jobid: 262
+    wildcards: sample=zika, kmerSize=kmer15, seg=9538-10039
+
+[Thu May  6 11:33:28 2021]
+Finished job 367.
+297 of 362 steps (82%) done
+Select jobs to execute...
+[Thu May  6 11:33:28 2021]
+Finished job 262.
+298 of 362 steps (82%) done
+
+[Thu May  6 11:33:28 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4518-5019.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4518-5019.Kmercount.sorted.txt
+    jobid: 350
+    wildcards: sample=zika, kmerSize=kmer15, seg=4518-5019
+
+Select jobs to execute...
+[Thu May  6 11:33:28 2021]
+Finished job 350.
+299 of 362 steps (83%) done
+
+[Thu May  6 11:33:28 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse10542-10780.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse10542-10780.Kmercount.sorted.calculated.txt
+    jobid: 201
+    wildcards: sample=zika, kmerSize=kmer15, seg=10542-10780
+
+Select jobs to execute...
+
+[Thu May  6 11:33:28 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7279-7780.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7279-7780.Kmercount.sorted.calculated.txt
+    jobid: 185
+    wildcards: sample=zika, kmerSize=kmer13, seg=7279-7780
+
+[Thu May  6 11:33:28 2021]
+Finished job 277.
+300 of 362 steps (83%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:28 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6777-7278.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6777-7278.Kmercount.sorted.calculated.txt
+    jobid: 313
+    wildcards: sample=zika, kmerSize=kmer15, seg=6777-7278
+
+[Thu May  6 11:33:29 2021]
+Finished job 253.
+301 of 362 steps (83%) done
+[Thu May  6 11:33:29 2021]
+Finished job 129.
+302 of 362 steps (83%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:29 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9538-10039.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9538-10039.Kmercount.sorted.calculated.txt
+    jobid: 261
+    wildcards: sample=zika, kmerSize=kmer15, seg=9538-10039
+
+[Thu May  6 11:33:29 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3012-3513.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3012-3513.Kmercount.sorted.calculated.txt
+    jobid: 53
+    wildcards: sample=zika, kmerSize=kmer13, seg=3012-3513
+
+Select jobs to execute...
+[Thu May  6 11:33:29 2021]
+Finished job 201.
+303 of 362 steps (84%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:29 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2510-3011.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2510-3011.Kmercount.sorted.txt
+    jobid: 366
+    wildcards: sample=zika, kmerSize=kmer15, seg=2510-3011
+
+[Thu May  6 11:33:29 2021]
+Finished job 366.
+304 of 362 steps (84%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:29 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2510-3011.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2510-3011.Kmercount.sorted.calculated.txt
+    jobid: 365
+    wildcards: sample=zika, kmerSize=kmer15, seg=2510-3011
+
+[Thu May  6 11:33:29 2021]
+Finished job 185.
+305 of 362 steps (84%) done
+Select jobs to execute...
+[Thu May  6 11:33:29 2021]
+Finished job 313.
+306 of 362 steps (85%) done
+
+[Thu May  6 11:33:29 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse10040-10541.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse10040-10541.Kmercount.sorted.txt
+    jobid: 38
+    wildcards: sample=zika, kmerSize=kmer13, seg=10040-10541
+
+Select jobs to execute...
+[Thu May  6 11:33:29 2021]
+Finished job 38.
+307 of 362 steps (85%) done
+
+[Thu May  6 11:33:29 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse10040-10541.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse10040-10541.Kmercount.sorted.txt
+    jobid: 210
+    wildcards: sample=zika, kmerSize=kmer15, seg=10040-10541
+
+Select jobs to execute...
+[Thu May  6 11:33:29 2021]
+Finished job 210.
+308 of 362 steps (85%) done
+
+[Thu May  6 11:33:29 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse10040-10541.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse10040-10541.Kmercount.sorted.calculated.txt
+    jobid: 37
+    wildcards: sample=zika, kmerSize=kmer13, seg=10040-10541
+
+Select jobs to execute...
+
+[Thu May  6 11:33:29 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse753-1254.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse753-1254.Kmercount.sorted.calculated.txt
+    jobid: 173
+    wildcards: sample=zika, kmerSize=kmer13, seg=753-1254
+
+[Thu May  6 11:33:29 2021]
+Finished job 53.
+309 of 362 steps (85%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:30 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4518-5019.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4518-5019.Kmercount.sorted.calculated.txt
+    jobid: 349
+    wildcards: sample=zika, kmerSize=kmer15, seg=4518-5019
+
+[Thu May  6 11:33:30 2021]
+Finished job 261.
+310 of 362 steps (86%) done
+[Thu May  6 11:33:30 2021]
+Finished job 160.
+311 of 362 steps (86%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:30 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6024-6525.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6024-6525.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6024-6525.Kmercount.txt
+    jobid: 159
+    wildcards: sample=zika, kmerSize=kmer13, seg=6024-6525
+
+
+[Thu May  6 11:33:30 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse10291-10780.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse10291-10780.Kmercount.sorted.txt
+    jobid: 246
+    wildcards: sample=zika, kmerSize=kmer15, seg=10291-10780
+
+Select jobs to execute...
+[Thu May  6 11:33:30 2021]
+Finished job 246.
+312 of 362 steps (86%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:30 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse10040-10541.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse10040-10541.Kmercount.sorted.calculated.txt
+    jobid: 209
+    wildcards: sample=zika, kmerSize=kmer15, seg=10040-10541
+
+[Thu May  6 11:33:30 2021]
+Finished job 365.
+313 of 362 steps (86%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:30 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse10291-10780.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse10291-10780.Kmercount.sorted.calculated.txt
+    jobid: 245
+    wildcards: sample=zika, kmerSize=kmer15, seg=10291-10780
+
+[Thu May  6 11:33:30 2021]
+Finished job 159.
+314 of 362 steps (87%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:30 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6024-6525.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6024-6525.Kmercount.sorted.txt
+    jobid: 158
+    wildcards: sample=zika, kmerSize=kmer13, seg=6024-6525
+
+[Thu May  6 11:33:30 2021]
+Finished job 158.
+315 of 362 steps (87%) done
+[Thu May  6 11:33:30 2021]
+Finished job 37.
+316 of 362 steps (87%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:30 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6024-6525.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6024-6525.Kmercount.sorted.calculated.txt
+    jobid: 157
+    wildcards: sample=zika, kmerSize=kmer13, seg=6024-6525
+
+[Thu May  6 11:33:30 2021]
+Finished job 173.
+317 of 362 steps (88%) done
+[Thu May  6 11:33:30 2021]
+Finished job 349.
+318 of 362 steps (88%) done
+[Thu May  6 11:33:31 2021]
+Finished job 209.
+319 of 362 steps (88%) done
+[Thu May  6 11:33:31 2021]
+Finished job 68.
+320 of 362 steps (88%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:31 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5271-5772.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5271-5772.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5271-5772.Kmercount.txt
+    jobid: 67
+    wildcards: sample=zika, kmerSize=kmer13, seg=5271-5772
+
+[Thu May  6 11:33:31 2021]
+Finished job 245.
+321 of 362 steps (89%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:31 2021]
+rule filtering2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3263-3764.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse10542-10780.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1506-2007.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse10040-10541.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2259-2760.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3514-4015.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1255-1756.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3012-3513.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7028-7529.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8785-9286.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5271-5772.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4769-5270.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse10291-10780.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8032-8533.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9789-10290.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse502-1003.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9538-10039.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8534-9035.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1757-2258.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9036-9537.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6526-7027.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5522-6023.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5773-6274.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse1004-1505.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4267-4768.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse0-501.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse3765-4266.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse8283-8784.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse9287-9788.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6777-7278.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse5020-5521.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse251-752.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6275-6776.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse6024-6525.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2008-2509.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7781-8282.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7530-8031.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse753-1254.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4518-5019.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2761-3262.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse7279-7780.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse4016-4517.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/reverse2510-3011.Kmercount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/allKmercount.sorted.calculated.txt
+    jobid: 5
+    wildcards: sample=zika, kmerSize=kmer15
+
+[Thu May  6 11:33:31 2021]
+Finished job 157.
+322 of 362 steps (89%) done
+[Thu May  6 11:33:31 2021]
+Finished job 67.
+323 of 362 steps (89%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:31 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5271-5772.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5271-5772.Kmercount.sorted.txt
+    jobid: 66
+    wildcards: sample=zika, kmerSize=kmer13, seg=5271-5772
+
+[Thu May  6 11:33:31 2021]
+Finished job 66.
+324 of 362 steps (90%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:31 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5271-5772.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5271-5772.Kmercount.sorted.calculated.txt
+    jobid: 65
+    wildcards: sample=zika, kmerSize=kmer13, seg=5271-5772
+
+[Thu May  6 11:33:32 2021]
+Finished job 65.
+325 of 362 steps (90%) done
+[Thu May  6 11:33:32 2021]
+Finished job 5.
+326 of 362 steps (90%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:32 2021]
+rule filtering3:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/allKmercount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/allKmerCount.sorted.calculated.filtered.txt
+    jobid: 7
+    wildcards: sample=zika, kmerSize=kmer15
+
+[Thu May  6 11:33:33 2021]
+Finished job 152.
+327 of 362 steps (90%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:33 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse251-752.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse251-752.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse251-752.Kmercount.txt
+    jobid: 151
+    wildcards: sample=zika, kmerSize=kmer13, seg=251-752
+
+[Thu May  6 11:33:33 2021]
+Finished job 151.
+328 of 362 steps (91%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:33 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse251-752.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse251-752.Kmercount.sorted.txt
+    jobid: 150
+    wildcards: sample=zika, kmerSize=kmer13, seg=251-752
+
+[Thu May  6 11:33:33 2021]
+Finished job 150.
+329 of 362 steps (91%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:33 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse251-752.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse251-752.Kmercount.sorted.calculated.txt
+    jobid: 149
+    wildcards: sample=zika, kmerSize=kmer13, seg=251-752
+
+[Thu May  6 11:33:34 2021]
+Finished job 7.
+330 of 362 steps (91%) done
+Select jobs to execute...
+[Thu May  6 11:33:34 2021]
+Finished job 196.
+331 of 362 steps (91%) done
+
+[Thu May  6 11:33:34 2021]
+rule specific1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/allKmerCount.sorted.calculated.filtered.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.fasta
+    jobid: 9
+    wildcards: sample=zika, kmerSize=kmer15
+
+Select jobs to execute...
+
+[Thu May  6 11:33:34 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2510-3011.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2510-3011.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2510-3011.Kmercount.txt
+    jobid: 195
+    wildcards: sample=zika, kmerSize=kmer13, seg=2510-3011
+
+[Thu May  6 11:33:34 2021]
+Finished job 195.
+332 of 362 steps (92%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:34 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2510-3011.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2510-3011.Kmercount.sorted.txt
+    jobid: 194
+    wildcards: sample=zika, kmerSize=kmer13, seg=2510-3011
+
+[Thu May  6 11:33:34 2021]
+Finished job 194.
+333 of 362 steps (92%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:34 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2510-3011.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2510-3011.Kmercount.sorted.calculated.txt
+    jobid: 193
+    wildcards: sample=zika, kmerSize=kmer13, seg=2510-3011
+
+[Thu May  6 11:33:34 2021]
+Finished job 149.
+334 of 362 steps (92%) done
+[Thu May  6 11:33:34 2021]
+Finished job 136.
+335 of 362 steps (93%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:34 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8283-8784.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8283-8784.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8283-8784.Kmercount.txt
+    jobid: 135
+    wildcards: sample=zika, kmerSize=kmer13, seg=8283-8784
+
+[Thu May  6 11:33:35 2021]
+Finished job 9.
+336 of 362 steps (93%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:35 2021]
+rule specific3:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.fasta, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.2.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.3.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.4.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.2.ebwt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.bowtie
+    jobid: 12
+    wildcards: sample=zika, kmerSize=kmer15
+
+[Thu May  6 11:33:35 2021]
+Finished job 12.
+337 of 362 steps (93%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:35 2021]
+rule specific4:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.bowtie, /datater/wu/data/MSSPE-variant/zika/kmer15/allKmerCount.sorted.calculated.filtered.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt
+    jobid: 14
+    wildcards: sample=zika, kmerSize=kmer15
+
+[Thu May  6 11:33:35 2021]
+Finished job 135.
+338 of 362 steps (93%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:35 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8283-8784.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8283-8784.Kmercount.sorted.txt
+    jobid: 134
+    wildcards: sample=zika, kmerSize=kmer13, seg=8283-8784
+
+[Thu May  6 11:33:35 2021]
+Finished job 134.
+339 of 362 steps (94%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:35 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8283-8784.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8283-8784.Kmercount.sorted.calculated.txt
+    jobid: 133
+    wildcards: sample=zika, kmerSize=kmer13, seg=8283-8784
+
+[Thu May  6 11:33:35 2021]
+Finished job 193.
+340 of 362 steps (94%) done
+[Thu May  6 11:33:36 2021]
+Finished job 133.
+341 of 362 steps (94%) done
+[Thu May  6 11:33:36 2021]
+Finished job 14.
+342 of 362 steps (94%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:36 2021]
+rule checkHeterodimer:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/allOligo.set
+    jobid: 16
+    wildcards: sample=zika, kmerSize=kmer15
+
+[Thu May  6 11:33:39 2021]
+Finished job 16.
+343 of 362 steps (95%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:39 2021]
+rule evaluation3:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/allKmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/allKmerCount.sorted.calculated.filtered.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/allOligo.set
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/evaluation/allOligo_before.tsv, /datater/wu/data/MSSPE-variant/zika/kmer15/evaluation/allOligo_after1.tsv, /datater/wu/data/MSSPE-variant/zika/kmer15/evaluation/allOligo_after2.tsv, /datater/wu/data/MSSPE-variant/zika/kmer15/evaluation/allOligo_after3.tsv
+    jobid: 22
+    wildcards: sample=zika, kmerSize=kmer15
+
+[Thu May  6 11:33:39 2021]
+rule evaluation2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/allOligo.set, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/aceID-taxID-species.tsv
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/evaluation/allOligo.set.coverage
+    jobid: 20
+    wildcards: sample=zika, kmerSize=kmer15
+
+[Thu May  6 11:33:40 2021]
+Finished job 20.
+344 of 362 steps (95%) done
+[Thu May  6 11:33:40 2021]
+Finished job 22.
+345 of 362 steps (95%) done
+[Thu May  6 11:33:44 2021]
+Finished job 144.
+346 of 362 steps (96%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:44 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6777-7278.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6777-7278.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6777-7278.Kmercount.txt
+    jobid: 143
+    wildcards: sample=zika, kmerSize=kmer13, seg=6777-7278
+
+[Thu May  6 11:33:44 2021]
+Finished job 143.
+347 of 362 steps (96%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:44 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6777-7278.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6777-7278.Kmercount.sorted.txt
+    jobid: 142
+    wildcards: sample=zika, kmerSize=kmer13, seg=6777-7278
+
+[Thu May  6 11:33:44 2021]
+Finished job 142.
+348 of 362 steps (96%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:44 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6777-7278.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6777-7278.Kmercount.sorted.calculated.txt
+    jobid: 141
+    wildcards: sample=zika, kmerSize=kmer13, seg=6777-7278
+
+[Thu May  6 11:33:45 2021]
+Finished job 84.
+349 of 362 steps (96%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:45 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9789-10290.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9789-10290.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9789-10290.Kmercount.txt
+    jobid: 83
+    wildcards: sample=zika, kmerSize=kmer13, seg=9789-10290
+
+[Thu May  6 11:33:45 2021]
+Finished job 83.
+350 of 362 steps (97%) done
+Select jobs to execute...
+[Thu May  6 11:33:45 2021]
+Finished job 141.
+351 of 362 steps (97%) done
+
+[Thu May  6 11:33:45 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9789-10290.Kmercount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9789-10290.Kmercount.sorted.txt
+    jobid: 82
+    wildcards: sample=zika, kmerSize=kmer13, seg=9789-10290
+
+[Thu May  6 11:33:45 2021]
+Finished job 82.
+352 of 362 steps (97%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:45 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9789-10290.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9789-10290.Kmercount.sorted.calculated.txt
+    jobid: 81
+    wildcards: sample=zika, kmerSize=kmer13, seg=9789-10290
+
+[Thu May  6 11:33:46 2021]
+Finished job 81.
+353 of 362 steps (98%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:46 2021]
+rule filtering2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3263-3764.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse10542-10780.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1506-2007.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse10040-10541.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2259-2760.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3514-4015.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1255-1756.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3012-3513.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7028-7529.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8785-9286.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5271-5772.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4769-5270.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse10291-10780.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8032-8533.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9789-10290.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse502-1003.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9538-10039.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8534-9035.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1757-2258.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9036-9537.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6526-7027.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5522-6023.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5773-6274.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse1004-1505.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4267-4768.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse0-501.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse3765-4266.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse8283-8784.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse9287-9788.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6777-7278.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse5020-5521.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse251-752.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6275-6776.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse6024-6525.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2008-2509.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7781-8282.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7530-8031.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse753-1254.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4518-5019.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2761-3262.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse7279-7780.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse4016-4517.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/reverse2510-3011.Kmercount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/allKmercount.sorted.calculated.txt
+    jobid: 3
+    wildcards: sample=zika, kmerSize=kmer13
+
+[Thu May  6 11:33:49 2021]
+Finished job 3.
+354 of 362 steps (98%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:49 2021]
+rule filtering3:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/allKmercount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/allKmerCount.sorted.calculated.filtered.txt
+    jobid: 6
+    wildcards: sample=zika, kmerSize=kmer13
+
+[Thu May  6 11:33:50 2021]
+Finished job 6.
+355 of 362 steps (98%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:50 2021]
+rule specific1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/allKmerCount.sorted.calculated.filtered.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.fasta
+    jobid: 8
+    wildcards: sample=zika, kmerSize=kmer13
+
+[Thu May  6 11:33:51 2021]
+Finished job 8.
+356 of 362 steps (98%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:51 2021]
+rule specific3:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.fasta, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.2.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.3.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.4.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.2.ebwt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.bowtie
+    jobid: 11
+    wildcards: sample=zika, kmerSize=kmer13
+
+[Thu May  6 11:33:51 2021]
+Finished job 11.
+357 of 362 steps (99%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:51 2021]
+rule specific4:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.bowtie, /datater/wu/data/MSSPE-variant/zika/kmer13/allKmerCount.sorted.calculated.filtered.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/allKmerCount.sorted.calculated.filtered.spec.txt
+    jobid: 13
+    wildcards: sample=zika, kmerSize=kmer13
+
+[Thu May  6 11:33:52 2021]
+Finished job 13.
+358 of 362 steps (99%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:52 2021]
+rule checkHeterodimer:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/allKmerCount.sorted.calculated.filtered.spec.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/allOligo.set
+    jobid: 15
+    wildcards: sample=zika, kmerSize=kmer13
+
+[Thu May  6 11:33:54 2021]
+Finished job 15.
+359 of 362 steps (99%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:54 2021]
+rule evaluation3:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/allKmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/allKmerCount.sorted.calculated.filtered.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/allKmerCount.sorted.calculated.filtered.spec.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/allOligo.set
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/evaluation/allOligo_before.tsv, /datater/wu/data/MSSPE-variant/zika/kmer13/evaluation/allOligo_after1.tsv, /datater/wu/data/MSSPE-variant/zika/kmer13/evaluation/allOligo_after2.tsv, /datater/wu/data/MSSPE-variant/zika/kmer13/evaluation/allOligo_after3.tsv
+    jobid: 21
+    wildcards: sample=zika, kmerSize=kmer13
+
+[Thu May  6 11:33:54 2021]
+rule evaluation2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/allOligo.set, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/aceID-taxID-species.tsv
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/evaluation/allOligo.set.coverage
+    jobid: 19
+    wildcards: sample=zika, kmerSize=kmer13
+
+[Thu May  6 11:33:55 2021]
+Finished job 19.
+360 of 362 steps (99%) done
+[Thu May  6 11:33:55 2021]
+Finished job 21.
+361 of 362 steps (100%) done
+Select jobs to execute...
+
+[Thu May  6 11:33:55 2021]
+localrule all:
+    input: /datater/wu/data/MSSPE-variant/zika/zika.uniq, /datater/wu/data/MSSPE-variant/zika/zika.msa, /datater/wu/data/MSSPE-variant/zika/kmer13/allKmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/allKmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/allKmerCount.sorted.calculated.filtered.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/allKmerCount.sorted.calculated.filtered.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.fasta, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.fasta, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.2.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.3.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.4.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.2.ebwt, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.bowtie, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.bowtie, /datater/wu/data/MSSPE-variant/zika/kmer13/allKmerCount.sorted.calculated.filtered.spec.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt, /datater/wu/data/MSSPE-variant/zika/kmer13/allOligo.set, /datater/wu/data/MSSPE-variant/zika/kmer15/allOligo.set, /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/aceID-taxID-species.tsv, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/aceID-taxID-species.tsv, /datater/wu/data/MSSPE-variant/zika/kmer13/evaluation/allOligo.set.coverage, /datater/wu/data/MSSPE-variant/zika/kmer15/evaluation/allOligo.set.coverage, /datater/wu/data/MSSPE-variant/zika/kmer13/evaluation/allOligo_before.tsv, /datater/wu/data/MSSPE-variant/zika/kmer15/evaluation/allOligo_before.tsv, /datater/wu/data/MSSPE-variant/zika/kmer13/evaluation/allOligo_after1.tsv, /datater/wu/data/MSSPE-variant/zika/kmer15/evaluation/allOligo_after1.tsv, /datater/wu/data/MSSPE-variant/zika/kmer13/evaluation/allOligo_after2.tsv, /datater/wu/data/MSSPE-variant/zika/kmer15/evaluation/allOligo_after2.tsv, /datater/wu/data/MSSPE-variant/zika/kmer13/evaluation/allOligo_after3.tsv, /datater/wu/data/MSSPE-variant/zika/kmer15/evaluation/allOligo_after3.tsv
+    jobid: 0
+
+[Thu May  6 11:33:55 2021]
+Finished job 0.
+362 of 362 steps (100%) done
+Complete log: /datater/wu/MSSPE/.snakemake/log/2021-05-06T113122.008658.snakemake.log

@@ -1,0 +1,3 @@
+NameError in line 62 of /datater/wu/stage_m2/Snakefile:
+name 'kmerCounting_prefix' is not defined
+  File "/datater/wu/stage_m2/Snakefile", line 62, in <module>

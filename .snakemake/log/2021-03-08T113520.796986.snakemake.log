@@ -1,0 +1,65 @@
+Building DAG of jobs...
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	transforme_to_fasta
+	2
+Select jobs to execute...
+
+[Mon Mar  8 11:35:22 2021]
+rule transforme_to_fasta:
+    input: /datater/wu/data/zika/primer3_Tm/all_oligo
+    output: /datater/wu/data/zika/primer3_Tm/all_oligo.fasta
+    jobid: 268
+    wildcards: sample=zika
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-08T113520.796986.snakemake.log

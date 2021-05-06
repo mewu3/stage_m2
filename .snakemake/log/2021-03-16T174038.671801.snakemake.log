@@ -1,0 +1,5 @@
+Building DAG of jobs...
+ChildIOException:
+File/directory is a child to another output:
+('/datater/wu/data_test/zika/splitFiles', splitFiles)
+('/datater/wu/data_test/zika/splitFiles/reverse__snakemake_dynamic__.h5', dskReverse)

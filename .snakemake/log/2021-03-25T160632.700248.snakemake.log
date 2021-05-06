@@ -1,0 +1,108 @@
+Building DAG of jobs...
+Updating job aggregate_allReverseOligo.
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	33	blastn_short
+	34
+Select jobs to execute...
+
+[Thu Mar 25 16:06:33 2021]
+rule blastn_short:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse1266_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse1266_filtered.blatn.out
+    jobid: 317
+    wildcards: sample=enterovirus, seg=1266
+
+
+[Thu Mar 25 16:06:33 2021]
+rule blastn_short:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse5076_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse5076_filtered.blatn.out
+    jobid: 327
+    wildcards: sample=enterovirus, seg=5076
+
+
+[Thu Mar 25 16:06:33 2021]
+rule blastn_short:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse1012_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse1012_filtered.blatn.out
+    jobid: 321
+    wildcards: sample=enterovirus, seg=1012
+
+
+[Thu Mar 25 16:06:33 2021]
+rule blastn_short:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse4568_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse4568_filtered.blatn.out
+    jobid: 301
+    wildcards: sample=enterovirus, seg=4568
+
+
+[Thu Mar 25 16:06:33 2021]
+rule blastn_short:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse2282_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse2282_filtered.blatn.out
+    jobid: 313
+    wildcards: sample=enterovirus, seg=2282
+
+
+[Thu Mar 25 16:06:33 2021]
+rule blastn_short:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse5330_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse5330_filtered.blatn.out
+    jobid: 273
+    wildcards: sample=enterovirus, seg=5330
+
+
+[Thu Mar 25 16:06:33 2021]
+rule blastn_short:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse3298_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse3298_filtered.blatn.out
+    jobid: 311
+    wildcards: sample=enterovirus, seg=3298
+
+
+[Thu Mar 25 16:06:33 2021]
+rule blastn_short:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse6600_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse6600_filtered.blatn.out
+    jobid: 331
+    wildcards: sample=enterovirus, seg=6600
+
+
+[Thu Mar 25 16:06:33 2021]
+rule blastn_short:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse1774_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse1774_filtered.blatn.out
+    jobid: 277
+    wildcards: sample=enterovirus, seg=1774
+
+
+[Thu Mar 25 16:06:33 2021]
+rule blastn_short:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse758_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse758_filtered.blatn.out
+    jobid: 287
+    wildcards: sample=enterovirus, seg=758
+
+
+[Thu Mar 25 16:06:33 2021]
+rule blastn_short:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse3552_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse3552_filtered.blatn.out
+    jobid: 297
+    wildcards: sample=enterovirus, seg=3552
+
+
+[Thu Mar 25 16:06:33 2021]
+rule blastn_short:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse6854_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse6854_filtered.blatn.out
+    jobid: 307
+    wildcards: sample=enterovirus, seg=6854
+

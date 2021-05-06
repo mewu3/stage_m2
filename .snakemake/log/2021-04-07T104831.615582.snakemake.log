@@ -1,0 +1,3 @@
+SyntaxError in line 21 of /datater/wu/stage_m2/rules/evaluation.smk:
+EOL while scanning string literal
+  File "/datater/wu/stage_m2/Snakefile", line 78, in <module>

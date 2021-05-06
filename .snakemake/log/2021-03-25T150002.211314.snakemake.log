@@ -1,0 +1,4 @@
+KeyError in line 82 of /datater/wu/stage_m2/rules/reverse_oligo_filter.smk:
+'nessie'
+  File "/datater/wu/stage_m2/Snakefile", line 52, in <module>
+  File "/datater/wu/stage_m2/rules/reverse_oligo_filter.smk", line 82, in <module>

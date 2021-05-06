@@ -1,0 +1,130 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	aggregate_allReverseOligo
+	1	all
+	43	dskReverse
+	43	dskReverseOutput
+	43	dskReverseOutputSort
+	43	reverse_add_LC
+	43	reverse_linguistic_complexity
+	43	reverse_parameters
+	43	reverse_toFasta
+	43	splitFiles
+	346
+Select jobs to execute...
+
+[Mon Mar 15 13:34:41 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/enterovirus.msa
+    output: /datater/wu/data/enterovirus/splitFiles/forward9036-9537.fasta (dynamic), /datater/wu/data/enterovirus/splitFiles/reverse9036-9537.fasta (dynamic)
+    jobid: 387
+    wildcards: sample=enterovirus, seg=9036-9537
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Mon Mar 15 13:34:41 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/enterovirus.msa
+    output: /datater/wu/data/enterovirus/splitFiles/forward5773-6274.fasta (dynamic), /datater/wu/data/enterovirus/splitFiles/reverse5773-6274.fasta (dynamic)
+    jobid: 315
+    wildcards: sample=enterovirus, seg=5773-6274
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Mon Mar 15 13:34:41 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/enterovirus.msa
+    output: /datater/wu/data/enterovirus/splitFiles/forward5020-5521.fasta (dynamic), /datater/wu/data/enterovirus/splitFiles/reverse5020-5521.fasta (dynamic)
+    jobid: 379
+    wildcards: sample=enterovirus, seg=5020-5521
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Mon Mar 15 13:34:41 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/enterovirus.msa
+    output: /datater/wu/data/enterovirus/splitFiles/forward251-752.fasta (dynamic), /datater/wu/data/enterovirus/splitFiles/reverse251-752.fasta (dynamic)
+    jobid: 531
+    wildcards: sample=enterovirus, seg=251-752
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Mon Mar 15 13:34:41 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/enterovirus.msa
+    output: /datater/wu/data/enterovirus/splitFiles/forward753-1254.fasta (dynamic), /datater/wu/data/enterovirus/splitFiles/reverse753-1254.fasta (dynamic)
+    jobid: 539
+    wildcards: sample=enterovirus, seg=753-1254
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Mon Mar 15 13:34:41 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/enterovirus.msa
+    output: /datater/wu/data/enterovirus/splitFiles/forward8283-8784.fasta (dynamic), /datater/wu/data/enterovirus/splitFiles/reverse8283-8784.fasta (dynamic)
+    jobid: 411
+    wildcards: sample=enterovirus, seg=8283-8784
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Mon Mar 15 13:34:41 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/enterovirus.msa
+    output: /datater/wu/data/enterovirus/splitFiles/forward9789-10290.fasta (dynamic), /datater/wu/data/enterovirus/splitFiles/reverse9789-10290.fasta (dynamic)
+    jobid: 515
+    wildcards: sample=enterovirus, seg=9789-10290
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Mon Mar 15 13:34:41 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/enterovirus.msa
+    output: /datater/wu/data/enterovirus/splitFiles/forward10542-10780.fasta (dynamic), /datater/wu/data/enterovirus/splitFiles/reverse10542-10780.fasta (dynamic)
+    jobid: 523
+    wildcards: sample=enterovirus, seg=10542-10780
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Mon Mar 15 13:34:41 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/enterovirus.msa
+    output: /datater/wu/data/enterovirus/splitFiles/forward6777-7278.fasta (dynamic), /datater/wu/data/enterovirus/splitFiles/reverse6777-7278.fasta (dynamic)
+    jobid: 635
+    wildcards: sample=enterovirus, seg=6777-7278
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Mon Mar 15 13:34:41 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/enterovirus.msa
+    output: /datater/wu/data/enterovirus/splitFiles/forward3263-3764.fasta (dynamic), /datater/wu/data/enterovirus/splitFiles/reverse3263-3764.fasta (dynamic)
+    jobid: 643
+    wildcards: sample=enterovirus, seg=3263-3764
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Mon Mar 15 13:34:41 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/enterovirus.msa
+    output: /datater/wu/data/enterovirus/splitFiles/forward10040-10541.fasta (dynamic), /datater/wu/data/enterovirus/splitFiles/reverse10040-10541.fasta (dynamic)
+    jobid: 395
+    wildcards: sample=enterovirus, seg=10040-10541
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Mon Mar 15 13:34:41 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/enterovirus.msa
+    output: /datater/wu/data/enterovirus/splitFiles/forward7781-8282.fasta (dynamic), /datater/wu/data/enterovirus/splitFiles/reverse7781-8282.fasta (dynamic)
+    jobid: 403
+    wildcards: sample=enterovirus, seg=7781-8282
+
+Subsequent jobs will be added dynamically depending on the output of this job
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-15T133433.835169.snakemake.log

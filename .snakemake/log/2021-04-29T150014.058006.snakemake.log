@@ -1,0 +1,911 @@
+Building DAG of jobs...
+Updating job filtering2.
+Using shell: /bin/bash
+Provided cores: 6
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	20	calculateKmer_sort
+	1	checkHeterodimer
+	9	countKmer1
+	14	countKmer2
+	1	evaluation2
+	1	evaluation3
+	23	filtering1
+	1	filtering2
+	1	filtering3
+	1	specific1
+	1	specific3
+	1	specific4
+	75
+Select jobs to execute...
+
+[Thu Apr 29 15:00:15 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-clustering/zika/splitFiles/reverse7781-8282.fasta
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse7781-8282.int.kmc_pre, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse7781-8282.int.kmc_suf
+    jobid: 159
+    wildcards: sample=zika, seg=7781-8282
+
+
+[Thu Apr 29 15:00:15 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-clustering/zika/splitFiles/reverse753-1254.fasta
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse753-1254.int.kmc_pre, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse753-1254.int.kmc_suf
+    jobid: 167
+    wildcards: sample=zika, seg=753-1254
+
+
+[Thu Apr 29 15:00:15 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse502-1003.Kmercount.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse502-1003.Kmercount.sorted.txt
+    jobid: 77
+    wildcards: sample=zika, seg=502-1003
+
+
+[Thu Apr 29 15:00:15 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3765-4266.int.kmc_pre, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3765-4266.int.kmc_suf
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3765-4266.Kmercount.txt
+    jobid: 122
+    wildcards: sample=zika, seg=3765-4266
+
+
+[Thu Apr 29 15:00:15 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-clustering/zika/splitFiles/reverse3012-3513.fasta
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3012-3513.int.kmc_pre, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3012-3513.int.kmc_suf
+    jobid: 47
+    wildcards: sample=zika, seg=3012-3513
+
+[Thu Apr 29 15:00:15 2021]
+Finished job 77.
+1 of 75 steps (1%) done
+
+[Thu Apr 29 15:00:15 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse6275-6776.Kmercount.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse6275-6776.Kmercount.sorted.txt
+    jobid: 145
+    wildcards: sample=zika, seg=6275-6776
+
+Select jobs to execute...
+[Thu Apr 29 15:00:15 2021]
+Finished job 145.
+2 of 75 steps (3%) done
+
+[Thu Apr 29 15:00:15 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse7530-8031.Kmercount.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse7530-8031.Kmercount.sorted.txt
+    jobid: 161
+    wildcards: sample=zika, seg=7530-8031
+
+Select jobs to execute...
+[Thu Apr 29 15:00:15 2021]
+Finished job 161.
+3 of 75 steps (4%) done
+
+[Thu Apr 29 15:00:15 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-clustering/zika/splitFiles/reverse3514-4015.fasta
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3514-4015.int.kmc_pre, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3514-4015.int.kmc_suf
+    jobid: 35
+    wildcards: sample=zika, seg=3514-4015
+
+Select jobs to execute...
+
+[Thu Apr 29 15:00:15 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse4016-4517.int.kmc_pre, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse4016-4517.int.kmc_suf
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse4016-4517.Kmercount.txt
+    jobid: 182
+    wildcards: sample=zika, seg=4016-4517
+
+[Thu Apr 29 15:00:15 2021]
+Finished job 122.
+4 of 75 steps (5%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:15 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse2008-2509.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse2008-2509.Kmercount.sorted.calculated.txt
+    jobid: 152
+    wildcards: sample=zika, seg=2008-2509
+
+[Thu Apr 29 15:00:15 2021]
+Finished job 182.
+5 of 75 steps (7%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:15 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-clustering/zika/splitFiles/reverse1255-1756.fasta
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse1255-1756.int.kmc_pre, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse1255-1756.int.kmc_suf
+    jobid: 39
+    wildcards: sample=zika, seg=1255-1756
+
+[Thu Apr 29 15:00:16 2021]
+Finished job 152.
+6 of 75 steps (8%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:16 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-clustering/zika/splitFiles/reverse6526-7027.fasta
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse6526-7027.int.kmc_pre, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse6526-7027.int.kmc_suf
+    jobid: 99
+    wildcards: sample=zika, seg=6526-7027
+
+[Thu Apr 29 15:00:17 2021]
+Finished job 159.
+7 of 75 steps (9%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:17 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse9036-9537.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse9036-9537.Kmercount.sorted.calculated.txt
+    jobid: 92
+    wildcards: sample=zika, seg=9036-9537
+
+[Thu Apr 29 15:00:17 2021]
+Finished job 167.
+8 of 75 steps (11%) done
+[Thu Apr 29 15:00:17 2021]
+Finished job 35.
+9 of 75 steps (12%) done
+Select jobs to execute...
+[Thu Apr 29 15:00:17 2021]
+Finished job 47.
+10 of 75 steps (13%) done
+
+[Thu Apr 29 15:00:17 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse5522-6023.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse5522-6023.Kmercount.sorted.calculated.txt
+    jobid: 100
+    wildcards: sample=zika, seg=5522-6023
+
+[Thu Apr 29 15:00:17 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse502-1003.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse502-1003.Kmercount.sorted.calculated.txt
+    jobid: 76
+    wildcards: sample=zika, seg=502-1003
+
+Select jobs to execute...
+
+[Thu Apr 29 15:00:17 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3263-3764.Kmercount.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3263-3764.Kmercount.sorted.txt
+    jobid: 17
+    wildcards: sample=zika, seg=3263-3764
+
+Select jobs to execute...
+[Thu Apr 29 15:00:17 2021]
+Finished job 17.
+11 of 75 steps (15%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:17 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse6275-6776.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse6275-6776.Kmercount.sorted.calculated.txt
+    jobid: 144
+    wildcards: sample=zika, seg=6275-6776
+
+[Thu Apr 29 15:00:18 2021]
+Finished job 39.
+12 of 75 steps (16%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:18 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse7530-8031.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse7530-8031.Kmercount.sorted.calculated.txt
+    jobid: 160
+    wildcards: sample=zika, seg=7530-8031
+
+[Thu Apr 29 15:00:18 2021]
+Finished job 100.
+13 of 75 steps (17%) done
+Select jobs to execute...
+[Thu Apr 29 15:00:18 2021]
+Finished job 92.
+14 of 75 steps (19%) done
+
+[Thu Apr 29 15:00:18 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse10040-10541.Kmercount.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse10040-10541.Kmercount.sorted.txt
+    jobid: 25
+    wildcards: sample=zika, seg=10040-10541
+
+Select jobs to execute...
+[Thu Apr 29 15:00:18 2021]
+Finished job 25.
+15 of 75 steps (20%) done
+[Thu Apr 29 15:00:18 2021]
+Finished job 76.
+16 of 75 steps (21%) done
+[Thu Apr 29 15:00:18 2021]
+Finished job 144.
+17 of 75 steps (23%) done
+
+[Thu Apr 29 15:00:18 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse7781-8282.int.kmc_pre, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse7781-8282.int.kmc_suf
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse7781-8282.Kmercount.txt
+    jobid: 158
+    wildcards: sample=zika, seg=7781-8282
+
+Select jobs to execute...
+
+[Thu Apr 29 15:00:18 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3012-3513.int.kmc_pre, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3012-3513.int.kmc_suf
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3012-3513.Kmercount.txt
+    jobid: 46
+    wildcards: sample=zika, seg=3012-3513
+
+
+[Thu Apr 29 15:00:18 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3263-3764.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3263-3764.Kmercount.sorted.calculated.txt
+    jobid: 16
+    wildcards: sample=zika, seg=3263-3764
+
+[Thu Apr 29 15:00:18 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse10040-10541.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse10040-10541.Kmercount.sorted.calculated.txt
+    jobid: 24
+    wildcards: sample=zika, seg=10040-10541
+
+Select jobs to execute...
+Select jobs to execute...
+[Thu Apr 29 15:00:18 2021]
+Finished job 158.
+18 of 75 steps (24%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:18 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-clustering/zika/splitFiles/reverse2761-3262.fasta
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse2761-3262.int.kmc_pre, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse2761-3262.int.kmc_suf
+    jobid: 175
+    wildcards: sample=zika, seg=2761-3262
+
+[Thu Apr 29 15:00:18 2021]
+Finished job 46.
+19 of 75 steps (25%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:18 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-clustering/zika/splitFiles/reverse4267-4768.fasta
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse4267-4768.int.kmc_pre, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse4267-4768.int.kmc_suf
+    jobid: 115
+    wildcards: sample=zika, seg=4267-4768
+
+[Thu Apr 29 15:00:18 2021]
+Finished job 99.
+20 of 75 steps (27%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:18 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse6526-7027.int.kmc_pre, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse6526-7027.int.kmc_suf
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse6526-7027.Kmercount.txt
+    jobid: 98
+    wildcards: sample=zika, seg=6526-7027
+
+[Thu Apr 29 15:00:19 2021]
+Finished job 160.
+21 of 75 steps (28%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:19 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse8032-8533.int.kmc_pre, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse8032-8533.int.kmc_suf
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse8032-8533.Kmercount.txt
+    jobid: 70
+    wildcards: sample=zika, seg=8032-8533
+
+[Thu Apr 29 15:00:19 2021]
+Finished job 24.
+22 of 75 steps (29%) done
+Select jobs to execute...
+[Thu Apr 29 15:00:19 2021]
+Finished job 16.
+23 of 75 steps (31%) done
+
+[Thu Apr 29 15:00:19 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse9287-9788.int.kmc_pre, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse9287-9788.int.kmc_suf
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse9287-9788.Kmercount.txt
+    jobid: 130
+    wildcards: sample=zika, seg=9287-9788
+
+Select jobs to execute...
+
+[Thu Apr 29 15:00:19 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-clustering/zika/splitFiles/reverse8785-9286.fasta
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse8785-9286.int.kmc_pre, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse8785-9286.int.kmc_suf
+    jobid: 55
+    wildcards: sample=zika, seg=8785-9286
+
+[Thu Apr 29 15:00:19 2021]
+Finished job 98.
+24 of 75 steps (32%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:19 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse8534-9035.Kmercount.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse8534-9035.Kmercount.sorted.txt
+    jobid: 85
+    wildcards: sample=zika, seg=8534-9035
+
+[Thu Apr 29 15:00:19 2021]
+Finished job 85.
+25 of 75 steps (33%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:19 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse1255-1756.int.kmc_pre, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse1255-1756.int.kmc_suf
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse1255-1756.Kmercount.txt
+    jobid: 38
+    wildcards: sample=zika, seg=1255-1756
+
+[Thu Apr 29 15:00:19 2021]
+Finished job 70.
+26 of 75 steps (35%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:19 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse753-1254.int.kmc_pre, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse753-1254.int.kmc_suf
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse753-1254.Kmercount.txt
+    jobid: 166
+    wildcards: sample=zika, seg=753-1254
+
+[Thu Apr 29 15:00:19 2021]
+Finished job 130.
+27 of 75 steps (36%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:19 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse4016-4517.Kmercount.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse4016-4517.Kmercount.sorted.txt
+    jobid: 181
+    wildcards: sample=zika, seg=4016-4517
+
+[Thu Apr 29 15:00:19 2021]
+Finished job 181.
+28 of 75 steps (37%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:19 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3765-4266.Kmercount.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3765-4266.Kmercount.sorted.txt
+    jobid: 121
+    wildcards: sample=zika, seg=3765-4266
+
+[Thu Apr 29 15:00:19 2021]
+Finished job 121.
+29 of 75 steps (39%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:19 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3514-4015.int.kmc_pre, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3514-4015.int.kmc_suf
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3514-4015.Kmercount.txt
+    jobid: 34
+    wildcards: sample=zika, seg=3514-4015
+
+[Thu Apr 29 15:00:19 2021]
+Finished job 38.
+30 of 75 steps (40%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:19 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse10542-10778.int.kmc_pre, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse10542-10778.int.kmc_suf
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse10542-10778.Kmercount.txt
+    jobid: 42
+    wildcards: sample=zika, seg=10542-10778
+
+[Thu Apr 29 15:00:20 2021]
+Finished job 166.
+31 of 75 steps (41%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:20 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse9287-9788.Kmercount.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse9287-9788.Kmercount.sorted.txt
+    jobid: 129
+    wildcards: sample=zika, seg=9287-9788
+
+[Thu Apr 29 15:00:20 2021]
+Finished job 129.
+32 of 75 steps (43%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:20 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse9287-9788.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse9287-9788.Kmercount.sorted.calculated.txt
+    jobid: 128
+    wildcards: sample=zika, seg=9287-9788
+
+[Thu Apr 29 15:00:20 2021]
+Finished job 34.
+33 of 75 steps (44%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:20 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse8534-9035.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse8534-9035.Kmercount.sorted.calculated.txt
+    jobid: 84
+    wildcards: sample=zika, seg=8534-9035
+
+[Thu Apr 29 15:00:20 2021]
+Finished job 42.
+34 of 75 steps (45%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:20 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse8032-8533.Kmercount.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse8032-8533.Kmercount.sorted.txt
+    jobid: 69
+    wildcards: sample=zika, seg=8032-8533
+
+[Thu Apr 29 15:00:20 2021]
+Finished job 69.
+35 of 75 steps (47%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:20 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse8032-8533.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse8032-8533.Kmercount.sorted.calculated.txt
+    jobid: 68
+    wildcards: sample=zika, seg=8032-8533
+
+[Thu Apr 29 15:00:20 2021]
+Finished job 128.
+36 of 75 steps (48%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:20 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse10542-10778.Kmercount.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse10542-10778.Kmercount.sorted.txt
+    jobid: 41
+    wildcards: sample=zika, seg=10542-10778
+
+[Thu Apr 29 15:00:20 2021]
+Finished job 41.
+37 of 75 steps (49%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:21 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse10542-10778.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse10542-10778.Kmercount.sorted.calculated.txt
+    jobid: 40
+    wildcards: sample=zika, seg=10542-10778
+
+[Thu Apr 29 15:00:21 2021]
+Finished job 84.
+38 of 75 steps (51%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:21 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3514-4015.Kmercount.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3514-4015.Kmercount.sorted.txt
+    jobid: 33
+    wildcards: sample=zika, seg=3514-4015
+
+[Thu Apr 29 15:00:21 2021]
+Finished job 33.
+39 of 75 steps (52%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:21 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3514-4015.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3514-4015.Kmercount.sorted.calculated.txt
+    jobid: 32
+    wildcards: sample=zika, seg=3514-4015
+
+[Thu Apr 29 15:00:21 2021]
+Finished job 68.
+40 of 75 steps (53%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:21 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse753-1254.Kmercount.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse753-1254.Kmercount.sorted.txt
+    jobid: 165
+    wildcards: sample=zika, seg=753-1254
+
+[Thu Apr 29 15:00:21 2021]
+Finished job 175.
+41 of 75 steps (55%) done
+[Thu Apr 29 15:00:21 2021]
+Finished job 165.
+42 of 75 steps (56%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:21 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3012-3513.Kmercount.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3012-3513.Kmercount.sorted.txt
+    jobid: 45
+    wildcards: sample=zika, seg=3012-3513
+
+
+[Thu Apr 29 15:00:21 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3765-4266.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3765-4266.Kmercount.sorted.calculated.txt
+    jobid: 120
+    wildcards: sample=zika, seg=3765-4266
+
+Select jobs to execute...
+[Thu Apr 29 15:00:21 2021]
+Finished job 45.
+43 of 75 steps (57%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:21 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3012-3513.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3012-3513.Kmercount.sorted.calculated.txt
+    jobid: 44
+    wildcards: sample=zika, seg=3012-3513
+
+[Thu Apr 29 15:00:21 2021]
+Finished job 115.
+44 of 75 steps (59%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:21 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse753-1254.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse753-1254.Kmercount.sorted.calculated.txt
+    jobid: 164
+    wildcards: sample=zika, seg=753-1254
+
+[Thu Apr 29 15:00:21 2021]
+Finished job 55.
+45 of 75 steps (60%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:21 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse8785-9286.int.kmc_pre, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse8785-9286.int.kmc_suf
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse8785-9286.Kmercount.txt
+    jobid: 54
+    wildcards: sample=zika, seg=8785-9286
+
+[Thu Apr 29 15:00:21 2021]
+Finished job 40.
+46 of 75 steps (61%) done
+Select jobs to execute...
+[Thu Apr 29 15:00:21 2021]
+Finished job 32.
+47 of 75 steps (63%) done
+
+[Thu Apr 29 15:00:21 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse4267-4768.int.kmc_pre, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse4267-4768.int.kmc_suf
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse4267-4768.Kmercount.txt
+    jobid: 114
+    wildcards: sample=zika, seg=4267-4768
+
+Select jobs to execute...
+
+[Thu Apr 29 15:00:21 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse6526-7027.Kmercount.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse6526-7027.Kmercount.sorted.txt
+    jobid: 97
+    wildcards: sample=zika, seg=6526-7027
+
+[Thu Apr 29 15:00:21 2021]
+Finished job 97.
+48 of 75 steps (64%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:22 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse6526-7027.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse6526-7027.Kmercount.sorted.calculated.txt
+    jobid: 96
+    wildcards: sample=zika, seg=6526-7027
+
+[Thu Apr 29 15:00:22 2021]
+Finished job 120.
+49 of 75 steps (65%) done
+Select jobs to execute...
+[Thu Apr 29 15:00:22 2021]
+Finished job 44.
+50 of 75 steps (67%) done
+[Thu Apr 29 15:00:22 2021]
+Finished job 54.
+51 of 75 steps (68%) done
+
+[Thu Apr 29 15:00:22 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse1255-1756.Kmercount.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse1255-1756.Kmercount.sorted.txt
+    jobid: 37
+    wildcards: sample=zika, seg=1255-1756
+
+Select jobs to execute...
+[Thu Apr 29 15:00:22 2021]
+Finished job 37.
+52 of 75 steps (69%) done
+
+[Thu Apr 29 15:00:22 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse4016-4517.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse4016-4517.Kmercount.sorted.calculated.txt
+    jobid: 180
+    wildcards: sample=zika, seg=4016-4517
+
+[Thu Apr 29 15:00:22 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse2761-3262.int.kmc_pre, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse2761-3262.int.kmc_suf
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse2761-3262.Kmercount.txt
+    jobid: 174
+    wildcards: sample=zika, seg=2761-3262
+
+Select jobs to execute...
+
+[Thu Apr 29 15:00:22 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse8785-9286.Kmercount.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse8785-9286.Kmercount.sorted.txt
+    jobid: 53
+    wildcards: sample=zika, seg=8785-9286
+
+[Thu Apr 29 15:00:22 2021]
+Finished job 164.
+53 of 75 steps (71%) done
+Select jobs to execute...
+[Thu Apr 29 15:00:22 2021]
+Finished job 53.
+54 of 75 steps (72%) done
+
+[Thu Apr 29 15:00:22 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse7781-8282.Kmercount.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse7781-8282.Kmercount.sorted.txt
+    jobid: 157
+    wildcards: sample=zika, seg=7781-8282
+
+[Thu Apr 29 15:00:22 2021]
+Finished job 114.
+55 of 75 steps (73%) done
+Select jobs to execute...
+[Thu Apr 29 15:00:22 2021]
+Finished job 157.
+56 of 75 steps (75%) done
+
+[Thu Apr 29 15:00:22 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse4267-4768.Kmercount.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse4267-4768.Kmercount.sorted.txt
+    jobid: 113
+    wildcards: sample=zika, seg=4267-4768
+
+
+[Thu Apr 29 15:00:22 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse1255-1756.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse1255-1756.Kmercount.sorted.calculated.txt
+    jobid: 36
+    wildcards: sample=zika, seg=1255-1756
+
+Select jobs to execute...
+[Thu Apr 29 15:00:22 2021]
+Finished job 113.
+57 of 75 steps (76%) done
+
+[Thu Apr 29 15:00:22 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse8785-9286.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse8785-9286.Kmercount.sorted.calculated.txt
+    jobid: 52
+    wildcards: sample=zika, seg=8785-9286
+
+Select jobs to execute...
+
+[Thu Apr 29 15:00:22 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse7781-8282.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse7781-8282.Kmercount.sorted.calculated.txt
+    jobid: 156
+    wildcards: sample=zika, seg=7781-8282
+
+Select jobs to execute...
+Select jobs to execute...
+[Thu Apr 29 15:00:22 2021]
+Finished job 96.
+58 of 75 steps (77%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:22 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse4267-4768.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse4267-4768.Kmercount.sorted.calculated.txt
+    jobid: 112
+    wildcards: sample=zika, seg=4267-4768
+
+[Thu Apr 29 15:00:22 2021]
+Finished job 174.
+59 of 75 steps (79%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:22 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse2761-3262.Kmercount.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse2761-3262.Kmercount.sorted.txt
+    jobid: 173
+    wildcards: sample=zika, seg=2761-3262
+
+[Thu Apr 29 15:00:22 2021]
+Finished job 173.
+60 of 75 steps (80%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:22 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse2761-3262.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse2761-3262.Kmercount.sorted.calculated.txt
+    jobid: 172
+    wildcards: sample=zika, seg=2761-3262
+
+[Thu Apr 29 15:00:23 2021]
+Finished job 180.
+61 of 75 steps (81%) done
+[Thu Apr 29 15:00:23 2021]
+Finished job 36.
+62 of 75 steps (83%) done
+[Thu Apr 29 15:00:23 2021]
+Finished job 52.
+63 of 75 steps (84%) done
+[Thu Apr 29 15:00:23 2021]
+Finished job 156.
+64 of 75 steps (85%) done
+[Thu Apr 29 15:00:23 2021]
+Finished job 112.
+65 of 75 steps (87%) done
+[Thu Apr 29 15:00:23 2021]
+Finished job 172.
+66 of 75 steps (88%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:23 2021]
+rule filtering2:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3263-3764.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse1506-2007.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse10040-10541.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse2259-2760.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3514-4015.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse1255-1756.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse10542-10778.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3012-3513.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse7028-7529.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse8785-9286.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse10291-10778.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse5271-5772.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse4769-5270.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse8032-8533.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse9789-10290.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse502-1003.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse9538-10039.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse8534-9035.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse1757-2258.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse9036-9537.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse6526-7027.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse5522-6023.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse5773-6274.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse1004-1505.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse4267-4768.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse0-501.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3765-4266.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse8283-8784.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse9287-9788.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse6777-7278.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse5020-5521.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse251-752.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse6275-6776.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse6024-6525.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse2008-2509.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse7781-8282.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse7530-8031.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse753-1254.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse4518-5019.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse2761-3262.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse7279-7780.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse4016-4517.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse2510-3011.Kmercount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/allKmercount.sorted.calculated.txt
+    jobid: 4
+    wildcards: sample=zika
+
+[Thu Apr 29 15:00:25 2021]
+Finished job 4.
+67 of 75 steps (89%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:25 2021]
+rule filtering3:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/allKmercount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/allKmerCount.sorted.calculated.filtered.txt
+    jobid: 6
+    wildcards: sample=zika
+
+[Thu Apr 29 15:00:26 2021]
+Finished job 6.
+68 of 75 steps (91%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:26 2021]
+rule specific1:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/allKmerCount.sorted.calculated.filtered.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.fasta
+    jobid: 7
+    wildcards: sample=zika
+
+[Thu Apr 29 15:00:27 2021]
+Finished job 7.
+69 of 75 steps (92%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:27 2021]
+rule specific3:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.fasta, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.2.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.3.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.4.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.rev.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.rev.2.ebwt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.bowtie
+    jobid: 9
+    wildcards: sample=zika
+
+[Thu Apr 29 15:00:27 2021]
+Finished job 9.
+70 of 75 steps (93%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:27 2021]
+rule specific4:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.bowtie, /datater/wu/data/MSSPE-clustering/zika/kmer15/allKmerCount.sorted.calculated.filtered.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt
+    jobid: 10
+    wildcards: sample=zika
+
+[Thu Apr 29 15:00:29 2021]
+Finished job 10.
+71 of 75 steps (95%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:29 2021]
+rule checkHeterodimer:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/allOligo.set
+    jobid: 11
+    wildcards: sample=zika
+
+[Thu Apr 29 15:00:32 2021]
+Finished job 11.
+72 of 75 steps (96%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:32 2021]
+rule evaluation3:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/allKmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/allKmerCount.sorted.calculated.filtered.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/allOligo.set
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/evaluation/allOligo_before.tsv, /datater/wu/data/MSSPE-clustering/zika/kmer15/evaluation/allOligo_after1.tsv, /datater/wu/data/MSSPE-clustering/zika/kmer15/evaluation/allOligo_after2.tsv, /datater/wu/data/MSSPE-clustering/zika/kmer15/evaluation/allOligo_after3.tsv
+    jobid: 14
+    wildcards: sample=zika
+
+[Thu Apr 29 15:00:32 2021]
+rule evaluation2:
+    input: /datater/wu/data/MSSPE-clustering/zika/kmer15/allOligo.set, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/aceID-taxID-species.tsv
+    output: /datater/wu/data/MSSPE-clustering/zika/kmer15/evaluation/allOligo.set.coverage
+    jobid: 13
+    wildcards: sample=zika
+
+[Thu Apr 29 15:00:33 2021]
+Finished job 13.
+73 of 75 steps (97%) done
+[Thu Apr 29 15:00:33 2021]
+Finished job 14.
+74 of 75 steps (99%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:00:33 2021]
+localrule all:
+    input: /datater/wu/data/MSSPE-clustering/zika/zika.uniq, /datater/wu/data/MSSPE-clustering/zika/zika0.99.uniq, /datater/wu/data/MSSPE-clustering/zika/zika0.99.msa, /datater/wu/data/MSSPE-clustering/zika/kmer15/allKmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/allKmerCount.sorted.calculated.filtered.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.fasta, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.2.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.3.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.4.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.rev.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.rev.2.ebwt, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.bowtie, /datater/wu/data/MSSPE-clustering/zika/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt, /datater/wu/data/MSSPE-clustering/zika/kmer15/allOligo.set, /datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/aceID-taxID-species.tsv, /datater/wu/data/MSSPE-clustering/zika/kmer15/evaluation/allOligo.set.coverage, /datater/wu/data/MSSPE-clustering/zika/kmer15/evaluation/allOligo_before.tsv, /datater/wu/data/MSSPE-clustering/zika/kmer15/evaluation/allOligo_after1.tsv, /datater/wu/data/MSSPE-clustering/zika/kmer15/evaluation/allOligo_after2.tsv, /datater/wu/data/MSSPE-clustering/zika/kmer15/evaluation/allOligo_after3.tsv
+    jobid: 0
+
+[Thu Apr 29 15:00:33 2021]
+Finished job 0.
+75 of 75 steps (100%) done
+Complete log: /datater/wu/MSSPE/.snakemake/log/2021-04-29T150014.058006.snakemake.log

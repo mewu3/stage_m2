@@ -1,0 +1,9 @@
+Building DAG of jobs...
+InputFunctionException in line 49 of /datater/wu/stage_m2/rules/dsk_oligo_filter.smk:
+Error:
+  WorkflowError:
+    Missing wildcard values for seg
+Wildcards:
+  sample=zika
+Traceback:
+  File "/datater/wu/stage_m2/rules/dsk_oligo_filter.smk", line 44, in aggregate_input

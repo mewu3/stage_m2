@@ -1,0 +1,4 @@
+KeyError in line 153 of /datater/wu/MSSPE/rules-variant/reverse_kmer_dimer.smk:
+'heterodimer-deltaG'
+  File "/datater/wu/MSSPE/snakefile-variant", line 155, in <module>
+  File "/datater/wu/MSSPE/rules-variant/reverse_kmer_dimer.smk", line 153, in <module>

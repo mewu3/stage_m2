@@ -1,0 +1,299 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	37	add_LC
+	1	all
+	38
+Select jobs to execute...
+
+[Fri Mar 12 10:39:31 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_762-1266.nessieOut, /datater/wu/data/enterovirus/filtering/forward_762-1266.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_762-1266.calculated2
+    jobid: 237
+    wildcards: sample=enterovirus, seg=762-1266
+
+[Fri Mar 12 10:39:32 2021]
+Finished job 237.
+1 of 38 steps (3%) done
+Select jobs to execute...
+
+[Fri Mar 12 10:39:32 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_9144-9382.nessieOut, /datater/wu/data/enterovirus/filtering/forward_9144-9382.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_9144-9382.calculated2
+    jobid: 266
+    wildcards: sample=enterovirus, seg=9144-9382
+
+[Fri Mar 12 10:39:33 2021]
+Finished job 266.
+2 of 38 steps (5%) done
+Select jobs to execute...
+
+[Fri Mar 12 10:39:33 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_5080-5584.nessieOut, /datater/wu/data/enterovirus/filtering/forward_5080-5584.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_5080-5584.calculated2
+    jobid: 244
+    wildcards: sample=enterovirus, seg=5080-5584
+
+[Fri Mar 12 10:39:34 2021]
+Finished job 244.
+3 of 38 steps (8%) done
+Select jobs to execute...
+
+[Fri Mar 12 10:39:34 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_6350-6854.nessieOut, /datater/wu/data/enterovirus/filtering/forward_6350-6854.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_6350-6854.calculated2
+    jobid: 258
+    wildcards: sample=enterovirus, seg=6350-6854
+
+[Fri Mar 12 10:39:35 2021]
+Finished job 258.
+4 of 38 steps (11%) done
+Select jobs to execute...
+
+[Fri Mar 12 10:39:35 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_7620-8124.nessieOut, /datater/wu/data/enterovirus/filtering/forward_7620-8124.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_7620-8124.calculated2
+    jobid: 252
+    wildcards: sample=enterovirus, seg=7620-8124
+
+[Fri Mar 12 10:39:36 2021]
+Finished job 252.
+5 of 38 steps (13%) done
+Select jobs to execute...
+
+[Fri Mar 12 10:39:36 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_3048-3552.nessieOut, /datater/wu/data/enterovirus/filtering/forward_3048-3552.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_3048-3552.calculated2
+    jobid: 254
+    wildcards: sample=enterovirus, seg=3048-3552
+
+[Fri Mar 12 10:39:37 2021]
+Finished job 254.
+6 of 38 steps (16%) done
+Select jobs to execute...
+
+[Fri Mar 12 10:39:37 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_2032-2536.nessieOut, /datater/wu/data/enterovirus/filtering/forward_2032-2536.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_2032-2536.calculated2
+    jobid: 247
+    wildcards: sample=enterovirus, seg=2032-2536
+
+[Fri Mar 12 10:39:38 2021]
+Finished job 247.
+7 of 38 steps (18%) done
+Select jobs to execute...
+
+[Fri Mar 12 10:39:38 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_4318-4822.nessieOut, /datater/wu/data/enterovirus/filtering/forward_4318-4822.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_4318-4822.calculated2
+    jobid: 269
+    wildcards: sample=enterovirus, seg=4318-4822
+
+[Fri Mar 12 10:39:39 2021]
+Finished job 269.
+8 of 38 steps (21%) done
+Select jobs to execute...
+
+[Fri Mar 12 10:39:39 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_2794-3298.nessieOut, /datater/wu/data/enterovirus/filtering/forward_2794-3298.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_2794-3298.calculated2
+    jobid: 239
+    wildcards: sample=enterovirus, seg=2794-3298
+
+[Fri Mar 12 10:39:39 2021]
+Finished job 239.
+9 of 38 steps (24%) done
+Select jobs to execute...
+
+[Fri Mar 12 10:39:39 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_1270-1774.nessieOut, /datater/wu/data/enterovirus/filtering/forward_1270-1774.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_1270-1774.calculated2
+    jobid: 248
+    wildcards: sample=enterovirus, seg=1270-1774
+
+[Fri Mar 12 10:39:40 2021]
+Finished job 248.
+10 of 38 steps (26%) done
+Select jobs to execute...
+
+[Fri Mar 12 10:39:40 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_3302-3806.nessieOut, /datater/wu/data/enterovirus/filtering/forward_3302-3806.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_3302-3806.calculated2
+    jobid: 263
+    wildcards: sample=enterovirus, seg=3302-3806
+
+[Fri Mar 12 10:39:41 2021]
+Finished job 263.
+11 of 38 steps (29%) done
+Select jobs to execute...
+
+[Fri Mar 12 10:39:41 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_0-504.nessieOut, /datater/wu/data/enterovirus/filtering/forward_0-504.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_0-504.calculated2
+    jobid: 255
+    wildcards: sample=enterovirus, seg=0-504
+
+[Fri Mar 12 10:39:42 2021]
+Finished job 255.
+12 of 38 steps (32%) done
+Select jobs to execute...
+
+[Fri Mar 12 10:39:42 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_4826-5330.nessieOut, /datater/wu/data/enterovirus/filtering/forward_4826-5330.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_4826-5330.calculated2
+    jobid: 270
+    wildcards: sample=enterovirus, seg=4826-5330
+
+[Fri Mar 12 10:39:42 2021]
+Finished job 270.
+13 of 38 steps (34%) done
+Select jobs to execute...
+
+[Fri Mar 12 10:39:42 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_3556-4060.nessieOut, /datater/wu/data/enterovirus/filtering/forward_3556-4060.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_3556-4060.calculated2
+    jobid: 240
+    wildcards: sample=enterovirus, seg=3556-4060
+
+[Fri Mar 12 10:39:43 2021]
+Finished job 240.
+14 of 38 steps (37%) done
+Select jobs to execute...
+
+[Fri Mar 12 10:39:43 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_254-758.nessieOut, /datater/wu/data/enterovirus/filtering/forward_254-758.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_254-758.calculated2
+    jobid: 249
+    wildcards: sample=enterovirus, seg=254-758
+
+[Fri Mar 12 10:39:44 2021]
+Finished job 249.
+15 of 38 steps (39%) done
+Select jobs to execute...
+
+[Fri Mar 12 10:39:44 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_1778-2282.nessieOut, /datater/wu/data/enterovirus/filtering/forward_1778-2282.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_1778-2282.calculated2
+    jobid: 271
+    wildcards: sample=enterovirus, seg=1778-2282
+
+[Fri Mar 12 10:39:45 2021]
+Finished job 271.
+16 of 38 steps (42%) done
+Select jobs to execute...
+
+[Fri Mar 12 10:39:45 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_7874-8378.nessieOut, /datater/wu/data/enterovirus/filtering/forward_7874-8378.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_7874-8378.calculated2
+    jobid: 264
+    wildcards: sample=enterovirus, seg=7874-8378
+
+[Fri Mar 12 10:39:46 2021]
+Finished job 264.
+17 of 38 steps (45%) done
+Select jobs to execute...
+
+[Fri Mar 12 10:39:46 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_508-1012.nessieOut, /datater/wu/data/enterovirus/filtering/forward_508-1012.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_508-1012.calculated2
+    jobid: 241
+    wildcards: sample=enterovirus, seg=508-1012
+
+[Fri Mar 12 10:39:47 2021]
+Finished job 241.
+18 of 38 steps (47%) done
+Select jobs to execute...
+
+[Fri Mar 12 10:39:47 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_6096-6600.nessieOut, /datater/wu/data/enterovirus/filtering/forward_6096-6600.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_6096-6600.calculated2
+    jobid: 256
+    wildcards: sample=enterovirus, seg=6096-6600
+
+[Fri Mar 12 10:39:48 2021]
+Finished job 256.
+19 of 38 steps (50%) done
+Select jobs to execute...
+
+[Fri Mar 12 10:39:48 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_5334-5838.nessieOut, /datater/wu/data/enterovirus/filtering/forward_5334-5838.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_5334-5838.calculated2
+    jobid: 236
+    wildcards: sample=enterovirus, seg=5334-5838
+
+[Fri Mar 12 10:39:49 2021]
+Finished job 236.
+20 of 38 steps (53%) done
+Select jobs to execute...
+
+[Fri Mar 12 10:39:49 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_3810-4314.nessieOut, /datater/wu/data/enterovirus/filtering/forward_3810-4314.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_3810-4314.calculated2
+    jobid: 243
+    wildcards: sample=enterovirus, seg=3810-4314
+
+[Fri Mar 12 10:39:50 2021]
+Finished job 243.
+21 of 38 steps (55%) done
+Select jobs to execute...
+
+[Fri Mar 12 10:39:50 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_5842-6346.nessieOut, /datater/wu/data/enterovirus/filtering/forward_5842-6346.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_5842-6346.calculated2
+    jobid: 251
+    wildcards: sample=enterovirus, seg=5842-6346
+
+[Fri Mar 12 10:39:50 2021]
+Finished job 251.
+22 of 38 steps (58%) done
+Select jobs to execute...
+
+[Fri Mar 12 10:39:50 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_7366-7870.nessieOut, /datater/wu/data/enterovirus/filtering/forward_7366-7870.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_7366-7870.calculated2
+    jobid: 257
+    wildcards: sample=enterovirus, seg=7366-7870
+
+[Fri Mar 12 10:39:51 2021]
+Finished job 257.
+23 of 38 steps (61%) done
+Select jobs to execute...
+
+[Fri Mar 12 10:39:51 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_6858-7362.nessieOut, /datater/wu/data/enterovirus/filtering/forward_6858-7362.fasta
+    output: /datater/wu/data/enterovirus/filtering/forward_6858-7362.calculated2
+    jobid: 242
+    wildcards: sample=enterovirus, seg=6858-7362
+
+Terminating processes on user request, this might take some time.
+Removing output files of failed job add_LC since they might be corrupted:
+/datater/wu/data/enterovirus/filtering/forward_6858-7362.calculated2
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-12T103930.406449.snakemake.log

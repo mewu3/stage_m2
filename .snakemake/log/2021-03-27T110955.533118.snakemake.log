@@ -1,0 +1,3 @@
+SyntaxError in line 16 of /datater/wu/stage_m2/rules/reverse_kmer_dsk(1).smk:
+Unexpected keyword scripts in rule definition (reverse_kmer_dsk(1).smk, line 16)
+  File "/datater/wu/stage_m2/Snakefile", line 56, in <module>

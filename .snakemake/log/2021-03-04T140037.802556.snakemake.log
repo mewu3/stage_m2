@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 41 of /home/meijun/Documents/stage_m2/Snakefile:
+Missing input files for rule all:
+.run_dsk.touch

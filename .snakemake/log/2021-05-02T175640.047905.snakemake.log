@@ -1,0 +1,23 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	checkHeterodimer
+	1	evaluation2
+	1	evaluation3
+	1	evaluation4
+	1	getKmerPosition4
+	6
+Select jobs to execute...
+
+[Sun May  2 17:56:40 2021]
+rule getKmerPosition4:
+    input: /datater/wu/data/MSSPE-variant/enterovirus/kmer15/intermediate/allKmerCount.sorted.calculated.bowtie, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/allKmerCount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/enterovirus/kmer15/intermediate/allKmerCount.sorted.calculated.position
+    jobid: 16
+    wildcards: sample=enterovirus
+

@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 82 of /datater/wu/stage_m2/rules/reverse_oligo_filter.smk:
+Missing input files for rule add_LC:
+/datater/wu/data/enterovirus/filtering/reverse__snakemake_dynamic__.fasta

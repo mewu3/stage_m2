@@ -1,0 +1,9 @@
+Building DAG of jobs...
+InputFunctionException in line 48 of /datater/wu/stage_m2/rules/reverse_check_specifity.smk:
+Error:
+  WorkflowError:
+    Missing wildcard values for sample
+Wildcards:
+
+Traceback:
+  File "/datater/wu/stage_m2/rules/reverse_check_specifity.smk", line 41, in aggregate_input

@@ -1,0 +1,284 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	MSA
+	1	all
+	1	checkHeterodimer
+	1	clustering
+	1	countAllKmer1
+	1	countAllKmer2
+	1	evaluation1
+	1	evaluation2
+	1	evaluation3
+	1	evaluation4
+	1	filtering1
+	1	filtering2
+	1	getKmerPosition1
+	1	getKmerPosition2
+	1	getKmerPosition3
+	1	getKmerPosition4
+	1	removeDuplicateSeq
+	1	sortAllKmer
+	1	specific1
+	1	specific2
+	1	specific3
+	1	specific4
+	22
+Select jobs to execute...
+
+[Mon May  3 09:56:55 2021]
+rule removeDuplicateSeq:
+    input: /datater/wu/data/coronavirus.fasta
+    output: /datater/wu/data/MSSPE-variant/coronavirus/coronavirus.uniq
+    jobid: 1
+    wildcards: sample=coronavirus
+
+
+[Mon May  3 09:56:55 2021]
+rule specific2:
+    input: /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna
+    output: /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.2.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.3.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.4.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.2.ebwt
+    jobid: 8
+
+[Mon May  3 09:57:25 2021]
+Finished job 8.
+1 of 22 steps (5%) done
+[Mon May  3 09:57:29 2021]
+Finished job 1.
+2 of 22 steps (9%) done
+Select jobs to execute...
+
+[Mon May  3 09:57:29 2021]
+rule clustering:
+    input: /datater/wu/data/MSSPE-variant/coronavirus/coronavirus.uniq
+    output: /datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.uniq
+    jobid: 11
+    wildcards: sample=coronavirus
+
+
+[Mon May  3 09:57:29 2021]
+rule countAllKmer1:
+    input: /datater/wu/data/MSSPE-variant/coronavirus/coronavirus.uniq
+    output: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.int.kmc_pre, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.int.kmc_suf
+    jobid: 2
+    wildcards: sample=coronavirus
+
+
+[Mon May  3 09:57:29 2021]
+rule evaluation1:
+    input: /datater/wu/data/MSSPE-variant/coronavirus/coronavirus.uniq, /datater/wu/data/ncbiTaxonomy/nucl_gb.accession2taxid, /datater/wu/data/ncbiTaxonomy/ncbi_lineages_2021-04-23.csv
+    output: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/aceID-taxID-species.tsv
+    jobid: 18
+    wildcards: sample=coronavirus
+
+[Mon May  3 09:58:10 2021]
+Finished job 2.
+3 of 22 steps (14%) done
+Select jobs to execute...
+
+[Mon May  3 09:58:10 2021]
+rule countAllKmer2:
+    input: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.int.kmc_pre, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.txt
+    jobid: 3
+    wildcards: sample=coronavirus
+
+[Mon May  3 09:58:11 2021]
+Finished job 3.
+4 of 22 steps (18%) done
+Select jobs to execute...
+
+[Mon May  3 09:58:11 2021]
+rule sortAllKmer:
+    input: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.txt
+    jobid: 4
+    wildcards: sample=coronavirus
+
+[Mon May  3 09:58:12 2021]
+Finished job 4.
+5 of 22 steps (23%) done
+Select jobs to execute...
+
+[Mon May  3 09:58:12 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/allKmerCount.sorted.calculated.txt
+    jobid: 5
+    wildcards: sample=coronavirus
+
+[Mon May  3 09:59:31 2021]
+Finished job 5.
+6 of 22 steps (27%) done
+Select jobs to execute...
+
+[Mon May  3 09:59:31 2021]
+rule getKmerPosition1:
+    input: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/allKmerCount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.calculated.fasta
+    jobid: 13
+    wildcards: sample=coronavirus
+
+[Mon May  3 09:59:31 2021]
+rule filtering2:
+    input: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/allKmerCount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/allKmerCount.sorted.calculated.filtered.txt
+    jobid: 6
+    wildcards: sample=coronavirus
+
+[Mon May  3 09:59:34 2021]
+Finished job 6.
+7 of 22 steps (32%) done
+Select jobs to execute...
+
+[Mon May  3 09:59:34 2021]
+rule specific1:
+    input: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/allKmerCount.sorted.calculated.filtered.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.fasta
+    jobid: 7
+    wildcards: sample=coronavirus
+
+[Mon May  3 09:59:35 2021]
+Finished job 13.
+8 of 22 steps (36%) done
+[Mon May  3 09:59:35 2021]
+Finished job 7.
+9 of 22 steps (41%) done
+Select jobs to execute...
+
+[Mon May  3 09:59:35 2021]
+rule specific3:
+    input: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.fasta, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.2.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.3.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.4.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.2.ebwt
+    output: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.bowtie
+    jobid: 9
+    wildcards: sample=coronavirus
+
+[Mon May  3 09:59:35 2021]
+Finished job 9.
+10 of 22 steps (45%) done
+Select jobs to execute...
+
+[Mon May  3 09:59:35 2021]
+rule specific4:
+    input: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.bowtie, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/allKmerCount.sorted.calculated.filtered.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/allKmerCount.sorted.calculated.filtered.spec.txt
+    jobid: 10
+    wildcards: sample=coronavirus
+
+[Mon May  3 09:59:37 2021]
+Finished job 10.
+11 of 22 steps (50%) done
+[Mon May  3 10:01:03 2021]
+Finished job 18.
+12 of 22 steps (55%) done
+[Mon May  3 10:46:04 2021]
+Finished job 11.
+13 of 22 steps (59%) done
+Select jobs to execute...
+
+[Mon May  3 10:46:04 2021]
+rule MSA:
+    input: /datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.uniq
+    output: /datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.msa
+    log: /datater/wu/data/MSSPE-variant/coronavirus/log/mafft.log
+    jobid: 12
+    wildcards: sample=coronavirus
+
+[Tue May  4 05:09:12 2021]
+Finished job 12.
+14 of 22 steps (64%) done
+Select jobs to execute...
+
+[Tue May  4 05:09:12 2021]
+rule getKmerPosition2:
+    input: /datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.msa
+    output: /datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.msa.DB.1.ebwt, /datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.msa.DB.2.ebwt, /datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.msa.DB.3.ebwt, /datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.msa.DB.4.ebwt, /datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.msa.DB.rev.1.ebwt, /datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.msa.DB.rev.2.ebwt
+    jobid: 14
+    wildcards: sample=coronavirus
+
+[Tue May  4 05:10:44 2021]
+Finished job 14.
+15 of 22 steps (68%) done
+Select jobs to execute...
+
+[Tue May  4 05:10:44 2021]
+rule getKmerPosition3:
+    input: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.calculated.fasta, /datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.msa.DB.1.ebwt, /datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.msa.DB.2.ebwt, /datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.msa.DB.3.ebwt, /datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.msa.DB.4.ebwt, /datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.msa.DB.rev.1.ebwt, /datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.msa.DB.rev.2.ebwt
+    output: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.calculated.bowtie
+    jobid: 15
+    wildcards: sample=coronavirus
+
+[Tue May  4 05:10:54 2021]
+Finished job 15.
+16 of 22 steps (73%) done
+Select jobs to execute...
+
+[Tue May  4 05:10:54 2021]
+rule getKmerPosition4:
+    input: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.calculated.bowtie, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/allKmerCount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.calculated.position
+    jobid: 16
+    wildcards: sample=coronavirus
+
+[Tue May  4 05:11:50 2021]
+Finished job 16.
+17 of 22 steps (77%) done
+Select jobs to execute...
+
+[Tue May  4 05:11:50 2021]
+rule checkHeterodimer:
+    input: /datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.msa, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.calculated.position, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/allKmerCount.sorted.calculated.filtered.spec.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/allOligo.set
+    jobid: 17
+    wildcards: sample=coronavirus
+
+[Tue May  4 05:11:50 2021]
+rule evaluation4:
+    input: /datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.msa, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.calculated.position, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/allKmerCount.sorted.calculated.filtered.txt, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/allKmerCount.sorted.calculated.filtered.spec.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/evaluation/allOligo_before.tsv, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/evaluation/allOligo_after1.tsv, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/evaluation/allOligo_after2.tsv
+    jobid: 20
+    wildcards: sample=coronavirus
+
+[Tue May  4 05:11:53 2021]
+Finished job 20.
+18 of 22 steps (82%) done
+[Tue May  4 05:11:57 2021]
+Finished job 17.
+19 of 22 steps (86%) done
+Select jobs to execute...
+
+[Tue May  4 05:11:57 2021]
+rule evaluation2:
+    input: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/allOligo.set, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/aceID-taxID-species.tsv, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.calculated.bowtie
+    output: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/evaluation/allOligo.set.coverage
+    jobid: 19
+    wildcards: sample=coronavirus
+
+[Tue May  4 05:11:57 2021]
+rule evaluation3:
+    input: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/allOligo.set
+    output: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/evaluation/allOligo_after3.tsv
+    jobid: 21
+    wildcards: sample=coronavirus
+
+[Tue May  4 05:11:57 2021]
+Finished job 21.
+20 of 22 steps (91%) done
+[Tue May  4 05:12:43 2021]
+Finished job 19.
+21 of 22 steps (95%) done
+Select jobs to execute...
+
+[Tue May  4 05:12:43 2021]
+localrule all:
+    input: /datater/wu/data/MSSPE-variant/coronavirus/coronavirus.uniq, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.int.kmc_pre, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.int.kmc_suf, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.txt, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.txt, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/allKmerCount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/allKmerCount.sorted.calculated.filtered.txt, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.fasta, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.2.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.3.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.4.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.2.ebwt, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.bowtie, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/allKmerCount.sorted.calculated.filtered.spec.txt, /datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.uniq, /datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.msa, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.calculated.fasta, /datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.msa.DB.1.ebwt, /datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.msa.DB.2.ebwt, /datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.msa.DB.3.ebwt, /datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.msa.DB.4.ebwt, /datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.msa.DB.rev.1.ebwt, /datater/wu/data/MSSPE-variant/coronavirus/coronavirus0.99.msa.DB.rev.2.ebwt, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.calculated.bowtie, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.calculated.position, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/allOligo.set, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/aceID-taxID-species.tsv, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/evaluation/allOligo.set.coverage, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/evaluation/allOligo_before.tsv, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/evaluation/allOligo_after1.tsv, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/evaluation/allOligo_after2.tsv, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/evaluation/allOligo_after3.tsv
+    jobid: 0
+
+[Tue May  4 05:12:43 2021]
+Finished job 0.
+22 of 22 steps (100%) done
+Complete log: /datater/wu/MSSPE/.snakemake/log/2021-05-03T095654.322506.snakemake.log

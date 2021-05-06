@@ -1,0 +1,8 @@
+Building DAG of jobs...
+InputFunctionException in line 49 of /datater/wu/stage_m2/Snakefile:
+Error:
+  TypeError: aggregate_input() takes 0 positional arguments but 1 was given
+Wildcards:
+
+Traceback:
+

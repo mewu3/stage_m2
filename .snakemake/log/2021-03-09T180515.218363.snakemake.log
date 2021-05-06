@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 1 of /datater/wu/stage_m2/rules/remove_duplicate.smk:
+Missing input files for rule seqkit:
+/home/meijun/Documents/data/enterovirus.fasta

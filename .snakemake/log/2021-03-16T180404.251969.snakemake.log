@@ -1,0 +1,214 @@
+Building DAG of jobs...
+Updating job aggregate_allReverseOligo.
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	aggregate_allReverseOligo
+	1	all
+	43	dskReverse
+	43	dskReverseOutput
+	43	dskReverseOutputSort
+	43	reverse_add_LC
+	43	reverse_linguistic_complexity
+	43	reverse_parameters
+	43	reverse_toFasta
+	303
+Select jobs to execute...
+
+[Tue Mar 16 18:04:05 2021]
+rule dskReverse:
+    input: /datater/wu/data_test/zika/splitFiles/reverse8534-9035.fasta
+    output: /datater/wu/data_test/zika/dsk/reverse8534-9035.h5
+    jobid: 124
+    wildcards: seg=8534-9035
+
+
+[Tue Mar 16 18:04:05 2021]
+rule dskReverse:
+    input: /datater/wu/data_test/zika/splitFiles/reverse2008-2509.fasta
+    output: /datater/wu/data_test/zika/dsk/reverse2008-2509.h5
+    jobid: 250
+    wildcards: seg=2008-2509
+
+
+[Tue Mar 16 18:04:05 2021]
+rule dskReverse:
+    input: /datater/wu/data_test/zika/splitFiles/reverse10040-10541.fasta
+    output: /datater/wu/data_test/zika/dsk/reverse10040-10541.h5
+    jobid: 33
+    wildcards: seg=10040-10541
+
+
+[Tue Mar 16 18:04:05 2021]
+rule dskReverse:
+    input: /datater/wu/data_test/zika/splitFiles/reverse6526-7027.fasta
+    output: /datater/wu/data_test/zika/dsk/reverse6526-7027.h5
+    jobid: 145
+    wildcards: seg=6526-7027
+
+[Tue Mar 16 18:04:05 2021]
+[Tue Mar 16 18:04:05 2021]
+Error in rule dskReverse:
+Error in rule dskReverse:
+    jobid: 124
+    jobid: 250
+    output: /datater/wu/data_test/zika/dsk/reverse8534-9035.h5
+    output: /datater/wu/data_test/zika/dsk/reverse2008-2509.h5
+
+    shell:
+        lib/dsk/build/bin/dsk         -nb-cores 0         -max-memory 5000         -max-disk 0         -out-compress 0         -storage-type hdf5         -kmer-size 13         -abundance-min 2         -abundance-max 2147483647         -solidity-kind sum         -file /datater/wu/data_test/zika/splitFiles/reverse8534-9035.fasta         -out /datater/wu/data_test/zika/dsk/reverse8534-9035.h5
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    shell:
+        lib/dsk/build/bin/dsk         -nb-cores 0         -max-memory 5000         -max-disk 0         -out-compress 0         -storage-type hdf5         -kmer-size 13         -abundance-min 2         -abundance-max 2147483647         -solidity-kind sum         -file /datater/wu/data_test/zika/splitFiles/reverse2008-2509.fasta         -out /datater/wu/data_test/zika/dsk/reverse2008-2509.h5
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+[Tue Mar 16 18:04:05 2021]
+[Tue Mar 16 18:04:05 2021]
+
+
+rule dskReverse:
+    input: /datater/wu/data_test/zika/splitFiles/reverse2259-2760.fasta
+    output: /datater/wu/data_test/zika/dsk/reverse2259-2760.h5
+    jobid: 40
+    wildcards: seg=2259-2760
+Error in rule dskReverse:
+
+    jobid: 33
+    output: /datater/wu/data_test/zika/dsk/reverse10040-10541.h5
+    shell:
+        lib/dsk/build/bin/dsk         -nb-cores 0         -max-memory 5000         -max-disk 0         -out-compress 0         -storage-type hdf5         -kmer-size 13         -abundance-min 2         -abundance-max 2147483647         -solidity-kind sum         -file /datater/wu/data_test/zika/splitFiles/reverse10040-10541.fasta         -out /datater/wu/data_test/zika/dsk/reverse10040-10541.h5
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Mar 16 18:04:05 2021]
+Error in rule dskReverse:
+    jobid: 145
+    output: /datater/wu/data_test/zika/dsk/reverse6526-7027.h5
+
+    shell:
+        lib/dsk/build/bin/dsk         -nb-cores 0         -max-memory 5000         -max-disk 0         -out-compress 0         -storage-type hdf5         -kmer-size 13         -abundance-min 2         -abundance-max 2147483647         -solidity-kind sum         -file /datater/wu/data_test/zika/splitFiles/reverse6526-7027.fasta         -out /datater/wu/data_test/zika/dsk/reverse6526-7027.h5
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+[Tue Mar 16 18:04:05 2021]
+
+rule dskReverse:
+    input: /datater/wu/data_test/zika/splitFiles/reverse6024-6525.fasta
+    output: /datater/wu/data_test/zika/dsk/reverse6024-6525.h5
+    jobid: 243
+    wildcards: seg=6024-6525
+
+
+[Tue Mar 16 18:04:05 2021]
+rule dskReverse:
+    input: /datater/wu/data_test/zika/splitFiles/reverse7781-8282.fasta
+    output: /datater/wu/data_test/zika/dsk/reverse7781-8282.h5
+    jobid: 257
+    wildcards: seg=7781-8282
+
+[Tue Mar 16 18:04:05 2021]
+Error in rule dskReverse:
+    jobid: 40
+    output: /datater/wu/data_test/zika/dsk/reverse2259-2760.h5
+    shell:
+        lib/dsk/build/bin/dsk         -nb-cores 0         -max-memory 5000         -max-disk 0         -out-compress 0         -storage-type hdf5         -kmer-size 13         -abundance-min 2         -abundance-max 2147483647         -solidity-kind sum         -file /datater/wu/data_test/zika/splitFiles/reverse2259-2760.fasta         -out /datater/wu/data_test/zika/dsk/reverse2259-2760.h5
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Tue Mar 16 18:04:05 2021]
+rule dskReverse:
+    input: /datater/wu/data_test/zika/splitFiles/reverse5522-6023.fasta
+    output: /datater/wu/data_test/zika/dsk/reverse5522-6023.h5
+    jobid: 152
+    wildcards: seg=5522-6023
+
+[Tue Mar 16 18:04:05 2021]
+Error in rule dskReverse:
+    jobid: 243
+    output: /datater/wu/data_test/zika/dsk/reverse6024-6525.h5
+    shell:
+        lib/dsk/build/bin/dsk         -nb-cores 0         -max-memory 5000         -max-disk 0         -out-compress 0         -storage-type hdf5         -kmer-size 13         -abundance-min 2         -abundance-max 2147483647         -solidity-kind sum         -file /datater/wu/data_test/zika/splitFiles/reverse6024-6525.fasta         -out /datater/wu/data_test/zika/dsk/reverse6024-6525.h5
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Tue Mar 16 18:04:05 2021]
+rule dskReverse:
+    input: /datater/wu/data_test/zika/splitFiles/reverse3514-4015.fasta
+    output: /datater/wu/data_test/zika/dsk/reverse3514-4015.h5
+    jobid: 47
+    wildcards: seg=3514-4015
+[Tue Mar 16 18:04:05 2021]
+
+Error in rule dskReverse:
+    jobid: 257
+    output: /datater/wu/data_test/zika/dsk/reverse7781-8282.h5
+    shell:
+        lib/dsk/build/bin/dsk         -nb-cores 0         -max-memory 5000         -max-disk 0         -out-compress 0         -storage-type hdf5         -kmer-size 13         -abundance-min 2         -abundance-max 2147483647         -solidity-kind sum         -file /datater/wu/data_test/zika/splitFiles/reverse7781-8282.fasta         -out /datater/wu/data_test/zika/dsk/reverse7781-8282.h5
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Tue Mar 16 18:04:05 2021]
+rule dskReverse:
+    input: /datater/wu/data_test/zika/splitFiles/reverse7530-8031.fasta
+    output: /datater/wu/data_test/zika/dsk/reverse7530-8031.h5
+    jobid: 264
+    wildcards: seg=7530-8031
+
+[Tue Mar 16 18:04:05 2021]
+Error in rule dskReverse:
+    jobid: 152
+    output: /datater/wu/data_test/zika/dsk/reverse5522-6023.h5
+    shell:
+        lib/dsk/build/bin/dsk         -nb-cores 0         -max-memory 5000         -max-disk 0         -out-compress 0         -storage-type hdf5         -kmer-size 13         -abundance-min 2         -abundance-max 2147483647         -solidity-kind sum         -file /datater/wu/data_test/zika/splitFiles/reverse5522-6023.fasta         -out /datater/wu/data_test/zika/dsk/reverse5522-6023.h5
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Tue Mar 16 18:04:05 2021]
+rule dskReverse:
+    input: /datater/wu/data_test/zika/splitFiles/reverse5773-6274.fasta
+    output: /datater/wu/data_test/zika/dsk/reverse5773-6274.h5
+    jobid: 159
+    wildcards: seg=5773-6274
+
+[Tue Mar 16 18:04:05 2021]
+Error in rule dskReverse:
+    jobid: 47
+    output: /datater/wu/data_test/zika/dsk/reverse3514-4015.h5
+    shell:
+        lib/dsk/build/bin/dsk         -nb-cores 0         -max-memory 5000         -max-disk 0         -out-compress 0         -storage-type hdf5         -kmer-size 13         -abundance-min 2         -abundance-max 2147483647         -solidity-kind sum         -file /datater/wu/data_test/zika/splitFiles/reverse3514-4015.fasta         -out /datater/wu/data_test/zika/dsk/reverse3514-4015.h5
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Mar 16 18:04:05 2021]
+
+[Tue Mar 16 18:04:05 2021]
+Error in rule dskReverse:
+rule dskReverse:
+    input: /datater/wu/data_test/zika/splitFiles/reverse1255-1756.fasta
+    output: /datater/wu/data_test/zika/dsk/reverse1255-1756.h5
+    jobid: 54
+    wildcards: seg=1255-1756
+    jobid: 264
+
+    output: /datater/wu/data_test/zika/dsk/reverse7530-8031.h5
+    shell:
+        lib/dsk/build/bin/dsk         -nb-cores 0         -max-memory 5000         -max-disk 0         -out-compress 0         -storage-type hdf5         -kmer-size 13         -abundance-min 2         -abundance-max 2147483647         -solidity-kind sum         -file /datater/wu/data_test/zika/splitFiles/reverse7530-8031.fasta         -out /datater/wu/data_test/zika/dsk/reverse7530-8031.h5
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Mar 16 18:04:05 2021]
+Error in rule dskReverse:
+    jobid: 159
+    output: /datater/wu/data_test/zika/dsk/reverse5773-6274.h5
+    shell:
+        lib/dsk/build/bin/dsk         -nb-cores 0         -max-memory 5000         -max-disk 0         -out-compress 0         -storage-type hdf5         -kmer-size 13         -abundance-min 2         -abundance-max 2147483647         -solidity-kind sum         -file /datater/wu/data_test/zika/splitFiles/reverse5773-6274.fasta         -out /datater/wu/data_test/zika/dsk/reverse5773-6274.h5
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Mar 16 18:04:05 2021]
+Error in rule dskReverse:
+    jobid: 54
+    output: /datater/wu/data_test/zika/dsk/reverse1255-1756.h5
+    shell:
+        lib/dsk/build/bin/dsk         -nb-cores 0         -max-memory 5000         -max-disk 0         -out-compress 0         -storage-type hdf5         -kmer-size 13         -abundance-min 2         -abundance-max 2147483647         -solidity-kind sum         -file /datater/wu/data_test/zika/splitFiles/reverse1255-1756.fasta         -out /datater/wu/data_test/zika/dsk/reverse1255-1756.h5
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2_merge/.snakemake/log/2021-03-16T180404.251969.snakemake.log

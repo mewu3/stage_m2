@@ -1,0 +1,3 @@
+SyntaxError in line 22 of /datater/wu/stage_m2/rules/evaluation.smk:
+invalid syntax
+  File "/datater/wu/stage_m2/Snakefile", line 78, in <module>

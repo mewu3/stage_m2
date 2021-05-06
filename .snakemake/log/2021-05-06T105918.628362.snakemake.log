@@ -1,0 +1,3 @@
+WildcardError in line 59 of /datater/wu/MSSPE/snakefile-variant:
+No values given for wildcard "'kmer13'".
+  File "/datater/wu/MSSPE/snakefile-variant", line 59, in <module>

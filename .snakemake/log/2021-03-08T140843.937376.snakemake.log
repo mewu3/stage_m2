@@ -1,0 +1,4 @@
+NameError in line 94 of /datater/wu/stage_m2/rules/dsk_oligo_filter.smk:
+name 'wildcards' is not defined
+  File "/datater/wu/stage_m2/Snakefile", line 119, in <module>
+  File "/datater/wu/stage_m2/rules/dsk_oligo_filter.smk", line 94, in <module>

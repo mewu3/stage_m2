@@ -1,0 +1,898 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	74	kmcOutput
+	75
+Select jobs to execute...
+
+[Tue Mar  2 11:18:12 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.8160-8665.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.8160-8665.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.8160-8665.kmc.txt
+    jobid: 162
+    wildcards: prefix=enterovirus.forward.8160-8665
+
+
+[Tue Mar  2 11:18:12 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.5610-6115.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.5610-6115.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.5610-6115.kmc.txt
+    jobid: 169
+    wildcards: prefix=enterovirus.forward.5610-6115
+
+
+[Tue Mar  2 11:18:12 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.2040-2545.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.2040-2545.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.2040-2545.kmc.txt
+    jobid: 183
+    wildcards: prefix=enterovirus.reverse.2040-2545
+
+
+[Tue Mar  2 11:18:12 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.7650-8155.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.7650-8155.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.7650-8155.kmc.txt
+    jobid: 117
+    wildcards: prefix=enterovirus.forward.7650-8155
+
+
+[Tue Mar  2 11:18:12 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.2295-2800.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.2295-2800.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.2295-2800.kmc.txt
+    jobid: 145
+    wildcards: prefix=enterovirus.reverse.2295-2800
+
+
+[Tue Mar  2 11:18:12 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.5610-6115.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.5610-6115.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.5610-6115.kmc.txt
+    jobid: 139
+    wildcards: prefix=enterovirus.reverse.5610-6115
+
+
+[Tue Mar  2 11:18:12 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.8670-9175.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.8670-9175.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.8670-9175.kmc.txt
+    jobid: 131
+    wildcards: prefix=enterovirus.forward.8670-9175
+
+
+[Tue Mar  2 11:18:12 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.6120-6625.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.6120-6625.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.6120-6625.kmc.txt
+    jobid: 153
+    wildcards: prefix=enterovirus.forward.6120-6625
+
+
+[Tue Mar  2 11:18:12 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.1530-2035.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.1530-2035.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.1530-2035.kmc.txt
+    jobid: 159
+    wildcards: prefix=enterovirus.forward.1530-2035
+
+
+[Tue Mar  2 11:18:12 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.4590-5095.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.4590-5095.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.4590-5095.kmc.txt
+    jobid: 167
+    wildcards: prefix=enterovirus.reverse.4590-5095
+
+
+[Tue Mar  2 11:18:12 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.7905-8410.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.7905-8410.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.7905-8410.kmc.txt
+    jobid: 174
+    wildcards: prefix=enterovirus.forward.7905-8410
+
+
+[Tue Mar  2 11:18:12 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.4845-5350.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.4845-5350.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.4845-5350.kmc.txt
+    jobid: 182
+    wildcards: prefix=enterovirus.forward.4845-5350
+
+[Tue Mar  2 11:18:12 2021]
+Finished job 162.
+1 of 75 steps (1%) done
+[Tue Mar  2 11:18:12 2021]
+Finished job 169.
+2 of 75 steps (3%) done
+Select jobs to execute...
+[Tue Mar  2 11:18:12 2021]
+Finished job 183.
+3 of 75 steps (4%) done
+[Tue Mar  2 11:18:12 2021]
+Finished job 117.
+4 of 75 steps (5%) done
+[Tue Mar  2 11:18:12 2021]
+Finished job 145.
+5 of 75 steps (7%) done
+
+[Tue Mar  2 11:18:12 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.7395-7900.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.7395-7900.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.7395-7900.kmc.txt
+    jobid: 146
+    wildcards: prefix=enterovirus.forward.7395-7900
+
+
+[Tue Mar  2 11:18:12 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.6120-6625.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.6120-6625.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.6120-6625.kmc.txt
+    jobid: 123
+    wildcards: prefix=enterovirus.reverse.6120-6625
+
+Select jobs to execute...
+
+[Tue Mar  2 11:18:13 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.8415-8920.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.8415-8920.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.8415-8920.kmc.txt
+    jobid: 130
+    wildcards: prefix=enterovirus.reverse.8415-8920
+
+
+[Tue Mar  2 11:18:13 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.4080-4585.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.4080-4585.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.4080-4585.kmc.txt
+    jobid: 177
+    wildcards: prefix=enterovirus.reverse.4080-4585
+
+
+[Tue Mar  2 11:18:13 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.4590-5095.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.4590-5095.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.4590-5095.kmc.txt
+    jobid: 115
+    wildcards: prefix=enterovirus.forward.4590-5095
+
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+[Tue Mar  2 11:18:13 2021]
+Finished job 174.
+6 of 75 steps (8%) done
+Select jobs to execute...
+
+[Tue Mar  2 11:18:13 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.255-760.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.255-760.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.255-760.kmc.txt
+    jobid: 187
+    wildcards: prefix=enterovirus.reverse.255-760
+
+[Tue Mar  2 11:18:13 2021]
+Finished job 131.
+7 of 75 steps (9%) done
+Select jobs to execute...
+[Tue Mar  2 11:18:13 2021]
+Finished job 159.
+8 of 75 steps (11%) done
+[Tue Mar  2 11:18:13 2021]
+Finished job 139.
+9 of 75 steps (12%) done
+[Tue Mar  2 11:18:13 2021]
+Finished job 182.
+10 of 75 steps (13%) done
+[Tue Mar  2 11:18:13 2021]
+Finished job 153.
+11 of 75 steps (15%) done
+[Tue Mar  2 11:18:13 2021]
+Finished job 167.
+12 of 75 steps (16%) done
+
+[Tue Mar  2 11:18:13 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.5355-5860.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.5355-5860.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.5355-5860.kmc.txt
+    jobid: 154
+    wildcards: prefix=enterovirus.forward.5355-5860
+
+
+[Tue Mar  2 11:18:13 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.255-760.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.255-760.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.255-760.kmc.txt
+    jobid: 138
+    wildcards: prefix=enterovirus.forward.255-760
+
+Select jobs to execute...
+
+[Tue Mar  2 11:18:13 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.6375-6880.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.6375-6880.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.6375-6880.kmc.txt
+    jobid: 160
+    wildcards: prefix=enterovirus.reverse.6375-6880
+
+
+[Tue Mar  2 11:18:13 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.2550-3055.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.2550-3055.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.2550-3055.kmc.txt
+    jobid: 152
+    wildcards: prefix=enterovirus.forward.2550-3055
+
+
+[Tue Mar  2 11:18:13 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.7140-7645.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.7140-7645.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.7140-7645.kmc.txt
+    jobid: 188
+    wildcards: prefix=enterovirus.reverse.7140-7645
+
+
+[Tue Mar  2 11:18:13 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.1785-2290.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.1785-2290.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.1785-2290.kmc.txt
+    jobid: 144
+    wildcards: prefix=enterovirus.reverse.1785-2290
+
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+[Tue Mar  2 11:18:13 2021]
+Finished job 146.
+13 of 75 steps (17%) done
+Select jobs to execute...
+[Tue Mar  2 11:18:13 2021]
+Finished job 130.
+14 of 75 steps (19%) done
+[Tue Mar  2 11:18:13 2021]
+Finished job 123.
+15 of 75 steps (20%) done
+
+[Tue Mar  2 11:18:13 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.3315-3820.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.3315-3820.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.3315-3820.kmc.txt
+    jobid: 157
+    wildcards: prefix=enterovirus.reverse.3315-3820
+
+Select jobs to execute...
+[Tue Mar  2 11:18:13 2021]
+Finished job 115.
+16 of 75 steps (21%) done
+[Tue Mar  2 11:18:13 2021]
+Finished job 187.
+17 of 75 steps (23%) done
+
+[Tue Mar  2 11:18:13 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.6630-7135.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.6630-7135.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.6630-7135.kmc.txt
+    jobid: 172
+    wildcards: prefix=enterovirus.reverse.6630-7135
+
+
+[Tue Mar  2 11:18:13 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.510-1015.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.510-1015.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.510-1015.kmc.txt
+    jobid: 168
+    wildcards: prefix=enterovirus.reverse.510-1015
+
+[Tue Mar  2 11:18:13 2021]
+Finished job 177.
+18 of 75 steps (24%) done
+Select jobs to execute...
+
+[Tue Mar  2 11:18:13 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.3570-4075.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.3570-4075.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.3570-4075.kmc.txt
+    jobid: 140
+    wildcards: prefix=enterovirus.forward.3570-4075
+
+
+[Tue Mar  2 11:18:13 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.8160-8665.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.8160-8665.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.8160-8665.kmc.txt
+    jobid: 180
+    wildcards: prefix=enterovirus.reverse.8160-8665
+
+
+[Tue Mar  2 11:18:13 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.1785-2290.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.1785-2290.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.1785-2290.kmc.txt
+    jobid: 165
+    wildcards: prefix=enterovirus.forward.1785-2290
+
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+[Tue Mar  2 11:18:13 2021]
+Finished job 154.
+19 of 75 steps (25%) done
+Select jobs to execute...
+[Tue Mar  2 11:18:13 2021]
+Finished job 138.
+20 of 75 steps (27%) done
+
+[Tue Mar  2 11:18:13 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.4335-4840.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.4335-4840.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.4335-4840.kmc.txt
+    jobid: 143
+    wildcards: prefix=enterovirus.reverse.4335-4840
+
+Select jobs to execute...
+[Tue Mar  2 11:18:13 2021]
+Finished job 144.
+21 of 75 steps (28%) done
+
+[Tue Mar  2 11:18:13 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.4335-4840.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.4335-4840.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.4335-4840.kmc.txt
+    jobid: 151
+    wildcards: prefix=enterovirus.forward.4335-4840
+
+Select jobs to execute...
+[Tue Mar  2 11:18:13 2021]
+Finished job 188.
+22 of 75 steps (29%) done
+[Tue Mar  2 11:18:13 2021]
+Finished job 152.
+23 of 75 steps (31%) done
+[Tue Mar  2 11:18:13 2021]
+Finished job 160.
+24 of 75 steps (32%) done
+
+[Tue Mar  2 11:18:13 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.5865-6370.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.5865-6370.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.5865-6370.kmc.txt
+    jobid: 137
+    wildcards: prefix=enterovirus.forward.5865-6370
+
+Select jobs to execute...
+
+[Tue Mar  2 11:18:13 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.7140-7645.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.7140-7645.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.7140-7645.kmc.txt
+    jobid: 133
+    wildcards: prefix=enterovirus.forward.7140-7645
+
+
+[Tue Mar  2 11:18:13 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.5355-5860.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.5355-5860.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.5355-5860.kmc.txt
+    jobid: 166
+    wildcards: prefix=enterovirus.reverse.5355-5860
+
+
+[Tue Mar  2 11:18:13 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.2550-3055.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.2550-3055.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.2550-3055.kmc.txt
+    jobid: 173
+    wildcards: prefix=enterovirus.reverse.2550-3055
+
+Select jobs to execute...
+Select jobs to execute...
+[Tue Mar  2 11:18:13 2021]
+Finished job 157.
+25 of 75 steps (33%) done
+Select jobs to execute...
+[Tue Mar  2 11:18:14 2021]
+Finished job 168.
+26 of 75 steps (35%) done
+
+[Tue Mar  2 11:18:14 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.9180-9398.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.9180-9398.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.9180-9398.kmc.txt
+    jobid: 129
+    wildcards: prefix=enterovirus.reverse.9180-9398
+
+Select jobs to execute...
+[Tue Mar  2 11:18:14 2021]
+Finished job 165.
+27 of 75 steps (36%) done
+[Tue Mar  2 11:18:14 2021]
+Finished job 172.
+28 of 75 steps (37%) done
+[Tue Mar  2 11:18:14 2021]
+Finished job 140.
+29 of 75 steps (39%) done
+
+[Tue Mar  2 11:18:14 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.6630-7135.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.6630-7135.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.6630-7135.kmc.txt
+    jobid: 122
+    wildcards: prefix=enterovirus.forward.6630-7135
+
+Select jobs to execute...
+
+[Tue Mar  2 11:18:14 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.8415-8920.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.8415-8920.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.8415-8920.kmc.txt
+    jobid: 147
+    wildcards: prefix=enterovirus.forward.8415-8920
+
+
+[Tue Mar  2 11:18:14 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.5100-5605.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.5100-5605.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.5100-5605.kmc.txt
+    jobid: 181
+    wildcards: prefix=enterovirus.forward.5100-5605
+
+
+[Tue Mar  2 11:18:14 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.2040-2545.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.2040-2545.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.2040-2545.kmc.txt
+    jobid: 116
+    wildcards: prefix=enterovirus.forward.2040-2545
+
+Select jobs to execute...
+Select jobs to execute...
+[Tue Mar  2 11:18:14 2021]
+Finished job 180.
+30 of 75 steps (40%) done
+Select jobs to execute...
+
+[Tue Mar  2 11:18:14 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.6885-7390.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.6885-7390.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.6885-7390.kmc.txt
+    jobid: 164
+    wildcards: prefix=enterovirus.reverse.6885-7390
+
+[Tue Mar  2 11:18:14 2021]
+Finished job 143.
+31 of 75 steps (41%) done
+Select jobs to execute...
+
+[Tue Mar  2 11:18:14 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.3570-4075.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.3570-4075.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.3570-4075.kmc.txt
+    jobid: 126
+    wildcards: prefix=enterovirus.reverse.3570-4075
+
+[Tue Mar  2 11:18:14 2021]
+Finished job 151.
+32 of 75 steps (43%) done
+Select jobs to execute...
+
+[Tue Mar  2 11:18:14 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.510-1015.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.510-1015.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.510-1015.kmc.txt
+    jobid: 184
+    wildcards: prefix=enterovirus.forward.510-1015
+
+[Tue Mar  2 11:18:14 2021]
+Finished job 137.
+33 of 75 steps (44%) done
+Select jobs to execute...
+
+[Tue Mar  2 11:18:14 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.4845-5350.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.4845-5350.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.4845-5350.kmc.txt
+    jobid: 155
+    wildcards: prefix=enterovirus.reverse.4845-5350
+
+[Tue Mar  2 11:18:14 2021]
+Finished job 133.
+34 of 75 steps (45%) done
+[Tue Mar  2 11:18:14 2021]
+Finished job 173.
+35 of 75 steps (47%) done
+Select jobs to execute...
+[Tue Mar  2 11:18:14 2021]
+Finished job 166.
+36 of 75 steps (48%) done
+
+[Tue Mar  2 11:18:14 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.2805-3310.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.2805-3310.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.2805-3310.kmc.txt
+    jobid: 135
+    wildcards: prefix=enterovirus.reverse.2805-3310
+
+
+[Tue Mar  2 11:18:14 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.8925-9430.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.8925-9430.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.8925-9430.kmc.txt
+    jobid: 158
+    wildcards: prefix=enterovirus.forward.8925-9430
+
+Select jobs to execute...
+
+[Tue Mar  2 11:18:14 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.7395-7900.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.7395-7900.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.7395-7900.kmc.txt
+    jobid: 148
+    wildcards: prefix=enterovirus.reverse.7395-7900
+
+Select jobs to execute...
+[Tue Mar  2 11:18:14 2021]
+Finished job 129.
+37 of 75 steps (49%) done
+Select jobs to execute...
+
+[Tue Mar  2 11:18:14 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.6885-7390.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.6885-7390.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.6885-7390.kmc.txt
+    jobid: 119
+    wildcards: prefix=enterovirus.forward.6885-7390
+
+[Tue Mar  2 11:18:14 2021]
+Finished job 122.
+38 of 75 steps (51%) done
+Select jobs to execute...
+[Tue Mar  2 11:18:14 2021]
+Finished job 147.
+39 of 75 steps (52%) done
+[Tue Mar  2 11:18:14 2021]
+Finished job 116.
+40 of 75 steps (53%) done
+
+[Tue Mar  2 11:18:14 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.3825-4330.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.3825-4330.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.3825-4330.kmc.txt
+    jobid: 163
+    wildcards: prefix=enterovirus.forward.3825-4330
+
+Select jobs to execute...
+[Tue Mar  2 11:18:14 2021]
+Finished job 181.
+41 of 75 steps (55%) done
+
+[Tue Mar  2 11:18:14 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.3060-3565.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.3060-3565.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.3060-3565.kmc.txt
+    jobid: 156
+    wildcards: prefix=enterovirus.reverse.3060-3565
+[Tue Mar  2 11:18:14 2021]
+
+Finished job 164.
+42 of 75 steps (56%) done
+
+[Tue Mar  2 11:18:14 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.4080-4585.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.4080-4585.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.4080-4585.kmc.txt
+    jobid: 128
+    wildcards: prefix=enterovirus.forward.4080-4585
+
+Select jobs to execute...
+
+[Tue Mar  2 11:18:14 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.1530-2035.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.1530-2035.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.1530-2035.kmc.txt
+    jobid: 118
+    wildcards: prefix=enterovirus.reverse.1530-2035
+
+
+[Tue Mar  2 11:18:14 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.3060-3565.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.3060-3565.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.3060-3565.kmc.txt
+    jobid: 171
+    wildcards: prefix=enterovirus.forward.3060-3565
+
+Select jobs to execute...
+Select jobs to execute...
+[Tue Mar  2 11:18:14 2021]
+Finished job 126.
+43 of 75 steps (57%) done
+Select jobs to execute...
+
+[Tue Mar  2 11:18:14 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.7650-8155.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.7650-8155.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.7650-8155.kmc.txt
+    jobid: 185
+    wildcards: prefix=enterovirus.reverse.7650-8155
+
+[Tue Mar  2 11:18:14 2021]
+Finished job 155.
+44 of 75 steps (59%) done
+[Tue Mar  2 11:18:14 2021]
+Finished job 184.
+45 of 75 steps (60%) done
+Select jobs to execute...
+
+[Tue Mar  2 11:18:14 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.5100-5605.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.5100-5605.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.5100-5605.kmc.txt
+    jobid: 161
+    wildcards: prefix=enterovirus.reverse.5100-5605
+
+
+[Tue Mar  2 11:18:14 2021]
+[Tue Mar  2 11:18:14 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.3825-4330.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.3825-4330.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.3825-4330.kmc.txt
+    jobid: 121
+    wildcards: prefix=enterovirus.reverse.3825-4330
+Finished job 158.
+
+46 of 75 steps (61%) done
+Select jobs to execute...
+[Tue Mar  2 11:18:14 2021]
+Finished job 135.
+47 of 75 steps (63%) done
+[Tue Mar  2 11:18:14 2021]
+Finished job 148.
+48 of 75 steps (64%) done
+
+[Tue Mar  2 11:18:14 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.1275-1780.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.1275-1780.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.1275-1780.kmc.txt
+    jobid: 142
+    wildcards: prefix=enterovirus.forward.1275-1780
+
+Select jobs to execute...
+
+[Tue Mar  2 11:18:14 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.1020-1525.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.1020-1525.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.1020-1525.kmc.txt
+    jobid: 132
+    wildcards: prefix=enterovirus.reverse.1020-1525
+
+
+[Tue Mar  2 11:18:14 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.0-505.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.0-505.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.0-505.kmc.txt
+    jobid: 186
+    wildcards: prefix=enterovirus.reverse.0-505
+
+Select jobs to execute...
+Select jobs to execute...
+[Tue Mar  2 11:18:14 2021]
+Finished job 119.
+49 of 75 steps (65%) done
+Select jobs to execute...
+
+[Tue Mar  2 11:18:14 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.7905-8410.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.7905-8410.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.7905-8410.kmc.txt
+    jobid: 141
+    wildcards: prefix=enterovirus.reverse.7905-8410
+
+[Tue Mar  2 11:18:14 2021]
+Finished job 163.
+50 of 75 steps (67%) done
+Select jobs to execute...
+
+[Tue Mar  2 11:18:15 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.8670-9175.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.8670-9175.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.8670-9175.kmc.txt
+    jobid: 120
+    wildcards: prefix=enterovirus.reverse.8670-9175
+
+[Tue Mar  2 11:18:15 2021]
+Finished job 156.
+51 of 75 steps (68%) done
+Select jobs to execute...
+
+[Tue Mar  2 11:18:15 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.1275-1780.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.1275-1780.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.1275-1780.kmc.txt
+    jobid: 149
+    wildcards: prefix=enterovirus.reverse.1275-1780
+
+[Tue Mar  2 11:18:15 2021]
+Finished job 128.
+52 of 75 steps (69%) done
+Select jobs to execute...
+[Tue Mar  2 11:18:15 2021]
+Finished job 171.
+53 of 75 steps (71%) done
+
+[Tue Mar  2 11:18:15 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.2805-3310.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.2805-3310.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.2805-3310.kmc.txt
+    jobid: 178
+    wildcards: prefix=enterovirus.forward.2805-3310
+
+[Tue Mar  2 11:18:15 2021]
+Finished job 118.
+54 of 75 steps (72%) done
+Select jobs to execute...
+
+[Tue Mar  2 11:18:15 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.5865-6370.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.5865-6370.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.5865-6370.kmc.txt
+    jobid: 134
+    wildcards: prefix=enterovirus.reverse.5865-6370
+
+
+[Tue Mar  2 11:18:15 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.2295-2800.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.2295-2800.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.2295-2800.kmc.txt
+    jobid: 175
+    wildcards: prefix=enterovirus.forward.2295-2800
+
+Select jobs to execute...
+[Tue Mar  2 11:18:15 2021]
+Finished job 185.
+55 of 75 steps (73%) done
+Select jobs to execute...
+
+[Tue Mar  2 11:18:15 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.0-505.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.0-505.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.0-505.kmc.txt
+    jobid: 124
+    wildcards: prefix=enterovirus.forward.0-505
+
+[Tue Mar  2 11:18:15 2021]
+Finished job 161.
+56 of 75 steps (75%) done
+Select jobs to execute...
+[Tue Mar  2 11:18:15 2021]
+Finished job 121.
+57 of 75 steps (76%) done
+[Tue Mar  2 11:18:15 2021]
+Finished job 142.
+58 of 75 steps (77%) done
+
+[Tue Mar  2 11:18:15 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.1020-1525.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.1020-1525.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.1020-1525.kmc.txt
+    jobid: 170
+    wildcards: prefix=enterovirus.forward.1020-1525
+
+Select jobs to execute...
+[Tue Mar  2 11:18:15 2021]
+Finished job 132.
+59 of 75 steps (79%) done
+
+[Tue Mar  2 11:18:15 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.8925-9430.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.8925-9430.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.8925-9430.kmc.txt
+    jobid: 136
+    wildcards: prefix=enterovirus.reverse.8925-9430
+
+
+[Tue Mar  2 11:18:15 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.3315-3820.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.3315-3820.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.3315-3820.kmc.txt
+    jobid: 150
+    wildcards: prefix=enterovirus.forward.3315-3820
+
+Select jobs to execute...
+
+[Tue Mar  2 11:18:15 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.reverse.765-1270.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.765-1270.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.reverse.765-1270.kmc.txt
+    jobid: 127
+    wildcards: prefix=enterovirus.reverse.765-1270
+
+Select jobs to execute...
+[Tue Mar  2 11:18:15 2021]
+Finished job 186.
+60 of 75 steps (80%) done
+Select jobs to execute...
+
+[Tue Mar  2 11:18:15 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.6375-6880.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.6375-6880.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.6375-6880.kmc.txt
+    jobid: 176
+    wildcards: prefix=enterovirus.forward.6375-6880
+
+[Tue Mar  2 11:18:15 2021]
+Finished job 141.
+61 of 75 steps (81%) done
+Select jobs to execute...
+
+[Tue Mar  2 11:18:15 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.9180-9398.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.9180-9398.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.9180-9398.kmc.txt
+    jobid: 125
+    wildcards: prefix=enterovirus.forward.9180-9398
+
+[Tue Mar  2 11:18:15 2021]
+Finished job 120.
+62 of 75 steps (83%) done
+Select jobs to execute...
+
+[Tue Mar  2 11:18:15 2021]
+rule kmcOutput:
+    input: /datater/wu/data/kmerCounting/enterovirus.forward.765-1270.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.765-1270.kmc_suf
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.765-1270.kmc.txt
+    jobid: 179
+    wildcards: prefix=enterovirus.forward.765-1270
+
+[Tue Mar  2 11:18:15 2021]
+Finished job 149.
+63 of 75 steps (84%) done
+[Tue Mar  2 11:18:15 2021]
+Finished job 178.
+64 of 75 steps (85%) done
+[Tue Mar  2 11:18:15 2021]
+Finished job 134.
+65 of 75 steps (87%) done
+[Tue Mar  2 11:18:15 2021]
+Finished job 175.
+66 of 75 steps (88%) done
+[Tue Mar  2 11:18:15 2021]
+Finished job 124.
+67 of 75 steps (89%) done
+[Tue Mar  2 11:18:15 2021]
+Finished job 170.
+68 of 75 steps (91%) done
+[Tue Mar  2 11:18:15 2021]
+Finished job 136.
+69 of 75 steps (92%) done
+[Tue Mar  2 11:18:15 2021]
+Finished job 150.
+70 of 75 steps (93%) done
+[Tue Mar  2 11:18:15 2021]
+Finished job 127.
+71 of 75 steps (95%) done
+[Tue Mar  2 11:18:15 2021]
+Finished job 176.
+72 of 75 steps (96%) done
+[Tue Mar  2 11:18:15 2021]
+Finished job 125.
+73 of 75 steps (97%) done
+[Tue Mar  2 11:18:15 2021]
+Finished job 179.
+74 of 75 steps (99%) done
+Select jobs to execute...
+
+[Tue Mar  2 11:18:15 2021]
+localrule all:
+    input: /datater/wu/data/duplicate_removed/enterovirus.uniq.fasta, /datater/wu/data/msa/enterovirus.msa.fasta, /datater/wu/data/splitFiles/enterovirus.forward.2040-2545.fasta, /datater/wu/data/splitFiles/enterovirus.forward.8415-8920.fasta, /datater/wu/data/splitFiles/enterovirus.forward.8925-9430.fasta, /datater/wu/data/splitFiles/enterovirus.forward.4335-4840.fasta, /datater/wu/data/splitFiles/enterovirus.forward.7650-8155.fasta, /datater/wu/data/splitFiles/enterovirus.forward.2295-2800.fasta, /datater/wu/data/splitFiles/enterovirus.forward.8160-8665.fasta, /datater/wu/data/splitFiles/enterovirus.forward.7905-8410.fasta, /datater/wu/data/splitFiles/enterovirus.forward.2550-3055.fasta, /datater/wu/data/splitFiles/enterovirus.forward.3570-4075.fasta, /datater/wu/data/splitFiles/enterovirus.forward.5355-5860.fasta, /datater/wu/data/splitFiles/enterovirus.forward.8670-9175.fasta, /datater/wu/data/splitFiles/enterovirus.forward.255-760.fasta, /datater/wu/data/splitFiles/enterovirus.forward.6375-6880.fasta, /datater/wu/data/splitFiles/enterovirus.forward.7395-7900.fasta, /datater/wu/data/splitFiles/enterovirus.forward.5865-6370.fasta, /datater/wu/data/splitFiles/enterovirus.forward.3315-3820.fasta, /datater/wu/data/splitFiles/enterovirus.forward.4590-5095.fasta, /datater/wu/data/splitFiles/enterovirus.forward.9180-9398.fasta, /datater/wu/data/splitFiles/enterovirus.forward.1530-2035.fasta, /datater/wu/data/splitFiles/enterovirus.forward.1020-1525.fasta, /datater/wu/data/splitFiles/enterovirus.forward.6885-7390.fasta, /datater/wu/data/splitFiles/enterovirus.forward.5610-6115.fasta, /datater/wu/data/splitFiles/enterovirus.forward.6630-7135.fasta, /datater/wu/data/splitFiles/enterovirus.forward.4080-4585.fasta, /datater/wu/data/splitFiles/enterovirus.forward.1785-2290.fasta, /datater/wu/data/splitFiles/enterovirus.forward.2805-3310.fasta, /datater/wu/data/splitFiles/enterovirus.forward.3825-4330.fasta, /datater/wu/data/splitFiles/enterovirus.forward.1275-1780.fasta, /datater/wu/data/splitFiles/enterovirus.forward.0-505.fasta, /datater/wu/data/splitFiles/enterovirus.forward.6120-6625.fasta, /datater/wu/data/splitFiles/enterovirus.forward.765-1270.fasta, /datater/wu/data/splitFiles/enterovirus.forward.510-1015.fasta, /datater/wu/data/splitFiles/enterovirus.forward.7140-7645.fasta, /datater/wu/data/splitFiles/enterovirus.forward.5100-5605.fasta, /datater/wu/data/splitFiles/enterovirus.forward.4845-5350.fasta, /datater/wu/data/splitFiles/enterovirus.forward.3060-3565.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.2040-2545.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.8415-8920.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.8925-9430.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.4335-4840.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.7650-8155.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.2295-2800.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.8160-8665.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.7905-8410.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.2550-3055.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.3570-4075.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.5355-5860.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.8670-9175.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.255-760.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.6375-6880.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.7395-7900.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.5865-6370.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.3315-3820.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.4590-5095.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.9180-9398.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.1530-2035.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.1020-1525.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.6885-7390.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.5610-6115.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.6630-7135.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.4080-4585.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.1785-2290.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.2805-3310.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.3825-4330.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.1275-1780.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.0-505.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.6120-6625.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.765-1270.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.510-1015.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.7140-7645.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.5100-5605.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.4845-5350.fasta, /datater/wu/data/splitFiles/enterovirus.reverse.3060-3565.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.4590-5095.h5, /datater/wu/data/kmerCounting/enterovirus.forward.2040-2545.h5, /datater/wu/data/kmerCounting/enterovirus.forward.7650-8155.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.1530-2035.h5, /datater/wu/data/kmerCounting/enterovirus.forward.6885-7390.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.8670-9175.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.3825-4330.h5, /datater/wu/data/kmerCounting/enterovirus.forward.6630-7135.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.6120-6625.h5, /datater/wu/data/kmerCounting/enterovirus.forward.0-505.h5, /datater/wu/data/kmerCounting/enterovirus.forward.9180-9398.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.3570-4075.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.765-1270.h5, /datater/wu/data/kmerCounting/enterovirus.forward.4080-4585.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.9180-9398.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.8415-8920.h5, /datater/wu/data/kmerCounting/enterovirus.forward.8670-9175.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.1020-1525.h5, /datater/wu/data/kmerCounting/enterovirus.forward.7140-7645.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.5865-6370.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.2805-3310.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.8925-9430.h5, /datater/wu/data/kmerCounting/enterovirus.forward.5865-6370.h5, /datater/wu/data/kmerCounting/enterovirus.forward.255-760.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.5610-6115.h5, /datater/wu/data/kmerCounting/enterovirus.forward.3570-4075.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.7905-8410.h5, /datater/wu/data/kmerCounting/enterovirus.forward.1275-1780.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.4335-4840.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.1785-2290.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.2295-2800.h5, /datater/wu/data/kmerCounting/enterovirus.forward.7395-7900.h5, /datater/wu/data/kmerCounting/enterovirus.forward.8415-8920.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.7395-7900.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.1275-1780.h5, /datater/wu/data/kmerCounting/enterovirus.forward.3315-3820.h5, /datater/wu/data/kmerCounting/enterovirus.forward.4335-4840.h5, /datater/wu/data/kmerCounting/enterovirus.forward.2550-3055.h5, /datater/wu/data/kmerCounting/enterovirus.forward.6120-6625.h5, /datater/wu/data/kmerCounting/enterovirus.forward.5355-5860.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.4845-5350.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.3060-3565.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.3315-3820.h5, /datater/wu/data/kmerCounting/enterovirus.forward.8925-9430.h5, /datater/wu/data/kmerCounting/enterovirus.forward.1530-2035.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.6375-6880.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.5100-5605.h5, /datater/wu/data/kmerCounting/enterovirus.forward.8160-8665.h5, /datater/wu/data/kmerCounting/enterovirus.forward.3825-4330.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.6885-7390.h5, /datater/wu/data/kmerCounting/enterovirus.forward.1785-2290.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.5355-5860.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.4590-5095.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.510-1015.h5, /datater/wu/data/kmerCounting/enterovirus.forward.5610-6115.h5, /datater/wu/data/kmerCounting/enterovirus.forward.1020-1525.h5, /datater/wu/data/kmerCounting/enterovirus.forward.3060-3565.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.6630-7135.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.2550-3055.h5, /datater/wu/data/kmerCounting/enterovirus.forward.7905-8410.h5, /datater/wu/data/kmerCounting/enterovirus.forward.2295-2800.h5, /datater/wu/data/kmerCounting/enterovirus.forward.6375-6880.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.4080-4585.h5, /datater/wu/data/kmerCounting/enterovirus.forward.2805-3310.h5, /datater/wu/data/kmerCounting/enterovirus.forward.765-1270.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.8160-8665.h5, /datater/wu/data/kmerCounting/enterovirus.forward.5100-5605.h5, /datater/wu/data/kmerCounting/enterovirus.forward.4845-5350.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.2040-2545.h5, /datater/wu/data/kmerCounting/enterovirus.forward.510-1015.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.7650-8155.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.0-505.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.255-760.h5, /datater/wu/data/kmerCounting/enterovirus.reverse.7140-7645.h5, /datater/wu/data/kmerCounting/enterovirus.forward.4590-5095.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.2040-2545.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.7650-8155.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.1530-2035.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.6885-7390.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.8670-9175.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.3825-4330.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.6630-7135.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.6120-6625.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.0-505.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.9180-9398.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.3570-4075.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.765-1270.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.4080-4585.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.9180-9398.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.8415-8920.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.8670-9175.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.1020-1525.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.7140-7645.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.5865-6370.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.2805-3310.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.8925-9430.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.5865-6370.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.255-760.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.5610-6115.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.3570-4075.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.7905-8410.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.1275-1780.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.4335-4840.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.1785-2290.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.2295-2800.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.7395-7900.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.8415-8920.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.7395-7900.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.1275-1780.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.3315-3820.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.4335-4840.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.2550-3055.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.6120-6625.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.5355-5860.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.4845-5350.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.3060-3565.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.3315-3820.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.8925-9430.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.1530-2035.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.6375-6880.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.5100-5605.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.8160-8665.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.3825-4330.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.6885-7390.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.1785-2290.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.5355-5860.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.4590-5095.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.510-1015.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.5610-6115.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.1020-1525.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.3060-3565.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.6630-7135.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.2550-3055.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.7905-8410.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.2295-2800.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.6375-6880.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.4080-4585.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.2805-3310.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.765-1270.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.8160-8665.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.5100-5605.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.4845-5350.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.2040-2545.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.510-1015.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.7650-8155.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.0-505.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.255-760.fasta, /datater/wu/data/kmerCounting/enterovirus.reverse.7140-7645.fasta, /datater/wu/data/kmerCounting/enterovirus.forward.4590-5095.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.2040-2545.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.7650-8155.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.1530-2035.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.6885-7390.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.8670-9175.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.3825-4330.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.6630-7135.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.6120-6625.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.0-505.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.9180-9398.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.3570-4075.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.765-1270.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.4080-4585.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.9180-9398.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.8415-8920.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.8670-9175.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.1020-1525.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.7140-7645.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.5865-6370.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.2805-3310.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.8925-9430.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.5865-6370.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.255-760.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.5610-6115.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.3570-4075.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.7905-8410.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.1275-1780.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.4335-4840.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.1785-2290.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.2295-2800.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.7395-7900.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.8415-8920.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.7395-7900.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.1275-1780.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.3315-3820.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.4335-4840.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.2550-3055.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.6120-6625.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.5355-5860.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.4845-5350.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.3060-3565.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.3315-3820.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.8925-9430.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.1530-2035.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.6375-6880.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.5100-5605.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.8160-8665.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.3825-4330.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.6885-7390.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.1785-2290.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.5355-5860.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.4590-5095.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.510-1015.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.5610-6115.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.1020-1525.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.3060-3565.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.6630-7135.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.2550-3055.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.7905-8410.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.2295-2800.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.6375-6880.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.4080-4585.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.2805-3310.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.765-1270.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.8160-8665.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.5100-5605.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.4845-5350.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.2040-2545.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.510-1015.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.7650-8155.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.0-505.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.255-760.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.reverse.7140-7645.kmc_suf, /datater/wu/data/kmerCounting/enterovirus.forward.4590-5095.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.2040-2545.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.7650-8155.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.1530-2035.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.6885-7390.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.8670-9175.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.3825-4330.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.6630-7135.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.6120-6625.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.0-505.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.9180-9398.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.3570-4075.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.765-1270.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.4080-4585.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.9180-9398.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.8415-8920.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.8670-9175.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.1020-1525.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.7140-7645.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.5865-6370.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.2805-3310.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.8925-9430.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.5865-6370.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.255-760.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.5610-6115.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.3570-4075.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.7905-8410.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.1275-1780.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.4335-4840.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.1785-2290.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.2295-2800.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.7395-7900.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.8415-8920.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.7395-7900.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.1275-1780.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.3315-3820.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.4335-4840.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.2550-3055.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.6120-6625.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.5355-5860.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.4845-5350.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.3060-3565.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.3315-3820.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.8925-9430.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.1530-2035.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.6375-6880.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.5100-5605.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.8160-8665.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.3825-4330.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.6885-7390.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.1785-2290.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.5355-5860.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.4590-5095.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.510-1015.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.5610-6115.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.1020-1525.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.3060-3565.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.6630-7135.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.2550-3055.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.7905-8410.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.2295-2800.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.6375-6880.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.4080-4585.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.2805-3310.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.765-1270.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.8160-8665.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.5100-5605.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.4845-5350.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.2040-2545.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.510-1015.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.7650-8155.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.0-505.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.255-760.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.reverse.7140-7645.kmc_pre, /datater/wu/data/kmerCounting/enterovirus.forward.4590-5095.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.2040-2545.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.7650-8155.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.1530-2035.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.6885-7390.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.8670-9175.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.3825-4330.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.6630-7135.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.6120-6625.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.0-505.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.9180-9398.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.3570-4075.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.765-1270.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.4080-4585.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.9180-9398.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.8415-8920.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.8670-9175.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.1020-1525.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.7140-7645.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.5865-6370.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.2805-3310.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.8925-9430.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.5865-6370.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.255-760.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.5610-6115.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.3570-4075.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.7905-8410.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.1275-1780.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.4335-4840.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.1785-2290.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.2295-2800.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.7395-7900.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.8415-8920.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.7395-7900.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.1275-1780.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.3315-3820.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.4335-4840.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.2550-3055.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.6120-6625.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.5355-5860.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.4845-5350.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.3060-3565.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.3315-3820.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.8925-9430.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.1530-2035.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.6375-6880.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.5100-5605.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.8160-8665.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.3825-4330.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.6885-7390.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.1785-2290.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.5355-5860.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.4590-5095.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.510-1015.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.5610-6115.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.1020-1525.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.3060-3565.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.6630-7135.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.2550-3055.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.7905-8410.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.2295-2800.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.6375-6880.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.4080-4585.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.2805-3310.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.765-1270.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.8160-8665.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.5100-5605.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.4845-5350.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.2040-2545.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.forward.510-1015.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.7650-8155.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.0-505.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.255-760.kmc.txt, /datater/wu/data/kmerCounting/enterovirus.reverse.7140-7645.kmc.txt
+    jobid: 0
+
+[Tue Mar  2 11:18:15 2021]
+Finished job 0.
+75 of 75 steps (100%) done
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-02T111811.038579.snakemake.log

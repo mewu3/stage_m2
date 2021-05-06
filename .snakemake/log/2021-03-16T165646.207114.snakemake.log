@@ -1,0 +1,4 @@
+NameError in line 3 of /datater/wu/stage_m2_merge/rules/all_multiple_seq_alignment.smk:
+name 'datadir' is not defined
+  File "/datater/wu/stage_m2_merge/Snakefile", line 158, in <module>
+  File "/datater/wu/stage_m2_merge/rules/all_multiple_seq_alignment.smk", line 3, in <module>

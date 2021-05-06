@@ -1,0 +1,59 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	countAllKmer1
+	1	countAllKmer2
+	1	evaluation1
+	1	evaluation2
+	1	sortAllKmer
+	6
+Select jobs to execute...
+
+[Thu Apr 29 12:08:09 2021]
+rule evaluation1:
+    input: /datater/wu/data/MSSPE-variant/zika/zika.uniq, /datater/wu/data/ncbiTaxonomy/nucl_gb.accession2taxid, /datater/wu/data/ncbiTaxonomy/ncbi_lineages_2021-04-23.csv
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/aceID-taxID-species.tsv
+    jobid: 16
+    wildcards: sample=zika
+
+[Thu Apr 29 12:08:09 2021]
+rule countAllKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/zika.uniq
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.jf
+    jobid: 2
+    wildcards: sample=zika
+
+[Thu Apr 29 12:12:42 2021]
+Finished job 16.
+1 of 6 steps (17%) done
+Select jobs to execute...
+
+[Thu Apr 29 12:12:42 2021]
+rule evaluation2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/allOligo.set, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/aceID-taxID-species.tsv, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.spec.bowtie
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/evaluation/allOligo.set.coverage
+    jobid: 17
+    wildcards: sample=zika
+
+[Thu Apr 29 12:12:44 2021]
+Finished job 17.
+2 of 6 steps (33%) done
+Terminating processes on user request, this might take some time.
+[Thu Apr 29 12:12:54 2021]
+Error in rule countAllKmer1:
+    jobid: 2
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.jf
+    shell:
+        
+        jellyfish count         -m 15         -s 3G         -t 12         -o /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.jf /datater/wu/data/MSSPE-variant/zika/zika.uniq
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job countAllKmer1 since they might be corrupted:
+/datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.jf
+Complete log: /datater/wu/MSSPE/.snakemake/log/2021-04-29T120808.486010.snakemake.log

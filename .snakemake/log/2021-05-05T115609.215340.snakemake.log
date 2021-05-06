@@ -1,0 +1,19 @@
+Building DAG of jobs...
+Job counts:
+	count	jobs
+	1	test1
+	1
+
+[Wed May  5 11:56:09 2021]
+rule test1:
+    input: /datater/wu/data/tmp/sars2.fasta
+    output: /datater/wu/data/tmp/sars2.fasta.DB.1.ebwt, /datater/wu/data/tmp/sars2.fasta.DB.2.ebwt, /datater/wu/data/tmp/sars2.fasta.DB.3.ebwt, /datater/wu/data/tmp/sars2.fasta.DB.4.ebwt, /datater/wu/data/tmp/sars2.fasta.DB.rev.1.ebwt, /datater/wu/data/tmp/sars2.fasta.DB.rev.2.ebwt
+    jobid: 0
+
+RuleException in line 12 of /datater/wu/MSSPE/scripts/coronavirusWithoutSARS2.smk:
+'Params' object has no attribute 'threads'
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 136, in run_jobs
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 145, in run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 156, in _run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 176, in printjob
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 162, in printjob

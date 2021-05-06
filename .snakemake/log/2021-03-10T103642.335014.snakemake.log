@@ -1,0 +1,951 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	37	filterOut_Tm
+	37	within_segments
+	75
+Select jobs to execute...
+
+[Wed Mar 10 10:36:42 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_5334-5838.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_5334-5838.calculated
+    jobid: 150
+    wildcards: sample=enterovirus, seg=5334-5838
+
+[Wed Mar 10 10:36:42 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_6858-7362.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_6858-7362.calculated
+    jobid: 126
+    wildcards: sample=enterovirus, seg=6858-7362
+
+[Wed Mar 10 10:36:42 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_3302-3806.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_3302-3806.calculated
+    jobid: 134
+    wildcards: sample=enterovirus, seg=3302-3806
+
+[Wed Mar 10 10:36:42 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_7366-7870.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_7366-7870.calculated
+    jobid: 141
+    wildcards: sample=enterovirus, seg=7366-7870
+
+[Wed Mar 10 10:36:42 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_508-1012.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_508-1012.calculated
+    jobid: 149
+    wildcards: sample=enterovirus, seg=508-1012
+
+[Wed Mar 10 10:36:42 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_2794-3298.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_2794-3298.calculated
+    jobid: 156
+    wildcards: sample=enterovirus, seg=2794-3298
+
+[Wed Mar 10 10:36:42 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_0-504.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_0-504.calculated
+    jobid: 133
+    wildcards: sample=enterovirus, seg=0-504
+
+[Wed Mar 10 10:36:42 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_254-758.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_254-758.calculated
+    jobid: 155
+    wildcards: sample=enterovirus, seg=254-758
+
+[Wed Mar 10 10:36:42 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_2540-3044.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_2540-3044.calculated
+    jobid: 148
+    wildcards: sample=enterovirus, seg=2540-3044
+
+[Wed Mar 10 10:36:42 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_1778-2282.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_1778-2282.calculated
+    jobid: 140
+    wildcards: sample=enterovirus, seg=1778-2282
+
+[Wed Mar 10 10:36:42 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_1270-1774.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_1270-1774.calculated
+    jobid: 127
+    wildcards: sample=enterovirus, seg=1270-1774
+
+[Wed Mar 10 10:36:42 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_5080-5584.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_5080-5584.calculated
+    jobid: 142
+    wildcards: sample=enterovirus, seg=5080-5584
+
+[Wed Mar 10 10:36:43 2021]
+Finished job 133.
+1 of 75 steps (1%) done
+Select jobs to execute...
+[Wed Mar 10 10:36:43 2021]
+Finished job 155.
+2 of 75 steps (3%) done
+
+[Wed Mar 10 10:36:43 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_1524-2028.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_1524-2028.calculated
+    jobid: 143
+    wildcards: sample=enterovirus, seg=1524-2028
+
+Select jobs to execute...
+
+[Wed Mar 10 10:36:43 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_7874-8378.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_7874-8378.calculated
+    jobid: 128
+    wildcards: sample=enterovirus, seg=7874-8378
+
+[Wed Mar 10 10:36:48 2021]
+Finished job 149.
+3 of 75 steps (4%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:36:48 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_6604-7108.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_6604-7108.calculated
+    jobid: 135
+    wildcards: sample=enterovirus, seg=6604-7108
+
+[Wed Mar 10 10:36:51 2021]
+Finished job 134.
+4 of 75 steps (5%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:36:51 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_3810-4314.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_3810-4314.calculated
+    jobid: 151
+    wildcards: sample=enterovirus, seg=3810-4314
+
+[Wed Mar 10 10:36:55 2021]
+Finished job 143.
+5 of 75 steps (7%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:36:55 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_1524-2028.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_1524-2028.filtered
+    jobid: 180
+    wildcards: sample=enterovirus, seg=1524-2028
+Downstream jobs will be updated after completion.
+
+[Wed Mar 10 10:36:55 2021]
+Finished job 140.
+6 of 75 steps (8%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:36:55 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_3556-4060.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_3556-4060.calculated
+    jobid: 129
+    wildcards: sample=enterovirus, seg=3556-4060
+
+Updating job all.
+[Wed Mar 10 10:36:57 2021]
+Finished job 180.
+7 of 75 steps (9%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:36:57 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_2032-2536.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_2032-2536.calculated
+    jobid: 144
+    wildcards: sample=enterovirus, seg=2032-2536
+
+[Wed Mar 10 10:37:06 2021]
+Finished job 127.
+8 of 75 steps (11%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:37:06 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_7620-8124.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_7620-8124.calculated
+    jobid: 136
+    wildcards: sample=enterovirus, seg=7620-8124
+
+[Wed Mar 10 10:37:10 2021]
+Finished job 150.
+9 of 75 steps (12%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:37:10 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_762-1266.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_762-1266.calculated
+    jobid: 145
+    wildcards: sample=enterovirus, seg=762-1266
+
+[Wed Mar 10 10:37:13 2021]
+Finished job 145.
+10 of 75 steps (13%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:37:13 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_5588-6092.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_5588-6092.calculated
+    jobid: 152
+    wildcards: sample=enterovirus, seg=5588-6092
+
+[Wed Mar 10 10:37:23 2021]
+Finished job 151.
+11 of 75 steps (15%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:37:23 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_8636-9140.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_8636-9140.calculated
+    jobid: 158
+    wildcards: sample=enterovirus, seg=8636-9140
+
+[Wed Mar 10 10:37:40 2021]
+Finished job 141.
+12 of 75 steps (16%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:37:40 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_762-1266.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_762-1266.filtered
+    jobid: 182
+    wildcards: sample=enterovirus, seg=762-1266
+Downstream jobs will be updated after completion.
+
+[Wed Mar 10 10:37:41 2021]
+Finished job 135.
+13 of 75 steps (17%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:37:41 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_2286-2790.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_2286-2790.calculated
+    jobid: 130
+    wildcards: sample=enterovirus, seg=2286-2790
+
+Updating job all.
+[Wed Mar 10 10:37:41 2021]
+Finished job 182.
+14 of 75 steps (19%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:37:41 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_3048-3552.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_3048-3552.calculated
+    jobid: 122
+    wildcards: sample=enterovirus, seg=3048-3552
+
+[Wed Mar 10 10:37:44 2021]
+Finished job 128.
+15 of 75 steps (20%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:37:44 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_7874-8378.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_7874-8378.filtered
+    jobid: 165
+    wildcards: sample=enterovirus, seg=7874-8378
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 10:37:45 2021]
+Finished job 165.
+16 of 75 steps (21%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:37:45 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_7112-7616.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_7112-7616.calculated
+    jobid: 137
+    wildcards: sample=enterovirus, seg=7112-7616
+
+[Wed Mar 10 10:37:47 2021]
+Finished job 156.
+17 of 75 steps (23%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:37:47 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_4318-4822.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_4318-4822.calculated
+    jobid: 146
+    wildcards: sample=enterovirus, seg=4318-4822
+
+[Wed Mar 10 10:37:52 2021]
+Finished job 142.
+18 of 75 steps (24%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:37:52 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_6350-6854.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_6350-6854.calculated
+    jobid: 153
+    wildcards: sample=enterovirus, seg=6350-6854
+
+[Wed Mar 10 10:37:52 2021]
+Finished job 126.
+19 of 75 steps (25%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:37:52 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_5842-6346.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_5842-6346.calculated
+    jobid: 131
+    wildcards: sample=enterovirus, seg=5842-6346
+
+[Wed Mar 10 10:37:54 2021]
+Finished job 148.
+20 of 75 steps (27%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:37:54 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_8128-8632.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_8128-8632.calculated
+    jobid: 138
+    wildcards: sample=enterovirus, seg=8128-8632
+
+[Wed Mar 10 10:38:00 2021]
+Finished job 152.
+21 of 75 steps (28%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:00 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_5588-6092.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_5588-6092.filtered
+    jobid: 189
+    wildcards: sample=enterovirus, seg=5588-6092
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 10:38:01 2021]
+Finished job 189.
+22 of 75 steps (29%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:01 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_4064-4568.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_4064-4568.calculated
+    jobid: 123
+    wildcards: sample=enterovirus, seg=4064-4568
+
+[Wed Mar 10 10:38:08 2021]
+Finished job 131.
+23 of 75 steps (31%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:08 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_5842-6346.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_5842-6346.filtered
+    jobid: 168
+    wildcards: sample=enterovirus, seg=5842-6346
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 10:38:10 2021]
+Finished job 168.
+24 of 75 steps (32%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:10 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_8890-9394.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_8890-9394.calculated
+    jobid: 124
+    wildcards: sample=enterovirus, seg=8890-9394
+
+[Wed Mar 10 10:38:11 2021]
+Finished job 124.
+25 of 75 steps (33%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:11 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_8890-9394.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_8890-9394.filtered
+    jobid: 161
+    wildcards: sample=enterovirus, seg=8890-9394
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 10:38:12 2021]
+Finished job 161.
+26 of 75 steps (35%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:12 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_6096-6600.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_6096-6600.calculated
+    jobid: 139
+    wildcards: sample=enterovirus, seg=6096-6600
+
+[Wed Mar 10 10:38:14 2021]
+Finished job 144.
+27 of 75 steps (36%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:15 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_2032-2536.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_2032-2536.filtered
+    jobid: 181
+    wildcards: sample=enterovirus, seg=2032-2536
+Downstream jobs will be updated after completion.
+
+[Wed Mar 10 10:38:15 2021]
+Finished job 136.
+28 of 75 steps (37%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:15 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_3810-4314.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_3810-4314.filtered
+    jobid: 188
+    wildcards: sample=enterovirus, seg=3810-4314
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 10:38:16 2021]
+Finished job 181.
+29 of 75 steps (39%) done
+[Wed Mar 10 10:38:16 2021]
+Finished job 129.
+30 of 75 steps (40%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:16 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_6604-7108.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_6604-7108.filtered
+    jobid: 172
+    wildcards: sample=enterovirus, seg=6604-7108
+Downstream jobs will be updated after completion.
+
+[Wed Mar 10 10:38:16 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_0-504.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_0-504.filtered
+    jobid: 170
+    wildcards: sample=enterovirus, seg=0-504
+Downstream jobs will be updated after completion.
+
+Select jobs to execute...
+Updating job all.
+[Wed Mar 10 10:38:17 2021]
+Finished job 188.
+31 of 75 steps (41%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:17 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_7620-8124.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_7620-8124.filtered
+    jobid: 173
+    wildcards: sample=enterovirus, seg=7620-8124
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 10:38:18 2021]
+Finished job 170.
+32 of 75 steps (43%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:18 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_4826-5330.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_4826-5330.calculated
+    jobid: 132
+    wildcards: sample=enterovirus, seg=4826-5330
+
+Updating job all.
+[Wed Mar 10 10:38:18 2021]
+Finished job 172.
+33 of 75 steps (44%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:18 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_254-758.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_254-758.filtered
+    jobid: 192
+    wildcards: sample=enterovirus, seg=254-758
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 10:38:18 2021]
+Finished job 173.
+34 of 75 steps (45%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:18 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_6858-7362.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_6858-7362.filtered
+    jobid: 163
+    wildcards: sample=enterovirus, seg=6858-7362
+Downstream jobs will be updated after completion.
+
+[Wed Mar 10 10:38:18 2021]
+Finished job 158.
+35 of 75 steps (47%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:18 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_3556-4060.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_3556-4060.filtered
+    jobid: 166
+    wildcards: sample=enterovirus, seg=3556-4060
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 10:38:19 2021]
+Finished job 192.
+36 of 75 steps (48%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:19 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_7366-7870.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_7366-7870.filtered
+    jobid: 178
+    wildcards: sample=enterovirus, seg=7366-7870
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 10:38:20 2021]
+Finished job 163.
+37 of 75 steps (49%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:20 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_2540-3044.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_2540-3044.filtered
+    jobid: 185
+    wildcards: sample=enterovirus, seg=2540-3044
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 10:38:20 2021]
+Finished job 166.
+38 of 75 steps (51%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:20 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_2794-3298.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_2794-3298.filtered
+    jobid: 193
+    wildcards: sample=enterovirus, seg=2794-3298
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 10:38:21 2021]
+Finished job 178.
+39 of 75 steps (52%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:21 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_8382-8886.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_8382-8886.calculated
+    jobid: 157
+    wildcards: sample=enterovirus, seg=8382-8886
+
+Updating job all.
+[Wed Mar 10 10:38:21 2021]
+Finished job 185.
+40 of 75 steps (53%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:21 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_5334-5838.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_5334-5838.filtered
+    jobid: 187
+    wildcards: sample=enterovirus, seg=5334-5838
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 10:38:22 2021]
+Finished job 193.
+41 of 75 steps (55%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:22 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_4572-5076.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_4572-5076.calculated
+    jobid: 125
+    wildcards: sample=enterovirus, seg=4572-5076
+
+Updating job all.
+[Wed Mar 10 10:38:23 2021]
+Finished job 187.
+42 of 75 steps (56%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:23 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_508-1012.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_508-1012.filtered
+    jobid: 186
+    wildcards: sample=enterovirus, seg=508-1012
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 10:38:25 2021]
+Finished job 186.
+43 of 75 steps (57%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:25 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_5080-5584.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_5080-5584.filtered
+    jobid: 179
+    wildcards: sample=enterovirus, seg=5080-5584
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 10:38:26 2021]
+Finished job 179.
+44 of 75 steps (59%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:26 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_3302-3806.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_3302-3806.filtered
+    jobid: 171
+    wildcards: sample=enterovirus, seg=3302-3806
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 10:38:28 2021]
+Finished job 171.
+45 of 75 steps (60%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:28 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_9144-9382.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_9144-9382.calculated
+    jobid: 154
+    wildcards: sample=enterovirus, seg=9144-9382
+
+[Wed Mar 10 10:38:29 2021]
+Finished job 154.
+46 of 75 steps (61%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:29 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_9144-9382.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_9144-9382.filtered
+    jobid: 191
+    wildcards: sample=enterovirus, seg=9144-9382
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 10:38:30 2021]
+Finished job 191.
+47 of 75 steps (63%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:30 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_8636-9140.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_8636-9140.filtered
+    jobid: 195
+    wildcards: sample=enterovirus, seg=8636-9140
+Downstream jobs will be updated after completion.
+
+[Wed Mar 10 10:38:31 2021]
+Finished job 130.
+48 of 75 steps (64%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:31 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_2286-2790.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_2286-2790.filtered
+    jobid: 167
+    wildcards: sample=enterovirus, seg=2286-2790
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 10:38:32 2021]
+Finished job 195.
+49 of 75 steps (65%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:32 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_1016-1520.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_1016-1520.calculated
+    jobid: 147
+    wildcards: sample=enterovirus, seg=1016-1520
+
+Updating job all.
+[Wed Mar 10 10:38:33 2021]
+Finished job 167.
+50 of 75 steps (67%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:33 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_1778-2282.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_1778-2282.filtered
+    jobid: 177
+    wildcards: sample=enterovirus, seg=1778-2282
+Downstream jobs will be updated after completion.
+
+[Wed Mar 10 10:38:33 2021]
+Finished job 147.
+51 of 75 steps (68%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:33 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_1270-1774.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_1270-1774.filtered
+    jobid: 164
+    wildcards: sample=enterovirus, seg=1270-1774
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 10:38:34 2021]
+Finished job 177.
+52 of 75 steps (69%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:34 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_1016-1520.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_1016-1520.filtered
+    jobid: 184
+    wildcards: sample=enterovirus, seg=1016-1520
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 10:38:35 2021]
+Finished job 164.
+53 of 75 steps (71%) done
+Updating job all.
+[Wed Mar 10 10:38:36 2021]
+Finished job 184.
+54 of 75 steps (72%) done
+[Wed Mar 10 10:38:41 2021]
+Finished job 122.
+55 of 75 steps (73%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:41 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_3048-3552.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_3048-3552.filtered
+    jobid: 159
+    wildcards: sample=enterovirus, seg=3048-3552
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 10:38:42 2021]
+Finished job 159.
+56 of 75 steps (75%) done
+[Wed Mar 10 10:38:46 2021]
+Finished job 138.
+57 of 75 steps (76%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:46 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_8128-8632.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_8128-8632.filtered
+    jobid: 175
+    wildcards: sample=enterovirus, seg=8128-8632
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 10:38:48 2021]
+Finished job 175.
+58 of 75 steps (77%) done
+[Wed Mar 10 10:38:52 2021]
+Finished job 137.
+59 of 75 steps (79%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:38:52 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_7112-7616.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_7112-7616.filtered
+    jobid: 174
+    wildcards: sample=enterovirus, seg=7112-7616
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 10:38:53 2021]
+Finished job 174.
+60 of 75 steps (80%) done
+[Wed Mar 10 10:39:03 2021]
+Finished job 146.
+61 of 75 steps (81%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:39:03 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_4318-4822.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_4318-4822.filtered
+    jobid: 183
+    wildcards: sample=enterovirus, seg=4318-4822
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 10:39:04 2021]
+Finished job 183.
+62 of 75 steps (83%) done
+[Wed Mar 10 10:39:09 2021]
+Finished job 153.
+63 of 75 steps (84%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:39:09 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_6350-6854.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_6350-6854.filtered
+    jobid: 190
+    wildcards: sample=enterovirus, seg=6350-6854
+Downstream jobs will be updated after completion.
+
+[Wed Mar 10 10:39:09 2021]
+Finished job 123.
+64 of 75 steps (85%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:39:09 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_4064-4568.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_4064-4568.filtered
+    jobid: 160
+    wildcards: sample=enterovirus, seg=4064-4568
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 10:39:10 2021]
+Finished job 160.
+65 of 75 steps (87%) done
+Updating job all.
+[Wed Mar 10 10:39:10 2021]
+Finished job 190.
+66 of 75 steps (88%) done
+[Wed Mar 10 10:39:18 2021]
+Finished job 139.
+67 of 75 steps (89%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:39:18 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_6096-6600.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_6096-6600.filtered
+    jobid: 176
+    wildcards: sample=enterovirus, seg=6096-6600
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 10:39:19 2021]
+Finished job 176.
+68 of 75 steps (91%) done
+[Wed Mar 10 10:39:27 2021]
+Finished job 157.
+69 of 75 steps (92%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:39:27 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_8382-8886.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_8382-8886.filtered
+    jobid: 194
+    wildcards: sample=enterovirus, seg=8382-8886
+Downstream jobs will be updated after completion.
+
+[Wed Mar 10 10:39:28 2021]
+Finished job 125.
+70 of 75 steps (93%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:39:28 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_4572-5076.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_4572-5076.filtered
+    jobid: 162
+    wildcards: sample=enterovirus, seg=4572-5076
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 10:39:28 2021]
+Finished job 194.
+71 of 75 steps (95%) done
+Updating job all.
+[Wed Mar 10 10:39:30 2021]
+Finished job 162.
+72 of 75 steps (96%) done
+[Wed Mar 10 10:39:31 2021]
+Finished job 132.
+73 of 75 steps (97%) done
+Select jobs to execute...
+
+[Wed Mar 10 10:39:31 2021]
+checkpoint filterOut_Tm:
+    input: /datater/wu/data/enterovirus/primer3_Tm/forward_4826-5330.calculated
+    output: /datater/wu/data/enterovirus/primer3_Tm/forward_4826-5330.filtered
+    jobid: 169
+    wildcards: sample=enterovirus, seg=4826-5330
+Downstream jobs will be updated after completion.
+
+Updating job all.
+[Wed Mar 10 10:39:32 2021]
+Finished job 169.
+74 of 74 steps (100%) done
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-10T103642.335014.snakemake.log

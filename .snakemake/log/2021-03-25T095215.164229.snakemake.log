@@ -1,0 +1,23 @@
+Building DAG of jobs...
+Updating job aggregate_allReverseOligo.
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	allToFasta
+	2
+Select jobs to execute...
+
+[Thu Mar 25 09:52:15 2021]
+rule allToFasta:
+    input: /datater/wu/data/zika/filtering/allOligos_reverse.filtered
+    output: /datater/wu/data/zika/checkSpecifity/allOligos_reverse.fasta
+    jobid: 1
+    wildcards: sample=zika
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-25T095215.164229.snakemake.log

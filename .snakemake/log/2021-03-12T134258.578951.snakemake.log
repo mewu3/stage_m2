@@ -1,0 +1,63 @@
+Building DAG of jobs...
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	merge_all_kmers
+	2
+Select jobs to execute...
+
+[Fri Mar 12 13:43:01 2021]
+rule merge_all_kmers:
+    input: /datater/wu/data/enterovirus/filtering/forward_2794-3298.filtered, /datater/wu/data/enterovirus/filtering/forward_8382-8886.filtered, /datater/wu/data/enterovirus/filtering/forward_762-1266.filtered, /datater/wu/data/enterovirus/filtering/forward_508-1012.filtered, /datater/wu/data/enterovirus/filtering/forward_5334-5838.filtered, /datater/wu/data/enterovirus/filtering/forward_2286-2790.filtered, /datater/wu/data/enterovirus/filtering/forward_7620-8124.filtered, /datater/wu/data/enterovirus/filtering/forward_1524-2028.filtered, /datater/wu/data/enterovirus/filtering/forward_3810-4314.filtered, /datater/wu/data/enterovirus/filtering/forward_8890-9394.filtered, /datater/wu/data/enterovirus/filtering/forward_4318-4822.filtered, /datater/wu/data/enterovirus/filtering/forward_5842-6346.filtered, /datater/wu/data/enterovirus/filtering/forward_4826-5330.filtered, /datater/wu/data/enterovirus/filtering/forward_4572-5076.filtered, /datater/wu/data/enterovirus/filtering/forward_8128-8632.filtered, /datater/wu/data/enterovirus/filtering/forward_4064-4568.filtered, /datater/wu/data/enterovirus/filtering/forward_7874-8378.filtered, /datater/wu/data/enterovirus/filtering/forward_3302-3806.filtered, /datater/wu/data/enterovirus/filtering/forward_6858-7362.filtered, /datater/wu/data/enterovirus/filtering/forward_5588-6092.filtered, /datater/wu/data/enterovirus/filtering/forward_5080-5584.filtered, /datater/wu/data/enterovirus/filtering/forward_3556-4060.filtered, /datater/wu/data/enterovirus/filtering/forward_6350-6854.filtered, /datater/wu/data/enterovirus/filtering/forward_1270-1774.filtered, /datater/wu/data/enterovirus/filtering/forward_0-504.filtered, /datater/wu/data/enterovirus/filtering/forward_254-758.filtered, /datater/wu/data/enterovirus/filtering/forward_1778-2282.filtered, /datater/wu/data/enterovirus/filtering/forward_1016-1520.filtered, /datater/wu/data/enterovirus/filtering/forward_2032-2536.filtered, /datater/wu/data/enterovirus/filtering/forward_8636-9140.filtered, /datater/wu/data/enterovirus/filtering/forward_6604-7108.filtered, /datater/wu/data/enterovirus/filtering/forward_7112-7616.filtered, /datater/wu/data/enterovirus/filtering/forward_2540-3044.filtered, /datater/wu/data/enterovirus/filtering/forward_3048-3552.filtered, /datater/wu/data/enterovirus/filtering/forward_7366-7870.filtered, /datater/wu/data/enterovirus/filtering/forward_9144-9382.filtered, /datater/wu/data/enterovirus/filtering/forward_6096-6600.filtered
+    output: /datater/wu/data/enterovirus/primer3_Tm/all_oligo
+    jobid: 12
+    wildcards: sample=enterovirus
+
+RuleException in line 7 of /datater/wu/stage_m2/rules/check_specifity.smk:
+NameError: The name ' printf("position\tkmerCount\tCG%\tTm\thomodimer-dG\thairpin-dG\tLC\tkmer\n") ' is unknown in this context. Please make sure that you defined that variable. Also note that braces not used for variable access have to be escaped by repeating them, i.e. {{print $1}}
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 136, in run_jobs
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 441, in run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 230, in _run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 156, in _run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 162, in printjob

@@ -1,0 +1,4 @@
+WorkflowError in line 128 of /datater/wu/stage_m2/Snakefile:
+Failed to open source file /datater/wu/stage_m2/rules/oligo_filter.smk
+FileNotFoundError: [Errno 2] No such file or directory: '/datater/wu/stage_m2/rules/oligo_filter.smk'
+  File "/datater/wu/stage_m2/Snakefile", line 128, in <module>

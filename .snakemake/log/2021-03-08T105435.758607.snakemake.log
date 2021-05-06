@@ -1,0 +1,12 @@
+Building DAG of jobs...
+AmbiguousRuleException:
+Rules filterOut_forward and forward_TmCalculate are ambiguous for the file /datater/wu/data/filtering/zika/dsk/forward/__snakemake_dynamic__.filtered.tm.
+Consider starting rule output with a unique prefix, constrain your wildcards, or use the ruleorder directive.
+Wildcards:
+	filterOut_forward: sample=zika,seg=__snakemake_dynamic__
+	forward_TmCalculate: sample=zika,seg=__snakemake_dynamic__.filtered
+Expected input files:
+	filterOut_forward: /datater/wu/data/filtering/zika/dsk/forward/__snakemake_dynamic__.tm
+	forward_TmCalculate: /datater/wu/data/kmerCounting/zika/dsk/forward/__snakemake_dynamic__.filtered.sortExpected output files:
+	filterOut_forward: /datater/wu/data/filtering/zika/dsk/forward/__snakemake_dynamic__.filtered.tm
+	forward_TmCalculate: /datater/wu/data/filtering/zika/dsk/forward/__snakemake_dynamic__.filtered.tm

@@ -1,0 +1,201 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	checkHeterodimer
+	1	countAllKmer1
+	1	countAllKmer2
+	1	evaluation2
+	1	evaluation3
+	1	filtering1
+	1	filtering2
+	1	getKmerPosition1
+	1	getKmerPosition3
+	1	getKmerPosition4
+	1	sortAllKmer
+	1	specific1
+	1	specific3
+	1	specific4
+	15
+Select jobs to execute...
+
+[Thu Apr 29 15:34:18 2021]
+rule countAllKmer1:
+    input: /datater/wu/data/MSSPE-variant/zika/zika.uniq
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.int.kmc_suf
+    jobid: 2
+    wildcards: sample=zika
+
+[Thu Apr 29 15:34:22 2021]
+Finished job 2.
+1 of 15 steps (7%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:34:22 2021]
+rule countAllKmer2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.txt
+    jobid: 3
+    wildcards: sample=zika
+
+[Thu Apr 29 15:34:22 2021]
+Finished job 3.
+2 of 15 steps (13%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:34:22 2021]
+rule sortAllKmer:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.sorted.txt
+    jobid: 4
+    wildcards: sample=zika
+
+[Thu Apr 29 15:34:23 2021]
+Finished job 4.
+3 of 15 steps (20%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:34:23 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/allKmerCount.sorted.calculated.txt
+    jobid: 5
+    wildcards: sample=zika
+
+[Thu Apr 29 15:34:37 2021]
+Finished job 5.
+4 of 15 steps (27%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:34:37 2021]
+rule filtering2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/allKmerCount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/allKmerCount.sorted.calculated.filtered.txt
+    jobid: 6
+    wildcards: sample=zika
+
+[Thu Apr 29 15:34:39 2021]
+Finished job 6.
+5 of 15 steps (33%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:34:39 2021]
+rule specific1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/allKmerCount.sorted.calculated.filtered.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.fasta
+    jobid: 7
+    wildcards: sample=zika
+
+[Thu Apr 29 15:34:40 2021]
+Finished job 7.
+6 of 15 steps (40%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:34:40 2021]
+rule specific3:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.fasta, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.2.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.3.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.4.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.rev.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.rev.2.ebwt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.bowtie
+    jobid: 9
+    wildcards: sample=zika
+
+[Thu Apr 29 15:34:41 2021]
+Finished job 9.
+7 of 15 steps (47%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:34:41 2021]
+rule specific4:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.bowtie, /datater/wu/data/MSSPE-variant/zika/kmer15/allKmerCount.sorted.calculated.filtered.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt
+    jobid: 10
+    wildcards: sample=zika
+
+[Thu Apr 29 15:34:43 2021]
+Finished job 10.
+8 of 15 steps (53%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:34:43 2021]
+rule getKmerPosition1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.spec.fasta
+    jobid: 13
+    wildcards: sample=zika
+
+[Thu Apr 29 15:34:44 2021]
+Finished job 13.
+9 of 15 steps (60%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:34:44 2021]
+rule getKmerPosition3:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.spec.fasta, /datater/wu/data/MSSPE-variant/zika/zika0.99.msa.DB.1.ebwt, /datater/wu/data/MSSPE-variant/zika/zika0.99.msa.DB.2.ebwt, /datater/wu/data/MSSPE-variant/zika/zika0.99.msa.DB.3.ebwt, /datater/wu/data/MSSPE-variant/zika/zika0.99.msa.DB.4.ebwt, /datater/wu/data/MSSPE-variant/zika/zika0.99.msa.DB.rev.1.ebwt, /datater/wu/data/MSSPE-variant/zika/zika0.99.msa.DB.rev.2.ebwt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.spec.bowtie
+    jobid: 15
+    wildcards: sample=zika
+
+[Thu Apr 29 15:34:45 2021]
+Finished job 15.
+10 of 15 steps (67%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:34:45 2021]
+rule getKmerPosition4:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.spec.bowtie, /datater/wu/data/MSSPE-variant/zika/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.spec.position
+    jobid: 16
+    wildcards: sample=zika
+
+[Thu Apr 29 15:34:48 2021]
+Finished job 16.
+11 of 15 steps (73%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:34:48 2021]
+rule checkHeterodimer:
+    input: /datater/wu/data/MSSPE-variant/zika/zika0.99.msa, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.spec.position
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/allOligo.set
+    jobid: 17
+    wildcards: sample=zika
+
+[Thu Apr 29 15:34:51 2021]
+Finished job 17.
+12 of 15 steps (80%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:34:51 2021]
+rule evaluation3:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/allOligo.set
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/evaluation/allOligo_after3.tsv
+    jobid: 20
+    wildcards: sample=zika
+
+
+[Thu Apr 29 15:34:51 2021]
+rule evaluation2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/allOligo.set, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/aceID-taxID-species.tsv, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.spec.bowtie
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/evaluation/allOligo.set.coverage
+    jobid: 19
+    wildcards: sample=zika
+
+[Thu Apr 29 15:34:51 2021]
+Finished job 20.
+13 of 15 steps (87%) done
+[Thu Apr 29 15:34:54 2021]
+Finished job 19.
+14 of 15 steps (93%) done
+Select jobs to execute...
+
+[Thu Apr 29 15:34:54 2021]
+localrule all:
+    input: /datater/wu/data/MSSPE-variant/zika/zika.uniq, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.int.kmc_pre, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.int.kmc_suf, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.sorted.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/allKmerCount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/allKmerCount.sorted.calculated.filtered.txt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.fasta, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.2.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.3.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.4.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.rev.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.rev.2.ebwt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.bowtie, /datater/wu/data/MSSPE-variant/zika/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt, /datater/wu/data/MSSPE-variant/zika/zika0.99.uniq, /datater/wu/data/MSSPE-variant/zika/zika0.99.msa, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.spec.fasta, /datater/wu/data/MSSPE-variant/zika/zika0.99.msa.DB.1.ebwt, /datater/wu/data/MSSPE-variant/zika/zika0.99.msa.DB.2.ebwt, /datater/wu/data/MSSPE-variant/zika/zika0.99.msa.DB.3.ebwt, /datater/wu/data/MSSPE-variant/zika/zika0.99.msa.DB.4.ebwt, /datater/wu/data/MSSPE-variant/zika/zika0.99.msa.DB.rev.1.ebwt, /datater/wu/data/MSSPE-variant/zika/zika0.99.msa.DB.rev.2.ebwt, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.spec.bowtie, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.spec.position, /datater/wu/data/MSSPE-variant/zika/kmer15/allOligo.set, /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/aceID-taxID-species.tsv, /datater/wu/data/MSSPE-variant/zika/kmer15/evaluation/allOligo.set.coverage, /datater/wu/data/MSSPE-variant/zika/kmer15/evaluation/allOligo_after3.tsv
+    jobid: 0
+
+[Thu Apr 29 15:34:54 2021]
+Finished job 0.
+15 of 15 steps (100%) done
+Complete log: /datater/wu/MSSPE/.snakemake/log/2021-04-29T153417.110269.snakemake.log

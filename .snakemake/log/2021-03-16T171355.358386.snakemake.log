@@ -1,0 +1,4 @@
+NameError in line 10 of /datater/wu/stage_m2_merge/rules/reverse_kmer_dsk.smk:
+name 'datadir' is not defined
+  File "/datater/wu/stage_m2_merge/Snakefile", line 167, in <module>
+  File "/datater/wu/stage_m2_merge/rules/reverse_kmer_dsk.smk", line 10, in <module>

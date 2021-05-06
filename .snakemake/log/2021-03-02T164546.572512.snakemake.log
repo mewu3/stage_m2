@@ -1,0 +1,12 @@
+Building DAG of jobs...
+AmbiguousRuleException:
+Rules dskOutput and dskOutputSort are ambiguous for the file /datater/wu/data/kmerCounting/dsk/sort.enterovirus.forward.2040-2545.txt.
+Consider starting rule output with a unique prefix, constrain your wildcards, or use the ruleorder directive.
+Wildcards:
+	dskOutput: prefix=sort.enterovirus.forward.2040-2545
+	dskOutputSort: prefix=enterovirus.forward.2040-2545
+Expected input files:
+	dskOutput: /datater/wu/data/kmerCounting/dsk/sort.enterovirus.forward.2040-2545.h5
+	dskOutputSort: /datater/wu/data/kmerCounting/dsk/enterovirus.forward.2040-2545.txtExpected output files:
+	dskOutput: /datater/wu/data/kmerCounting/dsk/sort.enterovirus.forward.2040-2545.txt
+	dskOutputSort: /datater/wu/data/kmerCounting/dsk/sort.enterovirus.forward.2040-2545.txt

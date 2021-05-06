@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 1 of /datater/wu/stage_m2/rules/evaluation.smk:
+Missing input files for rule species_coverage:
+/datater/wu/data/zika/checkSpecifity/allOligos_reverse.set.fasta

@@ -1,0 +1,130 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	43	TmCalculate_CG
+	1	all
+	1	dimer_mfeprimer
+	1	dimer_ntthal
+	43	filterOut_Tm
+	1	hairpin_mfeprimer
+	1	hairpin_ntthal
+	1	merge_all_kmers
+	1	transforme_to_fasta
+	93
+Select jobs to execute...
+
+[Tue Mar  9 16:23:26 2021]
+rule TmCalculate_CG:
+    input: /datater/wu/data/zika/dsk/forward_8534-9035.kCountSorted
+    output: /datater/wu/data/zika/primer3_Tm/forward_8534-9035.Tm
+    jobid: 167
+    wildcards: sample=zika, seg=8534-9035
+
+[Tue Mar  9 16:23:26 2021]
+rule TmCalculate_CG:
+    input: /datater/wu/data/zika/dsk/forward_7781-8282.kCountSorted
+    output: /datater/wu/data/zika/primer3_Tm/forward_7781-8282.Tm
+    jobid: 296
+    wildcards: sample=zika, seg=7781-8282
+
+[Tue Mar  9 16:23:26 2021]
+rule TmCalculate_CG:
+    input: /datater/wu/data/zika/dsk/forward_4518-5019.kCountSorted
+    output: /datater/wu/data/zika/primer3_Tm/forward_4518-5019.Tm
+    jobid: 83
+    wildcards: sample=zika, seg=4518-5019
+
+[Tue Mar  9 16:23:26 2021]
+rule TmCalculate_CG:
+    input: /datater/wu/data/zika/dsk/forward_6024-6525.kCountSorted
+    output: /datater/wu/data/zika/primer3_Tm/forward_6024-6525.Tm
+    jobid: 113
+    wildcards: sample=zika, seg=6024-6525
+
+[Tue Mar  9 16:23:26 2021]
+rule TmCalculate_CG:
+    input: /datater/wu/data/zika/dsk/forward_3012-3513.kCountSorted
+    output: /datater/wu/data/zika/primer3_Tm/forward_3012-3513.Tm
+    jobid: 53
+    wildcards: sample=zika, seg=3012-3513
+
+[Tue Mar  9 16:23:26 2021]
+rule TmCalculate_CG:
+    input: /datater/wu/data/zika/dsk/forward_4016-4517.kCountSorted
+    output: /datater/wu/data/zika/primer3_Tm/forward_4016-4517.Tm
+    jobid: 119
+    wildcards: sample=zika, seg=4016-4517
+
+[Tue Mar  9 16:23:26 2021]
+rule TmCalculate_CG:
+    input: /datater/wu/data/zika/dsk/forward_2259-2760.kCountSorted
+    output: /datater/wu/data/zika/primer3_Tm/forward_2259-2760.Tm
+    jobid: 295
+    wildcards: sample=zika, seg=2259-2760
+
+[Tue Mar  9 16:23:26 2021]
+rule TmCalculate_CG:
+    input: /datater/wu/data/zika/dsk/forward_753-1254.kCountSorted
+    output: /datater/wu/data/zika/primer3_Tm/forward_753-1254.Tm
+    jobid: 179
+    wildcards: sample=zika, seg=753-1254
+
+[Tue Mar  9 16:23:26 2021]
+rule TmCalculate_CG:
+    input: /datater/wu/data/zika/dsk/forward_7279-7780.kCountSorted
+    output: /datater/wu/data/zika/primer3_Tm/forward_7279-7780.Tm
+    jobid: 89
+    wildcards: sample=zika, seg=7279-7780
+
+[Tue Mar  9 16:23:26 2021]
+rule TmCalculate_CG:
+    input: /datater/wu/data/zika/dsk/forward_8032-8533.kCountSorted
+    output: /datater/wu/data/zika/primer3_Tm/forward_8032-8533.Tm
+    jobid: 59
+    wildcards: sample=zika, seg=8032-8533
+
+[Tue Mar  9 16:23:26 2021]
+rule TmCalculate_CG:
+    input: /datater/wu/data/zika/dsk/forward_5522-6023.kCountSorted
+    output: /datater/wu/data/zika/primer3_Tm/forward_5522-6023.Tm
+    jobid: 209
+    wildcards: sample=zika, seg=5522-6023
+
+[Tue Mar  9 16:23:26 2021]
+rule TmCalculate_CG:
+    input: /datater/wu/data/zika/dsk/forward_8283-8784.kCountSorted
+    output: /datater/wu/data/zika/primer3_Tm/forward_8283-8784.Tm
+    jobid: 149
+    wildcards: sample=zika, seg=8283-8784
+
+[Tue Mar  9 16:23:26 2021]
+Finished job 179.
+1 of 93 steps (1%) done
+Select jobs to execute...
+[Tue Mar  9 16:23:26 2021]
+Finished job 113.
+2 of 93 steps (2%) done
+[Tue Mar  9 16:23:26 2021]
+Finished job 295.
+3 of 93 steps (3%) done
+[Tue Mar  9 16:23:26 2021]
+Finished job 119.
+4 of 93 steps (4%) done
+
+[Tue Mar  9 16:23:26 2021]
+rule TmCalculate_CG:
+    input: /datater/wu/data/zika/dsk/forward_9287-9788.kCountSorted
+    output: /datater/wu/data/zika/primer3_Tm/forward_9287-9788.Tm
+    jobid: 107
+    wildcards: sample=zika, seg=9287-9788
+
+[Tue Mar  9 16:23:26 2021]
+Finished job 83.
+5 of 93 steps (5%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-09T162324.472049.snakemake.log

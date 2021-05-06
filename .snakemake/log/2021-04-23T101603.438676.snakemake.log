@@ -1,0 +1,3 @@
+SyntaxError in line 10 of /datater/wu/MSSPE/rules-variant/all_evaluation.smk:
+invalid syntax
+  File "/datater/wu/MSSPE/snakefile-variant", line 133, in <module>

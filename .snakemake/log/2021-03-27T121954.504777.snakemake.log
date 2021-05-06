@@ -1,0 +1,4 @@
+AttributeError in line 42 of /datater/wu/stage_m2/Snakefile:
+'Checkpoints' object has no attribute 'splitFiles'
+  File "/datater/wu/stage_m2/Snakefile", line 51, in <module>
+  File "/datater/wu/stage_m2/Snakefile", line 42, in aggregate_input

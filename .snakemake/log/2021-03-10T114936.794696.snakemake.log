@@ -1,0 +1,443 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	37	within_segments
+	38
+Select jobs to execute...
+
+[Wed Mar 10 11:49:37 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_2794-3298.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_2794-3298.calculated
+    jobid: 150
+    wildcards: sample=enterovirus, seg=2794-3298
+
+[Wed Mar 10 11:49:37 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_6858-7362.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_6858-7362.calculated
+    jobid: 126
+    wildcards: sample=enterovirus, seg=6858-7362
+
+[Wed Mar 10 11:49:37 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_4064-4568.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_4064-4568.calculated
+    jobid: 134
+    wildcards: sample=enterovirus, seg=4064-4568
+
+[Wed Mar 10 11:49:37 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_0-504.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_0-504.calculated
+    jobid: 141
+    wildcards: sample=enterovirus, seg=0-504
+
+[Wed Mar 10 11:49:37 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_4826-5330.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_4826-5330.calculated
+    jobid: 149
+    wildcards: sample=enterovirus, seg=4826-5330
+
+[Wed Mar 10 11:49:37 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_3302-3806.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_3302-3806.calculated
+    jobid: 156
+    wildcards: sample=enterovirus, seg=3302-3806
+
+[Wed Mar 10 11:49:37 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_5842-6346.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_5842-6346.calculated
+    jobid: 155
+    wildcards: sample=enterovirus, seg=5842-6346
+
+[Wed Mar 10 11:49:37 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_7112-7616.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_7112-7616.calculated
+    jobid: 148
+    wildcards: sample=enterovirus, seg=7112-7616
+
+[Wed Mar 10 11:49:37 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_7366-7870.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_7366-7870.calculated
+    jobid: 133
+    wildcards: sample=enterovirus, seg=7366-7870
+
+[Wed Mar 10 11:49:37 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_2032-2536.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_2032-2536.calculated
+    jobid: 140
+    wildcards: sample=enterovirus, seg=2032-2536
+
+[Wed Mar 10 11:49:37 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_7620-8124.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_7620-8124.calculated
+    jobid: 127
+    wildcards: sample=enterovirus, seg=7620-8124
+
+[Wed Mar 10 11:49:37 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_6350-6854.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_6350-6854.calculated
+    jobid: 142
+    wildcards: sample=enterovirus, seg=6350-6854
+
+[Wed Mar 10 11:49:38 2021]
+Finished job 141.
+1 of 38 steps (3%) done
+Select jobs to execute...
+
+[Wed Mar 10 11:49:38 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_8128-8632.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_8128-8632.calculated
+    jobid: 143
+    wildcards: sample=enterovirus, seg=8128-8632
+
+[Wed Mar 10 11:49:46 2021]
+Finished job 156.
+2 of 38 steps (5%) done
+Select jobs to execute...
+
+[Wed Mar 10 11:49:46 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_3810-4314.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_3810-4314.calculated
+    jobid: 135
+    wildcards: sample=enterovirus, seg=3810-4314
+
+[Wed Mar 10 11:49:52 2021]
+Finished job 155.
+3 of 38 steps (8%) done
+Select jobs to execute...
+
+[Wed Mar 10 11:49:52 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_1270-1774.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_1270-1774.calculated
+    jobid: 144
+    wildcards: sample=enterovirus, seg=1270-1774
+
+[Wed Mar 10 11:50:18 2021]
+Finished job 135.
+4 of 38 steps (11%) done
+Select jobs to execute...
+
+[Wed Mar 10 11:50:18 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_508-1012.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_508-1012.calculated
+    jobid: 129
+    wildcards: sample=enterovirus, seg=508-1012
+
+[Wed Mar 10 11:50:19 2021]
+Finished job 144.
+5 of 38 steps (13%) done
+Select jobs to execute...
+
+[Wed Mar 10 11:50:19 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_6604-7108.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_6604-7108.calculated
+    jobid: 136
+    wildcards: sample=enterovirus, seg=6604-7108
+
+[Wed Mar 10 11:50:24 2021]
+Finished job 129.
+6 of 38 steps (16%) done
+Select jobs to execute...
+
+[Wed Mar 10 11:50:24 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_3556-4060.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_3556-4060.calculated
+    jobid: 121
+    wildcards: sample=enterovirus, seg=3556-4060
+
+[Wed Mar 10 11:50:32 2021]
+Finished job 143.
+7 of 38 steps (18%) done
+Select jobs to execute...
+
+[Wed Mar 10 11:50:32 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_2540-3044.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_2540-3044.calculated
+    jobid: 151
+    wildcards: sample=enterovirus, seg=2540-3044
+
+[Wed Mar 10 11:50:35 2021]
+Finished job 148.
+8 of 38 steps (21%) done
+Select jobs to execute...
+
+[Wed Mar 10 11:50:35 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_8890-9394.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_8890-9394.calculated
+    jobid: 130
+    wildcards: sample=enterovirus, seg=8890-9394
+
+[Wed Mar 10 11:50:35 2021]
+Finished job 133.
+9 of 38 steps (24%) done
+Select jobs to execute...
+
+[Wed Mar 10 11:50:35 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_3048-3552.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_3048-3552.calculated
+    jobid: 145
+    wildcards: sample=enterovirus, seg=3048-3552
+
+[Wed Mar 10 11:50:36 2021]
+Finished job 130.
+10 of 38 steps (26%) done
+Select jobs to execute...
+
+[Wed Mar 10 11:50:36 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_1524-2028.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_1524-2028.calculated
+    jobid: 152
+    wildcards: sample=enterovirus, seg=1524-2028
+
+[Wed Mar 10 11:50:36 2021]
+Finished job 134.
+11 of 38 steps (29%) done
+Select jobs to execute...
+
+[Wed Mar 10 11:50:36 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_2286-2790.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_2286-2790.calculated
+    jobid: 131
+    wildcards: sample=enterovirus, seg=2286-2790
+
+[Wed Mar 10 11:50:39 2021]
+Finished job 149.
+12 of 38 steps (32%) done
+Select jobs to execute...
+
+[Wed Mar 10 11:50:39 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_5080-5584.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_5080-5584.calculated
+    jobid: 138
+    wildcards: sample=enterovirus, seg=5080-5584
+
+[Wed Mar 10 11:50:41 2021]
+Finished job 127.
+13 of 38 steps (34%) done
+Select jobs to execute...
+
+[Wed Mar 10 11:50:41 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_7874-8378.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_7874-8378.calculated
+    jobid: 146
+    wildcards: sample=enterovirus, seg=7874-8378
+
+[Wed Mar 10 11:50:43 2021]
+Finished job 150.
+14 of 38 steps (37%) done
+Select jobs to execute...
+
+[Wed Mar 10 11:50:43 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_254-758.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_254-758.calculated
+    jobid: 153
+    wildcards: sample=enterovirus, seg=254-758
+
+[Wed Mar 10 11:50:44 2021]
+Finished job 153.
+15 of 38 steps (39%) done
+Select jobs to execute...
+
+[Wed Mar 10 11:50:44 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_5588-6092.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_5588-6092.calculated
+    jobid: 125
+    wildcards: sample=enterovirus, seg=5588-6092
+
+[Wed Mar 10 11:50:44 2021]
+Finished job 142.
+16 of 38 steps (42%) done
+Select jobs to execute...
+
+[Wed Mar 10 11:50:44 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_4572-5076.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_4572-5076.calculated
+    jobid: 157
+    wildcards: sample=enterovirus, seg=4572-5076
+
+[Wed Mar 10 11:50:47 2021]
+Finished job 126.
+17 of 38 steps (45%) done
+Select jobs to execute...
+[Wed Mar 10 11:50:47 2021]
+Finished job 140.
+18 of 38 steps (47%) done
+
+[Wed Mar 10 11:50:47 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_8636-9140.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_8636-9140.calculated
+    jobid: 123
+    wildcards: sample=enterovirus, seg=8636-9140
+
+Select jobs to execute...
+
+[Wed Mar 10 11:50:47 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_1778-2282.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_1778-2282.calculated
+    jobid: 154
+    wildcards: sample=enterovirus, seg=1778-2282
+
+[Wed Mar 10 11:50:48 2021]
+Finished job 152.
+19 of 38 steps (50%) done
+Select jobs to execute...
+
+[Wed Mar 10 11:50:48 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_5334-5838.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_5334-5838.calculated
+    jobid: 147
+    wildcards: sample=enterovirus, seg=5334-5838
+
+[Wed Mar 10 11:51:02 2021]
+Finished job 154.
+20 of 38 steps (53%) done
+Select jobs to execute...
+
+[Wed Mar 10 11:51:02 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_4318-4822.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_4318-4822.calculated
+    jobid: 139
+    wildcards: sample=enterovirus, seg=4318-4822
+
+[Wed Mar 10 11:51:13 2021]
+Finished job 136.
+21 of 38 steps (55%) done
+Select jobs to execute...
+
+[Wed Mar 10 11:51:13 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_6096-6600.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_6096-6600.calculated
+    jobid: 124
+    wildcards: sample=enterovirus, seg=6096-6600
+
+[Wed Mar 10 11:51:18 2021]
+Finished job 147.
+22 of 38 steps (58%) done
+Select jobs to execute...
+
+[Wed Mar 10 11:51:18 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_8382-8886.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_8382-8886.calculated
+    jobid: 122
+    wildcards: sample=enterovirus, seg=8382-8886
+
+[Wed Mar 10 11:51:26 2021]
+Finished job 131.
+23 of 38 steps (61%) done
+Select jobs to execute...
+
+[Wed Mar 10 11:51:26 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_762-1266.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_762-1266.calculated
+    jobid: 137
+    wildcards: sample=enterovirus, seg=762-1266
+
+[Wed Mar 10 11:51:29 2021]
+Finished job 137.
+24 of 38 steps (63%) done
+Select jobs to execute...
+
+[Wed Mar 10 11:51:29 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_9144-9382.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_9144-9382.calculated
+    jobid: 132
+    wildcards: sample=enterovirus, seg=9144-9382
+
+[Wed Mar 10 11:51:30 2021]
+Finished job 132.
+25 of 38 steps (66%) done
+Select jobs to execute...
+
+[Wed Mar 10 11:51:30 2021]
+rule within_segments:
+    input: /datater/wu/data/enterovirus/dsk/forward_1016-1520.kCountSorted
+    output: /datater/wu/data/enterovirus/primer3/forward_1016-1520.calculated
+    jobid: 128
+    wildcards: sample=enterovirus, seg=1016-1520
+
+[Wed Mar 10 11:51:30 2021]
+Finished job 125.
+26 of 38 steps (68%) done
+[Wed Mar 10 11:51:31 2021]
+Finished job 128.
+27 of 38 steps (71%) done
+[Wed Mar 10 11:51:32 2021]
+Finished job 145.
+28 of 38 steps (74%) done
+[Wed Mar 10 11:51:42 2021]
+Finished job 123.
+29 of 38 steps (76%) done
+[Wed Mar 10 11:51:46 2021]
+Finished job 121.
+30 of 38 steps (79%) done
+[Wed Mar 10 11:51:46 2021]
+Finished job 146.
+31 of 38 steps (82%) done
+[Wed Mar 10 11:51:48 2021]
+Finished job 157.
+32 of 38 steps (84%) done
+[Wed Mar 10 11:51:57 2021]
+Finished job 138.
+33 of 38 steps (87%) done
+[Wed Mar 10 11:51:57 2021]
+Finished job 151.
+34 of 38 steps (89%) done
+[Wed Mar 10 11:52:22 2021]
+Finished job 139.
+35 of 38 steps (92%) done
+[Wed Mar 10 11:52:24 2021]
+Finished job 124.
+36 of 38 steps (95%) done
+[Wed Mar 10 11:52:27 2021]
+Finished job 122.
+37 of 38 steps (97%) done
+Select jobs to execute...
+
+[Wed Mar 10 11:52:27 2021]
+localrule all:
+    input: /datater/wu/data/duplicate_removed/enterovirus.uniq, /datater/wu/data/msa/enterovirus.msa, /datater/wu/data/enterovirus/split_forward/position_3556-4060.fasta, /datater/wu/data/enterovirus/split_forward/position_8382-8886.fasta, /datater/wu/data/enterovirus/split_forward/position_8636-9140.fasta, /datater/wu/data/enterovirus/split_forward/position_6096-6600.fasta, /datater/wu/data/enterovirus/split_forward/position_5588-6092.fasta, /datater/wu/data/enterovirus/split_forward/position_6858-7362.fasta, /datater/wu/data/enterovirus/split_forward/position_7620-8124.fasta, /datater/wu/data/enterovirus/split_forward/position_1016-1520.fasta, /datater/wu/data/enterovirus/split_forward/position_508-1012.fasta, /datater/wu/data/enterovirus/split_forward/position_8890-9394.fasta, /datater/wu/data/enterovirus/split_forward/position_2286-2790.fasta, /datater/wu/data/enterovirus/split_forward/position_9144-9382.fasta, /datater/wu/data/enterovirus/split_forward/position_7366-7870.fasta, /datater/wu/data/enterovirus/split_forward/position_4064-4568.fasta, /datater/wu/data/enterovirus/split_forward/position_3810-4314.fasta, /datater/wu/data/enterovirus/split_forward/position_6604-7108.fasta, /datater/wu/data/enterovirus/split_forward/position_762-1266.fasta, /datater/wu/data/enterovirus/split_forward/position_5080-5584.fasta, /datater/wu/data/enterovirus/split_forward/position_4318-4822.fasta, /datater/wu/data/enterovirus/split_forward/position_2032-2536.fasta, /datater/wu/data/enterovirus/split_forward/position_0-504.fasta, /datater/wu/data/enterovirus/split_forward/position_6350-6854.fasta, /datater/wu/data/enterovirus/split_forward/position_8128-8632.fasta, /datater/wu/data/enterovirus/split_forward/position_1270-1774.fasta, /datater/wu/data/enterovirus/split_forward/position_3048-3552.fasta, /datater/wu/data/enterovirus/split_forward/position_7874-8378.fasta, /datater/wu/data/enterovirus/split_forward/position_5334-5838.fasta, /datater/wu/data/enterovirus/split_forward/position_7112-7616.fasta, /datater/wu/data/enterovirus/split_forward/position_4826-5330.fasta, /datater/wu/data/enterovirus/split_forward/position_2794-3298.fasta, /datater/wu/data/enterovirus/split_forward/position_2540-3044.fasta, /datater/wu/data/enterovirus/split_forward/position_1524-2028.fasta, /datater/wu/data/enterovirus/split_forward/position_254-758.fasta, /datater/wu/data/enterovirus/split_forward/position_1778-2282.fasta, /datater/wu/data/enterovirus/split_forward/position_5842-6346.fasta, /datater/wu/data/enterovirus/split_forward/position_3302-3806.fasta, /datater/wu/data/enterovirus/split_forward/position_4572-5076.fasta, /datater/wu/data/enterovirus/dsk/forward_3556-4060.h5, /datater/wu/data/enterovirus/dsk/forward_8382-8886.h5, /datater/wu/data/enterovirus/dsk/forward_8636-9140.h5, /datater/wu/data/enterovirus/dsk/forward_6096-6600.h5, /datater/wu/data/enterovirus/dsk/forward_5588-6092.h5, /datater/wu/data/enterovirus/dsk/forward_6858-7362.h5, /datater/wu/data/enterovirus/dsk/forward_7620-8124.h5, /datater/wu/data/enterovirus/dsk/forward_1016-1520.h5, /datater/wu/data/enterovirus/dsk/forward_508-1012.h5, /datater/wu/data/enterovirus/dsk/forward_8890-9394.h5, /datater/wu/data/enterovirus/dsk/forward_2286-2790.h5, /datater/wu/data/enterovirus/dsk/forward_9144-9382.h5, /datater/wu/data/enterovirus/dsk/forward_7366-7870.h5, /datater/wu/data/enterovirus/dsk/forward_4064-4568.h5, /datater/wu/data/enterovirus/dsk/forward_3810-4314.h5, /datater/wu/data/enterovirus/dsk/forward_6604-7108.h5, /datater/wu/data/enterovirus/dsk/forward_762-1266.h5, /datater/wu/data/enterovirus/dsk/forward_5080-5584.h5, /datater/wu/data/enterovirus/dsk/forward_4318-4822.h5, /datater/wu/data/enterovirus/dsk/forward_2032-2536.h5, /datater/wu/data/enterovirus/dsk/forward_0-504.h5, /datater/wu/data/enterovirus/dsk/forward_6350-6854.h5, /datater/wu/data/enterovirus/dsk/forward_8128-8632.h5, /datater/wu/data/enterovirus/dsk/forward_1270-1774.h5, /datater/wu/data/enterovirus/dsk/forward_3048-3552.h5, /datater/wu/data/enterovirus/dsk/forward_7874-8378.h5, /datater/wu/data/enterovirus/dsk/forward_5334-5838.h5, /datater/wu/data/enterovirus/dsk/forward_7112-7616.h5, /datater/wu/data/enterovirus/dsk/forward_4826-5330.h5, /datater/wu/data/enterovirus/dsk/forward_2794-3298.h5, /datater/wu/data/enterovirus/dsk/forward_2540-3044.h5, /datater/wu/data/enterovirus/dsk/forward_1524-2028.h5, /datater/wu/data/enterovirus/dsk/forward_254-758.h5, /datater/wu/data/enterovirus/dsk/forward_1778-2282.h5, /datater/wu/data/enterovirus/dsk/forward_5842-6346.h5, /datater/wu/data/enterovirus/dsk/forward_3302-3806.h5, /datater/wu/data/enterovirus/dsk/forward_4572-5076.h5, /datater/wu/data/enterovirus/dsk/forward_3556-4060.kCount, /datater/wu/data/enterovirus/dsk/forward_8382-8886.kCount, /datater/wu/data/enterovirus/dsk/forward_8636-9140.kCount, /datater/wu/data/enterovirus/dsk/forward_6096-6600.kCount, /datater/wu/data/enterovirus/dsk/forward_5588-6092.kCount, /datater/wu/data/enterovirus/dsk/forward_6858-7362.kCount, /datater/wu/data/enterovirus/dsk/forward_7620-8124.kCount, /datater/wu/data/enterovirus/dsk/forward_1016-1520.kCount, /datater/wu/data/enterovirus/dsk/forward_508-1012.kCount, /datater/wu/data/enterovirus/dsk/forward_8890-9394.kCount, /datater/wu/data/enterovirus/dsk/forward_2286-2790.kCount, /datater/wu/data/enterovirus/dsk/forward_9144-9382.kCount, /datater/wu/data/enterovirus/dsk/forward_7366-7870.kCount, /datater/wu/data/enterovirus/dsk/forward_4064-4568.kCount, /datater/wu/data/enterovirus/dsk/forward_3810-4314.kCount, /datater/wu/data/enterovirus/dsk/forward_6604-7108.kCount, /datater/wu/data/enterovirus/dsk/forward_762-1266.kCount, /datater/wu/data/enterovirus/dsk/forward_5080-5584.kCount, /datater/wu/data/enterovirus/dsk/forward_4318-4822.kCount, /datater/wu/data/enterovirus/dsk/forward_2032-2536.kCount, /datater/wu/data/enterovirus/dsk/forward_0-504.kCount, /datater/wu/data/enterovirus/dsk/forward_6350-6854.kCount, /datater/wu/data/enterovirus/dsk/forward_8128-8632.kCount, /datater/wu/data/enterovirus/dsk/forward_1270-1774.kCount, /datater/wu/data/enterovirus/dsk/forward_3048-3552.kCount, /datater/wu/data/enterovirus/dsk/forward_7874-8378.kCount, /datater/wu/data/enterovirus/dsk/forward_5334-5838.kCount, /datater/wu/data/enterovirus/dsk/forward_7112-7616.kCount, /datater/wu/data/enterovirus/dsk/forward_4826-5330.kCount, /datater/wu/data/enterovirus/dsk/forward_2794-3298.kCount, /datater/wu/data/enterovirus/dsk/forward_2540-3044.kCount, /datater/wu/data/enterovirus/dsk/forward_1524-2028.kCount, /datater/wu/data/enterovirus/dsk/forward_254-758.kCount, /datater/wu/data/enterovirus/dsk/forward_1778-2282.kCount, /datater/wu/data/enterovirus/dsk/forward_5842-6346.kCount, /datater/wu/data/enterovirus/dsk/forward_3302-3806.kCount, /datater/wu/data/enterovirus/dsk/forward_4572-5076.kCount, /datater/wu/data/enterovirus/dsk/forward_3556-4060.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_8382-8886.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_8636-9140.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_6096-6600.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_5588-6092.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_6858-7362.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_7620-8124.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_1016-1520.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_508-1012.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_8890-9394.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_2286-2790.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_9144-9382.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_7366-7870.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_4064-4568.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_3810-4314.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_6604-7108.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_762-1266.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_5080-5584.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_4318-4822.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_2032-2536.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_0-504.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_6350-6854.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_8128-8632.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_1270-1774.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_3048-3552.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_7874-8378.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_5334-5838.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_7112-7616.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_4826-5330.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_2794-3298.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_2540-3044.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_1524-2028.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_254-758.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_1778-2282.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_5842-6346.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_3302-3806.kCountSorted, /datater/wu/data/enterovirus/dsk/forward_4572-5076.kCountSorted, /datater/wu/data/enterovirus/primer3/forward_3556-4060.calculated, /datater/wu/data/enterovirus/primer3/forward_8382-8886.calculated, /datater/wu/data/enterovirus/primer3/forward_8636-9140.calculated, /datater/wu/data/enterovirus/primer3/forward_6096-6600.calculated, /datater/wu/data/enterovirus/primer3/forward_5588-6092.calculated, /datater/wu/data/enterovirus/primer3/forward_6858-7362.calculated, /datater/wu/data/enterovirus/primer3/forward_7620-8124.calculated, /datater/wu/data/enterovirus/primer3/forward_1016-1520.calculated, /datater/wu/data/enterovirus/primer3/forward_508-1012.calculated, /datater/wu/data/enterovirus/primer3/forward_8890-9394.calculated, /datater/wu/data/enterovirus/primer3/forward_2286-2790.calculated, /datater/wu/data/enterovirus/primer3/forward_9144-9382.calculated, /datater/wu/data/enterovirus/primer3/forward_7366-7870.calculated, /datater/wu/data/enterovirus/primer3/forward_4064-4568.calculated, /datater/wu/data/enterovirus/primer3/forward_3810-4314.calculated, /datater/wu/data/enterovirus/primer3/forward_6604-7108.calculated, /datater/wu/data/enterovirus/primer3/forward_762-1266.calculated, /datater/wu/data/enterovirus/primer3/forward_5080-5584.calculated, /datater/wu/data/enterovirus/primer3/forward_4318-4822.calculated, /datater/wu/data/enterovirus/primer3/forward_2032-2536.calculated, /datater/wu/data/enterovirus/primer3/forward_0-504.calculated, /datater/wu/data/enterovirus/primer3/forward_6350-6854.calculated, /datater/wu/data/enterovirus/primer3/forward_8128-8632.calculated, /datater/wu/data/enterovirus/primer3/forward_1270-1774.calculated, /datater/wu/data/enterovirus/primer3/forward_3048-3552.calculated, /datater/wu/data/enterovirus/primer3/forward_7874-8378.calculated, /datater/wu/data/enterovirus/primer3/forward_5334-5838.calculated, /datater/wu/data/enterovirus/primer3/forward_7112-7616.calculated, /datater/wu/data/enterovirus/primer3/forward_4826-5330.calculated, /datater/wu/data/enterovirus/primer3/forward_2794-3298.calculated, /datater/wu/data/enterovirus/primer3/forward_2540-3044.calculated, /datater/wu/data/enterovirus/primer3/forward_1524-2028.calculated, /datater/wu/data/enterovirus/primer3/forward_254-758.calculated, /datater/wu/data/enterovirus/primer3/forward_1778-2282.calculated, /datater/wu/data/enterovirus/primer3/forward_5842-6346.calculated, /datater/wu/data/enterovirus/primer3/forward_3302-3806.calculated, /datater/wu/data/enterovirus/primer3/forward_4572-5076.calculated
+    jobid: 0
+
+[Wed Mar 10 11:52:27 2021]
+Finished job 0.
+38 of 38 steps (100%) done
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-10T114936.794696.snakemake.log

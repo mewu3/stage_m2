@@ -1,0 +1,32 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	basic
+	2
+Select jobs to execute...
+
+[Tue May  4 14:23:08 2021]
+rule basic:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/evaluation/allOligo_after2.tsv, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/aceID-taxID-species.tsv
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/evaluation/allKmerCount.sorted.calculated.filtered.allOligo.set.coverage
+    jobid: 1
+    wildcards: sample=enterovirus
+
+[Tue May  4 14:23:11 2021]
+Finished job 1.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Tue May  4 14:23:11 2021]
+localrule all:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/evaluation/allKmerCount.sorted.calculated.filtered.allOligo.set.coverage
+    jobid: 0
+
+[Tue May  4 14:23:11 2021]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /datater/wu/MSSPE/.snakemake/log/2021-05-04T142308.402950.snakemake.log

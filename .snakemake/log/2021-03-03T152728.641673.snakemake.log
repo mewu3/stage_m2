@@ -1,0 +1,4 @@
+NameError in line 6 of /datater/wu/stage_m2/rules/oligo_filter.smk:
+name 'prefix' is not defined
+  File "/datater/wu/stage_m2/Snakefile", line 111, in <module>
+  File "/datater/wu/stage_m2/rules/oligo_filter.smk", line 6, in <module>

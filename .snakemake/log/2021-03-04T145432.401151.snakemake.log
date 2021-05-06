@@ -1,0 +1,212 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	43	dskForward
+	43	dskForwardOutput
+	43	dskForwardOutputSort
+	43	dskReverse
+	43	dskReverseOutput
+	43	dskReverseOutputSort
+	43	dskTm_calculate
+	302
+Select jobs to execute...
+
+[Thu Mar  4 14:54:33 2021]
+rule dskForward:
+    input: /home/meijun/Documents/data/splitFiles/zika/forward/2259-2760.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/forward/2259-2760.dsk
+    jobid: 33
+    wildcards: sample=zika, seg=2259-2760
+
+
+[Thu Mar  4 14:54:33 2021]
+rule dskForward:
+    input: /home/meijun/Documents/data/splitFiles/zika/forward/9789-10290.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/forward/9789-10290.dsk
+    jobid: 18
+    wildcards: sample=zika, seg=9789-10290
+
+
+[Thu Mar  4 14:54:33 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/8032-8533.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/8032-8533.dsk
+    jobid: 63
+    wildcards: sample=zika, seg=8032-8533
+
+
+[Thu Mar  4 14:54:33 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/502-1003.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/502-1003.dsk
+    jobid: 92
+    wildcards: sample=zika, seg=502-1003
+
+
+[Thu Mar  4 14:54:33 2021]
+rule dskForward:
+    input: /home/meijun/Documents/data/splitFiles/zika/forward/8032-8533.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/forward/8032-8533.dsk
+    jobid: 20
+    wildcards: sample=zika, seg=8032-8533
+
+
+[Thu Mar  4 14:54:33 2021]
+rule dskForward:
+    input: /home/meijun/Documents/data/splitFiles/zika/forward/10542-10780.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/forward/10542-10780.dsk
+    jobid: 35
+    wildcards: sample=zika, seg=10542-10780
+
+
+[Thu Mar  4 14:54:33 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/2510-3011.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/2510-3011.dsk
+    jobid: 65
+    wildcards: sample=zika, seg=2510-3011
+
+
+[Thu Mar  4 14:54:33 2021]
+rule dskForward:
+    input: /home/meijun/Documents/data/splitFiles/zika/forward/0-501.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/forward/0-501.dsk
+    jobid: 43
+    wildcards: sample=zika, seg=0-501
+
+
+[Thu Mar  4 14:54:33 2021]
+rule dskForward:
+    input: /home/meijun/Documents/data/splitFiles/zika/forward/6275-6776.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/forward/6275-6776.dsk
+    jobid: 19
+    wildcards: sample=zika, seg=6275-6776
+
+
+[Thu Mar  4 14:54:33 2021]
+rule dskForward:
+    input: /home/meijun/Documents/data/splitFiles/zika/forward/9036-9537.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/forward/9036-9537.dsk
+    jobid: 34
+    wildcards: sample=zika, seg=9036-9537
+
+
+[Thu Mar  4 14:54:33 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/4267-4768.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/4267-4768.dsk
+    jobid: 64
+    wildcards: sample=zika, seg=4267-4768
+
+
+[Thu Mar  4 14:54:33 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/753-1254.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/753-1254.dsk
+    jobid: 93
+    wildcards: sample=zika, seg=753-1254
+
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 1 of /home/meijun/Documents/stage_m2/rules/kmer_dsk.smk:
+Job Missing files after 5 seconds:
+/home/meijun/Documents/data/kmerCounting/zika/forward/8032-8533.dsk
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 20 completed successfully, but some output files are missing. 20
+  File "/home/meijun/Programmes/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 583, in handle_job_success
+  File "/home/meijun/Programmes/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 252, in handle_job_success
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 1 of /home/meijun/Documents/stage_m2/rules/kmer_dsk.smk:
+Job Missing files after 5 seconds:
+/home/meijun/Documents/data/kmerCounting/zika/forward/2259-2760.dsk
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 33 completed successfully, but some output files are missing. 33
+  File "/home/meijun/Programmes/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 583, in handle_job_success
+  File "/home/meijun/Programmes/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 252, in handle_job_success
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 32 of /home/meijun/Documents/stage_m2/rules/kmer_dsk.smk:
+Job Missing files after 5 seconds:
+/home/meijun/Documents/data/kmerCounting/zika/reverse/2510-3011.dsk
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 65 completed successfully, but some output files are missing. 65
+  File "/home/meijun/Programmes/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 583, in handle_job_success
+  File "/home/meijun/Programmes/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 252, in handle_job_success
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 1 of /home/meijun/Documents/stage_m2/rules/kmer_dsk.smk:
+Job Missing files after 5 seconds:
+/home/meijun/Documents/data/kmerCounting/zika/forward/0-501.dsk
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 43 completed successfully, but some output files are missing. 43
+  File "/home/meijun/Programmes/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 583, in handle_job_success
+  File "/home/meijun/Programmes/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 252, in handle_job_success
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 1 of /home/meijun/Documents/stage_m2/rules/kmer_dsk.smk:
+Job Missing files after 5 seconds:
+/home/meijun/Documents/data/kmerCounting/zika/forward/10542-10780.dsk
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 35 completed successfully, but some output files are missing. 35
+  File "/home/meijun/Programmes/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 583, in handle_job_success
+  File "/home/meijun/Programmes/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 252, in handle_job_success
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 32 of /home/meijun/Documents/stage_m2/rules/kmer_dsk.smk:
+Job Missing files after 5 seconds:
+/home/meijun/Documents/data/kmerCounting/zika/reverse/502-1003.dsk
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 92 completed successfully, but some output files are missing. 92
+  File "/home/meijun/Programmes/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 583, in handle_job_success
+  File "/home/meijun/Programmes/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 252, in handle_job_success
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 1 of /home/meijun/Documents/stage_m2/rules/kmer_dsk.smk:
+Job Missing files after 5 seconds:
+/home/meijun/Documents/data/kmerCounting/zika/forward/9036-9537.dsk
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 34 completed successfully, but some output files are missing. 34
+  File "/home/meijun/Programmes/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 583, in handle_job_success
+  File "/home/meijun/Programmes/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 252, in handle_job_success
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 1 of /home/meijun/Documents/stage_m2/rules/kmer_dsk.smk:
+Job Missing files after 5 seconds:
+/home/meijun/Documents/data/kmerCounting/zika/forward/9789-10290.dsk
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 18 completed successfully, but some output files are missing. 18
+  File "/home/meijun/Programmes/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 583, in handle_job_success
+  File "/home/meijun/Programmes/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 252, in handle_job_success
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 32 of /home/meijun/Documents/stage_m2/rules/kmer_dsk.smk:
+Job Missing files after 5 seconds:
+/home/meijun/Documents/data/kmerCounting/zika/reverse/753-1254.dsk
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 93 completed successfully, but some output files are missing. 93
+  File "/home/meijun/Programmes/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 583, in handle_job_success
+  File "/home/meijun/Programmes/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 252, in handle_job_success
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 32 of /home/meijun/Documents/stage_m2/rules/kmer_dsk.smk:
+Job Missing files after 5 seconds:
+/home/meijun/Documents/data/kmerCounting/zika/reverse/8032-8533.dsk
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 63 completed successfully, but some output files are missing. 63
+  File "/home/meijun/Programmes/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 583, in handle_job_success
+  File "/home/meijun/Programmes/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 252, in handle_job_success
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 1 of /home/meijun/Documents/stage_m2/rules/kmer_dsk.smk:
+Job Missing files after 5 seconds:
+/home/meijun/Documents/data/kmerCounting/zika/forward/6275-6776.dsk
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 19 completed successfully, but some output files are missing. 19
+  File "/home/meijun/Programmes/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 583, in handle_job_success
+  File "/home/meijun/Programmes/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 252, in handle_job_success
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 32 of /home/meijun/Documents/stage_m2/rules/kmer_dsk.smk:
+Job Missing files after 5 seconds:
+/home/meijun/Documents/data/kmerCounting/zika/reverse/4267-4768.dsk
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 64 completed successfully, but some output files are missing. 64
+  File "/home/meijun/Programmes/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 583, in handle_job_success
+  File "/home/meijun/Programmes/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 252, in handle_job_success
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/meijun/Documents/stage_m2/.snakemake/log/2021-03-04T145432.401151.snakemake.log

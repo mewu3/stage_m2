@@ -1,0 +1,4015 @@
+Building DAG of jobs...
+Updating job filtering2.
+Updating job filtering2.
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	80	calculateKmer_sort
+	2	checkHeterodimer
+	80	countKmer1
+	80	countKmer2
+	2	evaluation2
+	80	filtering1
+	2	filtering2
+	2	filtering3
+	2	specific1
+	2	specific3
+	2	specific4
+	335
+Select jobs to execute...
+
+[Sun Apr 25 21:41:32 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse7781-8282.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7781-8282.jf
+    jobid: 317
+    wildcards: sample=zika, seg=7781-8282
+
+
+[Sun Apr 25 21:41:32 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse7620-8124.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse7620-8124.jf
+    jobid: 109
+    wildcards: sample=enterovirus, seg=7620-8124
+
+
+[Sun Apr 25 21:41:32 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse3556-4060.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse3556-4060.jf
+    jobid: 141
+    wildcards: sample=enterovirus, seg=3556-4060
+
+
+[Sun Apr 25 21:41:32 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse3810-4314.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse3810-4314.jf
+    jobid: 113
+    wildcards: sample=enterovirus, seg=3810-4314
+
+
+[Sun Apr 25 21:41:32 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse8032-8533.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8032-8533.jf
+    jobid: 229
+    wildcards: sample=zika, seg=8032-8533
+
+
+[Sun Apr 25 21:41:32 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse6526-7027.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6526-7027.jf
+    jobid: 257
+    wildcards: sample=zika, seg=6526-7027
+
+
+[Sun Apr 25 21:41:32 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse7366-7870.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse7366-7870.jf
+    jobid: 65
+    wildcards: sample=enterovirus, seg=7366-7870
+
+
+[Sun Apr 25 21:41:32 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse2761-3262.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2761-3262.jf
+    jobid: 333
+    wildcards: sample=zika, seg=2761-3262
+
+
+[Sun Apr 25 21:41:32 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse1255-1756.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1255-1756.jf
+    jobid: 201
+    wildcards: sample=zika, seg=1255-1756
+
+
+[Sun Apr 25 21:41:32 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse4318-4822.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse4318-4822.jf
+    jobid: 157
+    wildcards: sample=enterovirus, seg=4318-4822
+
+
+[Sun Apr 25 21:41:32 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse5522-6023.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5522-6023.jf
+    jobid: 261
+    wildcards: sample=zika, seg=5522-6023
+
+
+[Sun Apr 25 21:41:32 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse508-1012.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse508-1012.jf
+    jobid: 69
+    wildcards: sample=enterovirus, seg=508-1012
+
+[Sun Apr 25 21:48:05 2021]
+Finished job 157.
+1 of 335 steps (0.30%) done
+Select jobs to execute...
+
+[Sun Apr 25 21:48:05 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse2032-2536.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse2032-2536.jf
+    jobid: 57
+    wildcards: sample=enterovirus, seg=2032-2536
+
+[Sun Apr 25 21:48:09 2021]
+Finished job 109.
+2 of 335 steps (0.60%) done
+Select jobs to execute...
+
+[Sun Apr 25 21:48:09 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse3765-4266.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3765-4266.jf
+    jobid: 281
+    wildcards: sample=zika, seg=3765-4266
+
+[Sun Apr 25 21:48:09 2021]
+Finished job 113.
+3 of 335 steps (0.90%) done
+Select jobs to execute...
+
+[Sun Apr 25 21:48:09 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse4769-5270.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4769-5270.jf
+    jobid: 221
+    wildcards: sample=zika, seg=4769-5270
+
+[Sun Apr 25 21:48:13 2021]
+Finished job 141.
+4 of 335 steps (1%) done
+Select jobs to execute...
+
+[Sun Apr 25 21:48:13 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse4064-4568.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse4064-4568.jf
+    jobid: 117
+    wildcards: sample=enterovirus, seg=4064-4568
+
+[Sun Apr 25 21:52:44 2021]
+Finished job 65.
+5 of 335 steps (1%) done
+Select jobs to execute...
+
+[Sun Apr 25 21:52:44 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse7366-7870.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse7366-7870.Kmercount.txt
+    jobid: 64
+    wildcards: sample=enterovirus, seg=7366-7870
+
+[Sun Apr 25 21:52:44 2021]
+Finished job 64.
+6 of 335 steps (2%) done
+Select jobs to execute...
+
+[Sun Apr 25 21:52:44 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse9287-9788.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9287-9788.jf
+    jobid: 289
+    wildcards: sample=zika, seg=9287-9788
+
+[Sun Apr 25 21:57:34 2021]
+Finished job 57.
+7 of 335 steps (2%) done
+Select jobs to execute...
+
+[Sun Apr 25 21:57:34 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse3012-3513.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3012-3513.jf
+    jobid: 205
+    wildcards: sample=zika, seg=3012-3513
+
+[Sun Apr 25 22:04:11 2021]
+Finished job 69.
+8 of 335 steps (2%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:04:11 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse6604-7108.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse6604-7108.jf
+    jobid: 125
+    wildcards: sample=enterovirus, seg=6604-7108
+
+[Sun Apr 25 22:04:31 2021]
+Finished job 261.
+9 of 335 steps (3%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:04:31 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse5020-5521.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5020-5521.jf
+    jobid: 297
+    wildcards: sample=zika, seg=5020-5521
+
+[Sun Apr 25 22:04:33 2021]
+Finished job 333.
+10 of 335 steps (3%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:04:33 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2761-3262.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2761-3262.Kmercount.txt
+    jobid: 332
+    wildcards: sample=zika, seg=2761-3262
+
+[Sun Apr 25 22:04:33 2021]
+Finished job 332.
+11 of 335 steps (3%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:04:33 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse5334-5838.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse5334-5838.jf
+    jobid: 161
+    wildcards: sample=enterovirus, seg=5334-5838
+
+[Sun Apr 25 22:04:36 2021]
+Finished job 317.
+12 of 335 steps (4%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:04:36 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse753-1254.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse753-1254.jf
+    jobid: 325
+    wildcards: sample=zika, seg=753-1254
+
+[Sun Apr 25 22:04:46 2021]
+Finished job 229.
+13 of 335 steps (4%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:04:46 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8032-8533.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8032-8533.Kmercount.txt
+    jobid: 228
+    wildcards: sample=zika, seg=8032-8533
+
+[Sun Apr 25 22:04:46 2021]
+Finished job 228.
+14 of 335 steps (4%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:04:46 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse3048-3552.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse3048-3552.jf
+    jobid: 133
+    wildcards: sample=enterovirus, seg=3048-3552
+
+[Sun Apr 25 22:05:06 2021]
+Finished job 201.
+15 of 335 steps (4%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:05:06 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse8785-9286.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8785-9286.jf
+    jobid: 213
+    wildcards: sample=zika, seg=8785-9286
+
+[Sun Apr 25 22:05:09 2021]
+Finished job 257.
+16 of 335 steps (5%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:05:09 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse3263-3764.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3263-3764.jf
+    jobid: 177
+    wildcards: sample=zika, seg=3263-3764
+
+[Sun Apr 25 22:09:08 2021]
+Finished job 161.
+17 of 335 steps (5%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:09:08 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse3556-4060.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse3556-4060.Kmercount.txt
+    jobid: 140
+    wildcards: sample=enterovirus, seg=3556-4060
+
+[Sun Apr 25 22:09:08 2021]
+Finished job 140.
+18 of 335 steps (5%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:09:08 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse3556-4060.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse3556-4060.Kmercount.sorted.txt
+    jobid: 139
+    wildcards: sample=enterovirus, seg=3556-4060
+
+[Sun Apr 25 22:09:08 2021]
+Finished job 139.
+19 of 335 steps (6%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:09:08 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse6858-7362.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse6858-7362.jf
+    jobid: 169
+    wildcards: sample=enterovirus, seg=6858-7362
+
+[Sun Apr 25 22:09:29 2021]
+Finished job 133.
+20 of 335 steps (6%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:09:30 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse3048-3552.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse3048-3552.Kmercount.txt
+    jobid: 132
+    wildcards: sample=enterovirus, seg=3048-3552
+
+[Sun Apr 25 22:09:30 2021]
+Finished job 132.
+21 of 335 steps (6%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:09:30 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse7366-7870.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse7366-7870.Kmercount.sorted.txt
+    jobid: 63
+    wildcards: sample=enterovirus, seg=7366-7870
+
+[Sun Apr 25 22:09:30 2021]
+Finished job 63.
+22 of 335 steps (7%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:09:30 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse7366-7870.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse7366-7870.Kmercount.sorted.calculated.txt
+    jobid: 62
+    wildcards: sample=enterovirus, seg=7366-7870
+
+[Sun Apr 25 22:09:37 2021]
+Finished job 62.
+23 of 335 steps (7%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:09:37 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse5588-6092.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse5588-6092.jf
+    jobid: 49
+    wildcards: sample=enterovirus, seg=5588-6092
+
+[Sun Apr 25 22:10:11 2021]
+Finished job 281.
+24 of 335 steps (7%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:10:12 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse1016-1520.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse1016-1520.jf
+    jobid: 73
+    wildcards: sample=enterovirus, seg=1016-1520
+
+[Sun Apr 25 22:10:14 2021]
+Finished job 221.
+25 of 335 steps (7%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:10:14 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse3514-4015.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3514-4015.jf
+    jobid: 197
+    wildcards: sample=zika, seg=3514-4015
+
+[Sun Apr 25 22:10:20 2021]
+Finished job 117.
+26 of 335 steps (8%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:10:20 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse502-1003.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse502-1003.jf
+    jobid: 237
+    wildcards: sample=zika, seg=502-1003
+
+[Sun Apr 25 22:13:01 2021]
+Finished job 125.
+27 of 335 steps (8%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:13:01 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse6604-7108.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse6604-7108.Kmercount.txt
+    jobid: 124
+    wildcards: sample=enterovirus, seg=6604-7108
+
+[Sun Apr 25 22:13:01 2021]
+Finished job 124.
+28 of 335 steps (8%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:13:01 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse2794-3298.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse2794-3298.jf
+    jobid: 153
+    wildcards: sample=enterovirus, seg=2794-3298
+
+[Sun Apr 25 22:13:53 2021]
+Finished job 289.
+29 of 335 steps (9%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:13:53 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9287-9788.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9287-9788.Kmercount.txt
+    jobid: 288
+    wildcards: sample=zika, seg=9287-9788
+
+[Sun Apr 25 22:13:53 2021]
+Finished job 288.
+30 of 335 steps (9%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:13:53 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse4016-4517.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4016-4517.jf
+    jobid: 341
+    wildcards: sample=zika, seg=4016-4517
+
+[Sun Apr 25 22:15:39 2021]
+Finished job 49.
+31 of 335 steps (9%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:15:39 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse7620-8124.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse7620-8124.Kmercount.txt
+    jobid: 108
+    wildcards: sample=enterovirus, seg=7620-8124
+
+[Sun Apr 25 22:15:39 2021]
+Finished job 108.
+32 of 335 steps (10%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:15:39 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse4267-4768.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4267-4768.jf
+    jobid: 273
+    wildcards: sample=zika, seg=4267-4768
+
+[Sun Apr 25 22:16:07 2021]
+Finished job 73.
+33 of 335 steps (10%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:16:07 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse1016-1520.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse1016-1520.Kmercount.txt
+    jobid: 72
+    wildcards: sample=enterovirus, seg=1016-1520
+
+[Sun Apr 25 22:16:07 2021]
+Finished job 72.
+34 of 335 steps (10%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:16:07 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1255-1756.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1255-1756.Kmercount.txt
+    jobid: 200
+    wildcards: sample=zika, seg=1255-1756
+
+[Sun Apr 25 22:16:07 2021]
+Finished job 200.
+35 of 335 steps (10%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:16:07 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1255-1756.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1255-1756.Kmercount.sorted.txt
+    jobid: 199
+    wildcards: sample=zika, seg=1255-1756
+
+[Sun Apr 25 22:16:07 2021]
+Finished job 199.
+36 of 335 steps (11%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:16:07 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1255-1756.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1255-1756.Kmercount.sorted.calculated.txt
+    jobid: 198
+    wildcards: sample=zika, seg=1255-1756
+
+[Sun Apr 25 22:16:09 2021]
+Finished job 198.
+37 of 335 steps (11%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:16:09 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse4826-5330.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse4826-5330.jf
+    jobid: 145
+    wildcards: sample=enterovirus, seg=4826-5330
+
+[Sun Apr 25 22:19:00 2021]
+Finished job 205.
+38 of 335 steps (11%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:19:01 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse4064-4568.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse4064-4568.Kmercount.txt
+    jobid: 116
+    wildcards: sample=enterovirus, seg=4064-4568
+
+[Sun Apr 25 22:19:01 2021]
+Finished job 116.
+39 of 335 steps (12%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:19:01 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse8534-9035.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8534-9035.jf
+    jobid: 245
+    wildcards: sample=zika, seg=8534-9035
+
+[Sun Apr 25 22:19:20 2021]
+Finished job 153.
+40 of 335 steps (12%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:19:20 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse1506-2007.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1506-2007.jf
+    jobid: 185
+    wildcards: sample=zika, seg=1506-2007
+
+[Sun Apr 25 22:19:53 2021]
+Finished job 169.
+41 of 335 steps (12%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:19:53 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse5080-5584.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse5080-5584.jf
+    jobid: 81
+    wildcards: sample=enterovirus, seg=5080-5584
+
+[Sun Apr 25 22:25:12 2021]
+Finished job 297.
+42 of 335 steps (13%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:25:13 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5020-5521.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5020-5521.Kmercount.txt
+    jobid: 296
+    wildcards: sample=zika, seg=5020-5521
+
+[Sun Apr 25 22:25:13 2021]
+Finished job 296.
+43 of 335 steps (13%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:25:13 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5020-5521.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5020-5521.Kmercount.sorted.txt
+    jobid: 295
+    wildcards: sample=zika, seg=5020-5521
+
+[Sun Apr 25 22:25:13 2021]
+Finished job 295.
+44 of 335 steps (13%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:25:13 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse6096-6600.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse6096-6600.jf
+    jobid: 137
+    wildcards: sample=enterovirus, seg=6096-6600
+
+[Sun Apr 25 22:25:30 2021]
+Finished job 325.
+45 of 335 steps (13%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:25:30 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse6275-6776.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6275-6776.jf
+    jobid: 305
+    wildcards: sample=zika, seg=6275-6776
+
+[Sun Apr 25 22:26:31 2021]
+Finished job 213.
+46 of 335 steps (14%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:26:31 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2761-3262.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2761-3262.Kmercount.sorted.txt
+    jobid: 331
+    wildcards: sample=zika, seg=2761-3262
+
+[Sun Apr 25 22:26:31 2021]
+Finished job 331.
+47 of 335 steps (14%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:26:31 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse9036-9537.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9036-9537.jf
+    jobid: 253
+    wildcards: sample=zika, seg=9036-9537
+
+[Sun Apr 25 22:26:40 2021]
+Finished job 177.
+48 of 335 steps (14%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:26:40 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3263-3764.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3263-3764.Kmercount.txt
+    jobid: 176
+    wildcards: sample=zika, seg=3263-3764
+
+[Sun Apr 25 22:26:40 2021]
+Finished job 176.
+49 of 335 steps (15%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:26:40 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse2259-2760.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2259-2760.jf
+    jobid: 193
+    wildcards: sample=zika, seg=2259-2760
+
+[Sun Apr 25 22:30:45 2021]
+Finished job 81.
+50 of 335 steps (15%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:30:45 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse5080-5584.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse5080-5584.Kmercount.txt
+    jobid: 80
+    wildcards: sample=enterovirus, seg=5080-5584
+
+[Sun Apr 25 22:30:45 2021]
+Finished job 80.
+51 of 335 steps (15%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:30:45 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse5080-5584.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse5080-5584.Kmercount.sorted.txt
+    jobid: 79
+    wildcards: sample=enterovirus, seg=5080-5584
+
+[Sun Apr 25 22:30:45 2021]
+Finished job 79.
+52 of 335 steps (16%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:30:45 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse254-758.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse254-758.jf
+    jobid: 89
+    wildcards: sample=enterovirus, seg=254-758
+
+[Sun Apr 25 22:31:49 2021]
+Finished job 137.
+53 of 335 steps (16%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:31:49 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse2008-2509.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2008-2509.jf
+    jobid: 313
+    wildcards: sample=zika, seg=2008-2509
+
+[Sun Apr 25 22:33:12 2021]
+Finished job 197.
+54 of 335 steps (16%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:33:12 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse4318-4822.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse4318-4822.Kmercount.txt
+    jobid: 156
+    wildcards: sample=enterovirus, seg=4318-4822
+
+[Sun Apr 25 22:33:12 2021]
+Finished job 156.
+55 of 335 steps (16%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:33:12 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse4318-4822.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse4318-4822.Kmercount.sorted.txt
+    jobid: 155
+    wildcards: sample=enterovirus, seg=4318-4822
+
+[Sun Apr 25 22:33:12 2021]
+Finished job 155.
+56 of 335 steps (17%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:33:12 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse4318-4822.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse4318-4822.Kmercount.sorted.calculated.txt
+    jobid: 154
+    wildcards: sample=enterovirus, seg=4318-4822
+
+[Sun Apr 25 22:33:17 2021]
+Finished job 154.
+57 of 335 steps (17%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:33:17 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4769-5270.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4769-5270.Kmercount.txt
+    jobid: 220
+    wildcards: sample=zika, seg=4769-5270
+
+[Sun Apr 25 22:33:17 2021]
+Finished job 220.
+58 of 335 steps (17%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:33:17 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse2032-2536.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse2032-2536.Kmercount.txt
+    jobid: 56
+    wildcards: sample=enterovirus, seg=2032-2536
+
+[Sun Apr 25 22:33:17 2021]
+Finished job 56.
+59 of 335 steps (18%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:33:17 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3263-3764.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3263-3764.Kmercount.sorted.txt
+    jobid: 175
+    wildcards: sample=zika, seg=3263-3764
+
+[Sun Apr 25 22:33:17 2021]
+Finished job 175.
+60 of 335 steps (18%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:33:17 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse3810-4314.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse3810-4314.Kmercount.txt
+    jobid: 112
+    wildcards: sample=enterovirus, seg=3810-4314
+
+[Sun Apr 25 22:33:17 2021]
+Finished job 112.
+61 of 335 steps (18%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:33:17 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse6350-6854.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse6350-6854.jf
+    jobid: 45
+    wildcards: sample=enterovirus, seg=6350-6854
+
+[Sun Apr 25 22:34:18 2021]
+Finished job 237.
+62 of 335 steps (19%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:34:18 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse1270-1774.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse1270-1774.jf
+    jobid: 105
+    wildcards: sample=enterovirus, seg=1270-1774
+
+[Sun Apr 25 22:34:42 2021]
+Finished job 89.
+63 of 335 steps (19%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:34:42 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse7874-8378.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse7874-8378.jf
+    jobid: 97
+    wildcards: sample=enterovirus, seg=7874-8378
+
+[Sun Apr 25 22:38:34 2021]
+Finished job 341.
+64 of 335 steps (19%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:38:34 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse762-1266.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse762-1266.jf
+    jobid: 37
+    wildcards: sample=enterovirus, seg=762-1266
+
+[Sun Apr 25 22:39:28 2021]
+Finished job 145.
+65 of 335 steps (19%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:39:28 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse2286-2790.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse2286-2790.jf
+    jobid: 165
+    wildcards: sample=enterovirus, seg=2286-2790
+
+[Sun Apr 25 22:40:27 2021]
+Finished job 273.
+66 of 335 steps (20%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:40:27 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8032-8533.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8032-8533.Kmercount.sorted.txt
+    jobid: 227
+    wildcards: sample=zika, seg=8032-8533
+
+[Sun Apr 25 22:40:27 2021]
+Finished job 227.
+67 of 335 steps (20%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:40:27 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse5773-6274.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5773-6274.jf
+    jobid: 265
+    wildcards: sample=zika, seg=5773-6274
+
+[Sun Apr 25 22:41:18 2021]
+Finished job 105.
+68 of 335 steps (20%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:41:18 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2761-3262.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2761-3262.Kmercount.sorted.calculated.txt
+    jobid: 330
+    wildcards: sample=zika, seg=2761-3262
+
+[Sun Apr 25 22:41:19 2021]
+Finished job 330.
+69 of 335 steps (21%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:41:19 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse7028-7529.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7028-7529.jf
+    jobid: 209
+    wildcards: sample=zika, seg=7028-7529
+
+[Sun Apr 25 22:41:22 2021]
+Finished job 245.
+70 of 335 steps (21%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:41:22 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse2540-3044.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse2540-3044.jf
+    jobid: 41
+    wildcards: sample=enterovirus, seg=2540-3044
+
+[Sun Apr 25 22:41:35 2021]
+Finished job 185.
+71 of 335 steps (21%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:41:35 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse0-504.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse0-504.jf
+    jobid: 149
+    wildcards: sample=enterovirus, seg=0-504
+
+[Sun Apr 25 22:41:42 2021]
+Finished job 97.
+72 of 335 steps (21%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:41:42 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse9144-9374.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse9144-9374.jf
+    jobid: 29
+    wildcards: sample=enterovirus, seg=9144-9374
+
+[Sun Apr 25 22:43:10 2021]
+Finished job 45.
+73 of 335 steps (22%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:43:10 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse3810-4314.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse3810-4314.Kmercount.sorted.txt
+    jobid: 111
+    wildcards: sample=enterovirus, seg=3810-4314
+
+[Sun Apr 25 22:43:10 2021]
+Finished job 111.
+74 of 335 steps (22%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:43:11 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5522-6023.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5522-6023.Kmercount.txt
+    jobid: 260
+    wildcards: sample=zika, seg=5522-6023
+
+[Sun Apr 25 22:43:11 2021]
+Finished job 260.
+75 of 335 steps (22%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:43:11 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse6350-6854.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse6350-6854.Kmercount.txt
+    jobid: 44
+    wildcards: sample=enterovirus, seg=6350-6854
+
+[Sun Apr 25 22:43:11 2021]
+Finished job 44.
+76 of 335 steps (23%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:43:11 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse1270-1774.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse1270-1774.Kmercount.txt
+    jobid: 104
+    wildcards: sample=enterovirus, seg=1270-1774
+
+[Sun Apr 25 22:43:11 2021]
+Finished job 104.
+77 of 335 steps (23%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:43:11 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse7874-8378.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse7874-8378.Kmercount.txt
+    jobid: 96
+    wildcards: sample=enterovirus, seg=7874-8378
+
+[Sun Apr 25 22:43:11 2021]
+Finished job 96.
+78 of 335 steps (23%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:43:11 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5522-6023.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5522-6023.Kmercount.sorted.txt
+    jobid: 259
+    wildcards: sample=zika, seg=5522-6023
+
+[Sun Apr 25 22:43:11 2021]
+Finished job 259.
+79 of 335 steps (24%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:43:11 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse3810-4314.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse3810-4314.Kmercount.sorted.calculated.txt
+    jobid: 110
+    wildcards: sample=enterovirus, seg=3810-4314
+
+[Sun Apr 25 22:43:15 2021]
+Finished job 110.
+80 of 335 steps (24%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:43:15 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse1270-1774.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse1270-1774.Kmercount.sorted.txt
+    jobid: 103
+    wildcards: sample=enterovirus, seg=1270-1774
+
+[Sun Apr 25 22:43:15 2021]
+Finished job 103.
+81 of 335 steps (24%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:43:15 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse6350-6854.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse6350-6854.Kmercount.sorted.txt
+    jobid: 43
+    wildcards: sample=enterovirus, seg=6350-6854
+
+[Sun Apr 25 22:43:15 2021]
+Finished job 43.
+82 of 335 steps (24%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:43:15 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse254-758.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse254-758.Kmercount.txt
+    jobid: 88
+    wildcards: sample=enterovirus, seg=254-758
+
+[Sun Apr 25 22:43:15 2021]
+Finished job 88.
+83 of 335 steps (25%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:43:15 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse7874-8378.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse7874-8378.Kmercount.sorted.txt
+    jobid: 95
+    wildcards: sample=enterovirus, seg=7874-8378
+
+[Sun Apr 25 22:43:15 2021]
+Finished job 95.
+84 of 335 steps (25%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:43:15 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1506-2007.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1506-2007.Kmercount.txt
+    jobid: 184
+    wildcards: sample=zika, seg=1506-2007
+
+[Sun Apr 25 22:43:15 2021]
+Finished job 184.
+85 of 335 steps (25%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:43:15 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8534-9035.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8534-9035.Kmercount.txt
+    jobid: 244
+    wildcards: sample=zika, seg=8534-9035
+
+[Sun Apr 25 22:43:15 2021]
+Finished job 244.
+86 of 335 steps (26%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:43:15 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse1004-1505.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1004-1505.jf
+    jobid: 269
+    wildcards: sample=zika, seg=1004-1505
+
+[Sun Apr 25 22:45:31 2021]
+Finished job 37.
+87 of 335 steps (26%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:45:31 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse762-1266.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse762-1266.Kmercount.txt
+    jobid: 36
+    wildcards: sample=enterovirus, seg=762-1266
+
+[Sun Apr 25 22:45:31 2021]
+Finished job 36.
+88 of 335 steps (26%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:45:31 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse762-1266.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse762-1266.Kmercount.sorted.txt
+    jobid: 35
+    wildcards: sample=enterovirus, seg=762-1266
+
+[Sun Apr 25 22:45:31 2021]
+Finished job 35.
+89 of 335 steps (27%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:45:31 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse3302-3806.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse3302-3806.jf
+    jobid: 121
+    wildcards: sample=enterovirus, seg=3302-3806
+
+[Sun Apr 25 22:46:23 2021]
+Finished job 165.
+90 of 335 steps (27%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:46:23 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse2286-2790.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse2286-2790.Kmercount.txt
+    jobid: 164
+    wildcards: sample=enterovirus, seg=2286-2790
+
+[Sun Apr 25 22:46:23 2021]
+Finished job 164.
+91 of 335 steps (27%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:46:23 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse2286-2790.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse2286-2790.Kmercount.sorted.txt
+    jobid: 163
+    wildcards: sample=enterovirus, seg=2286-2790
+
+[Sun Apr 25 22:46:23 2021]
+Finished job 163.
+92 of 335 steps (27%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:46:23 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8032-8533.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8032-8533.Kmercount.sorted.calculated.txt
+    jobid: 226
+    wildcards: sample=zika, seg=8032-8533
+
+[Sun Apr 25 22:46:24 2021]
+Finished job 226.
+93 of 335 steps (28%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:46:24 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4016-4517.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4016-4517.Kmercount.txt
+    jobid: 340
+    wildcards: sample=zika, seg=4016-4517
+
+[Sun Apr 25 22:46:24 2021]
+Finished job 340.
+94 of 335 steps (28%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:46:24 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse2286-2790.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse2286-2790.Kmercount.sorted.calculated.txt
+    jobid: 162
+    wildcards: sample=enterovirus, seg=2286-2790
+
+[Sun Apr 25 22:46:29 2021]
+Finished job 162.
+95 of 335 steps (28%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:46:29 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse502-1003.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse502-1003.Kmercount.txt
+    jobid: 236
+    wildcards: sample=zika, seg=502-1003
+
+[Sun Apr 25 22:46:29 2021]
+Finished job 236.
+96 of 335 steps (29%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:46:29 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse762-1266.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse762-1266.Kmercount.sorted.calculated.txt
+    jobid: 34
+    wildcards: sample=enterovirus, seg=762-1266
+
+[Sun Apr 25 22:46:34 2021]
+Finished job 34.
+97 of 335 steps (29%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:46:34 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8534-9035.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8534-9035.Kmercount.sorted.txt
+    jobid: 243
+    wildcards: sample=zika, seg=8534-9035
+
+[Sun Apr 25 22:46:34 2021]
+Finished job 243.
+98 of 335 steps (29%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:46:34 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8534-9035.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8534-9035.Kmercount.sorted.calculated.txt
+    jobid: 242
+    wildcards: sample=zika, seg=8534-9035
+
+[Sun Apr 25 22:46:35 2021]
+Finished job 242.
+99 of 335 steps (30%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:46:35 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5522-6023.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5522-6023.Kmercount.sorted.calculated.txt
+    jobid: 258
+    wildcards: sample=zika, seg=5522-6023
+
+[Sun Apr 25 22:46:36 2021]
+Finished job 258.
+100 of 335 steps (30%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:46:36 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse2794-3298.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse2794-3298.Kmercount.txt
+    jobid: 152
+    wildcards: sample=enterovirus, seg=2794-3298
+
+[Sun Apr 25 22:46:36 2021]
+Finished job 152.
+101 of 335 steps (30%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:46:36 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse2794-3298.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse2794-3298.Kmercount.sorted.txt
+    jobid: 151
+    wildcards: sample=enterovirus, seg=2794-3298
+
+[Sun Apr 25 22:46:36 2021]
+Finished job 151.
+102 of 335 steps (30%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:46:36 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse2794-3298.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse2794-3298.Kmercount.sorted.calculated.txt
+    jobid: 150
+    wildcards: sample=enterovirus, seg=2794-3298
+
+[Sun Apr 25 22:46:38 2021]
+Finished job 150.
+103 of 335 steps (31%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:46:38 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse1524-2028.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse1524-2028.jf
+    jobid: 101
+    wildcards: sample=enterovirus, seg=1524-2028
+
+[Sun Apr 25 22:48:10 2021]
+Finished job 305.
+104 of 335 steps (31%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:48:10 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6275-6776.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6275-6776.Kmercount.txt
+    jobid: 304
+    wildcards: sample=zika, seg=6275-6776
+
+[Sun Apr 25 22:48:10 2021]
+Finished job 304.
+105 of 335 steps (31%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:48:10 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6275-6776.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6275-6776.Kmercount.sorted.txt
+    jobid: 303
+    wildcards: sample=zika, seg=6275-6776
+
+[Sun Apr 25 22:48:10 2021]
+Finished job 303.
+106 of 335 steps (32%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:48:10 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6275-6776.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6275-6776.Kmercount.sorted.calculated.txt
+    jobid: 302
+    wildcards: sample=zika, seg=6275-6776
+
+[Sun Apr 25 22:48:11 2021]
+Finished job 302.
+107 of 335 steps (32%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:48:11 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3514-4015.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3514-4015.Kmercount.txt
+    jobid: 196
+    wildcards: sample=zika, seg=3514-4015
+
+[Sun Apr 25 22:48:11 2021]
+Finished job 196.
+108 of 335 steps (32%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:48:11 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse254-758.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse254-758.Kmercount.sorted.txt
+    jobid: 87
+    wildcards: sample=enterovirus, seg=254-758
+
+[Sun Apr 25 22:48:12 2021]
+Finished job 87.
+109 of 335 steps (33%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:48:12 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse6350-6854.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse6350-6854.Kmercount.sorted.calculated.txt
+    jobid: 42
+    wildcards: sample=enterovirus, seg=6350-6854
+
+[Sun Apr 25 22:48:16 2021]
+Finished job 42.
+110 of 335 steps (33%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:48:16 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse1270-1774.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse1270-1774.Kmercount.sorted.calculated.txt
+    jobid: 102
+    wildcards: sample=enterovirus, seg=1270-1774
+
+[Sun Apr 25 22:48:20 2021]
+Finished job 102.
+111 of 335 steps (33%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:48:20 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse5334-5838.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse5334-5838.Kmercount.txt
+    jobid: 160
+    wildcards: sample=enterovirus, seg=5334-5838
+
+[Sun Apr 25 22:48:20 2021]
+Finished job 160.
+112 of 335 steps (33%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:48:20 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3012-3513.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3012-3513.Kmercount.txt
+    jobid: 204
+    wildcards: sample=zika, seg=3012-3513
+
+[Sun Apr 25 22:48:20 2021]
+Finished job 204.
+113 of 335 steps (34%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:48:21 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse7530-8031.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7530-8031.jf
+    jobid: 321
+    wildcards: sample=zika, seg=7530-8031
+
+[Sun Apr 25 22:49:07 2021]
+Finished job 193.
+114 of 335 steps (34%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:49:07 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse0-501.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse0-501.jf
+    jobid: 277
+    wildcards: sample=zika, seg=0-501
+
+[Sun Apr 25 22:50:02 2021]
+Finished job 41.
+115 of 335 steps (34%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:50:02 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse8128-8632.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse8128-8632.jf
+    jobid: 173
+    wildcards: sample=enterovirus, seg=8128-8632
+
+[Sun Apr 25 22:50:56 2021]
+Finished job 253.
+116 of 335 steps (35%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:50:56 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse8636-9140.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse8636-9140.jf
+    jobid: 53
+    wildcards: sample=enterovirus, seg=8636-9140
+
+[Sun Apr 25 22:52:22 2021]
+Finished job 121.
+117 of 335 steps (35%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:52:22 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9036-9537.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9036-9537.Kmercount.txt
+    jobid: 252
+    wildcards: sample=zika, seg=9036-9537
+
+[Sun Apr 25 22:52:22 2021]
+Finished job 252.
+118 of 335 steps (35%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:52:22 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2259-2760.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2259-2760.Kmercount.txt
+    jobid: 192
+    wildcards: sample=zika, seg=2259-2760
+
+[Sun Apr 25 22:52:22 2021]
+Finished job 192.
+119 of 335 steps (36%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:52:22 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2259-2760.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2259-2760.Kmercount.sorted.txt
+    jobid: 191
+    wildcards: sample=zika, seg=2259-2760
+
+[Sun Apr 25 22:52:22 2021]
+Finished job 191.
+120 of 335 steps (36%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:52:22 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9036-9537.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9036-9537.Kmercount.sorted.txt
+    jobid: 251
+    wildcards: sample=zika, seg=9036-9537
+
+[Sun Apr 25 22:52:22 2021]
+Finished job 251.
+121 of 335 steps (36%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:52:22 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9036-9537.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9036-9537.Kmercount.sorted.calculated.txt
+    jobid: 250
+    wildcards: sample=zika, seg=9036-9537
+
+[Sun Apr 25 22:52:23 2021]
+Finished job 250.
+122 of 335 steps (36%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:52:24 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse2540-3044.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse2540-3044.Kmercount.txt
+    jobid: 40
+    wildcards: sample=enterovirus, seg=2540-3044
+
+[Sun Apr 25 22:52:24 2021]
+Finished job 40.
+123 of 335 steps (37%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:52:24 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse3048-3552.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse3048-3552.Kmercount.sorted.txt
+    jobid: 131
+    wildcards: sample=enterovirus, seg=3048-3552
+
+[Sun Apr 25 22:52:24 2021]
+Finished job 131.
+124 of 335 steps (37%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:52:24 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse4572-5076.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse4572-5076.jf
+    jobid: 85
+    wildcards: sample=enterovirus, seg=4572-5076
+
+[Sun Apr 25 22:58:28 2021]
+Finished job 313.
+125 of 335 steps (37%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:58:28 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2008-2509.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2008-2509.Kmercount.txt
+    jobid: 312
+    wildcards: sample=zika, seg=2008-2509
+
+[Sun Apr 25 22:58:29 2021]
+Finished job 312.
+126 of 335 steps (38%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:58:29 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2008-2509.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2008-2509.Kmercount.sorted.txt
+    jobid: 311
+    wildcards: sample=zika, seg=2008-2509
+
+[Sun Apr 25 22:58:29 2021]
+Finished job 311.
+127 of 335 steps (38%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:58:29 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse3302-3806.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse3302-3806.Kmercount.txt
+    jobid: 120
+    wildcards: sample=enterovirus, seg=3302-3806
+
+[Sun Apr 25 22:58:29 2021]
+Finished job 120.
+128 of 335 steps (38%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:58:29 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse3302-3806.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse3302-3806.Kmercount.sorted.txt
+    jobid: 119
+    wildcards: sample=enterovirus, seg=3302-3806
+
+[Sun Apr 25 22:58:29 2021]
+Finished job 119.
+129 of 335 steps (39%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:58:29 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse3302-3806.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse3302-3806.Kmercount.sorted.calculated.txt
+    jobid: 118
+    wildcards: sample=enterovirus, seg=3302-3806
+
+[Sun Apr 25 22:58:30 2021]
+Finished job 118.
+130 of 335 steps (39%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:58:30 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5020-5521.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5020-5521.Kmercount.sorted.calculated.txt
+    jobid: 294
+    wildcards: sample=zika, seg=5020-5521
+
+[Sun Apr 25 22:58:32 2021]
+Finished job 294.
+131 of 335 steps (39%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:58:32 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1506-2007.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1506-2007.Kmercount.sorted.txt
+    jobid: 183
+    wildcards: sample=zika, seg=1506-2007
+
+[Sun Apr 25 22:58:32 2021]
+Finished job 183.
+132 of 335 steps (39%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:58:32 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse7874-8378.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse7874-8378.Kmercount.sorted.calculated.txt
+    jobid: 94
+    wildcards: sample=enterovirus, seg=7874-8378
+
+[Sun Apr 25 22:58:36 2021]
+Finished job 94.
+133 of 335 steps (40%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:58:36 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8785-9286.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8785-9286.Kmercount.txt
+    jobid: 212
+    wildcards: sample=zika, seg=8785-9286
+
+[Sun Apr 25 22:58:36 2021]
+Finished job 212.
+134 of 335 steps (40%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:58:36 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2008-2509.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2008-2509.Kmercount.sorted.calculated.txt
+    jobid: 310
+    wildcards: sample=zika, seg=2008-2509
+
+[Sun Apr 25 22:58:38 2021]
+Finished job 310.
+135 of 335 steps (40%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:58:38 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse10040-10541.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse10040-10541.jf
+    jobid: 189
+    wildcards: sample=zika, seg=10040-10541
+
+[Sun Apr 25 22:59:04 2021]
+Finished job 85.
+136 of 335 steps (41%) done
+Select jobs to execute...
+
+[Sun Apr 25 22:59:04 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse5271-5772.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5271-5772.jf
+    jobid: 217
+    wildcards: sample=zika, seg=5271-5772
+
+[Sun Apr 25 23:00:14 2021]
+Finished job 173.
+137 of 335 steps (41%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:00:14 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse8128-8632.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse8128-8632.Kmercount.txt
+    jobid: 172
+    wildcards: sample=enterovirus, seg=8128-8632
+
+[Sun Apr 25 23:00:14 2021]
+Finished job 172.
+138 of 335 steps (41%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:00:14 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse8128-8632.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse8128-8632.Kmercount.sorted.txt
+    jobid: 171
+    wildcards: sample=enterovirus, seg=8128-8632
+
+[Sun Apr 25 23:00:14 2021]
+Finished job 171.
+139 of 335 steps (41%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:00:14 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse8128-8632.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse8128-8632.Kmercount.sorted.calculated.txt
+    jobid: 170
+    wildcards: sample=enterovirus, seg=8128-8632
+
+[Sun Apr 25 23:00:17 2021]
+Finished job 170.
+140 of 335 steps (42%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:00:17 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse508-1012.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse508-1012.Kmercount.txt
+    jobid: 68
+    wildcards: sample=enterovirus, seg=508-1012
+
+[Sun Apr 25 23:00:17 2021]
+Finished job 68.
+141 of 335 steps (42%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:00:17 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse508-1012.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse508-1012.Kmercount.sorted.txt
+    jobid: 67
+    wildcards: sample=enterovirus, seg=508-1012
+
+[Sun Apr 25 23:00:17 2021]
+Finished job 67.
+142 of 335 steps (42%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:00:17 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse508-1012.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse508-1012.Kmercount.sorted.calculated.txt
+    jobid: 66
+    wildcards: sample=enterovirus, seg=508-1012
+
+[Sun Apr 25 23:00:18 2021]
+Finished job 66.
+143 of 335 steps (43%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:00:18 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse1778-2282.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse1778-2282.jf
+    jobid: 77
+    wildcards: sample=enterovirus, seg=1778-2282
+
+[Sun Apr 25 23:04:55 2021]
+Finished job 149.
+144 of 335 steps (43%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:04:55 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse251-752.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse251-752.jf
+    jobid: 301
+    wildcards: sample=zika, seg=251-752
+
+[Sun Apr 25 23:05:52 2021]
+Finished job 269.
+145 of 335 steps (43%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:05:52 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse7620-8124.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse7620-8124.Kmercount.sorted.txt
+    jobid: 107
+    wildcards: sample=enterovirus, seg=7620-8124
+
+[Sun Apr 25 23:05:52 2021]
+Finished job 107.
+146 of 335 steps (44%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:05:52 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse9538-10039.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9538-10039.jf
+    jobid: 241
+    wildcards: sample=zika, seg=9538-10039
+
+[Sun Apr 25 23:06:29 2021]
+Finished job 265.
+147 of 335 steps (44%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:06:29 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5773-6274.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5773-6274.Kmercount.txt
+    jobid: 264
+    wildcards: sample=zika, seg=5773-6274
+
+[Sun Apr 25 23:06:29 2021]
+Finished job 264.
+148 of 335 steps (44%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:06:29 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8785-9286.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8785-9286.Kmercount.sorted.txt
+    jobid: 211
+    wildcards: sample=zika, seg=8785-9286
+
+[Sun Apr 25 23:06:29 2021]
+Finished job 211.
+149 of 335 steps (44%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:06:29 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse10542-10780.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse10542-10780.jf
+    jobid: 181
+    wildcards: sample=zika, seg=10542-10780
+
+[Sun Apr 25 23:06:29 2021]
+Finished job 77.
+150 of 335 steps (45%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:06:29 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6526-7027.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6526-7027.Kmercount.txt
+    jobid: 256
+    wildcards: sample=zika, seg=6526-7027
+
+[Sun Apr 25 23:06:29 2021]
+Finished job 256.
+151 of 335 steps (45%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:06:29 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse3048-3552.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse3048-3552.Kmercount.sorted.calculated.txt
+    jobid: 130
+    wildcards: sample=enterovirus, seg=3048-3552
+
+[Sun Apr 25 23:06:35 2021]
+Finished job 130.
+152 of 335 steps (45%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:06:35 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse1757-2258.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1757-2258.jf
+    jobid: 249
+    wildcards: sample=zika, seg=1757-2258
+
+[Sun Apr 25 23:06:40 2021]
+Finished job 209.
+153 of 335 steps (46%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:06:40 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse6024-6525.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6024-6525.jf
+    jobid: 309
+    wildcards: sample=zika, seg=6024-6525
+
+[Sun Apr 25 23:07:19 2021]
+Finished job 29.
+154 of 335 steps (46%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:07:19 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4769-5270.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4769-5270.Kmercount.sorted.txt
+    jobid: 219
+    wildcards: sample=zika, seg=4769-5270
+
+[Sun Apr 25 23:07:19 2021]
+Finished job 219.
+155 of 335 steps (46%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:07:19 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse2032-2536.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse2032-2536.Kmercount.sorted.txt
+    jobid: 55
+    wildcards: sample=enterovirus, seg=2032-2536
+
+[Sun Apr 25 23:07:19 2021]
+Finished job 55.
+156 of 335 steps (47%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:07:19 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3263-3764.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3263-3764.Kmercount.sorted.calculated.txt
+    jobid: 174
+    wildcards: sample=zika, seg=3263-3764
+
+[Sun Apr 25 23:07:20 2021]
+Finished job 174.
+157 of 335 steps (47%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:07:20 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse10291-10780.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse10291-10780.jf
+    jobid: 225
+    wildcards: sample=zika, seg=10291-10780
+
+[Sun Apr 25 23:11:49 2021]
+Finished job 277.
+158 of 335 steps (47%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:11:49 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse6096-6600.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse6096-6600.Kmercount.txt
+    jobid: 136
+    wildcards: sample=enterovirus, seg=6096-6600
+
+[Sun Apr 25 23:11:49 2021]
+Finished job 136.
+159 of 335 steps (47%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:11:49 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse8890-9374.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse8890-9374.jf
+    jobid: 61
+    wildcards: sample=enterovirus, seg=8890-9374
+
+[Sun Apr 25 23:12:32 2021]
+Finished job 101.
+160 of 335 steps (48%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:12:32 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse8283-8784.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8283-8784.jf
+    jobid: 285
+    wildcards: sample=zika, seg=8283-8784
+
+[Sun Apr 25 23:13:56 2021]
+Finished job 321.
+161 of 335 steps (48%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:13:56 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse4518-5019.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4518-5019.jf
+    jobid: 329
+    wildcards: sample=zika, seg=4518-5019
+
+[Sun Apr 25 23:14:22 2021]
+Finished job 53.
+162 of 335 steps (48%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:22 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse6096-6600.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse6096-6600.Kmercount.sorted.txt
+    jobid: 135
+    wildcards: sample=enterovirus, seg=6096-6600
+
+[Sun Apr 25 23:14:22 2021]
+Finished job 135.
+163 of 335 steps (49%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:22 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse0-501.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse0-501.Kmercount.txt
+    jobid: 276
+    wildcards: sample=zika, seg=0-501
+
+[Sun Apr 25 23:14:22 2021]
+Finished job 276.
+164 of 335 steps (49%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:22 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7530-8031.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7530-8031.Kmercount.txt
+    jobid: 320
+    wildcards: sample=zika, seg=7530-8031
+
+[Sun Apr 25 23:14:22 2021]
+Finished job 320.
+165 of 335 steps (49%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:22 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse8636-9140.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse8636-9140.Kmercount.txt
+    jobid: 52
+    wildcards: sample=enterovirus, seg=8636-9140
+
+[Sun Apr 25 23:14:22 2021]
+Finished job 52.
+166 of 335 steps (50%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:22 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse6096-6600.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse6096-6600.Kmercount.sorted.calculated.txt
+    jobid: 134
+    wildcards: sample=enterovirus, seg=6096-6600
+
+[Sun Apr 25 23:14:27 2021]
+Finished job 134.
+167 of 335 steps (50%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:28 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3514-4015.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3514-4015.Kmercount.sorted.txt
+    jobid: 195
+    wildcards: sample=zika, seg=3514-4015
+
+[Sun Apr 25 23:14:28 2021]
+Finished job 195.
+168 of 335 steps (50%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:28 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3514-4015.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3514-4015.Kmercount.sorted.calculated.txt
+    jobid: 194
+    wildcards: sample=zika, seg=3514-4015
+
+[Sun Apr 25 23:14:29 2021]
+Finished job 194.
+169 of 335 steps (50%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:29 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7028-7529.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7028-7529.Kmercount.txt
+    jobid: 208
+    wildcards: sample=zika, seg=7028-7529
+
+[Sun Apr 25 23:14:29 2021]
+Finished job 208.
+170 of 335 steps (51%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:29 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1004-1505.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1004-1505.Kmercount.txt
+    jobid: 268
+    wildcards: sample=zika, seg=1004-1505
+
+[Sun Apr 25 23:14:29 2021]
+Finished job 268.
+171 of 335 steps (51%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:29 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse8636-9140.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse8636-9140.Kmercount.sorted.txt
+    jobid: 51
+    wildcards: sample=enterovirus, seg=8636-9140
+
+[Sun Apr 25 23:14:29 2021]
+Finished job 51.
+172 of 335 steps (51%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:29 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7530-8031.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7530-8031.Kmercount.sorted.txt
+    jobid: 319
+    wildcards: sample=zika, seg=7530-8031
+
+[Sun Apr 25 23:14:29 2021]
+Finished job 319.
+173 of 335 steps (52%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:29 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse0-501.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse0-501.Kmercount.sorted.txt
+    jobid: 275
+    wildcards: sample=zika, seg=0-501
+
+[Sun Apr 25 23:14:29 2021]
+Finished job 275.
+174 of 335 steps (52%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:29 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1004-1505.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1004-1505.Kmercount.sorted.txt
+    jobid: 267
+    wildcards: sample=zika, seg=1004-1505
+
+[Sun Apr 25 23:14:29 2021]
+Finished job 267.
+175 of 335 steps (52%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:29 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7028-7529.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7028-7529.Kmercount.sorted.txt
+    jobid: 207
+    wildcards: sample=zika, seg=7028-7529
+
+[Sun Apr 25 23:14:29 2021]
+Finished job 207.
+176 of 335 steps (53%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:29 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse9144-9374.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse9144-9374.Kmercount.txt
+    jobid: 28
+    wildcards: sample=enterovirus, seg=9144-9374
+
+[Sun Apr 25 23:14:29 2021]
+Finished job 28.
+177 of 335 steps (53%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:29 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse0-504.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse0-504.Kmercount.txt
+    jobid: 148
+    wildcards: sample=enterovirus, seg=0-504
+
+[Sun Apr 25 23:14:29 2021]
+Finished job 148.
+178 of 335 steps (53%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:29 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse8636-9140.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse8636-9140.Kmercount.sorted.calculated.txt
+    jobid: 50
+    wildcards: sample=enterovirus, seg=8636-9140
+
+[Sun Apr 25 23:14:30 2021]
+Finished job 50.
+179 of 335 steps (53%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:30 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse7620-8124.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse7620-8124.Kmercount.sorted.calculated.txt
+    jobid: 106
+    wildcards: sample=enterovirus, seg=7620-8124
+
+[Sun Apr 25 23:14:35 2021]
+Finished job 106.
+180 of 335 steps (54%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:35 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse0-501.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse0-501.Kmercount.sorted.calculated.txt
+    jobid: 274
+    wildcards: sample=zika, seg=0-501
+
+[Sun Apr 25 23:14:36 2021]
+Finished job 274.
+181 of 335 steps (54%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:36 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse1778-2282.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse1778-2282.Kmercount.txt
+    jobid: 76
+    wildcards: sample=enterovirus, seg=1778-2282
+
+[Sun Apr 25 23:14:36 2021]
+Finished job 76.
+182 of 335 steps (54%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:36 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8785-9286.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8785-9286.Kmercount.sorted.calculated.txt
+    jobid: 210
+    wildcards: sample=zika, seg=8785-9286
+
+[Sun Apr 25 23:14:37 2021]
+Finished job 210.
+183 of 335 steps (55%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:37 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse1778-2282.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse1778-2282.Kmercount.sorted.txt
+    jobid: 75
+    wildcards: sample=enterovirus, seg=1778-2282
+
+[Sun Apr 25 23:14:38 2021]
+Finished job 75.
+184 of 335 steps (55%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:38 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse1778-2282.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse1778-2282.Kmercount.sorted.calculated.txt
+    jobid: 74
+    wildcards: sample=enterovirus, seg=1778-2282
+
+[Sun Apr 25 23:14:41 2021]
+Finished job 74.
+185 of 335 steps (55%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:41 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6526-7027.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6526-7027.Kmercount.sorted.txt
+    jobid: 255
+    wildcards: sample=zika, seg=6526-7027
+
+[Sun Apr 25 23:14:41 2021]
+Finished job 255.
+186 of 335 steps (56%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:41 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6526-7027.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6526-7027.Kmercount.sorted.calculated.txt
+    jobid: 254
+    wildcards: sample=zika, seg=6526-7027
+
+[Sun Apr 25 23:14:42 2021]
+Finished job 254.
+187 of 335 steps (56%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:42 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7530-8031.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7530-8031.Kmercount.sorted.calculated.txt
+    jobid: 318
+    wildcards: sample=zika, seg=7530-8031
+
+[Sun Apr 25 23:14:44 2021]
+Finished job 318.
+188 of 335 steps (56%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:44 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse753-1254.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse753-1254.Kmercount.txt
+    jobid: 324
+    wildcards: sample=zika, seg=753-1254
+
+[Sun Apr 25 23:14:44 2021]
+Finished job 324.
+189 of 335 steps (56%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:44 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5773-6274.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5773-6274.Kmercount.sorted.txt
+    jobid: 263
+    wildcards: sample=zika, seg=5773-6274
+
+[Sun Apr 25 23:14:44 2021]
+Finished job 263.
+190 of 335 steps (57%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:44 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5773-6274.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5773-6274.Kmercount.sorted.calculated.txt
+    jobid: 262
+    wildcards: sample=zika, seg=5773-6274
+
+[Sun Apr 25 23:14:45 2021]
+Finished job 262.
+191 of 335 steps (57%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:45 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse0-504.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse0-504.Kmercount.sorted.txt
+    jobid: 147
+    wildcards: sample=enterovirus, seg=0-504
+
+[Sun Apr 25 23:14:45 2021]
+Finished job 147.
+192 of 335 steps (57%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:45 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse9144-9374.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse9144-9374.Kmercount.sorted.txt
+    jobid: 27
+    wildcards: sample=enterovirus, seg=9144-9374
+
+[Sun Apr 25 23:14:45 2021]
+Finished job 27.
+193 of 335 steps (58%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:45 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse9144-9374.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse9144-9374.Kmercount.sorted.calculated.txt
+    jobid: 26
+    wildcards: sample=enterovirus, seg=9144-9374
+
+[Sun Apr 25 23:14:46 2021]
+Finished job 26.
+194 of 335 steps (58%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:14:46 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse9789-10290.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9789-10290.jf
+    jobid: 233
+    wildcards: sample=zika, seg=9789-10290
+
+[Sun Apr 25 23:21:11 2021]
+Finished job 189.
+195 of 335 steps (58%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:21:11 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse7279-7780.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7279-7780.jf
+    jobid: 337
+    wildcards: sample=zika, seg=7279-7780
+
+[Sun Apr 25 23:21:43 2021]
+Finished job 217.
+196 of 335 steps (59%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:21:43 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse2032-2536.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse2032-2536.Kmercount.sorted.calculated.txt
+    jobid: 54
+    wildcards: sample=enterovirus, seg=2032-2536
+
+[Sun Apr 25 23:21:47 2021]
+Finished job 54.
+197 of 335 steps (59%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:21:48 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5271-5772.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5271-5772.Kmercount.txt
+    jobid: 216
+    wildcards: sample=zika, seg=5271-5772
+
+[Sun Apr 25 23:21:48 2021]
+Finished job 216.
+198 of 335 steps (59%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:21:48 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5271-5772.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5271-5772.Kmercount.sorted.txt
+    jobid: 215
+    wildcards: sample=zika, seg=5271-5772
+
+[Sun Apr 25 23:21:48 2021]
+Finished job 215.
+199 of 335 steps (59%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:21:48 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5271-5772.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5271-5772.Kmercount.sorted.calculated.txt
+    jobid: 214
+    wildcards: sample=zika, seg=5271-5772
+
+[Sun Apr 25 23:21:51 2021]
+Finished job 214.
+200 of 335 steps (60%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:21:51 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse4572-5076.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse4572-5076.Kmercount.txt
+    jobid: 84
+    wildcards: sample=enterovirus, seg=4572-5076
+
+[Sun Apr 25 23:21:51 2021]
+Finished job 84.
+201 of 335 steps (60%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:21:51 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse4572-5076.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse4572-5076.Kmercount.sorted.txt
+    jobid: 83
+    wildcards: sample=enterovirus, seg=4572-5076
+
+[Sun Apr 25 23:21:51 2021]
+Finished job 83.
+202 of 335 steps (60%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:21:51 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse4572-5076.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse4572-5076.Kmercount.sorted.calculated.txt
+    jobid: 82
+    wildcards: sample=enterovirus, seg=4572-5076
+
+[Sun Apr 25 23:21:58 2021]
+Finished job 82.
+203 of 335 steps (61%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:21:59 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse502-1003.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse502-1003.Kmercount.sorted.txt
+    jobid: 235
+    wildcards: sample=zika, seg=502-1003
+
+[Sun Apr 25 23:21:59 2021]
+Finished job 235.
+204 of 335 steps (61%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:21:59 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse2510-3011.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2510-3011.jf
+    jobid: 345
+    wildcards: sample=zika, seg=2510-3011
+
+[Sun Apr 25 23:24:56 2021]
+Finished job 301.
+205 of 335 steps (61%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:24:56 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse4064-4568.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse4064-4568.Kmercount.sorted.txt
+    jobid: 115
+    wildcards: sample=enterovirus, seg=4064-4568
+
+[Sun Apr 25 23:24:56 2021]
+Finished job 115.
+206 of 335 steps (61%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:24:56 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse1524-2028.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse1524-2028.Kmercount.txt
+    jobid: 100
+    wildcards: sample=enterovirus, seg=1524-2028
+
+[Sun Apr 25 23:24:56 2021]
+Finished job 100.
+207 of 335 steps (62%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:24:56 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse753-1254.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse753-1254.Kmercount.sorted.txt
+    jobid: 323
+    wildcards: sample=zika, seg=753-1254
+
+[Sun Apr 25 23:24:57 2021]
+Finished job 323.
+208 of 335 steps (62%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:24:57 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse502-1003.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse502-1003.Kmercount.sorted.calculated.txt
+    jobid: 234
+    wildcards: sample=zika, seg=502-1003
+
+[Sun Apr 25 23:25:00 2021]
+Finished job 234.
+209 of 335 steps (62%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:25:00 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2259-2760.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2259-2760.Kmercount.sorted.calculated.txt
+    jobid: 190
+    wildcards: sample=zika, seg=2259-2760
+
+[Sun Apr 25 23:25:02 2021]
+Finished job 190.
+210 of 335 steps (63%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:25:02 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse0-504.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse0-504.Kmercount.sorted.calculated.txt
+    jobid: 146
+    wildcards: sample=enterovirus, seg=0-504
+
+[Sun Apr 25 23:25:07 2021]
+Finished job 146.
+211 of 335 steps (63%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:25:07 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse5842-6346.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse5842-6346.jf
+    jobid: 33
+    wildcards: sample=enterovirus, seg=5842-6346
+
+[Sun Apr 25 23:25:37 2021]
+Finished job 241.
+212 of 335 steps (63%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:25:37 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3765-4266.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3765-4266.Kmercount.txt
+    jobid: 280
+    wildcards: sample=zika, seg=3765-4266
+
+[Sun Apr 25 23:25:37 2021]
+Finished job 280.
+213 of 335 steps (64%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:25:37 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3765-4266.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3765-4266.Kmercount.sorted.txt
+    jobid: 279
+    wildcards: sample=zika, seg=3765-4266
+
+[Sun Apr 25 23:25:38 2021]
+Finished job 279.
+214 of 335 steps (64%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:25:38 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse7112-7616.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse7112-7616.jf
+    jobid: 93
+    wildcards: sample=enterovirus, seg=7112-7616
+
+[Sun Apr 25 23:26:10 2021]
+Finished job 309.
+215 of 335 steps (64%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:26:11 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7781-8282.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7781-8282.Kmercount.txt
+    jobid: 316
+    wildcards: sample=zika, seg=7781-8282
+
+[Sun Apr 25 23:26:11 2021]
+Finished job 316.
+216 of 335 steps (64%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:26:11 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9287-9788.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9287-9788.Kmercount.sorted.txt
+    jobid: 287
+    wildcards: sample=zika, seg=9287-9788
+
+[Sun Apr 25 23:26:11 2021]
+Finished job 287.
+217 of 335 steps (65%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:26:11 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9287-9788.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9287-9788.Kmercount.sorted.calculated.txt
+    jobid: 286
+    wildcards: sample=zika, seg=9287-9788
+
+[Sun Apr 25 23:26:14 2021]
+Finished job 286.
+218 of 335 steps (65%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:26:14 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse1016-1520.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse1016-1520.Kmercount.sorted.txt
+    jobid: 71
+    wildcards: sample=enterovirus, seg=1016-1520
+
+[Sun Apr 25 23:26:14 2021]
+Finished job 71.
+219 of 335 steps (65%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:26:14 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse1016-1520.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse1016-1520.Kmercount.sorted.calculated.txt
+    jobid: 70
+    wildcards: sample=enterovirus, seg=1016-1520
+
+[Sun Apr 25 23:26:20 2021]
+Finished job 70.
+220 of 335 steps (66%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:26:20 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4016-4517.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4016-4517.Kmercount.sorted.txt
+    jobid: 339
+    wildcards: sample=zika, seg=4016-4517
+
+[Sun Apr 25 23:26:20 2021]
+Finished job 339.
+221 of 335 steps (66%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:26:21 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4016-4517.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4016-4517.Kmercount.sorted.calculated.txt
+    jobid: 338
+    wildcards: sample=zika, seg=4016-4517
+
+[Sun Apr 25 23:26:23 2021]
+Finished job 338.
+222 of 335 steps (66%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:26:23 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse5588-6092.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse5588-6092.Kmercount.txt
+    jobid: 48
+    wildcards: sample=enterovirus, seg=5588-6092
+
+[Sun Apr 25 23:26:23 2021]
+Finished job 48.
+223 of 335 steps (67%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:26:23 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse5588-6092.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse5588-6092.Kmercount.sorted.txt
+    jobid: 47
+    wildcards: sample=enterovirus, seg=5588-6092
+
+[Sun Apr 25 23:26:23 2021]
+Finished job 47.
+224 of 335 steps (67%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:26:24 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse6858-7362.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse6858-7362.Kmercount.txt
+    jobid: 168
+    wildcards: sample=enterovirus, seg=6858-7362
+
+[Sun Apr 25 23:26:24 2021]
+Finished job 168.
+225 of 335 steps (67%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:26:24 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse6858-7362.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse6858-7362.Kmercount.sorted.txt
+    jobid: 167
+    wildcards: sample=enterovirus, seg=6858-7362
+
+[Sun Apr 25 23:26:24 2021]
+Finished job 167.
+226 of 335 steps (67%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:26:24 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse5080-5584.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse5080-5584.Kmercount.sorted.calculated.txt
+    jobid: 78
+    wildcards: sample=enterovirus, seg=5080-5584
+
+[Sun Apr 25 23:26:32 2021]
+Finished job 78.
+227 of 335 steps (68%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:26:32 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse5334-5838.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse5334-5838.Kmercount.sorted.txt
+    jobid: 159
+    wildcards: sample=enterovirus, seg=5334-5838
+
+[Sun Apr 25 23:26:32 2021]
+Finished job 159.
+228 of 335 steps (68%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:26:33 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1506-2007.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1506-2007.Kmercount.sorted.calculated.txt
+    jobid: 182
+    wildcards: sample=zika, seg=1506-2007
+
+[Sun Apr 25 23:26:35 2021]
+Finished job 182.
+229 of 335 steps (68%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:26:35 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse3556-4060.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse3556-4060.Kmercount.sorted.calculated.txt
+    jobid: 138
+    wildcards: sample=enterovirus, seg=3556-4060
+
+[Sun Apr 25 23:26:41 2021]
+Finished job 138.
+230 of 335 steps (69%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:26:41 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse1524-2028.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse1524-2028.Kmercount.sorted.txt
+    jobid: 99
+    wildcards: sample=enterovirus, seg=1524-2028
+
+[Sun Apr 25 23:26:41 2021]
+Finished job 99.
+231 of 335 steps (69%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:26:42 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse6604-7108.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse6604-7108.Kmercount.sorted.txt
+    jobid: 123
+    wildcards: sample=enterovirus, seg=6604-7108
+
+[Sun Apr 25 23:26:42 2021]
+Finished job 123.
+232 of 335 steps (69%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:26:42 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse6604-7108.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse6604-7108.Kmercount.sorted.calculated.txt
+    jobid: 122
+    wildcards: sample=enterovirus, seg=6604-7108
+
+[Sun Apr 25 23:26:42 2021]
+Finished job 181.
+233 of 335 steps (70%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:26:43 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse254-758.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse254-758.Kmercount.sorted.calculated.txt
+    jobid: 86
+    wildcards: sample=enterovirus, seg=254-758
+
+[Sun Apr 25 23:26:48 2021]
+Finished job 86.
+234 of 335 steps (70%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:26:48 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4267-4768.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4267-4768.Kmercount.txt
+    jobid: 272
+    wildcards: sample=zika, seg=4267-4768
+
+[Sun Apr 25 23:26:48 2021]
+Finished job 272.
+235 of 335 steps (70%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:26:49 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4267-4768.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4267-4768.Kmercount.sorted.txt
+    jobid: 271
+    wildcards: sample=zika, seg=4267-4768
+
+[Sun Apr 25 23:26:49 2021]
+Finished job 271.
+236 of 335 steps (70%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:26:49 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1004-1505.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1004-1505.Kmercount.sorted.calculated.txt
+    jobid: 266
+    wildcards: sample=zika, seg=1004-1505
+
+[Sun Apr 25 23:26:51 2021]
+Finished job 122.
+237 of 335 steps (71%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:26:51 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7028-7529.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7028-7529.Kmercount.sorted.calculated.txt
+    jobid: 206
+    wildcards: sample=zika, seg=7028-7529
+
+[Sun Apr 25 23:26:52 2021]
+Finished job 266.
+238 of 335 steps (71%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:26:52 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3765-4266.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3765-4266.Kmercount.sorted.calculated.txt
+    jobid: 278
+    wildcards: sample=zika, seg=3765-4266
+
+[Sun Apr 25 23:26:54 2021]
+Finished job 206.
+239 of 335 steps (71%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:26:55 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse1524-2028.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse1524-2028.Kmercount.sorted.calculated.txt
+    jobid: 98
+    wildcards: sample=enterovirus, seg=1524-2028
+
+[Sun Apr 25 23:26:55 2021]
+Finished job 278.
+240 of 335 steps (72%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:26:56 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse5334-5838.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse5334-5838.Kmercount.sorted.calculated.txt
+    jobid: 158
+    wildcards: sample=enterovirus, seg=5334-5838
+
+[Sun Apr 25 23:26:58 2021]
+Finished job 98.
+241 of 335 steps (72%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:26:58 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse251-752.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse251-752.Kmercount.txt
+    jobid: 300
+    wildcards: sample=zika, seg=251-752
+
+[Sun Apr 25 23:26:58 2021]
+Finished job 300.
+242 of 335 steps (72%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:26:58 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9538-10039.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9538-10039.Kmercount.txt
+    jobid: 240
+    wildcards: sample=zika, seg=9538-10039
+
+[Sun Apr 25 23:26:58 2021]
+Finished job 240.
+243 of 335 steps (73%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:26:58 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7781-8282.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7781-8282.Kmercount.sorted.txt
+    jobid: 315
+    wildcards: sample=zika, seg=7781-8282
+
+[Sun Apr 25 23:26:58 2021]
+Finished job 315.
+244 of 335 steps (73%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:26:58 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7781-8282.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7781-8282.Kmercount.sorted.calculated.txt
+    jobid: 314
+    wildcards: sample=zika, seg=7781-8282
+
+[Sun Apr 25 23:27:00 2021]
+Finished job 158.
+245 of 335 steps (73%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:27:00 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse6858-7362.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse6858-7362.Kmercount.sorted.calculated.txt
+    jobid: 166
+    wildcards: sample=enterovirus, seg=6858-7362
+
+[Sun Apr 25 23:27:01 2021]
+Finished job 314.
+246 of 335 steps (73%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:27:01 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4769-5270.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4769-5270.Kmercount.sorted.calculated.txt
+    jobid: 218
+    wildcards: sample=zika, seg=4769-5270
+
+[Sun Apr 25 23:27:04 2021]
+Finished job 218.
+247 of 335 steps (74%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:27:04 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/splitFiles/reverse8382-8886.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse8382-8886.jf
+    jobid: 129
+    wildcards: sample=enterovirus, seg=8382-8886
+
+[Sun Apr 25 23:27:11 2021]
+Finished job 166.
+248 of 335 steps (74%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:27:11 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3012-3513.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3012-3513.Kmercount.sorted.txt
+    jobid: 203
+    wildcards: sample=zika, seg=3012-3513
+
+[Sun Apr 25 23:27:11 2021]
+Finished job 203.
+249 of 335 steps (74%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:27:11 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse4826-5330.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse4826-5330.Kmercount.txt
+    jobid: 144
+    wildcards: sample=enterovirus, seg=4826-5330
+
+[Sun Apr 25 23:27:11 2021]
+Finished job 144.
+250 of 335 steps (75%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:27:11 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse6777-7278.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6777-7278.jf
+    jobid: 293
+    wildcards: sample=zika, seg=6777-7278
+
+[Sun Apr 25 23:27:25 2021]
+Finished job 249.
+251 of 335 steps (75%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:27:25 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse753-1254.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse753-1254.Kmercount.sorted.calculated.txt
+    jobid: 322
+    wildcards: sample=zika, seg=753-1254
+
+[Sun Apr 25 23:27:28 2021]
+Finished job 322.
+252 of 335 steps (75%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:27:28 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse2540-3044.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse2540-3044.Kmercount.sorted.txt
+    jobid: 39
+    wildcards: sample=enterovirus, seg=2540-3044
+
+[Sun Apr 25 23:27:28 2021]
+Finished job 39.
+253 of 335 steps (76%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:27:29 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6024-6525.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6024-6525.Kmercount.txt
+    jobid: 308
+    wildcards: sample=zika, seg=6024-6525
+
+[Sun Apr 25 23:27:29 2021]
+Finished job 308.
+254 of 335 steps (76%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:27:29 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1757-2258.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1757-2258.Kmercount.txt
+    jobid: 248
+    wildcards: sample=zika, seg=1757-2258
+
+[Sun Apr 25 23:27:29 2021]
+Finished job 248.
+255 of 335 steps (76%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:27:29 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse251-752.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse251-752.Kmercount.sorted.txt
+    jobid: 299
+    wildcards: sample=zika, seg=251-752
+
+[Sun Apr 25 23:27:29 2021]
+Finished job 299.
+256 of 335 steps (76%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:27:29 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9538-10039.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9538-10039.Kmercount.sorted.txt
+    jobid: 239
+    wildcards: sample=zika, seg=9538-10039
+
+[Sun Apr 25 23:27:29 2021]
+Finished job 239.
+257 of 335 steps (77%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:27:30 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1757-2258.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1757-2258.Kmercount.sorted.txt
+    jobid: 247
+    wildcards: sample=zika, seg=1757-2258
+
+[Sun Apr 25 23:27:30 2021]
+Finished job 247.
+258 of 335 steps (77%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:27:30 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1757-2258.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1757-2258.Kmercount.sorted.calculated.txt
+    jobid: 246
+    wildcards: sample=zika, seg=1757-2258
+
+[Sun Apr 25 23:27:32 2021]
+Finished job 246.
+259 of 335 steps (77%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:27:33 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse4064-4568.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse4064-4568.Kmercount.sorted.calculated.txt
+    jobid: 114
+    wildcards: sample=enterovirus, seg=4064-4568
+
+[Sun Apr 25 23:27:34 2021]
+Finished job 225.
+260 of 335 steps (78%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:27:34 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse10291-10780.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse10291-10780.Kmercount.txt
+    jobid: 224
+    wildcards: sample=zika, seg=10291-10780
+
+[Sun Apr 25 23:27:34 2021]
+Finished job 224.
+261 of 335 steps (78%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:27:35 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6024-6525.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6024-6525.Kmercount.sorted.txt
+    jobid: 307
+    wildcards: sample=zika, seg=6024-6525
+
+[Sun Apr 25 23:27:35 2021]
+Finished job 307.
+262 of 335 steps (78%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:27:35 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6024-6525.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6024-6525.Kmercount.sorted.calculated.txt
+    jobid: 306
+    wildcards: sample=zika, seg=6024-6525
+
+[Sun Apr 25 23:27:35 2021]
+Finished job 114.
+263 of 335 steps (79%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:27:35 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse10040-10541.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse10040-10541.Kmercount.txt
+    jobid: 188
+    wildcards: sample=zika, seg=10040-10541
+
+[Sun Apr 25 23:27:35 2021]
+Finished job 188.
+264 of 335 steps (79%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:27:36 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse10040-10541.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse10040-10541.Kmercount.sorted.txt
+    jobid: 187
+    wildcards: sample=zika, seg=10040-10541
+
+[Sun Apr 25 23:27:36 2021]
+Finished job 187.
+265 of 335 steps (79%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:27:36 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse10040-10541.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse10040-10541.Kmercount.sorted.calculated.txt
+    jobid: 186
+    wildcards: sample=zika, seg=10040-10541
+
+[Sun Apr 25 23:27:37 2021]
+Finished job 306.
+266 of 335 steps (79%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:27:38 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse2540-3044.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse2540-3044.Kmercount.sorted.calculated.txt
+    jobid: 38
+    wildcards: sample=enterovirus, seg=2540-3044
+
+[Sun Apr 25 23:27:38 2021]
+Finished job 186.
+267 of 335 steps (80%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:27:38 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse4826-5330.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse4826-5330.Kmercount.sorted.txt
+    jobid: 143
+    wildcards: sample=enterovirus, seg=4826-5330
+
+[Sun Apr 25 23:27:38 2021]
+Finished job 143.
+268 of 335 steps (80%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:27:39 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse4826-5330.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse4826-5330.Kmercount.sorted.calculated.txt
+    jobid: 142
+    wildcards: sample=enterovirus, seg=4826-5330
+
+[Sun Apr 25 23:27:44 2021]
+Finished job 38.
+269 of 335 steps (80%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:27:45 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3012-3513.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3012-3513.Kmercount.sorted.calculated.txt
+    jobid: 202
+    wildcards: sample=zika, seg=3012-3513
+
+[Sun Apr 25 23:27:45 2021]
+Finished job 142.
+270 of 335 steps (81%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:27:45 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4267-4768.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4267-4768.Kmercount.sorted.calculated.txt
+    jobid: 270
+    wildcards: sample=zika, seg=4267-4768
+
+[Sun Apr 25 23:27:48 2021]
+Finished job 270.
+271 of 335 steps (81%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:27:48 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse10291-10780.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse10291-10780.Kmercount.sorted.txt
+    jobid: 223
+    wildcards: sample=zika, seg=10291-10780
+
+[Sun Apr 25 23:27:48 2021]
+Finished job 223.
+272 of 335 steps (81%) done
+Select jobs to execute...
+[Sun Apr 25 23:27:48 2021]
+Finished job 202.
+273 of 335 steps (81%) done
+
+[Sun Apr 25 23:27:48 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse10291-10780.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse10291-10780.Kmercount.sorted.calculated.txt
+    jobid: 222
+    wildcards: sample=zika, seg=10291-10780
+
+Select jobs to execute...
+
+[Sun Apr 25 23:27:48 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse5588-6092.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse5588-6092.Kmercount.sorted.calculated.txt
+    jobid: 46
+    wildcards: sample=enterovirus, seg=5588-6092
+
+[Sun Apr 25 23:27:51 2021]
+Finished job 222.
+274 of 335 steps (82%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:27:51 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse251-752.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse251-752.Kmercount.sorted.calculated.txt
+    jobid: 298
+    wildcards: sample=zika, seg=251-752
+
+[Sun Apr 25 23:27:54 2021]
+Finished job 298.
+275 of 335 steps (82%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:27:54 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse10542-10780.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse10542-10780.Kmercount.txt
+    jobid: 180
+    wildcards: sample=zika, seg=10542-10780
+
+[Sun Apr 25 23:27:54 2021]
+Finished job 180.
+276 of 335 steps (82%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:27:54 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse10542-10780.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse10542-10780.Kmercount.sorted.txt
+    jobid: 179
+    wildcards: sample=zika, seg=10542-10780
+
+[Sun Apr 25 23:27:54 2021]
+Finished job 179.
+277 of 335 steps (83%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:27:55 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9538-10039.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9538-10039.Kmercount.sorted.calculated.txt
+    jobid: 238
+    wildcards: sample=zika, seg=9538-10039
+
+[Sun Apr 25 23:27:56 2021]
+Finished job 46.
+278 of 335 steps (83%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:27:56 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse10542-10780.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse10542-10780.Kmercount.sorted.calculated.txt
+    jobid: 178
+    wildcards: sample=zika, seg=10542-10780
+
+[Sun Apr 25 23:27:57 2021]
+Finished job 238.
+279 of 335 steps (83%) done
+[Sun Apr 25 23:27:59 2021]
+Finished job 178.
+280 of 335 steps (84%) done
+[Sun Apr 25 23:29:40 2021]
+Finished job 61.
+281 of 335 steps (84%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:29:40 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse8890-9374.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse8890-9374.Kmercount.txt
+    jobid: 60
+    wildcards: sample=enterovirus, seg=8890-9374
+
+[Sun Apr 25 23:29:40 2021]
+Finished job 60.
+282 of 335 steps (84%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:29:40 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse8890-9374.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse8890-9374.Kmercount.sorted.txt
+    jobid: 59
+    wildcards: sample=enterovirus, seg=8890-9374
+
+[Sun Apr 25 23:29:40 2021]
+Finished job 59.
+283 of 335 steps (84%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:29:40 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse8890-9374.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse8890-9374.Kmercount.sorted.calculated.txt
+    jobid: 58
+    wildcards: sample=enterovirus, seg=8890-9374
+
+[Sun Apr 25 23:29:42 2021]
+Finished job 58.
+284 of 335 steps (85%) done
+[Sun Apr 25 23:30:15 2021]
+Finished job 93.
+285 of 335 steps (85%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:30:15 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse7112-7616.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse7112-7616.Kmercount.txt
+    jobid: 92
+    wildcards: sample=enterovirus, seg=7112-7616
+
+[Sun Apr 25 23:30:15 2021]
+Finished job 92.
+286 of 335 steps (85%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:30:15 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse7112-7616.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse7112-7616.Kmercount.sorted.txt
+    jobid: 91
+    wildcards: sample=enterovirus, seg=7112-7616
+
+[Sun Apr 25 23:30:15 2021]
+Finished job 91.
+287 of 335 steps (86%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:30:16 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse7112-7616.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse7112-7616.Kmercount.sorted.calculated.txt
+    jobid: 90
+    wildcards: sample=enterovirus, seg=7112-7616
+
+[Sun Apr 25 23:30:24 2021]
+Finished job 90.
+288 of 335 steps (86%) done
+[Sun Apr 25 23:31:03 2021]
+Finished job 285.
+289 of 335 steps (86%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:31:03 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8283-8784.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8283-8784.Kmercount.txt
+    jobid: 284
+    wildcards: sample=zika, seg=8283-8784
+
+[Sun Apr 25 23:31:03 2021]
+Finished job 284.
+290 of 335 steps (87%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:31:03 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8283-8784.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8283-8784.Kmercount.sorted.txt
+    jobid: 283
+    wildcards: sample=zika, seg=8283-8784
+
+[Sun Apr 25 23:31:03 2021]
+Finished job 283.
+291 of 335 steps (87%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:31:03 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8283-8784.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8283-8784.Kmercount.sorted.calculated.txt
+    jobid: 282
+    wildcards: sample=zika, seg=8283-8784
+
+[Sun Apr 25 23:31:06 2021]
+Finished job 282.
+292 of 335 steps (87%) done
+[Sun Apr 25 23:32:18 2021]
+Finished job 329.
+293 of 335 steps (87%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:32:18 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4518-5019.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4518-5019.Kmercount.txt
+    jobid: 328
+    wildcards: sample=zika, seg=4518-5019
+
+[Sun Apr 25 23:32:18 2021]
+Finished job 328.
+294 of 335 steps (88%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:32:18 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4518-5019.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4518-5019.Kmercount.sorted.txt
+    jobid: 327
+    wildcards: sample=zika, seg=4518-5019
+
+[Sun Apr 25 23:32:18 2021]
+Finished job 327.
+295 of 335 steps (88%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:32:19 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4518-5019.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4518-5019.Kmercount.sorted.calculated.txt
+    jobid: 326
+    wildcards: sample=zika, seg=4518-5019
+
+[Sun Apr 25 23:32:20 2021]
+Finished job 326.
+296 of 335 steps (88%) done
+[Sun Apr 25 23:32:32 2021]
+Finished job 233.
+297 of 335 steps (89%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:32:32 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9789-10290.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9789-10290.Kmercount.txt
+    jobid: 232
+    wildcards: sample=zika, seg=9789-10290
+
+[Sun Apr 25 23:32:32 2021]
+Finished job 232.
+298 of 335 steps (89%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:32:32 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9789-10290.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9789-10290.Kmercount.sorted.txt
+    jobid: 231
+    wildcards: sample=zika, seg=9789-10290
+
+[Sun Apr 25 23:32:32 2021]
+Finished job 231.
+299 of 335 steps (89%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:32:32 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9789-10290.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9789-10290.Kmercount.sorted.calculated.txt
+    jobid: 230
+    wildcards: sample=zika, seg=9789-10290
+
+[Sun Apr 25 23:32:34 2021]
+Finished job 230.
+300 of 335 steps (90%) done
+[Sun Apr 25 23:33:20 2021]
+Finished job 33.
+301 of 335 steps (90%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:33:20 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse5842-6346.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse5842-6346.Kmercount.txt
+    jobid: 32
+    wildcards: sample=enterovirus, seg=5842-6346
+
+[Sun Apr 25 23:33:20 2021]
+Finished job 32.
+302 of 335 steps (90%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:33:20 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse5842-6346.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse5842-6346.Kmercount.sorted.txt
+    jobid: 31
+    wildcards: sample=enterovirus, seg=5842-6346
+
+[Sun Apr 25 23:33:20 2021]
+Finished job 31.
+303 of 335 steps (90%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:33:20 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse5842-6346.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse5842-6346.Kmercount.sorted.calculated.txt
+    jobid: 30
+    wildcards: sample=enterovirus, seg=5842-6346
+
+[Sun Apr 25 23:33:25 2021]
+Finished job 30.
+304 of 335 steps (91%) done
+[Sun Apr 25 23:37:28 2021]
+Finished job 337.
+305 of 335 steps (91%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:37:28 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7279-7780.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7279-7780.Kmercount.txt
+    jobid: 336
+    wildcards: sample=zika, seg=7279-7780
+
+[Sun Apr 25 23:37:28 2021]
+Finished job 336.
+306 of 335 steps (91%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:37:28 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7279-7780.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7279-7780.Kmercount.sorted.txt
+    jobid: 335
+    wildcards: sample=zika, seg=7279-7780
+
+[Sun Apr 25 23:37:28 2021]
+Finished job 335.
+307 of 335 steps (92%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:37:28 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7279-7780.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7279-7780.Kmercount.sorted.calculated.txt
+    jobid: 334
+    wildcards: sample=zika, seg=7279-7780
+
+[Sun Apr 25 23:37:29 2021]
+Finished job 334.
+308 of 335 steps (92%) done
+[Sun Apr 25 23:37:50 2021]
+Finished job 345.
+309 of 335 steps (92%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:37:50 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2510-3011.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2510-3011.Kmercount.txt
+    jobid: 344
+    wildcards: sample=zika, seg=2510-3011
+
+[Sun Apr 25 23:37:50 2021]
+Finished job 344.
+310 of 335 steps (93%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:37:50 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2510-3011.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2510-3011.Kmercount.sorted.txt
+    jobid: 343
+    wildcards: sample=zika, seg=2510-3011
+
+[Sun Apr 25 23:37:50 2021]
+Finished job 343.
+311 of 335 steps (93%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:37:50 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2510-3011.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2510-3011.Kmercount.sorted.calculated.txt
+    jobid: 342
+    wildcards: sample=zika, seg=2510-3011
+
+[Sun Apr 25 23:37:51 2021]
+Finished job 342.
+312 of 335 steps (93%) done
+[Sun Apr 25 23:44:45 2021]
+Finished job 129.
+313 of 335 steps (93%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:44:45 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse8382-8886.jf
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse8382-8886.Kmercount.txt
+    jobid: 128
+    wildcards: sample=enterovirus, seg=8382-8886
+
+[Sun Apr 25 23:44:45 2021]
+Finished job 128.
+314 of 335 steps (94%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:44:45 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse8382-8886.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse8382-8886.Kmercount.sorted.txt
+    jobid: 127
+    wildcards: sample=enterovirus, seg=8382-8886
+
+[Sun Apr 25 23:44:45 2021]
+Finished job 127.
+315 of 335 steps (94%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:44:45 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse8382-8886.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse8382-8886.Kmercount.sorted.calculated.txt
+    jobid: 126
+    wildcards: sample=enterovirus, seg=8382-8886
+
+[Sun Apr 25 23:44:46 2021]
+Finished job 126.
+316 of 335 steps (94%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:44:46 2021]
+rule filtering2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse9144-9374.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse5842-6346.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse762-1266.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse2540-3044.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse6350-6854.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse5588-6092.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse8636-9140.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse2032-2536.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse8890-9374.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse7366-7870.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse508-1012.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse1016-1520.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse1778-2282.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse5080-5584.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse4572-5076.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse254-758.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse7112-7616.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse7874-8378.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse1524-2028.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse1270-1774.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse7620-8124.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse3810-4314.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse4064-4568.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse3302-3806.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse6604-7108.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse8382-8886.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse3048-3552.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse6096-6600.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse3556-4060.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse4826-5330.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse0-504.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse2794-3298.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse4318-4822.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse5334-5838.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse2286-2790.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse6858-7362.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/reverse8128-8632.Kmercount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/allKmercount.sorted.calculated.txt
+    jobid: 5
+    wildcards: sample=enterovirus
+
+[Sun Apr 25 23:44:46 2021]
+Finished job 5.
+317 of 335 steps (95%) done
+[Sun Apr 25 23:44:46 2021]
+Finished job 293.
+318 of 335 steps (95%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:44:46 2021]
+rule countKmer2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6777-7278.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6777-7278.Kmercount.txt
+    jobid: 292
+    wildcards: sample=zika, seg=6777-7278
+
+
+[Sun Apr 25 23:44:46 2021]
+rule filtering3:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/allKmercount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/allKmerCount.sorted.calculated.filtered.txt
+    jobid: 9
+    wildcards: sample=enterovirus
+
+[Sun Apr 25 23:44:46 2021]
+Finished job 292.
+319 of 335 steps (95%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:44:46 2021]
+rule calculateKmer_sort:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6777-7278.Kmercount.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6777-7278.Kmercount.sorted.txt
+    jobid: 291
+    wildcards: sample=zika, seg=6777-7278
+
+[Sun Apr 25 23:44:46 2021]
+Finished job 291.
+320 of 335 steps (96%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:44:46 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6777-7278.Kmercount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6777-7278.Kmercount.sorted.calculated.txt
+    jobid: 290
+    wildcards: sample=zika, seg=6777-7278
+
+[Sun Apr 25 23:44:48 2021]
+Finished job 290.
+321 of 335 steps (96%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:44:48 2021]
+rule filtering2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3263-3764.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse10542-10780.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1506-2007.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse10040-10541.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2259-2760.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3514-4015.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1255-1756.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3012-3513.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7028-7529.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8785-9286.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5271-5772.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4769-5270.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse10291-10780.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8032-8533.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9789-10290.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse502-1003.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9538-10039.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8534-9035.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1757-2258.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9036-9537.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6526-7027.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5522-6023.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5773-6274.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1004-1505.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4267-4768.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse0-501.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3765-4266.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8283-8784.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9287-9788.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6777-7278.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5020-5521.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse251-752.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6275-6776.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6024-6525.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2008-2509.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7781-8282.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7530-8031.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse753-1254.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4518-5019.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2761-3262.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7279-7780.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4016-4517.Kmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2510-3011.Kmercount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/allKmercount.sorted.calculated.txt
+    jobid: 7
+    wildcards: sample=zika
+
+[Sun Apr 25 23:44:48 2021]
+Finished job 7.
+322 of 335 steps (96%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:44:48 2021]
+rule filtering3:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/allKmercount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/allKmerCount.sorted.calculated.filtered.txt
+    jobid: 10
+    wildcards: sample=zika
+
+[Sun Apr 25 23:44:50 2021]
+Finished job 9.
+323 of 335 steps (96%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:44:50 2021]
+rule specific1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/allKmerCount.sorted.calculated.filtered.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.fasta
+    jobid: 11
+    wildcards: sample=enterovirus
+
+[Sun Apr 25 23:44:50 2021]
+Finished job 10.
+324 of 335 steps (97%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:44:50 2021]
+rule specific1:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/allKmerCount.sorted.calculated.filtered.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.fasta
+    jobid: 12
+    wildcards: sample=zika
+
+[Sun Apr 25 23:44:51 2021]
+Finished job 11.
+325 of 335 steps (97%) done
+Select jobs to execute...
+[Sun Apr 25 23:44:51 2021]
+Finished job 12.
+326 of 335 steps (97%) done
+
+[Sun Apr 25 23:44:51 2021]
+rule specific3:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.bowtie
+    jobid: 14
+    wildcards: sample=enterovirus
+
+Select jobs to execute...
+
+[Sun Apr 25 23:44:51 2021]
+rule specific3:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.bowtie
+    jobid: 15
+    wildcards: sample=zika
+
+[Sun Apr 25 23:44:51 2021]
+Finished job 14.
+327 of 335 steps (98%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:44:51 2021]
+rule specific4:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.bowtie, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/allKmerCount.sorted.calculated.filtered.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt
+    jobid: 16
+    wildcards: sample=enterovirus
+
+[Sun Apr 25 23:44:51 2021]
+Finished job 15.
+328 of 335 steps (98%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:44:51 2021]
+rule specific4:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.bowtie, /datater/wu/data/MSSPE-basic/zika/kmer15/allKmerCount.sorted.calculated.filtered.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt
+    jobid: 17
+    wildcards: sample=zika
+
+[Sun Apr 25 23:44:53 2021]
+Finished job 17.
+329 of 335 steps (98%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:44:53 2021]
+rule checkHeterodimer:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/allOligo.set
+    jobid: 19
+    wildcards: sample=zika
+
+[Sun Apr 25 23:44:54 2021]
+Finished job 16.
+330 of 335 steps (99%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:44:54 2021]
+rule checkHeterodimer:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/allOligo.set
+    jobid: 18
+    wildcards: sample=enterovirus
+
+[Sun Apr 25 23:44:56 2021]
+Finished job 19.
+331 of 335 steps (99%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:44:56 2021]
+rule evaluation2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/allOligo.set, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/aceID-taxID-species.tsv
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/allOligos_reverse.set.coverage
+    jobid: 23
+    wildcards: sample=zika
+
+[Sun Apr 25 23:44:57 2021]
+Finished job 18.
+332 of 335 steps (99%) done
+Select jobs to execute...
+
+[Sun Apr 25 23:44:57 2021]
+rule evaluation2:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/allOligo.set, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/aceID-taxID-species.tsv
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/allOligos_reverse.set.coverage
+    jobid: 22
+    wildcards: sample=enterovirus
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/MSSPE/.snakemake/log/2021-04-25T214131.636710.snakemake.log

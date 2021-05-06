@@ -1,0 +1,86 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	37	dsk
+	38
+Select jobs to execute...
+
+[Mon Mar  1 16:03:19 2021]
+rule dsk:
+    input: /datater/wu/data/splitFiles
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.4845-5350.fasta (dynamic)
+    jobid: 39
+    wildcards: sample=enterovirus, seg=4845-5350
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Mon Mar  1 16:03:19 2021]
+rule dsk:
+    input: /datater/wu/data/splitFiles
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.6630-7135.fasta (dynamic)
+    jobid: 8
+    wildcards: sample=enterovirus, seg=6630-7135
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Mon Mar  1 16:03:19 2021]
+rule dsk:
+    input: /datater/wu/data/splitFiles
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.255-760.fasta (dynamic)
+    jobid: 15
+    wildcards: sample=enterovirus, seg=255-760
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Mon Mar  1 16:03:19 2021]
+rule dsk:
+    input: /datater/wu/data/splitFiles
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.5100-5605.fasta (dynamic)
+    jobid: 38
+    wildcards: sample=enterovirus, seg=5100-5605
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Mon Mar  1 16:03:19 2021]
+rule dsk:
+    input: /datater/wu/data/splitFiles
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.1785-2290.fasta (dynamic)
+    jobid: 29
+    wildcards: sample=enterovirus, seg=1785-2290
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Mon Mar  1 16:03:19 2021]
+rule dsk:
+    input: /datater/wu/data/splitFiles
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.2550-3055.fasta (dynamic)
+    jobid: 22
+    wildcards: sample=enterovirus, seg=2550-3055
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Mon Mar  1 16:03:19 2021]
+rule dsk:
+    input: /datater/wu/data/splitFiles
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.765-1270.fasta (dynamic)
+    jobid: 37
+    wildcards: sample=enterovirus, seg=765-1270
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Mon Mar  1 16:03:19 2021]
+rule dsk:
+    input: /datater/wu/data/splitFiles
+    output: /datater/wu/data/kmerCounting/enterovirus.forward.5865-6370.fasta (dynamic)
+    jobid: 14
+    wildcards: sample=enterovirus, seg=5865-6370
+
+Subsequent jobs will be added dynamically depending on the output of this job
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-01T160319.196990.snakemake.log

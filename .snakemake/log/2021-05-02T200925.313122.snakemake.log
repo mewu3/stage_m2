@@ -1,0 +1,116 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	MSA
+	1	all
+	1	checkHeterodimer
+	1	clustering
+	1	countAllKmer1
+	1	countAllKmer2
+	1	evaluation1
+	1	evaluation2
+	1	evaluation3
+	1	evaluation4
+	1	filtering1
+	1	filtering2
+	1	getKmerPosition1
+	1	getKmerPosition2
+	1	getKmerPosition3
+	1	getKmerPosition4
+	1	removeDuplicateSeq
+	1	sortAllKmer
+	1	specific1
+	1	specific3
+	1	specific4
+	21
+Select jobs to execute...
+
+[Sun May  2 20:09:26 2021]
+rule removeDuplicateSeq:
+    input: /datater/wu/data/coronavirus.fasta
+    output: /datater/wu/data/MSSPE-basic/coronavirus/coronavirus.uniq
+    jobid: 1
+    wildcards: sample=coronavirus
+
+[Sun May  2 20:09:57 2021]
+Finished job 1.
+1 of 21 steps (5%) done
+Select jobs to execute...
+
+[Sun May  2 20:09:58 2021]
+rule clustering:
+    input: /datater/wu/data/MSSPE-basic/coronavirus/coronavirus.uniq
+    output: /datater/wu/data/MSSPE-basic/coronavirus/coronavirus0.99.uniq
+    jobid: 11
+    wildcards: sample=coronavirus
+
+
+[Sun May  2 20:09:58 2021]
+rule countAllKmer1:
+    input: /datater/wu/data/MSSPE-basic/coronavirus/coronavirus.uniq
+    output: /datater/wu/data/MSSPE-basic/coronavirus/kmer15/intermediate/allKmerCount.int.kmc_pre, /datater/wu/data/MSSPE-basic/coronavirus/kmer15/intermediate/allKmerCount.int.kmc_suf
+    jobid: 2
+    wildcards: sample=coronavirus
+
+
+[Sun May  2 20:09:58 2021]
+rule evaluation1:
+    input: /datater/wu/data/MSSPE-basic/coronavirus/coronavirus.uniq, /datater/wu/data/ncbiTaxonomy/nucl_gb.accession2taxid, /datater/wu/data/ncbiTaxonomy/ncbi_lineages_2021-04-23.csv
+    output: /datater/wu/data/MSSPE-basic/coronavirus/kmer15/intermediate/aceID-taxID-species.tsv
+    jobid: 18
+    wildcards: sample=coronavirus
+
+[Sun May  2 20:10:34 2021]
+Finished job 2.
+2 of 21 steps (10%) done
+Select jobs to execute...
+
+[Sun May  2 20:10:34 2021]
+rule countAllKmer2:
+    input: /datater/wu/data/MSSPE-basic/coronavirus/kmer15/intermediate/allKmerCount.int.kmc_pre, /datater/wu/data/MSSPE-basic/coronavirus/kmer15/intermediate/allKmerCount.int.kmc_suf
+    output: /datater/wu/data/MSSPE-basic/coronavirus/kmer15/intermediate/allKmerCount.txt
+    jobid: 3
+    wildcards: sample=coronavirus
+
+[Sun May  2 20:10:34 2021]
+Finished job 3.
+3 of 21 steps (14%) done
+Select jobs to execute...
+
+[Sun May  2 20:10:34 2021]
+rule sortAllKmer:
+    input: /datater/wu/data/MSSPE-basic/coronavirus/kmer15/intermediate/allKmerCount.txt
+    output: /datater/wu/data/MSSPE-basic/coronavirus/kmer15/intermediate/allKmerCount.sorted.txt
+    jobid: 4
+    wildcards: sample=coronavirus
+
+[Sun May  2 20:10:36 2021]
+Finished job 4.
+4 of 21 steps (19%) done
+Select jobs to execute...
+
+[Sun May  2 20:10:36 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-basic/coronavirus/kmer15/intermediate/allKmerCount.sorted.txt
+    output: /datater/wu/data/MSSPE-basic/coronavirus/kmer15/allKmerCount.sorted.calculated.txt
+    jobid: 5
+    wildcards: sample=coronavirus
+
+Terminating processes on user request, this might take some time.
+[Sun May  2 20:12:02 2021]
+Error in rule clustering:
+    jobid: 11
+    output: /datater/wu/data/MSSPE-basic/coronavirus/coronavirus0.99.uniq
+    shell:
+        ./lib/cd-hit-v4.8.1-2019-0228/cd-hit-est         -i /datater/wu/data/MSSPE-basic/coronavirus/coronavirus.uniq         -o /datater/wu/data/MSSPE-basic/coronavirus/coronavirus0.99.uniq         -c 0.99         -T 12         -M 16000
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job filtering1 since they might be corrupted:
+/datater/wu/data/MSSPE-basic/coronavirus/kmer15/allKmerCount.sorted.calculated.txt
+Removing output files of failed job evaluation1 since they might be corrupted:
+/datater/wu/data/MSSPE-basic/coronavirus/kmer15/intermediate/aceID-taxID-species.tsv
+Complete log: /datater/wu/MSSPE/.snakemake/log/2021-05-02T200925.313122.snakemake.log

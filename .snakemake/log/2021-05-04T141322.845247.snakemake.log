@@ -1,0 +1,3 @@
+Building DAG of jobs...
+MissingRuleException:
+No rule to produce /datater/wu/data/MSSPE-basic/enterovirus/kmer13/evaluation/allKmerCount.sorted.calculated.filtered.allOligo.set.coverage (if you use input functions make sure that they don't raise unexpected exceptions).

@@ -1,0 +1,3 @@
+mosek_quad_solve.lo: mosek_quad_solve.c /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:

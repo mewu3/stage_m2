@@ -1,0 +1,8 @@
+Building DAG of jobs...
+InputFunctionException in line 49 of /datater/wu/stage_m2/Snakefile:
+Error:
+  AttributeError: 'Checkpoints' object has no attribute 'splitFilteredTable'
+Wildcards:
+
+Traceback:
+  File "/datater/wu/stage_m2/Snakefile", line 42, in aggregate_input

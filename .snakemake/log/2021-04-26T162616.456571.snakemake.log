@@ -1,0 +1,51 @@
+Building DAG of jobs...
+Updating job filtering2.
+Updating job filtering2.
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	2	generateWebPage
+	3
+Select jobs to execute...
+
+[Mon Apr 26 16:26:17 2021]
+rule generateWebPage:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/kmer13/allOligo.set, /datater/wu/data/MSSPE-basic/enterovirus/enterovirus.msa
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer13/evaluation/report.html, /datater/wu/data/MSSPE-basic/enterovirus/kmer13/evaluation/style.css
+    jobid: 26
+    wildcards: sample=enterovirus
+
+[Mon Apr 26 16:26:17 2021]
+rule generateWebPage:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer13/allOligo.set, /datater/wu/data/MSSPE-basic/zika/zika.msa
+    output: /datater/wu/data/MSSPE-basic/zika/kmer13/evaluation/report.html, /datater/wu/data/MSSPE-basic/zika/kmer13/evaluation/style.css
+    jobid: 27
+    wildcards: sample=zika
+
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 115 of /datater/wu/MSSPE/rules-basic/all_evaluation.smk:
+Job Missing files after 5 seconds:
+/datater/wu/data/MSSPE-basic/zika/kmer13/evaluation/style.css
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 27 completed successfully, but some output files are missing. 27
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 583, in handle_job_success
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 252, in handle_job_success
+Removing output files of failed job generateWebPage since they might be corrupted:
+/datater/wu/data/MSSPE-basic/zika/kmer13/evaluation/report.html
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 115 of /datater/wu/MSSPE/rules-basic/all_evaluation.smk:
+Job Missing files after 5 seconds:
+/datater/wu/data/MSSPE-basic/enterovirus/kmer13/evaluation/style.css
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 26 completed successfully, but some output files are missing. 26
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 583, in handle_job_success
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 252, in handle_job_success
+Removing output files of failed job generateWebPage since they might be corrupted:
+/datater/wu/data/MSSPE-basic/enterovirus/kmer13/evaluation/report.html
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/MSSPE/.snakemake/log/2021-04-26T162616.456571.snakemake.log

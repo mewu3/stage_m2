@@ -1,0 +1,580 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	2	MSA
+	1	all
+	2	checkHeterodimer
+	2	evaluation1
+	2	evaluation2
+	2	evaluation3
+	2	filtering2
+	2	filtering3
+	2	removeDuplicateSeq
+	2	specific1
+	1	specific2
+	2	specific3
+	2	specific4
+	2	splitIntoOverlappingWindows
+	26
+Select jobs to execute...
+
+[Tue Apr 27 13:45:11 2021]
+rule removeDuplicateSeq:
+    input: /datater/wu/data/enterovirus.fasta
+    output: /datater/wu/data/MSSPE-basic/enterovirus/enterovirus.uniq
+    jobid: 1
+    wildcards: sample=enterovirus
+
+
+[Tue Apr 27 13:45:11 2021]
+rule specific2:
+    input: /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna
+    output: /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.2.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.3.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.4.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.rev.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.rev.2.ebwt
+    jobid: 13
+
+
+[Tue Apr 27 13:45:11 2021]
+rule removeDuplicateSeq:
+    input: /datater/wu/data/ZIKV-96seqs.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/zika.uniq
+    jobid: 2
+    wildcards: sample=zika
+
+[Tue Apr 27 13:45:11 2021]
+Finished job 2.
+1 of 26 steps (4%) done
+Select jobs to execute...
+
+[Tue Apr 27 13:45:11 2021]
+rule MSA:
+    input: /datater/wu/data/MSSPE-basic/zika/zika.uniq
+    output: /datater/wu/data/MSSPE-basic/zika/zika.msa
+    log: /datater/wu/data/MSSPE-basic/zika/mafft.log
+    jobid: 4
+    wildcards: sample=zika
+
+
+[Tue Apr 27 13:45:11 2021]
+rule evaluation1:
+    input: /datater/wu/data/MSSPE-basic/zika/zika.uniq, /datater/wu/data/ncbiTaxonomy/nucl_gb.accession2taxid, /datater/wu/data/ncbiTaxonomy/ncbi_lineages_2021-04-23.csv
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/aceID-taxID-species.tsv
+    jobid: 21
+    wildcards: sample=zika
+
+[Tue Apr 27 13:45:12 2021]
+Finished job 1.
+2 of 26 steps (8%) done
+Select jobs to execute...
+
+[Tue Apr 27 13:45:12 2021]
+rule MSA:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/enterovirus.uniq
+    output: /datater/wu/data/MSSPE-basic/enterovirus/enterovirus.msa
+    log: /datater/wu/data/MSSPE-basic/enterovirus/mafft.log
+    jobid: 3
+    wildcards: sample=enterovirus
+
+
+[Tue Apr 27 13:45:12 2021]
+rule evaluation1:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/enterovirus.uniq, /datater/wu/data/ncbiTaxonomy/nucl_gb.accession2taxid, /datater/wu/data/ncbiTaxonomy/ncbi_lineages_2021-04-23.csv
+    output: /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/aceID-taxID-species.tsv
+    jobid: 20
+    wildcards: sample=enterovirus
+
+[Tue Apr 27 13:45:24 2021]
+Finished job 4.
+3 of 26 steps (12%) done
+Select jobs to execute...
+
+[Tue Apr 27 13:45:24 2021]
+checkpoint splitIntoOverlappingWindows:
+    input: /datater/wu/data/MSSPE-basic/zika/zika.msa
+    output: /datater/wu/data/MSSPE-basic/zika/splitFiles
+    jobid: 8
+    wildcards: sample=zika
+Downstream jobs will be updated after completion.
+
+Updating job filtering2.
+[Tue Apr 27 13:45:26 2021]
+Finished job 8.
+4 of 198 steps (2%) done
+Select jobs to execute...
+
+[Tue Apr 27 13:45:26 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse9287-9788.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9287-9788.jf
+    jobid: 142
+    wildcards: sample=zika, seg=9287-9788
+
+
+[Tue Apr 27 13:45:26 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse4769-5270.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4769-5270.jf
+    jobid: 74
+    wildcards: sample=zika, seg=4769-5270
+
+
+[Tue Apr 27 13:45:26 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse6275-6776.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6275-6776.jf
+    jobid: 158
+    wildcards: sample=zika, seg=6275-6776
+
+
+[Tue Apr 27 13:45:26 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse3263-3764.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3263-3764.jf
+    jobid: 30
+    wildcards: sample=zika, seg=3263-3764
+
+
+[Tue Apr 27 13:45:26 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse5020-5521.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5020-5521.jf
+    jobid: 150
+    wildcards: sample=zika, seg=5020-5521
+
+
+[Tue Apr 27 13:45:26 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse251-752.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse251-752.jf
+    jobid: 154
+    wildcards: sample=zika, seg=251-752
+
+
+[Tue Apr 27 13:45:26 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse6024-6525.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6024-6525.jf
+    jobid: 162
+    wildcards: sample=zika, seg=6024-6525
+
+
+[Tue Apr 27 13:45:26 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse10542-10780.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse10542-10780.jf
+    jobid: 34
+    wildcards: sample=zika, seg=10542-10780
+
+
+[Tue Apr 27 13:45:26 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse9538-10039.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9538-10039.jf
+    jobid: 94
+    wildcards: sample=zika, seg=9538-10039
+
+
+[Tue Apr 27 13:45:26 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse10040-10541.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse10040-10541.jf
+    jobid: 42
+    wildcards: sample=zika, seg=10040-10541
+
+
+[Tue Apr 27 13:45:26 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse1757-2258.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1757-2258.jf
+    jobid: 102
+    wildcards: sample=zika, seg=1757-2258
+
+
+[Tue Apr 27 13:45:26 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse3514-4015.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3514-4015.jf
+    jobid: 50
+    wildcards: sample=zika, seg=3514-4015
+
+
+[Tue Apr 27 13:45:26 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse3012-3513.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3012-3513.jf
+    jobid: 58
+    wildcards: sample=zika, seg=3012-3513
+
+
+[Tue Apr 27 13:45:26 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse6526-7027.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6526-7027.jf
+    jobid: 110
+    wildcards: sample=zika, seg=6526-7027
+
+
+[Tue Apr 27 13:45:26 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse7781-8282.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7781-8282.jf
+    jobid: 170
+    wildcards: sample=zika, seg=7781-8282
+
+
+[Tue Apr 27 13:45:26 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse5773-6274.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5773-6274.jf
+    jobid: 118
+    wildcards: sample=zika, seg=5773-6274
+
+
+[Tue Apr 27 13:45:26 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse753-1254.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse753-1254.jf
+    jobid: 178
+    wildcards: sample=zika, seg=753-1254
+
+
+[Tue Apr 27 13:45:26 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse4267-4768.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4267-4768.jf
+    jobid: 126
+    wildcards: sample=zika, seg=4267-4768
+
+
+[Tue Apr 27 13:45:26 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse8785-9286.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8785-9286.jf
+    jobid: 66
+    wildcards: sample=zika, seg=8785-9286
+
+
+[Tue Apr 27 13:45:26 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse2761-3262.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2761-3262.jf
+    jobid: 186
+    wildcards: sample=zika, seg=2761-3262
+
+[Tue Apr 27 13:46:10 2021]
+Finished job 13.
+5 of 198 steps (3%) done
+Select jobs to execute...
+
+[Tue Apr 27 13:46:11 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse4016-4517.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4016-4517.jf
+    jobid: 194
+    wildcards: sample=zika, seg=4016-4517
+
+[Tue Apr 27 13:51:38 2021]
+Finished job 20.
+6 of 198 steps (3%) done
+Select jobs to execute...
+
+[Tue Apr 27 13:51:38 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse3765-4266.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3765-4266.jf
+    jobid: 134
+    wildcards: sample=zika, seg=3765-4266
+
+[Tue Apr 27 13:51:54 2021]
+Finished job 21.
+7 of 198 steps (4%) done
+Select jobs to execute...
+
+[Tue Apr 27 13:51:54 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse1506-2007.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1506-2007.jf
+    jobid: 38
+    wildcards: sample=zika, seg=1506-2007
+
+[Tue Apr 27 13:52:15 2021]
+Finished job 3.
+8 of 198 steps (4%) done
+Select jobs to execute...
+
+[Tue Apr 27 13:52:15 2021]
+rule countKmer1:
+    input: /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse8534-9035.fasta
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8534-9035.jf
+    jobid: 98
+    wildcards: sample=zika, seg=8534-9035
+
+Terminating processes on user request, this might take some time.
+[Tue Apr 27 14:13:47 2021]
+Error in rule countKmer1:
+    jobid: 74
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4769-5270.jf
+    shell:
+        
+        jellyfish count         -m 15         -s 3G         -t 12         -o /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4769-5270.jf /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse4769-5270.fasta         
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job countKmer1 since they might be corrupted:
+/datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4769-5270.jf
+[Tue Apr 27 14:13:47 2021]
+Error in rule countKmer1:
+    jobid: 58
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3012-3513.jf
+    shell:
+        
+        jellyfish count         -m 15         -s 3G         -t 12         -o /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3012-3513.jf /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse3012-3513.fasta         
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job countKmer1 since they might be corrupted:
+/datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3012-3513.jf
+[Tue Apr 27 14:13:47 2021]
+Error in rule countKmer1:
+    jobid: 102
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1757-2258.jf
+    shell:
+        
+        jellyfish count         -m 15         -s 3G         -t 12         -o /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1757-2258.jf /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse1757-2258.fasta         
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job countKmer1 since they might be corrupted:
+/datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1757-2258.jf
+[Tue Apr 27 14:13:47 2021]
+Error in rule countKmer1:
+    jobid: 158
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6275-6776.jf
+    shell:
+        
+        jellyfish count         -m 15         -s 3G         -t 12         -o /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6275-6776.jf /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse6275-6776.fasta         
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job countKmer1 since they might be corrupted:
+/datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6275-6776.jf
+[Tue Apr 27 14:13:47 2021]
+Error in rule countKmer1:
+    jobid: 30
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3263-3764.jf
+    shell:
+        
+        jellyfish count         -m 15         -s 3G         -t 12         -o /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3263-3764.jf /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse3263-3764.fasta         
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job countKmer1 since they might be corrupted:
+/datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3263-3764.jf
+[Tue Apr 27 14:13:47 2021]
+Error in rule countKmer1:
+    jobid: 34
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse10542-10780.jf
+    shell:
+        
+        jellyfish count         -m 15         -s 3G         -t 12         -o /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse10542-10780.jf /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse10542-10780.fasta         
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job countKmer1 since they might be corrupted:
+/datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse10542-10780.jf
+[Tue Apr 27 14:13:47 2021]
+Error in rule countKmer1:
+    jobid: 162
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6024-6525.jf
+    shell:
+        
+        jellyfish count         -m 15         -s 3G         -t 12         -o /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6024-6525.jf /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse6024-6525.fasta         
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job countKmer1 since they might be corrupted:
+/datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6024-6525.jf
+[Tue Apr 27 14:13:47 2021]
+Error in rule countKmer1:
+    jobid: 50
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3514-4015.jf
+    shell:
+        
+        jellyfish count         -m 15         -s 3G         -t 12         -o /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3514-4015.jf /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse3514-4015.fasta         
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job countKmer1 since they might be corrupted:
+/datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3514-4015.jf
+[Tue Apr 27 14:13:47 2021]
+Error in rule countKmer1:
+    jobid: 150
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5020-5521.jf
+    shell:
+        
+        jellyfish count         -m 15         -s 3G         -t 12         -o /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5020-5521.jf /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse5020-5521.fasta         
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+[Tue Apr 27 14:13:47 2021]
+
+Error in rule countKmer1:
+Removing output files of failed job countKmer1 since they might be corrupted:
+/datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5020-5521.jf
+    jobid: 94
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9538-10039.jf
+    shell:
+        
+        jellyfish count         -m 15         -s 3G         -t 12         -o /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9538-10039.jf /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse9538-10039.fasta         
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job countKmer1 since they might be corrupted:
+/datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9538-10039.jf
+[Tue Apr 27 14:13:47 2021]
+Error in rule countKmer1:
+    jobid: 42
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse10040-10541.jf
+    shell:
+        
+        jellyfish count         -m 15         -s 3G         -t 12         -o /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse10040-10541.jf /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse10040-10541.fasta         
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job countKmer1 since they might be corrupted:
+/datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse10040-10541.jf
+[Tue Apr 27 14:13:47 2021]
+Error in rule countKmer1:
+    jobid: 118
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5773-6274.jf
+    shell:
+        
+        jellyfish count         -m 15         -s 3G         -t 12         -o /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5773-6274.jf /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse5773-6274.fasta         
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job countKmer1 since they might be corrupted:
+/datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse5773-6274.jf
+[Tue Apr 27 14:13:47 2021]
+Error in rule countKmer1:
+    jobid: 194
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4016-4517.jf
+    shell:
+        
+        jellyfish count         -m 15         -s 3G         -t 12         -o /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4016-4517.jf /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse4016-4517.fasta         
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job countKmer1 since they might be corrupted:
+/datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4016-4517.jf
+[Tue Apr 27 14:13:47 2021]
+Error in rule countKmer1:
+    jobid: 178
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse753-1254.jf
+    shell:
+        
+        jellyfish count         -m 15         -s 3G         -t 12         -o /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse753-1254.jf /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse753-1254.fasta         
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job countKmer1 since they might be corrupted:
+/datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse753-1254.jf
+[Tue Apr 27 14:13:47 2021]
+Error in rule countKmer1:
+    jobid: 170
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7781-8282.jf
+    shell:
+        
+        jellyfish count         -m 15         -s 3G         -t 12         -o /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7781-8282.jf /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse7781-8282.fasta         
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job countKmer1 since they might be corrupted:
+/datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse7781-8282.jf
+[Tue Apr 27 14:13:47 2021]
+Error in rule countKmer1:
+    jobid: 126
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4267-4768.jf
+    shell:
+        
+        jellyfish count         -m 15         -s 3G         -t 12         -o /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4267-4768.jf /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse4267-4768.fasta         
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job countKmer1 since they might be corrupted:
+/datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse4267-4768.jf
+[Tue Apr 27 14:13:47 2021]
+[Tue Apr 27 14:13:47 2021]
+[Tue Apr 27 14:13:47 2021]
+Error in rule countKmer1:
+Error in rule countKmer1:
+Error in rule countKmer1:
+    jobid: 66
+    jobid: 38
+    jobid: 98
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8785-9286.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1506-2007.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8534-9035.jf
+    shell:
+        
+        jellyfish count         -m 15         -s 3G         -t 12         -o /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8785-9286.jf /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse8785-9286.fasta         
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    shell:
+        
+        jellyfish count         -m 15         -s 3G         -t 12         -o /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1506-2007.jf /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse1506-2007.fasta         
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    shell:
+        
+        jellyfish count         -m 15         -s 3G         -t 12         -o /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8534-9035.jf /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse8534-9035.fasta         
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+[Tue Apr 27 14:13:47 2021]
+[Tue Apr 27 14:13:47 2021]
+
+
+
+Error in rule countKmer1:
+Error in rule countKmer1:
+Removing output files of failed job countKmer1 since they might be corrupted:
+/datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8785-9286.jf
+[Tue Apr 27 14:13:47 2021]
+[Tue Apr 27 14:13:47 2021]
+    jobid: 110
+    jobid: 134
+Error in rule countKmer1:
+Error in rule countKmer1:
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6526-7027.jf
+Removing output files of failed job countKmer1 since they might be corrupted:
+/datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse1506-2007.jf
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3765-4266.jf
+    jobid: 142
+[Tue Apr 27 14:13:47 2021]
+    jobid: 186
+    shell:
+        
+        jellyfish count         -m 15         -s 3G         -t 12         -o /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6526-7027.jf /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse6526-7027.fasta         
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    shell:
+        
+        jellyfish count         -m 15         -s 3G         -t 12         -o /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3765-4266.jf /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse3765-4266.fasta         
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9287-9788.jf
+Removing output files of failed job countKmer1 since they might be corrupted:
+/datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse8534-9035.jf
+Error in rule countKmer1:
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2761-3262.jf
+
+
+    shell:
+        
+        jellyfish count         -m 15         -s 3G         -t 12         -o /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9287-9788.jf /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse9287-9788.fasta         
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    jobid: 154
+    shell:
+        
+        jellyfish count         -m 15         -s 3G         -t 12         -o /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2761-3262.jf /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse2761-3262.fasta         
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+Removing output files of failed job countKmer1 since they might be corrupted:
+/datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse6526-7027.jf
+
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse251-752.jf
+
+Removing output files of failed job countKmer1 since they might be corrupted:
+/datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse3765-4266.jf
+    shell:
+        
+        jellyfish count         -m 15         -s 3G         -t 12         -o /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse251-752.jf /datater/wu/data/MSSPE-basic/zika/splitFiles/reverse251-752.fasta         
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job countKmer1 since they might be corrupted:
+/datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse9287-9788.jf
+Removing output files of failed job countKmer1 since they might be corrupted:
+/datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse2761-3262.jf
+Removing output files of failed job countKmer1 since they might be corrupted:
+/datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/reverse251-752.jf
+Complete log: /datater/wu/MSSPE/.snakemake/log/2021-04-27T134511.385114.snakemake.log

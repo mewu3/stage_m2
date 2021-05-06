@@ -1,0 +1,3 @@
+WorkflowError in line 211 of /datater/wu/stage_m2/Snakefile:
+Duplicate output file pattern in rule dsk. First two duplicate for entries 0 and 37
+  File "/datater/wu/stage_m2/Snakefile", line 211, in <module>

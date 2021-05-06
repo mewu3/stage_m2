@@ -1,0 +1,49 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	mafft
+	1	seqkit
+	1	split_overlap_chunks
+	4
+Select jobs to execute...
+
+[Mon Mar  1 09:21:59 2021]
+rule seqkit:
+    input: /home/meijun/Documents/data/enterovirus.fasta
+    output: /home/meijun/Documents/data/duplicate_removed/enterovirus.uniq.fasta
+    log: /home/meijun/Documents/data/duplicate_removed/enterovirus.uniq.fasta
+    jobid: 1
+    wildcards: sample=enterovirus
+
+[Mon Mar  1 09:22:00 2021]
+Finished job 1.
+1 of 4 steps (25%) done
+Select jobs to execute...
+
+[Mon Mar  1 09:22:00 2021]
+rule mafft:
+    input: /home/meijun/Documents/data/duplicate_removed/enterovirus.uniq.fasta
+    output: /home/meijun/Documents/data/msa/enterovirus.msa.fasta
+    log: /home/meijun/Documents/data/msa/mafft.enterovirus.log
+    jobid: 2
+    wildcards: sample=enterovirus
+
+[Mon Mar  1 09:22:00 2021]
+Error in rule mafft:
+    jobid: 2
+    output: /home/meijun/Documents/data/msa/enterovirus.msa.fasta
+    log: /home/meijun/Documents/data/msa/mafft.enterovirus.log (check log file(s) for error message)
+    shell:
+        mafft         --thread -1         --retree 1 --maxiterate 0          --op 1.53         --ep 0.123         --bl 62         --jtt 62         --tm 62                           --inputorder                                    /home/meijun/Documents/data/duplicate_removed/enterovirus.uniq.fasta > /home/meijun/Documents/data/msa/enterovirus.msa.fasta         2> /home/meijun/Documents/data/msa/mafft.enterovirus.log
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job mafft since they might be corrupted:
+/home/meijun/Documents/data/msa/enterovirus.msa.fasta
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/meijun/Documents/stage_m2/.snakemake/log/2021-03-01T092158.973124.snakemake.log

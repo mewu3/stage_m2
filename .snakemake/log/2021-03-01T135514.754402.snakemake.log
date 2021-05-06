@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 51 of /datater/wu/stage_m2/Snakefile:
+Missing input files for rule all:
+/datater/wu/data/kmerCounting/enterovirus.forward.fasta

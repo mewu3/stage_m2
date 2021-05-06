@@ -1,0 +1,3 @@
+NameError in line 39 of /home/wu/Documents/stage_m2/Snakefile:
+name 'outputdir' is not defined
+  File "/home/wu/Documents/stage_m2/Snakefile", line 39, in <module>

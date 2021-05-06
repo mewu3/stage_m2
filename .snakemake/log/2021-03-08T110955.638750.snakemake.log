@@ -1,0 +1,46 @@
+Building DAG of jobs...
+MissingInputException in line 49 of /datater/wu/stage_m2/rules/dsk_oligo_filter.smk:
+Missing input files for rule merge_all_kmers:
+/datater/wu/data/filtering/dsk/zika/forward/8785-9286.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/3514-4015.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/2761-3262.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/1506-2007.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/10291-10792.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/3765-4266.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/5271-5772.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/10040-10541.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/9036-9537.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/6526-7027.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/4769-5270.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/251-752.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/7781-8282.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/1004-1505.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/753-1254.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/5522-6023.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/4016-4517.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/2510-3011.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/1757-2258.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/1255-1756.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/0-501.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/2259-2760.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/3012-3513.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/9789-10290.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/8534-9035.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/5773-6274.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/9538-10039.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/2008-2509.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/5020-5521.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/8283-8784.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/9287-9788.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/6024-6525.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/4518-5019.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/10542-10780.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/502-1003.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/6275-6776.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/4267-4768.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/3263-3764.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/8032-8533.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/6777-7278.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/7530-8031.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/7279-7780.TmFilterered
+/datater/wu/data/filtering/dsk/zika/forward/7028-7529.TmFilterered

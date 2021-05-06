@@ -1,0 +1,8 @@
+Building DAG of jobs...
+InputFunctionException in line 189 of /datater/wu/stage_m2/Snakefile:
+Error:
+  NameError: name 'sampleID' is not defined
+Wildcards:
+  sample=enterovirus
+Traceback:
+  File "/datater/wu/stage_m2/Snakefile", line 44, in kmerCounting_inputs

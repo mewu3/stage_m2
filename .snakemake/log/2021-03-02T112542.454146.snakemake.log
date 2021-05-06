@@ -1,0 +1,500 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	74	dsk
+	74	dskOutput
+	74	kmc
+	74	kmcOutput
+	297
+Select jobs to execute...
+
+[Tue Mar  2 11:25:44 2021]
+rule kmc:
+    input: /datater/wu/data/splitFiles/enterovirus.reverse.4335-4840.fasta
+    output: /datater/wu/data/kmerCounting/kmc/enterovirus.reverse.4335-4840.kmc_pre, /datater/wu/data/kmerCounting/kmc/enterovirus.reverse.4335-4840.kmc_suf
+    jobid: 217
+    wildcards: prefix=enterovirus.reverse.4335-4840
+
+
+[Tue Mar  2 11:25:44 2021]
+rule dsk:
+    input: /datater/wu/data/splitFiles/enterovirus.forward.7140-7645.fasta
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.forward.7140-7645.h5
+    jobid: 38
+    wildcards: prefix=enterovirus.forward.7140-7645
+
+
+[Tue Mar  2 11:25:44 2021]
+rule dsk:
+    input: /datater/wu/data/splitFiles/enterovirus.reverse.6630-7135.fasta
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.reverse.6630-7135.h5
+    jobid: 98
+    wildcards: prefix=enterovirus.reverse.6630-7135
+
+
+[Tue Mar  2 11:25:44 2021]
+rule kmc:
+    input: /datater/wu/data/splitFiles/enterovirus.reverse.3315-3820.fasta
+    output: /datater/wu/data/kmerCounting/kmc/enterovirus.reverse.3315-3820.kmc_pre, /datater/wu/data/kmerCounting/kmc/enterovirus.reverse.3315-3820.kmc_suf
+    jobid: 231
+    wildcards: prefix=enterovirus.reverse.3315-3820
+
+
+[Tue Mar  2 11:25:44 2021]
+rule dsk:
+    input: /datater/wu/data/splitFiles/enterovirus.reverse.2550-3055.fasta
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.reverse.2550-3055.h5
+    jobid: 99
+    wildcards: prefix=enterovirus.reverse.2550-3055
+
+
+[Tue Mar  2 11:25:44 2021]
+rule kmc:
+    input: /datater/wu/data/splitFiles/enterovirus.reverse.2550-3055.fasta
+    output: /datater/wu/data/kmerCounting/kmc/enterovirus.reverse.2550-3055.kmc_pre, /datater/wu/data/kmerCounting/kmc/enterovirus.reverse.2550-3055.kmc_suf
+    jobid: 247
+    wildcards: prefix=enterovirus.reverse.2550-3055
+
+
+[Tue Mar  2 11:25:44 2021]
+rule dsk:
+    input: /datater/wu/data/splitFiles/enterovirus.forward.1275-1780.fasta
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.forward.1275-1780.h5
+    jobid: 54
+    wildcards: prefix=enterovirus.forward.1275-1780
+
+
+[Tue Mar  2 11:25:44 2021]
+rule dsk:
+    input: /datater/wu/data/splitFiles/enterovirus.forward.0-505.fasta
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.forward.0-505.h5
+    jobid: 22
+    wildcards: prefix=enterovirus.forward.0-505
+
+
+[Tue Mar  2 11:25:44 2021]
+rule dsk:
+    input: /datater/wu/data/splitFiles/enterovirus.forward.2040-2545.fasta
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.forward.2040-2545.h5
+    jobid: 6
+    wildcards: prefix=enterovirus.forward.2040-2545
+
+
+[Tue Mar  2 11:25:44 2021]
+rule dsk:
+    input: /datater/wu/data/splitFiles/enterovirus.reverse.6375-6880.fasta
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.reverse.6375-6880.h5
+    jobid: 82
+    wildcards: prefix=enterovirus.reverse.6375-6880
+
+
+[Tue Mar  2 11:25:44 2021]
+rule dsk:
+    input: /datater/wu/data/splitFiles/enterovirus.forward.3060-3565.fasta
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.forward.3060-3565.h5
+    jobid: 97
+    wildcards: prefix=enterovirus.forward.3060-3565
+
+
+[Tue Mar  2 11:25:44 2021]
+rule kmc:
+    input: /datater/wu/data/splitFiles/enterovirus.reverse.3060-3565.fasta
+    output: /datater/wu/data/kmerCounting/kmc/enterovirus.reverse.3060-3565.kmc_pre, /datater/wu/data/kmerCounting/kmc/enterovirus.reverse.3060-3565.kmc_suf
+    jobid: 230
+    wildcards: prefix=enterovirus.reverse.3060-3565
+
+[Tue Mar  2 11:25:47 2021]
+Finished job 98.
+1 of 297 steps (0.34%) done
+Select jobs to execute...
+[Tue Mar  2 11:25:47 2021]
+Finished job 99.
+2 of 297 steps (0.67%) done
+[Tue Mar  2 11:25:47 2021]
+Finished job 22.
+3 of 297 steps (1%) done
+
+[Tue Mar  2 11:25:47 2021]
+rule dsk:
+    input: /datater/wu/data/splitFiles/enterovirus.forward.4080-4585.fasta
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.forward.4080-4585.h5
+    jobid: 30
+    wildcards: prefix=enterovirus.forward.4080-4585
+
+Select jobs to execute...
+
+[Tue Mar  2 11:25:47 2021]
+rule kmc:
+    input: /datater/wu/data/splitFiles/enterovirus.reverse.9180-9398.fasta
+    output: /datater/wu/data/kmerCounting/kmc/enterovirus.reverse.9180-9398.kmc_pre, /datater/wu/data/kmerCounting/kmc/enterovirus.reverse.9180-9398.kmc_suf
+    jobid: 203
+    wildcards: prefix=enterovirus.reverse.9180-9398
+
+
+[Tue Mar  2 11:25:47 2021]
+rule dsk:
+    input: /datater/wu/data/splitFiles/enterovirus.reverse.4335-4840.fasta
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.reverse.4335-4840.h5
+    jobid: 56
+    wildcards: prefix=enterovirus.reverse.4335-4840
+
+Select jobs to execute...
+[Tue Mar  2 11:25:47 2021]
+Finished job 54.
+4 of 297 steps (1%) done
+Select jobs to execute...
+
+[Tue Mar  2 11:25:47 2021]
+rule dsk:
+    input: /datater/wu/data/splitFiles/enterovirus.reverse.4845-5350.fasta
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.reverse.4845-5350.h5
+    jobid: 75
+    wildcards: prefix=enterovirus.reverse.4845-5350
+
+[Tue Mar  2 11:25:47 2021]
+Finished job 6.
+5 of 297 steps (2%) done
+Select jobs to execute...
+[Tue Mar  2 11:25:47 2021]
+Finished job 97.
+6 of 297 steps (2%) done
+[Tue Mar  2 11:25:47 2021]
+Finished job 82.
+7 of 297 steps (2%) done
+
+[Tue Mar  2 11:25:47 2021]
+rule kmc:
+    input: /datater/wu/data/splitFiles/enterovirus.reverse.7395-7900.fasta
+    output: /datater/wu/data/kmerCounting/kmc/enterovirus.reverse.7395-7900.kmc_pre, /datater/wu/data/kmerCounting/kmc/enterovirus.reverse.7395-7900.kmc_suf
+    jobid: 222
+    wildcards: prefix=enterovirus.reverse.7395-7900
+
+Select jobs to execute...
+[Tue Mar  2 11:25:47 2021]
+Finished job 38.
+8 of 297 steps (3%) done
+
+[Tue Mar  2 11:25:47 2021]
+rule kmc:
+    input: /datater/wu/data/splitFiles/enterovirus.forward.4590-5095.fasta
+    output: /datater/wu/data/kmerCounting/kmc/enterovirus.forward.4590-5095.kmc_pre, /datater/wu/data/kmerCounting/kmc/enterovirus.forward.4590-5095.kmc_suf
+    jobid: 189
+    wildcards: prefix=enterovirus.forward.4590-5095
+
+
+[Tue Mar  2 11:25:47 2021]
+rule kmc:
+    input: /datater/wu/data/splitFiles/enterovirus.forward.8670-9175.fasta
+    output: /datater/wu/data/kmerCounting/kmc/enterovirus.forward.8670-9175.kmc_pre, /datater/wu/data/kmerCounting/kmc/enterovirus.forward.8670-9175.kmc_suf
+    jobid: 205
+    wildcards: prefix=enterovirus.forward.8670-9175
+
+Select jobs to execute...
+
+[Tue Mar  2 11:25:47 2021]
+rule dsk:
+    input: /datater/wu/data/splitFiles/enterovirus.reverse.8670-9175.fasta
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.reverse.8670-9175.h5
+    jobid: 14
+    wildcards: prefix=enterovirus.reverse.8670-9175
+
+Select jobs to execute...
+[Tue Mar  2 11:25:50 2021]
+Finished job 30.
+9 of 297 steps (3%) done
+Select jobs to execute...
+[Tue Mar  2 11:25:50 2021]
+Finished job 75.
+10 of 297 steps (3%) done
+
+[Tue Mar  2 11:25:50 2021]
+rule dsk:
+    input: /datater/wu/data/splitFiles/enterovirus.reverse.6885-7390.fasta
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.reverse.6885-7390.h5
+    jobid: 89
+    wildcards: prefix=enterovirus.reverse.6885-7390
+
+Select jobs to execute...
+
+[Tue Mar  2 11:25:50 2021]
+rule dsk:
+    input: /datater/wu/data/splitFiles/enterovirus.forward.1785-2290.fasta
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.forward.1785-2290.h5
+    jobid: 90
+    wildcards: prefix=enterovirus.forward.1785-2290
+
+[Tue Mar  2 11:25:50 2021]
+Finished job 14.
+11 of 297 steps (4%) done
+Select jobs to execute...
+
+[Tue Mar  2 11:25:51 2021]
+rule kmc:
+    input: /datater/wu/data/splitFiles/enterovirus.reverse.1275-1780.fasta
+    output: /datater/wu/data/kmerCounting/kmc/enterovirus.reverse.1275-1780.kmc_pre, /datater/wu/data/kmerCounting/kmc/enterovirus.reverse.1275-1780.kmc_suf
+    jobid: 223
+    wildcards: prefix=enterovirus.reverse.1275-1780
+
+[Tue Mar  2 11:25:51 2021]
+Finished job 56.
+12 of 297 steps (4%) done
+Select jobs to execute...
+
+[Tue Mar  2 11:25:51 2021]
+rule dskOutput:
+    input: /datater/wu/data/kmerCounting/dsk/enterovirus.reverse.8670-9175.h5
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.reverse.8670-9175.txt
+    jobid: 120
+    wildcards: prefix=enterovirus.reverse.8670-9175
+
+[Tue Mar  2 11:25:51 2021]
+Finished job 120.
+13 of 297 steps (4%) done
+Select jobs to execute...
+
+[Tue Mar  2 11:25:51 2021]
+rule dsk:
+    input: /datater/wu/data/splitFiles/enterovirus.reverse.3825-4330.fasta
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.reverse.3825-4330.h5
+    jobid: 16
+    wildcards: prefix=enterovirus.reverse.3825-4330
+
+[Tue Mar  2 11:25:53 2021]
+Finished job 90.
+14 of 297 steps (5%) done
+Select jobs to execute...
+
+[Tue Mar  2 11:25:53 2021]
+rule dskOutput:
+    input: /datater/wu/data/kmerCounting/dsk/enterovirus.forward.1785-2290.h5
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.forward.1785-2290.txt
+    jobid: 165
+    wildcards: prefix=enterovirus.forward.1785-2290
+
+[Tue Mar  2 11:25:53 2021]
+Finished job 165.
+15 of 297 steps (5%) done
+Select jobs to execute...
+[Tue Mar  2 11:25:53 2021]
+Finished job 89.
+16 of 297 steps (5%) done
+
+[Tue Mar  2 11:25:53 2021]
+rule kmc:
+    input: /datater/wu/data/splitFiles/enterovirus.forward.3315-3820.fasta
+    output: /datater/wu/data/kmerCounting/kmc/enterovirus.forward.3315-3820.kmc_pre, /datater/wu/data/kmerCounting/kmc/enterovirus.forward.3315-3820.kmc_suf
+    jobid: 224
+    wildcards: prefix=enterovirus.forward.3315-3820
+
+Select jobs to execute...
+
+[Tue Mar  2 11:25:53 2021]
+rule dsk:
+    input: /datater/wu/data/splitFiles/enterovirus.reverse.5355-5860.fasta
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.reverse.5355-5860.h5
+    jobid: 91
+    wildcards: prefix=enterovirus.reverse.5355-5860
+
+[Tue Mar  2 11:25:53 2021]
+Finished job 16.
+17 of 297 steps (6%) done
+Select jobs to execute...
+
+[Tue Mar  2 11:25:53 2021]
+rule dskOutput:
+    input: /datater/wu/data/kmerCounting/dsk/enterovirus.reverse.3825-4330.h5
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.reverse.3825-4330.txt
+    jobid: 121
+    wildcards: prefix=enterovirus.reverse.3825-4330
+
+[Tue Mar  2 11:25:53 2021]
+Finished job 121.
+18 of 297 steps (6%) done
+Select jobs to execute...
+
+[Tue Mar  2 11:25:53 2021]
+rule dsk:
+    input: /datater/wu/data/splitFiles/enterovirus.forward.6885-7390.fasta
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.forward.6885-7390.h5
+    jobid: 12
+    wildcards: prefix=enterovirus.forward.6885-7390
+
+[Tue Mar  2 11:25:56 2021]
+Finished job 91.
+19 of 297 steps (6%) done
+Select jobs to execute...
+
+[Tue Mar  2 11:25:56 2021]
+rule dsk:
+    input: /datater/wu/data/splitFiles/enterovirus.forward.6120-6625.fasta
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.forward.6120-6625.h5
+    jobid: 72
+    wildcards: prefix=enterovirus.forward.6120-6625
+
+[Tue Mar  2 11:25:56 2021]
+Finished job 12.
+20 of 297 steps (7%) done
+Select jobs to execute...
+
+[Tue Mar  2 11:25:56 2021]
+rule kmc:
+    input: /datater/wu/data/splitFiles/enterovirus.forward.7395-7900.fasta
+    output: /datater/wu/data/kmerCounting/kmc/enterovirus.forward.7395-7900.kmc_pre, /datater/wu/data/kmerCounting/kmc/enterovirus.forward.7395-7900.kmc_suf
+    jobid: 220
+    wildcards: prefix=enterovirus.forward.7395-7900
+
+[Tue Mar  2 11:25:58 2021]
+Finished job 72.
+21 of 297 steps (7%) done
+Select jobs to execute...
+
+[Tue Mar  2 11:25:59 2021]
+rule dsk:
+    input: /datater/wu/data/splitFiles/enterovirus.reverse.765-1270.fasta
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.reverse.765-1270.h5
+    jobid: 28
+    wildcards: prefix=enterovirus.reverse.765-1270
+
+[Tue Mar  2 11:26:01 2021]
+Finished job 28.
+22 of 297 steps (7%) done
+Select jobs to execute...
+
+[Tue Mar  2 11:26:01 2021]
+rule dsk:
+    input: /datater/wu/data/splitFiles/enterovirus.forward.5355-5860.fasta
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.forward.5355-5860.h5
+    jobid: 73
+    wildcards: prefix=enterovirus.forward.5355-5860
+
+[Tue Mar  2 11:26:03 2021]
+Finished job 73.
+23 of 297 steps (8%) done
+Select jobs to execute...
+
+[Tue Mar  2 11:26:03 2021]
+rule dsk:
+    input: /datater/wu/data/splitFiles/enterovirus.forward.3825-4330.fasta
+    output: /datater/wu/data/kmerCounting/dsk/enterovirus.forward.3825-4330.h5
+    jobid: 88
+    wildcards: prefix=enterovirus.forward.3825-4330
+
+[Tue Mar  2 11:26:06 2021]
+Finished job 88.
+24 of 297 steps (8%) done
+Select jobs to execute...
+
+[Tue Mar  2 11:26:06 2021]
+rule kmc:
+    input: /datater/wu/data/splitFiles/enterovirus.forward.8415-8920.fasta
+    output: /datater/wu/data/kmerCounting/kmc/enterovirus.forward.8415-8920.kmc_pre, /datater/wu/data/kmerCounting/kmc/enterovirus.forward.8415-8920.kmc_suf
+    jobid: 221
+    wildcards: prefix=enterovirus.forward.8415-8920
+
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 233 of /datater/wu/stage_m2/Snakefile:
+Job Missing files after 5 seconds:
+/datater/wu/data/kmerCounting/kmc/enterovirus.reverse.2550-3055.kmc_pre
+/datater/wu/data/kmerCounting/kmc/enterovirus.reverse.2550-3055.kmc_suf
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 247 completed successfully, but some output files are missing. 247
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 583, in handle_job_success
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 252, in handle_job_success
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 233 of /datater/wu/stage_m2/Snakefile:
+Job Missing files after 5 seconds:
+/datater/wu/data/kmerCounting/kmc/enterovirus.reverse.3060-3565.kmc_pre
+/datater/wu/data/kmerCounting/kmc/enterovirus.reverse.3060-3565.kmc_suf
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 230 completed successfully, but some output files are missing. 230
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 583, in handle_job_success
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 252, in handle_job_success
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 233 of /datater/wu/stage_m2/Snakefile:
+Job Missing files after 5 seconds:
+/datater/wu/data/kmerCounting/kmc/enterovirus.reverse.3315-3820.kmc_pre
+/datater/wu/data/kmerCounting/kmc/enterovirus.reverse.3315-3820.kmc_suf
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 231 completed successfully, but some output files are missing. 231
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 583, in handle_job_success
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 252, in handle_job_success
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 233 of /datater/wu/stage_m2/Snakefile:
+Job Missing files after 5 seconds:
+/datater/wu/data/kmerCounting/kmc/enterovirus.reverse.7395-7900.kmc_pre
+/datater/wu/data/kmerCounting/kmc/enterovirus.reverse.7395-7900.kmc_suf
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 222 completed successfully, but some output files are missing. 222
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 583, in handle_job_success
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 252, in handle_job_success
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 233 of /datater/wu/stage_m2/Snakefile:
+Job Missing files after 5 seconds:
+/datater/wu/data/kmerCounting/kmc/enterovirus.reverse.4335-4840.kmc_pre
+/datater/wu/data/kmerCounting/kmc/enterovirus.reverse.4335-4840.kmc_suf
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 217 completed successfully, but some output files are missing. 217
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 583, in handle_job_success
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 252, in handle_job_success
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 233 of /datater/wu/stage_m2/Snakefile:
+Job Missing files after 5 seconds:
+/datater/wu/data/kmerCounting/kmc/enterovirus.reverse.9180-9398.kmc_pre
+/datater/wu/data/kmerCounting/kmc/enterovirus.reverse.9180-9398.kmc_suf
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 203 completed successfully, but some output files are missing. 203
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 583, in handle_job_success
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 252, in handle_job_success
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 233 of /datater/wu/stage_m2/Snakefile:
+Job Missing files after 5 seconds:
+/datater/wu/data/kmerCounting/kmc/enterovirus.forward.8670-9175.kmc_pre
+/datater/wu/data/kmerCounting/kmc/enterovirus.forward.8670-9175.kmc_suf
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 205 completed successfully, but some output files are missing. 205
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 583, in handle_job_success
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 252, in handle_job_success
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 233 of /datater/wu/stage_m2/Snakefile:
+Job Missing files after 5 seconds:
+/datater/wu/data/kmerCounting/kmc/enterovirus.reverse.1275-1780.kmc_pre
+/datater/wu/data/kmerCounting/kmc/enterovirus.reverse.1275-1780.kmc_suf
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 223 completed successfully, but some output files are missing. 223
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 583, in handle_job_success
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 252, in handle_job_success
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 233 of /datater/wu/stage_m2/Snakefile:
+Job Missing files after 5 seconds:
+/datater/wu/data/kmerCounting/kmc/enterovirus.forward.3315-3820.kmc_pre
+/datater/wu/data/kmerCounting/kmc/enterovirus.forward.3315-3820.kmc_suf
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 224 completed successfully, but some output files are missing. 224
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 583, in handle_job_success
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 252, in handle_job_success
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 233 of /datater/wu/stage_m2/Snakefile:
+Job Missing files after 5 seconds:
+/datater/wu/data/kmerCounting/kmc/enterovirus.forward.7395-7900.kmc_pre
+/datater/wu/data/kmerCounting/kmc/enterovirus.forward.7395-7900.kmc_suf
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 220 completed successfully, but some output files are missing. 220
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 583, in handle_job_success
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 252, in handle_job_success
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 233 of /datater/wu/stage_m2/Snakefile:
+Job Missing files after 5 seconds:
+/datater/wu/data/kmerCounting/kmc/enterovirus.forward.8415-8920.kmc_pre
+/datater/wu/data/kmerCounting/kmc/enterovirus.forward.8415-8920.kmc_suf
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 221 completed successfully, but some output files are missing. 221
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 583, in handle_job_success
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 252, in handle_job_success
+Waiting at most 5 seconds for missing files.
+Terminating processes on user request, this might take some time.
+Cancelling snakemake on user request.

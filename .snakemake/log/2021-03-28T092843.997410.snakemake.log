@@ -1,0 +1,207 @@
+Building DAG of jobs...
+Updating job aggregate_allReverseOligo.
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	33	blastn_short
+	34
+Select jobs to execute...
+
+[Sun Mar 28 09:28:44 2021]
+rule blastn_short:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse2282_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse2282_filtered.blastn.out
+    jobid: 321
+    wildcards: sample=enterovirus, seg=2282
+
+
+[Sun Mar 28 09:28:44 2021]
+rule blastn_short:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse5838_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse5838_filtered.blastn.out
+    jobid: 301
+    wildcards: sample=enterovirus, seg=5838
+
+
+[Sun Mar 28 09:28:44 2021]
+rule blastn_short:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse7108_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse7108_filtered.blastn.out
+    jobid: 313
+    wildcards: sample=enterovirus, seg=7108
+
+
+[Sun Mar 28 09:28:44 2021]
+rule blastn_short:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse5330_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse5330_filtered.blastn.out
+    jobid: 273
+    wildcards: sample=enterovirus, seg=5330
+
+
+[Sun Mar 28 09:28:44 2021]
+rule blastn_short:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse6092_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse6092_filtered.blastn.out
+    jobid: 311
+    wildcards: sample=enterovirus, seg=6092
+
+
+[Sun Mar 28 09:28:44 2021]
+rule blastn_short:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse6600_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse6600_filtered.blastn.out
+    jobid: 331
+    wildcards: sample=enterovirus, seg=6600
+
+
+[Sun Mar 28 09:28:44 2021]
+rule blastn_short:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse7362_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse7362_filtered.blastn.out
+    jobid: 277
+    wildcards: sample=enterovirus, seg=7362
+
+
+[Sun Mar 28 09:28:44 2021]
+rule blastn_short:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse6346_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse6346_filtered.blastn.out
+    jobid: 287
+    wildcards: sample=enterovirus, seg=6346
+
+
+[Sun Mar 28 09:28:44 2021]
+rule blastn_short:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse1266_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse1266_filtered.blastn.out
+    jobid: 297
+    wildcards: sample=enterovirus, seg=1266
+
+
+[Sun Mar 28 09:28:44 2021]
+rule blastn_short:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse8124_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse8124_filtered.blastn.out
+    jobid: 307
+    wildcards: sample=enterovirus, seg=8124
+
+
+[Sun Mar 28 09:28:44 2021]
+rule blastn_short:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse7616_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse7616_filtered.blastn.out
+    jobid: 317
+    wildcards: sample=enterovirus, seg=7616
+
+
+[Sun Mar 28 09:28:45 2021]
+rule blastn_short:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse8378_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse8378_filtered.blastn.out
+    jobid: 327
+    wildcards: sample=enterovirus, seg=8378
+
+[Sun Mar 28 09:28:45 2021]
+Error in rule blastn_short:
+[Sun Mar 28 09:28:45 2021]
+    jobid: 321
+[Sun Mar 28 09:28:45 2021]
+Error in rule blastn_short:
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse2282_filtered.blastn.out
+[Sun Mar 28 09:28:45 2021]
+Error in rule blastn_short:
+    jobid: 301
+    shell:
+        blastn -task blastn-short         -db refseq_representative_genomes -remote         -entrez_query         -word_size 5         -num_threads 12         -query /datater/wu/data/enterovirus/checkSpecifity/reverse2282_filtered.fasta         -out /datater/wu/data/enterovirus/checkSpecifity/reverse2282_filtered.blastn.out         -outfmt '6 qacc sacc stitle pident length mismatch gapopen sstart send evalue'
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+Error in rule blastn_short:
+    jobid: 313
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse5838_filtered.blastn.out
+
+    jobid: 273
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse7108_filtered.blastn.out
+    shell:
+        blastn -task blastn-short         -db refseq_representative_genomes -remote         -entrez_query         -word_size 5         -num_threads 12         -query /datater/wu/data/enterovirus/checkSpecifity/reverse5838_filtered.fasta         -out /datater/wu/data/enterovirus/checkSpecifity/reverse5838_filtered.blastn.out         -outfmt '6 qacc sacc stitle pident length mismatch gapopen sstart send evalue'
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse5330_filtered.blastn.out
+    shell:
+        blastn -task blastn-short         -db refseq_representative_genomes -remote         -entrez_query         -word_size 5         -num_threads 12         -query /datater/wu/data/enterovirus/checkSpecifity/reverse7108_filtered.fasta         -out /datater/wu/data/enterovirus/checkSpecifity/reverse7108_filtered.blastn.out         -outfmt '6 qacc sacc stitle pident length mismatch gapopen sstart send evalue'
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+    shell:
+        blastn -task blastn-short         -db refseq_representative_genomes -remote         -entrez_query         -word_size 5         -num_threads 12         -query /datater/wu/data/enterovirus/checkSpecifity/reverse5330_filtered.fasta         -out /datater/wu/data/enterovirus/checkSpecifity/reverse5330_filtered.blastn.out         -outfmt '6 qacc sacc stitle pident length mismatch gapopen sstart send evalue'
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Sun Mar 28 09:28:45 2021]
+Error in rule blastn_short:
+    jobid: 311
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse6092_filtered.blastn.out
+    shell:
+        blastn -task blastn-short         -db refseq_representative_genomes -remote         -entrez_query         -word_size 5         -num_threads 12         -query /datater/wu/data/enterovirus/checkSpecifity/reverse6092_filtered.fasta         -out /datater/wu/data/enterovirus/checkSpecifity/reverse6092_filtered.blastn.out         -outfmt '6 qacc sacc stitle pident length mismatch gapopen sstart send evalue'
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sun Mar 28 09:28:45 2021]
+Error in rule blastn_short:
+    jobid: 277
+[Sun Mar 28 09:28:45 2021]
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse7362_filtered.blastn.out
+[Sun Mar 28 09:28:45 2021]
+Error in rule blastn_short:
+    shell:
+        blastn -task blastn-short         -db refseq_representative_genomes -remote         -entrez_query         -word_size 5         -num_threads 12         -query /datater/wu/data/enterovirus/checkSpecifity/reverse7362_filtered.fasta         -out /datater/wu/data/enterovirus/checkSpecifity/reverse7362_filtered.blastn.out         -outfmt '6 qacc sacc stitle pident length mismatch gapopen sstart send evalue'
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+Error in rule blastn_short:
+    jobid: 331
+
+    jobid: 287
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse6600_filtered.blastn.out
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse6346_filtered.blastn.out
+    shell:
+        blastn -task blastn-short         -db refseq_representative_genomes -remote         -entrez_query         -word_size 5         -num_threads 12         -query /datater/wu/data/enterovirus/checkSpecifity/reverse6600_filtered.fasta         -out /datater/wu/data/enterovirus/checkSpecifity/reverse6600_filtered.blastn.out         -outfmt '6 qacc sacc stitle pident length mismatch gapopen sstart send evalue'
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    shell:
+        blastn -task blastn-short         -db refseq_representative_genomes -remote         -entrez_query         -word_size 5         -num_threads 12         -query /datater/wu/data/enterovirus/checkSpecifity/reverse6346_filtered.fasta         -out /datater/wu/data/enterovirus/checkSpecifity/reverse6346_filtered.blastn.out         -outfmt '6 qacc sacc stitle pident length mismatch gapopen sstart send evalue'
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sun Mar 28 09:28:45 2021]
+
+Error in rule blastn_short:
+    jobid: 297
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse1266_filtered.blastn.out
+    shell:
+        blastn -task blastn-short         -db refseq_representative_genomes -remote         -entrez_query         -word_size 5         -num_threads 12         -query /datater/wu/data/enterovirus/checkSpecifity/reverse1266_filtered.fasta         -out /datater/wu/data/enterovirus/checkSpecifity/reverse1266_filtered.blastn.out         -outfmt '6 qacc sacc stitle pident length mismatch gapopen sstart send evalue'
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sun Mar 28 09:28:45 2021]
+Error in rule blastn_short:
+    jobid: 307
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse8124_filtered.blastn.out
+    shell:
+        blastn -task blastn-short         -db refseq_representative_genomes -remote         -entrez_query         -word_size 5         -num_threads 12         -query /datater/wu/data/enterovirus/checkSpecifity/reverse8124_filtered.fasta         -out /datater/wu/data/enterovirus/checkSpecifity/reverse8124_filtered.blastn.out         -outfmt '6 qacc sacc stitle pident length mismatch gapopen sstart send evalue'
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sun Mar 28 09:28:45 2021]
+Error in rule blastn_short:
+    jobid: 317
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse7616_filtered.blastn.out
+    shell:
+        blastn -task blastn-short         -db refseq_representative_genomes -remote         -entrez_query         -word_size 5         -num_threads 12         -query /datater/wu/data/enterovirus/checkSpecifity/reverse7616_filtered.fasta         -out /datater/wu/data/enterovirus/checkSpecifity/reverse7616_filtered.blastn.out         -outfmt '6 qacc sacc stitle pident length mismatch gapopen sstart send evalue'
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sun Mar 28 09:28:45 2021]
+Error in rule blastn_short:
+    jobid: 327
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse8378_filtered.blastn.out
+    shell:
+        blastn -task blastn-short         -db refseq_representative_genomes -remote         -entrez_query         -word_size 5         -num_threads 12         -query /datater/wu/data/enterovirus/checkSpecifity/reverse8378_filtered.fasta         -out /datater/wu/data/enterovirus/checkSpecifity/reverse8378_filtered.blastn.out         -outfmt '6 qacc sacc stitle pident length mismatch gapopen sstart send evalue'
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-28T092843.997410.snakemake.log

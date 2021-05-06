@@ -1,0 +1,30 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	clustering
+	1	removeDuplicateSeq
+	1	test1
+	4
+Select jobs to execute...
+
+[Thu May  6 10:57:09 2021]
+rule removeDuplicateSeq:
+    input: /datater/wu/data/tmp/sars2.fasta
+    output: /datater/wu/data/tmp/sars2.uniq.fasta
+    jobid: 1
+
+Terminating processes on user request, this might take some time.
+[Thu May  6 13:25:40 2021]
+Error in rule removeDuplicateSeq:
+    jobid: 1
+    output: /datater/wu/data/tmp/sars2.uniq.fasta
+    shell:
+        lib/cd-hit-v4.8.1-2019-0228/cd-hit-auxtools/cd-hit-dup -i /datater/wu/data/tmp/sars2.fasta -o /datater/wu/data/tmp/sars2.uniq.fasta
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Complete log: /datater/wu/MSSPE/.snakemake/log/2021-05-06T105708.630819.snakemake.log

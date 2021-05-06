@@ -1,0 +1,3 @@
+SyntaxError in line 58 of /datater/wu/stage_m2/rules/reverse_check_specifity.smk:
+Expected name or colon after rule or checkpoint keyword. (reverse_check_specifity.smk, line 58)
+  File "/datater/wu/stage_m2/Snakefile", line 68, in <module>

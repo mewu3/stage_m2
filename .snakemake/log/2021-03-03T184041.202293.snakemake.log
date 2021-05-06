@@ -1,0 +1,12 @@
+Building DAG of jobs...
+AmbiguousRuleException:
+Rules dsk_forward and split_overlap_chunks are ambiguous for the file /home/meijun/Documents/data/splitFiles/enterovirus.reverse.__snakemake_dynamic__.fasta.
+Consider starting rule output with a unique prefix, constrain your wildcards, or use the ruleorder directive.
+Wildcards:
+	dsk_forward: sample=enterovirus,seg=__snakemake_dynamic__
+	split_overlap_chunks: sample=enterovirus,seg=__snakemake_dynamic__
+Expected input files:
+	dsk_forward: /home/meijun/Documents/data/splitFiles/enterovirus.forward.__snakemake_dynamic__.fasta
+	split_overlap_chunks: /home/meijun/Documents/data/msa/enterovirus.msa.fastaExpected output files:
+	dsk_forward: /home/meijun/Documents/data/splitFiles/enterovirus.reverse.__snakemake_dynamic__.fasta
+	split_overlap_chunks: /home/meijun/Documents/data/splitFiles/enterovirus.forward.__snakemake_dynamic__.fasta /home/meijun/Documents/data/splitFiles/enterovirus.reverse.__snakemake_dynamic__.fasta

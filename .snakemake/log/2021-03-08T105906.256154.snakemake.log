@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 32 of /datater/wu/stage_m2/rules/dsk_oligo_filter.smk:
+Missing input files for rule filterOut_forward:
+/datater/wu/data/filtering/zika/dsk/forward/__snakemake_dynamic__.tm

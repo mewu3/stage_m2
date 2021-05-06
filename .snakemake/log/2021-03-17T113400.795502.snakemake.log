@@ -1,0 +1,33 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	mktree_index
+	2
+Select jobs to execute...
+
+[Wed Mar 17 11:34:01 2021]
+rule mktree_index:
+    input: /datater/wu/data/zika/zika.uniq.dna
+    output: /datater/wu/data/zika/zika.uniq.dna.al1, /datater/wu/data/zika/zika.uniq.dna.bck, /datater/wu/data/zika/zika.uniq.dna.bwt, /datater/wu/data/zika/zika.uniq.dna.des, /datater/wu/data/zika/zika.uniq.dna.lcp, /datater/wu/data/zika/zika.uniq.dna.llv, /datater/wu/data/zika/zika.uniq.dna.ois, /datater/wu/data/zika/zika.uniq.dna.prj, /datater/wu/data/zika/zika.uniq.dna.sds, /datater/wu/data/zika/zika.uniq.dna.skp, /datater/wu/data/zika/zika.uniq.dna.ssp, /datater/wu/data/zika/zika.uniq.dna.sti1, /datater/wu/data/zika/zika.uniq.dna.suf, /datater/wu/data/zika/zika.uniq.dna.tis
+    jobid: 1
+    wildcards: sample=zika
+
+[Wed Mar 17 11:34:05 2021]
+Finished job 1.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Wed Mar 17 11:34:05 2021]
+localrule all:
+    input: /datater/wu/data/zika/zika.uniq.dna.al1, /datater/wu/data/zika/zika.uniq.dna.bck, /datater/wu/data/zika/zika.uniq.dna.bwt, /datater/wu/data/zika/zika.uniq.dna.des, /datater/wu/data/zika/zika.uniq.dna.lcp, /datater/wu/data/zika/zika.uniq.dna.llv, /datater/wu/data/zika/zika.uniq.dna.ois, /datater/wu/data/zika/zika.uniq.dna.prj, /datater/wu/data/zika/zika.uniq.dna.sds, /datater/wu/data/zika/zika.uniq.dna.skp, /datater/wu/data/zika/zika.uniq.dna.ssp, /datater/wu/data/zika/zika.uniq.dna.sti1, /datater/wu/data/zika/zika.uniq.dna.suf, /datater/wu/data/zika/zika.uniq.dna.tis
+    jobid: 0
+
+[Wed Mar 17 11:34:05 2021]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-17T113400.795502.snakemake.log

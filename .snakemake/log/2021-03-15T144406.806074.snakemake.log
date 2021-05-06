@@ -1,0 +1,499 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	43	reverse_linguistic_complexity
+	44
+Select jobs to execute...
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse2761-3262.fa
+    output: /datater/wu/data/zika/filtering/reverse2761-3262.nessieOut
+    jobid: 204
+    wildcards: sample=zika, seg=2761-3262
+
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse7279-7780.fa
+    output: /datater/wu/data/zika/filtering/reverse7279-7780.nessieOut
+    jobid: 108
+    wildcards: sample=zika, seg=7279-7780
+
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse10542-10780.fa
+    output: /datater/wu/data/zika/filtering/reverse10542-10780.nessieOut
+    jobid: 72
+    wildcards: sample=zika, seg=10542-10780
+
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse4769-5270.fa
+    output: /datater/wu/data/zika/filtering/reverse4769-5270.nessieOut
+    jobid: 198
+    wildcards: sample=zika, seg=4769-5270
+
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse4267-4768.fa
+    output: /datater/wu/data/zika/filtering/reverse4267-4768.nessieOut
+    jobid: 114
+    wildcards: sample=zika, seg=4267-4768
+
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse5522-6023.fa
+    output: /datater/wu/data/zika/filtering/reverse5522-6023.nessieOut
+    jobid: 84
+    wildcards: sample=zika, seg=5522-6023
+
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse1506-2007.fa
+    output: /datater/wu/data/zika/filtering/reverse1506-2007.nessieOut
+    jobid: 90
+    wildcards: sample=zika, seg=1506-2007
+
+[Mon Mar 15 14:44:07 2021]
+Finished job 204.
+1 of 44 steps (2%) done
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse3514-4015.fa
+    output: /datater/wu/data/zika/filtering/reverse3514-4015.nessieOut
+    jobid: 12
+    wildcards: sample=zika, seg=3514-4015
+
+[Mon Mar 15 14:44:07 2021]
+Finished job 72.
+2 of 44 steps (5%) done
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse2259-2760.fa
+    output: /datater/wu/data/zika/filtering/reverse2259-2760.nessieOut
+    jobid: 96
+    wildcards: sample=zika, seg=2259-2760
+
+[Mon Mar 15 14:44:07 2021]
+Finished job 108.
+3 of 44 steps (7%) done
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse753-1254.fa
+    output: /datater/wu/data/zika/filtering/reverse753-1254.nessieOut
+    jobid: 102
+    wildcards: sample=zika, seg=753-1254
+
+[Mon Mar 15 14:44:07 2021]
+Finished job 198.
+4 of 44 steps (9%) done
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse10291-10792.fa
+    output: /datater/wu/data/zika/filtering/reverse10291-10792.nessieOut
+    jobid: 186
+    wildcards: sample=zika, seg=10291-10792
+
+[Mon Mar 15 14:44:07 2021]
+Finished job 114.
+5 of 44 steps (11%) done
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse4016-4517.fa
+    output: /datater/wu/data/zika/filtering/reverse4016-4517.nessieOut
+    jobid: 192
+    wildcards: sample=zika, seg=4016-4517
+
+[Mon Mar 15 14:44:07 2021]
+Finished job 84.
+6 of 44 steps (14%) done
+[Mon Mar 15 14:44:07 2021]
+Finished job 90.
+7 of 44 steps (16%) done
+Select jobs to execute...
+[Mon Mar 15 14:44:07 2021]
+Finished job 12.
+8 of 44 steps (18%) done
+[Mon Mar 15 14:44:07 2021]
+Finished job 96.
+9 of 44 steps (20%) done
+[Mon Mar 15 14:44:07 2021]
+Finished job 102.
+10 of 44 steps (23%) done
+[Mon Mar 15 14:44:07 2021]
+Finished job 186.
+11 of 44 steps (25%) done
+[Mon Mar 15 14:44:07 2021]
+Finished job 192.
+12 of 44 steps (27%) done
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse8283-8784.fa
+    output: /datater/wu/data/zika/filtering/reverse8283-8784.nessieOut
+    jobid: 162
+    wildcards: sample=zika, seg=8283-8784
+
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse9036-9537.fa
+    output: /datater/wu/data/zika/filtering/reverse9036-9537.nessieOut
+    jobid: 264
+    wildcards: sample=zika, seg=9036-9537
+
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse9538-10039.fa
+    output: /datater/wu/data/zika/filtering/reverse9538-10039.nessieOut
+    jobid: 54
+    wildcards: sample=zika, seg=9538-10039
+
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse5773-6274.fa
+    output: /datater/wu/data/zika/filtering/reverse5773-6274.nessieOut
+    jobid: 144
+    wildcards: sample=zika, seg=5773-6274
+
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse8785-9286.fa
+    output: /datater/wu/data/zika/filtering/reverse8785-9286.nessieOut
+    jobid: 60
+    wildcards: sample=zika, seg=8785-9286
+
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse3263-3764.fa
+    output: /datater/wu/data/zika/filtering/reverse3263-3764.nessieOut
+    jobid: 150
+    wildcards: sample=zika, seg=3263-3764
+
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse7781-8282.fa
+    output: /datater/wu/data/zika/filtering/reverse7781-8282.nessieOut
+    jobid: 234
+    wildcards: sample=zika, seg=7781-8282
+
+[Mon Mar 15 14:44:07 2021]
+Finished job 162.
+13 of 44 steps (30%) done
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse4518-5019.fa
+    output: /datater/wu/data/zika/filtering/reverse4518-5019.nessieOut
+    jobid: 126
+    wildcards: sample=zika, seg=4518-5019
+
+[Mon Mar 15 14:44:07 2021]
+Finished job 264.
+14 of 44 steps (32%) done
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse9287-9788.fa
+    output: /datater/wu/data/zika/filtering/reverse9287-9788.nessieOut
+    jobid: 168
+    wildcards: sample=zika, seg=9287-9788
+
+[Mon Mar 15 14:44:07 2021]
+Finished job 54.
+15 of 44 steps (34%) done
+[Mon Mar 15 14:44:07 2021]
+Finished job 144.
+16 of 44 steps (36%) done
+[Mon Mar 15 14:44:07 2021]
+Finished job 60.
+17 of 44 steps (39%) done
+Select jobs to execute...
+[Mon Mar 15 14:44:07 2021]
+Finished job 150.
+18 of 44 steps (41%) done
+[Mon Mar 15 14:44:07 2021]
+Finished job 234.
+19 of 44 steps (43%) done
+[Mon Mar 15 14:44:07 2021]
+Finished job 126.
+20 of 44 steps (45%) done
+[Mon Mar 15 14:44:07 2021]
+Finished job 168.
+21 of 44 steps (48%) done
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse1004-1505.fa
+    output: /datater/wu/data/zika/filtering/reverse1004-1505.nessieOut
+    jobid: 42
+    wildcards: sample=zika, seg=1004-1505
+
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse9789-10290.fa
+    output: /datater/wu/data/zika/filtering/reverse9789-10290.nessieOut
+    jobid: 132
+    wildcards: sample=zika, seg=9789-10290
+
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse1255-1756.fa
+    output: /datater/wu/data/zika/filtering/reverse1255-1756.nessieOut
+    jobid: 48
+    wildcards: sample=zika, seg=1255-1756
+
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse3012-3513.fa
+    output: /datater/wu/data/zika/filtering/reverse3012-3513.nessieOut
+    jobid: 138
+    wildcards: sample=zika, seg=3012-3513
+
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse5020-5521.fa
+    output: /datater/wu/data/zika/filtering/reverse5020-5521.nessieOut
+    jobid: 222
+    wildcards: sample=zika, seg=5020-5521
+
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse5271-5772.fa
+    output: /datater/wu/data/zika/filtering/reverse5271-5772.nessieOut
+    jobid: 174
+    wildcards: sample=zika, seg=5271-5772
+
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse6526-7027.fa
+    output: /datater/wu/data/zika/filtering/reverse6526-7027.nessieOut
+    jobid: 240
+    wildcards: sample=zika, seg=6526-7027
+
+[Mon Mar 15 14:44:07 2021]
+Finished job 42.
+22 of 44 steps (50%) done
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse8534-9035.fa
+    output: /datater/wu/data/zika/filtering/reverse8534-9035.nessieOut
+    jobid: 252
+    wildcards: sample=zika, seg=8534-9035
+
+[Mon Mar 15 14:44:07 2021]
+Finished job 132.
+23 of 44 steps (52%) done
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse1757-2258.fa
+    output: /datater/wu/data/zika/filtering/reverse1757-2258.nessieOut
+    jobid: 78
+    wildcards: sample=zika, seg=1757-2258
+
+[Mon Mar 15 14:44:07 2021]
+Finished job 48.
+24 of 44 steps (55%) done
+[Mon Mar 15 14:44:07 2021]
+Finished job 138.
+25 of 44 steps (57%) done
+[Mon Mar 15 14:44:07 2021]
+Finished job 222.
+26 of 44 steps (59%) done
+Select jobs to execute...
+[Mon Mar 15 14:44:07 2021]
+Finished job 174.
+27 of 44 steps (61%) done
+[Mon Mar 15 14:44:07 2021]
+Finished job 240.
+28 of 44 steps (64%) done
+[Mon Mar 15 14:44:07 2021]
+Finished job 252.
+29 of 44 steps (66%) done
+[Mon Mar 15 14:44:07 2021]
+Finished job 78.
+30 of 44 steps (68%) done
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse6275-6776.fa
+    output: /datater/wu/data/zika/filtering/reverse6275-6776.nessieOut
+    jobid: 156
+    wildcards: sample=zika, seg=6275-6776
+
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse0-501.fa
+    output: /datater/wu/data/zika/filtering/reverse0-501.nessieOut
+    jobid: 258
+    wildcards: sample=zika, seg=0-501
+
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse502-1003.fa
+    output: /datater/wu/data/zika/filtering/reverse502-1003.nessieOut
+    jobid: 246
+    wildcards: sample=zika, seg=502-1003
+
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse6777-7278.fa
+    output: /datater/wu/data/zika/filtering/reverse6777-7278.nessieOut
+    jobid: 66
+    wildcards: sample=zika, seg=6777-7278
+
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse3765-4266.fa
+    output: /datater/wu/data/zika/filtering/reverse3765-4266.nessieOut
+    jobid: 228
+    wildcards: sample=zika, seg=3765-4266
+
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse6024-6525.fa
+    output: /datater/wu/data/zika/filtering/reverse6024-6525.nessieOut
+    jobid: 18
+    wildcards: sample=zika, seg=6024-6525
+
+[Mon Mar 15 14:44:07 2021]
+
+Finished job 156.
+[Mon Mar 15 14:44:07 2021]
+31 of 44 steps (70%) done
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse251-752.fa
+    output: /datater/wu/data/zika/filtering/reverse251-752.nessieOut
+    jobid: 120
+    wildcards: sample=zika, seg=251-752
+
+
+[Mon Mar 15 14:44:07 2021]
+[Mon Mar 15 14:44:07 2021]
+Finished job 258.
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse7530-8031.fa
+    output: /datater/wu/data/zika/filtering/reverse7530-8031.nessieOut
+    jobid: 210
+    wildcards: sample=zika, seg=7530-8031
+32 of 44 steps (73%) done
+
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse8032-8533.fa
+    output: /datater/wu/data/zika/filtering/reverse8032-8533.nessieOut
+    jobid: 216
+    wildcards: sample=zika, seg=8032-8533
+[Mon Mar 15 14:44:07 2021]
+
+Finished job 246.
+33 of 44 steps (75%) done
+[Mon Mar 15 14:44:07 2021]
+Finished job 66.
+34 of 44 steps (77%) done
+[Mon Mar 15 14:44:07 2021]
+Finished job 228.
+35 of 44 steps (80%) done
+Select jobs to execute...
+[Mon Mar 15 14:44:07 2021]
+Finished job 18.
+36 of 44 steps (82%) done
+[Mon Mar 15 14:44:07 2021]
+Finished job 120.
+37 of 44 steps (84%) done
+[Mon Mar 15 14:44:07 2021]
+Finished job 210.
+38 of 44 steps (86%) done
+[Mon Mar 15 14:44:07 2021]
+Finished job 216.
+39 of 44 steps (89%) done
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse7028-7529.fa
+    output: /datater/wu/data/zika/filtering/reverse7028-7529.nessieOut
+    jobid: 30
+    wildcards: sample=zika, seg=7028-7529
+
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse2008-2509.fa
+    output: /datater/wu/data/zika/filtering/reverse2008-2509.nessieOut
+    jobid: 180
+    wildcards: sample=zika, seg=2008-2509
+
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse2510-3011.fa
+    output: /datater/wu/data/zika/filtering/reverse2510-3011.nessieOut
+    jobid: 36
+    wildcards: sample=zika, seg=2510-3011
+
+
+[Mon Mar 15 14:44:07 2021]
+rule reverse_linguistic_complexity:
+    input: /datater/wu/data/zika/filtering/reverse10040-10541.fa
+    output: /datater/wu/data/zika/filtering/reverse10040-10541.nessieOut
+    jobid: 24
+    wildcards: sample=zika, seg=10040-10541
+
+[Mon Mar 15 14:44:07 2021]
+Finished job 30.
+40 of 44 steps (91%) done
+[Mon Mar 15 14:44:07 2021]
+Finished job 180.
+41 of 44 steps (93%) done
+[Mon Mar 15 14:44:07 2021]
+Finished job 36.
+42 of 44 steps (95%) done
+[Mon Mar 15 14:44:07 2021]
+Finished job 24.
+43 of 44 steps (98%) done
+Select jobs to execute...
+
+[Mon Mar 15 14:44:07 2021]
+localrule all:
+    input: /datater/wu/data/zika/filtering/reverse3514-4015.nessieOut, /datater/wu/data/zika/filtering/reverse6024-6525.nessieOut, /datater/wu/data/zika/filtering/reverse10040-10541.nessieOut, /datater/wu/data/zika/filtering/reverse7028-7529.nessieOut, /datater/wu/data/zika/filtering/reverse2510-3011.nessieOut, /datater/wu/data/zika/filtering/reverse1004-1505.nessieOut, /datater/wu/data/zika/filtering/reverse1255-1756.nessieOut, /datater/wu/data/zika/filtering/reverse9538-10039.nessieOut, /datater/wu/data/zika/filtering/reverse8785-9286.nessieOut, /datater/wu/data/zika/filtering/reverse6777-7278.nessieOut, /datater/wu/data/zika/filtering/reverse10542-10780.nessieOut, /datater/wu/data/zika/filtering/reverse1757-2258.nessieOut, /datater/wu/data/zika/filtering/reverse5522-6023.nessieOut, /datater/wu/data/zika/filtering/reverse1506-2007.nessieOut, /datater/wu/data/zika/filtering/reverse2259-2760.nessieOut, /datater/wu/data/zika/filtering/reverse753-1254.nessieOut, /datater/wu/data/zika/filtering/reverse7279-7780.nessieOut, /datater/wu/data/zika/filtering/reverse4267-4768.nessieOut, /datater/wu/data/zika/filtering/reverse251-752.nessieOut, /datater/wu/data/zika/filtering/reverse4518-5019.nessieOut, /datater/wu/data/zika/filtering/reverse9789-10290.nessieOut, /datater/wu/data/zika/filtering/reverse3012-3513.nessieOut, /datater/wu/data/zika/filtering/reverse5773-6274.nessieOut, /datater/wu/data/zika/filtering/reverse3263-3764.nessieOut, /datater/wu/data/zika/filtering/reverse6275-6776.nessieOut, /datater/wu/data/zika/filtering/reverse8283-8784.nessieOut, /datater/wu/data/zika/filtering/reverse9287-9788.nessieOut, /datater/wu/data/zika/filtering/reverse5271-5772.nessieOut, /datater/wu/data/zika/filtering/reverse2008-2509.nessieOut, /datater/wu/data/zika/filtering/reverse10291-10792.nessieOut, /datater/wu/data/zika/filtering/reverse4016-4517.nessieOut, /datater/wu/data/zika/filtering/reverse4769-5270.nessieOut, /datater/wu/data/zika/filtering/reverse2761-3262.nessieOut, /datater/wu/data/zika/filtering/reverse7530-8031.nessieOut, /datater/wu/data/zika/filtering/reverse8032-8533.nessieOut, /datater/wu/data/zika/filtering/reverse5020-5521.nessieOut, /datater/wu/data/zika/filtering/reverse3765-4266.nessieOut, /datater/wu/data/zika/filtering/reverse7781-8282.nessieOut, /datater/wu/data/zika/filtering/reverse6526-7027.nessieOut, /datater/wu/data/zika/filtering/reverse502-1003.nessieOut, /datater/wu/data/zika/filtering/reverse8534-9035.nessieOut, /datater/wu/data/zika/filtering/reverse0-501.nessieOut, /datater/wu/data/zika/filtering/reverse9036-9537.nessieOut
+    jobid: 0
+
+[Mon Mar 15 14:44:07 2021]
+Finished job 0.
+44 of 44 steps (100%) done
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-15T144406.806074.snakemake.log

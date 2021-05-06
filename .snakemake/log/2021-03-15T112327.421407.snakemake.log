@@ -1,0 +1,499 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	43	dskReverseOutput
+	44
+Select jobs to execute...
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse753-1254.h5
+    output: /datater/wu/data/zika/dsk/reverse753-1254.kCount
+    jobid: 93
+    wildcards: sample=zika, seg=753-1254
+
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse1757-2258.h5
+    output: /datater/wu/data/zika/dsk/reverse1757-2258.kCount
+    jobid: 51
+    wildcards: sample=zika, seg=1757-2258
+
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse6275-6776.h5
+    output: /datater/wu/data/zika/dsk/reverse6275-6776.kCount
+    jobid: 85
+    wildcards: sample=zika, seg=6275-6776
+
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse4518-5019.h5
+    output: /datater/wu/data/zika/dsk/reverse4518-5019.kCount
+    jobid: 57
+    wildcards: sample=zika, seg=4518-5019
+
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse4267-4768.h5
+    output: /datater/wu/data/zika/dsk/reverse4267-4768.kCount
+    jobid: 65
+    wildcards: sample=zika, seg=4267-4768
+
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse1506-2007.h5
+    output: /datater/wu/data/zika/dsk/reverse1506-2007.kCount
+    jobid: 72
+    wildcards: sample=zika, seg=1506-2007
+
+[Mon Mar 15 11:23:28 2021]
+
+Finished job 51.
+[Mon Mar 15 11:23:28 2021]
+1 of 44 steps (2%) done
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse6526-7027.h5
+    output: /datater/wu/data/zika/dsk/reverse6526-7027.kCount
+    jobid: 80
+    wildcards: sample=zika, seg=6526-7027
+
+
+[Mon Mar 15 11:23:28 2021]
+[Mon Mar 15 11:23:28 2021]
+Finished job 85.
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse10291-10792.h5
+    output: /datater/wu/data/zika/dsk/reverse10291-10792.kCount
+    jobid: 56
+    wildcards: sample=zika, seg=10291-10792
+2 of 44 steps (5%) done
+
+
+[Mon Mar 15 11:23:28 2021]
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse7781-8282.h5
+    output: /datater/wu/data/zika/dsk/reverse7781-8282.kCount
+    jobid: 64
+    wildcards: sample=zika, seg=7781-8282
+Finished job 57.
+
+3 of 44 steps (7%) done
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse5773-6274.h5
+    output: /datater/wu/data/zika/dsk/reverse5773-6274.kCount
+    jobid: 71
+    wildcards: sample=zika, seg=5773-6274
+
+[Mon Mar 15 11:23:28 2021]
+Finished job 93.
+4 of 44 steps (9%) done
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse6024-6525.h5
+    output: /datater/wu/data/zika/dsk/reverse6024-6525.kCount
+    jobid: 79
+    wildcards: sample=zika, seg=6024-6525
+
+[Mon Mar 15 11:23:28 2021]
+Finished job 65.
+5 of 44 steps (11%) done
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse7028-7529.h5
+    output: /datater/wu/data/zika/dsk/reverse7028-7529.kCount
+    jobid: 86
+    wildcards: sample=zika, seg=7028-7529
+
+[Mon Mar 15 11:23:28 2021]
+Finished job 72.
+6 of 44 steps (14%) done
+[Mon Mar 15 11:23:28 2021]
+Finished job 80.
+7 of 44 steps (16%) done
+[Mon Mar 15 11:23:28 2021]
+Finished job 56.
+8 of 44 steps (18%) done
+[Mon Mar 15 11:23:28 2021]
+Finished job 64.
+9 of 44 steps (20%) done
+Select jobs to execute...
+[Mon Mar 15 11:23:28 2021]
+Finished job 71.
+10 of 44 steps (23%) done
+[Mon Mar 15 11:23:28 2021]
+Finished job 79.
+11 of 44 steps (25%) done
+[Mon Mar 15 11:23:28 2021]
+Finished job 86.
+12 of 44 steps (27%) done
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse5522-6023.h5
+    output: /datater/wu/data/zika/dsk/reverse5522-6023.kCount
+    jobid: 66
+    wildcards: sample=zika, seg=5522-6023
+
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse2761-3262.h5
+    output: /datater/wu/data/zika/dsk/reverse2761-3262.kCount
+    jobid: 81
+    wildcards: sample=zika, seg=2761-3262
+
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse9538-10039.h5
+    output: /datater/wu/data/zika/dsk/reverse9538-10039.kCount
+    jobid: 67
+    wildcards: sample=zika, seg=9538-10039
+
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse2259-2760.h5
+    output: /datater/wu/data/zika/dsk/reverse2259-2760.kCount
+    jobid: 60
+    wildcards: sample=zika, seg=2259-2760
+
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse8283-8784.h5
+    output: /datater/wu/data/zika/dsk/reverse8283-8784.kCount
+    jobid: 52
+    wildcards: sample=zika, seg=8283-8784
+
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse3765-4266.h5
+    output: /datater/wu/data/zika/dsk/reverse3765-4266.kCount
+    jobid: 75
+    wildcards: sample=zika, seg=3765-4266
+
+[Mon Mar 15 11:23:28 2021]
+Finished job 66.
+13 of 44 steps (30%) done
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse4769-5270.h5
+    output: /datater/wu/data/zika/dsk/reverse4769-5270.kCount
+    jobid: 82
+    wildcards: sample=zika, seg=4769-5270
+
+[Mon Mar 15 11:23:28 2021]
+Finished job 81.
+14 of 44 steps (32%) done
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse1255-1756.h5
+    output: /datater/wu/data/zika/dsk/reverse1255-1756.kCount
+    jobid: 92
+    wildcards: sample=zika, seg=1255-1756
+
+
+[Mon Mar 15 11:23:28 2021]
+[Mon Mar 15 11:23:28 2021]
+Finished job 67.
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse3514-4015.h5
+    output: /datater/wu/data/zika/dsk/reverse3514-4015.kCount
+    jobid: 73
+    wildcards: sample=zika, seg=3514-4015
+15 of 44 steps (34%) done
+
+
+[Mon Mar 15 11:23:28 2021]
+[Mon Mar 15 11:23:28 2021]
+Finished job 60.
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse0-501.h5
+    output: /datater/wu/data/zika/dsk/reverse0-501.kCount
+    jobid: 88
+    wildcards: sample=zika, seg=0-501
+16 of 44 steps (36%) done
+
+[Mon Mar 15 11:23:28 2021]
+Finished job 52.
+17 of 44 steps (39%) done
+[Mon Mar 15 11:23:28 2021]
+Finished job 75.
+18 of 44 steps (41%) done
+[Mon Mar 15 11:23:28 2021]
+Finished job 82.
+19 of 44 steps (43%) done
+Select jobs to execute...
+[Mon Mar 15 11:23:28 2021]
+Finished job 92.
+20 of 44 steps (45%) done
+[Mon Mar 15 11:23:28 2021]
+Finished job 73.
+21 of 44 steps (48%) done
+[Mon Mar 15 11:23:28 2021]
+Finished job 88.
+22 of 44 steps (50%) done
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse2510-3011.h5
+    output: /datater/wu/data/zika/dsk/reverse2510-3011.kCount
+    jobid: 91
+    wildcards: sample=zika, seg=2510-3011
+
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse9287-9788.h5
+    output: /datater/wu/data/zika/dsk/reverse9287-9788.kCount
+    jobid: 89
+    wildcards: sample=zika, seg=9287-9788
+
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse2008-2509.h5
+    output: /datater/wu/data/zika/dsk/reverse2008-2509.kCount
+    jobid: 53
+    wildcards: sample=zika, seg=2008-2509
+
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse251-752.h5
+    output: /datater/wu/data/zika/dsk/reverse251-752.kCount
+    jobid: 61
+    wildcards: sample=zika, seg=251-752
+
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse7279-7780.h5
+    output: /datater/wu/data/zika/dsk/reverse7279-7780.kCount
+    jobid: 68
+    wildcards: sample=zika, seg=7279-7780
+
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse9036-9537.h5
+    output: /datater/wu/data/zika/dsk/reverse9036-9537.kCount
+    jobid: 76
+    wildcards: sample=zika, seg=9036-9537
+
+[Mon Mar 15 11:23:28 2021]
+Finished job 91.
+23 of 44 steps (52%) done
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse5271-5772.h5
+    output: /datater/wu/data/zika/dsk/reverse5271-5772.kCount
+    jobid: 83
+    wildcards: sample=zika, seg=5271-5772
+
+[Mon Mar 15 11:23:28 2021]
+Finished job 89.
+24 of 44 steps (55%) done
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse9789-10290.h5
+    output: /datater/wu/data/zika/dsk/reverse9789-10290.kCount
+    jobid: 70
+    wildcards: sample=zika, seg=9789-10290
+
+[Mon Mar 15 11:23:28 2021]
+Finished job 53.
+
+25 of 44 steps (57%) done
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse3263-3764.h5
+    output: /datater/wu/data/zika/dsk/reverse3263-3764.kCount
+    jobid: 90
+    wildcards: sample=zika, seg=3263-3764
+
+
+[Mon Mar 15 11:23:28 2021]
+[Mon Mar 15 11:23:28 2021]
+Finished job 61.
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse4016-4517.h5
+    output: /datater/wu/data/zika/dsk/reverse4016-4517.kCount
+    jobid: 58
+    wildcards: sample=zika, seg=4016-4517
+26 of 44 steps (59%) done
+
+[Mon Mar 15 11:23:28 2021]
+Finished job 68.
+27 of 44 steps (61%) done
+[Mon Mar 15 11:23:28 2021]
+Finished job 76.
+28 of 44 steps (64%) done
+[Mon Mar 15 11:23:28 2021]
+Finished job 83.
+29 of 44 steps (66%) done
+Select jobs to execute...
+[Mon Mar 15 11:23:28 2021]
+Finished job 70.
+30 of 44 steps (68%) done
+[Mon Mar 15 11:23:28 2021]
+Finished job 90.
+31 of 44 steps (70%) done
+[Mon Mar 15 11:23:28 2021]
+Finished job 58.
+32 of 44 steps (73%) done
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse8534-9035.h5
+    output: /datater/wu/data/zika/dsk/reverse8534-9035.kCount
+    jobid: 59
+    wildcards: sample=zika, seg=8534-9035
+
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse3012-3513.h5
+    output: /datater/wu/data/zika/dsk/reverse3012-3513.kCount
+    jobid: 63
+    wildcards: sample=zika, seg=3012-3513
+
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse8785-9286.h5
+    output: /datater/wu/data/zika/dsk/reverse8785-9286.kCount
+    jobid: 74
+    wildcards: sample=zika, seg=8785-9286
+
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse8032-8533.h5
+    output: /datater/wu/data/zika/dsk/reverse8032-8533.kCount
+    jobid: 78
+    wildcards: sample=zika, seg=8032-8533
+
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse1004-1505.h5
+    output: /datater/wu/data/zika/dsk/reverse1004-1505.kCount
+    jobid: 55
+    wildcards: sample=zika, seg=1004-1505
+
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse5020-5521.h5
+    output: /datater/wu/data/zika/dsk/reverse5020-5521.kCount
+    jobid: 87
+    wildcards: sample=zika, seg=5020-5521
+
+[Mon Mar 15 11:23:28 2021]
+
+Finished job 59.
+[Mon Mar 15 11:23:28 2021]
+33 of 44 steps (75%) done
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse10542-10780.h5
+    output: /datater/wu/data/zika/dsk/reverse10542-10780.kCount
+    jobid: 54
+    wildcards: sample=zika, seg=10542-10780
+
+
+[Mon Mar 15 11:23:28 2021]
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse7530-8031.h5
+    output: /datater/wu/data/zika/dsk/reverse7530-8031.kCount
+    jobid: 62
+    wildcards: sample=zika, seg=7530-8031
+Finished job 63.
+
+34 of 44 steps (77%) done
+
+[Mon Mar 15 11:23:28 2021]
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse6777-7278.h5
+    output: /datater/wu/data/zika/dsk/reverse6777-7278.kCount
+    jobid: 69
+    wildcards: sample=zika, seg=6777-7278
+Finished job 74.
+
+35 of 44 steps (80%) done
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse502-1003.h5
+    output: /datater/wu/data/zika/dsk/reverse502-1003.kCount
+    jobid: 84
+    wildcards: sample=zika, seg=502-1003
+
+[Mon Mar 15 11:23:28 2021]
+Finished job 78.
+36 of 44 steps (82%) done
+[Mon Mar 15 11:23:28 2021]
+Finished job 55.
+37 of 44 steps (84%) done
+[Mon Mar 15 11:23:28 2021]
+Finished job 87.
+38 of 44 steps (86%) done
+[Mon Mar 15 11:23:28 2021]
+Finished job 54.
+39 of 44 steps (89%) done
+Select jobs to execute...
+[Mon Mar 15 11:23:28 2021]
+Finished job 62.
+40 of 44 steps (91%) done
+[Mon Mar 15 11:23:28 2021]
+Finished job 69.
+41 of 44 steps (93%) done
+[Mon Mar 15 11:23:28 2021]
+Finished job 84.
+42 of 44 steps (95%) done
+
+[Mon Mar 15 11:23:28 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse10040-10541.h5
+    output: /datater/wu/data/zika/dsk/reverse10040-10541.kCount
+    jobid: 77
+    wildcards: sample=zika, seg=10040-10541
+
+[Mon Mar 15 11:23:28 2021]
+Finished job 77.
+43 of 44 steps (98%) done
+Select jobs to execute...
+
+[Mon Mar 15 11:23:28 2021]
+localrule all:
+    input: /datater/wu/data/duplicate_removed/zika.uniq, /datater/wu/data/msa/zika.msa, /datater/wu/data/zika/splitFiles/reverse1757-2258.fasta, /datater/wu/data/zika/splitFiles/reverse8283-8784.fasta, /datater/wu/data/zika/splitFiles/reverse2008-2509.fasta, /datater/wu/data/zika/splitFiles/reverse10542-10780.fasta, /datater/wu/data/zika/splitFiles/reverse1004-1505.fasta, /datater/wu/data/zika/splitFiles/reverse10291-10792.fasta, /datater/wu/data/zika/splitFiles/reverse4518-5019.fasta, /datater/wu/data/zika/splitFiles/reverse4016-4517.fasta, /datater/wu/data/zika/splitFiles/reverse8534-9035.fasta, /datater/wu/data/zika/splitFiles/reverse2259-2760.fasta, /datater/wu/data/zika/splitFiles/reverse251-752.fasta, /datater/wu/data/zika/splitFiles/reverse7530-8031.fasta, /datater/wu/data/zika/splitFiles/reverse3012-3513.fasta, /datater/wu/data/zika/splitFiles/reverse7781-8282.fasta, /datater/wu/data/zika/splitFiles/reverse4267-4768.fasta, /datater/wu/data/zika/splitFiles/reverse5522-6023.fasta, /datater/wu/data/zika/splitFiles/reverse9538-10039.fasta, /datater/wu/data/zika/splitFiles/reverse7279-7780.fasta, /datater/wu/data/zika/splitFiles/reverse6777-7278.fasta, /datater/wu/data/zika/splitFiles/reverse9789-10290.fasta, /datater/wu/data/zika/splitFiles/reverse5773-6274.fasta, /datater/wu/data/zika/splitFiles/reverse1506-2007.fasta, /datater/wu/data/zika/splitFiles/reverse3514-4015.fasta, /datater/wu/data/zika/splitFiles/reverse8785-9286.fasta, /datater/wu/data/zika/splitFiles/reverse3765-4266.fasta, /datater/wu/data/zika/splitFiles/reverse9036-9537.fasta, /datater/wu/data/zika/splitFiles/reverse10040-10541.fasta, /datater/wu/data/zika/splitFiles/reverse8032-8533.fasta, /datater/wu/data/zika/splitFiles/reverse6024-6525.fasta, /datater/wu/data/zika/splitFiles/reverse6526-7027.fasta, /datater/wu/data/zika/splitFiles/reverse2761-3262.fasta, /datater/wu/data/zika/splitFiles/reverse4769-5270.fasta, /datater/wu/data/zika/splitFiles/reverse5271-5772.fasta, /datater/wu/data/zika/splitFiles/reverse502-1003.fasta, /datater/wu/data/zika/splitFiles/reverse6275-6776.fasta, /datater/wu/data/zika/splitFiles/reverse7028-7529.fasta, /datater/wu/data/zika/splitFiles/reverse5020-5521.fasta, /datater/wu/data/zika/splitFiles/reverse0-501.fasta, /datater/wu/data/zika/splitFiles/reverse9287-9788.fasta, /datater/wu/data/zika/splitFiles/reverse3263-3764.fasta, /datater/wu/data/zika/splitFiles/reverse2510-3011.fasta, /datater/wu/data/zika/splitFiles/reverse1255-1756.fasta, /datater/wu/data/zika/splitFiles/reverse753-1254.fasta, /datater/wu/data/zika/dsk/reverse1757-2258.h5, /datater/wu/data/zika/dsk/reverse8283-8784.h5, /datater/wu/data/zika/dsk/reverse2008-2509.h5, /datater/wu/data/zika/dsk/reverse10542-10780.h5, /datater/wu/data/zika/dsk/reverse1004-1505.h5, /datater/wu/data/zika/dsk/reverse10291-10792.h5, /datater/wu/data/zika/dsk/reverse4518-5019.h5, /datater/wu/data/zika/dsk/reverse4016-4517.h5, /datater/wu/data/zika/dsk/reverse8534-9035.h5, /datater/wu/data/zika/dsk/reverse2259-2760.h5, /datater/wu/data/zika/dsk/reverse251-752.h5, /datater/wu/data/zika/dsk/reverse7530-8031.h5, /datater/wu/data/zika/dsk/reverse3012-3513.h5, /datater/wu/data/zika/dsk/reverse7781-8282.h5, /datater/wu/data/zika/dsk/reverse4267-4768.h5, /datater/wu/data/zika/dsk/reverse5522-6023.h5, /datater/wu/data/zika/dsk/reverse9538-10039.h5, /datater/wu/data/zika/dsk/reverse7279-7780.h5, /datater/wu/data/zika/dsk/reverse6777-7278.h5, /datater/wu/data/zika/dsk/reverse9789-10290.h5, /datater/wu/data/zika/dsk/reverse5773-6274.h5, /datater/wu/data/zika/dsk/reverse1506-2007.h5, /datater/wu/data/zika/dsk/reverse3514-4015.h5, /datater/wu/data/zika/dsk/reverse8785-9286.h5, /datater/wu/data/zika/dsk/reverse3765-4266.h5, /datater/wu/data/zika/dsk/reverse9036-9537.h5, /datater/wu/data/zika/dsk/reverse10040-10541.h5, /datater/wu/data/zika/dsk/reverse8032-8533.h5, /datater/wu/data/zika/dsk/reverse6024-6525.h5, /datater/wu/data/zika/dsk/reverse6526-7027.h5, /datater/wu/data/zika/dsk/reverse2761-3262.h5, /datater/wu/data/zika/dsk/reverse4769-5270.h5, /datater/wu/data/zika/dsk/reverse5271-5772.h5, /datater/wu/data/zika/dsk/reverse502-1003.h5, /datater/wu/data/zika/dsk/reverse6275-6776.h5, /datater/wu/data/zika/dsk/reverse7028-7529.h5, /datater/wu/data/zika/dsk/reverse5020-5521.h5, /datater/wu/data/zika/dsk/reverse0-501.h5, /datater/wu/data/zika/dsk/reverse9287-9788.h5, /datater/wu/data/zika/dsk/reverse3263-3764.h5, /datater/wu/data/zika/dsk/reverse2510-3011.h5, /datater/wu/data/zika/dsk/reverse1255-1756.h5, /datater/wu/data/zika/dsk/reverse753-1254.h5, /datater/wu/data/zika/dsk/reverse1757-2258.kCount, /datater/wu/data/zika/dsk/reverse8283-8784.kCount, /datater/wu/data/zika/dsk/reverse2008-2509.kCount, /datater/wu/data/zika/dsk/reverse10542-10780.kCount, /datater/wu/data/zika/dsk/reverse1004-1505.kCount, /datater/wu/data/zika/dsk/reverse10291-10792.kCount, /datater/wu/data/zika/dsk/reverse4518-5019.kCount, /datater/wu/data/zika/dsk/reverse4016-4517.kCount, /datater/wu/data/zika/dsk/reverse8534-9035.kCount, /datater/wu/data/zika/dsk/reverse2259-2760.kCount, /datater/wu/data/zika/dsk/reverse251-752.kCount, /datater/wu/data/zika/dsk/reverse7530-8031.kCount, /datater/wu/data/zika/dsk/reverse3012-3513.kCount, /datater/wu/data/zika/dsk/reverse7781-8282.kCount, /datater/wu/data/zika/dsk/reverse4267-4768.kCount, /datater/wu/data/zika/dsk/reverse5522-6023.kCount, /datater/wu/data/zika/dsk/reverse9538-10039.kCount, /datater/wu/data/zika/dsk/reverse7279-7780.kCount, /datater/wu/data/zika/dsk/reverse6777-7278.kCount, /datater/wu/data/zika/dsk/reverse9789-10290.kCount, /datater/wu/data/zika/dsk/reverse5773-6274.kCount, /datater/wu/data/zika/dsk/reverse1506-2007.kCount, /datater/wu/data/zika/dsk/reverse3514-4015.kCount, /datater/wu/data/zika/dsk/reverse8785-9286.kCount, /datater/wu/data/zika/dsk/reverse3765-4266.kCount, /datater/wu/data/zika/dsk/reverse9036-9537.kCount, /datater/wu/data/zika/dsk/reverse10040-10541.kCount, /datater/wu/data/zika/dsk/reverse8032-8533.kCount, /datater/wu/data/zika/dsk/reverse6024-6525.kCount, /datater/wu/data/zika/dsk/reverse6526-7027.kCount, /datater/wu/data/zika/dsk/reverse2761-3262.kCount, /datater/wu/data/zika/dsk/reverse4769-5270.kCount, /datater/wu/data/zika/dsk/reverse5271-5772.kCount, /datater/wu/data/zika/dsk/reverse502-1003.kCount, /datater/wu/data/zika/dsk/reverse6275-6776.kCount, /datater/wu/data/zika/dsk/reverse7028-7529.kCount, /datater/wu/data/zika/dsk/reverse5020-5521.kCount, /datater/wu/data/zika/dsk/reverse0-501.kCount, /datater/wu/data/zika/dsk/reverse9287-9788.kCount, /datater/wu/data/zika/dsk/reverse3263-3764.kCount, /datater/wu/data/zika/dsk/reverse2510-3011.kCount, /datater/wu/data/zika/dsk/reverse1255-1756.kCount, /datater/wu/data/zika/dsk/reverse753-1254.kCount
+    jobid: 0
+
+[Mon Mar 15 11:23:28 2021]
+Finished job 0.
+44 of 44 steps (100%) done
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-15T112327.421407.snakemake.log

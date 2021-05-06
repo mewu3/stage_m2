@@ -1,0 +1,31 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	74	dsk
+	74	dskOutput
+	74	dskOutputSort
+	74	kmc
+	74	kmcOutput
+	74	kmcOutputSort
+	445
+Select jobs to execute...
+
+[Wed Mar  3 10:23:08 2021]
+rule kmc:
+    input: /datater/wu/data/splitFiles/enterovirus.forward.1785-2290.fasta
+    output: /datater/wu/data/kmerCounting/kmc/enterovirus.forward.1785-2290.kmc_pre, /datater/wu/data/kmerCounting/kmc/enterovirus.forward.1785-2290.kmc_suf
+    jobid: 313
+    wildcards: prefix=enterovirus.forward.1785-2290
+
+RuleException in line 1 of /datater/wu/stage_m2/rules/kmer_kmc.smk:
+'Params' object has no attribute 'maxKmer'
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 136, in run_jobs
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 441, in run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 230, in _run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 156, in _run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 162, in printjob

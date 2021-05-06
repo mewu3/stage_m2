@@ -1,0 +1,2 @@
+SyntaxError in line 51 of /datater/wu/stage_m2/Snakefile:
+Unexpected keyword intermediate_rules in rule definition (Snakefile, line 51)

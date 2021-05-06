@@ -1,0 +1,8 @@
+Building DAG of jobs...
+InputFunctionException in line 96 of /datater/wu/stage_m2/Snakefile:
+Error:
+  KeyError: 'enterovirus.forward.__snakemake_dynamic__.fasta'
+Wildcards:
+  sample=enterovirus.forward.__snakemake_dynamic__.fasta
+Traceback:
+  File "/datater/wu/stage_m2/Snakefile", line 98, in <lambda>

@@ -1,0 +1,362 @@
+Building DAG of jobs...
+Updating job dskForward.
+Updating job all.
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	43	calculte_tm
+	43	filterOut_Tm
+	87
+Select jobs to execute...
+
+[Thu Mar  4 14:15:49 2021]
+rule calculte_tm:
+    input: /home/meijun/Documents/data/kmerCounting/zika/forward/9789-10290.sort
+    output: /home/meijun/Documents/data/filtering/zika/forward/9789-10290.table
+    jobid: 169
+    wildcards: sample=zika, seg=9789-10290
+
+[Thu Mar  4 14:15:49 2021]
+rule calculte_tm:
+    input: /home/meijun/Documents/data/kmerCounting/zika/forward/2008-2509.sort
+    output: /home/meijun/Documents/data/filtering/zika/forward/2008-2509.table
+    jobid: 172
+    wildcards: sample=zika, seg=2008-2509
+
+[Thu Mar  4 14:15:49 2021]
+rule calculte_tm:
+    input: /home/meijun/Documents/data/kmerCounting/zika/forward/1255-1756.sort
+    output: /home/meijun/Documents/data/filtering/zika/forward/1255-1756.table
+    jobid: 161
+    wildcards: sample=zika, seg=1255-1756
+
+[Thu Mar  4 14:15:49 2021]
+rule calculte_tm:
+    input: /home/meijun/Documents/data/kmerCounting/zika/forward/4518-5019.sort
+    output: /home/meijun/Documents/data/filtering/zika/forward/4518-5019.table
+    jobid: 148
+    wildcards: sample=zika, seg=4518-5019
+
+[Thu Mar  4 14:15:49 2021]
+rule calculte_tm:
+    input: /home/meijun/Documents/data/kmerCounting/zika/forward/8283-8784.sort
+    output: /home/meijun/Documents/data/filtering/zika/forward/8283-8784.table
+    jobid: 178
+    wildcards: sample=zika, seg=8283-8784
+
+[Thu Mar  4 14:15:49 2021]
+rule calculte_tm:
+    input: /home/meijun/Documents/data/kmerCounting/zika/forward/3514-4015.sort
+    output: /home/meijun/Documents/data/filtering/zika/forward/3514-4015.table
+    jobid: 156
+    wildcards: sample=zika, seg=3514-4015
+
+[Thu Mar  4 14:15:49 2021]
+rule calculte_tm:
+    input: /home/meijun/Documents/data/kmerCounting/zika/forward/5773-6274.sort
+    output: /home/meijun/Documents/data/filtering/zika/forward/5773-6274.table
+    jobid: 163
+    wildcards: sample=zika, seg=5773-6274
+
+[Thu Mar  4 14:15:49 2021]
+rule calculte_tm:
+    input: /home/meijun/Documents/data/kmerCounting/zika/forward/8534-9035.sort
+    output: /home/meijun/Documents/data/filtering/zika/forward/8534-9035.table
+    jobid: 177
+    wildcards: sample=zika, seg=8534-9035
+
+[Thu Mar  4 14:15:49 2021]
+rule calculte_tm:
+    input: /home/meijun/Documents/data/kmerCounting/zika/forward/1506-2007.sort
+    output: /home/meijun/Documents/data/filtering/zika/forward/1506-2007.table
+    jobid: 147
+    wildcards: sample=zika, seg=1506-2007
+
+[Thu Mar  4 14:15:49 2021]
+rule calculte_tm:
+    input: /home/meijun/Documents/data/kmerCounting/zika/forward/1004-1505.sort
+    output: /home/meijun/Documents/data/filtering/zika/forward/1004-1505.table
+    jobid: 155
+    wildcards: sample=zika, seg=1004-1505
+
+[Thu Mar  4 14:15:49 2021]
+rule calculte_tm:
+    input: /home/meijun/Documents/data/kmerCounting/zika/forward/5522-6023.sort
+    output: /home/meijun/Documents/data/filtering/zika/forward/5522-6023.table
+    jobid: 162
+    wildcards: sample=zika, seg=5522-6023
+
+[Thu Mar  4 14:15:49 2021]
+rule calculte_tm:
+    input: /home/meijun/Documents/data/kmerCounting/zika/forward/7530-8031.sort
+    output: /home/meijun/Documents/data/filtering/zika/forward/7530-8031.table
+    jobid: 170
+    wildcards: sample=zika, seg=7530-8031
+
+[Thu Mar  4 14:15:51 2021]
+Finished job 169.
+1 of 87 steps (1%) done
+Select jobs to execute...
+[Thu Mar  4 14:15:51 2021]
+Finished job 163.
+2 of 87 steps (2%) done
+[Thu Mar  4 14:15:51 2021]
+Finished job 172.
+3 of 87 steps (3%) done
+[Thu Mar  4 14:15:51 2021]
+Finished job 156.
+4 of 87 steps (5%) done
+
+[Thu Mar  4 14:15:51 2021]
+rule calculte_tm:
+    input: /home/meijun/Documents/data/kmerCounting/zika/forward/6024-6525.sort
+    output: /home/meijun/Documents/data/filtering/zika/forward/6024-6525.table
+    jobid: 165
+    wildcards: sample=zika, seg=6024-6525
+
+Select jobs to execute...
+[Thu Mar  4 14:15:51 2021]
+Finished job 148.
+5 of 87 steps (6%) done
+[Thu Mar  4 14:15:51 2021]
+Finished job 155.
+6 of 87 steps (7%) done
+[Thu Mar  4 14:15:51 2021]
+Finished job 161.
+7 of 87 steps (8%) done
+
+[Thu Mar  4 14:15:51 2021]
+rule calculte_tm:
+    input: /home/meijun/Documents/data/kmerCounting/zika/forward/9287-9788.sort
+    output: /home/meijun/Documents/data/filtering/zika/forward/9287-9788.table
+    jobid: 179
+    wildcards: sample=zika, seg=9287-9788
+
+[Thu Mar  4 14:15:51 2021]
+rule calculte_tm:
+    input: /home/meijun/Documents/data/kmerCounting/zika/forward/7279-7780.sort
+    output: /home/meijun/Documents/data/filtering/zika/forward/7279-7780.table
+    jobid: 184
+    wildcards: sample=zika, seg=7279-7780
+
+[Thu Mar  4 14:15:51 2021]
+rule calculte_tm:
+    input: /home/meijun/Documents/data/kmerCounting/zika/forward/3263-3764.sort
+    output: /home/meijun/Documents/data/filtering/zika/forward/3263-3764.table
+    jobid: 154
+    wildcards: sample=zika, seg=3263-3764
+
+Select jobs to execute...
+[Thu Mar  4 14:15:51 2021]
+Finished job 170.
+8 of 87 steps (9%) done
+
+[Thu Mar  4 14:15:51 2021]
+rule calculte_tm:
+    input: /home/meijun/Documents/data/kmerCounting/zika/forward/6275-6776.sort
+    output: /home/meijun/Documents/data/filtering/zika/forward/6275-6776.table
+    jobid: 149
+    wildcards: sample=zika, seg=6275-6776
+
+[Thu Mar  4 14:15:51 2021]
+rule filterOut_Tm:
+    input: /home/meijun/Documents/data/filtering/zika/forward/5773-6274.table
+    output: /home/meijun/Documents/data/filtering/zika/forward/5773-6274.tsv
+    jobid: 206
+    wildcards: sample=zika, seg=5773-6274
+
+[Thu Mar  4 14:15:51 2021]
+Finished job 147.
+9 of 87 steps (10%) done
+
+[Thu Mar  4 14:15:51 2021]
+rule calculte_tm:
+    input: /home/meijun/Documents/data/kmerCounting/zika/forward/10291-10792.sort
+    output: /home/meijun/Documents/data/filtering/zika/forward/10291-10792.table
+    jobid: 146
+    wildcards: sample=zika, seg=10291-10792
+
+[Thu Mar  4 14:15:51 2021]
+rule calculte_tm:
+    input: /home/meijun/Documents/data/kmerCounting/zika/forward/4769-5270.sort
+    output: /home/meijun/Documents/data/filtering/zika/forward/4769-5270.table
+    jobid: 176
+    wildcards: sample=zika, seg=4769-5270
+
+Select jobs to execute...
+[Thu Mar  4 14:15:51 2021]
+Finished job 177.
+10 of 87 steps (11%) done
+
+[Thu Mar  4 14:15:51 2021]
+rule calculte_tm:
+    input: /home/meijun/Documents/data/kmerCounting/zika/forward/5020-5521.sort
+    output: /home/meijun/Documents/data/filtering/zika/forward/5020-5521.table
+    jobid: 180
+    wildcards: sample=zika, seg=5020-5521
+
+[Thu Mar  4 14:15:51 2021]
+Finished job 178.
+11 of 87 steps (13%) done
+Select jobs to execute...
+
+[Thu Mar  4 14:15:51 2021]
+rule calculte_tm:
+    input: /home/meijun/Documents/data/kmerCounting/zika/forward/6777-7278.sort
+    output: /home/meijun/Documents/data/filtering/zika/forward/6777-7278.table
+    jobid: 171
+    wildcards: sample=zika, seg=6777-7278
+
+[Thu Mar  4 14:15:51 2021]
+rule filterOut_Tm:
+    input: /home/meijun/Documents/data/filtering/zika/forward/7530-8031.table
+    output: /home/meijun/Documents/data/filtering/zika/forward/7530-8031.tsv
+    jobid: 213
+    wildcards: sample=zika, seg=7530-8031
+
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+[Thu Mar  4 14:15:51 2021]
+Finished job 162.
+12 of 87 steps (14%) done
+Select jobs to execute...
+
+[Thu Mar  4 14:15:51 2021]
+rule calculte_tm:
+    input: /home/meijun/Documents/data/kmerCounting/zika/forward/9036-9537.sort
+    output: /home/meijun/Documents/data/filtering/zika/forward/9036-9537.table
+    jobid: 142
+    wildcards: sample=zika, seg=9036-9537
+
+[Thu Mar  4 14:15:52 2021]
+Finished job 165.
+13 of 87 steps (15%) done
+Select jobs to execute...
+
+[Thu Mar  4 14:15:52 2021]
+rule calculte_tm:
+    input: /home/meijun/Documents/data/kmerCounting/zika/forward/502-1003.sort
+    output: /home/meijun/Documents/data/filtering/zika/forward/502-1003.table
+    jobid: 157
+    wildcards: sample=zika, seg=502-1003
+
+[Thu Mar  4 14:15:52 2021]
+Finished job 176.
+14 of 87 steps (16%) done
+Select jobs to execute...
+[Thu Mar  4 14:15:52 2021]
+Finished job 146.
+15 of 87 steps (17%) done
+[Thu Mar  4 14:15:52 2021]
+Finished job 154.
+16 of 87 steps (18%) done
+
+[Thu Mar  4 14:15:52 2021]
+rule calculte_tm:
+    input: /home/meijun/Documents/data/kmerCounting/zika/forward/2761-3262.sort
+    output: /home/meijun/Documents/data/filtering/zika/forward/2761-3262.table
+    jobid: 151
+    wildcards: sample=zika, seg=2761-3262
+
+Select jobs to execute...
+
+[Thu Mar  4 14:15:52 2021]
+rule filterOut_Tm:
+    input: /home/meijun/Documents/data/filtering/zika/forward/6024-6525.table
+    output: /home/meijun/Documents/data/filtering/zika/forward/6024-6525.tsv
+    jobid: 208
+    wildcards: sample=zika, seg=6024-6525
+
+[Thu Mar  4 14:15:52 2021]
+rule filterOut_Tm:
+    input: /home/meijun/Documents/data/filtering/zika/forward/1004-1505.table
+    output: /home/meijun/Documents/data/filtering/zika/forward/1004-1505.tsv
+    jobid: 198
+    wildcards: sample=zika, seg=1004-1505
+
+Select jobs to execute...
+[Thu Mar  4 14:15:52 2021]
+Finished job 180.
+17 of 87 steps (20%) done
+Select jobs to execute...
+[Thu Mar  4 14:15:52 2021]
+Finished job 149.
+18 of 87 steps (21%) done
+
+[Thu Mar  4 14:15:52 2021]
+rule filterOut_Tm:
+    input: /home/meijun/Documents/data/filtering/zika/forward/10291-10792.table
+    output: /home/meijun/Documents/data/filtering/zika/forward/10291-10792.tsv
+    jobid: 189
+    wildcards: sample=zika, seg=10291-10792
+
+Select jobs to execute...
+
+[Thu Mar  4 14:15:52 2021]
+rule calculte_tm:
+    input: /home/meijun/Documents/data/kmerCounting/zika/forward/6526-7027.sort
+    output: /home/meijun/Documents/data/filtering/zika/forward/6526-7027.table
+    jobid: 181
+    wildcards: sample=zika, seg=6526-7027
+
+[Thu Mar  4 14:15:53 2021]
+Finished job 171.
+19 of 87 steps (22%) done
+[Thu Mar  4 14:15:53 2021]
+Finished job 179.
+20 of 87 steps (23%) done
+Select jobs to execute...
+
+[Thu Mar  4 14:15:53 2021]
+rule filterOut_Tm:
+    input: /home/meijun/Documents/data/filtering/zika/forward/5020-5521.table
+    output: /home/meijun/Documents/data/filtering/zika/forward/5020-5521.tsv
+    jobid: 223
+    wildcards: sample=zika, seg=5020-5521
+
+[Thu Mar  4 14:15:53 2021]
+rule filterOut_Tm:
+    input: /home/meijun/Documents/data/filtering/zika/forward/3514-4015.table
+    output: /home/meijun/Documents/data/filtering/zika/forward/3514-4015.tsv
+    jobid: 199
+    wildcards: sample=zika, seg=3514-4015
+
+Select jobs to execute...
+[Thu Mar  4 14:15:53 2021]
+Finished job 184.
+21 of 87 steps (24%) done
+Select jobs to execute...
+
+[Thu Mar  4 14:15:53 2021]
+rule calculte_tm:
+    input: /home/meijun/Documents/data/kmerCounting/zika/forward/8785-9286.sort
+    output: /home/meijun/Documents/data/filtering/zika/forward/8785-9286.table
+    jobid: 166
+    wildcards: sample=zika, seg=8785-9286
+
+[Thu Mar  4 14:15:53 2021]
+Finished job 142.
+22 of 87 steps (25%) done
+[Thu Mar  4 14:15:53 2021]
+Finished job 157.
+23 of 87 steps (26%) done
+[Thu Mar  4 14:15:54 2021]
+Finished job 151.
+24 of 87 steps (28%) done
+[Thu Mar  4 14:15:54 2021]
+Finished job 181.
+25 of 87 steps (29%) done
+[Thu Mar  4 14:15:54 2021]
+Finished job 166.
+26 of 87 steps (30%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/meijun/Documents/stage_m2/.snakemake/log/2021-03-04T141549.136885.snakemake.log

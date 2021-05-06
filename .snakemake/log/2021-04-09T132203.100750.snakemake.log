@@ -1,0 +1,4 @@
+KeyError in line 23 of /datater/wu/stage_m2/rules/reverse_kmer_kmerCount.smk:
+'dsk2ascii'
+  File "/datater/wu/stage_m2/Snakefile", line 117, in <module>
+  File "/datater/wu/stage_m2/rules/reverse_kmer_kmerCount.smk", line 23, in <module>

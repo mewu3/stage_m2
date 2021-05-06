@@ -1,0 +1,71 @@
+Building DAG of jobs...
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Updating job merge_all_kmers.
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	makedir_mfeprimer
+	2
+Select jobs to execute...
+
+[Tue Mar  9 14:52:44 2021]
+rule makedir_mfeprimer:
+    output: /datater/wu/data/datater/wu/data/zika/MFEprimer
+    jobid: 269
+    wildcards: sample=zika
+
+ImproperOutputException in line 81 of /datater/wu/stage_m2/rules/oligo_filter.smk:
+Outputs of incorrect type (directories when expecting files or vice versa). Output directories must be flagged with directory(). for rule makedir_mfeprimer:
+/datater/wu/data/datater/wu/data/zika/MFEprimer
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 583, in handle_job_success
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 252, in handle_job_success
+Removing output files of failed job makedir_mfeprimer since they might be corrupted:
+/datater/wu/data/datater/wu/data/zika/MFEprimer
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-09T145242.306567.snakemake.log

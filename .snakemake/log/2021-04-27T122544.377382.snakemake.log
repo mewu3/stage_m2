@@ -1,0 +1,35 @@
+Building DAG of jobs...
+Updating job filtering2.
+Updating job filtering2.
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	evaluation2
+	2
+Select jobs to execute...
+
+[Tue Apr 27 12:25:44 2021]
+rule evaluation2:
+    input: /datater/wu/data/MSSPE-basic/zika/kmer15/allOligo.set, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/aceID-taxID-species.tsv
+    output: /datater/wu/data/MSSPE-basic/zika/kmer15/evaluation/allOligo.set.coverage
+    jobid: 23
+    wildcards: sample=zika
+
+[Tue Apr 27 12:25:45 2021]
+Finished job 23.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Tue Apr 27 12:25:46 2021]
+localrule all:
+    input: /datater/wu/data/MSSPE-basic/enterovirus/enterovirus.uniq, /datater/wu/data/MSSPE-basic/zika/zika.uniq, /datater/wu/data/MSSPE-basic/enterovirus/enterovirus.msa, /datater/wu/data/MSSPE-basic/zika/zika.msa, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/allKmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/allKmercount.sorted.calculated.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/allKmerCount.sorted.calculated.filtered.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/allKmerCount.sorted.calculated.filtered.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.fasta, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.fasta, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.2.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.3.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.4.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.rev.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.DB.rev.2.ebwt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.bowtie, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.bowtie, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt, /datater/wu/data/MSSPE-basic/zika/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/allOligo.set, /datater/wu/data/MSSPE-basic/zika/kmer15/allOligo.set, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/intermediate/aceID-taxID-species.tsv, /datater/wu/data/MSSPE-basic/zika/kmer15/intermediate/aceID-taxID-species.tsv, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/evaluation/allOligo.set.coverage, /datater/wu/data/MSSPE-basic/zika/kmer15/evaluation/allOligo.set.coverage, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/evaluation/allOligo_before.tsv, /datater/wu/data/MSSPE-basic/zika/kmer15/evaluation/allOligo_before.tsv, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/evaluation/allOligo_after1.tsv, /datater/wu/data/MSSPE-basic/zika/kmer15/evaluation/allOligo_after1.tsv, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/evaluation/allOligo_after2.tsv, /datater/wu/data/MSSPE-basic/zika/kmer15/evaluation/allOligo_after2.tsv, /datater/wu/data/MSSPE-basic/enterovirus/kmer15/evaluation/allOligo_after3.tsv, /datater/wu/data/MSSPE-basic/zika/kmer15/evaluation/allOligo_after3.tsv
+    jobid: 0
+
+[Tue Apr 27 12:25:46 2021]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /datater/wu/MSSPE/.snakemake/log/2021-04-27T122544.377382.snakemake.log

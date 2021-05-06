@@ -1,0 +1,121 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	dskReverse
+	9	dskReverseOutput
+	11
+Select jobs to execute...
+
+[Mon Mar 15 10:58:00 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse4769-5270.h5
+    output: /datater/wu/data/zika/dsk/reverse4769-5270.kCount
+    jobid: 72
+    wildcards: sample=zika, seg=4769-5270
+
+
+[Mon Mar 15 10:58:00 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse4267-4768.h5
+    output: /datater/wu/data/zika/dsk/reverse4267-4768.kCount
+    jobid: 59
+    wildcards: sample=zika, seg=4267-4768
+
+
+[Mon Mar 15 10:58:00 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse3514-4015.h5
+    output: /datater/wu/data/zika/dsk/reverse3514-4015.kCount
+    jobid: 68
+    wildcards: sample=zika, seg=3514-4015
+
+
+[Mon Mar 15 10:58:00 2021]
+rule dskReverse:
+    input: /datater/wu/data/zika/splitFiles/reverse0-501.fasta
+    output: /datater/wu/data/zika/dsk/reverse0-501.h5
+    jobid: 30
+    wildcards: sample=zika, seg=0-501
+
+
+[Mon Mar 15 10:58:00 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse3263-3764.h5
+    output: /datater/wu/data/zika/dsk/reverse3263-3764.kCount
+    jobid: 58
+    wildcards: sample=zika, seg=3263-3764
+
+
+[Mon Mar 15 10:58:00 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse9789-10290.h5
+    output: /datater/wu/data/zika/dsk/reverse9789-10290.kCount
+    jobid: 67
+    wildcards: sample=zika, seg=9789-10290
+
+[Mon Mar 15 10:58:00 2021]
+Finished job 59.
+1 of 11 steps (9%) done
+
+[Mon Mar 15 10:58:00 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse4518-5019.h5
+    output: /datater/wu/data/zika/dsk/reverse4518-5019.kCount
+    jobid: 71
+    wildcards: sample=zika, seg=4518-5019
+
+
+[Mon Mar 15 10:58:00 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse502-1003.h5
+    output: /datater/wu/data/zika/dsk/reverse502-1003.kCount
+    jobid: 75
+    wildcards: sample=zika, seg=502-1003
+[Mon Mar 15 10:58:00 2021]
+
+Finished job 68.
+[Mon Mar 15 10:58:00 2021]
+2 of 11 steps (18%) done
+Error in rule dskReverse:
+    jobid: 30
+    output: /datater/wu/data/zika/dsk/reverse0-501.h5
+    shell:
+        lib/dsk/build/bin/dsk         -nb-cores 0         -max-memory 5000         -max-disk 0         -out-compress 0         -storage-type hdf5         -kmer-size 13         -abundance-min 2         -abundance-max 2147483647         -solidity-kind sum         -file /datater/wu/data/zika/splitFiles/reverse0-501.fasta         -out /datater/wu/data/zika/dsk/reverse0-501.h5
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Mon Mar 15 10:58:00 2021]
+rule dskReverseOutput:
+    input: /datater/wu/data/zika/dsk/reverse5773-6274.h5
+    output: /datater/wu/data/zika/dsk/reverse5773-6274.kCount
+    jobid: 89
+    wildcards: sample=zika, seg=5773-6274
+
+[Mon Mar 15 10:58:00 2021]
+Finished job 72.
+3 of 11 steps (27%) done
+[Mon Mar 15 10:58:00 2021]
+Finished job 58.
+4 of 11 steps (36%) done
+Removing output files of failed job dskReverse since they might be corrupted:
+/datater/wu/data/zika/dsk/reverse0-501.h5
+[Mon Mar 15 10:58:00 2021]
+Finished job 67.
+5 of 11 steps (45%) done
+[Mon Mar 15 10:58:00 2021]
+Finished job 71.
+6 of 11 steps (55%) done
+[Mon Mar 15 10:58:00 2021]
+Finished job 75.
+7 of 11 steps (64%) done
+[Mon Mar 15 10:58:00 2021]
+Finished job 89.
+8 of 11 steps (73%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-15T105759.333541.snakemake.log

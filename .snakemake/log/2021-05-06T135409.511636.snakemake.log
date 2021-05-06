@@ -1,0 +1,32 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	clustering
+	2
+Select jobs to execute...
+
+[Thu May  6 13:54:10 2021]
+rule clustering:
+    input: /datater/wu/data/tmp/sars2Complet.uniq.fasta
+    output: /datater/wu/data/tmp/sars2Complet.uniq.cls95.fasta
+    jobid: 2
+
+[Thu May  6 14:46:31 2021]
+Finished job 2.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Thu May  6 14:46:31 2021]
+localrule all:
+    input: /datater/wu/data/tmp/sars2Complet.uniq.fasta, /datater/wu/data/tmp/sars2Complet.uniq.cls95.fasta
+    jobid: 0
+
+[Thu May  6 14:46:31 2021]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /datater/wu/MSSPE/.snakemake/log/2021-05-06T135409.511636.snakemake.log

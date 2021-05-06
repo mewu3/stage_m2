@@ -1,0 +1,43 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	MSA
+	1	aggregateAllReverseOligo
+	1	all
+	1	allHeterodimerCheck
+	1	allToFasta
+	1	blastn_short_prok
+	1	filterAggregateAllReverseOligo
+	1	filterOutUnSpecifickmer
+	1	oligoCount
+	1	oligoSet
+	1	species_coverage
+	1	splitIntoOverlappingWindows
+	12
+Select jobs to execute...
+
+[Fri Apr  9 17:20:58 2021]
+rule MSA:
+    input: /datater/wu/data/coronavirus/coronavirus.uniq
+    output: /datater/wu/data/coronavirus/coronavirus.msa
+    log: /datater/wu/data/coronavirus/log/mafft.log
+    jobid: 2
+    wildcards: sample=coronavirus
+
+Terminating processes on user request, this might take some time.
+[Mon Apr 12 11:17:22 2021]
+Error in rule MSA:
+    jobid: 2
+    output: /datater/wu/data/coronavirus/coronavirus.msa
+    log: /datater/wu/data/coronavirus/log/mafft.log (check log file(s) for error message)
+    shell:
+        mafft --auto         --thread -1         --op 1.53         --ep 0.123         --bl 62         --jtt 62         --tm 62                           --inputorder                                    /datater/wu/data/coronavirus/coronavirus.uniq > /datater/wu/data/coronavirus/coronavirus.msa         2> /datater/wu/data/coronavirus/log/mafft.log
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job MSA since they might be corrupted:
+/datater/wu/data/coronavirus/coronavirus.msa
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-04-09T172058.192708.snakemake.log

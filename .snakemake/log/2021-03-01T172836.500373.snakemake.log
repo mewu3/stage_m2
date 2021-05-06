@@ -1,0 +1,48 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	mafft
+	1	seqkit
+	37	split_overlap_chunks
+	40
+Select jobs to execute...
+
+[Mon Mar  1 17:28:37 2021]
+rule seqkit:
+    input: /datater/wu/data/coronavirus.fasta
+    output: /datater/wu/data/duplicate_removed/coronavirus.uniq.fasta
+    log: /datater/wu/data/duplicate_removed/coronavirus.uniq.fasta
+    jobid: 2
+    wildcards: sample=coronavirus
+
+[Mon Mar  1 17:28:42 2021]
+Finished job 2.
+1 of 40 steps (2%) done
+Select jobs to execute...
+
+[Mon Mar  1 17:28:42 2021]
+rule mafft:
+    input: /datater/wu/data/duplicate_removed/coronavirus.uniq.fasta
+    output: /datater/wu/data/msa/coronavirus.msa.fasta
+    log: /datater/wu/data/msa/mafft.coronavirus.log
+    jobid: 4
+    wildcards: sample=coronavirus
+
+Terminating processes on user request, this might take some time.
+[Mon Mar  1 17:55:51 2021]
+Error in rule mafft:
+    jobid: 4
+    output: /datater/wu/data/msa/coronavirus.msa.fasta
+    log: /datater/wu/data/msa/mafft.coronavirus.log (check log file(s) for error message)
+    shell:
+        mafft --retree 1 --maxiterate 0          --thread -1         --op 1.53         --ep 0.123         --bl 62         --jtt 62         --tm 62                           --inputorder                                    /datater/wu/data/duplicate_removed/coronavirus.uniq.fasta > /datater/wu/data/msa/coronavirus.msa.fasta         2> /datater/wu/data/msa/mafft.coronavirus.log
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job mafft since they might be corrupted:
+/datater/wu/data/msa/coronavirus.msa.fasta
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-01T172836.500373.snakemake.log

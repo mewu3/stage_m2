@@ -1,0 +1,3 @@
+NameError in line 73 of /datater/wu/stage_m2_merge/Snakefile:
+name 'datadir' is not defined
+  File "/datater/wu/stage_m2_merge/Snakefile", line 73, in <module>

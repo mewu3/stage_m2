@@ -1,0 +1,120 @@
+Building DAG of jobs...
+Updating job aggregate_allReverseOligo.
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	aggregate_allReverseOligo
+	1	all
+	43	reverse_add_LC
+	1	reverse_filtering
+	46
+Select jobs to execute...
+
+[Sat Mar 27 20:42:39 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/zika/filtering/reverse1506-2007.nessieOut, /datater/wu/data/zika/filtering/reverse1506-2007.fasta
+    output: /datater/wu/data/zika/filtering/reverse1506-2007.calculated2
+    jobid: 21
+    wildcards: sample=zika, seg=1506-2007
+
+[Sat Mar 27 20:42:39 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/zika/filtering/reverse2259-2760.nessieOut, /datater/wu/data/zika/filtering/reverse2259-2760.fasta
+    output: /datater/wu/data/zika/filtering/reverse2259-2760.calculated2
+    jobid: 35
+    wildcards: sample=zika, seg=2259-2760
+
+[Sat Mar 27 20:42:39 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/zika/filtering/reverse3514-4015.nessieOut, /datater/wu/data/zika/filtering/reverse3514-4015.fasta
+    output: /datater/wu/data/zika/filtering/reverse3514-4015.calculated2
+    jobid: 42
+    wildcards: sample=zika, seg=3514-4015
+
+[Sat Mar 27 20:42:39 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/zika/filtering/reverse6526-7027.nessieOut, /datater/wu/data/zika/filtering/reverse6526-7027.fasta
+    output: /datater/wu/data/zika/filtering/reverse6526-7027.calculated2
+    jobid: 140
+    wildcards: sample=zika, seg=6526-7027
+
+[Sat Mar 27 20:42:39 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/zika/filtering/reverse5522-6023.nessieOut, /datater/wu/data/zika/filtering/reverse5522-6023.fasta
+    output: /datater/wu/data/zika/filtering/reverse5522-6023.calculated2
+    jobid: 147
+    wildcards: sample=zika, seg=5522-6023
+
+[Sat Mar 27 20:42:39 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/zika/filtering/reverse2008-2509.nessieOut, /datater/wu/data/zika/filtering/reverse2008-2509.fasta
+    output: /datater/wu/data/zika/filtering/reverse2008-2509.calculated2
+    jobid: 245
+    wildcards: sample=zika, seg=2008-2509
+
+[Sat Mar 27 20:42:39 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/zika/filtering/reverse1004-1505.nessieOut, /datater/wu/data/zika/filtering/reverse1004-1505.fasta
+    output: /datater/wu/data/zika/filtering/reverse1004-1505.calculated2
+    jobid: 161
+    wildcards: sample=zika, seg=1004-1505
+
+[Sat Mar 27 20:42:39 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/zika/filtering/reverse1255-1756.nessieOut, /datater/wu/data/zika/filtering/reverse1255-1756.fasta
+    output: /datater/wu/data/zika/filtering/reverse1255-1756.calculated2
+    jobid: 49
+    wildcards: sample=zika, seg=1255-1756
+
+[Sat Mar 27 20:42:39 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/zika/filtering/reverse5773-6274.nessieOut, /datater/wu/data/zika/filtering/reverse5773-6274.fasta
+    output: /datater/wu/data/zika/filtering/reverse5773-6274.calculated2
+    jobid: 154
+    wildcards: sample=zika, seg=5773-6274
+
+[Sat Mar 27 20:42:39 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/zika/filtering/reverse3012-3513.nessieOut, /datater/wu/data/zika/filtering/reverse3012-3513.fasta
+    output: /datater/wu/data/zika/filtering/reverse3012-3513.calculated2
+    jobid: 56
+    wildcards: sample=zika, seg=3012-3513
+
+[Sat Mar 27 20:42:39 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/zika/filtering/reverse7530-8031.nessieOut, /datater/wu/data/zika/filtering/reverse7530-8031.fasta
+    output: /datater/wu/data/zika/filtering/reverse7530-8031.calculated2
+    jobid: 259
+    wildcards: sample=zika, seg=7530-8031
+
+[Sat Mar 27 20:42:39 2021]
+rule reverse_add_LC:
+    input: /datater/wu/data/zika/filtering/reverse753-1254.nessieOut, /datater/wu/data/zika/filtering/reverse753-1254.fasta
+    output: /datater/wu/data/zika/filtering/reverse753-1254.calculated2
+    jobid: 266
+    wildcards: sample=zika, seg=753-1254
+
+[Sat Mar 27 20:42:40 2021]
+Finished job 140.
+1 of 46 steps (2%) done
+[Sat Mar 27 20:42:40 2021]
+Finished job 35.
+2 of 46 steps (4%) done
+[Sat Mar 27 20:42:40 2021]
+Finished job 21.
+3 of 46 steps (7%) done
+[Sat Mar 27 20:42:40 2021]
+Finished job 147.
+4 of 46 steps (9%) done
+[Sat Mar 27 20:42:40 2021]
+Finished job 266.
+5 of 46 steps (11%) done
+[Sat Mar 27 20:42:40 2021]
+Finished job 259.
+6 of 46 steps (13%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-27T204239.041436.snakemake.log

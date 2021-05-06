@@ -1,0 +1,266 @@
+Building DAG of jobs...
+Updating job aggregate_allReverseOligo.
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	33	blastn_short_prok
+	34
+Select jobs to execute...
+
+[Sun Mar 28 14:13:33 2021]
+rule blastn_short_prok:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse8632_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse8632_filtered.blastn_prok.out
+    jobid: 317
+    wildcards: sample=enterovirus, seg=8632
+
+
+[Sun Mar 28 14:13:33 2021]
+rule blastn_short_prok:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse3044_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse3044_filtered.blastn_prok.out
+    jobid: 321
+    wildcards: sample=enterovirus, seg=3044
+
+
+[Sun Mar 28 14:13:33 2021]
+rule blastn_short_prok:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse758_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse758_filtered.blastn_prok.out
+    jobid: 301
+    wildcards: sample=enterovirus, seg=758
+
+
+[Sun Mar 28 14:13:33 2021]
+rule blastn_short_prok:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse7362_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse7362_filtered.blastn_prok.out
+    jobid: 273
+    wildcards: sample=enterovirus, seg=7362
+
+
+[Sun Mar 28 14:13:33 2021]
+rule blastn_short_prok:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse7870_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse7870_filtered.blastn_prok.out
+    jobid: 283
+    wildcards: sample=enterovirus, seg=7870
+
+
+[Sun Mar 28 14:13:33 2021]
+rule blastn_short_prok:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse1012_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse1012_filtered.blastn_prok.out
+    jobid: 311
+    wildcards: sample=enterovirus, seg=1012
+
+
+[Sun Mar 28 14:13:33 2021]
+rule blastn_short_prok:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse4568_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse4568_filtered.blastn_prok.out
+    jobid: 331
+    wildcards: sample=enterovirus, seg=4568
+
+
+[Sun Mar 28 14:13:33 2021]
+rule blastn_short_prok:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse504_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse504_filtered.blastn_prok.out
+    jobid: 277
+    wildcards: sample=enterovirus, seg=504
+
+
+[Sun Mar 28 14:13:33 2021]
+rule blastn_short_prok:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse4822_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse4822_filtered.blastn_prok.out
+    jobid: 287
+    wildcards: sample=enterovirus, seg=4822
+
+
+[Sun Mar 28 14:13:33 2021]
+rule blastn_short_prok:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse8378_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse8378_filtered.blastn_prok.out
+    jobid: 297
+    wildcards: sample=enterovirus, seg=8378
+
+
+[Sun Mar 28 14:13:33 2021]
+rule blastn_short_prok:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse6854_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse6854_filtered.blastn_prok.out
+    jobid: 307
+    wildcards: sample=enterovirus, seg=6854
+
+
+[Sun Mar 28 14:13:33 2021]
+rule blastn_short_prok:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse4314_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse4314_filtered.blastn_prok.out
+    jobid: 327
+    wildcards: sample=enterovirus, seg=4314
+
+[Sun Mar 28 14:50:01 2021]
+Finished job 311.
+1 of 34 steps (3%) done
+[Sun Mar 28 14:50:01 2021]
+Finished job 321.
+2 of 34 steps (6%) done
+Select jobs to execute...
+
+[Sun Mar 28 14:50:01 2021]
+rule blastn_short_prok:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse2790_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse2790_filtered.blastn_prok.out
+    jobid: 271
+    wildcards: sample=enterovirus, seg=2790
+
+
+[Sun Mar 28 14:50:01 2021]
+rule blastn_short_prok:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse1266_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse1266_filtered.blastn_prok.out
+    jobid: 319
+    wildcards: sample=enterovirus, seg=1266
+
+Select jobs to execute...
+[Sun Mar 28 15:10:05 2021]
+Finished job 287.
+3 of 34 steps (9%) done
+Select jobs to execute...
+
+[Sun Mar 28 15:10:05 2021]
+rule blastn_short_prok:
+    input: /datater/wu/data/enterovirus/checkSpecifity/reverse7108_filtered.fasta
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse7108_filtered.blastn_prok.out
+    jobid: 313
+    wildcards: sample=enterovirus, seg=7108
+
+Terminating processes on user request, this might take some time.
+[Sun Mar 28 15:12:58 2021]
+Error in rule blastn_short_prok:
+    jobid: 331
+[Sun Mar 28 15:12:58 2021]
+[Sun Mar 28 15:12:58 2021]
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse4568_filtered.blastn_prok.out
+Error in rule blastn_short_prok:
+[Sun Mar 28 15:12:58 2021]
+Error in rule blastn_short_prok:
+[Sun Mar 28 15:12:58 2021]
+[Sun Mar 28 15:12:58 2021]
+    shell:
+        blastn -task blastn-short         -db ref_prok_rep_genomes -remote         -word_size 5         -max_target_seqs 5         -query /datater/wu/data/enterovirus/checkSpecifity/reverse4568_filtered.fasta         -out /datater/wu/data/enterovirus/checkSpecifity/reverse4568_filtered.blastn_prok.out         -outfmt '6 qacc sacc stitle pident length mismatch gapopen sstart send evalue'
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+[Sun Mar 28 15:12:58 2021]
+[Sun Mar 28 15:12:58 2021]
+[Sun Mar 28 15:12:58 2021]
+    jobid: 319
+[Sun Mar 28 15:12:58 2021]
+Error in rule blastn_short_prok:
+    jobid: 301
+[Sun Mar 28 15:12:58 2021]
+Error in rule blastn_short_prok:
+Error in rule blastn_short_prok:
+[Sun Mar 28 15:12:58 2021]
+
+Error in rule blastn_short_prok:
+Error in rule blastn_short_prok:
+Error in rule blastn_short_prok:
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse1266_filtered.blastn_prok.out
+Error in rule blastn_short_prok:
+    jobid: 327
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse758_filtered.blastn_prok.out
+Error in rule blastn_short_prok:
+    jobid: 277
+    jobid: 271
+Error in rule blastn_short_prok:
+Removing output files of failed job blastn_short_prok since they might be corrupted:
+/datater/wu/data/enterovirus/checkSpecifity/reverse4568_filtered.blastn_prok.out
+    jobid: 273
+    jobid: 283
+    jobid: 317
+    shell:
+        blastn -task blastn-short         -db ref_prok_rep_genomes -remote         -word_size 5         -max_target_seqs 5         -query /datater/wu/data/enterovirus/checkSpecifity/reverse1266_filtered.fasta         -out /datater/wu/data/enterovirus/checkSpecifity/reverse1266_filtered.blastn_prok.out         -outfmt '6 qacc sacc stitle pident length mismatch gapopen sstart send evalue'
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    jobid: 313
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse4314_filtered.blastn_prok.out
+    shell:
+        blastn -task blastn-short         -db ref_prok_rep_genomes -remote         -word_size 5         -max_target_seqs 5         -query /datater/wu/data/enterovirus/checkSpecifity/reverse758_filtered.fasta         -out /datater/wu/data/enterovirus/checkSpecifity/reverse758_filtered.blastn_prok.out         -outfmt '6 qacc sacc stitle pident length mismatch gapopen sstart send evalue'
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    jobid: 297
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse504_filtered.blastn_prok.out
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse2790_filtered.blastn_prok.out
+    jobid: 307
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse7362_filtered.blastn_prok.out
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse7870_filtered.blastn_prok.out
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse8632_filtered.blastn_prok.out
+
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse7108_filtered.blastn_prok.out
+    shell:
+        blastn -task blastn-short         -db ref_prok_rep_genomes -remote         -word_size 5         -max_target_seqs 5         -query /datater/wu/data/enterovirus/checkSpecifity/reverse4314_filtered.fasta         -out /datater/wu/data/enterovirus/checkSpecifity/reverse4314_filtered.blastn_prok.out         -outfmt '6 qacc sacc stitle pident length mismatch gapopen sstart send evalue'
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse8378_filtered.blastn_prok.out
+    shell:
+        blastn -task blastn-short         -db ref_prok_rep_genomes -remote         -word_size 5         -max_target_seqs 5         -query /datater/wu/data/enterovirus/checkSpecifity/reverse504_filtered.fasta         -out /datater/wu/data/enterovirus/checkSpecifity/reverse504_filtered.blastn_prok.out         -outfmt '6 qacc sacc stitle pident length mismatch gapopen sstart send evalue'
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    shell:
+        blastn -task blastn-short         -db ref_prok_rep_genomes -remote         -word_size 5         -max_target_seqs 5         -query /datater/wu/data/enterovirus/checkSpecifity/reverse2790_filtered.fasta         -out /datater/wu/data/enterovirus/checkSpecifity/reverse2790_filtered.blastn_prok.out         -outfmt '6 qacc sacc stitle pident length mismatch gapopen sstart send evalue'
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    output: /datater/wu/data/enterovirus/checkSpecifity/reverse6854_filtered.blastn_prok.out
+    shell:
+        blastn -task blastn-short         -db ref_prok_rep_genomes -remote         -word_size 5         -max_target_seqs 5         -query /datater/wu/data/enterovirus/checkSpecifity/reverse7362_filtered.fasta         -out /datater/wu/data/enterovirus/checkSpecifity/reverse7362_filtered.blastn_prok.out         -outfmt '6 qacc sacc stitle pident length mismatch gapopen sstart send evalue'
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    shell:
+        blastn -task blastn-short         -db ref_prok_rep_genomes -remote         -word_size 5         -max_target_seqs 5         -query /datater/wu/data/enterovirus/checkSpecifity/reverse7870_filtered.fasta         -out /datater/wu/data/enterovirus/checkSpecifity/reverse7870_filtered.blastn_prok.out         -outfmt '6 qacc sacc stitle pident length mismatch gapopen sstart send evalue'
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    shell:
+        blastn -task blastn-short         -db ref_prok_rep_genomes -remote         -word_size 5         -max_target_seqs 5         -query /datater/wu/data/enterovirus/checkSpecifity/reverse8632_filtered.fasta         -out /datater/wu/data/enterovirus/checkSpecifity/reverse8632_filtered.blastn_prok.out         -outfmt '6 qacc sacc stitle pident length mismatch gapopen sstart send evalue'
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+Removing output files of failed job blastn_short_prok since they might be corrupted:
+/datater/wu/data/enterovirus/checkSpecifity/reverse1266_filtered.blastn_prok.out
+    shell:
+        blastn -task blastn-short         -db ref_prok_rep_genomes -remote         -word_size 5         -max_target_seqs 5         -query /datater/wu/data/enterovirus/checkSpecifity/reverse7108_filtered.fasta         -out /datater/wu/data/enterovirus/checkSpecifity/reverse7108_filtered.blastn_prok.out         -outfmt '6 qacc sacc stitle pident length mismatch gapopen sstart send evalue'
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+    shell:
+        blastn -task blastn-short         -db ref_prok_rep_genomes -remote         -word_size 5         -max_target_seqs 5         -query /datater/wu/data/enterovirus/checkSpecifity/reverse8378_filtered.fasta         -out /datater/wu/data/enterovirus/checkSpecifity/reverse8378_filtered.blastn_prok.out         -outfmt '6 qacc sacc stitle pident length mismatch gapopen sstart send evalue'
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+    shell:
+        blastn -task blastn-short         -db ref_prok_rep_genomes -remote         -word_size 5         -max_target_seqs 5         -query /datater/wu/data/enterovirus/checkSpecifity/reverse6854_filtered.fasta         -out /datater/wu/data/enterovirus/checkSpecifity/reverse6854_filtered.blastn_prok.out         -outfmt '6 qacc sacc stitle pident length mismatch gapopen sstart send evalue'
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+
+
+
+Removing output files of failed job blastn_short_prok since they might be corrupted:
+/datater/wu/data/enterovirus/checkSpecifity/reverse758_filtered.blastn_prok.out
+
+Removing output files of failed job blastn_short_prok since they might be corrupted:
+/datater/wu/data/enterovirus/checkSpecifity/reverse4314_filtered.blastn_prok.out
+Removing output files of failed job blastn_short_prok since they might be corrupted:
+/datater/wu/data/enterovirus/checkSpecifity/reverse504_filtered.blastn_prok.out
+Removing output files of failed job blastn_short_prok since they might be corrupted:
+/datater/wu/data/enterovirus/checkSpecifity/reverse2790_filtered.blastn_prok.out
+Removing output files of failed job blastn_short_prok since they might be corrupted:
+/datater/wu/data/enterovirus/checkSpecifity/reverse7362_filtered.blastn_prok.out
+Removing output files of failed job blastn_short_prok since they might be corrupted:
+/datater/wu/data/enterovirus/checkSpecifity/reverse7870_filtered.blastn_prok.out
+Removing output files of failed job blastn_short_prok since they might be corrupted:
+/datater/wu/data/enterovirus/checkSpecifity/reverse8632_filtered.blastn_prok.out
+Removing output files of failed job blastn_short_prok since they might be corrupted:
+/datater/wu/data/enterovirus/checkSpecifity/reverse7108_filtered.blastn_prok.out
+Removing output files of failed job blastn_short_prok since they might be corrupted:
+/datater/wu/data/enterovirus/checkSpecifity/reverse8378_filtered.blastn_prok.out
+Removing output files of failed job blastn_short_prok since they might be corrupted:
+/datater/wu/data/enterovirus/checkSpecifity/reverse6854_filtered.blastn_prok.out
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-28T141332.413767.snakemake.log

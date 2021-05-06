@@ -1,0 +1,511 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	43	filterOut_within_segments
+	44
+Select jobs to execute...
+
+[Wed Mar 10 18:27:38 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_3012-3513.calculated
+    output: /datater/wu/data/zika/primer3/forward_3012-3513.filtered
+    jobid: 219
+    wildcards: sample=zika, seg=3012-3513
+
+[Wed Mar 10 18:27:38 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_3765-4266.calculated
+    output: /datater/wu/data/zika/primer3/forward_3765-4266.filtered
+    jobid: 223
+    wildcards: sample=zika, seg=3765-4266
+
+[Wed Mar 10 18:27:38 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_4769-5270.calculated
+    output: /datater/wu/data/zika/primer3/forward_4769-5270.filtered
+    jobid: 188
+    wildcards: sample=zika, seg=4769-5270
+
+[Wed Mar 10 18:27:38 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_1255-1756.calculated
+    output: /datater/wu/data/zika/primer3/forward_1255-1756.filtered
+    jobid: 195
+    wildcards: sample=zika, seg=1255-1756
+
+[Wed Mar 10 18:27:38 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_9789-10290.calculated
+    output: /datater/wu/data/zika/primer3/forward_9789-10290.filtered
+    jobid: 203
+    wildcards: sample=zika, seg=9789-10290
+
+[Wed Mar 10 18:27:38 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_2761-3262.calculated
+    output: /datater/wu/data/zika/primer3/forward_2761-3262.filtered
+    jobid: 210
+    wildcards: sample=zika, seg=2761-3262
+
+[Wed Mar 10 18:27:38 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_7279-7780.calculated
+    output: /datater/wu/data/zika/primer3/forward_7279-7780.filtered
+    jobid: 194
+    wildcards: sample=zika, seg=7279-7780
+
+[Wed Mar 10 18:27:38 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_502-1003.calculated
+    output: /datater/wu/data/zika/primer3/forward_502-1003.filtered
+    jobid: 187
+    wildcards: sample=zika, seg=502-1003
+
+[Wed Mar 10 18:27:38 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_9036-9537.calculated
+    output: /datater/wu/data/zika/primer3/forward_9036-9537.filtered
+    jobid: 202
+    wildcards: sample=zika, seg=9036-9537
+
+[Wed Mar 10 18:27:38 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_9287-9788.calculated
+    output: /datater/wu/data/zika/primer3/forward_9287-9788.filtered
+    jobid: 209
+    wildcards: sample=zika, seg=9287-9788
+
+[Wed Mar 10 18:27:38 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_8785-9286.calculated
+    output: /datater/wu/data/zika/primer3/forward_8785-9286.filtered
+    jobid: 217
+    wildcards: sample=zika, seg=8785-9286
+
+[Wed Mar 10 18:27:38 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_4267-4768.calculated
+    output: /datater/wu/data/zika/primer3/forward_4267-4768.filtered
+    jobid: 224
+    wildcards: sample=zika, seg=4267-4768
+
+[Wed Mar 10 18:27:39 2021]
+Finished job 219.
+1 of 44 steps (2%) done
+Select jobs to execute...
+
+[Wed Mar 10 18:27:40 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_5020-5521.calculated
+    output: /datater/wu/data/zika/primer3/forward_5020-5521.filtered
+    jobid: 204
+    wildcards: sample=zika, seg=5020-5521
+
+[Wed Mar 10 18:27:40 2021]
+Finished job 195.
+2 of 44 steps (5%) done
+Select jobs to execute...
+[Wed Mar 10 18:27:40 2021]
+Finished job 203.
+3 of 44 steps (7%) done
+
+[Wed Mar 10 18:27:40 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_2259-2760.calculated
+    output: /datater/wu/data/zika/primer3/forward_2259-2760.filtered
+    jobid: 197
+    wildcards: sample=zika, seg=2259-2760
+
+Select jobs to execute...
+
+[Wed Mar 10 18:27:40 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_6526-7027.calculated
+    output: /datater/wu/data/zika/primer3/forward_6526-7027.filtered
+    jobid: 189
+    wildcards: sample=zika, seg=6526-7027
+
+[Wed Mar 10 18:27:40 2021]
+Finished job 188.
+4 of 44 steps (9%) done
+Select jobs to execute...
+[Wed Mar 10 18:27:40 2021]
+Finished job 224.
+5 of 44 steps (11%) done
+
+[Wed Mar 10 18:27:40 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_5271-5772.calculated
+    output: /datater/wu/data/zika/primer3/forward_5271-5772.filtered
+    jobid: 183
+    wildcards: sample=zika, seg=5271-5772
+
+Select jobs to execute...
+
+[Wed Mar 10 18:27:40 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_7028-7529.calculated
+    output: /datater/wu/data/zika/primer3/forward_7028-7529.filtered
+    jobid: 198
+    wildcards: sample=zika, seg=7028-7529
+
+[Wed Mar 10 18:27:40 2021]
+Finished job 223.
+6 of 44 steps (14%) done
+Select jobs to execute...
+
+[Wed Mar 10 18:27:40 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_6275-6776.calculated
+    output: /datater/wu/data/zika/primer3/forward_6275-6776.filtered
+    jobid: 213
+    wildcards: sample=zika, seg=6275-6776
+
+[Wed Mar 10 18:27:40 2021]
+Finished job 194.
+7 of 44 steps (16%) done
+Select jobs to execute...
+[Wed Mar 10 18:27:40 2021]
+Finished job 209.
+8 of 44 steps (18%) done
+
+[Wed Mar 10 18:27:40 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_8534-9035.calculated
+    output: /datater/wu/data/zika/primer3/forward_8534-9035.filtered
+    jobid: 205
+    wildcards: sample=zika, seg=8534-9035
+
+Select jobs to execute...
+
+[Wed Mar 10 18:27:40 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_3263-3764.calculated
+    output: /datater/wu/data/zika/primer3/forward_3263-3764.filtered
+    jobid: 220
+    wildcards: sample=zika, seg=3263-3764
+
+[Wed Mar 10 18:27:40 2021]
+Finished job 217.
+9 of 44 steps (20%) done
+Select jobs to execute...
+[Wed Mar 10 18:27:40 2021]
+Finished job 210.
+10 of 44 steps (23%) done
+[Wed Mar 10 18:27:40 2021]
+Finished job 187.
+11 of 44 steps (25%) done
+
+[Wed Mar 10 18:27:40 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_4518-5019.calculated
+    output: /datater/wu/data/zika/primer3/forward_4518-5019.filtered
+    jobid: 190
+    wildcards: sample=zika, seg=4518-5019
+
+Select jobs to execute...
+
+[Wed Mar 10 18:27:40 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_9538-10039.calculated
+    output: /datater/wu/data/zika/primer3/forward_9538-10039.filtered
+    jobid: 225
+    wildcards: sample=zika, seg=9538-10039
+
+[Wed Mar 10 18:27:40 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_10040-10541.calculated
+    output: /datater/wu/data/zika/primer3/forward_10040-10541.filtered
+    jobid: 200
+    wildcards: sample=zika, seg=10040-10541
+
+Select jobs to execute...
+[Wed Mar 10 18:27:40 2021]
+Finished job 202.
+12 of 44 steps (27%) done
+Select jobs to execute...
+
+[Wed Mar 10 18:27:40 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_251-752.calculated
+    output: /datater/wu/data/zika/primer3/forward_251-752.filtered
+    jobid: 184
+    wildcards: sample=zika, seg=251-752
+
+[Wed Mar 10 18:27:41 2021]
+Finished job 204.
+13 of 44 steps (30%) done
+Select jobs to execute...
+
+[Wed Mar 10 18:27:41 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_0-501.calculated
+    output: /datater/wu/data/zika/primer3/forward_0-501.filtered
+    jobid: 199
+    wildcards: sample=zika, seg=0-501
+
+[Wed Mar 10 18:27:41 2021]
+Finished job 189.
+14 of 44 steps (32%) done
+Select jobs to execute...
+
+[Wed Mar 10 18:27:41 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_2008-2509.calculated
+    output: /datater/wu/data/zika/primer3/forward_2008-2509.filtered
+    jobid: 214
+    wildcards: sample=zika, seg=2008-2509
+
+[Wed Mar 10 18:27:41 2021]
+Finished job 197.
+15 of 44 steps (34%) done
+Select jobs to execute...
+
+[Wed Mar 10 18:27:41 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_7530-8031.calculated
+    output: /datater/wu/data/zika/primer3/forward_7530-8031.filtered
+    jobid: 212
+    wildcards: sample=zika, seg=7530-8031
+
+[Wed Mar 10 18:27:41 2021]
+Finished job 183.
+16 of 44 steps (36%) done
+Select jobs to execute...
+[Wed Mar 10 18:27:41 2021]
+Finished job 198.
+17 of 44 steps (39%) done
+[Wed Mar 10 18:27:41 2021]
+Finished job 220.
+18 of 44 steps (41%) done
+
+[Wed Mar 10 18:27:41 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_7781-8282.calculated
+    output: /datater/wu/data/zika/primer3/forward_7781-8282.filtered
+    jobid: 191
+    wildcards: sample=zika, seg=7781-8282
+
+Select jobs to execute...
+[Wed Mar 10 18:27:41 2021]
+Finished job 205.
+19 of 44 steps (43%) done
+
+[Wed Mar 10 18:27:41 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_8032-8533.calculated
+    output: /datater/wu/data/zika/primer3/forward_8032-8533.filtered
+    jobid: 206
+    wildcards: sample=zika, seg=8032-8533
+
+[Wed Mar 10 18:27:41 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_1757-2258.calculated
+    output: /datater/wu/data/zika/primer3/forward_1757-2258.filtered
+    jobid: 221
+    wildcards: sample=zika, seg=1757-2258
+
+Select jobs to execute...
+[Wed Mar 10 18:27:42 2021]
+Finished job 190.
+20 of 44 steps (45%) done
+
+[Wed Mar 10 18:27:42 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_10542-10780.calculated
+    output: /datater/wu/data/zika/primer3/forward_10542-10780.filtered
+    jobid: 192
+    wildcards: sample=zika, seg=10542-10780
+
+Select jobs to execute...
+[Wed Mar 10 18:27:42 2021]
+Finished job 213.
+21 of 44 steps (48%) done
+
+[Wed Mar 10 18:27:42 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_3514-4015.calculated
+    output: /datater/wu/data/zika/primer3/forward_3514-4015.filtered
+    jobid: 207
+    wildcards: sample=zika, seg=3514-4015
+
+Select jobs to execute...
+[Wed Mar 10 18:27:42 2021]
+Finished job 200.
+22 of 44 steps (50%) done
+[Wed Mar 10 18:27:42 2021]
+Finished job 225.
+23 of 44 steps (52%) done
+
+[Wed Mar 10 18:27:42 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_753-1254.calculated
+    output: /datater/wu/data/zika/primer3/forward_753-1254.filtered
+    jobid: 196
+    wildcards: sample=zika, seg=753-1254
+
+Select jobs to execute...
+
+[Wed Mar 10 18:27:42 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_6777-7278.calculated
+    output: /datater/wu/data/zika/primer3/forward_6777-7278.filtered
+    jobid: 201
+    wildcards: sample=zika, seg=6777-7278
+
+[Wed Mar 10 18:27:42 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_4016-4517.calculated
+    output: /datater/wu/data/zika/primer3/forward_4016-4517.filtered
+    jobid: 216
+    wildcards: sample=zika, seg=4016-4517
+
+Select jobs to execute...
+Select jobs to execute...
+[Wed Mar 10 18:27:42 2021]
+Finished job 184.
+24 of 44 steps (55%) done
+Select jobs to execute...
+
+[Wed Mar 10 18:27:42 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_2510-3011.calculated
+    output: /datater/wu/data/zika/primer3/forward_2510-3011.filtered
+    jobid: 211
+    wildcards: sample=zika, seg=2510-3011
+
+[Wed Mar 10 18:27:43 2021]
+Finished job 199.
+25 of 44 steps (57%) done
+Select jobs to execute...
+
+[Wed Mar 10 18:27:43 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_6024-6525.calculated
+    output: /datater/wu/data/zika/primer3/forward_6024-6525.filtered
+    jobid: 222
+    wildcards: sample=zika, seg=6024-6525
+
+[Wed Mar 10 18:27:43 2021]
+Finished job 212.
+26 of 44 steps (59%) done
+Select jobs to execute...
+
+[Wed Mar 10 18:27:43 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_1506-2007.calculated
+    output: /datater/wu/data/zika/primer3/forward_1506-2007.filtered
+    jobid: 215
+    wildcards: sample=zika, seg=1506-2007
+
+[Wed Mar 10 18:27:43 2021]
+Finished job 191.
+27 of 44 steps (61%) done
+[Wed Mar 10 18:27:43 2021]
+Finished job 214.
+28 of 44 steps (64%) done
+Select jobs to execute...
+
+[Wed Mar 10 18:27:43 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_8283-8784.calculated
+    output: /datater/wu/data/zika/primer3/forward_8283-8784.filtered
+    jobid: 186
+    wildcards: sample=zika, seg=8283-8784
+
+[Wed Mar 10 18:27:43 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_5773-6274.calculated
+    output: /datater/wu/data/zika/primer3/forward_5773-6274.filtered
+    jobid: 218
+    wildcards: sample=zika, seg=5773-6274
+
+Select jobs to execute...
+[Wed Mar 10 18:27:43 2021]
+Finished job 221.
+29 of 44 steps (66%) done
+Select jobs to execute...
+
+[Wed Mar 10 18:27:43 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_1004-1505.calculated
+    output: /datater/wu/data/zika/primer3/forward_1004-1505.filtered
+    jobid: 208
+    wildcards: sample=zika, seg=1004-1505
+
+[Wed Mar 10 18:27:43 2021]
+Finished job 192.
+30 of 44 steps (68%) done
+Select jobs to execute...
+[Wed Mar 10 18:27:43 2021]
+Finished job 196.
+31 of 44 steps (70%) done
+[Wed Mar 10 18:27:43 2021]
+Finished job 206.
+32 of 44 steps (73%) done
+
+[Wed Mar 10 18:27:43 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_5522-6023.calculated
+    output: /datater/wu/data/zika/primer3/forward_5522-6023.filtered
+    jobid: 185
+    wildcards: sample=zika, seg=5522-6023
+
+Select jobs to execute...
+[Wed Mar 10 18:27:43 2021]
+Finished job 216.
+33 of 44 steps (75%) done
+
+[Wed Mar 10 18:27:43 2021]
+rule filterOut_within_segments:
+    input: /datater/wu/data/zika/primer3/forward_10291-10792.calculated
+    output: /datater/wu/data/zika/primer3/forward_10291-10792.filtered
+    jobid: 193
+    wildcards: sample=zika, seg=10291-10792
+
+[Wed Mar 10 18:27:43 2021]
+Finished job 207.
+34 of 44 steps (77%) done
+[Wed Mar 10 18:27:43 2021]
+Finished job 201.
+35 of 44 steps (80%) done
+[Wed Mar 10 18:27:43 2021]
+Finished job 211.
+36 of 44 steps (82%) done
+[Wed Mar 10 18:27:44 2021]
+Finished job 222.
+37 of 44 steps (84%) done
+[Wed Mar 10 18:27:44 2021]
+Finished job 215.
+38 of 44 steps (86%) done
+[Wed Mar 10 18:27:44 2021]
+Finished job 218.
+39 of 44 steps (89%) done
+[Wed Mar 10 18:27:44 2021]
+Finished job 186.
+40 of 44 steps (91%) done
+[Wed Mar 10 18:27:45 2021]
+Finished job 208.
+41 of 44 steps (93%) done
+[Wed Mar 10 18:27:45 2021]
+Finished job 193.
+42 of 44 steps (95%) done
+[Wed Mar 10 18:27:45 2021]
+Finished job 185.
+43 of 44 steps (98%) done
+Select jobs to execute...
+
+[Wed Mar 10 18:27:45 2021]
+localrule all:
+    input: /datater/wu/data/duplicate_removed/zika.uniq, /datater/wu/data/msa/zika.msa, /datater/wu/data/zika/split_forward/position_5271-5772.fasta, /datater/wu/data/zika/split_forward/position_251-752.fasta, /datater/wu/data/zika/split_forward/position_5522-6023.fasta, /datater/wu/data/zika/split_forward/position_8283-8784.fasta, /datater/wu/data/zika/split_forward/position_502-1003.fasta, /datater/wu/data/zika/split_forward/position_4769-5270.fasta, /datater/wu/data/zika/split_forward/position_6526-7027.fasta, /datater/wu/data/zika/split_forward/position_4518-5019.fasta, /datater/wu/data/zika/split_forward/position_7781-8282.fasta, /datater/wu/data/zika/split_forward/position_10542-10780.fasta, /datater/wu/data/zika/split_forward/position_10291-10792.fasta, /datater/wu/data/zika/split_forward/position_7279-7780.fasta, /datater/wu/data/zika/split_forward/position_1255-1756.fasta, /datater/wu/data/zika/split_forward/position_753-1254.fasta, /datater/wu/data/zika/split_forward/position_2259-2760.fasta, /datater/wu/data/zika/split_forward/position_7028-7529.fasta, /datater/wu/data/zika/split_forward/position_0-501.fasta, /datater/wu/data/zika/split_forward/position_10040-10541.fasta, /datater/wu/data/zika/split_forward/position_6777-7278.fasta, /datater/wu/data/zika/split_forward/position_9036-9537.fasta, /datater/wu/data/zika/split_forward/position_9789-10290.fasta, /datater/wu/data/zika/split_forward/position_5020-5521.fasta, /datater/wu/data/zika/split_forward/position_8534-9035.fasta, /datater/wu/data/zika/split_forward/position_8032-8533.fasta, /datater/wu/data/zika/split_forward/position_3514-4015.fasta, /datater/wu/data/zika/split_forward/position_1004-1505.fasta, /datater/wu/data/zika/split_forward/position_9287-9788.fasta, /datater/wu/data/zika/split_forward/position_2761-3262.fasta, /datater/wu/data/zika/split_forward/position_2510-3011.fasta, /datater/wu/data/zika/split_forward/position_7530-8031.fasta, /datater/wu/data/zika/split_forward/position_6275-6776.fasta, /datater/wu/data/zika/split_forward/position_2008-2509.fasta, /datater/wu/data/zika/split_forward/position_1506-2007.fasta, /datater/wu/data/zika/split_forward/position_4016-4517.fasta, /datater/wu/data/zika/split_forward/position_8785-9286.fasta, /datater/wu/data/zika/split_forward/position_5773-6274.fasta, /datater/wu/data/zika/split_forward/position_3012-3513.fasta, /datater/wu/data/zika/split_forward/position_3263-3764.fasta, /datater/wu/data/zika/split_forward/position_1757-2258.fasta, /datater/wu/data/zika/split_forward/position_6024-6525.fasta, /datater/wu/data/zika/split_forward/position_3765-4266.fasta, /datater/wu/data/zika/split_forward/position_4267-4768.fasta, /datater/wu/data/zika/split_forward/position_9538-10039.fasta, /datater/wu/data/zika/dsk/forward_5271-5772.h5, /datater/wu/data/zika/dsk/forward_251-752.h5, /datater/wu/data/zika/dsk/forward_5522-6023.h5, /datater/wu/data/zika/dsk/forward_8283-8784.h5, /datater/wu/data/zika/dsk/forward_502-1003.h5, /datater/wu/data/zika/dsk/forward_4769-5270.h5, /datater/wu/data/zika/dsk/forward_6526-7027.h5, /datater/wu/data/zika/dsk/forward_4518-5019.h5, /datater/wu/data/zika/dsk/forward_7781-8282.h5, /datater/wu/data/zika/dsk/forward_10542-10780.h5, /datater/wu/data/zika/dsk/forward_10291-10792.h5, /datater/wu/data/zika/dsk/forward_7279-7780.h5, /datater/wu/data/zika/dsk/forward_1255-1756.h5, /datater/wu/data/zika/dsk/forward_753-1254.h5, /datater/wu/data/zika/dsk/forward_2259-2760.h5, /datater/wu/data/zika/dsk/forward_7028-7529.h5, /datater/wu/data/zika/dsk/forward_0-501.h5, /datater/wu/data/zika/dsk/forward_10040-10541.h5, /datater/wu/data/zika/dsk/forward_6777-7278.h5, /datater/wu/data/zika/dsk/forward_9036-9537.h5, /datater/wu/data/zika/dsk/forward_9789-10290.h5, /datater/wu/data/zika/dsk/forward_5020-5521.h5, /datater/wu/data/zika/dsk/forward_8534-9035.h5, /datater/wu/data/zika/dsk/forward_8032-8533.h5, /datater/wu/data/zika/dsk/forward_3514-4015.h5, /datater/wu/data/zika/dsk/forward_1004-1505.h5, /datater/wu/data/zika/dsk/forward_9287-9788.h5, /datater/wu/data/zika/dsk/forward_2761-3262.h5, /datater/wu/data/zika/dsk/forward_2510-3011.h5, /datater/wu/data/zika/dsk/forward_7530-8031.h5, /datater/wu/data/zika/dsk/forward_6275-6776.h5, /datater/wu/data/zika/dsk/forward_2008-2509.h5, /datater/wu/data/zika/dsk/forward_1506-2007.h5, /datater/wu/data/zika/dsk/forward_4016-4517.h5, /datater/wu/data/zika/dsk/forward_8785-9286.h5, /datater/wu/data/zika/dsk/forward_5773-6274.h5, /datater/wu/data/zika/dsk/forward_3012-3513.h5, /datater/wu/data/zika/dsk/forward_3263-3764.h5, /datater/wu/data/zika/dsk/forward_1757-2258.h5, /datater/wu/data/zika/dsk/forward_6024-6525.h5, /datater/wu/data/zika/dsk/forward_3765-4266.h5, /datater/wu/data/zika/dsk/forward_4267-4768.h5, /datater/wu/data/zika/dsk/forward_9538-10039.h5, /datater/wu/data/zika/dsk/forward_5271-5772.kCount, /datater/wu/data/zika/dsk/forward_251-752.kCount, /datater/wu/data/zika/dsk/forward_5522-6023.kCount, /datater/wu/data/zika/dsk/forward_8283-8784.kCount, /datater/wu/data/zika/dsk/forward_502-1003.kCount, /datater/wu/data/zika/dsk/forward_4769-5270.kCount, /datater/wu/data/zika/dsk/forward_6526-7027.kCount, /datater/wu/data/zika/dsk/forward_4518-5019.kCount, /datater/wu/data/zika/dsk/forward_7781-8282.kCount, /datater/wu/data/zika/dsk/forward_10542-10780.kCount, /datater/wu/data/zika/dsk/forward_10291-10792.kCount, /datater/wu/data/zika/dsk/forward_7279-7780.kCount, /datater/wu/data/zika/dsk/forward_1255-1756.kCount, /datater/wu/data/zika/dsk/forward_753-1254.kCount, /datater/wu/data/zika/dsk/forward_2259-2760.kCount, /datater/wu/data/zika/dsk/forward_7028-7529.kCount, /datater/wu/data/zika/dsk/forward_0-501.kCount, /datater/wu/data/zika/dsk/forward_10040-10541.kCount, /datater/wu/data/zika/dsk/forward_6777-7278.kCount, /datater/wu/data/zika/dsk/forward_9036-9537.kCount, /datater/wu/data/zika/dsk/forward_9789-10290.kCount, /datater/wu/data/zika/dsk/forward_5020-5521.kCount, /datater/wu/data/zika/dsk/forward_8534-9035.kCount, /datater/wu/data/zika/dsk/forward_8032-8533.kCount, /datater/wu/data/zika/dsk/forward_3514-4015.kCount, /datater/wu/data/zika/dsk/forward_1004-1505.kCount, /datater/wu/data/zika/dsk/forward_9287-9788.kCount, /datater/wu/data/zika/dsk/forward_2761-3262.kCount, /datater/wu/data/zika/dsk/forward_2510-3011.kCount, /datater/wu/data/zika/dsk/forward_7530-8031.kCount, /datater/wu/data/zika/dsk/forward_6275-6776.kCount, /datater/wu/data/zika/dsk/forward_2008-2509.kCount, /datater/wu/data/zika/dsk/forward_1506-2007.kCount, /datater/wu/data/zika/dsk/forward_4016-4517.kCount, /datater/wu/data/zika/dsk/forward_8785-9286.kCount, /datater/wu/data/zika/dsk/forward_5773-6274.kCount, /datater/wu/data/zika/dsk/forward_3012-3513.kCount, /datater/wu/data/zika/dsk/forward_3263-3764.kCount, /datater/wu/data/zika/dsk/forward_1757-2258.kCount, /datater/wu/data/zika/dsk/forward_6024-6525.kCount, /datater/wu/data/zika/dsk/forward_3765-4266.kCount, /datater/wu/data/zika/dsk/forward_4267-4768.kCount, /datater/wu/data/zika/dsk/forward_9538-10039.kCount, /datater/wu/data/zika/dsk/forward_5271-5772.kCountSorted, /datater/wu/data/zika/dsk/forward_251-752.kCountSorted, /datater/wu/data/zika/dsk/forward_5522-6023.kCountSorted, /datater/wu/data/zika/dsk/forward_8283-8784.kCountSorted, /datater/wu/data/zika/dsk/forward_502-1003.kCountSorted, /datater/wu/data/zika/dsk/forward_4769-5270.kCountSorted, /datater/wu/data/zika/dsk/forward_6526-7027.kCountSorted, /datater/wu/data/zika/dsk/forward_4518-5019.kCountSorted, /datater/wu/data/zika/dsk/forward_7781-8282.kCountSorted, /datater/wu/data/zika/dsk/forward_10542-10780.kCountSorted, /datater/wu/data/zika/dsk/forward_10291-10792.kCountSorted, /datater/wu/data/zika/dsk/forward_7279-7780.kCountSorted, /datater/wu/data/zika/dsk/forward_1255-1756.kCountSorted, /datater/wu/data/zika/dsk/forward_753-1254.kCountSorted, /datater/wu/data/zika/dsk/forward_2259-2760.kCountSorted, /datater/wu/data/zika/dsk/forward_7028-7529.kCountSorted, /datater/wu/data/zika/dsk/forward_0-501.kCountSorted, /datater/wu/data/zika/dsk/forward_10040-10541.kCountSorted, /datater/wu/data/zika/dsk/forward_6777-7278.kCountSorted, /datater/wu/data/zika/dsk/forward_9036-9537.kCountSorted, /datater/wu/data/zika/dsk/forward_9789-10290.kCountSorted, /datater/wu/data/zika/dsk/forward_5020-5521.kCountSorted, /datater/wu/data/zika/dsk/forward_8534-9035.kCountSorted, /datater/wu/data/zika/dsk/forward_8032-8533.kCountSorted, /datater/wu/data/zika/dsk/forward_3514-4015.kCountSorted, /datater/wu/data/zika/dsk/forward_1004-1505.kCountSorted, /datater/wu/data/zika/dsk/forward_9287-9788.kCountSorted, /datater/wu/data/zika/dsk/forward_2761-3262.kCountSorted, /datater/wu/data/zika/dsk/forward_2510-3011.kCountSorted, /datater/wu/data/zika/dsk/forward_7530-8031.kCountSorted, /datater/wu/data/zika/dsk/forward_6275-6776.kCountSorted, /datater/wu/data/zika/dsk/forward_2008-2509.kCountSorted, /datater/wu/data/zika/dsk/forward_1506-2007.kCountSorted, /datater/wu/data/zika/dsk/forward_4016-4517.kCountSorted, /datater/wu/data/zika/dsk/forward_8785-9286.kCountSorted, /datater/wu/data/zika/dsk/forward_5773-6274.kCountSorted, /datater/wu/data/zika/dsk/forward_3012-3513.kCountSorted, /datater/wu/data/zika/dsk/forward_3263-3764.kCountSorted, /datater/wu/data/zika/dsk/forward_1757-2258.kCountSorted, /datater/wu/data/zika/dsk/forward_6024-6525.kCountSorted, /datater/wu/data/zika/dsk/forward_3765-4266.kCountSorted, /datater/wu/data/zika/dsk/forward_4267-4768.kCountSorted, /datater/wu/data/zika/dsk/forward_9538-10039.kCountSorted, /datater/wu/data/zika/primer3/forward_5271-5772.calculated, /datater/wu/data/zika/primer3/forward_251-752.calculated, /datater/wu/data/zika/primer3/forward_5522-6023.calculated, /datater/wu/data/zika/primer3/forward_8283-8784.calculated, /datater/wu/data/zika/primer3/forward_502-1003.calculated, /datater/wu/data/zika/primer3/forward_4769-5270.calculated, /datater/wu/data/zika/primer3/forward_6526-7027.calculated, /datater/wu/data/zika/primer3/forward_4518-5019.calculated, /datater/wu/data/zika/primer3/forward_7781-8282.calculated, /datater/wu/data/zika/primer3/forward_10542-10780.calculated, /datater/wu/data/zika/primer3/forward_10291-10792.calculated, /datater/wu/data/zika/primer3/forward_7279-7780.calculated, /datater/wu/data/zika/primer3/forward_1255-1756.calculated, /datater/wu/data/zika/primer3/forward_753-1254.calculated, /datater/wu/data/zika/primer3/forward_2259-2760.calculated, /datater/wu/data/zika/primer3/forward_7028-7529.calculated, /datater/wu/data/zika/primer3/forward_0-501.calculated, /datater/wu/data/zika/primer3/forward_10040-10541.calculated, /datater/wu/data/zika/primer3/forward_6777-7278.calculated, /datater/wu/data/zika/primer3/forward_9036-9537.calculated, /datater/wu/data/zika/primer3/forward_9789-10290.calculated, /datater/wu/data/zika/primer3/forward_5020-5521.calculated, /datater/wu/data/zika/primer3/forward_8534-9035.calculated, /datater/wu/data/zika/primer3/forward_8032-8533.calculated, /datater/wu/data/zika/primer3/forward_3514-4015.calculated, /datater/wu/data/zika/primer3/forward_1004-1505.calculated, /datater/wu/data/zika/primer3/forward_9287-9788.calculated, /datater/wu/data/zika/primer3/forward_2761-3262.calculated, /datater/wu/data/zika/primer3/forward_2510-3011.calculated, /datater/wu/data/zika/primer3/forward_7530-8031.calculated, /datater/wu/data/zika/primer3/forward_6275-6776.calculated, /datater/wu/data/zika/primer3/forward_2008-2509.calculated, /datater/wu/data/zika/primer3/forward_1506-2007.calculated, /datater/wu/data/zika/primer3/forward_4016-4517.calculated, /datater/wu/data/zika/primer3/forward_8785-9286.calculated, /datater/wu/data/zika/primer3/forward_5773-6274.calculated, /datater/wu/data/zika/primer3/forward_3012-3513.calculated, /datater/wu/data/zika/primer3/forward_3263-3764.calculated, /datater/wu/data/zika/primer3/forward_1757-2258.calculated, /datater/wu/data/zika/primer3/forward_6024-6525.calculated, /datater/wu/data/zika/primer3/forward_3765-4266.calculated, /datater/wu/data/zika/primer3/forward_4267-4768.calculated, /datater/wu/data/zika/primer3/forward_9538-10039.calculated, /datater/wu/data/zika/primer3/forward_5271-5772.filtered, /datater/wu/data/zika/primer3/forward_251-752.filtered, /datater/wu/data/zika/primer3/forward_5522-6023.filtered, /datater/wu/data/zika/primer3/forward_8283-8784.filtered, /datater/wu/data/zika/primer3/forward_502-1003.filtered, /datater/wu/data/zika/primer3/forward_4769-5270.filtered, /datater/wu/data/zika/primer3/forward_6526-7027.filtered, /datater/wu/data/zika/primer3/forward_4518-5019.filtered, /datater/wu/data/zika/primer3/forward_7781-8282.filtered, /datater/wu/data/zika/primer3/forward_10542-10780.filtered, /datater/wu/data/zika/primer3/forward_10291-10792.filtered, /datater/wu/data/zika/primer3/forward_7279-7780.filtered, /datater/wu/data/zika/primer3/forward_1255-1756.filtered, /datater/wu/data/zika/primer3/forward_753-1254.filtered, /datater/wu/data/zika/primer3/forward_2259-2760.filtered, /datater/wu/data/zika/primer3/forward_7028-7529.filtered, /datater/wu/data/zika/primer3/forward_0-501.filtered, /datater/wu/data/zika/primer3/forward_10040-10541.filtered, /datater/wu/data/zika/primer3/forward_6777-7278.filtered, /datater/wu/data/zika/primer3/forward_9036-9537.filtered, /datater/wu/data/zika/primer3/forward_9789-10290.filtered, /datater/wu/data/zika/primer3/forward_5020-5521.filtered, /datater/wu/data/zika/primer3/forward_8534-9035.filtered, /datater/wu/data/zika/primer3/forward_8032-8533.filtered, /datater/wu/data/zika/primer3/forward_3514-4015.filtered, /datater/wu/data/zika/primer3/forward_1004-1505.filtered, /datater/wu/data/zika/primer3/forward_9287-9788.filtered, /datater/wu/data/zika/primer3/forward_2761-3262.filtered, /datater/wu/data/zika/primer3/forward_2510-3011.filtered, /datater/wu/data/zika/primer3/forward_7530-8031.filtered, /datater/wu/data/zika/primer3/forward_6275-6776.filtered, /datater/wu/data/zika/primer3/forward_2008-2509.filtered, /datater/wu/data/zika/primer3/forward_1506-2007.filtered, /datater/wu/data/zika/primer3/forward_4016-4517.filtered, /datater/wu/data/zika/primer3/forward_8785-9286.filtered, /datater/wu/data/zika/primer3/forward_5773-6274.filtered, /datater/wu/data/zika/primer3/forward_3012-3513.filtered, /datater/wu/data/zika/primer3/forward_3263-3764.filtered, /datater/wu/data/zika/primer3/forward_1757-2258.filtered, /datater/wu/data/zika/primer3/forward_6024-6525.filtered, /datater/wu/data/zika/primer3/forward_3765-4266.filtered, /datater/wu/data/zika/primer3/forward_4267-4768.filtered, /datater/wu/data/zika/primer3/forward_9538-10039.filtered
+    jobid: 0
+
+[Wed Mar 10 18:27:45 2021]
+Finished job 0.
+44 of 44 steps (100%) done
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-10T182737.808672.snakemake.log

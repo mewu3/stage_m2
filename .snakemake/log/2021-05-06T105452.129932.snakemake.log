@@ -1,0 +1,9 @@
+Building DAG of jobs...
+MissingInputException in line 12 of /datater/wu/MSSPE/scripts/coronavirusWithoutSARS2.smk:
+Missing input files for rule all:
+/datater/wu/data/tmp/sars2.fasta.DB.3.ebwt
+/datater/wu/data/tmp/sars2.fasta.DB.rev.2.ebwt
+/datater/wu/data/tmp/sars2.fasta.DB.rev.1.ebwt
+/datater/wu/data/tmp/sars2.fasta.DB.1.ebwt
+/datater/wu/data/tmp/sars2.fasta.DB.2.ebwt
+/datater/wu/data/tmp/sars2.fasta.DB.4.ebwt

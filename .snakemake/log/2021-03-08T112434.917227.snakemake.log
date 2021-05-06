@@ -1,0 +1,45 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	dskForward
+	1	dskForwardOutput
+	1	dskForwardOutputSort
+	1	filterOut_forward
+	1	forward_TmCalculate
+	1	merge_all_kmers
+	1	splitFiles
+	8
+Select jobs to execute...
+
+[Mon Mar  8 11:24:35 2021]
+rule splitFiles:
+    input: /datater/wu/data/msa/zika.msa.fasta
+    output: /datater/wu/data/zika/split_forward/{*}.fasta (dynamic)
+    jobid: 3
+    wildcards: sample=zika
+
+Subsequent jobs will be added dynamically depending on the output of this job
+
+[Mon Mar  8 11:24:35 2021]
+rule merge_all_kmers:
+    output: /datater/wu/data/zika/primer3_Tm/all_forward.tsv
+    jobid: 9
+    wildcards: sample=zika
+
+Terminating processes on user request, this might take some time.
+[Mon Mar  8 11:24:52 2021]
+Error in rule merge_all_kmers:
+    jobid: 9
+    output: /datater/wu/data/zika/primer3_Tm/all_forward.tsv
+    shell:
+        sed -s 1d  >> /datater/wu/data/zika/primer3_Tm/all_forward.tsv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job merge_all_kmers since they might be corrupted:
+/datater/wu/data/zika/primer3_Tm/all_forward.tsv
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-08T112434.917227.snakemake.log

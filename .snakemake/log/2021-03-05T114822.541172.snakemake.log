@@ -1,0 +1,114 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	43	filterOut_forward
+	44
+Select jobs to execute...
+
+[Fri Mar  5 11:48:23 2021]
+rule filterOut_forward:
+    input: /datater/wu/data/filtering/zika/forward/9287-9788_dsk.table
+    output: /datater/wu/data/filtering/zika/forward/9287-9788_dsk.tsv
+    jobid: 217
+    wildcards: sample=zika, seg=9287-9788
+
+[Fri Mar  5 11:48:23 2021]
+rule filterOut_forward:
+    input: /datater/wu/data/filtering/zika/forward/3765-4266_dsk.table
+    output: /datater/wu/data/filtering/zika/forward/3765-4266_dsk.tsv
+    jobid: 186
+    wildcards: sample=zika, seg=3765-4266
+
+[Fri Mar  5 11:48:23 2021]
+rule filterOut_forward:
+    input: /datater/wu/data/filtering/zika/forward/6275-6776_dsk.table
+    output: /datater/wu/data/filtering/zika/forward/6275-6776_dsk.tsv
+    jobid: 193
+    wildcards: sample=zika, seg=6275-6776
+
+[Fri Mar  5 11:48:23 2021]
+rule filterOut_forward:
+    input: /datater/wu/data/filtering/zika/forward/7781-8282_dsk.table
+    output: /datater/wu/data/filtering/zika/forward/7781-8282_dsk.tsv
+    jobid: 201
+    wildcards: sample=zika, seg=7781-8282
+
+[Fri Mar  5 11:48:23 2021]
+rule filterOut_forward:
+    input: /datater/wu/data/filtering/zika/forward/4518-5019_dsk.table
+    output: /datater/wu/data/filtering/zika/forward/4518-5019_dsk.tsv
+    jobid: 208
+    wildcards: sample=zika, seg=4518-5019
+
+[Fri Mar  5 11:48:23 2021]
+rule filterOut_forward:
+    input: /datater/wu/data/filtering/zika/forward/8283-8784_dsk.table
+    output: /datater/wu/data/filtering/zika/forward/8283-8784_dsk.tsv
+    jobid: 216
+    wildcards: sample=zika, seg=8283-8784
+
+[Fri Mar  5 11:48:23 2021]
+rule filterOut_forward:
+    input: /datater/wu/data/filtering/zika/forward/6526-7027_dsk.table
+    output: /datater/wu/data/filtering/zika/forward/6526-7027_dsk.tsv
+    jobid: 207
+    wildcards: sample=zika, seg=6526-7027
+
+[Fri Mar  5 11:48:23 2021]
+rule filterOut_forward:
+    input: /datater/wu/data/filtering/zika/forward/7279-7780_dsk.table
+    output: /datater/wu/data/filtering/zika/forward/7279-7780_dsk.tsv
+    jobid: 185
+    wildcards: sample=zika, seg=7279-7780
+
+[Fri Mar  5 11:48:23 2021]
+rule filterOut_forward:
+    input: /datater/wu/data/filtering/zika/forward/9538-10039_dsk.table
+    output: /datater/wu/data/filtering/zika/forward/9538-10039_dsk.tsv
+    jobid: 200
+    wildcards: sample=zika, seg=9538-10039
+
+[Fri Mar  5 11:48:23 2021]
+rule filterOut_forward:
+    input: /datater/wu/data/filtering/zika/forward/502-1003_dsk.table
+    output: /datater/wu/data/filtering/zika/forward/502-1003_dsk.tsv
+    jobid: 192
+    wildcards: sample=zika, seg=502-1003
+
+[Fri Mar  5 11:48:23 2021]
+rule filterOut_forward:
+    input: /datater/wu/data/filtering/zika/forward/8032-8533_dsk.table
+    output: /datater/wu/data/filtering/zika/forward/8032-8533_dsk.tsv
+    jobid: 215
+    wildcards: sample=zika, seg=8032-8533
+
+[Fri Mar  5 11:48:23 2021]
+rule filterOut_forward:
+    input: /datater/wu/data/filtering/zika/forward/10040-10541_dsk.table
+    output: /datater/wu/data/filtering/zika/forward/10040-10541_dsk.tsv
+    jobid: 222
+    wildcards: sample=zika, seg=10040-10541
+
+[Fri Mar  5 11:48:24 2021]
+Finished job 186.
+1 of 44 steps (2%) done
+[Fri Mar  5 11:48:24 2021]
+Finished job 200.
+2 of 44 steps (5%) done
+[Fri Mar  5 11:48:24 2021]
+Finished job 208.
+3 of 44 steps (7%) done
+[Fri Mar  5 11:48:24 2021]
+Finished job 217.
+4 of 44 steps (9%) done
+[Fri Mar  5 11:48:24 2021]
+Finished job 207.
+5 of 44 steps (11%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-05T114822.541172.snakemake.log

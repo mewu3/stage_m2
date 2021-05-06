@@ -1,0 +1,3 @@
+KeyError in line 11 of /datater/wu/MSSPE/snakefile-clustering:
+'dataDir'
+  File "/datater/wu/MSSPE/snakefile-clustering", line 11, in <module>

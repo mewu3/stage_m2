@@ -1,0 +1,4 @@
+KeyError in line 66 of /datater/wu/MSSPE/rules-variant/reverse_kmer_spec.smk:
+'jellyfish'
+  File "/datater/wu/MSSPE/snakefile-variant", line 154, in <module>
+  File "/datater/wu/MSSPE/rules-variant/reverse_kmer_spec.smk", line 66, in <module>

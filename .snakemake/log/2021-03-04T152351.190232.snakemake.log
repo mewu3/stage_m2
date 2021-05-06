@@ -1,0 +1,2580 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	43	dskReverse
+	43	dskReverseOutput
+	43	dskReverseOutputSort
+	43	dskTm_reverse_calculate
+	43	filterOut_reverse_dskTm
+	216
+Select jobs to execute...
+
+[Thu Mar  4 15:23:51 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/9538-10039.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/9538-10039.h5
+    jobid: 258
+    wildcards: sample=zika, seg=9538-10039
+
+
+[Thu Mar  4 15:23:51 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/3765-4266.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/3765-4266.h5
+    jobid: 254
+    wildcards: sample=zika, seg=3765-4266
+
+
+[Thu Mar  4 15:23:51 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/7781-8282.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/7781-8282.h5
+    jobid: 273
+    wildcards: sample=zika, seg=7781-8282
+
+
+[Thu Mar  4 15:23:51 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/9287-9788.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/9287-9788.h5
+    jobid: 237
+    wildcards: sample=zika, seg=9287-9788
+
+
+[Thu Mar  4 15:23:51 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/10542-10780.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/10542-10780.h5
+    jobid: 245
+    wildcards: sample=zika, seg=10542-10780
+
+
+[Thu Mar  4 15:23:51 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/4267-4768.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/4267-4768.h5
+    jobid: 252
+    wildcards: sample=zika, seg=4267-4768
+
+
+[Thu Mar  4 15:23:51 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/7028-7529.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/7028-7529.h5
+    jobid: 267
+    wildcards: sample=zika, seg=7028-7529
+
+
+[Thu Mar  4 15:23:51 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/5773-6274.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/5773-6274.h5
+    jobid: 236
+    wildcards: sample=zika, seg=5773-6274
+
+
+[Thu Mar  4 15:23:52 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/3012-3513.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/3012-3513.h5
+    jobid: 244
+    wildcards: sample=zika, seg=3012-3513
+
+
+[Thu Mar  4 15:23:52 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/1004-1505.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/1004-1505.h5
+    jobid: 251
+    wildcards: sample=zika, seg=1004-1505
+
+
+[Thu Mar  4 15:23:52 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/251-752.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/251-752.h5
+    jobid: 266
+    wildcards: sample=zika, seg=251-752
+
+
+[Thu Mar  4 15:23:52 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/5271-5772.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/5271-5772.h5
+    jobid: 259
+    wildcards: sample=zika, seg=5271-5772
+
+[Thu Mar  4 15:23:57 2021]
+Finished job 254.
+1 of 216 steps (0.46%) done
+Select jobs to execute...
+[Thu Mar  4 15:23:57 2021]
+Finished job 237.
+2 of 216 steps (0.93%) done
+[Thu Mar  4 15:23:57 2021]
+Finished job 273.
+3 of 216 steps (1%) done
+
+[Thu Mar  4 15:23:57 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/2510-3011.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/2510-3011.h5
+    jobid: 269
+    wildcards: sample=zika, seg=2510-3011
+
+Select jobs to execute...
+[Thu Mar  4 15:23:57 2021]
+Finished job 236.
+4 of 216 steps (2%) done
+
+[Thu Mar  4 15:23:57 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/6024-6525.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/6024-6525.h5
+    jobid: 253
+    wildcards: sample=zika, seg=6024-6525
+
+
+[Thu Mar  4 15:23:57 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/2259-2760.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/2259-2760.h5
+    jobid: 243
+    wildcards: sample=zika, seg=2259-2760
+
+Select jobs to execute...
+[Thu Mar  4 15:23:57 2021]
+Finished job 266.
+5 of 216 steps (2%) done
+
+[Thu Mar  4 15:23:57 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/8785-9286.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/8785-9286.h5
+    jobid: 231
+    wildcards: sample=zika, seg=8785-9286
+
+Select jobs to execute...
+[Thu Mar  4 15:23:57 2021]
+Finished job 267.
+6 of 216 steps (3%) done
+[Thu Mar  4 15:23:57 2021]
+Finished job 258.
+7 of 216 steps (3%) done
+[Thu Mar  4 15:23:57 2021]
+Finished job 259.
+8 of 216 steps (4%) done
+
+[Thu Mar  4 15:23:57 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/7530-8031.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/7530-8031.h5
+    jobid: 239
+    wildcards: sample=zika, seg=7530-8031
+
+Select jobs to execute...
+[Thu Mar  4 15:23:57 2021]
+Finished job 252.
+9 of 216 steps (4%) done
+
+[Thu Mar  4 15:23:57 2021]
+[Thu Mar  4 15:23:57 2021]
+Finished job 245.
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/6275-6776.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/6275-6776.h5
+    jobid: 238
+    wildcards: sample=zika, seg=6275-6776
+10 of 216 steps (5%) done
+
+
+[Thu Mar  4 15:23:57 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/8032-8533.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/8032-8533.h5
+    jobid: 265
+    wildcards: sample=zika, seg=8032-8533
+
+[Thu Mar  4 15:23:57 2021]
+Finished job 244.
+11 of 216 steps (5%) done
+
+[Thu Mar  4 15:23:57 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/4518-5019.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/4518-5019.h5
+    jobid: 235
+    wildcards: sample=zika, seg=4518-5019
+
+[Thu Mar  4 15:23:57 2021]
+Finished job 251.
+12 of 216 steps (6%) done
+
+[Thu Mar  4 15:23:57 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/1757-2258.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/1757-2258.h5
+    jobid: 250
+    wildcards: sample=zika, seg=1757-2258
+
+Select jobs to execute...
+
+[Thu Mar  4 15:23:57 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/3765-4266.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/3765-4266_dsk.txt
+    jobid: 297
+    wildcards: sample=zika, seg=3765-4266
+
+
+[Thu Mar  4 15:23:57 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/3012-3513.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/3012-3513_dsk.txt
+    jobid: 287
+    wildcards: sample=zika, seg=3012-3513
+
+
+[Thu Mar  4 15:23:58 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/9287-9788.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/9287-9788_dsk.txt
+    jobid: 280
+    wildcards: sample=zika, seg=9287-9788
+
+Select jobs to execute...
+[Thu Mar  4 15:23:58 2021]
+Finished job 297.
+13 of 216 steps (6%) done
+[Thu Mar  4 15:23:58 2021]
+Finished job 280.
+14 of 216 steps (6%) done
+[Thu Mar  4 15:23:58 2021]
+Finished job 287.
+15 of 216 steps (7%) done
+
+[Thu Mar  4 15:23:58 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/9036-9537.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/9036-9537.h5
+    jobid: 261
+    wildcards: sample=zika, seg=9036-9537
+
+Select jobs to execute...
+
+[Thu Mar  4 15:23:58 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/3514-4015.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/3514-4015.h5
+    jobid: 260
+    wildcards: sample=zika, seg=3514-4015
+
+
+[Thu Mar  4 15:23:58 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/251-752.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/251-752_dsk.txt
+    jobid: 309
+    wildcards: sample=zika, seg=251-752
+
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+[Thu Mar  4 15:23:58 2021]
+Finished job 309.
+16 of 216 steps (7%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:23:58 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/2008-2509.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/2008-2509.h5
+    jobid: 247
+    wildcards: sample=zika, seg=2008-2509
+
+[Thu Mar  4 15:24:02 2021]
+Finished job 253.
+17 of 216 steps (8%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:02 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/5020-5521.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/5020-5521.h5
+    jobid: 240
+    wildcards: sample=zika, seg=5020-5521
+
+[Thu Mar  4 15:24:02 2021]
+Finished job 269.
+18 of 216 steps (8%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:02 2021]
+Finished job 243.
+19 of 216 steps (9%) done
+
+[Thu Mar  4 15:24:02 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/502-1003.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/502-1003.h5
+    jobid: 262
+    wildcards: sample=zika, seg=502-1003
+
+Select jobs to execute...
+[Thu Mar  4 15:24:03 2021]
+Finished job 250.
+20 of 216 steps (9%) done
+
+[Thu Mar  4 15:24:03 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/3012-3513_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/3012-3513_dsk.sort
+    jobid: 330
+    wildcards: sample=zika, seg=3012-3513
+
+Select jobs to execute...
+[Thu Mar  4 15:24:03 2021]
+Finished job 239.
+21 of 216 steps (10%) done
+
+[Thu Mar  4 15:24:03 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/10040-10541.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/10040-10541.h5
+    jobid: 255
+    wildcards: sample=zika, seg=10040-10541
+
+Select jobs to execute...
+[Thu Mar  4 15:24:03 2021]
+Finished job 231.
+22 of 216 steps (10%) done
+
+[Thu Mar  4 15:24:03 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/251-752_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/251-752_dsk.sort
+    jobid: 352
+    wildcards: sample=zika, seg=251-752
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:03 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/6526-7027.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/6526-7027.h5
+    jobid: 232
+    wildcards: sample=zika, seg=6526-7027
+
+[Thu Mar  4 15:24:03 2021]
+Finished job 238.
+23 of 216 steps (11%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:03 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/4016-4517.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/4016-4517.h5
+    jobid: 270
+    wildcards: sample=zika, seg=4016-4517
+
+[Thu Mar  4 15:24:03 2021]
+Finished job 261.
+24 of 216 steps (11%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:03 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/5522-6023.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/5522-6023.h5
+    jobid: 263
+    wildcards: sample=zika, seg=5522-6023
+
+[Thu Mar  4 15:24:03 2021]
+Finished job 235.
+25 of 216 steps (12%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:03 2021]
+Finished job 265.
+26 of 216 steps (12%) done
+
+[Thu Mar  4 15:24:03 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/9287-9788_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/9287-9788_dsk.sort
+    jobid: 323
+    wildcards: sample=zika, seg=9287-9788
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:03 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/4518-5019.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/4518-5019_dsk.txt
+    jobid: 278
+    wildcards: sample=zika, seg=4518-5019
+
+[Thu Mar  4 15:24:04 2021]
+Finished job 278.
+27 of 216 steps (12%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:04 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/4518-5019_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/4518-5019_dsk.sort
+    jobid: 321
+    wildcards: sample=zika, seg=4518-5019
+
+[Thu Mar  4 15:24:04 2021]
+Finished job 260.
+28 of 216 steps (13%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:04 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/8032-8533.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/8032-8533_dsk.txt
+    jobid: 308
+    wildcards: sample=zika, seg=8032-8533
+
+[Thu Mar  4 15:24:04 2021]
+Finished job 247.
+29 of 216 steps (13%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:04 2021]
+Finished job 308.
+30 of 216 steps (14%) done
+
+[Thu Mar  4 15:24:04 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/9789-10290.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/9789-10290.h5
+    jobid: 248
+    wildcards: sample=zika, seg=9789-10290
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:04 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/8032-8533_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/8032-8533_dsk.sort
+    jobid: 351
+    wildcards: sample=zika, seg=8032-8533
+
+[Thu Mar  4 15:24:05 2021]
+Finished job 330.
+31 of 216 steps (14%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:05 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/1757-2258.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/1757-2258_dsk.txt
+    jobid: 293
+    wildcards: sample=zika, seg=1757-2258
+
+[Thu Mar  4 15:24:05 2021]
+Finished job 293.
+32 of 216 steps (15%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:05 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/1757-2258_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/1757-2258_dsk.sort
+    jobid: 336
+    wildcards: sample=zika, seg=1757-2258
+
+[Thu Mar  4 15:24:05 2021]
+Finished job 321.
+33 of 216 steps (15%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:05 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/8283-8784.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/8283-8784.h5
+    jobid: 233
+    wildcards: sample=zika, seg=8283-8784
+
+[Thu Mar  4 15:24:06 2021]
+Finished job 352.
+34 of 216 steps (16%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:06 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/7279-7780.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/7279-7780.h5
+    jobid: 241
+    wildcards: sample=zika, seg=7279-7780
+
+[Thu Mar  4 15:24:06 2021]
+Finished job 351.
+35 of 216 steps (16%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:06 2021]
+Finished job 323.
+36 of 216 steps (17%) done
+
+[Thu Mar  4 15:24:06 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/10291-10792.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/10291-10792.h5
+    jobid: 256
+    wildcards: sample=zika, seg=10291-10792
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:06 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/9287-9788_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/9287-9788_dsk.table
+    jobid: 366
+    wildcards: sample=zika, seg=9287-9788
+
+[Thu Mar  4 15:24:07 2021]
+Finished job 240.
+37 of 216 steps (17%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:07 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/8534-9035.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/8534-9035.h5
+    jobid: 271
+    wildcards: sample=zika, seg=8534-9035
+
+[Thu Mar  4 15:24:07 2021]
+Finished job 262.
+38 of 216 steps (18%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:07 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/7781-8282.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/7781-8282_dsk.txt
+    jobid: 316
+    wildcards: sample=zika, seg=7781-8282
+
+[Thu Mar  4 15:24:07 2021]
+Finished job 255.
+39 of 216 steps (18%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:07 2021]
+Finished job 316.
+40 of 216 steps (19%) done
+
+[Thu Mar  4 15:24:07 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/9538-10039.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/9538-10039_dsk.txt
+    jobid: 301
+    wildcards: sample=zika, seg=9538-10039
+
+Select jobs to execute...
+[Thu Mar  4 15:24:07 2021]
+Finished job 301.
+41 of 216 steps (19%) done
+[Thu Mar  4 15:24:07 2021]
+Finished job 232.
+42 of 216 steps (19%) done
+
+[Thu Mar  4 15:24:07 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/7781-8282_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/7781-8282_dsk.sort
+    jobid: 359
+    wildcards: sample=zika, seg=7781-8282
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:07 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/3012-3513_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/3012-3513_dsk.table
+    jobid: 373
+    wildcards: sample=zika, seg=3012-3513
+
+[Thu Mar  4 15:24:07 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/7530-8031.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/7530-8031_dsk.txt
+    jobid: 282
+    wildcards: sample=zika, seg=7530-8031
+
+Select jobs to execute...
+[Thu Mar  4 15:24:08 2021]
+Finished job 282.
+43 of 216 steps (20%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:08 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/9538-10039_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/9538-10039_dsk.sort
+    jobid: 344
+    wildcards: sample=zika, seg=9538-10039
+
+[Thu Mar  4 15:24:08 2021]
+Finished job 336.
+44 of 216 steps (20%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:08 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/2259-2760.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/2259-2760_dsk.txt
+    jobid: 286
+    wildcards: sample=zika, seg=2259-2760
+
+[Thu Mar  4 15:24:08 2021]
+Finished job 286.
+45 of 216 steps (21%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:08 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/2259-2760_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/2259-2760_dsk.sort
+    jobid: 329
+    wildcards: sample=zika, seg=2259-2760
+
+[Thu Mar  4 15:24:08 2021]
+Finished job 366.
+46 of 216 steps (21%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:08 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/2761-3262.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/2761-3262.h5
+    jobid: 257
+    wildcards: sample=zika, seg=2761-3262
+
+[Thu Mar  4 15:24:08 2021]
+Finished job 270.
+47 of 216 steps (22%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:08 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/1506-2007.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/1506-2007.h5
+    jobid: 242
+    wildcards: sample=zika, seg=1506-2007
+
+[Thu Mar  4 15:24:09 2021]
+Finished job 263.
+48 of 216 steps (22%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:09 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/5522-6023.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/5522-6023_dsk.txt
+    jobid: 306
+    wildcards: sample=zika, seg=5522-6023
+
+[Thu Mar  4 15:24:09 2021]
+Finished job 306.
+49 of 216 steps (23%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:09 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/0-501.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/0-501.h5
+    jobid: 272
+    wildcards: sample=zika, seg=0-501
+
+[Thu Mar  4 15:24:09 2021]
+Finished job 344.
+50 of 216 steps (23%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:09 2021]
+Finished job 248.
+51 of 216 steps (24%) done
+
+[Thu Mar  4 15:24:09 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/3263-3764.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/3263-3764.h5
+    jobid: 264
+    wildcards: sample=zika, seg=3263-3764
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:09 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/9789-10290.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/9789-10290_dsk.txt
+    jobid: 291
+    wildcards: sample=zika, seg=9789-10290
+
+[Thu Mar  4 15:24:09 2021]
+Finished job 359.
+52 of 216 steps (24%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:09 2021]
+Finished job 291.
+53 of 216 steps (25%) done
+
+[Thu Mar  4 15:24:09 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/5773-6274.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/5773-6274_dsk.txt
+    jobid: 279
+    wildcards: sample=zika, seg=5773-6274
+
+Select jobs to execute...
+[Thu Mar  4 15:24:09 2021]
+Finished job 279.
+54 of 216 steps (25%) done
+
+[Thu Mar  4 15:24:09 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/1004-1505.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/1004-1505_dsk.txt
+    jobid: 294
+    wildcards: sample=zika, seg=1004-1505
+
+Select jobs to execute...
+[Thu Mar  4 15:24:10 2021]
+Finished job 294.
+55 of 216 steps (25%) done
+
+[Thu Mar  4 15:24:10 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/5773-6274_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/5773-6274_dsk.sort
+    jobid: 322
+    wildcards: sample=zika, seg=5773-6274
+
+Select jobs to execute...
+[Thu Mar  4 15:24:10 2021]
+Finished job 233.
+56 of 216 steps (26%) done
+
+[Thu Mar  4 15:24:10 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/1004-1505_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/1004-1505_dsk.sort
+    jobid: 337
+    wildcards: sample=zika, seg=1004-1505
+
+Select jobs to execute...
+[Thu Mar  4 15:24:10 2021]
+Finished job 329.
+57 of 216 steps (26%) done
+
+[Thu Mar  4 15:24:10 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/8283-8784.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/8283-8784_dsk.txt
+    jobid: 276
+    wildcards: sample=zika, seg=8283-8784
+
+Select jobs to execute...
+[Thu Mar  4 15:24:10 2021]
+Finished job 276.
+58 of 216 steps (27%) done
+
+[Thu Mar  4 15:24:10 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/4769-5270.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/4769-5270.h5
+    jobid: 249
+    wildcards: sample=zika, seg=4769-5270
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:10 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/8283-8784_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/8283-8784_dsk.sort
+    jobid: 319
+    wildcards: sample=zika, seg=8283-8784
+
+[Thu Mar  4 15:24:10 2021]
+Finished job 373.
+59 of 216 steps (27%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:10 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/753-1254.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/753-1254.h5
+    jobid: 234
+    wildcards: sample=zika, seg=753-1254
+
+[Thu Mar  4 15:24:11 2021]
+Finished job 241.
+60 of 216 steps (28%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:11 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/7279-7780.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/7279-7780_dsk.txt
+    jobid: 284
+    wildcards: sample=zika, seg=7279-7780
+
+[Thu Mar  4 15:24:11 2021]
+Finished job 284.
+61 of 216 steps (28%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:11 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/5271-5772.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/5271-5772_dsk.txt
+    jobid: 302
+    wildcards: sample=zika, seg=5271-5772
+
+[Thu Mar  4 15:24:11 2021]
+Finished job 302.
+62 of 216 steps (29%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:12 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/5271-5772_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/5271-5772_dsk.sort
+    jobid: 345
+    wildcards: sample=zika, seg=5271-5772
+
+[Thu Mar  4 15:24:12 2021]
+Finished job 322.
+63 of 216 steps (29%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:12 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/7530-8031_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/7530-8031_dsk.sort
+    jobid: 325
+    wildcards: sample=zika, seg=7530-8031
+
+[Thu Mar  4 15:24:12 2021]
+Finished job 256.
+64 of 216 steps (30%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:12 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/10291-10792.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/10291-10792_dsk.txt
+    jobid: 299
+    wildcards: sample=zika, seg=10291-10792
+
+[Thu Mar  4 15:24:12 2021]
+Finished job 299.
+65 of 216 steps (30%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:12 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/7028-7529.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/7028-7529_dsk.txt
+    jobid: 310
+    wildcards: sample=zika, seg=7028-7529
+
+[Thu Mar  4 15:24:12 2021]
+Finished job 310.
+66 of 216 steps (31%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:12 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/7028-7529_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/7028-7529_dsk.sort
+    jobid: 353
+    wildcards: sample=zika, seg=7028-7529
+
+[Thu Mar  4 15:24:12 2021]
+Finished job 319.
+67 of 216 steps (31%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:12 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/8283-8784_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/8283-8784_dsk.table
+    jobid: 362
+    wildcards: sample=zika, seg=8283-8784
+
+[Thu Mar  4 15:24:12 2021]
+Finished job 271.
+68 of 216 steps (31%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:13 2021]
+[Thu Mar  4 15:24:13 2021]
+Finished job 257.
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/8534-9035.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/8534-9035_dsk.txt
+    jobid: 314
+    wildcards: sample=zika, seg=8534-9035
+69 of 216 steps (32%) done
+
+Select jobs to execute...
+[Thu Mar  4 15:24:13 2021]
+Finished job 337.
+70 of 216 steps (32%) done
+[Thu Mar  4 15:24:13 2021]
+Finished job 314.
+71 of 216 steps (33%) done
+
+[Thu Mar  4 15:24:13 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/8785-9286.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/8785-9286_dsk.txt
+    jobid: 274
+    wildcards: sample=zika, seg=8785-9286
+
+
+[Thu Mar  4 15:24:13 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/2008-2509.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/2008-2509_dsk.txt
+    jobid: 290
+    wildcards: sample=zika, seg=2008-2509
+
+Select jobs to execute...
+[Thu Mar  4 15:24:13 2021]
+Finished job 274.
+72 of 216 steps (33%) done
+[Thu Mar  4 15:24:13 2021]
+Finished job 290.
+73 of 216 steps (34%) done
+
+[Thu Mar  4 15:24:13 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/2761-3262.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/2761-3262_dsk.txt
+    jobid: 300
+    wildcards: sample=zika, seg=2761-3262
+
+Select jobs to execute...
+[Thu Mar  4 15:24:13 2021]
+Finished job 300.
+74 of 216 steps (34%) done
+
+[Thu Mar  4 15:24:13 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/4016-4517.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/4016-4517_dsk.txt
+    jobid: 313
+    wildcards: sample=zika, seg=4016-4517
+
+
+[Thu Mar  4 15:24:13 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/8534-9035_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/8534-9035_dsk.sort
+    jobid: 357
+    wildcards: sample=zika, seg=8534-9035
+
+Select jobs to execute...
+[Thu Mar  4 15:24:13 2021]
+Finished job 313.
+75 of 216 steps (35%) done
+
+[Thu Mar  4 15:24:13 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/8785-9286_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/8785-9286_dsk.sort
+    jobid: 317
+    wildcards: sample=zika, seg=8785-9286
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:13 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/4267-4768.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/4267-4768_dsk.txt
+    jobid: 295
+    wildcards: sample=zika, seg=4267-4768
+
+Select jobs to execute...
+Select jobs to execute...
+[Thu Mar  4 15:24:13 2021]
+Finished job 295.
+76 of 216 steps (35%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:13 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/4267-4768_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/4267-4768_dsk.sort
+    jobid: 338
+    wildcards: sample=zika, seg=4267-4768
+
+[Thu Mar  4 15:24:13 2021]
+Finished job 242.
+77 of 216 steps (36%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:13 2021]
+Finished job 345.
+78 of 216 steps (36%) done
+
+[Thu Mar  4 15:24:13 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/1506-2007.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/1506-2007_dsk.txt
+    jobid: 285
+    wildcards: sample=zika, seg=1506-2007
+
+Select jobs to execute...
+[Thu Mar  4 15:24:13 2021]
+Finished job 285.
+79 of 216 steps (37%) done
+
+[Thu Mar  4 15:24:13 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/3765-4266_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/3765-4266_dsk.sort
+    jobid: 340
+    wildcards: sample=zika, seg=3765-4266
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:13 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/10542-10780.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/10542-10780_dsk.txt
+    jobid: 288
+    wildcards: sample=zika, seg=10542-10780
+
+[Thu Mar  4 15:24:14 2021]
+Finished job 264.
+80 of 216 steps (37%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:14 2021]
+Finished job 288.
+81 of 216 steps (38%) done
+
+[Thu Mar  4 15:24:14 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/3263-3764.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/3263-3764_dsk.txt
+    jobid: 307
+    wildcards: sample=zika, seg=3263-3764
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:14 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/10542-10780_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/10542-10780_dsk.sort
+    jobid: 331
+    wildcards: sample=zika, seg=10542-10780
+
+[Thu Mar  4 15:24:14 2021]
+Finished job 325.
+82 of 216 steps (38%) done
+[Thu Mar  4 15:24:14 2021]
+Finished job 272.
+83 of 216 steps (38%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:14 2021]
+Finished job 307.
+84 of 216 steps (39%) done
+
+[Thu Mar  4 15:24:14 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/5271-5772_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/5271-5772_dsk.table
+    jobid: 388
+    wildcards: sample=zika, seg=5271-5772
+
+[Thu Mar  4 15:24:14 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/502-1003.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/502-1003_dsk.txt
+    jobid: 305
+    wildcards: sample=zika, seg=502-1003
+
+Select jobs to execute...
+[Thu Mar  4 15:24:14 2021]
+Finished job 305.
+85 of 216 steps (39%) done
+
+[Thu Mar  4 15:24:14 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/0-501.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/0-501_dsk.txt
+    jobid: 315
+    wildcards: sample=zika, seg=0-501
+
+Select jobs to execute...
+[Thu Mar  4 15:24:14 2021]
+Finished job 315.
+86 of 216 steps (40%) done
+
+[Thu Mar  4 15:24:14 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/7530-8031_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/7530-8031_dsk.table
+    jobid: 368
+    wildcards: sample=zika, seg=7530-8031
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:14 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/3263-3764_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/3263-3764_dsk.sort
+    jobid: 350
+    wildcards: sample=zika, seg=3263-3764
+
+Select jobs to execute...
+[Thu Mar  4 15:24:14 2021]
+Finished job 353.
+87 of 216 steps (40%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:14 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/7028-7529_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/7028-7529_dsk.table
+    jobid: 396
+    wildcards: sample=zika, seg=7028-7529
+
+[Thu Mar  4 15:24:14 2021]
+Finished job 234.
+88 of 216 steps (41%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:14 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/753-1254.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/753-1254_dsk.txt
+    jobid: 277
+    wildcards: sample=zika, seg=753-1254
+
+[Thu Mar  4 15:24:14 2021]
+Finished job 277.
+89 of 216 steps (41%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:14 2021]
+Finished job 362.
+90 of 216 steps (42%) done
+
+[Thu Mar  4 15:24:14 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/3514-4015.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/3514-4015_dsk.txt
+    jobid: 303
+    wildcards: sample=zika, seg=3514-4015
+
+Select jobs to execute...
+[Thu Mar  4 15:24:14 2021]
+Finished job 357.
+91 of 216 steps (42%) done
+[Thu Mar  4 15:24:14 2021]
+Finished job 303.
+92 of 216 steps (43%) done
+
+[Thu Mar  4 15:24:14 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/8283-8784_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/8283-8784_dsk.tsv
+    jobid: 405
+    wildcards: sample=zika, seg=8283-8784
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:14 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/0-501_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/0-501_dsk.sort
+    jobid: 358
+    wildcards: sample=zika, seg=0-501
+
+[Thu Mar  4 15:24:14 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/5773-6274_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/5773-6274_dsk.table
+    jobid: 365
+    wildcards: sample=zika, seg=5773-6274
+
+Select jobs to execute...
+[Thu Mar  4 15:24:14 2021]
+Finished job 249.
+93 of 216 steps (43%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:14 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/4769-5270.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/4769-5270_dsk.txt
+    jobid: 292
+    wildcards: sample=zika, seg=4769-5270
+
+[Thu Mar  4 15:24:14 2021]
+Finished job 292.
+94 of 216 steps (44%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:14 2021]
+Finished job 338.
+95 of 216 steps (44%) done
+
+[Thu Mar  4 15:24:15 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/3514-4015_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/3514-4015_dsk.sort
+    jobid: 346
+    wildcards: sample=zika, seg=3514-4015
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:15 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/4267-4768_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/4267-4768_dsk.table
+    jobid: 381
+    wildcards: sample=zika, seg=4267-4768
+
+[Thu Mar  4 15:24:15 2021]
+Finished job 317.
+96 of 216 steps (44%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:15 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/8785-9286_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/8785-9286_dsk.table
+    jobid: 360
+    wildcards: sample=zika, seg=8785-9286
+
+[Thu Mar  4 15:24:15 2021]
+Finished job 340.
+97 of 216 steps (45%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:15 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/3765-4266_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/3765-4266_dsk.table
+    jobid: 383
+    wildcards: sample=zika, seg=3765-4266
+
+[Thu Mar  4 15:24:15 2021]
+Finished job 388.
+98 of 216 steps (45%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:15 2021]
+Finished job 331.
+99 of 216 steps (46%) done
+[Thu Mar  4 15:24:15 2021]
+Finished job 368.
+100 of 216 steps (46%) done
+
+[Thu Mar  4 15:24:15 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/1255-1756.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/1255-1756.h5
+    jobid: 246
+    wildcards: sample=zika, seg=1255-1756
+
+[Thu Mar  4 15:24:15 2021]
+Finished job 350.
+101 of 216 steps (47%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:15 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/2761-3262_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/2761-3262_dsk.sort
+    jobid: 343
+    wildcards: sample=zika, seg=2761-3262
+
+[Thu Mar  4 15:24:15 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/251-752_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/251-752_dsk.table
+    jobid: 395
+    wildcards: sample=zika, seg=251-752
+
+[Thu Mar  4 15:24:15 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/6526-7027.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/6526-7027_dsk.txt
+    jobid: 275
+    wildcards: sample=zika, seg=6526-7027
+
+Select jobs to execute...
+Select jobs to execute...
+[Thu Mar  4 15:24:15 2021]
+Finished job 275.
+102 of 216 steps (47%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:15 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/7530-8031_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/7530-8031_dsk.tsv
+    jobid: 411
+    wildcards: sample=zika, seg=7530-8031
+
+[Thu Mar  4 15:24:16 2021]
+Finished job 396.
+103 of 216 steps (48%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:16 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/10542-10780_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/10542-10780_dsk.table
+    jobid: 374
+    wildcards: sample=zika, seg=10542-10780
+
+[Thu Mar  4 15:24:16 2021]
+Finished job 365.
+104 of 216 steps (48%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:16 2021]
+Finished job 358.
+105 of 216 steps (49%) done
+
+[Thu Mar  4 15:24:16 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/7028-7529_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/7028-7529_dsk.tsv
+    jobid: 439
+    wildcards: sample=zika, seg=7028-7529
+
+Select jobs to execute...
+[Thu Mar  4 15:24:16 2021]
+Finished job 381.
+106 of 216 steps (49%) done
+
+[Thu Mar  4 15:24:16 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/9287-9788_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/9287-9788_dsk.tsv
+    jobid: 409
+    wildcards: sample=zika, seg=9287-9788
+
+Select jobs to execute...
+[Thu Mar  4 15:24:16 2021]
+Finished job 346.
+107 of 216 steps (50%) done
+
+[Thu Mar  4 15:24:16 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/8534-9035_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/8534-9035_dsk.table
+    jobid: 400
+    wildcards: sample=zika, seg=8534-9035
+
+Select jobs to execute...
+[Thu Mar  4 15:24:16 2021]
+Finished job 360.
+108 of 216 steps (50%) done
+
+[Thu Mar  4 15:24:16 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/3514-4015_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/3514-4015_dsk.table
+    jobid: 389
+    wildcards: sample=zika, seg=3514-4015
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:16 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/2008-2509_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/2008-2509_dsk.sort
+    jobid: 333
+    wildcards: sample=zika, seg=2008-2509
+
+[Thu Mar  4 15:24:16 2021]
+Finished job 405.
+109 of 216 steps (50%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:16 2021]
+Finished job 383.
+110 of 216 steps (51%) done
+
+[Thu Mar  4 15:24:16 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/502-1003_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/502-1003_dsk.sort
+    jobid: 348
+    wildcards: sample=zika, seg=502-1003
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:17 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/3765-4266_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/3765-4266_dsk.tsv
+    jobid: 426
+    wildcards: sample=zika, seg=3765-4266
+
+[Thu Mar  4 15:24:17 2021]
+Finished job 343.
+111 of 216 steps (51%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:17 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/3263-3764_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/3263-3764_dsk.table
+    jobid: 393
+    wildcards: sample=zika, seg=3263-3764
+
+[Thu Mar  4 15:24:17 2021]
+Finished job 395.
+112 of 216 steps (52%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:17 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/6526-7027_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/6526-7027_dsk.sort
+    jobid: 318
+    wildcards: sample=zika, seg=6526-7027
+
+[Thu Mar  4 15:24:18 2021]
+Finished job 389.
+113 of 216 steps (52%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:18 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/5773-6274_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/5773-6274_dsk.tsv
+    jobid: 408
+    wildcards: sample=zika, seg=5773-6274
+
+[Thu Mar  4 15:24:18 2021]
+Finished job 333.
+114 of 216 steps (53%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:18 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/2008-2509_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/2008-2509_dsk.table
+    jobid: 376
+    wildcards: sample=zika, seg=2008-2509
+
+[Thu Mar  4 15:24:18 2021]
+Finished job 374.
+115 of 216 steps (53%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:18 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/4769-5270_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/4769-5270_dsk.sort
+    jobid: 335
+    wildcards: sample=zika, seg=4769-5270
+
+[Thu Mar  4 15:24:18 2021]
+Finished job 348.
+116 of 216 steps (54%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:18 2021]
+Finished job 439.
+117 of 216 steps (54%) done
+
+[Thu Mar  4 15:24:18 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/502-1003_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/502-1003_dsk.table
+    jobid: 391
+    wildcards: sample=zika, seg=502-1003
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:18 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/251-752_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/251-752_dsk.tsv
+    jobid: 438
+    wildcards: sample=zika, seg=251-752
+
+[Thu Mar  4 15:24:18 2021]
+Finished job 400.
+118 of 216 steps (55%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:18 2021]
+Finished job 409.
+119 of 216 steps (55%) done
+
+[Thu Mar  4 15:24:18 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/8534-9035_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/8534-9035_dsk.tsv
+    jobid: 443
+    wildcards: sample=zika, seg=8534-9035
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:18 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/4016-4517_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/4016-4517_dsk.sort
+    jobid: 356
+    wildcards: sample=zika, seg=4016-4517
+
+[Thu Mar  4 15:24:18 2021]
+Finished job 411.
+120 of 216 steps (56%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:18 2021]
+Finished job 393.
+121 of 216 steps (56%) done
+[Thu Mar  4 15:24:18 2021]
+Finished job 318.
+122 of 216 steps (56%) done
+
+[Thu Mar  4 15:24:18 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/0-501_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/0-501_dsk.table
+    jobid: 401
+    wildcards: sample=zika, seg=0-501
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:19 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/8032-8533_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/8032-8533_dsk.table
+    jobid: 394
+    wildcards: sample=zika, seg=8032-8533
+
+[Thu Mar  4 15:24:19 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/1004-1505_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/1004-1505_dsk.table
+    jobid: 380
+    wildcards: sample=zika, seg=1004-1505
+
+Select jobs to execute...
+[Thu Mar  4 15:24:19 2021]
+Finished job 426.
+123 of 216 steps (57%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:19 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/6526-7027_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/6526-7027_dsk.table
+    jobid: 361
+    wildcards: sample=zika, seg=6526-7027
+
+[Thu Mar  4 15:24:19 2021]
+Finished job 335.
+124 of 216 steps (57%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:19 2021]
+Finished job 376.
+125 of 216 steps (58%) done
+[Thu Mar  4 15:24:19 2021]
+Finished job 246.
+126 of 216 steps (58%) done
+
+[Thu Mar  4 15:24:19 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/4769-5270_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/4769-5270_dsk.table
+    jobid: 378
+    wildcards: sample=zika, seg=4769-5270
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:19 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/753-1254_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/753-1254_dsk.sort
+    jobid: 320
+    wildcards: sample=zika, seg=753-1254
+
+[Thu Mar  4 15:24:19 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/1757-2258_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/1757-2258_dsk.table
+    jobid: 379
+    wildcards: sample=zika, seg=1757-2258
+
+Select jobs to execute...
+[Thu Mar  4 15:24:20 2021]
+Finished job 391.
+127 of 216 steps (59%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:20 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/502-1003_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/502-1003_dsk.tsv
+    jobid: 434
+    wildcards: sample=zika, seg=502-1003
+
+[Thu Mar  4 15:24:20 2021]
+Finished job 408.
+128 of 216 steps (59%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:20 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/3263-3764_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/3263-3764_dsk.tsv
+    jobid: 436
+    wildcards: sample=zika, seg=3263-3764
+
+[Thu Mar  4 15:24:20 2021]
+Finished job 356.
+129 of 216 steps (60%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:20 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/4016-4517_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/4016-4517_dsk.table
+    jobid: 399
+    wildcards: sample=zika, seg=4016-4517
+
+[Thu Mar  4 15:24:20 2021]
+Finished job 401.
+130 of 216 steps (60%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:20 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/0-501_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/0-501_dsk.tsv
+    jobid: 444
+    wildcards: sample=zika, seg=0-501
+
+[Thu Mar  4 15:24:20 2021]
+Finished job 361.
+131 of 216 steps (61%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:20 2021]
+Finished job 394.
+132 of 216 steps (61%) done
+[Thu Mar  4 15:24:20 2021]
+Finished job 438.
+133 of 216 steps (62%) done
+
+[Thu Mar  4 15:24:20 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/6526-7027_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/6526-7027_dsk.tsv
+    jobid: 404
+    wildcards: sample=zika, seg=6526-7027
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:20 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/10542-10780_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/10542-10780_dsk.tsv
+    jobid: 417
+    wildcards: sample=zika, seg=10542-10780
+
+[Thu Mar  4 15:24:20 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/5522-6023_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/5522-6023_dsk.sort
+    jobid: 349
+    wildcards: sample=zika, seg=5522-6023
+
+Select jobs to execute...
+[Thu Mar  4 15:24:20 2021]
+Finished job 380.
+134 of 216 steps (62%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:20 2021]
+Finished job 443.
+135 of 216 steps (62%) done
+
+[Thu Mar  4 15:24:20 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/8032-8533_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/8032-8533_dsk.tsv
+    jobid: 437
+    wildcards: sample=zika, seg=8032-8533
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:21 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/1004-1505_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/1004-1505_dsk.tsv
+    jobid: 423
+    wildcards: sample=zika, seg=1004-1505
+
+[Thu Mar  4 15:24:21 2021]
+Finished job 378.
+136 of 216 steps (63%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:21 2021]
+Finished job 379.
+137 of 216 steps (63%) done
+
+[Thu Mar  4 15:24:21 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/4769-5270_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/4769-5270_dsk.tsv
+    jobid: 421
+    wildcards: sample=zika, seg=4769-5270
+
+Select jobs to execute...
+[Thu Mar  4 15:24:21 2021]
+Finished job 320.
+138 of 216 steps (64%) done
+
+[Thu Mar  4 15:24:21 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/1757-2258_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/1757-2258_dsk.tsv
+    jobid: 422
+    wildcards: sample=zika, seg=1757-2258
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:21 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/753-1254_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/753-1254_dsk.table
+    jobid: 363
+    wildcards: sample=zika, seg=753-1254
+
+[Thu Mar  4 15:24:22 2021]
+Finished job 399.
+139 of 216 steps (64%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:22 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/4016-4517_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/4016-4517_dsk.tsv
+    jobid: 442
+    wildcards: sample=zika, seg=4016-4517
+
+[Thu Mar  4 15:24:22 2021]
+Finished job 434.
+140 of 216 steps (65%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:22 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/9036-9537.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/9036-9537_dsk.txt
+    jobid: 304
+    wildcards: sample=zika, seg=9036-9537
+
+[Thu Mar  4 15:24:22 2021]
+Finished job 304.
+141 of 216 steps (65%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:22 2021]
+Finished job 349.
+142 of 216 steps (66%) done
+
+[Thu Mar  4 15:24:22 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/9036-9537_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/9036-9537_dsk.sort
+    jobid: 347
+    wildcards: sample=zika, seg=9036-9537
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:22 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/5522-6023_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/5522-6023_dsk.table
+    jobid: 392
+    wildcards: sample=zika, seg=5522-6023
+
+[Thu Mar  4 15:24:22 2021]
+Finished job 436.
+143 of 216 steps (66%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:22 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/4518-5019_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/4518-5019_dsk.table
+    jobid: 364
+    wildcards: sample=zika, seg=4518-5019
+
+[Thu Mar  4 15:24:23 2021]
+Finished job 444.
+144 of 216 steps (67%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:23 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/9789-10290_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/9789-10290_dsk.sort
+    jobid: 334
+    wildcards: sample=zika, seg=9789-10290
+
+[Thu Mar  4 15:24:23 2021]
+Finished job 404.
+145 of 216 steps (67%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:23 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/4267-4768_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/4267-4768_dsk.tsv
+    jobid: 424
+    wildcards: sample=zika, seg=4267-4768
+
+[Thu Mar  4 15:24:23 2021]
+Finished job 417.
+146 of 216 steps (68%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:23 2021]
+Finished job 363.
+147 of 216 steps (68%) done
+
+[Thu Mar  4 15:24:23 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/1255-1756.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/1255-1756_dsk.txt
+    jobid: 289
+    wildcards: sample=zika, seg=1255-1756
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:23 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/753-1254_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/753-1254_dsk.tsv
+    jobid: 406
+    wildcards: sample=zika, seg=753-1254
+
+[Thu Mar  4 15:24:23 2021]
+Finished job 289.
+148 of 216 steps (69%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:23 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/1255-1756_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/1255-1756_dsk.sort
+    jobid: 332
+    wildcards: sample=zika, seg=1255-1756
+
+[Thu Mar  4 15:24:23 2021]
+Finished job 437.
+149 of 216 steps (69%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:23 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/2510-3011.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/2510-3011_dsk.txt
+    jobid: 312
+    wildcards: sample=zika, seg=2510-3011
+
+[Thu Mar  4 15:24:23 2021]
+Finished job 312.
+150 of 216 steps (69%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:23 2021]
+Finished job 423.
+151 of 216 steps (70%) done
+
+[Thu Mar  4 15:24:23 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/2510-3011_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/2510-3011_dsk.sort
+    jobid: 355
+    wildcards: sample=zika, seg=2510-3011
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:23 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/9538-10039_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/9538-10039_dsk.table
+    jobid: 387
+    wildcards: sample=zika, seg=9538-10039
+
+[Thu Mar  4 15:24:23 2021]
+Finished job 422.
+152 of 216 steps (70%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:23 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/7781-8282_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/7781-8282_dsk.table
+    jobid: 402
+    wildcards: sample=zika, seg=7781-8282
+
+[Thu Mar  4 15:24:23 2021]
+Finished job 421.
+153 of 216 steps (71%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:23 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/2761-3262_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/2761-3262_dsk.table
+    jobid: 386
+    wildcards: sample=zika, seg=2761-3262
+
+[Thu Mar  4 15:24:24 2021]
+Finished job 347.
+154 of 216 steps (71%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:24 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/5271-5772_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/5271-5772_dsk.tsv
+    jobid: 431
+    wildcards: sample=zika, seg=5271-5772
+
+[Thu Mar  4 15:24:24 2021]
+Finished job 392.
+155 of 216 steps (72%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:24 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/3012-3513_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/3012-3513_dsk.tsv
+    jobid: 416
+    wildcards: sample=zika, seg=3012-3513
+
+[Thu Mar  4 15:24:24 2021]
+Finished job 364.
+156 of 216 steps (72%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:24 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/6275-6776.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/6275-6776_dsk.txt
+    jobid: 281
+    wildcards: sample=zika, seg=6275-6776
+
+[Thu Mar  4 15:24:24 2021]
+Finished job 334.
+157 of 216 steps (73%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:24 2021]
+Finished job 281.
+158 of 216 steps (73%) done
+[Thu Mar  4 15:24:24 2021]
+Finished job 442.
+159 of 216 steps (74%) done
+
+[Thu Mar  4 15:24:24 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/6024-6525.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/6024-6525_dsk.txt
+    jobid: 296
+    wildcards: sample=zika, seg=6024-6525
+
+Select jobs to execute...
+[Thu Mar  4 15:24:24 2021]
+Finished job 296.
+160 of 216 steps (74%) done
+
+[Thu Mar  4 15:24:24 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/2259-2760_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/2259-2760_dsk.table
+    jobid: 372
+    wildcards: sample=zika, seg=2259-2760
+
+[Thu Mar  4 15:24:24 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/2008-2509_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/2008-2509_dsk.tsv
+    jobid: 419
+    wildcards: sample=zika, seg=2008-2509
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:24 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/6024-6525_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/6024-6525_dsk.sort
+    jobid: 339
+    wildcards: sample=zika, seg=6024-6525
+
+Select jobs to execute...
+[Thu Mar  4 15:24:24 2021]
+Finished job 332.
+161 of 216 steps (75%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:24 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/6275-6776_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/6275-6776_dsk.sort
+    jobid: 324
+    wildcards: sample=zika, seg=6275-6776
+
+[Thu Mar  4 15:24:25 2021]
+Finished job 355.
+162 of 216 steps (75%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:25 2021]
+Finished job 387.
+163 of 216 steps (75%) done
+
+[Thu Mar  4 15:24:25 2021]
+rule dskReverse:
+    input: /home/meijun/Documents/data/splitFiles/zika/reverse/6777-7278.fasta
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/6777-7278.h5
+    jobid: 268
+    wildcards: sample=zika, seg=6777-7278
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:25 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/9789-10290_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/9789-10290_dsk.table
+    jobid: 377
+    wildcards: sample=zika, seg=9789-10290
+
+[Thu Mar  4 15:24:25 2021]
+Finished job 402.
+164 of 216 steps (76%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:25 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/9036-9537_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/9036-9537_dsk.table
+    jobid: 390
+    wildcards: sample=zika, seg=9036-9537
+
+[Thu Mar  4 15:24:25 2021]
+Finished job 424.
+165 of 216 steps (76%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:25 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/5020-5521.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/5020-5521_dsk.txt
+    jobid: 283
+    wildcards: sample=zika, seg=5020-5521
+
+[Thu Mar  4 15:24:25 2021]
+Finished job 283.
+166 of 216 steps (77%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:25 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/5020-5521_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/5020-5521_dsk.sort
+    jobid: 326
+    wildcards: sample=zika, seg=5020-5521
+
+[Thu Mar  4 15:24:25 2021]
+Finished job 406.
+167 of 216 steps (77%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:25 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/10040-10541.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/10040-10541_dsk.txt
+    jobid: 298
+    wildcards: sample=zika, seg=10040-10541
+
+[Thu Mar  4 15:24:25 2021]
+Finished job 298.
+168 of 216 steps (78%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:25 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/10040-10541_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/10040-10541_dsk.sort
+    jobid: 341
+    wildcards: sample=zika, seg=10040-10541
+
+[Thu Mar  4 15:24:25 2021]
+Finished job 386.
+169 of 216 steps (78%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:25 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/2761-3262_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/2761-3262_dsk.tsv
+    jobid: 429
+    wildcards: sample=zika, seg=2761-3262
+
+[Thu Mar  4 15:24:26 2021]
+Finished job 339.
+170 of 216 steps (79%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:26 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/6024-6525_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/6024-6525_dsk.table
+    jobid: 382
+    wildcards: sample=zika, seg=6024-6525
+
+[Thu Mar  4 15:24:26 2021]
+Finished job 431.
+171 of 216 steps (79%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:26 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/1506-2007_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/1506-2007_dsk.sort
+    jobid: 328
+    wildcards: sample=zika, seg=1506-2007
+
+[Thu Mar  4 15:24:26 2021]
+Finished job 324.
+172 of 216 steps (80%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:26 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/6275-6776_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/6275-6776_dsk.table
+    jobid: 367
+    wildcards: sample=zika, seg=6275-6776
+
+[Thu Mar  4 15:24:26 2021]
+Finished job 372.
+173 of 216 steps (80%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:26 2021]
+Finished job 416.
+174 of 216 steps (81%) done
+[Thu Mar  4 15:24:26 2021]
+Finished job 377.
+175 of 216 steps (81%) done
+
+[Thu Mar  4 15:24:26 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/5522-6023_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/5522-6023_dsk.tsv
+    jobid: 435
+    wildcards: sample=zika, seg=5522-6023
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:26 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/2510-3011_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/2510-3011_dsk.table
+    jobid: 398
+    wildcards: sample=zika, seg=2510-3011
+
+[Thu Mar  4 15:24:26 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/9538-10039_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/9538-10039_dsk.tsv
+    jobid: 430
+    wildcards: sample=zika, seg=9538-10039
+
+Select jobs to execute...
+[Thu Mar  4 15:24:26 2021]
+Finished job 419.
+176 of 216 steps (81%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:26 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/8785-9286_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/8785-9286_dsk.tsv
+    jobid: 403
+    wildcards: sample=zika, seg=8785-9286
+
+[Thu Mar  4 15:24:26 2021]
+Finished job 326.
+177 of 216 steps (82%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:27 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/5020-5521_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/5020-5521_dsk.table
+    jobid: 369
+    wildcards: sample=zika, seg=5020-5521
+
+[Thu Mar  4 15:24:27 2021]
+Finished job 390.
+178 of 216 steps (82%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:27 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/9036-9537_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/9036-9537_dsk.tsv
+    jobid: 433
+    wildcards: sample=zika, seg=9036-9537
+
+[Thu Mar  4 15:24:27 2021]
+Finished job 341.
+179 of 216 steps (83%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:27 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/10040-10541_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/10040-10541_dsk.table
+    jobid: 384
+    wildcards: sample=zika, seg=10040-10541
+
+[Thu Mar  4 15:24:27 2021]
+Finished job 382.
+180 of 216 steps (83%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:27 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/1255-1756_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/1255-1756_dsk.table
+    jobid: 375
+    wildcards: sample=zika, seg=1255-1756
+
+[Thu Mar  4 15:24:27 2021]
+Finished job 328.
+181 of 216 steps (84%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:28 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/4518-5019_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/4518-5019_dsk.tsv
+    jobid: 407
+    wildcards: sample=zika, seg=4518-5019
+
+[Thu Mar  4 15:24:28 2021]
+Finished job 367.
+182 of 216 steps (84%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:28 2021]
+Finished job 429.
+183 of 216 steps (85%) done
+
+[Thu Mar  4 15:24:28 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/1506-2007_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/1506-2007_dsk.table
+    jobid: 371
+    wildcards: sample=zika, seg=1506-2007
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:28 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/9789-10290_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/9789-10290_dsk.tsv
+    jobid: 420
+    wildcards: sample=zika, seg=9789-10290
+
+[Thu Mar  4 15:24:28 2021]
+Finished job 398.
+184 of 216 steps (85%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:28 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/6275-6776_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/6275-6776_dsk.tsv
+    jobid: 410
+    wildcards: sample=zika, seg=6275-6776
+
+[Thu Mar  4 15:24:28 2021]
+Finished job 369.
+185 of 216 steps (86%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:28 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/5020-5521_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/5020-5521_dsk.tsv
+    jobid: 412
+    wildcards: sample=zika, seg=5020-5521
+
+[Thu Mar  4 15:24:28 2021]
+Finished job 435.
+186 of 216 steps (86%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:28 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/6024-6525_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/6024-6525_dsk.tsv
+    jobid: 425
+    wildcards: sample=zika, seg=6024-6525
+
+[Thu Mar  4 15:24:28 2021]
+Finished job 430.
+187 of 216 steps (87%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:29 2021]
+Finished job 384.
+188 of 216 steps (87%) done
+
+[Thu Mar  4 15:24:29 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/3514-4015_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/3514-4015_dsk.tsv
+    jobid: 432
+    wildcards: sample=zika, seg=3514-4015
+
+Select jobs to execute...
+[Thu Mar  4 15:24:29 2021]
+Finished job 403.
+189 of 216 steps (88%) done
+[Thu Mar  4 15:24:29 2021]
+Finished job 268.
+190 of 216 steps (88%) done
+
+[Thu Mar  4 15:24:29 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/10040-10541_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/10040-10541_dsk.tsv
+    jobid: 427
+    wildcards: sample=zika, seg=10040-10541
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:29 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/7279-7780_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/7279-7780_dsk.sort
+    jobid: 327
+    wildcards: sample=zika, seg=7279-7780
+
+[Thu Mar  4 15:24:29 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/7781-8282_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/7781-8282_dsk.tsv
+    jobid: 445
+    wildcards: sample=zika, seg=7781-8282
+
+Select jobs to execute...
+[Thu Mar  4 15:24:29 2021]
+Finished job 375.
+191 of 216 steps (88%) done
+[Thu Mar  4 15:24:29 2021]
+Finished job 371.
+192 of 216 steps (89%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:29 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/10291-10792_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/10291-10792_dsk.sort
+    jobid: 342
+    wildcards: sample=zika, seg=10291-10792
+
+[Thu Mar  4 15:24:29 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/2259-2760_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/2259-2760_dsk.tsv
+    jobid: 415
+    wildcards: sample=zika, seg=2259-2760
+
+Select jobs to execute...
+[Thu Mar  4 15:24:30 2021]
+Finished job 433.
+193 of 216 steps (89%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:30 2021]
+rule dskReverseOutput:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/6777-7278.h5
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/6777-7278_dsk.txt
+    jobid: 311
+    wildcards: sample=zika, seg=6777-7278
+
+[Thu Mar  4 15:24:30 2021]
+Finished job 311.
+194 of 216 steps (90%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:30 2021]
+rule dskReverseOutputSort:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/6777-7278_dsk.txt
+    output: /home/meijun/Documents/data/kmerCounting/zika/reverse/6777-7278_dsk.sort
+    jobid: 354
+    wildcards: sample=zika, seg=6777-7278
+
+[Thu Mar  4 15:24:30 2021]
+Finished job 420.
+195 of 216 steps (90%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:30 2021]
+Finished job 407.
+196 of 216 steps (91%) done
+
+[Thu Mar  4 15:24:30 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/1506-2007_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/1506-2007_dsk.tsv
+    jobid: 414
+    wildcards: sample=zika, seg=1506-2007
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:30 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/1255-1756_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/1255-1756_dsk.tsv
+    jobid: 418
+    wildcards: sample=zika, seg=1255-1756
+
+[Thu Mar  4 15:24:30 2021]
+Finished job 327.
+197 of 216 steps (91%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:30 2021]
+Finished job 410.
+198 of 216 steps (92%) done
+
+[Thu Mar  4 15:24:30 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/2510-3011_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/2510-3011_dsk.tsv
+    jobid: 441
+    wildcards: sample=zika, seg=2510-3011
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:30 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/7279-7780_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/7279-7780_dsk.table
+    jobid: 370
+    wildcards: sample=zika, seg=7279-7780
+
+[Thu Mar  4 15:24:31 2021]
+Finished job 342.
+199 of 216 steps (92%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:31 2021]
+Finished job 412.
+200 of 216 steps (93%) done
+[Thu Mar  4 15:24:31 2021]
+Finished job 425.
+201 of 216 steps (93%) done
+
+[Thu Mar  4 15:24:31 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/10291-10792_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/10291-10792_dsk.table
+    jobid: 385
+    wildcards: sample=zika, seg=10291-10792
+
+[Thu Mar  4 15:24:31 2021]
+Finished job 427.
+202 of 216 steps (94%) done
+[Thu Mar  4 15:24:31 2021]
+Finished job 432.
+203 of 216 steps (94%) done
+[Thu Mar  4 15:24:31 2021]
+Finished job 445.
+204 of 216 steps (94%) done
+[Thu Mar  4 15:24:31 2021]
+Finished job 354.
+205 of 216 steps (95%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:31 2021]
+Finished job 415.
+206 of 216 steps (95%) done
+
+[Thu Mar  4 15:24:31 2021]
+rule dskTm_reverse_calculate:
+    input: /home/meijun/Documents/data/kmerCounting/zika/reverse/6777-7278_dsk.sort
+    output: /home/meijun/Documents/data/filtering/zika/reverse/6777-7278_dsk.table
+    jobid: 397
+    wildcards: sample=zika, seg=6777-7278
+
+[Thu Mar  4 15:24:32 2021]
+Finished job 441.
+207 of 216 steps (96%) done
+[Thu Mar  4 15:24:32 2021]
+Finished job 385.
+208 of 216 steps (96%) done
+[Thu Mar  4 15:24:32 2021]
+Finished job 418.
+209 of 216 steps (97%) done
+[Thu Mar  4 15:24:32 2021]
+Finished job 414.
+210 of 216 steps (97%) done
+[Thu Mar  4 15:24:32 2021]
+Finished job 370.
+211 of 216 steps (98%) done
+Select jobs to execute...
+[Thu Mar  4 15:24:32 2021]
+Finished job 397.
+212 of 216 steps (98%) done
+
+[Thu Mar  4 15:24:32 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/10291-10792_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/10291-10792_dsk.tsv
+    jobid: 428
+    wildcards: sample=zika, seg=10291-10792
+
+[Thu Mar  4 15:24:32 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/7279-7780_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/7279-7780_dsk.tsv
+    jobid: 413
+    wildcards: sample=zika, seg=7279-7780
+
+Select jobs to execute...
+
+[Thu Mar  4 15:24:32 2021]
+rule filterOut_reverse_dskTm:
+    input: /home/meijun/Documents/data/filtering/zika/reverse/6777-7278_dsk.table
+    output: /home/meijun/Documents/data/filtering/zika/reverse/6777-7278_dsk.tsv
+    jobid: 440
+    wildcards: sample=zika, seg=6777-7278
+
+[Thu Mar  4 15:24:34 2021]
+Finished job 428.
+213 of 216 steps (99%) done
+[Thu Mar  4 15:24:34 2021]
+Finished job 413.
+214 of 216 steps (99%) done
+[Thu Mar  4 15:24:34 2021]
+Finished job 440.
+215 of 216 steps (100%) done
+Select jobs to execute...
+
+[Thu Mar  4 15:24:34 2021]
+localrule all:
+    input: /home/meijun/Documents/data/duplicate_removed/zika.uniq.fasta, /home/meijun/Documents/data/msa/zika.msa.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/8785-9286.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/6526-7027.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/8283-8784.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/753-1254.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/4518-5019.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/5773-6274.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/9287-9788.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/6275-6776.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/7530-8031.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/5020-5521.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/7279-7780.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/1506-2007.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/2259-2760.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/3012-3513.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/10542-10780.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/1255-1756.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/2008-2509.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/9789-10290.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/4769-5270.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/1757-2258.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/1004-1505.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/4267-4768.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/6024-6525.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/3765-4266.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/10040-10541.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/10291-10792.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/2761-3262.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/9538-10039.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/5271-5772.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/3514-4015.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/9036-9537.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/502-1003.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/5522-6023.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/3263-3764.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/8032-8533.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/251-752.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/7028-7529.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/6777-7278.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/2510-3011.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/4016-4517.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/8534-9035.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/0-501.fasta, /home/meijun/Documents/data/splitFiles/zika/forward/7781-8282.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/8785-9286.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/6526-7027.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/8283-8784.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/753-1254.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/4518-5019.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/5773-6274.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/9287-9788.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/6275-6776.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/7530-8031.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/5020-5521.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/7279-7780.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/1506-2007.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/2259-2760.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/3012-3513.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/10542-10780.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/1255-1756.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/2008-2509.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/9789-10290.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/4769-5270.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/1757-2258.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/1004-1505.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/4267-4768.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/6024-6525.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/3765-4266.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/10040-10541.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/10291-10792.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/2761-3262.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/9538-10039.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/5271-5772.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/3514-4015.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/9036-9537.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/502-1003.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/5522-6023.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/3263-3764.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/8032-8533.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/251-752.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/7028-7529.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/6777-7278.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/2510-3011.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/4016-4517.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/8534-9035.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/0-501.fasta, /home/meijun/Documents/data/splitFiles/zika/reverse/7781-8282.fasta, /home/meijun/Documents/data/kmerCounting/zika/forward/8785-9286.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/6526-7027.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/8283-8784.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/753-1254.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/4518-5019.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/5773-6274.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/9287-9788.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/6275-6776.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/7530-8031.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/5020-5521.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/7279-7780.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/1506-2007.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/2259-2760.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/3012-3513.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/10542-10780.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/1255-1756.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/2008-2509.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/9789-10290.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/4769-5270.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/1757-2258.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/1004-1505.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/4267-4768.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/6024-6525.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/3765-4266.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/10040-10541.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/10291-10792.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/2761-3262.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/9538-10039.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/5271-5772.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/3514-4015.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/9036-9537.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/502-1003.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/5522-6023.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/3263-3764.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/8032-8533.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/251-752.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/7028-7529.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/6777-7278.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/2510-3011.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/4016-4517.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/8534-9035.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/0-501.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/7781-8282.h5, /home/meijun/Documents/data/kmerCounting/zika/forward/8785-9286_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/6526-7027_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/8283-8784_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/753-1254_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/4518-5019_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/5773-6274_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/9287-9788_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/6275-6776_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/7530-8031_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/5020-5521_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/7279-7780_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/1506-2007_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/2259-2760_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/3012-3513_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/10542-10780_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/1255-1756_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/2008-2509_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/9789-10290_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/4769-5270_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/1757-2258_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/1004-1505_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/4267-4768_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/6024-6525_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/3765-4266_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/10040-10541_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/10291-10792_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/2761-3262_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/9538-10039_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/5271-5772_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/3514-4015_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/9036-9537_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/502-1003_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/5522-6023_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/3263-3764_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/8032-8533_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/251-752_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/7028-7529_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/6777-7278_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/2510-3011_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/4016-4517_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/8534-9035_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/0-501_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/7781-8282_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/forward/8785-9286_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/6526-7027_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/8283-8784_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/753-1254_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/4518-5019_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/5773-6274_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/9287-9788_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/6275-6776_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/7530-8031_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/5020-5521_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/7279-7780_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/1506-2007_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/2259-2760_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/3012-3513_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/10542-10780_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/1255-1756_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/2008-2509_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/9789-10290_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/4769-5270_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/1757-2258_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/1004-1505_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/4267-4768_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/6024-6525_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/3765-4266_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/10040-10541_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/10291-10792_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/2761-3262_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/9538-10039_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/5271-5772_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/3514-4015_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/9036-9537_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/502-1003_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/5522-6023_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/3263-3764_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/8032-8533_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/251-752_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/7028-7529_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/6777-7278_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/2510-3011_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/4016-4517_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/8534-9035_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/0-501_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/forward/7781-8282_dsk.sort, /home/meijun/Documents/data/filtering/zika/forward/8785-9286_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/6526-7027_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/8283-8784_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/753-1254_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/4518-5019_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/5773-6274_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/9287-9788_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/6275-6776_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/7530-8031_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/5020-5521_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/7279-7780_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/1506-2007_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/2259-2760_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/3012-3513_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/10542-10780_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/1255-1756_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/2008-2509_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/9789-10290_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/4769-5270_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/1757-2258_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/1004-1505_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/4267-4768_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/6024-6525_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/3765-4266_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/10040-10541_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/10291-10792_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/2761-3262_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/9538-10039_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/5271-5772_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/3514-4015_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/9036-9537_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/502-1003_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/5522-6023_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/3263-3764_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/8032-8533_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/251-752_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/7028-7529_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/6777-7278_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/2510-3011_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/4016-4517_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/8534-9035_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/0-501_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/7781-8282_dsk.table, /home/meijun/Documents/data/filtering/zika/forward/8785-9286_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/6526-7027_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/8283-8784_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/753-1254_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/4518-5019_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/5773-6274_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/9287-9788_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/6275-6776_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/7530-8031_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/5020-5521_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/7279-7780_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/1506-2007_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/2259-2760_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/3012-3513_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/10542-10780_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/1255-1756_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/2008-2509_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/9789-10290_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/4769-5270_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/1757-2258_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/1004-1505_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/4267-4768_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/6024-6525_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/3765-4266_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/10040-10541_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/10291-10792_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/2761-3262_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/9538-10039_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/5271-5772_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/3514-4015_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/9036-9537_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/502-1003_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/5522-6023_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/3263-3764_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/8032-8533_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/251-752_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/7028-7529_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/6777-7278_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/2510-3011_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/4016-4517_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/8534-9035_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/0-501_dsk.tsv, /home/meijun/Documents/data/filtering/zika/forward/7781-8282_dsk.tsv, /home/meijun/Documents/data/kmerCounting/zika/reverse/8785-9286.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/6526-7027.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/8283-8784.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/753-1254.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/4518-5019.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/5773-6274.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/9287-9788.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/6275-6776.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/7530-8031.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/5020-5521.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/7279-7780.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/1506-2007.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/2259-2760.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/3012-3513.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/10542-10780.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/1255-1756.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/2008-2509.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/9789-10290.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/4769-5270.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/1757-2258.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/1004-1505.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/4267-4768.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/6024-6525.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/3765-4266.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/10040-10541.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/10291-10792.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/2761-3262.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/9538-10039.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/5271-5772.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/3514-4015.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/9036-9537.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/502-1003.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/5522-6023.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/3263-3764.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/8032-8533.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/251-752.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/7028-7529.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/6777-7278.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/2510-3011.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/4016-4517.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/8534-9035.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/0-501.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/7781-8282.h5, /home/meijun/Documents/data/kmerCounting/zika/reverse/8785-9286_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/6526-7027_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/8283-8784_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/753-1254_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/4518-5019_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/5773-6274_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/9287-9788_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/6275-6776_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/7530-8031_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/5020-5521_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/7279-7780_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/1506-2007_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/2259-2760_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/3012-3513_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/10542-10780_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/1255-1756_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/2008-2509_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/9789-10290_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/4769-5270_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/1757-2258_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/1004-1505_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/4267-4768_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/6024-6525_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/3765-4266_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/10040-10541_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/10291-10792_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/2761-3262_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/9538-10039_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/5271-5772_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/3514-4015_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/9036-9537_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/502-1003_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/5522-6023_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/3263-3764_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/8032-8533_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/251-752_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/7028-7529_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/6777-7278_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/2510-3011_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/4016-4517_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/8534-9035_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/0-501_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/7781-8282_dsk.txt, /home/meijun/Documents/data/kmerCounting/zika/reverse/8785-9286_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/6526-7027_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/8283-8784_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/753-1254_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/4518-5019_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/5773-6274_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/9287-9788_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/6275-6776_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/7530-8031_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/5020-5521_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/7279-7780_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/1506-2007_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/2259-2760_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/3012-3513_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/10542-10780_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/1255-1756_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/2008-2509_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/9789-10290_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/4769-5270_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/1757-2258_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/1004-1505_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/4267-4768_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/6024-6525_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/3765-4266_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/10040-10541_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/10291-10792_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/2761-3262_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/9538-10039_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/5271-5772_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/3514-4015_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/9036-9537_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/502-1003_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/5522-6023_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/3263-3764_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/8032-8533_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/251-752_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/7028-7529_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/6777-7278_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/2510-3011_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/4016-4517_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/8534-9035_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/0-501_dsk.sort, /home/meijun/Documents/data/kmerCounting/zika/reverse/7781-8282_dsk.sort, /home/meijun/Documents/data/filtering/zika/reverse/8785-9286_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/6526-7027_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/8283-8784_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/753-1254_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/4518-5019_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/5773-6274_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/9287-9788_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/6275-6776_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/7530-8031_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/5020-5521_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/7279-7780_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/1506-2007_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/2259-2760_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/3012-3513_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/10542-10780_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/1255-1756_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/2008-2509_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/9789-10290_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/4769-5270_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/1757-2258_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/1004-1505_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/4267-4768_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/6024-6525_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/3765-4266_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/10040-10541_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/10291-10792_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/2761-3262_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/9538-10039_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/5271-5772_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/3514-4015_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/9036-9537_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/502-1003_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/5522-6023_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/3263-3764_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/8032-8533_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/251-752_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/7028-7529_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/6777-7278_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/2510-3011_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/4016-4517_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/8534-9035_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/0-501_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/7781-8282_dsk.table, /home/meijun/Documents/data/filtering/zika/reverse/8785-9286_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/6526-7027_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/8283-8784_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/753-1254_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/4518-5019_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/5773-6274_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/9287-9788_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/6275-6776_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/7530-8031_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/5020-5521_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/7279-7780_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/1506-2007_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/2259-2760_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/3012-3513_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/10542-10780_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/1255-1756_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/2008-2509_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/9789-10290_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/4769-5270_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/1757-2258_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/1004-1505_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/4267-4768_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/6024-6525_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/3765-4266_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/10040-10541_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/10291-10792_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/2761-3262_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/9538-10039_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/5271-5772_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/3514-4015_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/9036-9537_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/502-1003_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/5522-6023_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/3263-3764_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/8032-8533_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/251-752_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/7028-7529_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/6777-7278_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/2510-3011_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/4016-4517_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/8534-9035_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/0-501_dsk.tsv, /home/meijun/Documents/data/filtering/zika/reverse/7781-8282_dsk.tsv
+    jobid: 0
+
+[Thu Mar  4 15:24:34 2021]
+Finished job 0.
+216 of 216 steps (100%) done
+Complete log: /home/meijun/Documents/stage_m2/.snakemake/log/2021-03-04T152351.190232.snakemake.log

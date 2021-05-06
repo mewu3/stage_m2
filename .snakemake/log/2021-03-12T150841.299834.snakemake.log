@@ -1,0 +1,1339 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	37	dskForward
+	37	dskForwardOutput
+	37	dskForwardOutputSort
+	112
+Select jobs to execute...
+
+[Fri Mar 12 15:08:41 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse2032-2536.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse2032-2536.h5
+    jobid: 16
+    wildcards: sample=enterovirus, seg=2032-2536
+
+
+[Fri Mar 12 15:08:41 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse4572-5076.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse4572-5076.h5
+    jobid: 37
+    wildcards: sample=enterovirus, seg=4572-5076
+
+
+[Fri Mar 12 15:08:41 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse2540-3044.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse2540-3044.h5
+    jobid: 15
+    wildcards: sample=enterovirus, seg=2540-3044
+
+
+[Fri Mar 12 15:08:41 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse6350-6854.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse6350-6854.h5
+    jobid: 45
+    wildcards: sample=enterovirus, seg=6350-6854
+
+
+[Fri Mar 12 15:08:41 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse4318-4822.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse4318-4822.h5
+    jobid: 22
+    wildcards: sample=enterovirus, seg=4318-4822
+
+
+[Fri Mar 12 15:08:41 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse6096-6600.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse6096-6600.h5
+    jobid: 30
+    wildcards: sample=enterovirus, seg=6096-6600
+
+
+[Fri Mar 12 15:08:41 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse762-1266.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse762-1266.h5
+    jobid: 21
+    wildcards: sample=enterovirus, seg=762-1266
+
+
+[Fri Mar 12 15:08:41 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse508-1012.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse508-1012.h5
+    jobid: 14
+    wildcards: sample=enterovirus, seg=508-1012
+
+
+[Fri Mar 12 15:08:41 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse8128-8632.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse8128-8632.h5
+    jobid: 44
+    wildcards: sample=enterovirus, seg=8128-8632
+
+
+[Fri Mar 12 15:08:41 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse9144-9382.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse9144-9382.h5
+    jobid: 36
+    wildcards: sample=enterovirus, seg=9144-9382
+
+
+[Fri Mar 12 15:08:41 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse5334-5838.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse5334-5838.h5
+    jobid: 29
+    wildcards: sample=enterovirus, seg=5334-5838
+
+
+[Fri Mar 12 15:08:41 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse8636-9140.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse8636-9140.h5
+    jobid: 38
+    wildcards: sample=enterovirus, seg=8636-9140
+
+[Fri Mar 12 15:08:44 2021]
+Finished job 15.
+1 of 112 steps (0.89%) done
+Select jobs to execute...
+
+[Fri Mar 12 15:08:44 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse4064-4568.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse4064-4568.h5
+    jobid: 39
+    wildcards: sample=enterovirus, seg=4064-4568
+
+[Fri Mar 12 15:08:44 2021]
+Finished job 36.
+2 of 112 steps (2%) done
+Select jobs to execute...
+[Fri Mar 12 15:08:44 2021]
+Finished job 16.
+3 of 112 steps (3%) done
+[Fri Mar 12 15:08:44 2021]
+Finished job 29.
+4 of 112 steps (4%) done
+
+[Fri Mar 12 15:08:44 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse2794-3298.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse2794-3298.h5
+    jobid: 24
+    wildcards: sample=enterovirus, seg=2794-3298
+
+Select jobs to execute...
+
+[Fri Mar 12 15:08:44 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse2286-2790.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse2286-2790.h5
+    jobid: 41
+    wildcards: sample=enterovirus, seg=2286-2790
+
+
+[Fri Mar 12 15:08:44 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse8382-8886.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse8382-8886.h5
+    jobid: 20
+    wildcards: sample=enterovirus, seg=8382-8886
+
+Select jobs to execute...
+[Fri Mar 12 15:08:44 2021]
+Finished job 38.
+5 of 112 steps (4%) done
+Select jobs to execute...
+
+[Fri Mar 12 15:08:44 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse254-758.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse254-758.h5
+    jobid: 31
+    wildcards: sample=enterovirus, seg=254-758
+
+[Fri Mar 12 15:08:44 2021]
+Finished job 37.
+6 of 112 steps (5%) done
+Select jobs to execute...
+
+[Fri Mar 12 15:08:44 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse1778-2282.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse1778-2282.h5
+    jobid: 10
+    wildcards: sample=enterovirus, seg=1778-2282
+
+[Fri Mar 12 15:08:44 2021]
+Finished job 45.
+7 of 112 steps (6%) done
+Select jobs to execute...
+[Fri Mar 12 15:08:44 2021]
+Finished job 14.
+8 of 112 steps (7%) done
+
+[Fri Mar 12 15:08:44 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse5588-6092.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse5588-6092.h5
+    jobid: 40
+    wildcards: sample=enterovirus, seg=5588-6092
+
+Select jobs to execute...
+[Fri Mar 12 15:08:44 2021]
+Finished job 44.
+9 of 112 steps (8%) done
+[Fri Mar 12 15:08:44 2021]
+Finished job 21.
+10 of 112 steps (9%) done
+
+[Fri Mar 12 15:08:44 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse3048-3552.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse3048-3552.h5
+    jobid: 25
+    wildcards: sample=enterovirus, seg=3048-3552
+
+Select jobs to execute...
+[Fri Mar 12 15:08:44 2021]
+Finished job 22.
+11 of 112 steps (10%) done
+
+[Fri Mar 12 15:08:44 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse6604-7108.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse6604-7108.h5
+    jobid: 42
+    wildcards: sample=enterovirus, seg=6604-7108
+
+
+[Fri Mar 12 15:08:44 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse508-1012.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse508-1012.kCount
+    jobid: 51
+    wildcards: sample=enterovirus, seg=508-1012
+
+Select jobs to execute...
+[Fri Mar 12 15:08:44 2021]
+Finished job 30.
+12 of 112 steps (11%) done
+[Fri Mar 12 15:08:44 2021]
+Finished job 51.
+13 of 112 steps (12%) done
+
+[Fri Mar 12 15:08:44 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse1270-1774.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse1270-1774.h5
+    jobid: 32
+    wildcards: sample=enterovirus, seg=1270-1774
+
+Select jobs to execute...
+
+[Fri Mar 12 15:08:44 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse4318-4822.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse4318-4822.kCount
+    jobid: 59
+    wildcards: sample=enterovirus, seg=4318-4822
+
+
+[Fri Mar 12 15:08:44 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse7366-7870.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse7366-7870.h5
+    jobid: 27
+    wildcards: sample=enterovirus, seg=7366-7870
+
+Select jobs to execute...
+Select jobs to execute...
+[Fri Mar 12 15:08:44 2021]
+Finished job 59.
+14 of 112 steps (12%) done
+Select jobs to execute...
+
+[Fri Mar 12 15:08:44 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse8890-9394.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse8890-9394.h5
+    jobid: 17
+    wildcards: sample=enterovirus, seg=8890-9394
+
+[Fri Mar 12 15:08:46 2021]
+Finished job 20.
+15 of 112 steps (13%) done
+Select jobs to execute...
+[Fri Mar 12 15:08:46 2021]
+Finished job 39.
+16 of 112 steps (14%) done
+
+[Fri Mar 12 15:08:46 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse7620-8124.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse7620-8124.h5
+    jobid: 26
+    wildcards: sample=enterovirus, seg=7620-8124
+
+Select jobs to execute...
+
+[Fri Mar 12 15:08:46 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse4064-4568.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse4064-4568.kCount
+    jobid: 76
+    wildcards: sample=enterovirus, seg=4064-4568
+
+[Fri Mar 12 15:08:46 2021]
+Finished job 41.
+17 of 112 steps (15%) done
+Select jobs to execute...
+[Fri Mar 12 15:08:46 2021]
+Finished job 76.
+18 of 112 steps (16%) done
+
+[Fri Mar 12 15:08:46 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse2286-2790.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse2286-2790.kCount
+    jobid: 78
+    wildcards: sample=enterovirus, seg=2286-2790
+
+Select jobs to execute...
+[Fri Mar 12 15:08:46 2021]
+Finished job 24.
+19 of 112 steps (17%) done
+[Fri Mar 12 15:08:46 2021]
+Finished job 78.
+20 of 112 steps (18%) done
+
+[Fri Mar 12 15:08:46 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse5080-5584.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse5080-5584.h5
+    jobid: 9
+    wildcards: sample=enterovirus, seg=5080-5584
+
+Select jobs to execute...
+
+[Fri Mar 12 15:08:46 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse2540-3044.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse2540-3044.kCount
+    jobid: 52
+    wildcards: sample=enterovirus, seg=2540-3044
+
+
+[Fri Mar 12 15:08:46 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse8382-8886.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse8382-8886.kCount
+    jobid: 57
+    wildcards: sample=enterovirus, seg=8382-8886
+
+Select jobs to execute...
+[Fri Mar 12 15:08:46 2021]
+Finished job 52.
+21 of 112 steps (19%) done
+Select jobs to execute...
+[Fri Mar 12 15:08:46 2021]
+Finished job 57.
+22 of 112 steps (20%) done
+
+[Fri Mar 12 15:08:46 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse2794-3298.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse2794-3298.kCount
+    jobid: 61
+    wildcards: sample=enterovirus, seg=2794-3298
+
+Select jobs to execute...
+[Fri Mar 12 15:08:46 2021]
+Finished job 31.
+23 of 112 steps (21%) done
+[Fri Mar 12 15:08:46 2021]
+Finished job 25.
+24 of 112 steps (21%) done
+[Fri Mar 12 15:08:46 2021]
+Finished job 61.
+25 of 112 steps (22%) done
+
+[Fri Mar 12 15:08:46 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse7112-7616.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse7112-7616.h5
+    jobid: 11
+    wildcards: sample=enterovirus, seg=7112-7616
+
+Select jobs to execute...
+[Fri Mar 12 15:08:46 2021]
+Finished job 10.
+26 of 112 steps (23%) done
+
+[Fri Mar 12 15:08:46 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse8636-9140.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse8636-9140.kCount
+    jobid: 75
+    wildcards: sample=enterovirus, seg=8636-9140
+
+
+[Fri Mar 12 15:08:46 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse0-504.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse0-504.h5
+    jobid: 19
+    wildcards: sample=enterovirus, seg=0-504
+
+
+[Fri Mar 12 15:08:46 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse8382-8886.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse8382-8886.kCountSorted
+    jobid: 94
+    wildcards: sample=enterovirus, seg=8382-8886
+
+Select jobs to execute...
+[Fri Mar 12 15:08:47 2021]
+Finished job 42.
+27 of 112 steps (24%) done
+[Fri Mar 12 15:08:47 2021]
+Finished job 75.
+28 of 112 steps (25%) done
+[Fri Mar 12 15:08:47 2021]
+Finished job 40.
+29 of 112 steps (26%) done
+
+[Fri Mar 12 15:08:47 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse4064-4568.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse4064-4568.kCountSorted
+    jobid: 113
+    wildcards: sample=enterovirus, seg=4064-4568
+
+Select jobs to execute...
+
+[Fri Mar 12 15:08:47 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse6350-6854.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse6350-6854.kCount
+    jobid: 82
+    wildcards: sample=enterovirus, seg=6350-6854
+
+
+[Fri Mar 12 15:08:47 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse6858-7362.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse6858-7362.h5
+    jobid: 12
+    wildcards: sample=enterovirus, seg=6858-7362
+
+
+[Fri Mar 12 15:08:47 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse6604-7108.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse6604-7108.kCount
+    jobid: 79
+    wildcards: sample=enterovirus, seg=6604-7108
+
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+[Fri Mar 12 15:08:47 2021]
+Finished job 82.
+30 of 112 steps (27%) done
+Select jobs to execute...
+[Fri Mar 12 15:08:47 2021]
+Finished job 79.
+31 of 112 steps (28%) done
+[Fri Mar 12 15:08:47 2021]
+Finished job 27.
+32 of 112 steps (29%) done
+
+[Fri Mar 12 15:08:47 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse1778-2282.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse1778-2282.kCount
+    jobid: 47
+    wildcards: sample=enterovirus, seg=1778-2282
+
+Select jobs to execute...
+[Fri Mar 12 15:08:47 2021]
+Finished job 17.
+33 of 112 steps (29%) done
+[Fri Mar 12 15:08:47 2021]
+Finished job 47.
+34 of 112 steps (30%) done
+[Fri Mar 12 15:08:47 2021]
+Finished job 32.
+35 of 112 steps (31%) done
+
+[Fri Mar 12 15:08:47 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse6096-6600.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse6096-6600.kCount
+    jobid: 67
+    wildcards: sample=enterovirus, seg=6096-6600
+
+
+[Fri Mar 12 15:08:47 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse7874-8378.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse7874-8378.h5
+    jobid: 35
+    wildcards: sample=enterovirus, seg=7874-8378
+
+Select jobs to execute...
+[Fri Mar 12 15:08:47 2021]
+Finished job 67.
+36 of 112 steps (32%) done
+
+[Fri Mar 12 15:08:47 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse2540-3044.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse2540-3044.kCountSorted
+    jobid: 89
+    wildcards: sample=enterovirus, seg=2540-3044
+
+[Fri Mar 12 15:08:47 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse2286-2790.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse2286-2790.kCountSorted
+    jobid: 115
+    wildcards: sample=enterovirus, seg=2286-2790
+
+[Fri Mar 12 15:08:47 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse3556-4060.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse3556-4060.h5
+    jobid: 34
+    wildcards: sample=enterovirus, seg=3556-4060
+
+Select jobs to execute...
+
+[Fri Mar 12 15:08:47 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse2794-3298.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse2794-3298.kCountSorted
+    jobid: 98
+    wildcards: sample=enterovirus, seg=2794-3298
+
+Select jobs to execute...
+Select jobs to execute...
+Select jobs to execute...
+[Fri Mar 12 15:08:47 2021]
+Finished job 94.
+37 of 112 steps (33%) done
+Select jobs to execute...
+
+[Fri Mar 12 15:08:47 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse8890-9394.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse8890-9394.kCount
+    jobid: 54
+    wildcards: sample=enterovirus, seg=8890-9394
+
+[Fri Mar 12 15:08:47 2021]
+Finished job 113.
+38 of 112 steps (34%) done
+[Fri Mar 12 15:08:47 2021]
+Finished job 54.
+39 of 112 steps (35%) done
+Select jobs to execute...
+
+[Fri Mar 12 15:08:47 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse4826-5330.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse4826-5330.h5
+    jobid: 13
+    wildcards: sample=enterovirus, seg=4826-5330
+
+
+[Fri Mar 12 15:08:47 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse8890-9394.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse8890-9394.kCountSorted
+    jobid: 91
+    wildcards: sample=enterovirus, seg=8890-9394
+
+Select jobs to execute...
+[Fri Mar 12 15:08:47 2021]
+Finished job 115.
+40 of 112 steps (36%) done
+Select jobs to execute...
+
+[Fri Mar 12 15:08:47 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse1778-2282.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse1778-2282.kCountSorted
+    jobid: 84
+    wildcards: sample=enterovirus, seg=1778-2282
+
+[Fri Mar 12 15:08:47 2021]
+Finished job 89.
+41 of 112 steps (37%) done
+Select jobs to execute...
+
+[Fri Mar 12 15:08:47 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse5588-6092.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse5588-6092.kCount
+    jobid: 77
+    wildcards: sample=enterovirus, seg=5588-6092
+
+[Fri Mar 12 15:08:47 2021]
+Finished job 98.
+42 of 112 steps (38%) done
+Select jobs to execute...
+[Fri Mar 12 15:08:48 2021]
+Finished job 77.
+43 of 112 steps (38%) done
+
+[Fri Mar 12 15:08:48 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse3048-3552.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse3048-3552.kCount
+    jobid: 62
+    wildcards: sample=enterovirus, seg=3048-3552
+
+Select jobs to execute...
+[Fri Mar 12 15:08:48 2021]
+Finished job 62.
+44 of 112 steps (39%) done
+
+[Fri Mar 12 15:08:48 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse5588-6092.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse5588-6092.kCountSorted
+    jobid: 114
+    wildcards: sample=enterovirus, seg=5588-6092
+
+Select jobs to execute...
+
+[Fri Mar 12 15:08:48 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse3048-3552.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse3048-3552.kCountSorted
+    jobid: 99
+    wildcards: sample=enterovirus, seg=3048-3552
+
+[Fri Mar 12 15:08:48 2021]
+Finished job 84.
+45 of 112 steps (40%) done
+Select jobs to execute...
+[Fri Mar 12 15:08:48 2021]
+Finished job 91.
+46 of 112 steps (41%) done
+
+[Fri Mar 12 15:08:48 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse1524-2028.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse1524-2028.h5
+    jobid: 18
+    wildcards: sample=enterovirus, seg=1524-2028
+
+Select jobs to execute...
+
+[Fri Mar 12 15:08:48 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse3302-3806.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse3302-3806.h5
+    jobid: 33
+    wildcards: sample=enterovirus, seg=3302-3806
+
+[Fri Mar 12 15:08:48 2021]
+Finished job 99.
+47 of 112 steps (42%) done
+Select jobs to execute...
+[Fri Mar 12 15:08:48 2021]
+Finished job 114.
+48 of 112 steps (43%) done
+
+[Fri Mar 12 15:08:48 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse1270-1774.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse1270-1774.kCount
+    jobid: 69
+    wildcards: sample=enterovirus, seg=1270-1774
+
+Select jobs to execute...
+[Fri Mar 12 15:08:48 2021]
+Finished job 69.
+49 of 112 steps (44%) done
+
+[Fri Mar 12 15:08:48 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse3810-4314.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse3810-4314.h5
+    jobid: 28
+    wildcards: sample=enterovirus, seg=3810-4314
+
+Select jobs to execute...
+
+[Fri Mar 12 15:08:48 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse9144-9382.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse9144-9382.kCount
+    jobid: 73
+    wildcards: sample=enterovirus, seg=9144-9382
+
+[Fri Mar 12 15:08:48 2021]
+Finished job 73.
+50 of 112 steps (45%) done
+Select jobs to execute...
+
+[Fri Mar 12 15:08:48 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse1016-1520.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse1016-1520.h5
+    jobid: 43
+    wildcards: sample=enterovirus, seg=1016-1520
+
+[Fri Mar 12 15:08:49 2021]
+Finished job 26.
+51 of 112 steps (46%) done
+Select jobs to execute...
+
+[Fri Mar 12 15:08:49 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse762-1266.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse762-1266.kCount
+    jobid: 58
+    wildcards: sample=enterovirus, seg=762-1266
+
+[Fri Mar 12 15:08:49 2021]
+Finished job 58.
+52 of 112 steps (46%) done
+Select jobs to execute...
+
+[Fri Mar 12 15:08:49 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse508-1012.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse508-1012.kCountSorted
+    jobid: 88
+    wildcards: sample=enterovirus, seg=508-1012
+
+[Fri Mar 12 15:08:49 2021]
+Finished job 11.
+53 of 112 steps (47%) done
+Select jobs to execute...
+
+[Fri Mar 12 15:08:49 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse7112-7616.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse7112-7616.kCount
+    jobid: 48
+    wildcards: sample=enterovirus, seg=7112-7616
+
+[Fri Mar 12 15:08:49 2021]
+Finished job 48.
+54 of 112 steps (48%) done
+Select jobs to execute...
+[Fri Mar 12 15:08:49 2021]
+Finished job 19.
+55 of 112 steps (49%) done
+
+[Fri Mar 12 15:08:49 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse8636-9140.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse8636-9140.kCountSorted
+    jobid: 112
+    wildcards: sample=enterovirus, seg=8636-9140
+
+Select jobs to execute...
+
+[Fri Mar 12 15:08:49 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse0-504.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse0-504.kCount
+    jobid: 56
+    wildcards: sample=enterovirus, seg=0-504
+
+[Fri Mar 12 15:08:49 2021]
+Finished job 9.
+56 of 112 steps (50%) done
+Select jobs to execute...
+[Fri Mar 12 15:08:49 2021]
+Finished job 56.
+57 of 112 steps (51%) done
+
+[Fri Mar 12 15:08:49 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse5080-5584.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse5080-5584.kCount
+    jobid: 46
+    wildcards: sample=enterovirus, seg=5080-5584
+
+Select jobs to execute...
+
+[Fri Mar 12 15:08:49 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse0-504.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse0-504.kCountSorted
+    jobid: 93
+    wildcards: sample=enterovirus, seg=0-504
+
+[Fri Mar 12 15:08:49 2021]
+Finished job 46.
+58 of 112 steps (52%) done
+Select jobs to execute...
+
+[Fri Mar 12 15:08:49 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse7620-8124.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse7620-8124.kCount
+    jobid: 63
+    wildcards: sample=enterovirus, seg=7620-8124
+
+[Fri Mar 12 15:08:49 2021]
+Finished job 12.
+59 of 112 steps (53%) done
+Select jobs to execute...
+[Fri Mar 12 15:08:49 2021]
+Finished job 63.
+60 of 112 steps (54%) done
+
+[Fri Mar 12 15:08:49 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse254-758.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse254-758.kCount
+    jobid: 68
+    wildcards: sample=enterovirus, seg=254-758
+
+Select jobs to execute...
+[Fri Mar 12 15:08:49 2021]
+Finished job 68.
+61 of 112 steps (54%) done
+
+[Fri Mar 12 15:08:49 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse7620-8124.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse7620-8124.kCountSorted
+    jobid: 100
+    wildcards: sample=enterovirus, seg=7620-8124
+
+Select jobs to execute...
+
+[Fri Mar 12 15:08:49 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse254-758.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse254-758.kCountSorted
+    jobid: 105
+    wildcards: sample=enterovirus, seg=254-758
+
+[Fri Mar 12 15:08:49 2021]
+Finished job 35.
+62 of 112 steps (55%) done
+Select jobs to execute...
+
+[Fri Mar 12 15:08:49 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse762-1266.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse762-1266.kCountSorted
+    jobid: 95
+    wildcards: sample=enterovirus, seg=762-1266
+
+[Fri Mar 12 15:08:49 2021]
+Finished job 34.
+63 of 112 steps (56%) done
+Select jobs to execute...
+
+[Fri Mar 12 15:08:49 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse3556-4060.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse3556-4060.kCount
+    jobid: 71
+    wildcards: sample=enterovirus, seg=3556-4060
+
+[Fri Mar 12 15:08:49 2021]
+Finished job 71.
+64 of 112 steps (57%) done
+Select jobs to execute...
+
+[Fri Mar 12 15:08:49 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse4318-4822.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse4318-4822.kCountSorted
+    jobid: 96
+    wildcards: sample=enterovirus, seg=4318-4822
+
+[Fri Mar 12 15:08:50 2021]
+Finished job 88.
+65 of 112 steps (58%) done
+Select jobs to execute...
+
+[Fri Mar 12 15:08:50 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse6350-6854.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse6350-6854.kCountSorted
+    jobid: 119
+    wildcards: sample=enterovirus, seg=6350-6854
+
+[Fri Mar 12 15:08:50 2021]
+Finished job 112.
+66 of 112 steps (59%) done
+Select jobs to execute...
+[Fri Mar 12 15:08:50 2021]
+Finished job 93.
+67 of 112 steps (60%) done
+
+[Fri Mar 12 15:08:50 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse7874-8378.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse7874-8378.kCount
+    jobid: 72
+    wildcards: sample=enterovirus, seg=7874-8378
+
+Select jobs to execute...
+[Fri Mar 12 15:08:50 2021]
+Finished job 72.
+68 of 112 steps (61%) done
+
+[Fri Mar 12 15:08:50 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse3556-4060.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse3556-4060.kCountSorted
+    jobid: 108
+    wildcards: sample=enterovirus, seg=3556-4060
+
+Select jobs to execute...
+
+[Fri Mar 12 15:08:50 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse5334-5838.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse5334-5838.kCount
+    jobid: 66
+    wildcards: sample=enterovirus, seg=5334-5838
+
+[Fri Mar 12 15:08:50 2021]
+Finished job 66.
+69 of 112 steps (62%) done
+Select jobs to execute...
+
+[Fri Mar 12 15:08:50 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse4572-5076.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse4572-5076.kCount
+    jobid: 74
+    wildcards: sample=enterovirus, seg=4572-5076
+
+[Fri Mar 12 15:08:50 2021]
+Finished job 74.
+70 of 112 steps (62%) done
+Select jobs to execute...
+
+[Fri Mar 12 15:08:50 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse8128-8632.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse8128-8632.kCount
+    jobid: 81
+    wildcards: sample=enterovirus, seg=8128-8632
+
+[Fri Mar 12 15:08:50 2021]
+Finished job 81.
+71 of 112 steps (63%) done
+Select jobs to execute...
+[Fri Mar 12 15:08:50 2021]
+Finished job 95.
+72 of 112 steps (64%) done
+[Fri Mar 12 15:08:50 2021]
+Finished job 100.
+73 of 112 steps (65%) done
+
+[Fri Mar 12 15:08:50 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse9144-9382.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse9144-9382.kCountSorted
+    jobid: 110
+    wildcards: sample=enterovirus, seg=9144-9382
+
+Select jobs to execute...
+[Fri Mar 12 15:08:50 2021]
+Finished job 105.
+74 of 112 steps (66%) done
+
+[Fri Mar 12 15:08:50 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse7874-8378.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse7874-8378.kCountSorted
+    jobid: 109
+    wildcards: sample=enterovirus, seg=7874-8378
+
+[Fri Mar 12 15:08:50 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse6096-6600.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse6096-6600.kCountSorted
+    jobid: 104
+    wildcards: sample=enterovirus, seg=6096-6600
+
+Select jobs to execute...
+[Fri Mar 12 15:08:50 2021]
+Finished job 13.
+75 of 112 steps (67%) done
+
+[Fri Mar 12 15:08:50 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse2032-2536.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse2032-2536.kCount
+    jobid: 53
+    wildcards: sample=enterovirus, seg=2032-2536
+
+Select jobs to execute...
+[Fri Mar 12 15:08:50 2021]
+Finished job 53.
+76 of 112 steps (68%) done
+
+[Fri Mar 12 15:08:50 2021]
+rule dskForward:
+    input: /datater/wu/data/enterovirus/splitFiles/reverse5842-6346.fasta
+    output: /datater/wu/data/enterovirus/dsk/reverse5842-6346.h5
+    jobid: 23
+    wildcards: sample=enterovirus, seg=5842-6346
+
+Select jobs to execute...
+
+[Fri Mar 12 15:08:50 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse8128-8632.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse8128-8632.kCountSorted
+    jobid: 118
+    wildcards: sample=enterovirus, seg=8128-8632
+
+Select jobs to execute...
+[Fri Mar 12 15:08:50 2021]
+Finished job 96.
+77 of 112 steps (69%) done
+Select jobs to execute...
+
+[Fri Mar 12 15:08:50 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse5080-5584.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse5080-5584.kCountSorted
+    jobid: 83
+    wildcards: sample=enterovirus, seg=5080-5584
+
+[Fri Mar 12 15:08:50 2021]
+Finished job 119.
+78 of 112 steps (70%) done
+Select jobs to execute...
+
+[Fri Mar 12 15:08:50 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse5334-5838.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse5334-5838.kCountSorted
+    jobid: 103
+    wildcards: sample=enterovirus, seg=5334-5838
+
+[Fri Mar 12 15:08:51 2021]
+Finished job 18.
+79 of 112 steps (71%) done
+Select jobs to execute...
+
+[Fri Mar 12 15:08:51 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse6858-7362.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse6858-7362.kCount
+    jobid: 49
+    wildcards: sample=enterovirus, seg=6858-7362
+
+[Fri Mar 12 15:08:51 2021]
+Finished job 108.
+80 of 112 steps (71%) done
+Select jobs to execute...
+[Fri Mar 12 15:08:51 2021]
+Finished job 49.
+81 of 112 steps (72%) done
+
+[Fri Mar 12 15:08:51 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse7366-7870.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse7366-7870.kCount
+    jobid: 64
+    wildcards: sample=enterovirus, seg=7366-7870
+
+Select jobs to execute...
+
+[Fri Mar 12 15:08:51 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse6604-7108.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse6604-7108.kCountSorted
+    jobid: 116
+    wildcards: sample=enterovirus, seg=6604-7108
+
+[Fri Mar 12 15:08:51 2021]
+Finished job 64.
+82 of 112 steps (73%) done
+Select jobs to execute...
+
+[Fri Mar 12 15:08:51 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse7366-7870.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse7366-7870.kCountSorted
+    jobid: 101
+    wildcards: sample=enterovirus, seg=7366-7870
+
+[Fri Mar 12 15:08:51 2021]
+Finished job 33.
+83 of 112 steps (74%) done
+Select jobs to execute...
+
+[Fri Mar 12 15:08:51 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse3302-3806.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse3302-3806.kCount
+    jobid: 70
+    wildcards: sample=enterovirus, seg=3302-3806
+
+[Fri Mar 12 15:08:51 2021]
+Finished job 104.
+84 of 112 steps (75%) done
+Select jobs to execute...
+[Fri Mar 12 15:08:51 2021]
+Finished job 70.
+85 of 112 steps (76%) done
+
+[Fri Mar 12 15:08:51 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse1270-1774.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse1270-1774.kCountSorted
+    jobid: 106
+    wildcards: sample=enterovirus, seg=1270-1774
+
+Select jobs to execute...
+[Fri Mar 12 15:08:51 2021]
+Finished job 110.
+86 of 112 steps (77%) done
+
+[Fri Mar 12 15:08:51 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse1524-2028.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse1524-2028.kCount
+    jobid: 55
+    wildcards: sample=enterovirus, seg=1524-2028
+
+Select jobs to execute...
+
+[Fri Mar 12 15:08:51 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse7112-7616.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse7112-7616.kCountSorted
+    jobid: 85
+    wildcards: sample=enterovirus, seg=7112-7616
+
+[Fri Mar 12 15:08:51 2021]
+Finished job 55.
+87 of 112 steps (78%) done
+Select jobs to execute...
+
+[Fri Mar 12 15:08:51 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse1524-2028.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse1524-2028.kCountSorted
+    jobid: 92
+    wildcards: sample=enterovirus, seg=1524-2028
+
+[Fri Mar 12 15:08:51 2021]
+Finished job 28.
+88 of 112 steps (79%) done
+Select jobs to execute...
+[Fri Mar 12 15:08:51 2021]
+Finished job 109.
+89 of 112 steps (79%) done
+[Fri Mar 12 15:08:51 2021]
+Finished job 118.
+90 of 112 steps (80%) done
+
+[Fri Mar 12 15:08:51 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse3810-4314.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse3810-4314.kCount
+    jobid: 65
+    wildcards: sample=enterovirus, seg=3810-4314
+
+Select jobs to execute...
+[Fri Mar 12 15:08:51 2021]
+Finished job 43.
+91 of 112 steps (81%) done
+[Fri Mar 12 15:08:51 2021]
+Finished job 65.
+92 of 112 steps (82%) done
+
+[Fri Mar 12 15:08:51 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse6858-7362.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse6858-7362.kCountSorted
+    jobid: 86
+    wildcards: sample=enterovirus, seg=6858-7362
+
+[Fri Mar 12 15:08:51 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse4572-5076.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse4572-5076.kCountSorted
+    jobid: 111
+    wildcards: sample=enterovirus, seg=4572-5076
+
+Select jobs to execute...
+
+[Fri Mar 12 15:08:51 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse3810-4314.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse3810-4314.kCountSorted
+    jobid: 102
+    wildcards: sample=enterovirus, seg=3810-4314
+
+[Fri Mar 12 15:08:51 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse3302-3806.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse3302-3806.kCountSorted
+    jobid: 107
+    wildcards: sample=enterovirus, seg=3302-3806
+
+Select jobs to execute...
+Select jobs to execute...
+[Fri Mar 12 15:08:51 2021]
+Finished job 103.
+93 of 112 steps (83%) done
+Select jobs to execute...
+[Fri Mar 12 15:08:51 2021]
+Finished job 83.
+94 of 112 steps (84%) done
+
+[Fri Mar 12 15:08:51 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse1016-1520.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse1016-1520.kCount
+    jobid: 80
+    wildcards: sample=enterovirus, seg=1016-1520
+
+Select jobs to execute...
+[Fri Mar 12 15:08:51 2021]
+Finished job 80.
+95 of 112 steps (85%) done
+
+[Fri Mar 12 15:08:51 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse4826-5330.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse4826-5330.kCount
+    jobid: 50
+    wildcards: sample=enterovirus, seg=4826-5330
+
+Select jobs to execute...
+[Fri Mar 12 15:08:51 2021]
+Finished job 50.
+96 of 112 steps (86%) done
+
+[Fri Mar 12 15:08:51 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse1016-1520.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse1016-1520.kCountSorted
+    jobid: 117
+    wildcards: sample=enterovirus, seg=1016-1520
+
+Select jobs to execute...
+
+[Fri Mar 12 15:08:51 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse4826-5330.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse4826-5330.kCountSorted
+    jobid: 87
+    wildcards: sample=enterovirus, seg=4826-5330
+
+[Fri Mar 12 15:08:52 2021]
+Finished job 116.
+97 of 112 steps (87%) done
+Select jobs to execute...
+
+[Fri Mar 12 15:08:52 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse2032-2536.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse2032-2536.kCountSorted
+    jobid: 90
+    wildcards: sample=enterovirus, seg=2032-2536
+
+[Fri Mar 12 15:08:52 2021]
+Finished job 101.
+98 of 112 steps (88%) done
+[Fri Mar 12 15:08:52 2021]
+Finished job 106.
+99 of 112 steps (88%) done
+[Fri Mar 12 15:08:52 2021]
+Finished job 85.
+100 of 112 steps (89%) done
+[Fri Mar 12 15:08:52 2021]
+Finished job 92.
+101 of 112 steps (90%) done
+[Fri Mar 12 15:08:52 2021]
+Finished job 86.
+102 of 112 steps (91%) done
+[Fri Mar 12 15:08:52 2021]
+Finished job 111.
+103 of 112 steps (92%) done
+[Fri Mar 12 15:08:52 2021]
+Finished job 107.
+104 of 112 steps (93%) done
+[Fri Mar 12 15:08:52 2021]
+Finished job 102.
+105 of 112 steps (94%) done
+[Fri Mar 12 15:08:52 2021]
+Finished job 87.
+106 of 112 steps (95%) done
+[Fri Mar 12 15:08:52 2021]
+Finished job 117.
+107 of 112 steps (96%) done
+[Fri Mar 12 15:08:52 2021]
+Finished job 90.
+108 of 112 steps (96%) done
+[Fri Mar 12 15:08:53 2021]
+Finished job 23.
+109 of 112 steps (97%) done
+Select jobs to execute...
+
+[Fri Mar 12 15:08:53 2021]
+rule dskForwardOutput:
+    input: /datater/wu/data/enterovirus/dsk/reverse5842-6346.h5
+    output: /datater/wu/data/enterovirus/dsk/reverse5842-6346.kCount
+    jobid: 60
+    wildcards: sample=enterovirus, seg=5842-6346
+
+[Fri Mar 12 15:08:53 2021]
+Finished job 60.
+110 of 112 steps (98%) done
+Select jobs to execute...
+
+[Fri Mar 12 15:08:53 2021]
+rule dskForwardOutputSort:
+    input: /datater/wu/data/enterovirus/dsk/reverse5842-6346.kCount
+    output: /datater/wu/data/enterovirus/dsk/reverse5842-6346.kCountSorted
+    jobid: 97
+    wildcards: sample=enterovirus, seg=5842-6346
+
+[Fri Mar 12 15:08:53 2021]
+Finished job 97.
+111 of 112 steps (99%) done
+Select jobs to execute...
+
+[Fri Mar 12 15:08:53 2021]
+localrule all:
+    input: /datater/wu/data/duplicate_removed/enterovirus.uniq, /datater/wu/data/msa/enterovirus.msa, /datater/wu/data/enterovirus/splitFiles/forward5080-5584.fasta, /datater/wu/data/enterovirus/splitFiles/forward1778-2282.fasta, /datater/wu/data/enterovirus/splitFiles/forward7112-7616.fasta, /datater/wu/data/enterovirus/splitFiles/forward6858-7362.fasta, /datater/wu/data/enterovirus/splitFiles/forward4826-5330.fasta, /datater/wu/data/enterovirus/splitFiles/forward508-1012.fasta, /datater/wu/data/enterovirus/splitFiles/forward2540-3044.fasta, /datater/wu/data/enterovirus/splitFiles/forward2032-2536.fasta, /datater/wu/data/enterovirus/splitFiles/forward8890-9394.fasta, /datater/wu/data/enterovirus/splitFiles/forward1524-2028.fasta, /datater/wu/data/enterovirus/splitFiles/forward0-504.fasta, /datater/wu/data/enterovirus/splitFiles/forward8382-8886.fasta, /datater/wu/data/enterovirus/splitFiles/forward762-1266.fasta, /datater/wu/data/enterovirus/splitFiles/forward4318-4822.fasta, /datater/wu/data/enterovirus/splitFiles/forward5842-6346.fasta, /datater/wu/data/enterovirus/splitFiles/forward2794-3298.fasta, /datater/wu/data/enterovirus/splitFiles/forward3048-3552.fasta, /datater/wu/data/enterovirus/splitFiles/forward7620-8124.fasta, /datater/wu/data/enterovirus/splitFiles/forward7366-7870.fasta, /datater/wu/data/enterovirus/splitFiles/forward3810-4314.fasta, /datater/wu/data/enterovirus/splitFiles/forward5334-5838.fasta, /datater/wu/data/enterovirus/splitFiles/forward6096-6600.fasta, /datater/wu/data/enterovirus/splitFiles/forward254-758.fasta, /datater/wu/data/enterovirus/splitFiles/forward1270-1774.fasta, /datater/wu/data/enterovirus/splitFiles/forward3302-3806.fasta, /datater/wu/data/enterovirus/splitFiles/forward3556-4060.fasta, /datater/wu/data/enterovirus/splitFiles/forward7874-8378.fasta, /datater/wu/data/enterovirus/splitFiles/forward9144-9382.fasta, /datater/wu/data/enterovirus/splitFiles/forward4572-5076.fasta, /datater/wu/data/enterovirus/splitFiles/forward8636-9140.fasta, /datater/wu/data/enterovirus/splitFiles/forward4064-4568.fasta, /datater/wu/data/enterovirus/splitFiles/forward5588-6092.fasta, /datater/wu/data/enterovirus/splitFiles/forward2286-2790.fasta, /datater/wu/data/enterovirus/splitFiles/forward6604-7108.fasta, /datater/wu/data/enterovirus/splitFiles/forward1016-1520.fasta, /datater/wu/data/enterovirus/splitFiles/forward8128-8632.fasta, /datater/wu/data/enterovirus/splitFiles/forward6350-6854.fasta, /datater/wu/data/enterovirus/splitFiles/reverse5080-5584.fasta, /datater/wu/data/enterovirus/splitFiles/reverse1778-2282.fasta, /datater/wu/data/enterovirus/splitFiles/reverse7112-7616.fasta, /datater/wu/data/enterovirus/splitFiles/reverse6858-7362.fasta, /datater/wu/data/enterovirus/splitFiles/reverse4826-5330.fasta, /datater/wu/data/enterovirus/splitFiles/reverse508-1012.fasta, /datater/wu/data/enterovirus/splitFiles/reverse2540-3044.fasta, /datater/wu/data/enterovirus/splitFiles/reverse2032-2536.fasta, /datater/wu/data/enterovirus/splitFiles/reverse8890-9394.fasta, /datater/wu/data/enterovirus/splitFiles/reverse1524-2028.fasta, /datater/wu/data/enterovirus/splitFiles/reverse0-504.fasta, /datater/wu/data/enterovirus/splitFiles/reverse8382-8886.fasta, /datater/wu/data/enterovirus/splitFiles/reverse762-1266.fasta, /datater/wu/data/enterovirus/splitFiles/reverse4318-4822.fasta, /datater/wu/data/enterovirus/splitFiles/reverse5842-6346.fasta, /datater/wu/data/enterovirus/splitFiles/reverse2794-3298.fasta, /datater/wu/data/enterovirus/splitFiles/reverse3048-3552.fasta, /datater/wu/data/enterovirus/splitFiles/reverse7620-8124.fasta, /datater/wu/data/enterovirus/splitFiles/reverse7366-7870.fasta, /datater/wu/data/enterovirus/splitFiles/reverse3810-4314.fasta, /datater/wu/data/enterovirus/splitFiles/reverse5334-5838.fasta, /datater/wu/data/enterovirus/splitFiles/reverse6096-6600.fasta, /datater/wu/data/enterovirus/splitFiles/reverse254-758.fasta, /datater/wu/data/enterovirus/splitFiles/reverse1270-1774.fasta, /datater/wu/data/enterovirus/splitFiles/reverse3302-3806.fasta, /datater/wu/data/enterovirus/splitFiles/reverse3556-4060.fasta, /datater/wu/data/enterovirus/splitFiles/reverse7874-8378.fasta, /datater/wu/data/enterovirus/splitFiles/reverse9144-9382.fasta, /datater/wu/data/enterovirus/splitFiles/reverse4572-5076.fasta, /datater/wu/data/enterovirus/splitFiles/reverse8636-9140.fasta, /datater/wu/data/enterovirus/splitFiles/reverse4064-4568.fasta, /datater/wu/data/enterovirus/splitFiles/reverse5588-6092.fasta, /datater/wu/data/enterovirus/splitFiles/reverse2286-2790.fasta, /datater/wu/data/enterovirus/splitFiles/reverse6604-7108.fasta, /datater/wu/data/enterovirus/splitFiles/reverse1016-1520.fasta, /datater/wu/data/enterovirus/splitFiles/reverse8128-8632.fasta, /datater/wu/data/enterovirus/splitFiles/reverse6350-6854.fasta, /datater/wu/data/enterovirus/dsk/reverse5080-5584.h5, /datater/wu/data/enterovirus/dsk/reverse1778-2282.h5, /datater/wu/data/enterovirus/dsk/reverse7112-7616.h5, /datater/wu/data/enterovirus/dsk/reverse6858-7362.h5, /datater/wu/data/enterovirus/dsk/reverse4826-5330.h5, /datater/wu/data/enterovirus/dsk/reverse508-1012.h5, /datater/wu/data/enterovirus/dsk/reverse2540-3044.h5, /datater/wu/data/enterovirus/dsk/reverse2032-2536.h5, /datater/wu/data/enterovirus/dsk/reverse8890-9394.h5, /datater/wu/data/enterovirus/dsk/reverse1524-2028.h5, /datater/wu/data/enterovirus/dsk/reverse0-504.h5, /datater/wu/data/enterovirus/dsk/reverse8382-8886.h5, /datater/wu/data/enterovirus/dsk/reverse762-1266.h5, /datater/wu/data/enterovirus/dsk/reverse4318-4822.h5, /datater/wu/data/enterovirus/dsk/reverse5842-6346.h5, /datater/wu/data/enterovirus/dsk/reverse2794-3298.h5, /datater/wu/data/enterovirus/dsk/reverse3048-3552.h5, /datater/wu/data/enterovirus/dsk/reverse7620-8124.h5, /datater/wu/data/enterovirus/dsk/reverse7366-7870.h5, /datater/wu/data/enterovirus/dsk/reverse3810-4314.h5, /datater/wu/data/enterovirus/dsk/reverse5334-5838.h5, /datater/wu/data/enterovirus/dsk/reverse6096-6600.h5, /datater/wu/data/enterovirus/dsk/reverse254-758.h5, /datater/wu/data/enterovirus/dsk/reverse1270-1774.h5, /datater/wu/data/enterovirus/dsk/reverse3302-3806.h5, /datater/wu/data/enterovirus/dsk/reverse3556-4060.h5, /datater/wu/data/enterovirus/dsk/reverse7874-8378.h5, /datater/wu/data/enterovirus/dsk/reverse9144-9382.h5, /datater/wu/data/enterovirus/dsk/reverse4572-5076.h5, /datater/wu/data/enterovirus/dsk/reverse8636-9140.h5, /datater/wu/data/enterovirus/dsk/reverse4064-4568.h5, /datater/wu/data/enterovirus/dsk/reverse5588-6092.h5, /datater/wu/data/enterovirus/dsk/reverse2286-2790.h5, /datater/wu/data/enterovirus/dsk/reverse6604-7108.h5, /datater/wu/data/enterovirus/dsk/reverse1016-1520.h5, /datater/wu/data/enterovirus/dsk/reverse8128-8632.h5, /datater/wu/data/enterovirus/dsk/reverse6350-6854.h5, /datater/wu/data/enterovirus/dsk/reverse5080-5584.kCount, /datater/wu/data/enterovirus/dsk/reverse1778-2282.kCount, /datater/wu/data/enterovirus/dsk/reverse7112-7616.kCount, /datater/wu/data/enterovirus/dsk/reverse6858-7362.kCount, /datater/wu/data/enterovirus/dsk/reverse4826-5330.kCount, /datater/wu/data/enterovirus/dsk/reverse508-1012.kCount, /datater/wu/data/enterovirus/dsk/reverse2540-3044.kCount, /datater/wu/data/enterovirus/dsk/reverse2032-2536.kCount, /datater/wu/data/enterovirus/dsk/reverse8890-9394.kCount, /datater/wu/data/enterovirus/dsk/reverse1524-2028.kCount, /datater/wu/data/enterovirus/dsk/reverse0-504.kCount, /datater/wu/data/enterovirus/dsk/reverse8382-8886.kCount, /datater/wu/data/enterovirus/dsk/reverse762-1266.kCount, /datater/wu/data/enterovirus/dsk/reverse4318-4822.kCount, /datater/wu/data/enterovirus/dsk/reverse5842-6346.kCount, /datater/wu/data/enterovirus/dsk/reverse2794-3298.kCount, /datater/wu/data/enterovirus/dsk/reverse3048-3552.kCount, /datater/wu/data/enterovirus/dsk/reverse7620-8124.kCount, /datater/wu/data/enterovirus/dsk/reverse7366-7870.kCount, /datater/wu/data/enterovirus/dsk/reverse3810-4314.kCount, /datater/wu/data/enterovirus/dsk/reverse5334-5838.kCount, /datater/wu/data/enterovirus/dsk/reverse6096-6600.kCount, /datater/wu/data/enterovirus/dsk/reverse254-758.kCount, /datater/wu/data/enterovirus/dsk/reverse1270-1774.kCount, /datater/wu/data/enterovirus/dsk/reverse3302-3806.kCount, /datater/wu/data/enterovirus/dsk/reverse3556-4060.kCount, /datater/wu/data/enterovirus/dsk/reverse7874-8378.kCount, /datater/wu/data/enterovirus/dsk/reverse9144-9382.kCount, /datater/wu/data/enterovirus/dsk/reverse4572-5076.kCount, /datater/wu/data/enterovirus/dsk/reverse8636-9140.kCount, /datater/wu/data/enterovirus/dsk/reverse4064-4568.kCount, /datater/wu/data/enterovirus/dsk/reverse5588-6092.kCount, /datater/wu/data/enterovirus/dsk/reverse2286-2790.kCount, /datater/wu/data/enterovirus/dsk/reverse6604-7108.kCount, /datater/wu/data/enterovirus/dsk/reverse1016-1520.kCount, /datater/wu/data/enterovirus/dsk/reverse8128-8632.kCount, /datater/wu/data/enterovirus/dsk/reverse6350-6854.kCount, /datater/wu/data/enterovirus/dsk/reverse5080-5584.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse1778-2282.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse7112-7616.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse6858-7362.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse4826-5330.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse508-1012.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse2540-3044.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse2032-2536.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse8890-9394.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse1524-2028.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse0-504.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse8382-8886.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse762-1266.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse4318-4822.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse5842-6346.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse2794-3298.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse3048-3552.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse7620-8124.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse7366-7870.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse3810-4314.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse5334-5838.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse6096-6600.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse254-758.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse1270-1774.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse3302-3806.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse3556-4060.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse7874-8378.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse9144-9382.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse4572-5076.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse8636-9140.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse4064-4568.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse5588-6092.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse2286-2790.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse6604-7108.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse1016-1520.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse8128-8632.kCountSorted, /datater/wu/data/enterovirus/dsk/reverse6350-6854.kCountSorted
+    jobid: 0
+
+[Fri Mar 12 15:08:53 2021]
+Finished job 0.
+112 of 112 steps (100%) done
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-12T150841.299834.snakemake.log

@@ -1,0 +1,99 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	37	add_LC
+	1	all
+	38
+Select jobs to execute...
+
+[Thu Mar 11 19:16:31 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_762-1266.nessieOut
+    output: /datater/wu/data/enterovirus/filtering/forward_762-1266.calculated2
+    jobid: 247
+    wildcards: sample=enterovirus, seg=762-1266
+
+[Thu Mar 11 19:16:31 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_0-504.nessieOut
+    output: /datater/wu/data/enterovirus/filtering/forward_0-504.calculated2
+    jobid: 238
+    wildcards: sample=enterovirus, seg=0-504
+
+[Thu Mar 11 19:16:31 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_3810-4314.nessieOut
+    output: /datater/wu/data/enterovirus/filtering/forward_3810-4314.calculated2
+    jobid: 245
+    wildcards: sample=enterovirus, seg=3810-4314
+
+[Thu Mar 11 19:16:31 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_8128-8632.nessieOut
+    output: /datater/wu/data/enterovirus/filtering/forward_8128-8632.calculated2
+    jobid: 253
+    wildcards: sample=enterovirus, seg=8128-8632
+
+[Thu Mar 11 19:16:31 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_7620-8124.nessieOut
+    output: /datater/wu/data/enterovirus/filtering/forward_7620-8124.calculated2
+    jobid: 260
+    wildcards: sample=enterovirus, seg=7620-8124
+
+[Thu Mar 11 19:16:31 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_254-758.nessieOut
+    output: /datater/wu/data/enterovirus/filtering/forward_254-758.calculated2
+    jobid: 268
+    wildcards: sample=enterovirus, seg=254-758
+
+[Thu Mar 11 19:16:31 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_508-1012.nessieOut
+    output: /datater/wu/data/enterovirus/filtering/forward_508-1012.calculated2
+    jobid: 259
+    wildcards: sample=enterovirus, seg=508-1012
+
+[Thu Mar 11 19:16:31 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_3556-4060.nessieOut
+    output: /datater/wu/data/enterovirus/filtering/forward_3556-4060.calculated2
+    jobid: 237
+    wildcards: sample=enterovirus, seg=3556-4060
+
+[Thu Mar 11 19:16:31 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_6096-6600.nessieOut
+    output: /datater/wu/data/enterovirus/filtering/forward_6096-6600.calculated2
+    jobid: 252
+    wildcards: sample=enterovirus, seg=6096-6600
+
+[Thu Mar 11 19:16:31 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_6350-6854.nessieOut
+    output: /datater/wu/data/enterovirus/filtering/forward_6350-6854.calculated2
+    jobid: 244
+    wildcards: sample=enterovirus, seg=6350-6854
+
+[Thu Mar 11 19:16:31 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_4318-4822.nessieOut
+    output: /datater/wu/data/enterovirus/filtering/forward_4318-4822.calculated2
+    jobid: 267
+    wildcards: sample=enterovirus, seg=4318-4822
+
+[Thu Mar 11 19:16:31 2021]
+rule add_LC:
+    input: /datater/wu/data/enterovirus/filtering/forward_1524-2028.nessieOut
+    output: /datater/wu/data/enterovirus/filtering/forward_1524-2028.calculated2
+    jobid: 246
+    wildcards: sample=enterovirus, seg=1524-2028
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/stage_m2/.snakemake/log/2021-03-11T191630.145409.snakemake.log

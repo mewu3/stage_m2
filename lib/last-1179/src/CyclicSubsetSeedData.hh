@@ -1,0 +1,195 @@
+const struct {
+  const char *nickname;
+  const char *realname;
+} subsetSeedNicknames [] = {
+{"RY16", "RY16-8"},
+{"RY32", "RY32-10"},
+{"RY4", "RY4-6"},
+{"RY8", "RY8-8"},
+};
+
+const struct {
+  const char *name;
+  const char *text;
+} subsetSeeds[] = {
+{"BISF", "\
+#lastdb -w2\n\
+#lastal -pBISF\n\
+1  CT A G\n\
+0  ACGT\n\
+1111110101100\n\
+"},
+
+{"BISR", "\
+#lastdb -w2\n\
+#lastal -pBISR\n\
+1  AG C T\n\
+0  ACGT\n\
+1111110101100\n\
+"},
+
+{"MAM4", "\
+1  A C G T\n\
+0  ACGT\n\
+T  AG CT\n\
+11100TT01T00T10TTTT\n\
+TTTT110TT0T001T0T1T1\n\
+11TT010T01TT0001T\n\
+11TT10T1T101TT\n\
+"},
+
+{"MAM8", "\
+1  A C G T\n\
+0  ACGT\n\
+T  AG CT\n\
+1101T1T0T1T00TT1TT\n\
+1TTTTT010TT0TT01011TTT\n\
+1TTTT10010T011T0TTTT1\n\
+111T011T0T01T100\n\
+1T10T100TT01000TT01TT11\n\
+111T101TT000T0T10T00T1T\n\
+111100T011TTT00T0TT01T\n\
+1T1T10T1101101\n\
+"},
+
+{"MURPHY10", "\
+#lastdb -p\n\
+1  ILMV FWY A C G H P KR ST DENQ\n\
+1\n\
+"},
+
+{"NEAR", "\
+#lastal -r6 -q18 -a21 -b9\n\
+1  A C G T\n\
+0  ACGT\n\
+1111110\n\
+"},
+
+{"RY16-8", "\
+#lastal -r6 -q18 -a21 -b9\n\
+R  A G\n\
+Y  C T\n\
+RRRRRYRY\n\
+RRRRYYRY\n\
+RRRYYYRY\n\
+RRRYYYYY\n\
+RRYRRYRY\n\
+RRYYYYRY\n\
+YRRRRYRY\n\
+YRRRYRYR\n\
+YRRRYRYY\n\
+YRRRYYRY\n\
+YRRYYRYR\n\
+YRRYYRYY\n\
+YRRYYYRY\n\
+YRRYYYYY\n\
+YYRRYRYR\n\
+YYRRYRYY\n\
+"},
+
+{"RY32-10", "\
+#lastal -r6 -q18 -a21 -b9\n\
+R  A G\n\
+Y  C T\n\
+YRRYRRYRRR\n\
+YRRYRYYRRR\n\
+YRRYYRYRRR\n\
+YRRYYYRRRR\n\
+YRRYYYRRRY\n\
+YRRYYYYRRR\n\
+YRYRRYRRRR\n\
+YRYRRYRRRY\n\
+YRYRRYYRRR\n\
+YRYRYRYRRR\n\
+YRYRYYRRRR\n\
+YRYRYYRRRY\n\
+YRYRYYYRRR\n\
+YRYYRRYRRR\n\
+YRYYRYYRRR\n\
+YRYYYRYRRR\n\
+YRYYYYRRRR\n\
+YRYYYYRRRY\n\
+YRYYYYYRRR\n\
+YYRRYRYRRR\n\
+YYRRYYRRRR\n\
+YYRRYYRRRY\n\
+YYRYRYRRRR\n\
+YYRYYRYRRR\n\
+YYRYYYRRRR\n\
+YYRYYYRRRY\n\
+YYYRYYRRRR\n\
+YYYRYYRRRY\n\
+YYYYRRYRRR\n\
+YYYYYRYRRR\n\
+YYYYYYRRRR\n\
+YYYYYYRRRY\n\
+"},
+
+{"RY4-6", "\
+#lastal -r6 -q18 -a21 -b9\n\
+R  A G\n\
+Y  C T\n\
+RRRRRY\n\
+RRYRRY\n\
+RRYRYY\n\
+RYRRRR\n\
+RYRRRY\n\
+RYRYRY\n\
+RYYRRR\n\
+RYYRRY\n\
+RYYRYR\n\
+RYYRYY\n\
+RYYYRY\n\
+RYYYYY\n\
+YRYRRY\n\
+YYYRRR\n\
+YYYRRY\n\
+YYYYRY\n\
+"},
+
+{"RY8-8", "\
+#lastal -r6 -q18 -a21 -b9\n\
+R  A G\n\
+Y  C T\n\
+RRRRRRRY\n\
+RRYRRRYY\n\
+RYRRRRYR\n\
+RYRRRRYY\n\
+RYRRRYRY\n\
+YRRRRRRY\n\
+YRRRRRYR\n\
+YRRRRRYY\n\
+YRRRYRRY\n\
+YRRYRRYR\n\
+YRRYRRYY\n\
+YRYRRRYY\n\
+YRYRRYRY\n\
+YRYRRYYR\n\
+YRYRRYYY\n\
+YRYRYRYY\n\
+YYRRRRYR\n\
+YYRRRRYY\n\
+YYRRRYRY\n\
+YYRRRYYR\n\
+YYRRRYYY\n\
+YYRRYRYR\n\
+YYRRYRYY\n\
+YYRRYYRY\n\
+YYRRYYYR\n\
+YYRRYYYY\n\
+YYRYRYYR\n\
+YYRYRYYY\n\
+YYRYYRYY\n\
+YYYRYYYR\n\
+YYYRYYYY\n\
+YYYYYYYR\n\
+"},
+
+{"YASS", "\
+1  A C G T\n\
+0  ACGT\n\
+T  AG CT\n\
+1T1001100101\n\
+"},
+
+};

@@ -1,0 +1,27 @@
+Building DAG of jobs...
+Updating job aggregate_allReverseOligo.
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	mktree_index
+	2
+Select jobs to execute...
+
+[Wed Mar 17 10:57:28 2021]
+rule mktree_index:
+    input: /datater/wu/data/enterovirus/enterovirus.uniq
+    output: /datater/wu/data/enterovirus/enterovirus.uniq.al1, /datater/wu/data/enterovirus/enterovirus.uniq.bck, /datater/wu/data/enterovirus/enterovirus.uniq.bwt, /datater/wu/data/enterovirus/enterovirus.uniq.des, /datater/wu/data/enterovirus/enterovirus.uniq.lcp, /datater/wu/data/enterovirus/enterovirus.uniq.llv, /datater/wu/data/enterovirus/enterovirus.uniq.ois, /datater/wu/data/enterovirus/enterovirus.uniq.prj, /datater/wu/data/enterovirus/enterovirus.uniq.sds, /datater/wu/data/enterovirus/enterovirus.uniq.skp, /datater/wu/data/enterovirus/enterovirus.uniq.ssp, /datater/wu/data/enterovirus/enterovirus.uniq.sti1, /datater/wu/data/enterovirus/enterovirus.uniq.suf, /datater/wu/data/enterovirus/enterovirus.uniq.tis
+    jobid: 7
+    wildcards: sample=enterovirus
+
+RuleException in line 26 of /datater/wu/stage_m2/rules/reverse_check_specifity.smk:
+'Params' object has no attribute 'indexname'
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 136, in run_jobs
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 441, in run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 230, in _run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 156, in _run
+  File "/datater/wu/miniconda3/envs/snakemake/lib/python3.9/site-packages/snakemake/executors/__init__.py", line 162, in printjob

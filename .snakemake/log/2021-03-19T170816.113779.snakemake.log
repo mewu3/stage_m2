@@ -1,0 +1,3 @@
+TypeError in line 62 of /datater/wu/stage_m2/Snakefile:
+aggregate_input() missing 1 required positional argument: 'wildcards'
+  File "/datater/wu/stage_m2/Snakefile", line 62, in <module>
