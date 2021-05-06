@@ -29,7 +29,7 @@ Usage example (*It is recommended to create a conda environment for better tools
 2. snakemake --cores 6 --snakefile snakefile-variant
 3. snakemake --cores 6 --snakefile snakefile-clustering  (this one is not fully tested)
 
-If you have few sequences (~ 3000 enterovirus genomes with a genome size around 7000 nt) you could use (1), but if the genome size is higher than 10 000 nt and the sequence number is higher than 5000 it is recommended to use (2). 
+If you have few sequences (~ 3000 enterovirus genomes with a genome size around 7000 nt) you could use (1), but if the genome size is higher than 10 000 nt and the sequence number is greater than 5000 it is recommended to use (2). 
 For more information about the snakemake API: https://snakemake.readthedocs.io/en/stable/api_reference/snakemake.html
 
 
