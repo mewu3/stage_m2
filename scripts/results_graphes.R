@@ -1,11 +1,67 @@
 library("tidyverse")
 library("gridExtra")
+library("reshape2")
 
 ### load input files
-filePath = "MSSPE-variant"
-virus = "coronavirusCurated"
-kmerSize = "15"
-datadir <- sprintf("/datater/wu/data/%s/%s/kmer%s/evaluation", filePath, virus, kmerSize)
+datadir = "/home/meijun/Documents/server/data/MSSPE-basic"
+virus = c("enterovirus", "coronavirus", "coronavirusWithoutSarsCov2", "enterovirusCurated", "coronavirusCurated", "coronavirusCuratedWithoutSarsCov2")
+kmerSize = c("13", "15")
+combinations = expand.grid(virus, kmerSize)
+
+for (row in 1:nrow(combinations)){
+  virus = toString(combinations[row,1])
+  kmerSize = toString(combinations[row,2])
+  workdir <- sprintf("%s/%s/kmer%s/evaluation", datadir, virus, kmerSize)
+  if (dir.exists(workdir)){
+    ### kmerCoverage counting ###
+    oligoCount_before <- sprintf("%s/allOligo_before.tsv", workdir)
+    oligoCount_before <- read.table(file=oligoCount_before, 
+                                    sep="\t", 
+                                    header=TRUE)
+    oligoCount_before <-oligoCount_before %>% select(start, end, kmerCount)
+    oligoCount_after1 <- sprintf("%s/allOligo_after1.tsv", workdir)
+    oligoCount_after1 <- read.table(file=oligoCount_after1, 
+                                    sep="\t", 
+                                    header=TRUE)
+    oligoCount_after1 <- oligoCount_after1 %>% select(start, end, kmerCount)
+    oligoCount_after2 <- sprintf("%s/allOligo_after2.tsv", workdir)
+    oligoCount_after2 <- read.table(file=oligoCount_after2, 
+                                    sep="\t", 
+                                    header=TRUE)
+    oligoCount_after2 <- oligoCount_after2 %>% select(start, end, kmerCount)
+    oligoCount_after3 <- sprintf("%s/allOligo_after3.tsv", workdir)
+    oligoCount_after3 <- read.table(file=oligoCount_after3, 
+                                    sep="\t", 
+                                    header=TRUE)
+    oligoCount_after3 <-oligoCount_after3 %>% select(start, end, kmerCount)
+    oligoCount <- left_join(x=oligoCount_before, y=oligoCount_after1, by=c("start", "end"), suffix=c(".a0", ".a1"))
+    oligoCount <- left_join(x=oligoCount, y=oligoCount_after2, by=c("start", "end"), suffix=c(".a1", ".a2"))
+    oligoCount <- left_join(x=oligoCount, y=oligoCount_after3, by=c("start", "end"), suffix=c(".a2", ".a3"))
+    oligoCount[is.na(oligoCount)] <- 0
+    oligoCount <- oligoCount %>% arrange(start, decreasing=TRUE)
+    oligoCount$position <- paste(oligoCount$start, oligoCount$end, sep="-")
+    oligoCount$position <- factor(oligoCount$position, levels=oligoCount$position)
+    oligoCount <- oligoCount[, !(names(oligoCount) %in% c("start", "end"))]
+    dfm <- pivot_longer(oligoCount, -position, names_to="variable", values_to="value")
+    plot <- ggplot(dfm, aes(x=position,y=value)) +
+      geom_bar(aes(fill=variable), stat = "identity", position = "dodge") + 
+      theme(axis.text.x = element_text(angle=90, size=5)) +
+      ylim(0,100) +
+      xlab("position") + 
+      ylab("kmer Coverage")
+    print(plot)
+    
+    ### species coverage ###
+    finalSpeciesCoverage = sprintf("%s/allOligo.set.coverage", workdir)
+    finalSpeciesCoverage = read.table(file=finalSpeciesCoverage, 
+                                      sep="\t", 
+                                      header=FALSE)
+    names(finalSpeciesCoverage) = c("start", "end", "species", "speciesCount", "totalCount")
+    
+  }
+}
+
+datadir <- sprintf("%s/%s/%s/kmer%s/evaluation", datadir, filePath, virus, kmerSize)
 
 kmerCount <- list.files(path=datadir, pattern = "tsv", full.names = TRUE)
 specieCoverage = paste(datadir, "allOligo.set.coverage", sep="/")
