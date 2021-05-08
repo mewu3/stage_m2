@@ -128,33 +128,33 @@ rule evaluation4:
         df_before = pd.read_table(input[1], sep="\t", header=0, index_col=0)
         df_before.index.name = "index"
         df_before = df_before.drop("POScount", 1)
-        df_before = df_before.rename(columns={"POS":"start"})
-        df_before["end"] = df_before["start"] + kmerSize -1
-        df_before["chunk-start"] = ""
-        df_before["chunk-end"] = ""
+        df_before = df_before.rename(columns={"POS":"rstart"})
+        df_before["rend"] = df_before["rstart"] + kmerSize -1
+        df_before["start"] = ""
+        df_before["end"] = ""
 
         criteria =[]
         for chunk in chunks:
-            criteria.append(df_before.end.between(chunk[0], chunk[1]))
+            criteria.append(df_before.rend.between(chunk[0], chunk[1]))
 
         chunk_start = [x[0] for x in chunks]
         chunk_end = [x[1] for x in chunks]
 
-        df_before["chunk-start"] = np.select(criteria, chunk_start, 0)
-        df_before["chunk-end"] = np.select(criteria, chunk_end, 0)
+        df_before["start"] = np.select(criteria, chunk_start, 0)
+        df_before["end"] = np.select(criteria, chunk_end, 0)
 
-        df_position = df_before[["start", "end", "chunk-start", "chunk-end"]]
+        df_position = df_before[["rstart", "rend", "start", "end"]]
 
-        df_before = df_before.sort_values(["kmerCount"], ascending=False).groupby("chunk-end", as_index=False).head(1)
+        df_before = df_before.sort_values(["kmerCount"], ascending=False).groupby("end", as_index=False).head(1)
 
 
         df_after1 = pd.read_csv(input[2], sep="\t", header=0, index_col=0)
         df_after1 = df_after1.merge(df_position, how="left", left_index=True, right_index=True)
-        df_after1 = df_after1.sort_values(["kmerCount"], ascending=False).groupby("chunk-end", as_index=False).head(1)
+        df_after1 = df_after1.sort_values(["kmerCount"], ascending=False).groupby("end", as_index=False).head(1)
 
         df_after2 = pd.read_csv(input[3], sep="\t", header=0, index_col=0)
         df_after2 = df_after2.merge(df_position, how="left", left_index=True, right_index=True)
-        df_after2 = df_after2.sort_values(["kmerCount"], ascending=False).groupby("chunk-end", as_index=False).head(1)
+        df_after2 = df_after2.sort_values(["kmerCount"], ascending=False).groupby("end", as_index=False).head(1)
 
         df_before.fillna(0, inplace=True)
         df_after1.fillna(0, inplace=True)

@@ -8,7 +8,7 @@ rule clustering:
         threads = config["thread"],
         memory = config["cd-hit"]["memory"]
     shell:
-        "./lib/cdhit/cd-hit-est \
+        "lib/cdhit/cd-hit-est \
         -i {input} \
         -o {output} \
         -c {params.identity} \
@@ -203,36 +203,36 @@ rule checkHeterodimer:
         df_before = pd.read_table(input[1], sep="\t", header=0, index_col=0)
         df_before.index.name = "index"
         df_before = df_before.drop("POScount", 1)
-        df_before = df_before.rename(columns={"POS":"start"})
-        df_before["end"] = df_before["start"] + kmerSize -1
-        df_before["chunk-start"] = ""
-        df_before["chunk-end"] = ""
+        df_before = df_before.rename(columns={"POS":"rstart"})
+        df_before["rend"] = df_before["rstart"] + kmerSize -1
+        df_before["start"] = ""
+        df_before["end"] = ""
 
         criteria =[]
         for chunk in chunks:
-            criteria.append(df_before.end.between(chunk[0], chunk[1]))
+            criteria.append(df_before.rend.between(chunk[0], chunk[1]))
 
         chunk_start = [x[0] for x in chunks]
         chunk_end = [x[1] for x in chunks]
 
-        df_before["chunk-start"] = np.select(criteria, chunk_start, 0)
-        df_before["chunk-end"] = np.select(criteria, chunk_end, 0)
+        df_before["start"] = np.select(criteria, chunk_start, 0)
+        df_before["end"] = np.select(criteria, chunk_end, 0)
 
-        df_position = df_before[["start", "end", "chunk-start", "chunk-end"]]
+        df_position = df_before[["rstart", "rend", "start", "end"]]
 
         df_after2 = pd.read_csv(input[2], sep="\t", header=0, index_col=0)
         df_after2 = df_after2.merge(df_position, how="left", left_index=True, right_index=True)
 
-        df = df_after2.sort_values(["kmerCount"], ascending=False).groupby("chunk-end").head(3)
+        df = df_after2.sort_values(["kmerCount"], ascending=False).groupby("end").head(3)
 
         dict_idInfo = df.to_dict("index")
         df["index"] = df.index
-        # dict_posiIDs = {k: g["index"].tolist() for k, g in df[["index", "chunk-end"]].groupby("chunk-end")} # lose kmerCount order
+        # dict_posiIDs = {k: g["index"].tolist() for k, g in df[["index", "end"]].groupby("end")} # lose kmerCount order
 
         dict_posiIDs=defaultdict(list)
 
         for index in df.index:
-            position = df["chunk-end"][index]
+            position = df["end"][index]
             dict_posiIDs[position].append(index)
 
         heterodimer=[]
@@ -266,6 +266,6 @@ rule checkHeterodimer:
                                 oligoSet.append(id)
 
         df_filtered = df[df.index.isin(oligoSet)].drop("index", axis=1)
-        df_filtered = df_filtered.sort_values("chunk-end")
+        df_filtered = df_filtered.sort_values("end")
         df_filtered.fillna(0, inplace=True)
         df_filtered.to_csv(output[0], sep='\t', index=True)
