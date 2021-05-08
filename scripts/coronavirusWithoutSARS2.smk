@@ -70,13 +70,7 @@ rule all:
             datadir = datadir,
             sample = sample,
             kmerSize = kmerSize
-        ),
-        # expand(
-        #     f"/datater/wu/data/tmp/{{datadir}}_{{sample}}_{{kmerSize}}_notstritMatch_statistic.out",
-        #     datadir = datadir,
-        #     sample = sample,
-        #     kmerSize = kmerSize
-        # )
+        )
 
 rule test0:
     input:
