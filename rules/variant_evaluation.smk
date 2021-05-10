@@ -49,10 +49,11 @@ rule evaluation2:
             for li in file.readlines()[1:]:
                 li = li.rstrip("\n").split()
                 oligoId.append(f"p{li[0]}")
-                position = f"{li[-2]}-{li[-1]}"
-                dict_idPosi[li[0]] = li[8:]
+                # position = f"{li[-2]}-{li[-1]}"
+                dict_idPosi[li[0]] = li[10:]
 
         df_bowtie = pd.read_table(input[2], comment="@", sep="\t", names=["QNAME", "FLAG", "RNAME", "POS", "MAPQ", "CIGAR", "RNEXT", "PNEXT", "TLEN", "SEQ", "QUAL", "OPT1", "OPT2", "OPT3", "OPT4"])
+        df_bowtie = df_bowtie[df_bowtie["FLAG"] != 4 ]
         df_bowtie = df_bowtie[df_bowtie["QNAME"].isin(oligoId)][["QNAME", "RNAME"]]
 
         dict_idAce = {k: g["RNAME"].tolist() for k, g in df_bowtie.groupby("QNAME")}

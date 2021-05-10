@@ -1,0 +1,109 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	8	test3
+	9
+Select jobs to execute...
+
+[Sat May  8 16:42:33 2021]
+rule test3:
+    input: /datater/wu/data/tmp/MSSPE-basic_coronavirusWithoutSarsCov2_kmer13_allOligo.set, /datater/wu/data/tmp/sars2_variants.msa.1.ebwt, /datater/wu/data/tmp/sars2_variants.msa.2.ebwt, /datater/wu/data/tmp/sars2_variants.msa.3.ebwt, /datater/wu/data/tmp/sars2_variants.msa.4.ebwt, /datater/wu/data/tmp/sars2_variants.msa.rev.1.ebwt, /datater/wu/data/tmp/sars2_variants.msa.rev.2.ebwt
+    output: /datater/wu/data/tmp/MSSPE-basic_coronavirusWithoutSarsCov2_kmer13_stritMatch.bowtie
+    jobid: 16
+    wildcards: datadir=MSSPE-basic, sample=coronavirusWithoutSarsCov2, kmerSize=kmer13
+
+
+[Sat May  8 16:42:33 2021]
+rule test3:
+    input: /datater/wu/data/tmp/MSSPE-basic_coronavirusCuratedWithoutSarsCov2_kmer13_allOligo.set, /datater/wu/data/tmp/sars2_variants.msa.1.ebwt, /datater/wu/data/tmp/sars2_variants.msa.2.ebwt, /datater/wu/data/tmp/sars2_variants.msa.3.ebwt, /datater/wu/data/tmp/sars2_variants.msa.4.ebwt, /datater/wu/data/tmp/sars2_variants.msa.rev.1.ebwt, /datater/wu/data/tmp/sars2_variants.msa.rev.2.ebwt
+    output: /datater/wu/data/tmp/MSSPE-basic_coronavirusCuratedWithoutSarsCov2_kmer13_stritMatch.bowtie
+    jobid: 18
+    wildcards: datadir=MSSPE-basic, sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer13
+
+
+[Sat May  8 16:42:33 2021]
+rule test3:
+    input: /datater/wu/data/tmp/MSSPE-variant_coronavirusCuratedWithoutSarsCov2_kmer13_allOligo.set, /datater/wu/data/tmp/sars2_variants.msa.1.ebwt, /datater/wu/data/tmp/sars2_variants.msa.2.ebwt, /datater/wu/data/tmp/sars2_variants.msa.3.ebwt, /datater/wu/data/tmp/sars2_variants.msa.4.ebwt, /datater/wu/data/tmp/sars2_variants.msa.rev.1.ebwt, /datater/wu/data/tmp/sars2_variants.msa.rev.2.ebwt
+    output: /datater/wu/data/tmp/MSSPE-variant_coronavirusCuratedWithoutSarsCov2_kmer13_stritMatch.bowtie
+    jobid: 14
+    wildcards: datadir=MSSPE-variant, sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer13
+
+
+[Sat May  8 16:42:33 2021]
+rule test3:
+    input: /datater/wu/data/tmp/MSSPE-variant_coronavirusWithoutSarsCov2_kmer13_allOligo.set, /datater/wu/data/tmp/sars2_variants.msa.1.ebwt, /datater/wu/data/tmp/sars2_variants.msa.2.ebwt, /datater/wu/data/tmp/sars2_variants.msa.3.ebwt, /datater/wu/data/tmp/sars2_variants.msa.4.ebwt, /datater/wu/data/tmp/sars2_variants.msa.rev.1.ebwt, /datater/wu/data/tmp/sars2_variants.msa.rev.2.ebwt
+    output: /datater/wu/data/tmp/MSSPE-variant_coronavirusWithoutSarsCov2_kmer13_stritMatch.bowtie
+    jobid: 12
+    wildcards: datadir=MSSPE-variant, sample=coronavirusWithoutSarsCov2, kmerSize=kmer13
+
+
+[Sat May  8 16:42:33 2021]
+rule test3:
+    input: /datater/wu/data/tmp/MSSPE-variant_coronavirusCuratedWithoutSarsCov2_kmer15_allOligo.set, /datater/wu/data/tmp/sars2_variants.msa.1.ebwt, /datater/wu/data/tmp/sars2_variants.msa.2.ebwt, /datater/wu/data/tmp/sars2_variants.msa.3.ebwt, /datater/wu/data/tmp/sars2_variants.msa.4.ebwt, /datater/wu/data/tmp/sars2_variants.msa.rev.1.ebwt, /datater/wu/data/tmp/sars2_variants.msa.rev.2.ebwt
+    output: /datater/wu/data/tmp/MSSPE-variant_coronavirusCuratedWithoutSarsCov2_kmer15_stritMatch.bowtie
+    jobid: 13
+    wildcards: datadir=MSSPE-variant, sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer15
+
+
+[Sat May  8 16:42:33 2021]
+rule test3:
+    input: /datater/wu/data/tmp/MSSPE-variant_coronavirusWithoutSarsCov2_kmer15_allOligo.set, /datater/wu/data/tmp/sars2_variants.msa.1.ebwt, /datater/wu/data/tmp/sars2_variants.msa.2.ebwt, /datater/wu/data/tmp/sars2_variants.msa.3.ebwt, /datater/wu/data/tmp/sars2_variants.msa.4.ebwt, /datater/wu/data/tmp/sars2_variants.msa.rev.1.ebwt, /datater/wu/data/tmp/sars2_variants.msa.rev.2.ebwt
+    output: /datater/wu/data/tmp/MSSPE-variant_coronavirusWithoutSarsCov2_kmer15_stritMatch.bowtie
+    jobid: 11
+    wildcards: datadir=MSSPE-variant, sample=coronavirusWithoutSarsCov2, kmerSize=kmer15
+
+
+[Sat May  8 16:42:33 2021]
+rule test3:
+    input: /datater/wu/data/tmp/MSSPE-basic_coronavirusWithoutSarsCov2_kmer15_allOligo.set, /datater/wu/data/tmp/sars2_variants.msa.1.ebwt, /datater/wu/data/tmp/sars2_variants.msa.2.ebwt, /datater/wu/data/tmp/sars2_variants.msa.3.ebwt, /datater/wu/data/tmp/sars2_variants.msa.4.ebwt, /datater/wu/data/tmp/sars2_variants.msa.rev.1.ebwt, /datater/wu/data/tmp/sars2_variants.msa.rev.2.ebwt
+    output: /datater/wu/data/tmp/MSSPE-basic_coronavirusWithoutSarsCov2_kmer15_stritMatch.bowtie
+    jobid: 15
+    wildcards: datadir=MSSPE-basic, sample=coronavirusWithoutSarsCov2, kmerSize=kmer15
+
+
+[Sat May  8 16:42:33 2021]
+rule test3:
+    input: /datater/wu/data/tmp/MSSPE-basic_coronavirusCuratedWithoutSarsCov2_kmer15_allOligo.set, /datater/wu/data/tmp/sars2_variants.msa.1.ebwt, /datater/wu/data/tmp/sars2_variants.msa.2.ebwt, /datater/wu/data/tmp/sars2_variants.msa.3.ebwt, /datater/wu/data/tmp/sars2_variants.msa.4.ebwt, /datater/wu/data/tmp/sars2_variants.msa.rev.1.ebwt, /datater/wu/data/tmp/sars2_variants.msa.rev.2.ebwt
+    output: /datater/wu/data/tmp/MSSPE-basic_coronavirusCuratedWithoutSarsCov2_kmer15_stritMatch.bowtie
+    jobid: 17
+    wildcards: datadir=MSSPE-basic, sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer15
+
+[Sat May  8 16:42:33 2021]
+Finished job 16.
+1 of 9 steps (11%) done
+[Sat May  8 16:42:33 2021]
+Finished job 14.
+2 of 9 steps (22%) done
+[Sat May  8 16:42:33 2021]
+Finished job 12.
+3 of 9 steps (33%) done
+[Sat May  8 16:42:33 2021]
+Finished job 11.
+4 of 9 steps (44%) done
+[Sat May  8 16:42:33 2021]
+Finished job 18.
+5 of 9 steps (56%) done
+[Sat May  8 16:42:33 2021]
+Finished job 15.
+6 of 9 steps (67%) done
+[Sat May  8 16:42:33 2021]
+Finished job 17.
+7 of 9 steps (78%) done
+[Sat May  8 16:42:34 2021]
+Finished job 13.
+8 of 9 steps (89%) done
+Select jobs to execute...
+
+[Sat May  8 16:42:34 2021]
+localrule all:
+    input: /datater/wu/data/tmp/sars2_variants.msa, /datater/wu/data/tmp/sars2_variants.msa.1.ebwt, /datater/wu/data/tmp/sars2_variants.msa.2.ebwt, /datater/wu/data/tmp/sars2_variants.msa.3.ebwt, /datater/wu/data/tmp/sars2_variants.msa.4.ebwt, /datater/wu/data/tmp/sars2_variants.msa.rev.1.ebwt, /datater/wu/data/tmp/sars2_variants.msa.rev.2.ebwt, /datater/wu/data/tmp/MSSPE-variant_coronavirusWithoutSarsCov2_kmer15_allOligo.set, /datater/wu/data/tmp/MSSPE-variant_coronavirusWithoutSarsCov2_kmer13_allOligo.set, /datater/wu/data/tmp/MSSPE-variant_coronavirusCuratedWithoutSarsCov2_kmer15_allOligo.set, /datater/wu/data/tmp/MSSPE-variant_coronavirusCuratedWithoutSarsCov2_kmer13_allOligo.set, /datater/wu/data/tmp/MSSPE-basic_coronavirusWithoutSarsCov2_kmer15_allOligo.set, /datater/wu/data/tmp/MSSPE-basic_coronavirusWithoutSarsCov2_kmer13_allOligo.set, /datater/wu/data/tmp/MSSPE-basic_coronavirusCuratedWithoutSarsCov2_kmer15_allOligo.set, /datater/wu/data/tmp/MSSPE-basic_coronavirusCuratedWithoutSarsCov2_kmer13_allOligo.set, /datater/wu/data/tmp/MSSPE-variant_coronavirusWithoutSarsCov2_kmer15_stritMatch.bowtie, /datater/wu/data/tmp/MSSPE-variant_coronavirusWithoutSarsCov2_kmer13_stritMatch.bowtie, /datater/wu/data/tmp/MSSPE-variant_coronavirusCuratedWithoutSarsCov2_kmer15_stritMatch.bowtie, /datater/wu/data/tmp/MSSPE-variant_coronavirusCuratedWithoutSarsCov2_kmer13_stritMatch.bowtie, /datater/wu/data/tmp/MSSPE-basic_coronavirusWithoutSarsCov2_kmer15_stritMatch.bowtie, /datater/wu/data/tmp/MSSPE-basic_coronavirusWithoutSarsCov2_kmer13_stritMatch.bowtie, /datater/wu/data/tmp/MSSPE-basic_coronavirusCuratedWithoutSarsCov2_kmer15_stritMatch.bowtie, /datater/wu/data/tmp/MSSPE-basic_coronavirusCuratedWithoutSarsCov2_kmer13_stritMatch.bowtie
+    jobid: 0
+
+[Sat May  8 16:42:34 2021]
+Finished job 0.
+9 of 9 steps (100%) done
+Complete log: /datater/wu/MSSPE/.snakemake/log/2021-05-08T164233.054079.snakemake.log

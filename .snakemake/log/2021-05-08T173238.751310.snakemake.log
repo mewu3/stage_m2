@@ -1,0 +1,225 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	MSA
+	1	all
+	8	checkHeterodimer
+	1	clustering
+	8	evaluation2
+	8	evaluation3
+	8	evaluation4
+	2	filtering1
+	2	filtering2
+	2	getKmerPosition1
+	1	getKmerPosition2
+	2	getKmerPosition3
+	8	getKmerPosition4
+	2	sortAllKmer
+	2	specific1
+	2	specific3
+	2	specific4
+	60
+Select jobs to execute...
+
+[Sat May  8 17:32:39 2021]
+rule clustering:
+    input: /datater/wu/data/MSSPE-variant/zika/zika.uniq
+    output: /datater/wu/data/MSSPE-variant/zika/zika0.99.uniq
+    jobid: 70
+    wildcards: sample=zika
+
+
+[Sat May  8 17:32:39 2021]
+rule getKmerPosition4:
+    input: /datater/wu/data/MSSPE-variant/enterovirus/kmer15/intermediate/allKmerCount.sorted.calculated.bowtie, /datater/wu/data/MSSPE-variant/enterovirus/kmer15/allKmerCount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/enterovirus/kmer15/intermediate/allKmerCount.sorted.calculated.position
+    jobid: 101
+    wildcards: sample=enterovirus, kmerSize=kmer15
+
+[Sat May  8 17:32:39 2021]
+rule getKmerPosition4:
+    input: /datater/wu/data/MSSPE-variant/coronavirus/kmer15/intermediate/allKmerCount.sorted.calculated.bowtie, /datater/wu/data/MSSPE-variant/coronavirus/kmer15/allKmerCount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirus/kmer15/intermediate/allKmerCount.sorted.calculated.position
+    jobid: 103
+    wildcards: sample=coronavirus, kmerSize=kmer15
+
+[Sat May  8 17:32:39 2021]
+rule getKmerPosition4:
+    input: /datater/wu/data/MSSPE-variant/enterovirus/kmer13/intermediate/allKmerCount.sorted.calculated.bowtie, /datater/wu/data/MSSPE-variant/enterovirus/kmer13/allKmerCount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/enterovirus/kmer13/intermediate/allKmerCount.sorted.calculated.position
+    jobid: 100
+    wildcards: sample=enterovirus, kmerSize=kmer13
+
+[Sat May  8 17:32:39 2021]
+rule sortAllKmer:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/allKmerCount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/allKmerCount.sorted.txt
+    jobid: 21
+    wildcards: sample=zika, kmerSize=kmer13
+
+
+[Sat May  8 17:32:39 2021]
+rule getKmerPosition4:
+    input: /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/kmer15/intermediate/allKmerCount.sorted.calculated.bowtie, /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/kmer15/allKmerCount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/kmer15/intermediate/allKmerCount.sorted.calculated.position
+    jobid: 105
+    wildcards: sample=coronavirusWithoutSarsCov2, kmerSize=kmer15
+
+[Sat May  8 17:32:39 2021]
+rule getKmerPosition4:
+    input: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.calculated.bowtie, /datater/wu/data/MSSPE-variant/coronavirus/kmer13/allKmerCount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirus/kmer13/intermediate/allKmerCount.sorted.calculated.position
+    jobid: 102
+    wildcards: sample=coronavirus, kmerSize=kmer13
+
+[Sat May  8 17:32:39 2021]
+rule getKmerPosition4:
+    input: /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/kmer13/intermediate/allKmerCount.sorted.calculated.bowtie, /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/kmer13/allKmerCount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/kmer13/intermediate/allKmerCount.sorted.calculated.position
+    jobid: 104
+    wildcards: sample=coronavirusWithoutSarsCov2, kmerSize=kmer13
+
+[Sat May  8 17:32:39 2021]
+rule sortAllKmer:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.sorted.txt
+    jobid: 22
+    wildcards: sample=zika, kmerSize=kmer15
+
+[Sat May  8 17:32:39 2021]
+Finished job 21.
+1 of 60 steps (2%) done
+Select jobs to execute...
+[Sat May  8 17:32:39 2021]
+Finished job 22.
+2 of 60 steps (3%) done
+
+[Sat May  8 17:32:39 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/allKmerCount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/allKmerCount.sorted.calculated.txt
+    jobid: 29
+    wildcards: sample=zika, kmerSize=kmer13
+
+Select jobs to execute...
+
+[Sat May  8 17:32:39 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer15/intermediate/allKmerCount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer15/allKmerCount.sorted.calculated.txt
+    jobid: 30
+    wildcards: sample=zika, kmerSize=kmer15
+
+[Sat May  8 17:32:41 2021]
+Finished job 70.
+3 of 60 steps (5%) done
+Select jobs to execute...
+
+[Sat May  8 17:32:41 2021]
+rule MSA:
+    input: /datater/wu/data/MSSPE-variant/zika/zika0.99.uniq
+    output: /datater/wu/data/MSSPE-variant/zika/zika0.99.msa
+    log: /datater/wu/data/MSSPE-variant/zika/log/mafft.log
+    jobid: 74
+    wildcards: sample=zika
+
+[Sat May  8 17:32:46 2021]
+Finished job 29.
+4 of 60 steps (7%) done
+Select jobs to execute...
+
+[Sat May  8 17:32:46 2021]
+rule getKmerPosition1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/allKmerCount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/allKmerCount.sorted.calculated.fasta
+    jobid: 78
+    wildcards: sample=zika, kmerSize=kmer13
+
+[Sat May  8 17:32:46 2021]
+rule filtering2:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/allKmerCount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/allKmerCount.sorted.calculated.filtered.txt
+    jobid: 37
+    wildcards: sample=zika, kmerSize=kmer13
+
+[Sat May  8 17:32:47 2021]
+Finished job 104.
+5 of 60 steps (8%) done
+Select jobs to execute...
+
+[Sat May  8 17:32:47 2021]
+rule checkHeterodimer:
+    input: /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/coronavirusWithoutSarsCov20.99.msa, /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/kmer13/intermediate/allKmerCount.sorted.calculated.position, /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/kmer13/allKmerCount.sorted.calculated.filtered.spec.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/kmer13/allOligo.set
+    jobid: 112
+    wildcards: sample=coronavirusWithoutSarsCov2, kmerSize=kmer13
+
+[Sat May  8 17:32:47 2021]
+rule evaluation4:
+    input: /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/coronavirusWithoutSarsCov20.99.msa, /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/kmer13/intermediate/allKmerCount.sorted.calculated.position, /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/kmer13/allKmerCount.sorted.calculated.filtered.txt, /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/kmer13/allKmerCount.sorted.calculated.filtered.spec.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/kmer13/evaluation/allOligo_before.tsv, /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/kmer13/evaluation/allOligo_after1.tsv, /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/kmer13/evaluation/allOligo_after2.tsv
+    jobid: 136
+    wildcards: sample=coronavirusWithoutSarsCov2, kmerSize=kmer13
+
+[Sat May  8 17:32:47 2021]
+Finished job 105.
+6 of 60 steps (10%) done
+Select jobs to execute...
+
+[Sat May  8 17:32:47 2021]
+rule checkHeterodimer:
+    input: /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/coronavirusWithoutSarsCov20.99.msa, /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/kmer15/intermediate/allKmerCount.sorted.calculated.position, /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/kmer15/allOligo.set
+    jobid: 113
+    wildcards: sample=coronavirusWithoutSarsCov2, kmerSize=kmer15
+
+[Sat May  8 17:32:47 2021]
+rule evaluation4:
+    input: /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/coronavirusWithoutSarsCov20.99.msa, /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/kmer15/intermediate/allKmerCount.sorted.calculated.position, /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/kmer15/allKmerCount.sorted.calculated.filtered.txt, /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/kmer15/evaluation/allOligo_before.tsv, /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/kmer15/evaluation/allOligo_after1.tsv, /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/kmer15/evaluation/allOligo_after2.tsv
+    jobid: 137
+    wildcards: sample=coronavirusWithoutSarsCov2, kmerSize=kmer15
+
+[Sat May  8 17:32:48 2021]
+Finished job 78.
+7 of 60 steps (12%) done
+[Sat May  8 17:32:48 2021]
+Finished job 37.
+8 of 60 steps (13%) done
+Select jobs to execute...
+
+[Sat May  8 17:32:48 2021]
+rule specific1:
+    input: /datater/wu/data/MSSPE-variant/zika/kmer13/allKmerCount.sorted.calculated.filtered.txt
+    output: /datater/wu/data/MSSPE-variant/zika/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.fasta
+    jobid: 45
+    wildcards: sample=zika, kmerSize=kmer13
+
+[Sat May  8 17:32:49 2021]
+Finished job 30.
+9 of 60 steps (15%) done
+[Sat May  8 17:32:49 2021]
+Finished job 45.
+10 of 60 steps (17%) done
+[Sat May  8 17:32:50 2021]
+Finished job 74.
+11 of 60 steps (18%) done
+[Sat May  8 17:33:13 2021]
+Finished job 101.
+12 of 60 steps (20%) done
+[Sat May  8 17:33:15 2021]
+Finished job 100.
+13 of 60 steps (22%) done
+[Sat May  8 17:33:44 2021]
+Finished job 103.
+14 of 60 steps (23%) done
+[Sat May  8 17:33:45 2021]
+Finished job 102.
+15 of 60 steps (25%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/MSSPE/.snakemake/log/2021-05-08T173238.751310.snakemake.log

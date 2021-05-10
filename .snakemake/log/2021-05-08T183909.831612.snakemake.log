@@ -1,0 +1,70 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	8	test5
+	9
+Select jobs to execute...
+
+[Sat May  8 18:39:10 2021]
+rule test5:
+    input: /datater/wu/data/tmp/MSSPE-basic_coronavirusWithoutSarsCov2_kmer15_stritMatch.bowtie, /datater/wu/data/tmp/MSSPE-basic_coronavirusWithoutSarsCov2_kmer15_notstritMatch.bowtie, /datater/wu/data/tmp/sars2_variants.msa
+    output: /datater/wu/data/tmp/MSSPE-basic_coronavirusWithoutSarsCov2_kmer15_stritMatch_statistic.out, /datater/wu/data/tmp/MSSPE-basic_coronavirusWithoutSarsCov2_kmer15_notstritMatch_statistic.out
+    jobid: 31
+    wildcards: datadir=MSSPE-basic, sample=coronavirusWithoutSarsCov2, kmerSize=kmer15
+
+[Sat May  8 18:39:10 2021]
+rule test5:
+    input: /datater/wu/data/tmp/MSSPE-basic_coronavirusCuratedWithoutSarsCov2_kmer15_stritMatch.bowtie, /datater/wu/data/tmp/MSSPE-basic_coronavirusCuratedWithoutSarsCov2_kmer15_notstritMatch.bowtie, /datater/wu/data/tmp/sars2_variants.msa
+    output: /datater/wu/data/tmp/MSSPE-basic_coronavirusCuratedWithoutSarsCov2_kmer15_stritMatch_statistic.out, /datater/wu/data/tmp/MSSPE-basic_coronavirusCuratedWithoutSarsCov2_kmer15_notstritMatch_statistic.out
+    jobid: 33
+    wildcards: datadir=MSSPE-basic, sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer15
+
+[Sat May  8 18:39:10 2021]
+rule test5:
+    input: /datater/wu/data/tmp/MSSPE-variant_coronavirusCuratedWithoutSarsCov2_kmer15_stritMatch.bowtie, /datater/wu/data/tmp/MSSPE-variant_coronavirusCuratedWithoutSarsCov2_kmer15_notstritMatch.bowtie, /datater/wu/data/tmp/sars2_variants.msa
+    output: /datater/wu/data/tmp/MSSPE-variant_coronavirusCuratedWithoutSarsCov2_kmer15_stritMatch_statistic.out, /datater/wu/data/tmp/MSSPE-variant_coronavirusCuratedWithoutSarsCov2_kmer15_notstritMatch_statistic.out
+    jobid: 29
+    wildcards: datadir=MSSPE-variant, sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer15
+
+[Sat May  8 18:39:10 2021]
+rule test5:
+    input: /datater/wu/data/tmp/MSSPE-variant_coronavirusWithoutSarsCov2_kmer15_stritMatch.bowtie, /datater/wu/data/tmp/MSSPE-variant_coronavirusWithoutSarsCov2_kmer15_notstritMatch.bowtie, /datater/wu/data/tmp/sars2_variants.msa
+    output: /datater/wu/data/tmp/MSSPE-variant_coronavirusWithoutSarsCov2_kmer15_stritMatch_statistic.out, /datater/wu/data/tmp/MSSPE-variant_coronavirusWithoutSarsCov2_kmer15_notstritMatch_statistic.out
+    jobid: 27
+    wildcards: datadir=MSSPE-variant, sample=coronavirusWithoutSarsCov2, kmerSize=kmer15
+
+[Sat May  8 18:39:10 2021]
+rule test5:
+    input: /datater/wu/data/tmp/MSSPE-variant_coronavirusCuratedWithoutSarsCov2_kmer13_stritMatch.bowtie, /datater/wu/data/tmp/MSSPE-variant_coronavirusCuratedWithoutSarsCov2_kmer13_notstritMatch.bowtie, /datater/wu/data/tmp/sars2_variants.msa
+    output: /datater/wu/data/tmp/MSSPE-variant_coronavirusCuratedWithoutSarsCov2_kmer13_stritMatch_statistic.out, /datater/wu/data/tmp/MSSPE-variant_coronavirusCuratedWithoutSarsCov2_kmer13_notstritMatch_statistic.out
+    jobid: 30
+    wildcards: datadir=MSSPE-variant, sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer13
+
+[Sat May  8 18:39:10 2021]
+rule test5:
+    input: /datater/wu/data/tmp/MSSPE-variant_coronavirusWithoutSarsCov2_kmer13_stritMatch.bowtie, /datater/wu/data/tmp/MSSPE-variant_coronavirusWithoutSarsCov2_kmer13_notstritMatch.bowtie, /datater/wu/data/tmp/sars2_variants.msa
+    output: /datater/wu/data/tmp/MSSPE-variant_coronavirusWithoutSarsCov2_kmer13_stritMatch_statistic.out, /datater/wu/data/tmp/MSSPE-variant_coronavirusWithoutSarsCov2_kmer13_notstritMatch_statistic.out
+    jobid: 28
+    wildcards: datadir=MSSPE-variant, sample=coronavirusWithoutSarsCov2, kmerSize=kmer13
+
+[Sat May  8 18:39:10 2021]
+rule test5:
+    input: /datater/wu/data/tmp/MSSPE-basic_coronavirusWithoutSarsCov2_kmer13_stritMatch.bowtie, /datater/wu/data/tmp/MSSPE-basic_coronavirusWithoutSarsCov2_kmer13_notstritMatch.bowtie, /datater/wu/data/tmp/sars2_variants.msa
+    output: /datater/wu/data/tmp/MSSPE-basic_coronavirusWithoutSarsCov2_kmer13_stritMatch_statistic.out, /datater/wu/data/tmp/MSSPE-basic_coronavirusWithoutSarsCov2_kmer13_notstritMatch_statistic.out
+    jobid: 32
+    wildcards: datadir=MSSPE-basic, sample=coronavirusWithoutSarsCov2, kmerSize=kmer13
+
+[Sat May  8 18:39:10 2021]
+rule test5:
+    input: /datater/wu/data/tmp/MSSPE-basic_coronavirusCuratedWithoutSarsCov2_kmer13_stritMatch.bowtie, /datater/wu/data/tmp/MSSPE-basic_coronavirusCuratedWithoutSarsCov2_kmer13_notstritMatch.bowtie, /datater/wu/data/tmp/sars2_variants.msa
+    output: /datater/wu/data/tmp/MSSPE-basic_coronavirusCuratedWithoutSarsCov2_kmer13_stritMatch_statistic.out, /datater/wu/data/tmp/MSSPE-basic_coronavirusCuratedWithoutSarsCov2_kmer13_notstritMatch_statistic.out
+    jobid: 34
+    wildcards: datadir=MSSPE-basic, sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer13
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /datater/wu/MSSPE/.snakemake/log/2021-05-08T183909.831612.snakemake.log
