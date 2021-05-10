@@ -3,7 +3,7 @@ library("gridExtra")
 library("reshape2")
 
 ### load input files
-datadir = "/datater/wu/data/tmp"
+datadir = "/home/meijun/Documents/server/data/tmp"
 pipeline = c("MSSPE-basic", "MSSPE-variant")
 virus = c("coronavirusWithoutSarsCov2", "coronavirusCuratedWithoutSarsCov2")
 kmerSize = c("13", "15")
@@ -18,37 +18,19 @@ for (row in 1:nrow(combinations)){
       table <- read.table(file=file, sep="\t", header=TRUE)
       table[, "stricOligoCount"] <- table[, "counts_x"]/table[, "SeqCount"]
       table[, "notStricOligoCount"] <- table[, "counts_y"]/table[, "SeqCount"]
-      table %>% arrange(start, decreasing=TRUE)
+      table <- table %>% arrange(start, decreasing=TRUE)
       table$position <- paste(table$start, table$end, sep="-")
       table$position <- factor(table$position, levels=table$position)
-      table <- table[, !(names(table) %in% c("start", "end"))]
+      table <- table[, !(names(table) %in% c("start", "end", "counts_x", "counts_y", "SeqCount"))]
       dfm <- pivot_longer(table, -position, names_to="variable", values_to="value")
       plot <- ggplot(dfm, aes(x=position,y=value)) +
         geom_bar(aes(fill=variable), stat = "identity", position = "dodge") + 
         theme(axis.text.x = element_text(angle=90, size=5)) +
         xlab("position") + 
         ylab("oligonucleotide count")
+      filename <- tools::file_path_sans_ext(file)
+      filename <- paste(filename, ".png", sep="")
+      ggsave(plot, file=filename)
   }    
 }
 
-pipeline = toString(combinations[1, 1])  
-virus = toString(combinations[1,2])
-kmerSize = toString(combinations[1,3])
-file <- sprintf("%s/%s_%s_kmer%s_statistic.out", datadir, pipeline, virus, kmerSize)
-if (file.exists(file)){
-    table <- read.table(file=file, sep="\t", header=TRUE)
-    table[, "stricOligoCount"] <- table[, "counts_x"]/table[, "SeqCount"]
-    table[, "notStricOligoCount"] <- table[, "counts_y"]/table[, "SeqCount"]
-    table %>% arrange(start, decreasing=TRUE)
-    table$position <- paste(table$start, table$end, sep="-")
-    table$position <- factor(table$position, levels=table$position)
-    table <- table[, !(names(table) %in% c("start", "end"))]
-    dfm <- pivot_longer(table, -position, names_to="variable", values_to="value")
-    plot <- ggplot(dfm, aes(x=position,y=value)) +
-    geom_bar(aes(fill=variable), stat = "identity", position = "dodge") + 
-    theme(axis.text.x = element_text(angle=90, size=5)) +
-    xlab("position") + 
-    ylab("oligonucleotide count")
-    X11()
-    plot(plot)
-}
