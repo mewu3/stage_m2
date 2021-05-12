@@ -1,0 +1,2 @@
+oligo	kmerCount	CG%	Entropy	Tm	homodimer-dG	hairpin-dG	start	end
+TTTTTTTTTTTTTTT	38	0.000	-0.000	20.073	0.000	0.000	7905	8384
