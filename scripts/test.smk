@@ -18,6 +18,30 @@ rule all:
             kmerSize = kmerSize
         )
 
+rule evaluation1:
+    input:
+        lambda wildcards: config["samples"][wildcards.sample] if config["curated"] else f"{dataDir}/{{sample}}/{{sample}}.uniq",
+        file_aceIDtaxID,
+        file_taxIDLineage
+    output:
+        f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/aceID-taxID-species.tsv"
+    run:
+        import os
+        import pandas as pd
+        import dask.dataframe as dd
+        import numpy as np
+        import time
+
+        acessionID = os.popen(f"cat {input[0]}|grep '^>'|cut -f1 -d' '|sed 's/>//g'").read().split("\n")
+        acessionID = list(map(lambda x : x.split(".")[0], acessionID))
+
+        df_taxID = dd.read_csv(input[1], sep="\t", header=0, usecols=["accession", "taxid"], dtype={"accession":"object", "taxid":"int64"})
+        df_taxLineage = dd.read_csv(input[2], sep=",", header=0, assume_missing=True, usecols=["tax_id", "species", "no rank"], dtype={"tax_id":"int64", "species":"object", "no rank":"object"})
+        df_taxID = df_taxID[df_taxID["accession"].isin(acessionID)]
+        df_out = df_taxID.merge(df_taxLineage, how="left", left_on="taxid", right_on="tax_id")
+
+        df_out.compute().to_csv(output[0], sep="\t")
+
 rule evaluation2:
     input:
         f"{dataDir}/{{sample}}/{{kmerSize}}/allOligo.set",
@@ -49,7 +73,7 @@ rule evaluation2:
                 dict_idPosi[li[0]] = li[10:]
 
         df_bowtie = pd.read_table(input[2], comment="@", sep="\t", names=["QNAME", "FLAG", "RNAME", "POS", "MAPQ", "CIGAR", "RNEXT", "PNEXT", "TLEN", "SEQ", "QUAL", "OPT1", "OPT2", "OPT3", "OPT4"])
-        df_bowtie
+        df_bowtie = df_bowtie[df_bowtie["FLAG"] != 4 ]
         df_bowtie = df_bowtie[df_bowtie["QNAME"].isin(oligoId)][["QNAME", "RNAME"]]
 
         dict_idAce = {k: g["RNAME"].tolist() for k, g in df_bowtie.groupby("QNAME")}
@@ -73,6 +97,7 @@ rule evaluation2:
                 dict[specie]=0
             for ace in dict_idAce[id]:
                 specie = dict_aceIdSpecie[ace]
+                print(ace, specie)
                 dict[specie]+=1
             id = id.lstrip("p")
             posi = dict_idPosi[id]

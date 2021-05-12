@@ -1,0 +1,3 @@
+SyntaxError in line 66 of /datater/wu/MSSPE/rules/variant_evaluation.smk:
+f-string: unmatched '['
+  File "/datater/wu/MSSPE/snakefile-variant", line 193, in <module>

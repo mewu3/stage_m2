@@ -1,6 +1,7 @@
 rule evaluation1:
     input:
-        lambda wildcards: config["samples"][wildcards.sample] if config["curated"] else f"{dataDir}/{{sample}}/{{sample}}.uniq",
+        # lambda wildcards: config["samples"][wildcards.sample] if config["curated"] else f"{dataDir}/{{sample}}/{{sample}}.uniq",
+        f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.msa",
         file_aceIDtaxID,
         file_taxIDLineage
     output:
