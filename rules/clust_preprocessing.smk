@@ -12,7 +12,7 @@ rule clustering:
     input:
         f"{dataDir}/{{sample}}/{{sample}}.uniq"
     output:
-        f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.uniq"
+        f"{dataDir}/{{sample}}/{{sample}}.uniq.cluster{clusterIdentity}"
     params:
         identity = config["cd-hit"]["identity"],
         threads = config["thread"],
@@ -27,9 +27,9 @@ rule clustering:
 
 rule MSA:
     input:
-        f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.uniq"
+        f"{dataDir}/{{sample}}/{{sample}}.uniq.cluster{clusterIdentity}"
     output:
-        f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.msa"
+        f"{dataDir}/{{sample}}/{{sample}}.uniq.cluster{clusterIdentity}.msa"
     log:
         f"{dataDir}/{{sample}}/log/mafft.log"
     conda:
@@ -67,7 +67,7 @@ rule MSA:
 
 checkpoint splitIntoOverlappingWindows:
     input:
-        f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.msa"
+        f"{dataDir}/{{sample}}/{{sample}}.uniq.cluster{clusterIdentity}.msa"
     output:
         directory(f"{dataDir}/{{sample}}/splitFiles")
     params:

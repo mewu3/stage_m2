@@ -1,0 +1,11 @@
+Building DAG of jobs...
+MissingInputException in line 9 of /datater/wu/MSSPE/scripts/coronavirusWithoutSARS2.smk:
+Missing input files for rule all:
+/datater/wu/data/tmp/MSSPE-variant_coronavirusCuratedWithoutSarsCov2_kmer13_stritMatch_notstatistic.out
+/datater/wu/data/tmp/MSSPE-basic_coronavirusCuratedWithoutSarsCov2_kmer13_stritMatch_notstatistic.out
+/datater/wu/data/tmp/MSSPE-basic_coronavirusWithoutSarsCov2_kmer13_stritMatch_notstatistic.out
+/datater/wu/data/tmp/MSSPE-variant_coronavirusWithoutSarsCov2_kmer15_stritMatch_notstatistic.out
+/datater/wu/data/tmp/MSSPE-basic_coronavirusCuratedWithoutSarsCov2_kmer15_stritMatch_notstatistic.out
+/datater/wu/data/tmp/MSSPE-variant_coronavirusCuratedWithoutSarsCov2_kmer15_stritMatch_notstatistic.out
+/datater/wu/data/tmp/MSSPE-variant_coronavirusWithoutSarsCov2_kmer13_stritMatch_notstatistic.out
+/datater/wu/data/tmp/MSSPE-basic_coronavirusWithoutSarsCov2_kmer15_stritMatch_notstatistic.out

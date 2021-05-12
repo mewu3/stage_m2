@@ -1,0 +1,32 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	1	all
+	1	test3
+	2
+Select jobs to execute...
+
+[Fri May  7 10:52:00 2021]
+rule test3:
+    input: /datater/wu/data/tmp/MSSPE-basic_coronavirusWithoutSarsCov2_kmer13_allOligo.set, /datater/wu/data/tmp/sars2_variants.uniq.fasta.DB.1.ebwt, /datater/wu/data/tmp/sars2_variants.uniq.fasta.DB.2.ebwt, /datater/wu/data/tmp/sars2_variants.uniq.fasta.DB.3.ebwt, /datater/wu/data/tmp/sars2_variants.uniq.fasta.DB.4.ebwt, /datater/wu/data/tmp/sars2_variants.uniq.fasta.DB.rev.1.ebwt, /datater/wu/data/tmp/sars2_variants.uniq.fasta.DB.rev.2.ebwt
+    output: /datater/wu/data/tmp/MSSPE-basic_coronavirusWithoutSarsCov2_kmer13_notstritMatch.bowtie
+    jobid: 5
+
+[Fri May  7 10:52:00 2021]
+Finished job 5.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Fri May  7 10:52:00 2021]
+localrule all:
+    input: /datater/wu/data/tmp/MSSPE-basic_coronavirusWithoutSarsCov2_kmer13_allOligo.set, /datater/wu/data/tmp/MSSPE-basic_coronavirusWithoutSarsCov2_kmer13_stritMatch.bowtie, /datater/wu/data/tmp/MSSPE-basic_coronavirusWithoutSarsCov2_kmer13_notstritMatch.bowtie
+    jobid: 0
+
+[Fri May  7 10:52:00 2021]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /datater/wu/MSSPE/.snakemake/log/2021-05-07T105159.368968.snakemake.log

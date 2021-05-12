@@ -1,0 +1,1312 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job counts:
+	count	jobs
+	3	MSA
+	1	all
+	6	checkHeterodimer
+	3	clustering
+	6	countAllKmer1
+	6	countAllKmer2
+	6	evaluation1
+	6	evaluation2
+	6	evaluation3
+	6	evaluation4
+	6	filtering1
+	6	filtering2
+	6	getKmerPosition1
+	3	getKmerPosition2
+	6	getKmerPosition3
+	6	getKmerPosition4
+	3	removeDuplicateSeq
+	6	sortAllKmer
+	6	specific1
+	1	specific2
+	6	specific3
+	6	specific4
+	110
+Select jobs to execute...
+
+[Mon May 10 11:45:58 2021]
+rule evaluation1:
+    input: /datater/wu/data/enterovirusCurated.fasta, /datater/wu/data/ncbiTaxonomy/nucl_gb.accession2taxid, /datater/wu/data/ncbiTaxonomy/ncbi_lineages_2021-04-23.csv
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/aceID-taxID-species.tsv
+    jobid: 86
+    wildcards: sample=enterovirusCurated, kmerSize=kmer13
+
+[Mon May 10 11:45:58 2021]
+rule countAllKmer1:
+    input: /datater/wu/data/coronavirusCuratedWithoutSarsCov2.fasta
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/allKmerCount.int.kmc_pre, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/allKmerCount.int.kmc_suf
+    jobid: 9
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer15
+
+
+[Mon May 10 11:45:58 2021]
+rule removeDuplicateSeq:
+    input: /datater/wu/data/coronavirusCuratedWithoutSarsCov2.fasta
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov2.uniq
+    jobid: 3
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2
+
+
+[Mon May 10 11:45:58 2021]
+rule countAllKmer1:
+    input: /datater/wu/data/enterovirusCurated.fasta
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/allKmerCount.int.kmc_pre, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/allKmerCount.int.kmc_suf
+    jobid: 5
+    wildcards: sample=enterovirusCurated, kmerSize=kmer15
+
+
+[Mon May 10 11:45:58 2021]
+rule countAllKmer1:
+    input: /datater/wu/data/coronavirusCurated.fasta
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/allKmerCount.int.kmc_pre, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/allKmerCount.int.kmc_suf
+    jobid: 7
+    wildcards: sample=coronavirusCurated, kmerSize=kmer15
+
+
+[Mon May 10 11:45:58 2021]
+rule evaluation1:
+    input: /datater/wu/data/coronavirusCurated.fasta, /datater/wu/data/ncbiTaxonomy/nucl_gb.accession2taxid, /datater/wu/data/ncbiTaxonomy/ncbi_lineages_2021-04-23.csv
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/aceID-taxID-species.tsv
+    jobid: 88
+    wildcards: sample=coronavirusCurated, kmerSize=kmer13
+
+[Mon May 10 11:45:58 2021]
+rule countAllKmer1:
+    input: /datater/wu/data/coronavirusCuratedWithoutSarsCov2.fasta
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/allKmerCount.int.kmc_pre, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/allKmerCount.int.kmc_suf
+    jobid: 8
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer13
+
+
+[Mon May 10 11:45:58 2021]
+rule specific2:
+    input: /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna
+    output: /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.2.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.3.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.4.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.2.ebwt
+    jobid: 40
+
+
+[Mon May 10 11:45:58 2021]
+rule evaluation1:
+    input: /datater/wu/data/enterovirusCurated.fasta, /datater/wu/data/ncbiTaxonomy/nucl_gb.accession2taxid, /datater/wu/data/ncbiTaxonomy/ncbi_lineages_2021-04-23.csv
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/aceID-taxID-species.tsv
+    jobid: 87
+    wildcards: sample=enterovirusCurated, kmerSize=kmer15
+
+[Mon May 10 11:45:58 2021]
+rule removeDuplicateSeq:
+    input: /datater/wu/data/enterovirusCurated.fasta
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated.uniq
+    jobid: 1
+    wildcards: sample=enterovirusCurated
+
+
+[Mon May 10 11:45:58 2021]
+rule evaluation1:
+    input: /datater/wu/data/coronavirusCurated.fasta, /datater/wu/data/ncbiTaxonomy/nucl_gb.accession2taxid, /datater/wu/data/ncbiTaxonomy/ncbi_lineages_2021-04-23.csv
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/aceID-taxID-species.tsv
+    jobid: 89
+    wildcards: sample=coronavirusCurated, kmerSize=kmer15
+
+[Mon May 10 11:45:58 2021]
+rule evaluation1:
+    input: /datater/wu/data/coronavirusCuratedWithoutSarsCov2.fasta, /datater/wu/data/ncbiTaxonomy/nucl_gb.accession2taxid, /datater/wu/data/ncbiTaxonomy/ncbi_lineages_2021-04-23.csv
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/aceID-taxID-species.tsv
+    jobid: 91
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer15
+
+[Mon May 10 11:45:58 2021]
+Finished job 1.
+1 of 110 steps (0.91%) done
+Select jobs to execute...
+
+[Mon May 10 11:45:58 2021]
+rule clustering:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated.uniq
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.uniq
+    jobid: 53
+    wildcards: sample=enterovirusCurated
+
+[Mon May 10 11:45:58 2021]
+Finished job 3.
+2 of 110 steps (2%) done
+Select jobs to execute...
+
+[Mon May 10 11:45:58 2021]
+rule countAllKmer1:
+    input: /datater/wu/data/coronavirusCurated.fasta
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/allKmerCount.int.kmc_pre, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/allKmerCount.int.kmc_suf
+    jobid: 6
+    wildcards: sample=coronavirusCurated, kmerSize=kmer13
+
+[Mon May 10 11:45:58 2021]
+Finished job 53.
+3 of 110 steps (3%) done
+Select jobs to execute...
+
+[Mon May 10 11:45:58 2021]
+rule countAllKmer1:
+    input: /datater/wu/data/enterovirusCurated.fasta
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.int.kmc_pre, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.int.kmc_suf
+    jobid: 4
+    wildcards: sample=enterovirusCurated, kmerSize=kmer13
+
+[Mon May 10 11:46:02 2021]
+Finished job 5.
+4 of 110 steps (4%) done
+Select jobs to execute...
+
+[Mon May 10 11:46:02 2021]
+rule clustering:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov2.uniq
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.uniq
+    jobid: 55
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2
+
+[Mon May 10 11:46:03 2021]
+Finished job 9.
+5 of 110 steps (5%) done
+Select jobs to execute...
+
+[Mon May 10 11:46:03 2021]
+rule MSA:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.uniq
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa
+    log: /datater/wu/data/MSSPE-variant/enterovirusCurated/log/mafft.log
+    jobid: 56
+    wildcards: sample=enterovirusCurated
+
+[Mon May 10 11:46:03 2021]
+Finished job 7.
+6 of 110 steps (5%) done
+Select jobs to execute...
+
+[Mon May 10 11:46:03 2021]
+rule countAllKmer2:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/allKmerCount.int.kmc_pre, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/allKmerCount.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/allKmerCount.txt
+    jobid: 11
+    wildcards: sample=enterovirusCurated, kmerSize=kmer15
+
+[Mon May 10 11:46:04 2021]
+Finished job 11.
+7 of 110 steps (6%) done
+Select jobs to execute...
+
+[Mon May 10 11:46:04 2021]
+rule evaluation1:
+    input: /datater/wu/data/coronavirusCuratedWithoutSarsCov2.fasta, /datater/wu/data/ncbiTaxonomy/nucl_gb.accession2taxid, /datater/wu/data/ncbiTaxonomy/ncbi_lineages_2021-04-23.csv
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/aceID-taxID-species.tsv
+    jobid: 90
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer13
+
+[Mon May 10 11:46:24 2021]
+Finished job 55.
+8 of 110 steps (7%) done
+Select jobs to execute...
+
+[Mon May 10 11:46:24 2021]
+rule removeDuplicateSeq:
+    input: /datater/wu/data/coronavirusCurated.fasta
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated.uniq
+    jobid: 2
+    wildcards: sample=coronavirusCurated
+
+[Mon May 10 11:46:24 2021]
+Finished job 2.
+9 of 110 steps (8%) done
+Select jobs to execute...
+
+[Mon May 10 11:46:24 2021]
+rule clustering:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated.uniq
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.uniq
+    jobid: 54
+    wildcards: sample=coronavirusCurated
+
+[Mon May 10 11:46:35 2021]
+Finished job 8.
+10 of 110 steps (9%) done
+Select jobs to execute...
+
+[Mon May 10 11:46:35 2021]
+rule countAllKmer2:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/allKmerCount.int.kmc_pre, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/allKmerCount.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/allKmerCount.txt
+    jobid: 14
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer13
+
+[Mon May 10 11:46:36 2021]
+Finished job 14.
+11 of 110 steps (10%) done
+Select jobs to execute...
+
+[Mon May 10 11:46:36 2021]
+rule sortAllKmer:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/allKmerCount.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/allKmerCount.sorted.txt
+    jobid: 20
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer13
+
+[Mon May 10 11:46:37 2021]
+Finished job 20.
+12 of 110 steps (11%) done
+Select jobs to execute...
+
+[Mon May 10 11:46:37 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/allKmerCount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/allKmerCount.sorted.calculated.txt
+    jobid: 26
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer13
+
+[Mon May 10 11:46:37 2021]
+Finished job 4.
+13 of 110 steps (12%) done
+Select jobs to execute...
+
+[Mon May 10 11:46:37 2021]
+rule countAllKmer2:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.int.kmc_pre, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.txt
+    jobid: 10
+    wildcards: sample=enterovirusCurated, kmerSize=kmer13
+
+[Mon May 10 11:46:38 2021]
+Finished job 10.
+14 of 110 steps (13%) done
+Select jobs to execute...
+
+[Mon May 10 11:46:38 2021]
+rule sortAllKmer:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.txt
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.sorted.txt
+    jobid: 16
+    wildcards: sample=enterovirusCurated, kmerSize=kmer13
+
+[Mon May 10 11:46:38 2021]
+Finished job 6.
+15 of 110 steps (14%) done
+[Mon May 10 11:46:38 2021]
+Finished job 16.
+16 of 110 steps (15%) done
+Select jobs to execute...
+
+[Mon May 10 11:46:38 2021]
+rule MSA:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.uniq
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.msa
+    log: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/log/mafft.log
+    jobid: 58
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2
+
+
+[Mon May 10 11:46:38 2021]
+rule sortAllKmer:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/allKmerCount.txt
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/allKmerCount.sorted.txt
+    jobid: 17
+    wildcards: sample=enterovirusCurated, kmerSize=kmer15
+
+Select jobs to execute...
+[Mon May 10 11:46:39 2021]
+Finished job 17.
+17 of 110 steps (15%) done
+Select jobs to execute...
+
+[Mon May 10 11:46:39 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/allKmerCount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/allKmerCount.sorted.calculated.txt
+    jobid: 23
+    wildcards: sample=enterovirusCurated, kmerSize=kmer15
+
+[Mon May 10 11:46:42 2021]
+Finished job 40.
+18 of 110 steps (16%) done
+Select jobs to execute...
+
+[Mon May 10 11:46:42 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/allKmerCount.sorted.calculated.txt
+    jobid: 22
+    wildcards: sample=enterovirusCurated, kmerSize=kmer13
+
+[Mon May 10 11:46:46 2021]
+Finished job 54.
+19 of 110 steps (17%) done
+Select jobs to execute...
+
+[Mon May 10 11:46:46 2021]
+rule MSA:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.uniq
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.msa
+    log: /datater/wu/data/MSSPE-variant/coronavirusCurated/log/mafft.log
+    jobid: 57
+    wildcards: sample=coronavirusCurated
+
+[Mon May 10 11:47:23 2021]
+Finished job 22.
+20 of 110 steps (18%) done
+Select jobs to execute...
+
+[Mon May 10 11:47:23 2021]
+rule countAllKmer2:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/allKmerCount.int.kmc_pre, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/allKmerCount.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/allKmerCount.txt
+    jobid: 12
+    wildcards: sample=coronavirusCurated, kmerSize=kmer13
+
+[Mon May 10 11:47:23 2021]
+Finished job 12.
+21 of 110 steps (19%) done
+Select jobs to execute...
+
+[Mon May 10 11:47:23 2021]
+rule getKmerPosition1:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/allKmerCount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.fasta
+    jobid: 59
+    wildcards: sample=enterovirusCurated, kmerSize=kmer13
+
+[Mon May 10 11:47:25 2021]
+Finished job 23.
+22 of 110 steps (20%) done
+Select jobs to execute...
+
+[Mon May 10 11:47:25 2021]
+rule filtering2:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/allKmerCount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/allKmerCount.sorted.calculated.filtered.txt
+    jobid: 29
+    wildcards: sample=enterovirusCurated, kmerSize=kmer15
+
+[Mon May 10 11:47:27 2021]
+Finished job 59.
+23 of 110 steps (21%) done
+Select jobs to execute...
+
+[Mon May 10 11:47:27 2021]
+rule filtering2:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/allKmerCount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/allKmerCount.sorted.calculated.filtered.txt
+    jobid: 28
+    wildcards: sample=enterovirusCurated, kmerSize=kmer13
+
+[Mon May 10 11:47:31 2021]
+Finished job 29.
+24 of 110 steps (22%) done
+Select jobs to execute...
+
+[Mon May 10 11:47:31 2021]
+rule specific1:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/allKmerCount.sorted.calculated.filtered.txt
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.fasta
+    jobid: 35
+    wildcards: sample=enterovirusCurated, kmerSize=kmer15
+
+[Mon May 10 11:47:32 2021]
+Finished job 28.
+25 of 110 steps (23%) done
+Select jobs to execute...
+
+[Mon May 10 11:47:32 2021]
+rule specific1:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/allKmerCount.sorted.calculated.filtered.txt
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.fasta
+    jobid: 34
+    wildcards: sample=enterovirusCurated, kmerSize=kmer13
+
+[Mon May 10 11:47:34 2021]
+Finished job 35.
+26 of 110 steps (24%) done
+Select jobs to execute...
+
+[Mon May 10 11:47:34 2021]
+rule specific3:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.fasta, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.2.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.3.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.4.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.2.ebwt
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.bowtie
+    jobid: 42
+    wildcards: sample=enterovirusCurated, kmerSize=kmer15
+
+[Mon May 10 11:47:35 2021]
+Finished job 42.
+27 of 110 steps (25%) done
+Select jobs to execute...
+
+[Mon May 10 11:47:35 2021]
+rule sortAllKmer:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/allKmerCount.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/allKmerCount.sorted.txt
+    jobid: 18
+    wildcards: sample=coronavirusCurated, kmerSize=kmer13
+
+[Mon May 10 11:47:35 2021]
+Finished job 34.
+28 of 110 steps (25%) done
+Select jobs to execute...
+
+[Mon May 10 11:47:35 2021]
+rule specific4:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.bowtie, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/allKmerCount.sorted.calculated.filtered.txt
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt
+    jobid: 48
+    wildcards: sample=enterovirusCurated, kmerSize=kmer15
+
+[Mon May 10 11:47:36 2021]
+Finished job 18.
+29 of 110 steps (26%) done
+Select jobs to execute...
+
+[Mon May 10 11:47:36 2021]
+rule countAllKmer2:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/allKmerCount.int.kmc_pre, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/allKmerCount.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/allKmerCount.txt
+    jobid: 15
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer15
+
+[Mon May 10 11:47:36 2021]
+Finished job 15.
+30 of 110 steps (27%) done
+Select jobs to execute...
+
+[Mon May 10 11:47:37 2021]
+rule sortAllKmer:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/allKmerCount.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/allKmerCount.sorted.txt
+    jobid: 21
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer15
+
+[Mon May 10 11:47:38 2021]
+Finished job 21.
+31 of 110 steps (28%) done
+Select jobs to execute...
+
+[Mon May 10 11:47:38 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/allKmerCount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/allKmerCount.sorted.calculated.txt
+    jobid: 27
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer15
+
+[Mon May 10 11:47:42 2021]
+Finished job 48.
+32 of 110 steps (29%) done
+Select jobs to execute...
+
+[Mon May 10 11:47:42 2021]
+rule countAllKmer2:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/allKmerCount.int.kmc_pre, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/allKmerCount.int.kmc_suf
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/allKmerCount.txt
+    jobid: 13
+    wildcards: sample=coronavirusCurated, kmerSize=kmer15
+
+[Mon May 10 11:47:43 2021]
+Finished job 13.
+33 of 110 steps (30%) done
+Select jobs to execute...
+
+[Mon May 10 11:47:43 2021]
+rule sortAllKmer:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/allKmerCount.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/allKmerCount.sorted.txt
+    jobid: 19
+    wildcards: sample=coronavirusCurated, kmerSize=kmer15
+
+[Mon May 10 11:47:44 2021]
+Finished job 19.
+34 of 110 steps (31%) done
+Select jobs to execute...
+
+[Mon May 10 11:47:44 2021]
+rule getKmerPosition1:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/allKmerCount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.fasta
+    jobid: 60
+    wildcards: sample=enterovirusCurated, kmerSize=kmer15
+
+[Mon May 10 11:47:48 2021]
+Finished job 60.
+35 of 110 steps (32%) done
+Select jobs to execute...
+
+[Mon May 10 11:47:48 2021]
+rule specific3:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.fasta, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.2.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.3.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.4.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.2.ebwt
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.bowtie
+    jobid: 41
+    wildcards: sample=enterovirusCurated, kmerSize=kmer13
+
+[Mon May 10 11:47:49 2021]
+Finished job 41.
+36 of 110 steps (33%) done
+Select jobs to execute...
+
+[Mon May 10 11:47:49 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/allKmerCount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/allKmerCount.sorted.calculated.txt
+    jobid: 24
+    wildcards: sample=coronavirusCurated, kmerSize=kmer13
+
+[Mon May 10 11:47:51 2021]
+Finished job 56.
+37 of 110 steps (34%) done
+Select jobs to execute...
+
+[Mon May 10 11:47:51 2021]
+rule getKmerPosition2:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa.DB.1.ebwt, /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa.DB.2.ebwt, /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa.DB.3.ebwt, /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa.DB.4.ebwt, /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa.DB.rev.1.ebwt, /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa.DB.rev.2.ebwt
+    jobid: 65
+    wildcards: sample=enterovirusCurated
+
+[Mon May 10 11:47:51 2021]
+Finished job 26.
+38 of 110 steps (35%) done
+Select jobs to execute...
+
+[Mon May 10 11:47:51 2021]
+rule filtering2:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/allKmerCount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/allKmerCount.sorted.calculated.filtered.txt
+    jobid: 32
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer13
+
+[Mon May 10 11:47:52 2021]
+Finished job 65.
+39 of 110 steps (35%) done
+Select jobs to execute...
+
+[Mon May 10 11:47:52 2021]
+rule getKmerPosition3:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.fasta, /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa.DB.1.ebwt, /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa.DB.2.ebwt, /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa.DB.3.ebwt, /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa.DB.4.ebwt, /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa.DB.rev.1.ebwt, /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa.DB.rev.2.ebwt
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.bowtie
+    jobid: 68
+    wildcards: sample=enterovirusCurated, kmerSize=kmer13
+
+[Mon May 10 11:47:52 2021]
+Finished job 68.
+40 of 110 steps (36%) done
+Select jobs to execute...
+
+[Mon May 10 11:47:52 2021]
+rule filtering1:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/allKmerCount.sorted.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/allKmerCount.sorted.calculated.txt
+    jobid: 25
+    wildcards: sample=coronavirusCurated, kmerSize=kmer15
+
+[Mon May 10 11:47:55 2021]
+Finished job 32.
+41 of 110 steps (37%) done
+Select jobs to execute...
+
+[Mon May 10 11:47:55 2021]
+rule specific1:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/allKmerCount.sorted.calculated.filtered.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.fasta
+    jobid: 38
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer13
+
+[Mon May 10 11:47:56 2021]
+Finished job 38.
+42 of 110 steps (38%) done
+Select jobs to execute...
+
+[Mon May 10 11:47:56 2021]
+rule getKmerPosition4:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.bowtie, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/allKmerCount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.position
+    jobid: 74
+    wildcards: sample=enterovirusCurated, kmerSize=kmer13
+
+[Mon May 10 11:48:03 2021]
+Finished job 74.
+43 of 110 steps (39%) done
+Select jobs to execute...
+
+[Mon May 10 11:48:03 2021]
+rule getKmerPosition1:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/allKmerCount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/allKmerCount.sorted.calculated.fasta
+    jobid: 63
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer13
+
+[Mon May 10 11:48:07 2021]
+Finished job 63.
+44 of 110 steps (40%) done
+Select jobs to execute...
+
+[Mon May 10 11:48:07 2021]
+rule specific4:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.bowtie, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/allKmerCount.sorted.calculated.filtered.txt
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/allKmerCount.sorted.calculated.filtered.spec.txt
+    jobid: 47
+    wildcards: sample=enterovirusCurated, kmerSize=kmer13
+
+[Mon May 10 11:48:09 2021]
+Finished job 47.
+45 of 110 steps (41%) done
+Select jobs to execute...
+
+[Mon May 10 11:48:09 2021]
+rule evaluation4:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.position, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/allKmerCount.sorted.calculated.filtered.txt, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/allKmerCount.sorted.calculated.filtered.spec.txt
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/evaluation/allOligo_before.tsv, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/evaluation/allOligo_after1.tsv, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/evaluation/allOligo_after2.tsv
+    jobid: 98
+    wildcards: sample=enterovirusCurated, kmerSize=kmer13
+
+[Mon May 10 11:48:13 2021]
+Finished job 98.
+46 of 110 steps (42%) done
+Select jobs to execute...
+
+[Mon May 10 11:48:13 2021]
+rule checkHeterodimer:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.position, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/allKmerCount.sorted.calculated.filtered.spec.txt
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/allOligo.set
+    jobid: 80
+    wildcards: sample=enterovirusCurated, kmerSize=kmer13
+
+[Mon May 10 11:48:16 2021]
+Finished job 80.
+47 of 110 steps (43%) done
+Select jobs to execute...
+
+[Mon May 10 11:48:16 2021]
+rule evaluation3:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/allOligo.set
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/evaluation/allOligo_after3.tsv
+    jobid: 104
+    wildcards: sample=enterovirusCurated, kmerSize=kmer13
+
+[Mon May 10 11:48:16 2021]
+Finished job 104.
+48 of 110 steps (44%) done
+Select jobs to execute...
+
+[Mon May 10 11:48:16 2021]
+rule specific3:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.fasta, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.2.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.3.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.4.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.2.ebwt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.bowtie
+    jobid: 45
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer13
+
+[Mon May 10 11:48:17 2021]
+Finished job 45.
+49 of 110 steps (45%) done
+Select jobs to execute...
+
+[Mon May 10 11:48:17 2021]
+rule getKmerPosition3:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.fasta, /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa.DB.1.ebwt, /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa.DB.2.ebwt, /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa.DB.3.ebwt, /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa.DB.4.ebwt, /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa.DB.rev.1.ebwt, /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa.DB.rev.2.ebwt
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.bowtie
+    jobid: 69
+    wildcards: sample=enterovirusCurated, kmerSize=kmer15
+
+[Mon May 10 11:48:17 2021]
+Finished job 69.
+50 of 110 steps (45%) done
+Select jobs to execute...
+
+[Mon May 10 11:48:17 2021]
+rule getKmerPosition4:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.bowtie, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/allKmerCount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.position
+    jobid: 75
+    wildcards: sample=enterovirusCurated, kmerSize=kmer15
+
+[Mon May 10 11:48:23 2021]
+Finished job 75.
+51 of 110 steps (46%) done
+Select jobs to execute...
+
+[Mon May 10 11:48:23 2021]
+rule checkHeterodimer:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.position, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/allOligo.set
+    jobid: 81
+    wildcards: sample=enterovirusCurated, kmerSize=kmer15
+
+[Mon May 10 11:48:27 2021]
+Finished job 81.
+52 of 110 steps (47%) done
+Select jobs to execute...
+
+[Mon May 10 11:48:27 2021]
+rule specific4:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.bowtie, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/allKmerCount.sorted.calculated.filtered.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/allKmerCount.sorted.calculated.filtered.spec.txt
+    jobid: 51
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer13
+
+[Mon May 10 11:48:30 2021]
+Finished job 51.
+53 of 110 steps (48%) done
+Select jobs to execute...
+
+[Mon May 10 11:48:30 2021]
+rule evaluation3:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/allOligo.set
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/evaluation/allOligo_after3.tsv
+    jobid: 105
+    wildcards: sample=enterovirusCurated, kmerSize=kmer15
+
+[Mon May 10 11:48:30 2021]
+Finished job 105.
+54 of 110 steps (49%) done
+Select jobs to execute...
+
+[Mon May 10 11:48:30 2021]
+rule evaluation4:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.position, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/allKmerCount.sorted.calculated.filtered.txt, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/evaluation/allOligo_before.tsv, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/evaluation/allOligo_after1.tsv, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/evaluation/allOligo_after2.tsv
+    jobid: 99
+    wildcards: sample=enterovirusCurated, kmerSize=kmer15
+
+[Mon May 10 11:48:33 2021]
+Finished job 99.
+55 of 110 steps (50%) done
+[Mon May 10 11:48:51 2021]
+Finished job 24.
+56 of 110 steps (51%) done
+Select jobs to execute...
+
+[Mon May 10 11:48:51 2021]
+rule filtering2:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/allKmerCount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/allKmerCount.sorted.calculated.filtered.txt
+    jobid: 30
+    wildcards: sample=coronavirusCurated, kmerSize=kmer13
+
+[Mon May 10 11:48:51 2021]
+rule getKmerPosition1:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/allKmerCount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.fasta
+    jobid: 61
+    wildcards: sample=coronavirusCurated, kmerSize=kmer13
+
+[Mon May 10 11:48:54 2021]
+Finished job 30.
+57 of 110 steps (52%) done
+Select jobs to execute...
+
+[Mon May 10 11:48:54 2021]
+rule specific1:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/allKmerCount.sorted.calculated.filtered.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.fasta
+    jobid: 36
+    wildcards: sample=coronavirusCurated, kmerSize=kmer13
+
+[Mon May 10 11:48:54 2021]
+Finished job 61.
+58 of 110 steps (53%) done
+[Mon May 10 11:48:56 2021]
+Finished job 36.
+59 of 110 steps (54%) done
+Select jobs to execute...
+
+[Mon May 10 11:48:56 2021]
+rule specific3:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.fasta, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.2.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.3.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.4.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.2.ebwt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.bowtie
+    jobid: 43
+    wildcards: sample=coronavirusCurated, kmerSize=kmer13
+
+[Mon May 10 11:48:56 2021]
+Finished job 27.
+60 of 110 steps (55%) done
+Select jobs to execute...
+
+[Mon May 10 11:48:56 2021]
+rule filtering2:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/allKmerCount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/allKmerCount.sorted.calculated.filtered.txt
+    jobid: 33
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer15
+
+[Mon May 10 11:48:56 2021]
+rule getKmerPosition1:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/allKmerCount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/allKmerCount.sorted.calculated.fasta
+    jobid: 64
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer15
+
+[Mon May 10 11:48:56 2021]
+Finished job 43.
+61 of 110 steps (55%) done
+Select jobs to execute...
+
+[Mon May 10 11:48:56 2021]
+rule specific4:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.bowtie, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/allKmerCount.sorted.calculated.filtered.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/allKmerCount.sorted.calculated.filtered.spec.txt
+    jobid: 49
+    wildcards: sample=coronavirusCurated, kmerSize=kmer13
+
+[Mon May 10 11:48:58 2021]
+Finished job 49.
+62 of 110 steps (56%) done
+[Mon May 10 11:48:59 2021]
+Finished job 33.
+63 of 110 steps (57%) done
+Select jobs to execute...
+
+[Mon May 10 11:48:59 2021]
+rule specific1:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/allKmerCount.sorted.calculated.filtered.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.fasta
+    jobid: 39
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer15
+
+[Mon May 10 11:48:59 2021]
+Finished job 64.
+64 of 110 steps (58%) done
+[Mon May 10 11:49:00 2021]
+Finished job 39.
+65 of 110 steps (59%) done
+Select jobs to execute...
+
+[Mon May 10 11:49:00 2021]
+rule specific3:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.fasta, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.2.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.3.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.4.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.2.ebwt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.bowtie
+    jobid: 46
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer15
+
+[Mon May 10 11:49:00 2021]
+Finished job 46.
+66 of 110 steps (60%) done
+Select jobs to execute...
+
+[Mon May 10 11:49:00 2021]
+rule specific4:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.bowtie, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/allKmerCount.sorted.calculated.filtered.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt
+    jobid: 52
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer15
+
+[Mon May 10 11:49:03 2021]
+Finished job 52.
+67 of 110 steps (61%) done
+[Mon May 10 11:49:14 2021]
+Finished job 25.
+68 of 110 steps (62%) done
+Select jobs to execute...
+
+[Mon May 10 11:49:14 2021]
+rule getKmerPosition1:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/allKmerCount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.fasta
+    jobid: 62
+    wildcards: sample=coronavirusCurated, kmerSize=kmer15
+
+[Mon May 10 11:49:14 2021]
+rule filtering2:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/allKmerCount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/allKmerCount.sorted.calculated.filtered.txt
+    jobid: 31
+    wildcards: sample=coronavirusCurated, kmerSize=kmer15
+
+[Mon May 10 11:49:17 2021]
+Finished job 62.
+69 of 110 steps (63%) done
+[Mon May 10 11:49:17 2021]
+Finished job 31.
+70 of 110 steps (64%) done
+Select jobs to execute...
+
+[Mon May 10 11:49:17 2021]
+rule specific1:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/allKmerCount.sorted.calculated.filtered.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.fasta
+    jobid: 37
+    wildcards: sample=coronavirusCurated, kmerSize=kmer15
+
+[Mon May 10 11:49:18 2021]
+Finished job 37.
+71 of 110 steps (65%) done
+Select jobs to execute...
+
+[Mon May 10 11:49:19 2021]
+rule specific3:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.fasta, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.2.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.3.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.4.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.2.ebwt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.bowtie
+    jobid: 44
+    wildcards: sample=coronavirusCurated, kmerSize=kmer15
+
+[Mon May 10 11:49:19 2021]
+Finished job 44.
+72 of 110 steps (65%) done
+Select jobs to execute...
+
+[Mon May 10 11:49:19 2021]
+rule specific4:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.bowtie, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/allKmerCount.sorted.calculated.filtered.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt
+    jobid: 50
+    wildcards: sample=coronavirusCurated, kmerSize=kmer15
+
+[Mon May 10 11:49:22 2021]
+Finished job 50.
+73 of 110 steps (66%) done
+[Mon May 10 11:50:32 2021]
+Finished job 88.
+74 of 110 steps (67%) done
+[Mon May 10 11:50:35 2021]
+Finished job 86.
+75 of 110 steps (68%) done
+Select jobs to execute...
+
+[Mon May 10 11:50:35 2021]
+rule evaluation2:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/allOligo.set, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/aceID-taxID-species.tsv, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.bowtie
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/evaluation/allOligo.set.coverage
+    jobid: 92
+    wildcards: sample=enterovirusCurated, kmerSize=kmer13
+
+[Mon May 10 11:50:37 2021]
+Finished job 92.
+76 of 110 steps (69%) done
+[Mon May 10 11:50:42 2021]
+Finished job 87.
+77 of 110 steps (70%) done
+Select jobs to execute...
+
+[Mon May 10 11:50:42 2021]
+rule evaluation2:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/allOligo.set, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/aceID-taxID-species.tsv, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.bowtie
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/evaluation/allOligo.set.coverage
+    jobid: 93
+    wildcards: sample=enterovirusCurated, kmerSize=kmer15
+
+[Mon May 10 11:50:42 2021]
+Finished job 90.
+78 of 110 steps (71%) done
+[Mon May 10 11:50:43 2021]
+Finished job 91.
+79 of 110 steps (72%) done
+[Mon May 10 11:50:44 2021]
+Finished job 93.
+80 of 110 steps (73%) done
+[Mon May 10 11:50:50 2021]
+Finished job 89.
+81 of 110 steps (74%) done
+[Mon May 10 11:57:02 2021]
+Finished job 58.
+82 of 110 steps (75%) done
+Select jobs to execute...
+
+[Mon May 10 11:57:02 2021]
+rule getKmerPosition2:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.msa
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.msa.DB.1.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.msa.DB.2.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.msa.DB.3.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.msa.DB.4.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.msa.DB.rev.1.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.msa.DB.rev.2.ebwt
+    jobid: 67
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2
+
+[Mon May 10 11:57:05 2021]
+Finished job 67.
+83 of 110 steps (75%) done
+Select jobs to execute...
+
+[Mon May 10 11:57:05 2021]
+rule getKmerPosition3:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/allKmerCount.sorted.calculated.fasta, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.msa.DB.1.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.msa.DB.2.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.msa.DB.3.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.msa.DB.4.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.msa.DB.rev.1.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.msa.DB.rev.2.ebwt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/allKmerCount.sorted.calculated.bowtie
+    jobid: 73
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer15
+
+
+[Mon May 10 11:57:05 2021]
+rule getKmerPosition3:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/allKmerCount.sorted.calculated.fasta, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.msa.DB.1.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.msa.DB.2.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.msa.DB.3.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.msa.DB.4.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.msa.DB.rev.1.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.msa.DB.rev.2.ebwt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/allKmerCount.sorted.calculated.bowtie
+    jobid: 72
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer13
+
+[Mon May 10 11:57:05 2021]
+Finished job 73.
+84 of 110 steps (76%) done
+Select jobs to execute...
+
+[Mon May 10 11:57:05 2021]
+rule getKmerPosition4:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/allKmerCount.sorted.calculated.bowtie, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/allKmerCount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/allKmerCount.sorted.calculated.position
+    jobid: 79
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer15
+
+[Mon May 10 11:57:06 2021]
+Finished job 72.
+85 of 110 steps (77%) done
+Select jobs to execute...
+
+[Mon May 10 11:57:06 2021]
+rule getKmerPosition4:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/allKmerCount.sorted.calculated.bowtie, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/allKmerCount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/allKmerCount.sorted.calculated.position
+    jobid: 78
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer13
+
+[Mon May 10 11:57:13 2021]
+Finished job 78.
+86 of 110 steps (78%) done
+Select jobs to execute...
+
+[Mon May 10 11:57:13 2021]
+rule evaluation4:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.msa, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/allKmerCount.sorted.calculated.position, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/allKmerCount.sorted.calculated.filtered.txt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/allKmerCount.sorted.calculated.filtered.spec.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/evaluation/allOligo_before.tsv, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/evaluation/allOligo_after1.tsv, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/evaluation/allOligo_after2.tsv
+    jobid: 102
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer13
+
+[Mon May 10 11:57:13 2021]
+rule checkHeterodimer:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.msa, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/allKmerCount.sorted.calculated.position, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/allKmerCount.sorted.calculated.filtered.spec.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/allOligo.set
+    jobid: 84
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer13
+
+[Mon May 10 11:57:14 2021]
+Finished job 79.
+87 of 110 steps (79%) done
+Select jobs to execute...
+
+[Mon May 10 11:57:14 2021]
+rule evaluation4:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.msa, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/allKmerCount.sorted.calculated.position, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/allKmerCount.sorted.calculated.filtered.txt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/evaluation/allOligo_before.tsv, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/evaluation/allOligo_after1.tsv, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/evaluation/allOligo_after2.tsv
+    jobid: 103
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer15
+
+[Mon May 10 11:57:14 2021]
+rule checkHeterodimer:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.msa, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/allKmerCount.sorted.calculated.position, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/allOligo.set
+    jobid: 85
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer15
+
+[Mon May 10 11:57:15 2021]
+Finished job 102.
+88 of 110 steps (80%) done
+[Mon May 10 11:57:16 2021]
+Finished job 103.
+89 of 110 steps (81%) done
+[Mon May 10 11:57:19 2021]
+Finished job 84.
+90 of 110 steps (82%) done
+Select jobs to execute...
+
+[Mon May 10 11:57:19 2021]
+rule evaluation2:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/allOligo.set, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/aceID-taxID-species.tsv, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/allKmerCount.sorted.calculated.bowtie
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/evaluation/allOligo.set.coverage
+    jobid: 96
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer13
+
+[Mon May 10 11:57:19 2021]
+rule evaluation3:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/allOligo.set
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/evaluation/allOligo_after3.tsv
+    jobid: 108
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer13
+
+[Mon May 10 11:57:19 2021]
+Finished job 108.
+91 of 110 steps (83%) done
+[Mon May 10 11:57:22 2021]
+Finished job 85.
+92 of 110 steps (84%) done
+Select jobs to execute...
+
+[Mon May 10 11:57:22 2021]
+rule evaluation2:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/allOligo.set, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/aceID-taxID-species.tsv, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/allKmerCount.sorted.calculated.bowtie
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/evaluation/allOligo.set.coverage
+    jobid: 97
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer15
+
+[Mon May 10 11:57:22 2021]
+rule evaluation3:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/allOligo.set
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/evaluation/allOligo_after3.tsv
+    jobid: 109
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer15
+
+[Mon May 10 11:57:22 2021]
+Finished job 109.
+93 of 110 steps (85%) done
+[Mon May 10 11:57:23 2021]
+Finished job 96.
+94 of 110 steps (85%) done
+[Mon May 10 11:57:26 2021]
+Finished job 97.
+95 of 110 steps (86%) done
+[Mon May 10 11:57:29 2021]
+Finished job 57.
+96 of 110 steps (87%) done
+Select jobs to execute...
+
+[Mon May 10 11:57:29 2021]
+rule getKmerPosition2:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.msa
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.msa.DB.1.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.msa.DB.2.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.msa.DB.3.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.msa.DB.4.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.msa.DB.rev.1.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.msa.DB.rev.2.ebwt
+    jobid: 66
+    wildcards: sample=coronavirusCurated
+
+[Mon May 10 11:57:32 2021]
+Finished job 66.
+97 of 110 steps (88%) done
+Select jobs to execute...
+
+[Mon May 10 11:57:32 2021]
+rule getKmerPosition3:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.fasta, /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.msa.DB.1.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.msa.DB.2.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.msa.DB.3.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.msa.DB.4.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.msa.DB.rev.1.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.msa.DB.rev.2.ebwt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.bowtie
+    jobid: 70
+    wildcards: sample=coronavirusCurated, kmerSize=kmer13
+
+
+[Mon May 10 11:57:32 2021]
+rule getKmerPosition3:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.fasta, /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.msa.DB.1.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.msa.DB.2.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.msa.DB.3.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.msa.DB.4.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.msa.DB.rev.1.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.msa.DB.rev.2.ebwt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.bowtie
+    jobid: 71
+    wildcards: sample=coronavirusCurated, kmerSize=kmer15
+
+[Mon May 10 11:57:33 2021]
+Finished job 70.
+98 of 110 steps (89%) done
+Select jobs to execute...
+
+[Mon May 10 11:57:33 2021]
+rule getKmerPosition4:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.bowtie, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/allKmerCount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.position
+    jobid: 76
+    wildcards: sample=coronavirusCurated, kmerSize=kmer13
+
+[Mon May 10 11:57:33 2021]
+Finished job 71.
+99 of 110 steps (90%) done
+Select jobs to execute...
+
+[Mon May 10 11:57:33 2021]
+rule getKmerPosition4:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.bowtie, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/allKmerCount.sorted.calculated.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.position
+    jobid: 77
+    wildcards: sample=coronavirusCurated, kmerSize=kmer15
+
+[Mon May 10 11:57:41 2021]
+Finished job 76.
+100 of 110 steps (91%) done
+Select jobs to execute...
+
+[Mon May 10 11:57:41 2021]
+rule evaluation4:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.msa, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.position, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/allKmerCount.sorted.calculated.filtered.txt, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/allKmerCount.sorted.calculated.filtered.spec.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/evaluation/allOligo_before.tsv, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/evaluation/allOligo_after1.tsv, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/evaluation/allOligo_after2.tsv
+    jobid: 100
+    wildcards: sample=coronavirusCurated, kmerSize=kmer13
+
+[Mon May 10 11:57:41 2021]
+rule checkHeterodimer:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.msa, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.position, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/allKmerCount.sorted.calculated.filtered.spec.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/allOligo.set
+    jobid: 82
+    wildcards: sample=coronavirusCurated, kmerSize=kmer13
+
+[Mon May 10 11:57:41 2021]
+Finished job 77.
+101 of 110 steps (92%) done
+Select jobs to execute...
+
+[Mon May 10 11:57:41 2021]
+rule evaluation4:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.msa, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.position, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/allKmerCount.sorted.calculated.filtered.txt, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/evaluation/allOligo_before.tsv, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/evaluation/allOligo_after1.tsv, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/evaluation/allOligo_after2.tsv
+    jobid: 101
+    wildcards: sample=coronavirusCurated, kmerSize=kmer15
+
+[Mon May 10 11:57:41 2021]
+rule checkHeterodimer:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.msa, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.position, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/allOligo.set
+    jobid: 83
+    wildcards: sample=coronavirusCurated, kmerSize=kmer15
+
+[Mon May 10 11:57:43 2021]
+Finished job 100.
+102 of 110 steps (93%) done
+[Mon May 10 11:57:43 2021]
+Finished job 101.
+103 of 110 steps (94%) done
+[Mon May 10 11:57:47 2021]
+Finished job 82.
+104 of 110 steps (95%) done
+Select jobs to execute...
+
+[Mon May 10 11:57:47 2021]
+rule evaluation2:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/allOligo.set, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/aceID-taxID-species.tsv, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.bowtie
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/evaluation/allOligo.set.coverage
+    jobid: 94
+    wildcards: sample=coronavirusCurated, kmerSize=kmer13
+
+[Mon May 10 11:57:47 2021]
+rule evaluation3:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/allOligo.set
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/evaluation/allOligo_after3.tsv
+    jobid: 106
+    wildcards: sample=coronavirusCurated, kmerSize=kmer13
+
+[Mon May 10 11:57:47 2021]
+Finished job 106.
+105 of 110 steps (95%) done
+[Mon May 10 11:57:50 2021]
+Finished job 83.
+106 of 110 steps (96%) done
+Select jobs to execute...
+
+[Mon May 10 11:57:50 2021]
+rule evaluation2:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/allOligo.set, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/aceID-taxID-species.tsv, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.bowtie
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/evaluation/allOligo.set.coverage
+    jobid: 95
+    wildcards: sample=coronavirusCurated, kmerSize=kmer15
+
+[Mon May 10 11:57:50 2021]
+rule evaluation3:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/allOligo.set
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/evaluation/allOligo_after3.tsv
+    jobid: 107
+    wildcards: sample=coronavirusCurated, kmerSize=kmer15
+
+[Mon May 10 11:57:50 2021]
+Finished job 107.
+107 of 110 steps (97%) done
+[Mon May 10 11:57:51 2021]
+Finished job 94.
+108 of 110 steps (98%) done
+[Mon May 10 11:57:54 2021]
+Finished job 95.
+109 of 110 steps (99%) done
+Select jobs to execute...
+
+[Mon May 10 11:57:54 2021]
+localrule all:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated.uniq, /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated.uniq, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov2.uniq, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.int.kmc_pre, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/allKmerCount.int.kmc_pre, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/allKmerCount.int.kmc_pre, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/allKmerCount.int.kmc_pre, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/allKmerCount.int.kmc_pre, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/allKmerCount.int.kmc_pre, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.int.kmc_suf, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/allKmerCount.int.kmc_suf, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/allKmerCount.int.kmc_suf, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/allKmerCount.int.kmc_suf, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/allKmerCount.int.kmc_suf, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/allKmerCount.int.kmc_suf, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.txt, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/allKmerCount.txt, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/allKmerCount.txt, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/allKmerCount.txt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/allKmerCount.txt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/allKmerCount.txt, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.sorted.txt, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/allKmerCount.sorted.txt, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/allKmerCount.sorted.txt, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/allKmerCount.sorted.txt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/allKmerCount.sorted.txt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/allKmerCount.sorted.txt, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/allKmerCount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/allKmerCount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/allKmerCount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/allKmerCount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/allKmerCount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/allKmerCount.sorted.calculated.txt, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/allKmerCount.sorted.calculated.filtered.txt, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/allKmerCount.sorted.calculated.filtered.txt, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/allKmerCount.sorted.calculated.filtered.txt, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/allKmerCount.sorted.calculated.filtered.txt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/allKmerCount.sorted.calculated.filtered.txt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/allKmerCount.sorted.calculated.filtered.txt, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.fasta, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.fasta, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.fasta, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.fasta, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.fasta, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.fasta, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.2.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.3.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.4.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.1.ebwt, /datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna.DB.rev.2.ebwt, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.bowtie, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.bowtie, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.bowtie, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.bowtie, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/allKmerCount.sorted.calculated.filtered.bowtie, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/allKmerCount.sorted.calculated.filtered.bowtie, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/allKmerCount.sorted.calculated.filtered.spec.txt, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/allKmerCount.sorted.calculated.filtered.spec.txt, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/allKmerCount.sorted.calculated.filtered.spec.txt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/allKmerCount.sorted.calculated.filtered.spec.txt, /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.uniq, /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.uniq, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.uniq, /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa, /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.msa, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.msa, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.fasta, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.fasta, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.fasta, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.fasta, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/allKmerCount.sorted.calculated.fasta, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/allKmerCount.sorted.calculated.fasta, /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa.DB.1.ebwt, /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa.DB.2.ebwt, /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa.DB.3.ebwt, /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa.DB.4.ebwt, /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa.DB.rev.1.ebwt, /datater/wu/data/MSSPE-variant/enterovirusCurated/enterovirusCurated0.99.msa.DB.rev.2.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.msa.DB.1.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.msa.DB.2.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.msa.DB.3.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.msa.DB.4.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.msa.DB.rev.1.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCurated/coronavirusCurated0.99.msa.DB.rev.2.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.msa.DB.1.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.msa.DB.2.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.msa.DB.3.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.msa.DB.4.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.msa.DB.rev.1.ebwt, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/coronavirusCuratedWithoutSarsCov20.99.msa.DB.rev.2.ebwt, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.bowtie, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.bowtie, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.bowtie, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.bowtie, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/allKmerCount.sorted.calculated.bowtie, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/allKmerCount.sorted.calculated.bowtie, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.position, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.position, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.position, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.position, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/allKmerCount.sorted.calculated.position, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/allKmerCount.sorted.calculated.position, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/allOligo.set, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/allOligo.set, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/allOligo.set, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/allOligo.set, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/allOligo.set, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/allOligo.set, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/aceID-taxID-species.tsv, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/aceID-taxID-species.tsv, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/aceID-taxID-species.tsv, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/aceID-taxID-species.tsv, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/aceID-taxID-species.tsv, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/aceID-taxID-species.tsv, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/evaluation/allOligo.set.coverage, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/evaluation/allOligo.set.coverage, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/evaluation/allOligo.set.coverage, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/evaluation/allOligo.set.coverage, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/evaluation/allOligo.set.coverage, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/evaluation/allOligo.set.coverage, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/evaluation/allOligo_before.tsv, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/evaluation/allOligo_before.tsv, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/evaluation/allOligo_before.tsv, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/evaluation/allOligo_before.tsv, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/evaluation/allOligo_before.tsv, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/evaluation/allOligo_before.tsv, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/evaluation/allOligo_after1.tsv, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/evaluation/allOligo_after1.tsv, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/evaluation/allOligo_after1.tsv, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/evaluation/allOligo_after1.tsv, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/evaluation/allOligo_after1.tsv, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/evaluation/allOligo_after1.tsv, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/evaluation/allOligo_after2.tsv, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/evaluation/allOligo_after2.tsv, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/evaluation/allOligo_after2.tsv, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/evaluation/allOligo_after2.tsv, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/evaluation/allOligo_after2.tsv, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/evaluation/allOligo_after2.tsv, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/evaluation/allOligo_after3.tsv, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/evaluation/allOligo_after3.tsv, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/evaluation/allOligo_after3.tsv, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/evaluation/allOligo_after3.tsv, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/evaluation/allOligo_after3.tsv, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/evaluation/allOligo_after3.tsv
+    jobid: 0
+
+[Mon May 10 11:57:55 2021]
+Finished job 0.
+110 of 110 steps (100%) done
+Complete log: /datater/wu/MSSPE/.snakemake/log/2021-05-10T114557.206806.snakemake.log

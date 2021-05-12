@@ -1,0 +1,32 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 6
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	evaluation2
+	2
+Select jobs to execute...
+
+[Mon May 10 18:09:30 2021]
+rule evaluation2:
+    input: /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/kmer15/allOligo.set, /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/kmer15/intermediate/aceID-taxID-species.tsv, /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/kmer15/intermediate/allKmerCount.sorted.calculated.bowtie
+    output: /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/kmer15/evaluation/allOligo.set.coverage
+    jobid: 1
+    wildcards: sample=coronavirusWithoutSarsCov2, kmerSize=kmer15
+
+[Mon May 10 18:09:33 2021]
+Finished job 1.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Mon May 10 18:09:33 2021]
+localrule all:
+    input: /datater/wu/data/MSSPE-variant/coronavirusWithoutSarsCov2/kmer15/evaluation/allOligo.set.coverage
+    jobid: 0
+
+[Mon May 10 18:09:33 2021]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /datater/wu/MSSPE/.snakemake/log/2021-05-10T180929.645331.snakemake.log

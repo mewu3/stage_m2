@@ -13,13 +13,13 @@ samples:
     # zika : "/datater/wu/data/ZIKV-96seqs.fasta"
     # enterovirus: "/datater/wu/data/enterovirus.fasta"
     # coronavirus: "/datater/wu/data/coronavirus.fasta"
-    # coronavirusWithoutSarsCov2: "/datater/wu/data/coronavirus_withoutSarsCov2.fasta"
-    # enterovirusCurated: "/datater/wu/data/enterovirusCurated.fasta"
+    # coronavirusWithoutSarsCov2: "/datater/wu/data/coronavirusWithoutSarsCov2.fasta"
+    enterovirusCurated: "/datater/wu/data/enterovirusCurated.fasta"
     coronavirusCurated: "/datater/wu/data/coronavirusCurated.fasta"
-    coronavirusCuratedWithoutSarsCov2: "/datater/wu/data/coronavirusCurated_withoutSarsCov2.fasta"
+    coronavirusCuratedWithoutSarsCov2: "/datater/wu/data/coronavirusCuratedWithoutSarsCov2.fasta"
 
 ### global parameters
-curated: True # True or False
+curated: True  # True or False
 thread: 12
 kmerSize:
     kmer13: 13

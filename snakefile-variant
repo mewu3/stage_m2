@@ -2,15 +2,19 @@
 import os
 
 configfile: "config.yaml"
+
 samples = list(config["samples"].keys())
+kmerSize = list(config["kmerSize"].keys())
+
 file_refSeq = config["file_refSeq"]
 file_aceIDtaxID = config["file_aceIDtaxID"]
 file_taxIDLineage = config["file_taxIDLineage"]
+
 dataDir = config["dataDir"]
-kmerSize = list(config["kmerSize"].keys())
+
 clusterIdentity = config["cd-hit"]["identity"]
 
-### functions
+### functions
 def fetchConfigParameters():
     if config["mafft"]["fmodel"] == "on":
         config["mafft"]["fmodel"] = "--fmodel"
@@ -49,7 +53,7 @@ fetchConfigParameters()
 #                   sample = wildcards.sample,
 #                   seg = glob_wildcards(os.path.join(checkpoint_output, "reverse{seg}.fasta")).seg)
 
-### snakemake rules
+### snakemake rules
 rule all:
     input:
         expand(
@@ -144,7 +148,7 @@ rule all:
             sample = samples,
             kmerSize = kmerSize
         ),
-        ### Evaluation
+        ### Evaluation
         expand(
             f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/aceID-taxID-species.tsv",
             sample = samples,

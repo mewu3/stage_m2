@@ -2,12 +2,16 @@
 import os
 
 configfile: "config.yaml"
+
 samples = list(config["samples"].keys())
+kmerSize = list(config["kmerSize"].keys())
+
 file_refSeq = config["file_refSeq"]
 file_aceIDtaxID = config["file_aceIDtaxID"]
 file_taxIDLineage = config["file_taxIDLineage"]
+
 dataDir = config["dataDir"]
-kmerSize = list(config["kmerSize"].keys())
+
 
 def fetchConfigParameters():
     if config["mafft"]["fmodel"] == "on":

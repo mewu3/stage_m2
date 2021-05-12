@@ -1,0 +1,82 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 6
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	6	evaluation2
+	7
+Select jobs to execute...
+
+[Mon May 10 13:14:46 2021]
+rule evaluation2:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/allOligo.set, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/aceID-taxID-species.tsv, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/intermediate/allKmerCount.sorted.calculated.bowtie
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/evaluation/allOligo.set.coverage
+    jobid: 5
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer13
+
+[Mon May 10 13:14:46 2021]
+rule evaluation2:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/allOligo.set, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/aceID-taxID-species.tsv, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.bowtie
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/evaluation/allOligo.set.coverage
+    jobid: 3
+    wildcards: sample=coronavirusCurated, kmerSize=kmer13
+
+[Mon May 10 13:14:46 2021]
+rule evaluation2:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/allOligo.set, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/aceID-taxID-species.tsv, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.bowtie
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/evaluation/allOligo.set.coverage
+    jobid: 2
+    wildcards: sample=enterovirusCurated, kmerSize=kmer15
+
+[Mon May 10 13:14:46 2021]
+rule evaluation2:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/allOligo.set, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/aceID-taxID-species.tsv, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/intermediate/allKmerCount.sorted.calculated.bowtie
+    output: /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/evaluation/allOligo.set.coverage
+    jobid: 4
+    wildcards: sample=coronavirusCurated, kmerSize=kmer15
+
+[Mon May 10 13:14:46 2021]
+rule evaluation2:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/allOligo.set, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/aceID-taxID-species.tsv, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/intermediate/allKmerCount.sorted.calculated.bowtie
+    output: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/evaluation/allOligo.set.coverage
+    jobid: 1
+    wildcards: sample=enterovirusCurated, kmerSize=kmer13
+
+[Mon May 10 13:14:46 2021]
+rule evaluation2:
+    input: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/allOligo.set, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/aceID-taxID-species.tsv, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/intermediate/allKmerCount.sorted.calculated.bowtie
+    output: /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/evaluation/allOligo.set.coverage
+    jobid: 6
+    wildcards: sample=coronavirusCuratedWithoutSarsCov2, kmerSize=kmer15
+
+[Mon May 10 13:14:48 2021]
+Finished job 1.
+1 of 7 steps (14%) done
+[Mon May 10 13:14:48 2021]
+Finished job 2.
+2 of 7 steps (29%) done
+[Mon May 10 13:14:50 2021]
+Finished job 5.
+3 of 7 steps (43%) done
+[Mon May 10 13:14:50 2021]
+Finished job 3.
+4 of 7 steps (57%) done
+[Mon May 10 13:14:50 2021]
+Finished job 6.
+5 of 7 steps (71%) done
+[Mon May 10 13:14:50 2021]
+Finished job 4.
+6 of 7 steps (86%) done
+Select jobs to execute...
+
+[Mon May 10 13:14:51 2021]
+localrule all:
+    input: /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer13/evaluation/allOligo.set.coverage, /datater/wu/data/MSSPE-variant/enterovirusCurated/kmer15/evaluation/allOligo.set.coverage, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer13/evaluation/allOligo.set.coverage, /datater/wu/data/MSSPE-variant/coronavirusCurated/kmer15/evaluation/allOligo.set.coverage, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer13/evaluation/allOligo.set.coverage, /datater/wu/data/MSSPE-variant/coronavirusCuratedWithoutSarsCov2/kmer15/evaluation/allOligo.set.coverage
+    jobid: 0
+
+[Mon May 10 13:14:51 2021]
+Finished job 0.
+7 of 7 steps (100%) done
+Complete log: /datater/wu/MSSPE/.snakemake/log/2021-05-10T131445.633046.snakemake.log
