@@ -1,4 +1,0 @@
-SyntaxError:
-Only input files can be specified as functions
-  File "/datater/wu/MSSPE/snakefile-variant", line 194, in <module>
-  File "/datater/wu/MSSPE/rules/variant_evaluation.smk", line 61, in <module>
