@@ -1,3 +1,0 @@
-NameError in line 16 of /datater/wu/MSSPE/scripts/coronavirusWithoutSARS2.smk:
-name 'kmerS' is not defined
-  File "/datater/wu/MSSPE/scripts/coronavirusWithoutSARS2.smk", line 16, in <module>
