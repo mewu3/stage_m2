@@ -1,4 +1,0 @@
-Building DAG of jobs...
-MissingInputException in line 64 of /home/meijun/Documents/stage_m2/Snakefile:
-Missing input files for rule seqkit:
-/home/wu/Documents/data/enterovirus.fasta

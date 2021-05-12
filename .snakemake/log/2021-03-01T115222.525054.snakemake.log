@@ -1,4 +1,0 @@
-KeyError in line 42 of /datater/wu/stage_m2/Snakefile:
-'sample'
-  File "/datater/wu/stage_m2/Snakefile", line 80, in <module>
-  File "/datater/wu/stage_m2/Snakefile", line 42, in track_filename

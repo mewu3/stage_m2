@@ -1,4 +1,0 @@
-Building DAG of jobs...
-MissingInputException in line 43 of /datater/wu/stage_m2/Snakefile:
-Missing input files for rule all:
-/datater/wu/data/zika/checkSpecifity/reverse__snakemake_dynamic___filtered.tsv

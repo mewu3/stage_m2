@@ -1,4 +1,0 @@
-Building DAG of jobs...
-MissingInputException in line 196 of /datater/wu/stage_m2/Snakefile:
-Missing input files for rule dsk:
-/datater/wu/data/splitFiles/[].fasta

@@ -1,8 +1,0 @@
-Building DAG of jobs...
-InputFunctionException in line 152 of /datater/wu/stage_m2_merge/rules/reverse_oligo_filter.smk:
-Error:
-  NameError: name 'checkpoint' is not defined
-Wildcards:
-  sample=zika
-Traceback:
-  File "/datater/wu/stage_m2_merge/rules/reverse_oligo_filter.smk", line 147, in aggregate_reverseInput

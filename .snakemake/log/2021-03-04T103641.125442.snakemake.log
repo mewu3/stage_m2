@@ -1,3 +1,0 @@
-NameError in line 59 of /home/meijun/Documents/stage_m2/Snakefile:
-name 'aggregate_input' is not defined
-  File "/home/meijun/Documents/stage_m2/Snakefile", line 59, in <module>

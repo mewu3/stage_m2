@@ -1,4 +1,0 @@
-KeyError in line 83 of /datater/wu/stage_m2/rules/reverse_oligo_filter.smk:
-'entropk'
-  File "/datater/wu/stage_m2/Snakefile", line 52, in <module>
-  File "/datater/wu/stage_m2/rules/reverse_oligo_filter.smk", line 83, in <module>

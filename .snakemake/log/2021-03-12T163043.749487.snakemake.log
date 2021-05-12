@@ -1,4 +1,0 @@
-Building DAG of jobs...
-MissingInputException in line 74 of /datater/wu/stage_m2/rules/reverse_oligo_filter.smk:
-Missing input files for rule linguistic_complexity:
-/datater/wu/data/enterovirus/filtering/reverse__snakemake_dynamic__.fasta

@@ -1,3 +1,0 @@
-SyntaxError in line 177 of /datater/wu/stage_m2/rules/reverse_kmer_spec.smk:
-EOF in multi-line statement (reverse_kmer_spec.smk, line 177)
-  File "/datater/wu/stage_m2/Snakefile", line 66, in <module>

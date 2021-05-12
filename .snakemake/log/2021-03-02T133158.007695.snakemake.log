@@ -1,3 +1,0 @@
-TypeError in line 202 of /datater/wu/stage_m2/Snakefile:
-filesprefix() missing 1 required positional argument: 'wildcards'
-  File "/datater/wu/stage_m2/Snakefile", line 202, in <module>

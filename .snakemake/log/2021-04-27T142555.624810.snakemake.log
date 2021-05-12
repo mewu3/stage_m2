@@ -1,4 +1,0 @@
-NameError in line 1 of /datater/wu/MSSPE/rules-clustering/evaluation.smk:
-name 'clustering' is not defined
-  File "/datater/wu/MSSPE/snakefile-clustering", line 133, in <module>
-  File "/datater/wu/MSSPE/rules-clustering/evaluation.smk", line 1, in <module>

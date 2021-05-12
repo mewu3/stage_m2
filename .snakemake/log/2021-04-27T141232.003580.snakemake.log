@@ -1,3 +1,0 @@
-SyntaxError in line 157 of /datater/wu/MSSPE/rules-variant/reverse_kmer_dimer.smk:
-invalid syntax
-  File "/datater/wu/MSSPE/snakefile-variant", line 149, in <module>

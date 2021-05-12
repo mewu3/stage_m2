@@ -1,3 +1,0 @@
-KeyError in line 15 of /datater/wu/MSSPE/snakefile-clustering:
-'jellyfish'
-  File "/datater/wu/MSSPE/snakefile-clustering", line 15, in <module>

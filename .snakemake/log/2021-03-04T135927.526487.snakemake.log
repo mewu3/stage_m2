@@ -1,9 +1,0 @@
-Building DAG of jobs...
-InputFunctionException in line 65 of /home/meijun/Documents/stage_m2/rules/kmer_dsk.smk:
-Error:
-  WorkflowError:
-    Missing wildcard values for sample, seg
-Wildcards:
-
-Traceback:
-  File "/home/meijun/Documents/stage_m2/rules/kmer_dsk.smk", line 60, in aggregate_input

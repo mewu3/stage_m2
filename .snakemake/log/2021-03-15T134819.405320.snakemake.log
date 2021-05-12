@@ -1,4 +1,0 @@
-NameError in line 152 of /datater/wu/stage_m2/rules/reverse_oligo_filter.smk:
-name 'wildcards' is not defined
-  File "/datater/wu/stage_m2/Snakefile", line 159, in <module>
-  File "/datater/wu/stage_m2/rules/reverse_oligo_filter.smk", line 152, in <module>

@@ -1,3 +1,0 @@
-SyntaxError in line 116 of /datater/wu/stage_m2/rules/reverse_check_specifity.smk:
-Multiple run or shell keywords in rule blastDB. (reverse_check_specifity.smk, line 116)
-  File "/datater/wu/stage_m2/Snakefile", line 87, in <module>

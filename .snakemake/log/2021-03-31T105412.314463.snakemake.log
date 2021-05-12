@@ -1,3 +1,0 @@
-SyntaxError in line 89 of /datater/wu/stage_m2/rules/reverse_kmer_dimer.smk:
-invalid syntax
-  File "/datater/wu/stage_m2/Snakefile", line 67, in <module>

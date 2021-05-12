@@ -1,4 +1,0 @@
-Building DAG of jobs...
-MissingInputException in line 89 of /datater/wu/MSSPE/rules-variant/all_evaluation.smk:
-Missing input files for rule oligoCount:
-/datater/wu/data/MSSPE-variant/enterovirus/kmer13/allKmercount.sorted.calculated.txt

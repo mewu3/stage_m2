@@ -1,4 +1,0 @@
-CreateRuleException in line 151 of /datater/wu/stage_m2/rules/reverse_check_specifity.smk:
-The name blastn_short is already used by another rule
-  File "/datater/wu/stage_m2/Snakefile", line 95, in <module>
-  File "/datater/wu/stage_m2/rules/reverse_check_specifity.smk", line 151, in <module>

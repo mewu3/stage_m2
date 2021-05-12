@@ -1,6 +1,0 @@
-Building DAG of jobs...
-MissingInputException in line 43 of /datater/wu/stage_m2/Snakefile:
-Missing input files for rule all:
-/datater/wu/data/enterovirus/dsk/reverse__snakemake_dynamic__.kCountSorted
-/datater/wu/data/enterovirus/dsk/reverse__snakemake_dynamic__.kCount
-/datater/wu/data/enterovirus/dsk/reverse__snakemake_dynamic__.h5

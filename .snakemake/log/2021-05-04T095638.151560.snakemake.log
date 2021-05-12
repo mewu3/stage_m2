@@ -1,3 +1,0 @@
-Building DAG of jobs...
-CyclicGraphException in line 14 of /datater/wu/MSSPE/scripts/test.smk:
-Cyclic dependency on rule all.

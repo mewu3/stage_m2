@@ -1,3 +1,0 @@
-KeyError in line 6 of /home/meijun/Documents/stage_m2/Snakefile:
-'workdir'
-  File "/home/meijun/Documents/stage_m2/Snakefile", line 6, in <module>

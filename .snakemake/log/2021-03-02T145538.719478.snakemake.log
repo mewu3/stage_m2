@@ -1,3 +1,0 @@
-NameError in line 189 of /datater/wu/stage_m2/Snakefile:
-name 'splitFiles_name' is not defined
-  File "/datater/wu/stage_m2/Snakefile", line 189, in <module>

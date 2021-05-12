@@ -1,4 +1,0 @@
-KeyError in line 36 of /datater/wu/stage_m2/rules/kmer_dsk.smk:
-'verbose'
-  File "/datater/wu/stage_m2/Snakefile", line 105, in <module>
-  File "/datater/wu/stage_m2/rules/kmer_dsk.smk", line 36, in <module>

@@ -1,3 +1,0 @@
-WildcardError in line 43 of /datater/wu/stage_m2/Snakefile:
-No values given for wildcard 'seg'.
-  File "/datater/wu/stage_m2/Snakefile", line 43, in <module>

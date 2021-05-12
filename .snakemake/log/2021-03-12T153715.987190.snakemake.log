@@ -1,8 +1,0 @@
-Building DAG of jobs...
-InputFunctionException in line 149 of /datater/wu/stage_m2/rules/reverse_oligo_filter.smk:
-Error:
-  NameError: name 'calculated2_outputdir' is not defined
-Wildcards:
-  sample=enterovirus
-Traceback:
-  File "/datater/wu/stage_m2/rules/reverse_oligo_filter.smk", line 147, in aggregate_input

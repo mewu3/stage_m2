@@ -1,3 +1,0 @@
-SyntaxError in line 79 of /datater/wu/stage_m2/rules/dsk_oligo_filter.smk:
-Expected name or colon after rule or checkpoint keyword. (dsk_oligo_filter.smk, line 79)
-  File "/datater/wu/stage_m2/Snakefile", line 112, in <module>

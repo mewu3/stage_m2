@@ -1,3 +1,0 @@
-KeyError in line 14 of /datater/wu/MSSPE/snakefile-basic:
-'jellyfish'
-  File "/datater/wu/MSSPE/snakefile-basic", line 14, in <module>
