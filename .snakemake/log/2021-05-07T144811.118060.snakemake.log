@@ -1,4 +1,0 @@
-Building DAG of jobs...
-MissingInputException in line 41 of /datater/wu/MSSPE/scripts/coronavirusWithoutSARS2.smk:
-Missing input files for rule removeDuplicateSeq:
-/datater/wu/data/tmp/sars2_variants.fasta
