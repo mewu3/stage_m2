@@ -1,3 +1,0 @@
-SyntaxError in line 1 of /datater/wu/stage_m2/rules/oligo_filter.smk:
-invalid syntax
-  File "/datater/wu/stage_m2/Snakefile", line 128, in <module>

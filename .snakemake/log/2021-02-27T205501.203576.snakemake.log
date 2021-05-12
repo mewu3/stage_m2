@@ -1,2 +1,0 @@
-SyntaxError in line 174 of /home/wu/Documents/stage_m2/Snakefile:
-Multiple run or shell keywords in rule kmcOutput. (Snakefile, line 174)

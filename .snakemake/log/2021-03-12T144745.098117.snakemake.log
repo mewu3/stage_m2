@@ -1,3 +1,0 @@
-SyntaxError in line 44 of /datater/wu/stage_m2/rules/check_specifity.smk:
-Expected name or colon after rule or checkpoint keyword. (check_specifity.smk, line 44)
-  File "/datater/wu/stage_m2/Snakefile", line 157, in <module>

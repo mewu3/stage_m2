@@ -1,3 +1,0 @@
-SyntaxError in line 37 of /datater/wu/stage_m2/rules/splitFiles.smk:
-invalid syntax
-  File "/datater/wu/stage_m2/Snakefile", line 126, in <module>

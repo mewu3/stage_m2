@@ -1,3 +1,0 @@
-NameError in line 62 of /datater/wu/MSSPE/snakefile-basic:
-name 'kmerSize' is not defined
-  File "/datater/wu/MSSPE/snakefile-basic", line 62, in <module>

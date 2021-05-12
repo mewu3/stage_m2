@@ -1,4 +1,0 @@
-KeyError in line 33 of /datater/wu/MSSPE/rules-variant/all_preprocessing.smk:
-'lower-count'
-  File "/datater/wu/MSSPE/snakefile-variant", line 146, in <module>
-  File "/datater/wu/MSSPE/rules-variant/all_preprocessing.smk", line 33, in <module>

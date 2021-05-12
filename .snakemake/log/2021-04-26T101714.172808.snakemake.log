@@ -1,3 +1,0 @@
-SyntaxError in line 33 of /datater/wu/MSSPE/rules-basic/all_evaluation.smk:
-EOF in multi-line statement (all_evaluation.smk, line 33)
-  File "/datater/wu/MSSPE/snakefile-basic", line 110, in <module>

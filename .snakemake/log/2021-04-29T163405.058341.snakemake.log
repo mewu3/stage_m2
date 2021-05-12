@@ -1,4 +1,0 @@
-KeyError in line 29 of /datater/wu/MSSPE/rules-variant/reverse_kmer_spec.smk:
-'threads'
-  File "/datater/wu/MSSPE/snakefile-variant", line 154, in <module>
-  File "/datater/wu/MSSPE/rules-variant/reverse_kmer_spec.smk", line 29, in <module>

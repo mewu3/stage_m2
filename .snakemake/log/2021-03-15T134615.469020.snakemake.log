@@ -1,4 +1,0 @@
-WildcardError in line 150 of /datater/wu/stage_m2/rules/reverse_oligo_filter.smk:
-No values given for wildcard 'sample'.
-  File "/datater/wu/stage_m2/Snakefile", line 159, in <module>
-  File "/datater/wu/stage_m2/rules/reverse_oligo_filter.smk", line 150, in <module>

@@ -1,3 +1,0 @@
-WorkflowError in line 4 of /datater/wu/MSSPE/snakefile-clustering:
-Config file config.yaml not found.
-  File "/datater/wu/MSSPE/snakefile-clustering", line 4, in <module>

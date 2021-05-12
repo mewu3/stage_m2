@@ -1,3 +1,0 @@
-WildcardError in line 62 of /datater/wu/stage_m2/Snakefile:
-No values given for wildcard 'prefix'.
-  File "/datater/wu/stage_m2/Snakefile", line 62, in <module>

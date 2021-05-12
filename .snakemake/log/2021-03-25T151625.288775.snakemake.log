@@ -1,4 +1,0 @@
-KeyError in line 12 of /datater/wu/stage_m2/rules/reverse_kmer_dsk.smk:
-'kmer-size'
-  File "/datater/wu/stage_m2/Snakefile", line 51, in <module>
-  File "/datater/wu/stage_m2/rules/reverse_kmer_dsk.smk", line 12, in <module>

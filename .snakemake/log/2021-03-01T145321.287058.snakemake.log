@@ -1,3 +1,0 @@
-KeyError in line 189 of /datater/wu/stage_m2/Snakefile:
-'seg'
-  File "/datater/wu/stage_m2/Snakefile", line 189, in <module>

@@ -1,3 +1,0 @@
-SyntaxError in line 37 of /home/meijun/Documents/stage_m2/rules/kmer_dsk.smk:
-invalid syntax
-  File "/home/meijun/Documents/stage_m2/Snakefile", line 80, in <module>

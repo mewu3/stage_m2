@@ -1,6 +1,0 @@
-Building DAG of jobs...
-Updating job filtering2.
-MissingInputException in line 63 of /datater/wu/MSSPE/rules-clustering/reverse_kmer_kmerCount.smk:
-Missing input files for rule countKmer2:
-/datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3263-3764.int.kmc_suf
-/datater/wu/data/MSSPE-clustering/zika/kmer15/intermediate/reverse3263-3764.int.kmc_pre

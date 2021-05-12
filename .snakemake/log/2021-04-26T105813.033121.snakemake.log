@@ -1,3 +1,0 @@
-SyntaxError in line 48 of /datater/wu/MSSPE/rules-variant/all_evaluation.smk:
-EOL while scanning string literal
-  File "/datater/wu/MSSPE/snakefile-variant", line 140, in <module>

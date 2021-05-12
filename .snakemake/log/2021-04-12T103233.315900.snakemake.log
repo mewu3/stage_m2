@@ -1,4 +1,0 @@
-TypeError in line 8 of /home/meijun/Documents/server/stage_m2/Snakefile:
-can only concatenate str (not "int") to str
-  File "/home/meijun/Documents/server/stage_m2/Snakefile", line 8, in <module>
-  File "/home/meijun/Documents/server/stage_m2/Snakefile", line 8, in <listcomp>

@@ -1,4 +1,0 @@
-NameError in line 4 of /datater/wu/MSSPE/rules-variant/all_evaluation.smk:
-name 'taxID' is not defined
-  File "/datater/wu/MSSPE/snakefile-variant", line 138, in <module>
-  File "/datater/wu/MSSPE/rules-variant/all_evaluation.smk", line 4, in <module>

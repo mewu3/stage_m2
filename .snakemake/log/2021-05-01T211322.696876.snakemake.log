@@ -1,4 +1,0 @@
-NameError in line 6 of /datater/wu/MSSPE/rules/basic_evaluation.smk:
-name 'tile_taxIDLineage' is not defined
-  File "/datater/wu/MSSPE/snakefile-basic", line 124, in <module>
-  File "/datater/wu/MSSPE/rules/basic_evaluation.smk", line 6, in <module>

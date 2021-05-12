@@ -1,3 +1,0 @@
-TypeError in line 191 of /datater/wu/stage_m2/Snakefile:
-zip() takes no keyword arguments
-  File "/datater/wu/stage_m2/Snakefile", line 191, in <module>

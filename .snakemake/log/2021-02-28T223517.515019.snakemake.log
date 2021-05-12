@@ -1,4 +1,0 @@
-Building DAG of jobs...
-MissingInputException in line 38 of /home/wu/Documents/stage_m2/Snakefile:
-Missing input files for rule all:
-/home/wu/Documents/data/splitFiles/forward.__snakemake_dynamic__.fasta

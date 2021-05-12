@@ -1,3 +1,0 @@
-IndentationError in line 34 of /datater/wu/MSSPE/rules-basic/reverse_kmer_spec.smk:
-unexpected indent
-  File "/datater/wu/MSSPE/snakefile-basic", line 108, in <module>

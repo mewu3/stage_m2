@@ -1,3 +1,0 @@
-SyntaxError in line 49 of /datater/wu/stage_m2/rules/reverse_oligo_filter.smk:
-f-string: unmatched '('
-  File "/datater/wu/stage_m2/Snakefile", line 55, in <module>

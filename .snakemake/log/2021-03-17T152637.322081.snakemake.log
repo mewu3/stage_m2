@@ -1,4 +1,0 @@
-Building DAG of jobs...
-MissingInputException in line 81 of /datater/wu/stage_m2/rules/reverse_check_specifity.smk:
-Missing input files for rule bbmap:
-/datater/wu/data/zika/filtering/allOligos_reverse.fasta

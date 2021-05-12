@@ -1,3 +1,0 @@
-NameError in line 107 of /home/wu/Documents/stage_m2/Snakefile:
-name 'putputdir' is not defined
-  File "/home/wu/Documents/stage_m2/Snakefile", line 107, in <module>

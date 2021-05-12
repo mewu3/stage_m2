@@ -1,5 +1,0 @@
-Building DAG of jobs...
-ChildIOException:
-File/directory is a child to another output:
-('/datater/wu/data/splitFiles', splitFiles)
-('/datater/wu/data/splitFiles/enterovirus.forward.__snakemake_dynamic__.fasta', split_overlap_chunks)

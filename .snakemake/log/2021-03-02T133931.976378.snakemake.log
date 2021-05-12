@@ -1,9 +1,0 @@
-Building DAG of jobs...
-InputFunctionException in line 201 of /datater/wu/stage_m2/Snakefile:
-Error:
-  WorkflowError:
-    Missing wildcard values for seg, sample
-Wildcards:
-
-Traceback:
-  File "/datater/wu/stage_m2/Snakefile", line 198, in filesprefix

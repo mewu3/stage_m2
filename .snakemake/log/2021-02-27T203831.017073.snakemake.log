@@ -1,3 +1,0 @@
-KeyError in line 9 of /home/wu/Documents/stage_m2/Snakefile:
-'data'
-  File "/home/wu/Documents/stage_m2/Snakefile", line 9, in <module>

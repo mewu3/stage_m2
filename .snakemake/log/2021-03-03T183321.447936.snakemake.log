@@ -1,3 +1,0 @@
-SyntaxError in line 43 of /home/meijun/Documents/stage_m2/rules/oligo_filter.smk:
-Expected name or colon after rule or checkpoint keyword. (oligo_filter.smk, line 43)
-  File "/home/meijun/Documents/stage_m2/Snakefile", line 76, in <module>
