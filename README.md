@@ -15,7 +15,7 @@ The philosophy of this pipeline is inspired by the work of Dr. Charles Chiu (htt
 basic: 
 ![image](https://user-images.githubusercontent.com/60400481/117315718-3d2bd480-ae88-11eb-9765-9503ff252b67.png)
 
-clustering: same procedure than the basic, a step of clustering is added before multiple sequence alignment. 
+basic + clustering: same procedure than the basic, a step of clustering is added before multiple sequence alignment. clustering can be enabled via config.yaml file. 
 ![image](https://user-images.githubusercontent.com/60400481/117315764-474dd300-ae88-11eb-8637-b745fed86184.png)
 
 variant: 
@@ -27,9 +27,8 @@ Usage example (*It is recommended to create a conda environment for better tools
 
 1. snakemake --cores 6 --snakefile snakefile-basic 
 2. snakemake --cores 6 --snakefile snakefile-variant
-3. snakemake --cores 6 --snakefile snakefile-clustering  (this one is not fully tested)
 
-If you have few sequences (~ 3000 enterovirus genomes with a genome size around 7000 nt) you could use (1), but if the genome size is higher than 10 000 nt and the sequence number is greater than 5000 it is recommended to use (2). 
+With ~ 3000 enterovirus complet genomes (genome size around 7000 nt), basic approch could be done within 30 mins. If the NL (N sequence number, L sequence length) is important, it is recommended to use (2) ou enable the clustering option. 
 For more information about the snakemake API: https://snakemake.readthedocs.io/en/stable/api_reference/snakemake.html
 
 
