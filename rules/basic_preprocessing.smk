@@ -6,51 +6,109 @@ rule removeDuplicateSeq:
     shell:
         "lib/cdhit/cd-hit-auxtools/cd-hit-dup -i {input} -o {output}"
 
-rule MSA:
-    input:
-        lambda wildcards: config["samples"][wildcards.sample] if config["curated"] else f"{dataDir}/{{sample}}/{{sample}}.uniq"
-    output:
-        f"{dataDir}/{{sample}}/{{sample}}.msa"
-    log:
-        f"{dataDir}/{{sample}}/log/mafft.log"
-    conda:
-        "envs/mafft.yaml"
-    params:
-        threads = config["thread"],
-        algorithm = config["mafft"]["algorithm"],
-        op = config["mafft"]["op"],
-        ep = config["mafft"]["ep"],
-        bl = config["mafft"]["bl"],
-        jtt = config["mafft"]["jtt"],
-        tm = config["mafft"]["tm"],
-        fmodel = config["mafft"]["fmodel"],
-        clustalout = config["mafft"]["clustalout"],
-        inputorder = config["mafft"]["inputorder"],
-        reorder = config["mafft"]["reorder"],
-        treeout = config["mafft"]["treeout"],
-        quiet = config["mafft"]["quiet"]
-    shell:
-        """
-        mafft {params.algorithm} \
-        --thread {params.threads} \
-        --op {params.op} \
-        --ep {params.ep} \
-        --bl {params.bl} \
-        --jtt {params.jtt} \
-        --tm {params.tm} \
-        {params.fmodel} \
-        {params.clustalout} \
-        {params.inputorder} \
-        {params.reorder} \
-        {params.treeout} \
-        {params.quiet} \
-        {input} > {output} \
-        2> {log}
-        """
+if clustering :
+    rule clustering:
+        input:
+            f"{dataDir}/{{sample}}/{{sample}}.uniq"
+        output:
+            f"{dataDir}/{{sample}}/{{sample}}.uniq.cluster{clusterIdentity}"
+        params:
+            identity = config["cd-hit"]["identity"],
+            threads = config["thread"],
+            memory = config["cd-hit"]["memory"]
+        shell:
+            "./lib/cdhit/cd-hit-est \
+            -i {input} \
+            -o {output} \
+            -c {params.identity} \
+            -T {params.threads} \
+            -M {params.memory}"
+
+    rule MSA:
+        input:
+            f"{dataDir}/{{sample}}/{{sample}}.uniq.cluster{clusterIdentity}"
+        output:
+            f"{dataDir}/{{sample}}/{{sample}}.uniq.cluster{clusterIdentity}.msa"
+        log:
+            f"{dataDir}/{{sample}}/log/mafft.log"
+        conda:
+            "envs/mafft.yaml"
+        params:
+            threads = config["thread"],
+            algorithm = config["mafft"]["algorithm"],
+            op = config["mafft"]["op"],
+            ep = config["mafft"]["ep"],
+            bl = config["mafft"]["bl"],
+            jtt = config["mafft"]["jtt"],
+            tm = config["mafft"]["tm"],
+            fmodel = config["mafft"]["fmodel"],
+            clustalout = config["mafft"]["clustalout"],
+            inputorder = config["mafft"]["inputorder"],
+            reorder = config["mafft"]["reorder"],
+            treeout = config["mafft"]["treeout"],
+            quiet = config["mafft"]["quiet"]
+        shell:
+            "mafft {params.algorithm} \
+            --thread {params.threads} \
+            --op {params.op} \
+            --ep {params.ep} \
+            --bl {params.bl} \
+            --jtt {params.jtt} \
+            --tm {params.tm} \
+            {params.fmodel} \
+            {params.clustalout} \
+            {params.inputorder} \
+            {params.reorder} \
+            {params.treeout} \
+            {params.quiet} \
+            {input} > {output} \
+            2> {log}"
+else:
+    rule MSA:
+        input:
+            lambda wildcards: config["samples"][wildcards.sample] if config["curated"] else f"{dataDir}/{{sample}}/{{sample}}.uniq"
+        output:
+            f"{dataDir}/{{sample}}/{{sample}}.msa"
+        log:
+            f"{dataDir}/{{sample}}/log/mafft.log"
+        conda:
+            "envs/mafft.yaml"
+        params:
+            threads = config["thread"],
+            algorithm = config["mafft"]["algorithm"],
+            op = config["mafft"]["op"],
+            ep = config["mafft"]["ep"],
+            bl = config["mafft"]["bl"],
+            jtt = config["mafft"]["jtt"],
+            tm = config["mafft"]["tm"],
+            fmodel = config["mafft"]["fmodel"],
+            clustalout = config["mafft"]["clustalout"],
+            inputorder = config["mafft"]["inputorder"],
+            reorder = config["mafft"]["reorder"],
+            treeout = config["mafft"]["treeout"],
+            quiet = config["mafft"]["quiet"]
+        shell:
+            """
+            mafft {params.algorithm} \
+            --thread {params.threads} \
+            --op {params.op} \
+            --ep {params.ep} \
+            --bl {params.bl} \
+            --jtt {params.jtt} \
+            --tm {params.tm} \
+            {params.fmodel} \
+            {params.clustalout} \
+            {params.inputorder} \
+            {params.reorder} \
+            {params.treeout} \
+            {params.quiet} \
+            {input} > {output} \
+            2> {log}
+            """
 
 checkpoint splitIntoOverlappingWindows:
     input:
-        f"{dataDir}/{{sample}}/{{sample}}.msa"
+        f"{dataDir}/{{sample}}/{{sample}}.uniq.cluster{clusterIdentity}.msa" if clustering else f"{dataDir}/{{sample}}/{{sample}}.msa"
     output:
         directory(f"{dataDir}/{{sample}}/splitFiles")
     params:

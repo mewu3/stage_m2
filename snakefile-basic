@@ -12,6 +12,10 @@ file_taxIDLineage = config["file_taxIDLineage"]
 
 dataDir = config["dataDir"]
 
+clusterIdentity = config["cd-hit"]["identity"]
+
+clustering = config["clustering"]
+
 
 def fetchConfigParameters():
     if config["mafft"]["fmodel"] == "on":
@@ -51,85 +55,168 @@ fetchConfigParameters()
 #                   sample = wildcards.sample,
 #                   seg = glob_wildcards(os.path.join(checkpoint_output, "reverse{seg}.fasta")).seg)
 
-rule all:
-    input:
-        expand(
-            f"{dataDir}/{{sample}}/{{sample}}.uniq",
-            sample = samples,
-            kmerSize = kmerSize
-        ),
-        expand(
-            f"{dataDir}/{{sample}}/{{sample}}.msa",
-            sample = samples,
-            kmerSize = kmerSize
-        ),
-        expand(
-            f"{dataDir}/{{sample}}/{{kmerSize}}/allKmercount.sorted.calculated.txt",
-            sample = samples,
-            kmerSize = kmerSize
-        ),
-        expand(
-            f"{dataDir}/{{sample}}/{{kmerSize}}/allKmerCount.sorted.calculated.filtered.txt",
-            sample = samples,
-            kmerSize = kmerSize
-        ),
-        expand(
-            f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.filtered.fasta",
-            sample = samples,
-            kmerSize = kmerSize
-        ),
-        expand(
-            f"{file_refSeq}.DB.{{ext}}",
-            sample = samples,
-            kmerSize = kmerSize,
-            ext = ["1.ebwt", "2.ebwt", "3.ebwt", "4.ebwt", "rev.1.ebwt", "rev.2.ebwt"]
-        ),
-        expand(
-            f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.filtered.bowtie",
-            sample = samples,
-            kmerSize = kmerSize
-        ),
-        expand(
-            f"{dataDir}/{{sample}}/{{kmerSize}}/allKmerCount.sorted.calculated.filtered.spec.txt",
-            sample = samples,
-            kmerSize = kmerSize
-        ),
-        expand(
-            f"{dataDir}/{{sample}}/{{kmerSize}}/allOligo.set",
-            sample = samples,
-            kmerSize = kmerSize
-        ),
-        ### EVALUATION
-        expand(
-            f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/aceID-taxID-species.tsv",
-            sample = samples,
-            kmerSize = kmerSize
-        ),
-        expand(
-            f"{dataDir}/{{sample}}/{{kmerSize}}/evaluation/allOligo.set.coverage",
-            sample = samples,
-            kmerSize = kmerSize
-        ),
-        expand(
-            f"{dataDir}/{{sample}}/{{kmerSize}}/evaluation/allOligo_before.tsv",
-            sample = samples,
-            kmerSize = kmerSize
-        ),
-        expand(
-            f"{dataDir}/{{sample}}/{{kmerSize}}/evaluation/allOligo_after1.tsv",
-            sample = samples,
-            kmerSize = kmerSize
-        ),
-        expand(
-            f"{dataDir}/{{sample}}/{{kmerSize}}/evaluation/allOligo_after2.tsv",
-            sample = samples,
-            kmerSize = kmerSize
-        ),
-        expand(
-            f"{dataDir}/{{sample}}/{{kmerSize}}/evaluation/allOligo_after3.tsv",
-            sample = samples,
-            kmerSize = kmerSize
-        )
+if clustering:
+    rule all:
+        input:
+            expand(
+                f"{dataDir}/{{sample}}/{{sample}}.uniq",
+                sample = samples
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/{{sample}}.uniq.cluster{clusterIdentity}",
+                sample = samples
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/{{sample}}.uniq.cluster{clusterIdentity}.msa",
+                sample = samples
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/{{kmerSize}}/allKmercount.sorted.calculated.txt",
+                sample = samples,
+                kmerSize = kmerSize
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/{{kmerSize}}/allKmerCount.sorted.calculated.filtered.txt",
+                sample = samples,
+                kmerSize = kmerSize
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.filtered.fasta",
+                sample = samples,
+                kmerSize = kmerSize
+            ),
+            expand(
+                f"{file_refSeq}.DB.{{ext}}",
+                sample = samples,
+                kmerSize = kmerSize,
+                ext = ["1.ebwt", "2.ebwt", "3.ebwt", "4.ebwt", "rev.1.ebwt", "rev.2.ebwt"]
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.filtered.bowtie",
+                sample = samples,
+                kmerSize = kmerSize
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/{{kmerSize}}/allKmerCount.sorted.calculated.filtered.spec.txt",
+                sample = samples,
+                kmerSize = kmerSize
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/{{kmerSize}}/allOligo.set",
+                sample = samples,
+                kmerSize = kmerSize
+            ),
+            ### EVALUATION
+            expand(
+                f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/aceID-taxID-species.tsv",
+                sample = samples,
+                kmerSize = kmerSize
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/{{kmerSize}}/evaluation/allOligo.set.coverage",
+                sample = samples,
+                kmerSize = kmerSize
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/{{kmerSize}}/evaluation/allOligo_before.tsv",
+                sample = samples,
+                kmerSize = kmerSize
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/{{kmerSize}}/evaluation/allOligo_after1.tsv",
+                sample = samples,
+                kmerSize = kmerSize
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/{{kmerSize}}/evaluation/allOligo_after2.tsv",
+                sample = samples,
+                kmerSize = kmerSize
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/{{kmerSize}}/evaluation/allOligo_after3.tsv",
+                sample = samples,
+                kmerSize = kmerSize
+            )
+else: 
+    rule all:
+        input:
+            expand(
+                f"{dataDir}/{{sample}}/{{sample}}.uniq",
+                sample = samples,
+                kmerSize = kmerSize
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/{{sample}}.msa",
+                sample = samples,
+                kmerSize = kmerSize
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/{{kmerSize}}/allKmercount.sorted.calculated.txt",
+                sample = samples,
+                kmerSize = kmerSize
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/{{kmerSize}}/allKmerCount.sorted.calculated.filtered.txt",
+                sample = samples,
+                kmerSize = kmerSize
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.filtered.fasta",
+                sample = samples,
+                kmerSize = kmerSize
+            ),
+            expand(
+                f"{file_refSeq}.DB.{{ext}}",
+                sample = samples,
+                kmerSize = kmerSize,
+                ext = ["1.ebwt", "2.ebwt", "3.ebwt", "4.ebwt", "rev.1.ebwt", "rev.2.ebwt"]
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.filtered.bowtie",
+                sample = samples,
+                kmerSize = kmerSize
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/{{kmerSize}}/allKmerCount.sorted.calculated.filtered.spec.txt",
+                sample = samples,
+                kmerSize = kmerSize
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/{{kmerSize}}/allOligo.set",
+                sample = samples,
+                kmerSize = kmerSize
+            ),
+            ### EVALUATION
+            expand(
+                f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/aceID-taxID-species.tsv",
+                sample = samples,
+                kmerSize = kmerSize
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/{{kmerSize}}/evaluation/allOligo.set.coverage",
+                sample = samples,
+                kmerSize = kmerSize
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/{{kmerSize}}/evaluation/allOligo_before.tsv",
+                sample = samples,
+                kmerSize = kmerSize
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/{{kmerSize}}/evaluation/allOligo_after1.tsv",
+                sample = samples,
+                kmerSize = kmerSize
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/{{kmerSize}}/evaluation/allOligo_after2.tsv",
+                sample = samples,
+                kmerSize = kmerSize
+            ),
+            expand(
+                f"{dataDir}/{{sample}}/{{kmerSize}}/evaluation/allOligo_after3.tsv",
+                sample = samples,
+                kmerSize = kmerSize
+            )
 
 include: "rules/basic_preprocessing.smk"
 include: "rules/basic_kmerCount.smk"
