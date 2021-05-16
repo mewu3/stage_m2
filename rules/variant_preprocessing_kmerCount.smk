@@ -42,7 +42,7 @@ rule removeDuplicateSeq:
 
 rule countAllKmer1:
     input:
-        lambda wildcards: config["samples"][wildcards.sample] if config["curated"] else f"{dataDir}/{{sample}}/{{sample}}.uniq"
+        lambda wildcards: config["samples"][wildcards.sample] if config["deduplication"] else f"{dataDir}/{{sample}}/{{sample}}.uniq"
     output:
         f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.int.kmc_pre",
         f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.int.kmc_suf",

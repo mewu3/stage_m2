@@ -116,7 +116,7 @@ if clustering:
 else: 
     rule evaluation1:
         input:
-            lambda wildcards: config["samples"][wildcards.sample] if config["curated"] else f"{dataDir}/{{sample}}/{{sample}}.uniq",
+            lambda wildcards: config["samples"][wildcards.sample] if config["deduplication"] else f"{dataDir}/{{sample}}/{{sample}}.uniq",
             file_aceIDtaxID,
             file_taxIDLineage
         output:

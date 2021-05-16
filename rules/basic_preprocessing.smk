@@ -66,7 +66,7 @@ if clustering :
 else:
     rule MSA:
         input:
-            lambda wildcards: config["samples"][wildcards.sample] if config["curated"] else f"{dataDir}/{{sample}}/{{sample}}.uniq"
+            lambda wildcards: config["samples"][wildcards.sample] if config["deduplication"] else f"{dataDir}/{{sample}}/{{sample}}.uniq"
         output:
             f"{dataDir}/{{sample}}/{{sample}}.msa"
         log:
