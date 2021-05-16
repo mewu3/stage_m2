@@ -19,7 +19,7 @@ samples:
     # coronavirusCuratedWithoutSarsCov2: "/datater/wu/data/coronavirusCuratedWithoutSarsCov2.fasta"
 
 ### global parameters
-curated: False  # True or False
+deduplication: False  # True or False
 clustering: False # True or False
 thread: 12
 kmerSize:
