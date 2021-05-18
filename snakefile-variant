@@ -14,6 +14,7 @@ dataDir = config["dataDir"]
 
 clusterIdentity = config["cd-hit"]["identity"]
 
+### functions
 def fetchConfigParameters():
     if config["mafft"]["fmodel"] == "on":
         config["mafft"]["fmodel"] = "--fmodel"
@@ -46,30 +47,42 @@ def fetchConfigParameters():
         config["mafft"]["quiet"] = ""
 fetchConfigParameters()
 
-
 # def aggregate_input(wildcards):
 #     checkpoint_output = checkpoints.splitFiles.get(**wildcards).output[0]
 #     return expand(f"{dataDir}/{{sample}}/filtering/reverse{{seg}}.calculated2.filtered",
 #                   sample = wildcards.sample,
 #                   seg = glob_wildcards(os.path.join(checkpoint_output, "reverse{seg}.fasta")).seg)
 
-
+### snakemake rules
 rule all:
     input:
         expand(
             f"{dataDir}/{{sample}}/{{sample}}.uniq",
-            sample = samples
+            sample = samples,
+            kmerSize = kmerSize
         ),
         expand(
-            f"{dataDir}/{{sample}}/{{sample}}.uniq.cluster{clusterIdentity}",
-            sample = samples
+            f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.int.kmc_pre",
+            sample = samples,
+            kmerSize = kmerSize
         ),
         expand(
-            f"{dataDir}/{{sample}}/{{sample}}.uniq.cluster{clusterIdentity}.msa",
-            sample = samples
+            f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.int.kmc_suf",
+            sample = samples,
+            kmerSize = kmerSize
         ),
         expand(
-            f"{dataDir}/{{sample}}/{{kmerSize}}/allKmercount.sorted.calculated.txt",
+            f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.txt",
+            sample = samples,
+            kmerSize = kmerSize
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.txt",
+            sample = samples,
+            kmerSize = kmerSize
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/{{kmerSize}}/allKmerCount.sorted.calculated.txt",
             sample = samples,
             kmerSize = kmerSize
         ),
@@ -100,11 +113,42 @@ rule all:
             kmerSize = kmerSize
         ),
         expand(
+            f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.uniq",
+            sample = samples,
+            kmerSize = kmerSize
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.msa",
+            sample = samples,
+            kmerSize = kmerSize
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.fasta",
+            sample = samples,
+            kmerSize = kmerSize
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.msa.DB.{{ext}}",
+            sample = samples,
+            kmerSize = kmerSize,
+            ext = ["1.ebwt", "2.ebwt", "3.ebwt", "4.ebwt", "rev.1.ebwt", "rev.2.ebwt"]
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.bowtie",
+            sample = samples,
+            kmerSize = kmerSize
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.position",
+            sample = samples,
+            kmerSize = kmerSize
+        ),
+        expand(
             f"{dataDir}/{{sample}}/{{kmerSize}}/allOligo.set",
             sample = samples,
             kmerSize = kmerSize
         ),
-        ### EVALUATION
+        ### Evaluation
         expand(
             f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/aceID-taxID-species.tsv",
             sample = samples,
@@ -136,9 +180,8 @@ rule all:
             kmerSize = kmerSize
         )
 
-include: "rules/clust_preprocessing.smk"
-include: "rules/basic_kmerCount.smk"
-include: "rules/basic_filtering.smk"
-include: "rules/basic_specificCheck.smk"
-include: "rules/basic_dimerCheck.smk"
-include: "rules/clust_evaluation.smk"
+include: "rules/variant_preprocessing_kmerCount.smk"
+include: "rules/variant_filtering.smk"
+include: "rules/variant_specificCheck.smk"
+include: "rules/variant_dimerCheck.smk"
+include: "rules/variant_evaluation.smk"
