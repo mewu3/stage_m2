@@ -1,59 +1,100 @@
-rule clustering:
-    input:
-        f"{dataDir}/{{sample}}/{{sample}}.uniq"
-    output:
-        f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.uniq"
-    params:
-        identity = config["cd-hit"]["identity"],
-        threads = config["thread"],
-        memory = config["cd-hit"]["memory"]
-    shell:
-        "lib/cdhit/cd-hit-est \
-        -i {input} \
-        -o {output} \
-        -c {params.identity} \
-        -T {params.threads} \
-        -M {params.memory}"
+if clustering:
+    rule clustering:
+        input:
+            f"{dataDir}/{{sample}}/{{sample}}.uniq" if deduplication else lambda wildcards: config["samples"][wildcards.sample]
+        output:
+            f"{dataDir}/{{sample}}/{{sample}}.uniq.cluster{clusterIdentity}" if deduplication else f"{dataDir}/{{sample}}/{{sample}}.cluster{clusterIdentity}"
+        params:
+            identity = config["cd-hit"]["identity"],
+            threads = config["thread"],
+            memory = config["cd-hit"]["memory"]
+        shell:
+            "lib/cdhit/cd-hit-est \
+            -i {input} \
+            -o {output} \
+            -c {params.identity} \
+            -T {params.threads} \
+            -M {params.memory}"
 
-rule MSA:
-    input:
-        f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.uniq"
-    output:
-        f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.msa"
-    log:
-        f"{dataDir}/{{sample}}/log/mafft.log"
-    conda:
-        "envs/mafft.yaml"
-    params:
-        threads = config["thread"],
-        algorithm = config["mafft"]["algorithm"],
-        op = config["mafft"]["op"],
-        ep = config["mafft"]["ep"],
-        bl = config["mafft"]["bl"],
-        jtt = config["mafft"]["jtt"],
-        tm = config["mafft"]["tm"],
-        fmodel = config["mafft"]["fmodel"],
-        clustalout = config["mafft"]["clustalout"],
-        inputorder = config["mafft"]["inputorder"],
-        reorder = config["mafft"]["reorder"],
-        treeout = config["mafft"]["treeout"],
-        quiet = config["mafft"]["quiet"]
-    shell:
-        "mafft {params.algorithm} \
-        --thread {params.threads} \
-        --op {params.op} \
-        --ep {params.ep} \
-        --bl {params.bl} \
-        --jtt {params.jtt} \
-        --tm {params.tm} \
-        {params.fmodel} \
-        {params.clustalout} \
-        {params.inputorder} \
-        {params.reorder} \
-        {params.treeout} \
-        {params.quiet} \
-        {input} > {output} \
-        2> {log}"
+    rule MSA:
+        input:
+            f"{dataDir}/{{sample}}/{{sample}}.uniq.cluster{clusterIdentity}" if deduplication else f"{dataDir}/{{sample}}/{{sample}}.cluster{clusterIdentity}"
+        output:
+            f"{dataDir}/{{sample}}/{{sample}}.msa"
+        log:
+            f"{dataDir}/{{sample}}/log/mafft.log"
+        conda:
+            "envs/mafft.yaml"
+        params:
+            threads = config["thread"],
+            algorithm = config["mafft"]["algorithm"],
+            op = config["mafft"]["op"],
+            ep = config["mafft"]["ep"],
+            bl = config["mafft"]["bl"],
+            jtt = config["mafft"]["jtt"],
+            tm = config["mafft"]["tm"],
+            fmodel = config["mafft"]["fmodel"],
+            clustalout = config["mafft"]["clustalout"],
+            inputorder = config["mafft"]["inputorder"],
+            reorder = config["mafft"]["reorder"],
+            treeout = config["mafft"]["treeout"],
+            quiet = config["mafft"]["quiet"]
+        shell:
+            "mafft {params.algorithm} \
+            --thread {params.threads} \
+            --op {params.op} \
+            --ep {params.ep} \
+            --bl {params.bl} \
+            --jtt {params.jtt} \
+            --tm {params.tm} \
+            {params.fmodel} \
+            {params.clustalout} \
+            {params.inputorder} \
+            {params.reorder} \
+            {params.treeout} \
+            {params.quiet} \
+            {input} > {output} \
+            2> {log}"
+else:
+    rule MSA:
+        input:
+            f"{dataDir}/{{sample}}/{{sample}}.uniq" if deduplication else lambda wildcards: config["samples"][wildcards.sample]
+        output:
+            f"{dataDir}/{{sample}}/{{sample}}.msa"
+        log:
+            f"{dataDir}/{{sample}}/log/mafft.log"
+        conda:
+            "envs/mafft.yaml"
+        params:
+            threads = config["thread"],
+            algorithm = config["mafft"]["algorithm"],
+            op = config["mafft"]["op"],
+            ep = config["mafft"]["ep"],
+            bl = config["mafft"]["bl"],
+            jtt = config["mafft"]["jtt"],
+            tm = config["mafft"]["tm"],
+            fmodel = config["mafft"]["fmodel"],
+            clustalout = config["mafft"]["clustalout"],
+            inputorder = config["mafft"]["inputorder"],
+            reorder = config["mafft"]["reorder"],
+            treeout = config["mafft"]["treeout"],
+            quiet = config["mafft"]["quiet"]
+        shell:
+            "mafft {params.algorithm} \
+            --thread {params.threads} \
+            --op {params.op} \
+            --ep {params.ep} \
+            --bl {params.bl} \
+            --jtt {params.jtt} \
+            --tm {params.tm} \
+            {params.fmodel} \
+            {params.clustalout} \
+            {params.inputorder} \
+            {params.reorder} \
+            {params.treeout} \
+            {params.quiet} \
+            {input} > {output} \
+            2> {log}"
 
 rule getKmerPosition1:
     input:
@@ -79,13 +120,13 @@ rule getKmerPosition1:
 
 rule getKmerPosition2:
     input:
-        f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.msa"
+        f"{dataDir}/{{sample}}/{{sample}}.msa"
     output:
         multiext(
-            f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.msa.DB.", "1.ebwt", "2.ebwt", "3.ebwt", "4.ebwt", "rev.1.ebwt", "rev.2.ebwt"
+            f"{dataDir}/{{sample}}/{{sample}}.msa.DB.", "1.ebwt", "2.ebwt", "3.ebwt", "4.ebwt", "rev.1.ebwt", "rev.2.ebwt"
         )
     params:
-        out = f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.msa.DB",
+        out = f"{dataDir}/{{sample}}/{{sample}}.msa.DB",
         threads = config["thread"]
     shell:
         """
@@ -99,7 +140,7 @@ rule getKmerPosition3:
         # f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.filtered.spec.fasta",
         f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.fasta",
         lambda wildcards: expand(
-            f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.msa.DB.{{ext}}",
+            f"{dataDir}/{{sample}}/{{sample}}.msa.DB.{{ext}}",
             ext = ["1.ebwt", "2.ebwt", "3.ebwt", "4.ebwt", "rev.1.ebwt", "rev.2.ebwt"],
             sample = wildcards.sample
         )
@@ -107,7 +148,7 @@ rule getKmerPosition3:
         # f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.filtered.spec.bowtie"
         f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.bowtie"
     params:
-        refDB = f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.msa.DB",
+        refDB = f"{dataDir}/{{sample}}/{{sample}}.msa.DB",
         threads = config["thread"]
     shell:
         """
@@ -155,7 +196,7 @@ rule getKmerPosition4:
 
 rule checkHeterodimer:
     input:
-        f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.msa",
+        f"{dataDir}/{{sample}}/{{sample}}.msa",
         # f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.filtered.spec.position"
         f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.position",
         f"{dataDir}/{{sample}}/{{kmerSize}}/allKmerCount.sorted.calculated.filtered.spec.txt"

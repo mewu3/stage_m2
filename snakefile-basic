@@ -12,10 +12,10 @@ file_taxIDLineage = config["file_taxIDLineage"]
 
 dataDir = config["dataDir"]
 
-clusterIdentity = config["cd-hit"]["identity"]
-
+deduplication = config["deduplication"]
 clustering = config["clustering"]
 
+clusterIdentity = config["cd-hit"]["identity"]
 
 def fetchConfigParameters():
     if config["mafft"]["fmodel"] == "on":
@@ -137,7 +137,7 @@ if clustering:
                 sample = samples,
                 kmerSize = kmerSize
             )
-else: 
+else:
     rule all:
         input:
             expand(

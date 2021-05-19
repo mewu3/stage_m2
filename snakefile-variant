@@ -12,6 +12,9 @@ file_taxIDLineage = config["file_taxIDLineage"]
 
 dataDir = config["dataDir"]
 
+deduplication = config["deduplication"]
+clustering = config["clustering"]
+
 clusterIdentity = config["cd-hit"]["identity"]
 
 ### functions
@@ -112,13 +115,13 @@ rule all:
             sample = samples,
             kmerSize = kmerSize
         ),
-        expand(
-            f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.uniq",
+        lambda wildcards: expand(
+            f"{dataDir}/{{sample}}/{{sample}}.uniq.cluster{clusterIdentity}",
             sample = samples,
             kmerSize = kmerSize
-        ),
+        ) if clustering else [],
         expand(
-            f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.msa",
+            f"{dataDir}/{{sample}}/{{sample}}.msa",
             sample = samples,
             kmerSize = kmerSize
         ),
@@ -128,7 +131,7 @@ rule all:
             kmerSize = kmerSize
         ),
         expand(
-            f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.msa.DB.{{ext}}",
+            f"{dataDir}/{{sample}}/{{sample}}.msa.DB.{{ext}}",
             sample = samples,
             kmerSize = kmerSize,
             ext = ["1.ebwt", "2.ebwt", "3.ebwt", "4.ebwt", "rev.1.ebwt", "rev.2.ebwt"]

@@ -113,10 +113,10 @@ if clustering:
                 df_first = df.groupby("start", as_index=False).head(1)
                 df_first = df_first[["oligo", 'kmerCount', 'CG%', 'Entropy', 'Tm', 'homodimer-dG', 'hairpin-dG', 'start', 'end']]
                 df_first.to_csv(output[index] , sep="\t", index=True)
-else: 
+else:
     rule evaluation1:
         input:
-            lambda wildcards: config["samples"][wildcards.sample] if config["deduplication"] else f"{dataDir}/{{sample}}/{{sample}}.uniq",
+            f"{dataDir}/{{sample}}/{{sample}}.uniq" if deduplication else lambda wildcards: config["samples"][wildcards.sample],
             file_aceIDtaxID,
             file_taxIDLineage
         output:

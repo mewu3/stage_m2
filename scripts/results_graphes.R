@@ -33,7 +33,7 @@ for (row in 1:nrow(combinations)){
   }
   
   if (str_detect(pipeline, "variant")) {
-    seqFile <- sprintf("%s/%s/%s/%s0.99.msa", datadir, pipeline, virus, virus)
+    seqFile <- sprintf("%s/%s/%s/%s.msa", datadir, pipeline, virus, virus)
     if ( (file.exists(seqFile)) & str_detect(seqFile, "variant") ) {
       commande <- sprintf("grep -c '^>' %s", seqFile)
       seqCount = system(commande, intern=TRUE)
@@ -166,3 +166,4 @@ for (row in 1:nrow(combinations)){
     # print(plot3)
   }
 }
+

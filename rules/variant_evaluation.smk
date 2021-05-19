@@ -1,7 +1,6 @@
 rule evaluation1:
     input:
-        # lambda wildcards: config["samples"][wildcards.sample] if config["deduplication"] else f"{dataDir}/{{sample}}/{{sample}}.uniq",
-        f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.msa",
+        f"{dataDir}/{{sample}}/{{sample}}.msa",
         file_aceIDtaxID,
         file_taxIDLineage
     output:
@@ -98,7 +97,7 @@ rule evaluation3:
 
 rule evaluation4:
     input:
-        f"{dataDir}/{{sample}}/{{sample}}{clusterIdentity}.msa",
+        f"{dataDir}/{{sample}}/{{sample}}.msa",
         f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.position",
         f"{dataDir}/{{sample}}/{{kmerSize}}/allKmerCount.sorted.calculated.filtered.txt",
         f"{dataDir}/{{sample}}/{{kmerSize}}/allKmerCount.sorted.calculated.filtered.spec.txt"
