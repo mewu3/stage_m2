@@ -9,9 +9,9 @@ rule removeDuplicateSeq:
 if clustering :
     rule clustering:
         input:
-            f"{dataDir}/{{sample}}/{{sample}}.uniq"
+            f"{dataDir}/{{sample}}/{{sample}}.uniq" if deduplication else lambda wildcards: config["samples"][wildcards.sample]
         output:
-            f"{dataDir}/{{sample}}/{{sample}}.uniq.cluster{clusterIdentity}"
+            f"{dataDir}/{{sample}}/{{sample}}.uniq.cluster{clusterIdentity}" if deduplication else f"{dataDir}/{{sample}}/{{sample}}.cluster{clusterIdentity}"
         params:
             identity = config["cd-hit"]["identity"],
             threads = config["thread"],
@@ -26,9 +26,9 @@ if clustering :
 
     rule MSA:
         input:
-            f"{dataDir}/{{sample}}/{{sample}}.uniq.cluster{clusterIdentity}"
+            f"{dataDir}/{{sample}}/{{sample}}.uniq.cluster{clusterIdentity}" if deduplication else f"{dataDir}/{{sample}}/{{sample}}.cluster{clusterIdentity}"
         output:
-            f"{dataDir}/{{sample}}/{{sample}}.uniq.cluster{clusterIdentity}.msa"
+            f"{dataDir}/{{sample}}/{{sample}}.uniq.cluster{clusterIdentity}.msa" if deduplication else f"{dataDir}/{{sample}}/{{sample}}.cluster{clusterIdentity}.msa"
         log:
             f"{dataDir}/{{sample}}/log/mafft.log"
         conda:
@@ -63,12 +63,66 @@ if clustering :
             {params.quiet} \
             {input} > {output} \
             2> {log}"
+
+    checkpoint splitIntoOverlappingWindows:
+        input:
+            f"{dataDir}/{{sample}}/{{sample}}.uniq.cluster{clusterIdentity}.msa" if deduplication else f"{dataDir}/{{sample}}/{{sample}}.cluster{clusterIdentity}.msa"
+        output:
+            directory(f"{dataDir}/{{sample}}/splitFiles")
+        params:
+            step = config["step"],
+            overlap = config["overlap"]
+        run:
+            #!/usr/bin/env python3.8
+            from pyfaidx import Fasta
+            import os
+
+            inputFile = input[0]
+            os.makedirs(output[0])
+            step = params.step
+            overlap = params.overlap
+
+            fasta = Fasta(inputFile)
+            seqLength = len(fasta[0])
+
+            remainder = seqLength % (step-overlap)
+            chunkNumber = int(seqLength / (step-overlap))
+            print("The sequences are splitted into "+str(chunkNumber)+" chunks, and there are "+str(remainder)+" bp left.")
+
+            if remainder <= step/2: # primux fasta_tile_overlap.pl
+                newStep = int(remainder/chunkNumber) + 1 + step
+                print("Changing step size from {} to {} so there will be no remainder.".format(step, newStep))
+                step = newStep
+
+            chunks = [[i,i+step] for i in range(0, seqLength, step-overlap)]
+            chunkNumber=len(chunks)
+            print(f"Final chunk number: {chunkNumber}")
+
+            for chunk in chunks:
+
+                if chunk[-1] > seqLength:
+                    chunk[-1] = seqLength
+
+                seg = str(chunk[0])+"-"+str(chunk[1])
+
+                # f1 = open(output[0] + f"/forward{seg}.fasta", "w")
+                f2 = open(output[0] + f"/reverse{seg}.fasta", "w")
+
+                for id in fasta.keys() :
+                    segment = fasta[id][chunk[0]:chunk[1]]
+                    # forward = str(segment[:50])
+                    reverse = str(segment[-50:])
+                    # f1.write("> {}|{}-{}\n{}\n".format(fasta[id].long_name, str(chunk[0]), str(chunk[1]), forward))
+                    f2.write(f">{fasta[id].long_name}\n{reverse}\n")
+
+                # f1.close()
+                f2.close()
 else:
     rule MSA:
         input:
             f"{dataDir}/{{sample}}/{{sample}}.uniq" if deduplication else lambda wildcards: config["samples"][wildcards.sample]
         output:
-            f"{dataDir}/{{sample}}/{{sample}}.msa"
+            f"{dataDir}/{{sample}}/{{sample}}.uniq.msa" if deduplication else f"{dataDir}/{{sample}}/{{sample}}.uniq.msa"
         log:
             f"{dataDir}/{{sample}}/log/mafft.log"
         conda:
@@ -106,56 +160,56 @@ else:
             2> {log}
             """
 
-checkpoint splitIntoOverlappingWindows:
-    input:
-        f"{dataDir}/{{sample}}/{{sample}}.uniq.cluster{clusterIdentity}.msa" if clustering else f"{dataDir}/{{sample}}/{{sample}}.msa"
-    output:
-        directory(f"{dataDir}/{{sample}}/splitFiles")
-    params:
-        step = config["step"],
-        overlap = config["overlap"]
-    run:
-        #!/usr/bin/env python3.8
-        from pyfaidx import Fasta
-        import os
+    checkpoint splitIntoOverlappingWindows:
+        input:
+            f"{dataDir}/{{sample}}/{{sample}}.uniq.msa" if deduplication else f"{dataDir}/{{sample}}/{{sample}}.uniq.msa"
+        output:
+            directory(f"{dataDir}/{{sample}}/splitFiles")
+        params:
+            step = config["step"],
+            overlap = config["overlap"]
+        run:
+            #!/usr/bin/env python3.8
+            from pyfaidx import Fasta
+            import os
 
-        inputFile = input[0]
-        os.makedirs(output[0])
-        step = params.step
-        overlap = params.overlap
+            inputFile = input[0]
+            os.makedirs(output[0])
+            step = params.step
+            overlap = params.overlap
 
-        fasta = Fasta(inputFile)
-        seqLength = len(fasta[0])
+            fasta = Fasta(inputFile)
+            seqLength = len(fasta[0])
 
-        remainder = seqLength % (step-overlap)
-        chunkNumber = int(seqLength / (step-overlap))
-        print("The sequences are splitted into "+str(chunkNumber)+" chunks, and there are "+str(remainder)+" bp left.")
+            remainder = seqLength % (step-overlap)
+            chunkNumber = int(seqLength / (step-overlap))
+            print("The sequences are splitted into "+str(chunkNumber)+" chunks, and there are "+str(remainder)+" bp left.")
 
-        if remainder <= step/2: # primux fasta_tile_overlap.pl
-            newStep = int(remainder/chunkNumber) + 1 + step
-            print("Changing step size from {} to {} so there will be no remainder.".format(step, newStep))
-            step = newStep
+            if remainder <= step/2: # primux fasta_tile_overlap.pl
+                newStep = int(remainder/chunkNumber) + 1 + step
+                print("Changing step size from {} to {} so there will be no remainder.".format(step, newStep))
+                step = newStep
 
-        chunks = [[i,i+step] for i in range(0, seqLength, step-overlap)]
-        chunkNumber=len(chunks)
-        print(f"Final chunk number: {chunkNumber}")
+            chunks = [[i,i+step] for i in range(0, seqLength, step-overlap)]
+            chunkNumber=len(chunks)
+            print(f"Final chunk number: {chunkNumber}")
 
-        for chunk in chunks:
+            for chunk in chunks:
 
-            if chunk[-1] > seqLength:
-                chunk[-1] = seqLength
+                if chunk[-1] > seqLength:
+                    chunk[-1] = seqLength
 
-            seg = str(chunk[0])+"-"+str(chunk[1])
+                seg = str(chunk[0])+"-"+str(chunk[1])
 
-            # f1 = open(output[0] + f"/forward{seg}.fasta", "w")
-            f2 = open(output[0] + f"/reverse{seg}.fasta", "w")
+                # f1 = open(output[0] + f"/forward{seg}.fasta", "w")
+                f2 = open(output[0] + f"/reverse{seg}.fasta", "w")
 
-            for id in fasta.keys() :
-                segment = fasta[id][chunk[0]:chunk[1]]
-                # forward = str(segment[:50])
-                reverse = str(segment[-50:])
-                # f1.write("> {}|{}-{}\n{}\n".format(fasta[id].long_name, str(chunk[0]), str(chunk[1]), forward))
-                f2.write(f">{fasta[id].long_name}\n{reverse}\n")
+                for id in fasta.keys() :
+                    segment = fasta[id][chunk[0]:chunk[1]]
+                    # forward = str(segment[:50])
+                    reverse = str(segment[-50:])
+                    # f1.write("> {}|{}-{}\n{}\n".format(fasta[id].long_name, str(chunk[0]), str(chunk[1]), forward))
+                    f2.write(f">{fasta[id].long_name}\n{reverse}\n")
 
-            # f1.close()
-            f2.close()
+                # f1.close()
+                f2.close()
