@@ -14,8 +14,8 @@ samples:
     # enterovirus: "/datater/wu/data/enterovirus.fasta"
     # coronavirus: "/datater/wu/data/coronavirus.fasta"
     # coronavirusWithoutSarsCov2: "/datater/wu/data/coronavirusWithoutSarsCov2.fasta"
-    enterovirusCurated: "/datater/wu/data/enterovirusCurated.fasta"
-    # coronavirusCurated: "/datater/wu/data/coronavirusCurated.fasta"
+    # enterovirusCurated: "/datater/wu/data/enterovirusCurated.fasta"
+    coronavirusCurated: "/datater/wu/data/coronavirusCurated.fasta"
     # coronavirusCuratedWithoutSarsCov2: "/datater/wu/data/coronavirusCuratedWithoutSarsCov2.fasta"
 
 ### global parameters

@@ -1,0 +1,77 @@
+Linux version
+
+Using ReadLine,Boost,HDF5,GSL
+mothur v.1.45.3
+Last updated: 5/8/21
+by
+Patrick D. Schloss
+
+Department of Microbiology & Immunology
+
+University of Michigan
+http://www.mothur.org
+
+When using, please cite:
+Schloss, P.D., et al., Introducing mothur: Open-source, platform-independent, community-supported software for describing and comparing microbial communities. Appl Environ Microbiol, 2009. 75(23):7537-41.
+
+Distributed under the GNU General Public License
+
+Type 'help()' for information on the commands that are available
+
+For questions and analysis support, please visit our forum at https://forum.mothur.org
+
+Type 'quit()' to exit program
+
+[NOTE]: Setting random seed to 19760620.
+
+Interactive Mode
+
+
+
+mothur > heatmap.sim(phylio=/home/meijun/Documents/server/data/genomeVariability/enterovirus.matrix)
+[WARNING]: phylio is not a valid parameter, ignoring.
+The valid parameters are: shared, phylip, name, count, column, groups, label, calc, fontsize, seed, inputdir, and outputdir.
+No valid current files. You must provide a shared or phylip or column file.
+[ERROR]: did not complete heatmap.sim.
+
+mothur > heatmap.sim(phylip=/home/meijun/Documents/server/data/genomeVariability/enterovirus.matrix)
+Unable to open /home/meijun/Documents/server/data/genomeVariability/enterovirus.matrix. Trying default /datater/wu/MSSPE/lib/mothur/enterovirus.matrix.
+Unable to open /datater/wu/MSSPE/lib/mothur/enterovirus.matrix. Trying mothur's executable location /datater/wu/MSSPE/lib/mothur/enterovirus.matrix.
+Unable to open /datater/wu/MSSPE/lib/mothur/enterovirus.matrix. Trying mothur's tools location enterovirus.matrix.
+Unable to open enterovirus.matrix.
+Unable to open /home/meijun/Documents/server/data/genomeVariability/enterovirus.matrix
+[ERROR]: did not complete heatmap.sim.
+
+mothur > heatmap.sim(phylip=/home/meijun/Documents/server/data/genomeVariability/enterovirus.matrix)
+Unable to open /home/meijun/Documents/server/data/genomeVariability/enterovirus.matrix. Trying default /datater/wu/MSSPE/lib/mothur/enterovirus.matrix.
+Unable to open /datater/wu/MSSPE/lib/mothur/enterovirus.matrix. Trying mothur's executable location /datater/wu/MSSPE/lib/mothur/enterovirus.matrix.
+Unable to open /datater/wu/MSSPE/lib/mothur/enterovirus.matrix. Trying mothur's tools location enterovirus.matrix.
+Unable to open enterovirus.matrix.
+Unable to open /home/meijun/Documents/server/data/genomeVariability/enterovirus.matrix
+[ERROR]: did not complete heatmap.sim.
+
+mothur > heatmap.sim(phylip=/datater/wu/data/genomeVariability/enterovirus.matrix)
+
+Output File Names: 
+/datater/wu/data/genomeVariability/enterovirus.heatmap.sim.svg
+
+
+mothur > quit()
+
+
+************************************************************
+************************************************************
+************************************************************
+Detected 3 [ERROR] messages, please review.
+************************************************************
+************************************************************
+************************************************************
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<^>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<^>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<^>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Detected 1 [WARNING] messages, please review.
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<^>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<^>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<^>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

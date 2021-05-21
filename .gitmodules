@@ -19,3 +19,9 @@
 [submodule "lib/cdhit"]
 	path = lib/cdhit
 	url = https://github.com/weizhongli/cdhit.git
+[submodule "lib/FastANI"]
+	path = lib/FastANI
+	url = https://github.com/ParBLiSS/FastANI.git
+[submodule "lib/pyani"]
+	path = lib/pyani
+	url = https://github.com/widdowquinn/pyani.git
