@@ -1,21 +1,6 @@
-[submodule "lib/dsk"]
-	path = lib/dsk
-	url = https://github.com/GATB/dsk.git
 [submodule "lib/primer3"]
 	path = lib/primer3
 	url = https://github.com/primer3-org/primer3
-[submodule "lib/nessie"]
-	path = lib/nessie
-	url = https://github.com/B3rse/nessie.git
-[submodule "reptyr"]
-	path = reptyr
-	url = https://github.com/nelhage/reptyr.git
-[submodule "lib/gerbil"]
-	path = lib/gerbil
-	url = https://github.com/uni-halle/gerbil.git
-[submodule "lib/squeakr"]
-	path = lib/squeakr
-	url = https://github.com/splatlab/squeakr.git
 [submodule "lib/cdhit"]
 	path = lib/cdhit
 	url = https://github.com/weizhongli/cdhit.git
