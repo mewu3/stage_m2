@@ -6,6 +6,7 @@ import numpy as np
 import fnmatch
 import glob
 import shutil
+import random
 
 ## split multifasta to individual fasta ### 
 # f_open = open(sys.argv[1], "r")
@@ -87,3 +88,26 @@ import shutil
 #         all_files.write(li)
 #     specieFile.close()
 # all_files.close()
+
+### extrait one sequence from each taxID ### 
+ls_species = glob.glob(f"/datater/wu/data/enterovirus/*/")
+seenTax = []
+enterovirus = "/datater/wu/data/genomeVariability/enterovirus.txt"
+enterovirus = open(enterovirus, "w")
+for specie in ls_species:
+    specieName = specie.split("/")[-2]
+    specieFile = f"{specie}{specieName}.txt"
+    specieFile = open(specieFile, "r")
+    for li in specieFile:
+        ls = li.split("/")
+        tax = ls[-2]
+        if tax not in seenTax:
+            seenTax.append(tax)
+            enterovirus.write(li)
+    specieFile.close
+enterovirus.close()
+
+with open("/datater/wu/data/genomeVariability/enterovirus.txt", "r") as file:
+    for li in file:
+        li = li.rstrip("\n")
+        os.system(f"cp {li} /datater/wu/data/genomeVariability/enterovirus/")

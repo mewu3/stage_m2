@@ -1,7 +1,7 @@
 if clustering:
     rule evaluation1:
         input:
-            f"{dataDir}/{{sample}}/{{sample}}.uniq.cluster{clusterIdentity}",
+            f"{dataDir}/{{sample}}/{{sample}}.uniq.cluster{clusterIdentity}" if deduplication else f"{dataDir}/{{sample}}/{{sample}}.cluster{clusterIdentity}",
             file_aceIDtaxID,
             file_taxIDLineage
         output:
