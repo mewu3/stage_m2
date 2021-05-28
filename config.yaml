@@ -1,6 +1,6 @@
 ### output directory path
-dataDir: "/datater/wu/data/MSSPE-basic"
-# dataDir: "/datater/wu/data/MSSPE-variant"
+# dataDir: "/datater/wu/data/MSSPE-basic"
+dataDir: "/datater/wu/data/MSSPE-variant"
 
 ### files path
 file_refSeq : "/datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna"
@@ -11,19 +11,19 @@ file_taxIDLineage: "/datater/wu/data/ncbiTaxonomy/ncbi_lineages_2021-04-23.csv" 
 samples:
     # zika : "/datater/wu/data/ZIKV-96seqs.fasta"
     enterovirus: "/datater/wu/data/enterovirus.fasta"
-    # coronavirus: "/datater/wu/data/coronavirus.fasta"
-    # coronavirusWithoutSarsCov2: "/datater/wu/data/coronavirusWithoutSarsCov2.fasta"
+    coronavirus: "/datater/wu/data/coronavirus.fasta"
+    coronavirusWithoutSarsCov2: "/datater/wu/data/coronavirusWithoutSarsCov2.fasta"
     # enterovirusCurated: "/datater/wu/data/enterovirusCurated.fasta"
     # coronavirusCurated: "/datater/wu/data/coronavirusCurated.fasta"
     # coronavirusCuratedWithoutSarsCov2: "/datater/wu/data/coronavirusCuratedWithoutSarsCov2.fasta"
 
 ### global parameters
 deduplication: False  # True or False
-clustering: True # True or False
+clustering: False # True or False
 thread: 12
 kmerSize:
     kmer13: 13
-    # kmer15: 15
+    kmer15: 15
 
 ### multiple sequence alignemnt
 mafft:

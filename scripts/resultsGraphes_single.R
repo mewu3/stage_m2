@@ -8,42 +8,25 @@ library("svglite", lib="/datater/wu/miniconda3/lib/R/library/")
 
 ### load input files
 datadir = "/datater/wu/data"
-pipeline = c("MSSPE-basic", "MSSPE-variant")
-virus = c("enterovirus", "coronavirus", "coronavirusWithoutSarsCov2", "enterovirusCurated", "coronavirusCurated", "coronavirusCuratedWithoutSarsCov2")
+pipeline = c("MSSPE-variant")
+virus = c("coronavirus", "enterovirus", "coronavirusWithoutSarsCov2")
 kmerSize = c("13", "15")
+#seqCountFile = "coronavirus.uniq.cluster0.99.msa"
 combinations = expand.grid(pipeline, virus, kmerSize)
 
 for (row in 1:nrow(combinations)){
   pipeline = toString(combinations[row,1])
   virus = toString(combinations[row,2])
   kmerSize = toString(combinations[row,3])
-  seqCount = 0
-  
-
-  if (str_detect(pipeline, "basic")) {
-    seqFile = sprintf("%s/%s/%s/%s.msa", datadir, pipeline, virus, virus)
-    if ( (file.exists(seqFile)) & !str_detect(seqFile, "Curated") ) {
-      commande <- sprintf("grep -c '^>' %s", seqFile)
-      seqCount = system(commande, intern=TRUE)
-    }
-  }
-  
-  if (str_detect(pipeline, "variant")) {
-    if (str_detect(virus, "Curated")){
-      seqFile = sprintf("%s/%s.fasta", datadir, virus) 
-      commande <- sprintf("grep -c '^>' %s", seqFile)
-      seqCount = system(commande, intern=TRUE)
-    }
-  
-    # seqFile <- sprintf("%s/%s/%s/%s.msa", datadir, pipeline, virus, virus)
-    # if ( (file.exists(seqFile)) & str_detect(seqFile, "variant") ) {
-    # commande <- sprintf("grep -c '^>' %s", seqFile)
-    #  seqCount = system(commande, intern=TRUE)
-    # }
-  }
-  
+ 
+  seqFile = sprintf("%s/%s/%s/%s.uniq", datadir, pipeline, virus, virus)
+  commande <- sprintf("grep -c '^>' %s", seqFile)
+  seqCount = system(commande, intern=TRUE)
   seqCount = as.numeric(seqCount)
+
+  
   workdir <- sprintf("%s/%s/%s/kmer%s/evaluation", datadir, pipeline, virus, kmerSize)
+  
   if (dir.exists(workdir)){
     ### kmerCoverage counting ###
     oligoCount_before <- sprintf("%s/allOligo_before.tsv", workdir)
@@ -78,7 +61,7 @@ for (row in 1:nrow(combinations)){
       oligoCount[, i] <- oligoCount[, i]/seqCount * 100
       oligoCount[, i][oligoCount[, i]>100] <- 100
     }
-
+    
     names(oligoCount)[names(oligoCount) == "kmerCount.a0"] <- "Sélection de candidats"
     names(oligoCount)[names(oligoCount) == "kmerCount.a1"] <- "Le filtrage par critère"
     names(oligoCount)[names(oligoCount) == "kmerCount.a2"] <- "Le filtrage par spécificité"
@@ -99,9 +82,7 @@ for (row in 1:nrow(combinations)){
       ylab("La couverture de kmer")
     filename <- paste(workdir, "kmerCount.png", sep="/")
     ggsave(plot, file=filename, width=30, height=12, units="cm", scale=2)
-    # print(plot)
-    
-    
+
     if (str_detect(pipeline, "variant")) {
       seqFile <- sprintf("%s/%s/%s/%s.msa", datadir, pipeline, virus, virus)
       if ( (file.exists(seqFile)) & str_detect(seqFile, "variant") ) {
@@ -132,7 +113,6 @@ for (row in 1:nrow(combinations)){
     finalSpeciesCoverage$speciesCount[with(finalSpeciesCoverage, speciesCount > totalCount)] <- finalSpeciesCoverage$totalCount[with(finalSpeciesCoverage, speciesCount > totalCount)]
     finalSpeciesCoverage$position <- paste(finalSpeciesCoverage$start, finalSpeciesCoverage$end, sep="-")
     finalSpeciesCoverage$position <- factor(finalSpeciesCoverage$position, levels=unique(finalSpeciesCoverage$position))
-
 
     finalSpeciesCoverage[, "speciesCoverage"] = finalSpeciesCoverage[,"speciesCount"]/seqCount*100
     finalSpeciesCoverage[, "totalCoverage"] = finalSpeciesCoverage[,"totalCount"]/seqCount*100
