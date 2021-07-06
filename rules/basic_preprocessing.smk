@@ -28,7 +28,7 @@ if clustering :
         input:
             f"{dataDir}/{{sample}}/{{sample}}.uniq.cluster{clusterIdentity}" if deduplication else f"{dataDir}/{{sample}}/{{sample}}.cluster{clusterIdentity}"
         output:
-            f"{dataDir}/{{sample}}/{{sample}}.msa"
+            f"{dataDir}/{{sample}}/{{sample}}.uniq.cluster{clusterIdentity}.msa" if deduplication else f"{dataDir}/{{sample}}/{{sample}}.cluster{clusterIdentity}.msa"
         log:
             f"{dataDir}/{{sample}}/log/mafft.log"
         conda:
@@ -66,7 +66,7 @@ if clustering :
 
     checkpoint splitIntoOverlappingWindows:
         input:
-            f"{dataDir}/{{sample}}/{{sample}}.msa"
+            f"{dataDir}/{{sample}}/{{sample}}.uniq.cluster{clusterIdentity}.msa" if deduplication else f"{dataDir}/{{sample}}/{{sample}}.cluster{clusterIdentity}.msa"
         output:
             directory(f"{dataDir}/{{sample}}/splitFiles")
         params:
@@ -122,7 +122,7 @@ else:
         input:
             f"{dataDir}/{{sample}}/{{sample}}.uniq" if deduplication else lambda wildcards: config["samples"][wildcards.sample]
         output:
-            f"{dataDir}/{{sample}}/{{sample}}.msa"
+            f"{dataDir}/{{sample}}/{{sample}}.uniq.msa" if deduplication else f"{dataDir}/{{sample}}/{{sample}}.uniq.msa"
         log:
             f"{dataDir}/{{sample}}/log/mafft.log"
         conda:
@@ -162,7 +162,7 @@ else:
 
     checkpoint splitIntoOverlappingWindows:
         input:
-            f"{dataDir}/{{sample}}/{{sample}}.msa"
+            f"{dataDir}/{{sample}}/{{sample}}.uniq.msa" if deduplication else f"{dataDir}/{{sample}}/{{sample}}.uniq.msa"
         output:
             directory(f"{dataDir}/{{sample}}/splitFiles")
         params:

@@ -3,7 +3,7 @@ library("gridExtra")
 library("reshape2")
 
 ### load input files
-datadir = "/datater/wu/data/pre-historic"
+datadir = "/home/meijun/Documents/server/data/tmp"
 pipeline = c("MSSPE-basic", "MSSPE-variant")
 virus = c("coronavirusWithoutSarsCov2", "coronavirusCuratedWithoutSarsCov2")
 kmerSize = c("13", "15")
@@ -22,21 +22,15 @@ for (row in 1:nrow(combinations)){
       table$position <- paste(table$start, table$end, sep="-")
       table$position <- factor(table$position, levels=table$position)
       table <- table[, !(names(table) %in% c("start", "end", "counts_x", "counts_y", "SeqCount"))]
-      table[, "stricOligoCount"] = table[,"stricOligoCount"] * 100
-      table[,"notStricOligoCount"] = table[,"notStricOligoCount"]*100
-      
-      print(file)
-      print(mean(table[,"notStricOligoCount"]))
-#       dfm <- pivot_longer(table, -position, names_to="variable", values_to="value")
-#       plot <- ggplot(dfm, aes(x=position,y=value)) +
-#         geom_bar(aes(fill=variable), stat = "identity", position = "dodge") + 
-#         theme(axis.text.x = element_text(angle=90, size=5)) +
-#         xlab("position") + 
-#         ylab("%Seq cible") + 
-#         ylim(0,100)
-#       filename <- tools::file_path_sans_ext(file)
-#       filename <- paste(filename, ".png", sep="")
-#       ggsave(plot, file=filename)
+      dfm <- pivot_longer(table, -position, names_to="variable", values_to="value")
+      plot <- ggplot(dfm, aes(x=position,y=value)) +
+        geom_bar(aes(fill=variable), stat = "identity", position = "dodge") + 
+        theme(axis.text.x = element_text(angle=90, size=5)) +
+        xlab("position") + 
+        ylab("oligonucleotide count")
+      filename <- tools::file_path_sans_ext(file)
+      filename <- paste(filename, ".png", sep="")
+      ggsave(plot, file=filename)
   }    
 }
 
