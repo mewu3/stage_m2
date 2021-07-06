@@ -1,6 +1,6 @@
 ### output directory path
-dataDir: "/datater/wu/data/MSSPE-basic"
-# dataDir: "/datater/wu/data/MSSPE-variant"
+# dataDir: "/datater/wu/data/MSSPE-basic"
+dataDir: "/datater/wu/data/MSSPE-variant"
 
 ### files path
 file_refSeq : "/datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna"
@@ -18,8 +18,8 @@ samples:
     # coronavirusCuratedWithoutSarsCov2: "/datater/wu/data/coronavirusCuratedWithoutSarsCov2.fasta"
 
 ### global parameters
-deduplication: False  # True or False
-clustering: True # True or False
+deduplication: True  # True or False
+clustering: False # True or False
 thread: 12
 kmerSize:
     kmer13: 13
