@@ -1,5 +1,0 @@
-channels:
-    - conda-forge
-    - bioconda
-dependencies:
-    - pyfaidx=0.5.3
