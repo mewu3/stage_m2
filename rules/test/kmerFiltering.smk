@@ -1,4 +1,4 @@
-rule filtering1:
+rule kmerFiltering1:
     input:
         f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.txt"
     output:
@@ -118,7 +118,7 @@ rule filtering1:
         input1Open.close()
         output1Open.close()
 
-rule filtering2:
+rule kmerFiltering2:
     input:
         f"{dataDir}/{{sample}}/{{kmerSize}}/allKmerCount.sorted.calculated.txt"
     output:
@@ -141,17 +141,110 @@ rule filtering2:
 
         df = pd.read_table(input[0], sep="\t", header=0, index_col=0)
 
-        # entropyThreshold = float(df["Entropy"].quantile(0.75))
-        # entropyThreshold = float(df["Entropy"].median())
-        # entropyThreshold = float(df["Entropy"].mean())
-        tmMean = float(df["Tm"].mean())
-        tmStd = float(df["Tm"].std())
-
         # MSSPE Deng et al. (2020), don't know the logic behind yet. with tm
         # range from 60 - 70 no oligo could pass the criteria
+        tmMean = float(df["Tm"].mean())
+        tmStd = float(df["Tm"].std())
         TmSeuilPlus = tmMean + 2*tmStd
         TmSeuilLess = tmMean - 2*tmStd
 
         df_filtered = df[(df["Tm"] >= TmSeuilLess) & (df["Tm"] <= TmSeuilPlus) & (df["Tm"] <= TmMax) & (df["CG%"] >= GCUp) & (df["CG%"] <= GCDown) & (df["hairpin-dG"] > deltaG) & (df["homodimer-dG"] > deltaG) & (df["Entropy"] > LCSeuil)]
         df_filtered = df_filtered.sort_values("kmerCount", ascending=False)
         df_filtered.to_csv(output[0], sep='\t', index=True)
+
+rule kmerFiltering3: 
+    input: 
+        f"{dataDir}/{{sample}}/{{kmerSize}}/allKmerCount.sorted.calculated.filtered.txt"
+    output: 
+        f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.filtered.fasta"
+    run: 
+        import os
+        from Bio.Seq import Seq
+
+        with open(output[0], "w") as fo: 
+            with open(input[0], "r") as fi: 
+                for l in fi.readlines()[1:]:
+                    l = l.rstrip("\n").split()
+                    id = l[0]
+                    oligo = str(Seq(l[1]))
+                    fo.write(f">p{id}\n{oligo}\n")
+
+rule kmerFiltering4: 
+    input: 
+        f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.filtered.fasta"
+    output: 
+        f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.filtered.clustered.fasta"
+    params:
+        threads = config["thread"],
+        memory = config["cd-hit"]["memory"]
+    shell:
+        "./lib/cdhit/cd-hit-est \
+        -i {input} \
+        -o {output} \
+        -c 0.88 \
+        -T {params.threads} \
+        -M {params.memory}"
+
+rule kmerFiltering5:
+    input:
+        file_refSeq
+    output:
+        multiext(
+            f"{file_refSeq}.DB.", "1.ebwt", "2.ebwt", "3.ebwt", "4.ebwt", "rev.1.ebwt", "rev.2.ebwt"
+        )
+    params:
+        out = f"{file_refSeq}.DB",
+        threads = config["thread"]
+    shell:
+        """
+        bowtie-build \
+        --threads {params.threads} \
+        {input[0]} {params.out}
+        """
+
+rule kmerFiltering6:
+    input:
+        f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.filtered.clustered.fasta",
+        lambda wildcards: expand(
+            f"{file_refSeq}.DB.{{ext}}",
+            ext = ["1.ebwt", "2.ebwt", "3.ebwt", "4.ebwt", "rev.1.ebwt", "rev.2.ebwt"]
+        )
+    output:
+        f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.filtered.clustered.bowtie"
+    params:
+        refDB = f"{file_refSeq}.DB",
+        threads = config["thread"]
+    shell:
+        """
+        bowtie \
+        -x {params.refDB} -f {input[0]} \
+        -v 0 -l 7 -a \
+        --sam \
+        -p {params.threads} \
+        {output}
+        """
+
+rule kmerFiltering7:
+    input:
+        f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.filtered.clustered.bowtie",
+        f"{dataDir}/{{sample}}/{{kmerSize}}/allKmerCount.sorted.calculated.filtered.txt"
+    output:
+        f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.filtered.clustered.spec.fasta"
+    params:
+        kmerSize = lambda wildcards: config["kmerSize"][wildcards.kmerSize]
+    run:
+        import os
+        import pandas as pd
+
+        specific = os.popen(f"samtools view -f 4 {input[0]} | cut -f1").read().split("\n") # -f unmapped -F matched
+        specific = list(map(lambda x: x.lstrip("p"), specific))
+        specific = list(filter(None, specific))
+        specific = list(map(lambda x: int(x), specific))
+
+        df = pd.read_table(input[1], sep="\t", header=0, index_col=0)
+        df = df[df.index.isin(specific)]
+        
+        with open(output[0], "w") as fo: 
+            for i, r in df.iterrows():
+                seq = r["oligo"]
+                fo.write(f">p{i}\n{seq}\n")

@@ -1,0 +1,79 @@
+#!/usr/bin/env python3.8
+import os
+
+configfile: "config_test.yaml"
+
+samples = list(config["samples"].keys())
+kmerSizes = list(config["kmerSize"].keys())
+
+file_refSeq = config["file_refSeq"]
+file_aceIDtaxID = config["file_aceIDtaxID"]
+file_taxIDLineage = config["file_taxIDLineage"]
+
+dataDir = config["dataDir"]
+
+deduplication = config["deduplication"]
+clustering = config["clustering"]
+
+def fetchConfigParameters():
+    if config["mafft"]["fmodel"] == "on":
+        config["mafft"]["fmodel"] = "--fmodel"
+    else:
+        config["mafft"]["fmodel"] = ""
+
+    if config["mafft"]["clustalout"] == "on":
+        config["mafft"]["clustalout"] = "--clustalout"
+    else:
+        config["mafft"]["clustalout"] = ""
+
+    if config["mafft"]["inputorder"] == "on":
+        config["mafft"]["inputorder"] = "--inputorder"
+    else :
+        config["mafft"]["inputorder"] = ""
+
+    if config["mafft"]["reorder"] == "on":
+        config["mafft"]["reorder"] = "--reorder"
+    else:
+        config["mafft"]["reorder"] = ""
+
+    if config["mafft"]["treeout"] == "on":
+        config["mafft"]["treeout"] = "--treeout"
+    else :
+        config["mafft"]["treeout"] = ""
+
+    if config["mafft"]["quiet"] == "on":
+        config["mafft"]["quiet"] = "--quiet"
+    else:
+        config["mafft"]["quiet"] = ""
+fetchConfigParameters()
+
+def input_kmerCounting1(wildcards): 
+    if deduplication and clustering: 
+        return expand(
+            f"{dataDir}/{{sample}}/{{sample}}.uniq.cluster",
+            sample = wildcards.sample 
+        )
+    elif deduplication: 
+        return expand(
+            f"{dataDir}/{{sample}}/{{sample}}.uniq"
+        )
+    elif clustering: 
+        return expand(
+            f"{dataDir}/{{sample}}/{{sample}}.cluster"
+        )
+    else: 
+        return config["samples"][wildcards.sample]
+
+rule all:
+    input:
+        expand(
+            f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/test",
+            sample = samples,
+            kmerSize = kmerSizes
+        )
+
+include: "rules/test/deduplication.smk"
+include: "rules/test/clustering.smk"
+include: "rules/test/kmerCounting.smk"
+include: "rules/test/kmerFiltering.smk"
+include: "rules/test/kmerSelecting.smk"

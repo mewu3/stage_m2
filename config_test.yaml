@@ -1,0 +1,77 @@
+### output directory path
+dataDir: "/datater/wu/data/test"
+
+### files path
+file_refSeq : "/datater/wu/data/RefSeqProkaryota/RefSeqProkaryota.fna"
+file_aceIDtaxID: "/datater/wu/data/ncbiTaxonomy/nucl_gb.accession2taxid" # ftp://ftp.ncbi.nih.gov/pub/taxonomy/accession2taxid/
+file_taxIDLineage: "/datater/wu/data/ncbiTaxonomy/ncbi_lineages_2021-04-23.csv" # ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy and https://github.com/zyxue/ncbitax2lin
+
+### select input
+samples:
+    zikatest: "/datater/wu/data/ZIKV-96seqs.fasta"
+
+### global parameters
+deduplication: False  # True or False
+clustering: False # True or False
+thread: 6
+kmerSize:
+    kmer13: 13
+    # kmer15: 15
+
+### multiple sequence alignemnt
+mafft:
+    algorithm: "--auto"
+    op: 1.53 # default
+    ep: 0.123 # default
+    bl: 62 # default
+    jtt: 62 # default
+    tm: 62 # default
+    fmodel: "off" # default
+    clustalout: "off" # default
+    inputorder: "on" # default
+    reorder: "off" # default
+    treeout: "off" # default
+    quiet: "off" # default
+
+### split fasta into chunk-fasta
+step: 500
+overlap: 250
+
+### kmer counting
+kmc3:
+    memory: 12 # unit GB, default value is 12
+    maxCount: 4294967295 # max value allowed by kmc3
+
+### filtering : melting temperature, CG%, linguistic complexity, homodier, hairpin ...
+filter-oligotm:
+    monovalent-conc: 50 # unity mM
+    divalent-conc: 0 # unity mM
+    dNTP-conc: 0 # unity mM
+    dna-conc: 50 # unity nM
+    thermodynamic-para: 1
+    salt-correlation: 1
+
+homodimer-deltaG: -9000 # value inferior than this one will be eliminated
+
+GC-upper: 40 # inferir than this value will be eliminated
+GC-lower: 60  # superior than this value will be eliminated
+
+Tm-max: 65
+
+linguistic-complexity: 0.7
+# linguistic-complexity: 0.8 # inferir than this value will be eliminated
+
+### heterodimer checking
+dimer-oligotm:
+    monovalent-conc: 50 # unity mM
+    divalent-conc: 0 # unity mM
+    dNTP-conc: 0 # unity mM
+    dna-conc: 50 # unity nM
+    thermodynamic-para: 1
+    salt-correlation: 1
+
+heterodimer-deltaG: -9000
+
+### clustering setting
+cd-hit:
+    memory: 16000
