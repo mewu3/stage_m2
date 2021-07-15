@@ -47,27 +47,37 @@ def fetchConfigParameters():
         config["mafft"]["quiet"] = ""
 fetchConfigParameters()
 
-def input_kmerCounting1(wildcards): 
-    if deduplication and clustering: 
+def input_kmerCounting1(wildcards):
+    if deduplication and clustering:
         return expand(
             f"{dataDir}/{{sample}}/{{sample}}.uniq.cluster",
-            sample = wildcards.sample 
+            sample = wildcards.sample
         )
-    elif deduplication: 
+    elif deduplication:
         return expand(
             f"{dataDir}/{{sample}}/{{sample}}.uniq"
         )
-    elif clustering: 
+    elif clustering:
         return expand(
             f"{dataDir}/{{sample}}/{{sample}}.cluster"
         )
-    else: 
+    else:
         return config["samples"][wildcards.sample]
 
 rule all:
     input:
         expand(
-            f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/test",
+            f"{dataDir}/{{sample}}/{{kmerSize}}/allOligo.set",
+            sample = samples,
+            kmerSize = kmerSizes
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/{{kmerSize}}/evaluation/allOligo.set.coverage",
+            sample = samples,
+            kmerSize = kmerSizes
+        ),
+        expand(
+            f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/aceID-taxID-species.tsv",
             sample = samples,
             kmerSize = kmerSizes
         )
@@ -77,3 +87,4 @@ include: "rules/test/clustering.smk"
 include: "rules/test/kmerCounting.smk"
 include: "rules/test/kmerFiltering.smk"
 include: "rules/test/kmerSelecting.smk"
+include: "rules/test/kmerEvaluationg.smk"

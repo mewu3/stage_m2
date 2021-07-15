@@ -26,6 +26,7 @@ if clustering:
         conda:
             "envs/mafft.yaml"
         params:
+
             threads = config["thread"],
             algorithm = config["mafft"]["algorithm"],
             op = config["mafft"]["op"],

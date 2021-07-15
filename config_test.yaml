@@ -8,7 +8,7 @@ file_taxIDLineage: "/datater/wu/data/ncbiTaxonomy/ncbi_lineages_2021-04-23.csv" 
 
 ### select input
 samples:
-    zikatest: "/datater/wu/data/ZIKV-96seqs.fasta"
+    test: "/datater/wu/data/enterovirus_.fasta"
 
 ### global parameters
 deduplication: False  # True or False

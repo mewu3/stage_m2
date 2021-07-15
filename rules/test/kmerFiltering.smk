@@ -120,7 +120,8 @@ rule kmerFiltering1:
 
 rule kmerFiltering2:
     input:
-        f"{dataDir}/{{sample}}/{{kmerSize}}/allKmerCount.sorted.calculated.txt"
+        f"{dataDir}/{{sample}}/{{kmerSize}}/allKmerCount.sorted.calculated.txt",
+        input_kmerCounting1
     output:
         f"{dataDir}/{{sample}}/{{kmerSize}}/allKmerCount.sorted.calculated.filtered.txt"
     params:
@@ -139,40 +140,41 @@ rule kmerFiltering2:
         TmMax = params.TmMax
         LCSeuil = params.LCSeuil
 
+        numSeq = int(os.popen(f"grep '^>' -c {input[1]}").read())
+        numSeq_10 = int(numSeq * 0.1)
+
         df = pd.read_table(input[0], sep="\t", header=0, index_col=0)
 
-        # MSSPE Deng et al. (2020), don't know the logic behind yet. with tm
-        # range from 60 - 70 no oligo could pass the criteria
         tmMean = float(df["Tm"].mean())
         tmStd = float(df["Tm"].std())
         TmSeuilPlus = tmMean + 2*tmStd
         TmSeuilLess = tmMean - 2*tmStd
 
-        df_filtered = df[(df["Tm"] >= TmSeuilLess) & (df["Tm"] <= TmSeuilPlus) & (df["Tm"] <= TmMax) & (df["CG%"] >= GCUp) & (df["CG%"] <= GCDown) & (df["hairpin-dG"] > deltaG) & (df["homodimer-dG"] > deltaG) & (df["Entropy"] > LCSeuil)]
+        df_filtered = df[(df["Tm"] >= TmSeuilLess) & (df["Tm"] <= TmSeuilPlus) & (df["Tm"] <= TmMax) & (df["CG%"] >= GCUp) & (df["CG%"] <= GCDown) & (df["hairpin-dG"] > deltaG) & (df["homodimer-dG"] > deltaG) & (df["Entropy"] > LCSeuil) & (df["kmerCount"] > numSeq_10)]
         df_filtered = df_filtered.sort_values("kmerCount", ascending=False)
         df_filtered.to_csv(output[0], sep='\t', index=True)
 
-rule kmerFiltering3: 
-    input: 
+rule kmerFiltering3:
+    input:
         f"{dataDir}/{{sample}}/{{kmerSize}}/allKmerCount.sorted.calculated.filtered.txt"
-    output: 
+    output:
         f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.filtered.fasta"
-    run: 
+    run:
         import os
         from Bio.Seq import Seq
 
-        with open(output[0], "w") as fo: 
-            with open(input[0], "r") as fi: 
+        with open(output[0], "w") as fo:
+            with open(input[0], "r") as fi:
                 for l in fi.readlines()[1:]:
                     l = l.rstrip("\n").split()
                     id = l[0]
                     oligo = str(Seq(l[1]))
-                    fo.write(f">p{id}\n{oligo}\n")
+                    fo.write(f">{id}\n{oligo}\n")
 
-rule kmerFiltering4: 
-    input: 
+rule kmerFiltering4:
+    input:
         f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.filtered.fasta"
-    output: 
+    output:
         f"{dataDir}/{{sample}}/{{kmerSize}}/intermediate/allKmerCount.sorted.calculated.filtered.clustered.fasta"
     params:
         threads = config["thread"],
@@ -237,14 +239,13 @@ rule kmerFiltering7:
         import pandas as pd
 
         specific = os.popen(f"samtools view -f 4 {input[0]} | cut -f1").read().split("\n") # -f unmapped -F matched
-        specific = list(map(lambda x: x.lstrip("p"), specific))
         specific = list(filter(None, specific))
         specific = list(map(lambda x: int(x), specific))
 
         df = pd.read_table(input[1], sep="\t", header=0, index_col=0)
         df = df[df.index.isin(specific)]
-        
-        with open(output[0], "w") as fo: 
+
+        with open(output[0], "w") as fo:
             for i, r in df.iterrows():
                 seq = r["oligo"]
-                fo.write(f">p{i}\n{seq}\n")
+                fo.write(f">{i}\n{seq}\n")
